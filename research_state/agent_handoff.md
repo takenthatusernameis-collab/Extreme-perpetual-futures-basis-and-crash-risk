@@ -40,10 +40,10 @@
 - Artifact inconsistency noted (not fabricated): 7 symbols (XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT) have verified retrieved_at_utc (2026-10-24T21:58:10Z) but null sha256_last_page, because their source entries were written by the earlier listing pass before the sha256 field was added to the output. Listing dates/missing counts for these 7 are verified and consistent with re-runs; only the last-page hash field is absent. No hashes were synthesized.
 - PIT rank search extended (2026-10-24T23:48Z): checked CoinMarketCap listings/historical (API key required), Coinranking rank-history (paid), Kaggle daily tracker (2026 only), Zenodo single-date snapshot. No usable free no-key bulk PIT rank source. rank_verified remains false for all 13. research_state/pit_rank_search_v1.json updated.
 
-## This activation (verification only — no new findings)
+## This activation (verification + PIT search expansion)
 - Required checks re-run and pass: grid manifest 324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config; 11 unittest tests pass (python3 -m unittest discover -s tests); git diff --check clean.
-- No new PIT rank source checked this activation; prior negative findings (CoinGecko, CryptoCompare, Wayback CDX) preserved unchanged.
-- No artifacts modified; frozen anchor/config and Q1/extended artifacts untouched.
+- PIT rank search expanded: checked Zenodo datasets (Damaševičius 2020-2024 limited coins, jchavarro 2022 snapshots, Aguilera/Reina 2021 short window), Kaggle CMC dataset (2023 snapshot, auth/download constraints), Wayback Machine CMC historical pages (exist but require scraping), GitHub scrapers (no committed bulk dataset). No free no-key bulk PIT market-cap rank history covering 2019-2024 for all 13 candidates located. research_state/pit_rank_search_v1.json updated (checked_at_utc 2026-10-24T23:53:00+00:00). rank_verified remains false for all 13.
+- No artifacts modified (frozen anchor/config and Q1/extended artifacts untouched). H002/H003 remain registered_secondary_not_tested.
 
 ## Next action
 1. Continue PIT rank search with sources not yet checked (e.g. Binance archived market-cap snapshots, alternative archives, academic datasets). Record source, timestamp and checksum in research_state/pit_rank_search_v1.json for every source checked, whether or not it yields usable data. Do not fabricate ranks.

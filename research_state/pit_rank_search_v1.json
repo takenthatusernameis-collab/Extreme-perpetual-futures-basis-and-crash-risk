@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-24T23:46:42.173549+00:00",
+  "checked_at_utc": "2026-10-24T23:53:00+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -50,8 +50,37 @@
       "name": "Zenodo cryptocurrency historical snapshot (2022-09)",
       "endpoint": "https://zenodo.org/records/7342586",
       "notes": "Single-date (Sep 2022) top-20 snapshot only; not a time series across candidate listing dates. Insufficient for PIT membership."
+    },
+    {
+      "name": "Zenodo (Dama\u0161evi\u010dius 2025, Bitcoin/Ethereum/Monero/Tether)",
+      "endpoint": "https://zenodo.org/records/14749166",
+      "notes": "Daily OHLCV/market cap for BTC,ETH,XMR,USDT 2020-06-01 to 2024-06-01. No full top-N rankings/time series for all candidate symbols; limited coins and scope."
+    },
+    {
+      "name": "Zenodo (jchavarro 2022 snapshot)",
+      "endpoint": "https://zenodo.org/records/7342586",
+      "notes": "Single-date snapshots (2022-09-01/02/03) for top coins including ranks/market caps; not a continuous PIT time series across 2019-2024 formation dates."
+    },
+    {
+      "name": "Zenodo (Aguilera/Reina 2021)",
+      "endpoint": "https://zenodo.org/records/4641835",
+      "notes": "Daily files for 2021-03-25/26 for top ~100 by market cap; very short time window, not a full historical PIT series for the study period."
+    },
+    {
+      "name": "Kaggle CoinMarketCap datasets",
+      "endpoint": "https://www.kaggle.com/datasets/harshalhonde/coinmarketcap-cryptocurrency-dataset-2023",
+      "notes": "Contains CMC snapshot data (2023); free to download but need to check full coverage. API key/login may be required for download; not automatically accessible without auth in this environment. Noted for future access if credentials available."
+    },
+    {
+      "name": "Wayback Machine CMC historical pages",
+      "endpoint": "https://web.archive.org/web/*/coinmarketcap.com/historical/*",
+      "notes": "Historical snapshot URLs exist (e.g. /historical/). Scraping full daily/weekly rankings across 2019-2024 would require systematic scraping of Wayback/CMC; no pre-parsed dataset found. Network restrictions may apply; attempted CDX earlier returned issues. Not trivially available as bulk download without scraping infrastructure."
+    },
+    {
+      "name": "GitHub scrapers/repos with CMC historical data",
+      "endpoint": "https://github.com/search?q=coinmarketcap+historical+rank+csv+2019+2020+2021+2022+2023&type=code",
+      "notes": "Multiple repos exist (coinmarketcappy, scrape-cmc scripts) but they scrape live/historical pages; no committed bulk PIT rank datasets for 2019-2024 covering all candidates found in repo. Using them would require running scrapers which may hit rate limits/ToS concerns; not pre-existing data."
     }
   ],
-  "checked_at_utc": "2026-10-24T23:48:00+00:00",
-  "conclusion": "No additional free (no-key, no-signup) bulk PIT market-cap rank history located this activation (CoinMarketCap listings/historical requires API key; Coinranking rank-history paid; Kaggle tracker covers 2026 only; Zenodo single-date snapshot). Rank remains unverified for all 13 candidates. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
+  "conclusion": "Extended search (2026-10-24T23:53Z): checked Zenodo datasets (limited coverage/time windows), Kaggle CMC dataset (2023 snapshot, auth/download constraints), Wayback Machine CMC historical pages (exist but require scraping), GitHub scrapers (no committed bulk dataset). No free no-key bulk PIT market-cap rank history covering 2019-2024 for all 13 candidates located. Rank remains unverified for all 13. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
 }
