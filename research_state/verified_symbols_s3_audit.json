@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "generated_at_utc": "2026-10-24T18:05:03.609672+00:00",
+  "audit": {
+    "BTCUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "ETHUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "BNBUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "XRPUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "SOLUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "TRXUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "ZECUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "DOGEUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "LINKUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "ADAUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "XLMUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "NEARUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    },
+    "BCHUSDT": {
+      "um_klines_count": 2,
+      "mark_klines_count": 2,
+      "index_klines_count": 2,
+      "funding_monthly_count": 2
+    }
+  }
+}
