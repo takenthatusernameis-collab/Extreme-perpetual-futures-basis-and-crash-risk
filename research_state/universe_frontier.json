@@ -8,20 +8,369 @@
   "source_cursors": {
     "coinpaprika": {
       "endpoint": "https://api.coinpaprika.com/v1/tickers?limit=10",
-      "retrieved_at_utc": "2026-10-24T15:08:12Z",
-      "hash": "f00f330039a81800c3ed993e03c21ba8e903abdb8514db76e294c69c5229c2bd",
+      "retrieved_at_utc": "2026-10-24T16:08:36Z",
+      "hash": "45760fc088442e91feb622974d4d664229041bc14eb040c99192cda14b95efd6",
       "status": "ok_discovery_only"
     }
   },
-  "candidates_discovered": [],
+  "candidates_discovered": [
+    {
+      "id": "btc-bitcoin",
+      "rank": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eth-ethereum",
+      "rank": 2,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdt-tether",
+      "rank": 3,
+      "name": "Tether",
+      "symbol": "USDT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bnb-binance-coin",
+      "rank": 4,
+      "name": "BNB",
+      "symbol": "BNB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xrp-xrp",
+      "rank": 5,
+      "name": "XRP",
+      "symbol": "XRP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdc-usd-coin",
+      "rank": 6,
+      "name": "USDC",
+      "symbol": "USDC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sol-solana",
+      "rank": 7,
+      "name": "Solana",
+      "symbol": "SOL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "trx-tron",
+      "rank": 8,
+      "name": "TRON",
+      "symbol": "TRX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "steth-lido-staked-ether",
+      "rank": 9,
+      "name": "Lido Staked Ether",
+      "symbol": "STETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zec-zcash",
+      "rank": 10,
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hype-hyperliquid",
+      "rank": 11,
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "doge-dogecoin",
+      "rank": 12,
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xmr-monero",
+      "rank": 13,
+      "name": "Monero",
+      "symbol": "XMR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wsteth-wrapped-liquid-staked-ether-20",
+      "rank": 14,
+      "name": "Wrapped Liquid Staked Ether 2.0",
+      "symbol": "WSTETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usds-usds",
+      "rank": 15,
+      "name": "Usds",
+      "symbol": "USDS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbtc-wrapped-bitcoin",
+      "rank": 16,
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbt-whitebit",
+      "rank": 17,
+      "name": "WhiteBIT Coin",
+      "symbol": "WBT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "link-chainlink",
+      "rank": 18,
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "leo-leo-token",
+      "rank": 19,
+      "name": "LEO Token",
+      "symbol": "LEO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ada-cardano",
+      "rank": 20,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cbbtc-coinbase-wrapped-btc",
+      "rank": 21,
+      "name": "Coinbase Wrapped BTC",
+      "symbol": "CBBTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xlm-stellar",
+      "rank": 22,
+      "name": "Stellar",
+      "symbol": "XLM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "near-near-protocol",
+      "rank": 23,
+      "name": "Near Protocol",
+      "symbol": "NEAR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rain-rain-protocol",
+      "rank": 24,
+      "name": "Rain Protocol",
+      "symbol": "RAIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bch-bitcoin-cash",
+      "rank": 25,
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
   "candidates_verified_for_pit_analysis": [],
-  "candidates_rank_unverified": [],
+  "candidates_rank_unverified": [
+    {
+      "id": "btc-bitcoin",
+      "rank": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eth-ethereum",
+      "rank": 2,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdt-tether",
+      "rank": 3,
+      "name": "Tether",
+      "symbol": "USDT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bnb-binance-coin",
+      "rank": 4,
+      "name": "BNB",
+      "symbol": "BNB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xrp-xrp",
+      "rank": 5,
+      "name": "XRP",
+      "symbol": "XRP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdc-usd-coin",
+      "rank": 6,
+      "name": "USDC",
+      "symbol": "USDC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sol-solana",
+      "rank": 7,
+      "name": "Solana",
+      "symbol": "SOL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "trx-tron",
+      "rank": 8,
+      "name": "TRON",
+      "symbol": "TRX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "steth-lido-staked-ether",
+      "rank": 9,
+      "name": "Lido Staked Ether",
+      "symbol": "STETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zec-zcash",
+      "rank": 10,
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hype-hyperliquid",
+      "rank": 11,
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "doge-dogecoin",
+      "rank": 12,
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xmr-monero",
+      "rank": 13,
+      "name": "Monero",
+      "symbol": "XMR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wsteth-wrapped-liquid-staked-ether-20",
+      "rank": 14,
+      "name": "Wrapped Liquid Staked Ether 2.0",
+      "symbol": "WSTETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usds-usds",
+      "rank": 15,
+      "name": "Usds",
+      "symbol": "USDS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbtc-wrapped-bitcoin",
+      "rank": 16,
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbt-whitebit",
+      "rank": 17,
+      "name": "WhiteBIT Coin",
+      "symbol": "WBT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "link-chainlink",
+      "rank": 18,
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "leo-leo-token",
+      "rank": 19,
+      "name": "LEO Token",
+      "symbol": "LEO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ada-cardano",
+      "rank": 20,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cbbtc-coinbase-wrapped-btc",
+      "rank": 21,
+      "name": "Coinbase Wrapped BTC",
+      "symbol": "CBBTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xlm-stellar",
+      "rank": 22,
+      "name": "Stellar",
+      "symbol": "XLM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "near-near-protocol",
+      "rank": 23,
+      "name": "Near Protocol",
+      "symbol": "NEAR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rain-rain-protocol",
+      "rank": 24,
+      "name": "Rain Protocol",
+      "symbol": "RAIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bch-bitcoin-cash",
+      "rank": 25,
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
   "candidates_rejected": [],
-  "last_updated_utc": "2026-10-24T15:08:20Z",
+  "last_updated_utc": "2026-10-24T16:08:36Z",
   "notes": [
-    "Empty initial frontier; source discovery has not yet executed.",
-    "Current rank must not be historical membership.",
-    "Persist source URL, retrieval time, raw response hash, cursor and candidate order for each page.",
-    "CoinPaprika /v1/coins and /v1/tickers accessible (free). Current ranks only; no confirmed free PIT historical rank history found."
+    "Populated top 25 discovery candidates from CoinPaprika /v1/tickers; rank-unverified, discovery-only."
   ]
 }
