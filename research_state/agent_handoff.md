@@ -37,9 +37,9 @@
 - Updated handoff and task message with verified findings only.
 
 ## Next action
-1. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
-2. Do not preregister cheap-negative or absolute-extreme from inspected grid hits; only via separate predeclared rationale with a new experiment ID (H002/H003 remain registered_secondary_not_tested).
-3. Expand coverage notes for symbols with limited history (PIT listing gaps above); preserve all exclusions/statuses and terminal cell statuses.
+1. Re-run S3 XML listing for the 6 symbols with null earliest/latest metadata (BTCUSDT, ETHUSDT, BNBUSDT, DOGEUSDT, ADAUSDT, BCHUSDT) to fill earliest/latest zip dates and missing counts; update pit_universe_verification_v1.json with verified listing evidence. Preserve rank_verified=false.
+2. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
+3. Do not preregister cheap-negative or absolute-extreme from grid hits; only via separate predeclared rationale with a new experiment ID (H002/H003 remain registered_secondary_not_tested).
 4. At every activation: verify branch/workflow/state/cutoff/pending cells/diagnostics, run required checks, update handoff and next task with verified findings only.
 
 ## Reporting rules
