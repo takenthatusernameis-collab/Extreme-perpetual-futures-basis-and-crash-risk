@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-BASELINE",
+  "status": "initialized",
+  "registered_at_utc": null,
+  "data_cutoff_utc": null,
+  "grid_config_path": "configs/basis_crash_grid_v1.json",
+  "grid_manifest_path": "research_state/grid_manifest_v1.json",
+  "grid_expected_cells": 324,
+  "grid_status_counts": {
+    "ok": 0,
+    "blocked": 0,
+    "failed": 0,
+    "incomplete": 0,
+    "invalid": 0,
+    "not_run": 324
+  },
+  "artifact_hashes": {},
+  "notes": [
+    "Design initialized; no empirical data has been fetched or evaluated.",
+    "Update only with verified execution."
+  ]
+}
