@@ -40,10 +40,16 @@
 - Artifact inconsistency noted (not fabricated): 7 symbols (XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT) have verified retrieved_at_utc (2026-10-24T21:58:10Z) but null sha256_last_page, because their source entries were written by the earlier listing pass before the sha256 field was added to the output. Listing dates/missing counts for these 7 are verified and consistent with re-runs; only the last-page hash field is absent. No hashes were synthesized.
 - PIT rank search extended (2026-10-24T23:45Z): checked CoinGecko (rank not in free market_chart; history limited to 365d), CryptoCompare (API key required, 401), Wayback CDX (unreachable, HTTP 000). No usable free PIT rank source. rank_verified remains false for all 13. research_state/pit_rank_search_v1.json updated with all sources/timestamps.
 
+## This activation (verification only — no new findings)
+- Required checks re-run and pass: grid manifest 324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config; 11 unittest tests pass (python3 -m unittest discover -s tests); git diff --check clean.
+- No new PIT rank source checked this activation; prior negative findings (CoinGecko, CryptoCompare, Wayback CDX) preserved unchanged.
+- No artifacts modified; frozen anchor/config and Q1/extended artifacts untouched.
+
 ## Next action
-1. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
-2. Do not preregister cheap-negative or absolute-extreme from grid hits; only via separate predeclared rationale with a new experiment ID (H002/H003 remain registered_secondary_not_tested).
-3. At every activation: verify branch/workflow/state/cutoff/pending cells/diagnostics, run required checks, update handoff and next task with verified findings only.
+1. Continue PIT rank search with sources not yet checked (e.g. Binance archived market-cap snapshots, alternative archives, academic datasets). Record source, timestamp and checksum in research_state/pit_rank_search_v1.json for every source checked, whether or not it yields usable data. Do not fabricate ranks.
+2. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum and update research_state/pit_universe_verification_v1.json (rank_verified may become true only with full point-in-time evidence); otherwise keep rank_verified=false and continue with the coverage-cohort approach. Do not project current ranks backward.
+3. Do not preregister cheap-negative or absolute-extreme from grid hits; only via separate predeclared rationale with a new experiment ID (H002/H003 remain registered_secondary_not_tested).
+4. At every activation: verify branch/workflow/state/cutoff/pending cells/diagnostics, run required checks, update handoff and next task with verified findings only.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
