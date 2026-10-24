@@ -3,16 +3,18 @@
 Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
 ## Context
-- Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats.
-- Red-team audit done; negative results report done.
-- PIT verification: listing evidence collected via S3 XML; rank_verified=false for all (no free PIT rank history found). See research_state/pit_universe_verification_v1.json and research_state/pit_rank_search_v1.json.
-- Prior-only controls (exploratory): null preserved.
+- Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats. Primary hypothesis NOT supported; null preserved.
+- Red-team audit done; negative results report done; prior-only controls robustness done (null preserved).
+- PIT verification: listing evidence via S3 XML; rank_verified=false for all 11 symbols. Gaps: complete zip dates for XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT; null earliest/latest for BTCUSDT, ETHUSDT, BNBUSDT, DOGEUSDT, ADAUSDT, BCHUSDT. See research_state/pit_universe_verification_v1.json and research_state/pit_rank_search_v1.json.
+- PIT rank search (2026-10-24T22:51:53Z): no bulk free PIT rank history source located.
+- Alternative orientation: NOT preregistered. H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested; preregistering from inspected grid hits would violate the no-selection-by-raw-p-value rule. Requires independent predeclared rationale + new experiment ID.
 - Exclusions 336 preserved; all 324 cells ok.
 
 ## Immediate deliverables
-1. Continue PIT hardening: search free sources (archived rankings, snapshot datasets) for defensible PIT rank history. If found, record source/timestamp/checksum and update verification; else document explicit gaps and keep rank-unverified. Do not project current ranks backward.
-2. If investigating alternative orientation (cheap-negative/absolute-extreme), preregister separately with its own anchor/config (do not modify frozen anchor/config). Document rationale and predeclare endpoints/multiplicity.
-3. Update handoff/next task with verified findings only; preserve null/failed/exclusions.
+1. PIT hardening: if a free defensible PIT rank history source appears, record source/timestamp/checksum and update verification; else document explicit gaps and keep rank-unverified. Do not project current ranks backward.
+2. Do not preregister cheap-negative/absolute-extreme from grid hits; any separate preregistration needs its own anchor/config, independent predeclared rationale, and new experiment ID — do not modify frozen anchor/config.
+3. Expand coverage notes for symbols with limited history (PIT listing gaps above); preserve all exclusions/statuses.
+4. Update handoff/next task with verified findings only; preserve null/failed/exclusions.
 
 ## Boundary
 Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only. Do not modify Q1 artifacts, evaluation reports, or the frozen anchor/config.
