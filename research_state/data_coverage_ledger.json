@@ -1,8 +1,26 @@
 {
   "schema_version": "1.0",
   "program_id": "EBCR-001",
-  "assets": [],
-  "venues": {
+  "assets": [
+    {
+      "symbol": "BTCUSDT",
+      "spot_daily_klines": {"earliest_utc_date": "2017-08-17", "latest_utc_date": "2026-10-23", "file_count": 3355},
+      "um_klines": {"earliest_utc_date": "2019-12-31", "latest_utc_date": "2026-10-23", "file_count": 2489},
+      "mark_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2441},
+      "index_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2439},
+      "funding_rate_monthly": {"earliest": "2020-01", "latest": "2026-09", "file_count": 81},
+      "notes": "index has 2 fewer files than mark (gaps unverified); no forward-fill"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "spot_daily_klines": {"earliest_utc_date": "2017-08-17", "latest_utc_date": "2026-10-23", "file_count": 3355},
+      "um_klines": {"earliest_utc_date": "2019-12-31", "latest_utc_date": "2026-10-23", "file_count": 2489},
+      "mark_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2464},
+      "index_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2097},
+      "funding_rate_monthly": {"earliest": "2020-01", "latest": "2026-09", "file_count": 81},
+      "notes": "index has 367 fewer files than mark (significant gaps); needs per-day audit"
+    }
+  ],  "venues": {
     "binance": {
       "name": "Binance",
       "types": ["spot", "usd_m_perp", "coin_m_perp"],

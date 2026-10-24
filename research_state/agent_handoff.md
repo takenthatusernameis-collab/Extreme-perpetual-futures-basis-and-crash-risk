@@ -20,11 +20,14 @@
 3. Confirmed PIT rank constraints.
 4. Created ingestion design doc.
 5. Populated universe frontier (25 candidates, discovery-only).
+6. Coverage sampling: BTCUSDT/ETHUSDT spot/UM/mark/index daily klines + funding monthly; recorded windows/gaps in data_coverage_ledger.json.
+7. Attempted universe expansion via CoinPaprika offset=25; endpoint returned same first 25 (no pagination exposed) — recorded; frontier remains 25.
+8. Wrote ingestion prototype notes.
 
 ## Next action
-1. Coverage sampling: spot daily klines + UM klines/mark/index for BTCUSDT/ETHUSDT; record windows/gaps.
-2. Universe expansion: fetch next pages of CoinPaprika tickers (batch 25) with hashes.
-3. Implement ingestion parser prototype for one symbol/day.
+1. Implement ingestion parser prototype for one symbol/day; verify schema on downloaded sample.
+2. Audit per-day gaps for ETHUSDT index (367 missing files) vs mark.
+3. Investigate CoinPaprika pagination alternative (cursor/next page) for next 25 candidates.
 4. State updates.
 
 ## Reporting rules
