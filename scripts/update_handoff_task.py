@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+
+ROOT = Path("/home/runner/work/Extreme-perpetual-futures-basis-and-crash-risk/Extreme-perpetual-futures-basis-and-crash-risk")
+RESEARCH = ROOT / "research_state"
+
+def load_json(p):
+    return json.loads(Path(p).read_text(encoding="utf-8"))
+
+def atomic_write_text(p, content):
+    p = Path(p)
+    tmp = p.with_suffix(p.suffix + ".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    tmp.replace(p)
+
+def main():
+    eval_rep = load_json(RESEARCH / "evaluation_report_extended_v1.json")
+    redteam = load_json(RESEARCH / "red_team_audit_extended_v1.json")
+    neg = load_json(RESEARCH / "negative_results_report_v1.json")
+
+    handoff = []
+    handoff.append("# Agent handoff — EBCR-001")
+    handoff.append("")
+    handoff.append("## Status")
+    handoff.append("- Research design initialized; no empirical finding verified.")
+    handoff.append("- Frozen config: configs/basis_crash_grid_v1.json (config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0).")
+    handoff.append("- Grid manifest generated: research_state/grid_manifest_v1.json (324 cells).")
+    handoff.append("- Tests: 11 passed (unittest).")
+    handoff.append("- Universe frontier: 25 discovery candidates (rank-unverified).")
+    handoff.append("- Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (updated with archive verification).")
+    handoff.append("- S3 XML listing implemented: scripts/s3_xml_listing.py; verified coverage via s3_xml_listing.")
+    handoff.append("- Q1 2024 ingestion (BTCUSDT+ETHUSDT): research_state/ingestion_btc_eth_q1_2024.json (ok).")
+    handoff.append("- Data coverage ledger: research_state/data_coverage_ledger.json.")
+    handoff.append("- Basis computation (Q1 all): research_state/basis_computation_q1_all.json.")
+    handoff.append("- Crash labels computed (Q1): research_state/crash_labels_q1.json.")
+    handoff.append("- Integrated dataset (Q1): research_state/integrated_q1.json.")
+    handoff.append("- Grid execution scaffold (Q1): research_state/grid_execution_scaffold_v1.json.")
+    handoff.append("- Cell status ledger (Q1): research_state/cell_status_ledger.json (324 blocked).")
+    handoff.append("- Extended ingestion (EBCR-001-EXTENDED-V1): research_state/ingestion_extended_v1.json.")
+    handoff.append("- Basis/crash labels/integrated (extended): research_state/basis_computation_extended_v1.json, research_state/crash_labels_extended_v1.json, research_state/integrated_extended_v1.json (5010 rows, 336 exclusions).")
+    handoff.append("- Grid execution scaffold/ledger (extended): research_state/grid_execution_scaffold_extended_v1.json, research_state/cell_status_ledger_extended_v1.json (324 ok).")
+    handoff.append("- Evaluation (extended): research_state/evaluation_report_extended_v1.json + research_state/evaluation_summary_extended_v1.md.")
+    handoff.append("  - 2,592 registered tests; 2,451 with p-values; 141 blocked.")
+    handoff.append("  - Holm across full family: 424 significant (with dependence caveats).")
+    handoff.append("  - Anchor co-primary (crash_incidence_15pct, expected_shortfall_5pct_forward_mae): **not significant** (adj p 0.248, 0.949). Primary hypothesis not supported — null preserved.")
+    handoff.append("- **Red-team audit (extended):** research_state/red_team_audit_extended_v1.json + .md (leakage/past-only verified; overlapping horizons; exclusions 336; confounding noted).")
+    handoff.append("- **Negative results report:** research_state/negative_results_report_v1.json + .md (anchor null, grid hits with caveats, all exclusions/statuses preserved).")
+    handoff.append("")
+    handoff.append("## Completed this session")
+    handoff.append("- Ran statistical-red-team audit on extended results (leakage/permutation/placebo structural checks, overlap/dependence, survivorship/missingness, confounding, thin tails).")
+    handoff.append("- Wrote formal negative-results report documenting anchor null, grid hits with dependence caveats, exclusions (336), blocked states (0).")
+    handoff.append("- Updated handoff and task message with findings.")
+    handoff.append("- Ran required checks contextually; no Q1 artifacts modified.")
+    handoff.append("")
+    handoff.append("## Next action")
+    handoff.append("1. Strengthen PIT universe verification for candidates (use `point-in-time-universe` skill): collect defensible PIT rank/listing history for mapped symbols or expand cohort with coverage notes; do not project current ranks backward.")
+    handoff.append("2. Add predeclared prior-only controls to a small robustness check on anchor/grid subsets (funding, returns/vol/drawdown, BTC) without re-evaluating sealed holdout logic; report controlled vs uncontrolled.")
+    handoff.append("3. Consider a separately preregistered hypothesis (e.g. cheap-negative or absolute-extreme orientations) with its own anchor if justified, or expand to other free venues — but do not re-open anchor selection.")
+    handoff.append("")
+    handoff.append("## Reporting rules")
+    handoff.append("Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.")
+    handoff.append("")
+    handoff.append("(End of file - total updated)")
+    atomic_write_text(RESEARCH / "agent_handoff.md", "\n".join(handoff) + "\n")
+
+    task = []
+    task.append("# Next task — EBCR-001")
+    task.append("")
+    task.append("Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.")
+    task.append("")
+    task.append("## Context")
+    task.append("- Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats.")
+    task.append("- Red-team audit done: research_state/red_team_audit_extended_v1.json (+md).")
+    task.append("- Negative results report: research_state/negative_results_report_v1.json (+md).")
+    task.append("- Exclusions 336 preserved; all 324 cells ok.")
+    task.append("")
+    task.append("## Immediate deliverables")
+    task.append("1. PIT universe hardening: use `point-in-time-universe` skill to improve rank/listing evidence for mapped symbols (ADAUSDT,BCHUSDT,BNBUSDT,DOGEUSDT,LINKUSDT,NEARUSDT,SOLUSDT,TRXUSDT,XLMUSDT,XRPUSDT,ZECUSDT). Record sources/timestamps/checksums; mark rank-verified vs rank-unverified. Do not infer history from current ranks.")
+    task.append("2. Prior-only controls robustness (exploratory, documented): test anchor with predeclared controls (past returns/vol/drawdown, BTC, funding) where available; report controlled estimates/p-values without changing anchor or unblinding selection. Preserve all outputs.")
+    task.append("3. Update handoff/next task with results; if controls meaningfully change interpretation, document caveats without softening the null.")
+    task.append("")
+    task.append("## Boundary")
+    task.append("Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only. Do not modify Q1 artifacts, evaluation reports, or the frozen anchor/config.")
+    task.append("")
+    task.append("## Commands")
+    task.append("python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json")
+    task.append("python3 -m unittest discover -s tests -q")
+    task.append("git diff --check")
+    task.append("")
+    atomic_write_text(RESEARCH / "agent_task_message.md", "\n".join(task) + "\n")
+    print("done")
+
+if __name__ == "__main__":
+    main()

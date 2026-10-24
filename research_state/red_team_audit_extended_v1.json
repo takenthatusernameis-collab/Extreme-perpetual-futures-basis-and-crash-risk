@@ -1,0 +1,132 @@
+{
+  "anchor_co_primary": {
+    "adj_p_values": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    },
+    "cell_id": "EBCR-GRID-001-0005",
+    "conclusion": "NOT SIGNIFICANT after correction (adj p 0.248, 0.949). Primary hypothesis not supported.",
+    "endpoints": [
+      "crash_incidence_15pct",
+      "expected_shortfall_5pct_forward_mae"
+    ],
+    "holm_across_co_primary_m2": true,
+    "holm_significant": []
+  },
+  "audit_scope": "extended_window_2023-01-01_to_2024-04-30",
+  "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+  "confounding_vs_prior_only_controls": {
+    "caveat": "Uncontrolled confounding remains a possibility; results interpreted as predictive association, not causation.",
+    "predeclared_controls": [
+      "past 7/30d returns",
+      "past 30d volatility/drawdown",
+      "BTC/market returns/vol",
+      "funding",
+      "liquidity/turnover",
+      "open interest (when reliable)"
+    ],
+    "status": "Not exhaustively re-estimated in this pass; recommend stratified/regression with controls in follow-up."
+  },
+  "experiment_id": "EBCR-001-BASELINE",
+  "family_multiplicity": {
+    "blocked_no_pvalue": 141,
+    "holm_full_family_applied": true,
+    "holm_significant": 424,
+    "holm_significant_fraction": 0.1729906160750714,
+    "note": "Holm controls FWER across full family but does not model dependence from overlapping horizons/common shocks.",
+    "registered_grid_tests": 2592,
+    "tests_with_pvalue": 2451
+  },
+  "generated_at_utc": "2026-10-24T21:52:41Z",
+  "leakage_permutation_placebo": {
+    "labels_start_at_t1": {
+      "description": "Forward outcomes use t+1 onward; horizons complete within window.",
+      "evidence": "integrated_extended_v1.json",
+      "verified": true
+    },
+    "no_future_data_leak": {
+      "description": "Feature construction uses only past observations up to t-1 for threshold; no peeking into future.",
+      "verified": true
+    },
+    "placebo_permutation_available": {
+      "description": "Permutation/ES permutation implemented in evaluation script.",
+      "evidence": "scripts/evaluate_grid_extended.py",
+      "verified": true
+    },
+    "threshold_uses_past_only": {
+      "description": "Threshold estimated from rolling(L).quantile.shift(1) on preceding completed daily features; current formation day excluded.",
+      "evidence": "scripts/evaluate_grid_extended.py::compute_signal",
+      "verified": true
+    }
+  },
+  "overall_assessment": "No evidence of support for the primary anchor after multiplicity correction. Many grid cells show unadjusted/adjusted significance but dependence and potential confounding preclude strong claims; interpret as suggestive only with heavy caveats. Null result is preserved.",
+  "overlapping_horizon_dependence": {
+    "caveat": "Holm controls FWER across tests but does not eliminate dependence-induced correlation in effects.",
+    "issue": "7/14/28-day horizons overlap heavily (common forward windows).",
+    "mitigation": "Moving-block bootstrap (56-day blocks, joint across assets) specified; dependence reported as caveat."
+  },
+  "report_id": "EBCR-001-REDTEAM-EXTENDED-V1",
+  "schema_version": "1.0",
+  "status_accounting": {
+    "cells_blocked": 0,
+    "cells_ok": 324,
+    "cells_total": 324,
+    "exclusions_preserved": 336
+  },
+  "survivorship_missingness_selection": {
+    "exclusion_reasons": {
+      "missing_label": 336
+    },
+    "exclusions_total": 336,
+    "notes": [
+      "Exclusions recorded and preserved.",
+      "PIT rank verification ongoing per point-in-time-universe skill."
+    ],
+    "selection_risk": "Possible if missingness correlates with basis/crash dynamics; cannot rule out without fuller PIT history."
+  },
+  "thin_tail_event_count_adequacy": {
+    "adequacy": "Event counts moderate; worst-5% ES estimated but sensitive to tail sparsity.",
+    "anchor": {
+      "event_counts_by_endpoint": {
+        "crash_incidence_10pct": {
+          "n_control_events": 1614,
+          "n_signal_events": 121
+        },
+        "crash_incidence_15pct": {
+          "n_control_events": 850,
+          "n_signal_events": 65
+        },
+        "crash_incidence_20pct": {
+          "n_control_events": 458,
+          "n_signal_events": 35
+        },
+        "expected_shortfall_5pct_forward_mae": {
+          "n_control_events": null,
+          "n_signal_events": null
+        },
+        "mean_forward_mae": {
+          "n_control_events": null,
+          "n_signal_events": null
+        },
+        "vol_scaled_crash_2sigma": {
+          "n_control_events": 217,
+          "n_signal_events": 15
+        },
+        "vol_scaled_crash_3sigma": {
+          "n_control_events": 72,
+          "n_signal_events": 2
+        },
+        "vol_scaled_crash_4sigma": {
+          "n_control_events": 16,
+          "n_signal_events": 0
+        }
+      },
+      "n_control": 4709,
+      "n_signal": 301
+    }
+  },
+  "window": {
+    "end": "2024-04-02",
+    "start": "2023-01-01"
+  }
+}
