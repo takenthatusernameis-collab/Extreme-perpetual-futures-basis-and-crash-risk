@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "note": "Crash label skeleton: MAE over 7/14/28d using spot/index lows; not computed yet (forward horizons require data beyond 2024-03-31).",
+  "horizons_days": [
+    7,
+    14,
+    28
+  ],
+  "symbols": [
+    "BNBUSDT",
+    "XRPUSDT",
+    "SOLUSDT",
+    "TRXUSDT",
+    "ZECUSDT",
+    "DOGEUSDT",
+    "LINKUSDT",
+    "ADAUSDT",
+    "XLMUSDT",
+    "NEARUSDT",
+    "BCHUSDT"
+  ],
+  "window": {
+    "start": "2024-01-01",
+    "end": "2024-03-31"
+  },
+  "labels": []
+}
