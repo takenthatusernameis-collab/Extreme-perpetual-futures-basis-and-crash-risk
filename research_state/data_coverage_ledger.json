@@ -4,32 +4,81 @@
   "assets": [
     {
       "symbol": "BTCUSDT",
-      "spot_daily_klines": {"earliest_utc_date": "2017-08-17", "latest_utc_date": "2026-10-23", "file_count": 3355},
-      "um_klines": {"earliest_utc_date": "2019-12-31", "latest_utc_date": "2026-10-23", "file_count": 2489},
-      "mark_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2441},
-      "index_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2439},
-      "funding_rate_monthly": {"earliest": "2020-01", "latest": "2026-09", "file_count": 81},
+      "spot_daily_klines": {
+        "earliest_utc_date": "2017-08-17",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 3355
+      },
+      "um_klines": {
+        "earliest_utc_date": "2019-12-31",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2489
+      },
+      "mark_price_klines": {
+        "earliest_utc_date": "2019-12-23",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2441
+      },
+      "index_price_klines": {
+        "earliest_utc_date": "2019-12-23",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2439
+      },
+      "funding_rate_monthly": {
+        "earliest": "2020-01",
+        "latest": "2026-09",
+        "file_count": 81
+      },
       "notes": "index has 2 fewer files than mark (gaps unverified); no forward-fill"
     },
     {
       "symbol": "ETHUSDT",
-      "spot_daily_klines": {"earliest_utc_date": "2017-08-17", "latest_utc_date": "2026-10-23", "file_count": 3355},
-      "um_klines": {"earliest_utc_date": "2019-12-31", "latest_utc_date": "2026-10-23", "file_count": 2489},
-      "mark_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2464},
-      "index_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2097},
-      "funding_rate_monthly": {"earliest": "2020-01", "latest": "2026-09", "file_count": 81},
-      "notes": "index has 367 fewer files than mark (significant gaps); per-day audit requires S3 directory listing; not yet completed"
+      "spot_daily_klines": {
+        "earliest_utc_date": "2017-08-17",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 3355
+      },
+      "um_klines": {
+        "earliest_utc_date": "2019-12-31",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2489
+      },
+      "mark_price_klines": {
+        "earliest_utc_date": "2019-12-23",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2464
+      },
+      "index_price_klines": {
+        "earliest_utc_date": "2019-12-23",
+        "latest_utc_date": "2026-10-23",
+        "file_count": 2097
+      },
+      "funding_rate_monthly": {
+        "earliest": "2020-01",
+        "latest": "2026-09",
+        "file_count": 81
+      },
+      "notes": "index has 367 fewer files than mark (significant gaps); S3 HTML listing attempt returned 0 parseable links (JS-rendered); recorded as incomplete; next: use S3 XML listing API or monthly file enumeration."
     }
-  ],  "venues": {
+  ],
+  "venues": {
     "binance": {
       "name": "Binance",
-      "types": ["spot", "usd_m_perp", "coin_m_perp"],
+      "types": [
+        "spot",
+        "usd_m_perp",
+        "coin_m_perp"
+      ],
       "archives": {
         "url": "https://data.binance.vision/",
         "accessible": true,
         "spot_daily_klines": {
           "path_pattern": "data/spot/daily/klines/{SYMBOL}/{interval}/",
-          "intervals_seen": ["1m", "1h", "1d"],
+          "intervals_seen": [
+            "1m",
+            "1h",
+            "1d"
+          ],
           "format": "zip of CSV",
           "notes": "Daily files with CHECKSUM"
         },
@@ -77,7 +126,7 @@
     "source_cutoffs": {}
   },
   "exclusions": [],
-  "last_updated_utc": "2026-10-24T15:14:03Z",
+  "last_updated_utc": "2026-10-24T17:00:00Z",
   "notes": [
     "Binance archives accessible via S3 listing; REST APIs blocked from environment.",
     "Mark/index price klines and funding rate paths identified (funding may be in monthly archives).",
