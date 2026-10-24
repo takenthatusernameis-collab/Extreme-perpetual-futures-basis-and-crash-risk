@@ -10,19 +10,17 @@
 - S3 XML listing implemented: scripts/s3_xml_listing.py; verified coverage via s3_xml_listing.
 - Q1 2024 ingestion (BTCUSDT+ETHUSDT): research_state/ingestion_btc_eth_q1_2024.json (ok, coverage 1.0 for both, 91 days each).
 - Data coverage ledger: research_state/data_coverage_ledger.json (all verified symbols audited for Q1 2024).
-- Basis computation (BTC+ETH): research_state/basis_computation_q1_partial.json (182 obs).
 - Basis computation (all 13 verified symbols): research_state/basis_computation_q1_all.json (1001 obs, coverage 1.0 all symbols, 91 days each, 2024-01-01..2024-03-31).
-- Crash label skeleton: research_state/crash_labels_skeleton_q1.json (horizons 7/14/28, not computed).
+- Crash labels computed: research_state/crash_labels_q1.json (1001 labels ok, 0 exclusions; horizons 7/14/28d using spot/index lows over 2024-01-01..2024-03-31 basis with forward to 2024-04-28).
 
 ## Completed this session
-- Extended basis computation to 11 remaining verified symbols (BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH) for Q1 2024 via S3 daily klines + monthly funding; 91 days each, coverage 1.0.
-- Wrote research_state/basis_computation_q1_all.json (1001 observations) with per-day basis_pct, component medians and hashes.
-- Created crash label skeleton placeholder (MAE 7/14/28) pending full horizon availability.
+- Obtained spot/index daily data beyond 2024-03-31 for all 13 verified symbols (through 2024-04-28) via S3 to complete forward horizons.
+- Computed crash labels (MAE over 7/14/28d using spot/index lows) for all basis observations; wrote research_state/crash_labels_q1.json with per-observation labels and zero exclusions.
 
 ## Next action
-1. Obtain spot/index data beyond 2024-03-31 to complete forward horizons (7/14/28d) for crash labels; compute MAE over 7/14/28 using spot/index lows.
-2. Compute crash labels and append to basis dataset; verify complete horizons only.
-3. Update handoff/next task with concrete numbers.
+1. Integrate basis + crash labels into analysis dataset for grid execution (join on symbol/date); record schema and hashes.
+2. Run grid cells for Q1 cohort against preregistered endpoints (frequency/severity) starting with frozen anchor, applying correction across full family.
+3. Update handoff/next task with concrete results and any blocked cells.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
