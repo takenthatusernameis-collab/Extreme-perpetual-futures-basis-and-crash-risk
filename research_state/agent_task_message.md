@@ -5,13 +5,13 @@ Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_r
 ## Context
 - Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats.
 - Red-team audit done; negative results report done.
-- PIT verification: listing evidence collected via S3 XML; rank_verified=false for all (no free PIT rank history found). research_state/pit_universe_verification_v1.json.
+- PIT verification: listing evidence collected via S3 XML; rank_verified=false for all (no free PIT rank history found). See research_state/pit_universe_verification_v1.json and research_state/pit_rank_search_v1.json.
 - Prior-only controls (exploratory): null preserved.
 - Exclusions 336 preserved; all 324 cells ok.
 
 ## Immediate deliverables
-1. Continue PIT hardening: search free sources (archived rankings, snapshot datasets) for defensible PIT rank history. If found, record source/timestamp/checksum and update verification; else document explicit gaps and keep rank-unverified.
-2. If investigating alternative orientation (cheap-negative/absolute-extreme), preregister separately with its own anchor/config (do not modify frozen anchor/config). Document rationale.
+1. Continue PIT hardening: search free sources (archived rankings, snapshot datasets) for defensible PIT rank history. If found, record source/timestamp/checksum and update verification; else document explicit gaps and keep rank-unverified. Do not project current ranks backward.
+2. If investigating alternative orientation (cheap-negative/absolute-extreme), preregister separately with its own anchor/config (do not modify frozen anchor/config). Document rationale and predeclare endpoints/multiplicity.
 3. Update handoff/next task with verified findings only; preserve null/failed/exclusions.
 
 ## Boundary

@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-24T22:51:53.775926+00:00",
+  "sources_checked": [
+    {
+      "name": "CoinMarketCap historical pages",
+      "type": "web_archives_wayback_cdx",
+      "notes": "Wayback CDX shows historical pages exist; parsing full rankings per date is possible but requires scraping/archival fetching and normalization. No pre-parsed PIT rank dataset found in repo."
+    },
+    {
+      "name": "CoinMetrics Community API",
+      "endpoint": "https://community-api.coinmetrics.io/v4/",
+      "notes": "Catalog exists but returns not_found for simple calls; historical marketcap/rank coverage not confirmed as free bulk PIT series in repo."
+    },
+    {
+      "name": "CoinPaprika",
+      "endpoint": "https://api.coinpaprika.com/v1/",
+      "notes": "Current ranks only for discovery per docs; no verified PIT history."
+    }
+  ],
+  "conclusion": "No bulk free PIT market-cap rank history dataset located; rank remains unverified for all candidates. Listing/lifecycle evidence collected via Binance Vision S3 XML where available."
+}

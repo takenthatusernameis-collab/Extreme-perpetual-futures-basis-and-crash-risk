@@ -43,3 +43,8 @@
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
 
 (End of file - total updated)
+
+## PIT hardening (this session - extended)
+- Searched free sources for historical market-cap/rank: Wayback CDX shows CMC historical snapshots exist; CoinMetrics/CoinPaprika catalog checked. No pre-parsed free PIT rank dataset located in repo. See research_state/pit_rank_search_v1.json.
+- Listing/lifecycle evidence via Binance Vision S3 XML for mapped perpetual symbols recorded in research_state/pit_universe_verification_v1.json; rank_verified=false for all.
+- Per point-in-time rules: discovery rank ≠ historical membership; no current ranks projected backward. Candidates remain rank-unverified/coverage cohort until defensible PIT rank evidence exists.
