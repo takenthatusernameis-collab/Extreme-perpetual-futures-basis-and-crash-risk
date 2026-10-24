@@ -1,13 +1,20 @@
-# Next task — EBCR-001
+# Next task — EBCR-001 (updated)
 
-Read `AGENTS.md`, `SKILLS.md`, this file, `research_state/agent_handoff.md`, the operating contract, grid config, source guide and relevant skills.
+Read `AGENTS.md`, `SKILLS.md`, `research_state/agent_handoff.md`, `prompts/continuous_research_operating_contract_v1.md`, `docs/research_protocol.md`, `configs/basis_crash_grid_v1.json`.
 
 ## Immediate deliverables
-1. **Baseline confirmed:** Tests pass (11/11). Grid manifest generated (324 cells). Source discovery tested (CoinPaprika/CoinMetrics accessible). PIT rank history not confirmed free → discovery-only.
-2. **Binance audit:** Check Binance USD-M/COIN-M public market data endpoints and data.binance.vision for available historical data (spot/index, mark price, funding). Record coverage windows, formats, rate limits, licensing notes. Update `research_state/source_audit.md` and `research_state/data_coverage_ledger.json`.
-3. **Ingestion design:** Document timestamp alignment (UTC), daily aggregation (median of valid timestamp-aligned samples), coverage gates (≥95%), exclusion rules, no lookahead/forward-fill. Create plan before fetching large data.
-4. **Universe handling:** Implement discovery list from CoinPaprika tickers (top by rank) as candidates; mark all as rank-unverified pending PIT evidence. Never infer historical membership from current rank.
-5. **State updates:** Update handoff and next task with concrete findings/blockers.
+1. **Funding rate discovery:** List S3/archive contents under `data/futures/um/monthly/fundingRate/` for a sample symbol (e.g., BTCUSDT) to confirm actual files/formats. Check for daily funding paths. Record findings in `research_state/source_audit.md` and `research_state/data_coverage_ledger.json`.
+2. **Coverage sampling:** Sample major symbols (start with BTCUSDT, ETHUSDT) for spot daily klines, UM futures klines, markPriceKlines, indexPriceKlines. For each, record earliest/latest UTC dates, file counts, schema (CSV columns), gaps. Update `research_state/data_coverage_ledger.json` with concrete windows.
+3. **Ingestion design doc:** Create `research_state/ingestion_design.md` documenting UTC alignment, daily aggregation (median of valid timestamp-aligned samples), coverage gates (≥95%), exclusion rules, no lookahead/forward-fill, timestamp gates, basis calculation formula, and how to handle missing mark/index/spot.
+4. **Universe scaffold:** Fetch top N from CoinPaprika `/v1/coins` (discovery only), write to `research_state/universe_frontier.json` as rank-unverified candidates with retrieval timestamp/hash. Never use for historical membership.
+5. **State updates:** Update handoff with findings/blockers and write clear next task.
 
 ## Boundary
-Use only free public data and open-source tools. No paid services, keys/secrets, exchange credentials, live/paper trading or orders. Never fabricate coverage or metrics. Preserve negative, null, failed and not-run results. Finish with an updated handoff and next measurable task.
+Free public data and open-source tools only. No paid services, keys/secrets, exchange credentials, live/paper trading/orders. Never fabricate coverage. Preserve negative/null/failed/not-run results. REST APIs blocked in env - use archives only.
+
+## Commands to run/check
+```bash
+python3 -m unittest discover -s tests -v
+python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json
+git diff --check
+```

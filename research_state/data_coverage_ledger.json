@@ -11,7 +11,7 @@
         "accessible": true,
         "spot_daily_klines": {
           "path_pattern": "data/spot/daily/klines/{SYMBOL}/{interval}/",
-          "intervals_seen": ["1m", "1h"],
+          "intervals_seen": ["1m", "1h", "1d"],
           "format": "zip of CSV",
           "notes": "Daily files with CHECKSUM"
         },
@@ -33,12 +33,12 @@
       },
       "rest_api": {
         "accessible_from_env": false,
-        "notes": "Binance REST APIs blocked from this environment (restricted location per error); must rely on public archives"
+        "notes": "Binance REST APIs blocked from this environment (restricted location); must rely on public archives"
       },
       "licensing_notes": "Public data archive terms of use at https://data.binance.vision/terms-of-use.html - must comply",
-      "rate_limits": "Respectful crawling of public S3/archive; no aggressive parallel bulk download without considering limits",
+      "rate_limits": "Respectful crawling of public S3/archive; no aggressive parallel bulk download",
       "coverage_windows": {
-        "notes": "Major pairs go back years (e.g. BTCUSDT futures klines seen from 2023-06+ in listings; spot also has history). Exact earliest/latest per symbol needs systematic audit."
+        "notes": "Major pairs go back years. Systematic sampling needed per symbol for earliest/latest complete dates, gaps, mark/index availability."
       }
     },
     "coinpaprika": {
