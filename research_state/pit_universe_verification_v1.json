@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "verification_type": "pit_listing_evidence",
+  "retrieved_at_utc": "2026-10-24T21:58:10.492900+00:00",
+  "notes": "Contract listing presence verified via Binance Vision S3 XML listings (markPriceKlines daily). No free public PIT market-cap rank history source was located in repo; rank verification remains limited. Listing dates are earliest zip date present (not necessarily first public announcement).",
+  "symbols": [
+    {
+      "binance_um_symbol": "BTCUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.492916+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "missing_count": null
+    },
+    {
+      "binance_um_symbol": "ETHUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.492924+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "missing_count": null
+    },
+    {
+      "binance_um_symbol": "BNBUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": null,
+          "prefix": "data/futures/um/daily/markPriceKlines/BNBUSDT/1d/",
+          "sha256_last_page": null
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "n_zip_dates": null,
+      "missing_count": null
+    },
+    {
+      "binance_um_symbol": "XRPUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493269+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-01-06, latest: 2026-10-23, missing_count: 49",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-01-06",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 49
+    },
+    {
+      "binance_um_symbol": "SOLUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493276+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-09-13, latest: 2026-10-23, missing_count: 56",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-09-13",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 56
+    },
+    {
+      "binance_um_symbol": "TRXUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493279+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-01-15, latest: 2026-10-23, missing_count: 42",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-01-15",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 42
+    },
+    {
+      "binance_um_symbol": "ZECUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493282+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-02-04, latest: 2026-10-23, missing_count: 29",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-02-04",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 29
+    },
+    {
+      "binance_um_symbol": "DOGEUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": null,
+          "prefix": "data/futures/um/daily/markPriceKlines/DOGEUSDT/1d/",
+          "sha256_last_page": null
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "n_zip_dates": null,
+      "missing_count": null
+    },
+    {
+      "binance_um_symbol": "LINKUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493504+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-01-17, latest: 2026-10-23, missing_count: 39",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-01-17",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 39
+    },
+    {
+      "binance_um_symbol": "ADAUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": null,
+          "prefix": "data/futures/um/daily/markPriceKlines/ADAUSDT/1d/",
+          "sha256_last_page": null
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "n_zip_dates": null,
+      "missing_count": null
+    },
+    {
+      "binance_um_symbol": "XLMUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493683+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-01-19, latest: 2026-10-23, missing_count: 39",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-01-19",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 39
+    },
+    {
+      "binance_um_symbol": "NEARUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T21:58:10.493691+00:00"
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: 2020-10-14, latest: 2026-10-23, missing_count: 34",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": "2020-10-14",
+      "latest_zip_date": "2026-10-23",
+      "missing_count": 34
+    },
+    {
+      "binance_um_symbol": "BCHUSDT",
+      "sources": [
+        {
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": null,
+          "prefix": "data/futures/um/daily/markPriceKlines/BCHUSDT/1d/",
+          "sha256_last_page": null
+        }
+      ],
+      "rank_verified": false,
+      "listing_verified": true,
+      "notes": [
+        "Earliest daily markPriceKlines zip: None, latest: None, missing_count: None",
+        "Rank verification: no free public PIT market-cap rank history source found in repo; rank remains unverified per point-in-time-universe rules."
+      ],
+      "earliest_zip_date": null,
+      "latest_zip_date": null,
+      "n_zip_dates": null,
+      "missing_count": null
+    }
+  ]
+}

@@ -6,12 +6,14 @@ Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_r
 - Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats.
 - Red-team audit done: research_state/red_team_audit_extended_v1.json (+md).
 - Negative results report: research_state/negative_results_report_v1.json (+md).
+- PIT verification added: research_state/pit_universe_verification_v1.json (listing evidence collected; rank unverified).
+- Prior-only controls (exploratory): research_state/robustness_prior_controls_extended_v1.json (+md) — null preserved, no anchor change.
 - Exclusions 336 preserved; all 324 cells ok.
 
 ## Immediate deliverables
-1. PIT universe hardening: use `point-in-time-universe` skill to improve rank/listing evidence for mapped symbols (ADAUSDT,BCHUSDT,BNBUSDT,DOGEUSDT,LINKUSDT,NEARUSDT,SOLUSDT,TRXUSDT,XLMUSDT,XRPUSDT,ZECUSDT). Record sources/timestamps/checksums; mark rank-verified vs rank-unverified. Do not infer history from current ranks.
-2. Prior-only controls robustness (exploratory, documented): test anchor with predeclared controls (past returns/vol/drawdown, BTC, funding) where available; report controlled estimates/p-values without changing anchor or unblinding selection. Preserve all outputs.
-3. Update handoff/next task with results; if controls meaningfully change interpretation, document caveats without softening the null.
+1. Monitor for free PIT rank sources (e.g. archived listings/snapshots) without fabricating history; if found, record sources/timestamps/checksums and update verification.
+2. If any predeclared alternative orientation needs investigation, preregister separately with own anchor (do not touch frozen anchor/config). Document rationale.
+3. Update handoff/next task with concrete findings; preserve all null/failed/exclusions.
 
 ## Boundary
 Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only. Do not modify Q1 artifacts, evaluation reports, or the frozen anchor/config.
