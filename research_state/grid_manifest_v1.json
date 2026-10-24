@@ -1,0 +1,3905 @@
+{
+  "cells": [
+    {
+      "cell_id": "EBCR-GRID-001-0001",
+      "configuration_hash_sha256": "c481e07f8b3577d199ba3d956cc1f240c0245a68f950556cceb18d1272aa87df",
+      "ordinal": 1,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0002",
+      "configuration_hash_sha256": "8ac719c0b0834dc5e4b978db0e40618210f2901069eb354e37b3f5ad5a87c1c4",
+      "ordinal": 2,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0003",
+      "configuration_hash_sha256": "b59078ef31436aa733904c7a6b6f78a80a5f7c3e64b6fd661c226a0069c18138",
+      "ordinal": 3,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0004",
+      "configuration_hash_sha256": "09b269ba1d91b10d4f485f176d47e8bbcd08653dff969357aa3928c94cdddb66",
+      "ordinal": 4,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0005",
+      "configuration_hash_sha256": "280bd60c42affcbab42b649240a640f51354224b4034ec94f770843509c92b47",
+      "ordinal": 5,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0006",
+      "configuration_hash_sha256": "52a88e453111da88d127e1caec1cdc0181136c5db197bf89099e45bbd1d5ad80",
+      "ordinal": 6,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0007",
+      "configuration_hash_sha256": "e431eeb0345c53d9a8f755a7f327195cbcde5c126857270e0cf95f8e23f8ce59",
+      "ordinal": 7,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0008",
+      "configuration_hash_sha256": "dea3c668abc9681bbdb9f8ef0e5e5430fa3a6a5b2e395a13249104363b278c57",
+      "ordinal": 8,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0009",
+      "configuration_hash_sha256": "2e8eb485b676c969caed9d0ceb22a7f5c1abd5db85039d8eab9e11aa8a733f20",
+      "ordinal": 9,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0010",
+      "configuration_hash_sha256": "a2a59484f853cca12da5d41c372d3b2720059bed41192d061393e17708693634",
+      "ordinal": 10,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0011",
+      "configuration_hash_sha256": "11d9de0bca6a628dc1194dcf95fbb7c14967ffde97f87d404e7214ee2cf7b15d",
+      "ordinal": 11,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0012",
+      "configuration_hash_sha256": "bba167299cc12ab7f19e7ee8b862bb4829a0561c1d5abd9a56f0fa4cee9163cb",
+      "ordinal": 12,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0013",
+      "configuration_hash_sha256": "84d4f04d50da6143f1c0293f7610393d1289d751488ff368806bc306da97d325",
+      "ordinal": 13,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0014",
+      "configuration_hash_sha256": "9aa8df8719d7f8e3d7bbd6e00c2f65bc06d794916a85f2f7fb39ae98ba417f1f",
+      "ordinal": 14,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0015",
+      "configuration_hash_sha256": "cc4e776893e9425f6c91c5d56a87215ed175d6a2e31ed2edfedabf07f521e4f7",
+      "ordinal": 15,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0016",
+      "configuration_hash_sha256": "458125a56b6685612a28ff3634e2c05d79676c9de73e8cb3d2d388377b74362c",
+      "ordinal": 16,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0017",
+      "configuration_hash_sha256": "e5babf91219b9559d454cbaa684fb8d77ab54e97f0ded5b979677ac22b650c95",
+      "ordinal": 17,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0018",
+      "configuration_hash_sha256": "61e0804532db2b2219aa5b0c7208773cda99288a62597c6e844d17aed4f75b1e",
+      "ordinal": 18,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0019",
+      "configuration_hash_sha256": "62ef441f262a7e5149c0bb3b1af000daffc97ebe0aa2fbf7649521f94def5b17",
+      "ordinal": 19,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0020",
+      "configuration_hash_sha256": "bad30ae4a5a4110c4d8674e8c167b7e9e5db369c1d6db7adbc0e79487bc5b9eb",
+      "ordinal": 20,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0021",
+      "configuration_hash_sha256": "0d53ca3a1c6442710b1022feeafd3add1488039f63d9a5b7d279d69b09d68fb8",
+      "ordinal": 21,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0022",
+      "configuration_hash_sha256": "7ff509a253534e55264f6433d60b9bea235868c7db031fa8675a6ed519daac01",
+      "ordinal": 22,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0023",
+      "configuration_hash_sha256": "9eaaa1050fc92b48a04648025dac0d4ad116ad1e33b1609b47b3496b4bae2784",
+      "ordinal": 23,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0024",
+      "configuration_hash_sha256": "9dce0b30f1a8e81055a8a65d6a53ded46312dc54b3261e63d7b2bdaf6477003d",
+      "ordinal": 24,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0025",
+      "configuration_hash_sha256": "a492f182b720d51ef24b771abb371ede7c87c10ad19bab4cd17fe4e47c9971f3",
+      "ordinal": 25,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0026",
+      "configuration_hash_sha256": "3454cbc9b61f5b7162dda87533f9effc21d57dde7bf2c84f35121fd9322c06fe",
+      "ordinal": 26,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0027",
+      "configuration_hash_sha256": "ce75be35db9c5de9b64a76ace1d0da87901425b4098b97dbd81718661038cd87",
+      "ordinal": 27,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0028",
+      "configuration_hash_sha256": "208f1d80f8afbc99af2ff59817a1087b4fe675da184398f73ef275b7c6159782",
+      "ordinal": 28,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0029",
+      "configuration_hash_sha256": "4dabea68459f342678f217179b952c77a6684d44c5365cd7819c77388d18aa46",
+      "ordinal": 29,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0030",
+      "configuration_hash_sha256": "f499c8d2024ba3b8ab01bc7cf2b81c1d7ba94e3bdab63ff521bfc9f3be83b5ef",
+      "ordinal": 30,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0031",
+      "configuration_hash_sha256": "569eb5c3b6a8e6ad06cf6527e4874cd55fd4138652f0463d1755e1fd325b26df",
+      "ordinal": 31,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0032",
+      "configuration_hash_sha256": "637ed17c972b0a20644b9e78a3f0d75cb1b6007e3d39e79f25a5caf103ab29ad",
+      "ordinal": 32,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0033",
+      "configuration_hash_sha256": "3916d9d26fa0a50d6645ef30429160e5a846d7a55bcb7c12901a6007777fdbb1",
+      "ordinal": 33,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0034",
+      "configuration_hash_sha256": "6c7f0efaa5616261617384c609467ce586a831359092673011f28f7f7704e5ff",
+      "ordinal": 34,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0035",
+      "configuration_hash_sha256": "6e6f7cc01032dc8782852fdc68127177b3807262d9863caadb1efdbcdbda3cdb",
+      "ordinal": 35,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0036",
+      "configuration_hash_sha256": "e7ea2629a77d6907a958c84c73488316cfc3f7b4a3f0f39cdd3770c6af4a8429",
+      "ordinal": 36,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0037",
+      "configuration_hash_sha256": "09719b4a0de35353cc6d2da6172c28f062879ac882c3a693c8f45f2f355f522c",
+      "ordinal": 37,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0038",
+      "configuration_hash_sha256": "4b01c8e5ae36130f17a55f3b997fb071668d481acfeaba16c25b7df13f3838f4",
+      "ordinal": 38,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0039",
+      "configuration_hash_sha256": "aac99a5f21f8b085b665f4666447af3ce5a97dd91989b1610fb0c16fbeb57485",
+      "ordinal": 39,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0040",
+      "configuration_hash_sha256": "438c3b0c6f59e54f99e98509c6aa1754e1b5d543177993aafa755cb9528df95d",
+      "ordinal": 40,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0041",
+      "configuration_hash_sha256": "ad44925e10c92b6d7fecccc54e17540036edb3abec96fdf1d6ea6f15d41fd709",
+      "ordinal": 41,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0042",
+      "configuration_hash_sha256": "f18a3393b8783582216d8cfb64808e33299590cb811bf0aff3f41138694e0d20",
+      "ordinal": 42,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0043",
+      "configuration_hash_sha256": "402f6b6c75d68a27b14708e7b5bc01718e6483c6c75c58808da3451ed9585dc9",
+      "ordinal": 43,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0044",
+      "configuration_hash_sha256": "216a6056b3bc2517de7ccb6e3a7459284ae86ceb681f30509730473e9a10b367",
+      "ordinal": 44,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0045",
+      "configuration_hash_sha256": "1f4b9512a70cca6437ea1d04638fa0abb59a483d14d3cd5c1b6c52986388d5df",
+      "ordinal": 45,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0046",
+      "configuration_hash_sha256": "a4a41da7c1233da67bbae3374815c6707eed4cfb33e27ad6ab3a30ffa5855a4e",
+      "ordinal": 46,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0047",
+      "configuration_hash_sha256": "5a5ac4cbe0f9cc27b7e3486d19477d96ed8f9a81b5299dbbc8a17d562f73a01b",
+      "ordinal": 47,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0048",
+      "configuration_hash_sha256": "983202f456af7ebfbc5ffa1218f63ef9f3ef42e98a659bc193f47b838cc57dbd",
+      "ordinal": 48,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0049",
+      "configuration_hash_sha256": "9cfb02a2f4a17cdc593d1d936a00a923386af282466dce130ff25b241c9ed96b",
+      "ordinal": 49,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0050",
+      "configuration_hash_sha256": "a3a230ebbc4b4303a8f4f40d250e999898cf3f1067fd6d9e5d9693cf2ab10d9c",
+      "ordinal": 50,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0051",
+      "configuration_hash_sha256": "9208db2281d73c07e9aeda6771fac5f4233b33f4ad101267b8a28df27c96cd9c",
+      "ordinal": 51,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0052",
+      "configuration_hash_sha256": "d535cbd0206f4542472f5de866ec1c546f8c8fadd38091855c9f05e75cf90cd3",
+      "ordinal": 52,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0053",
+      "configuration_hash_sha256": "17b1c3daa33132f47ffc6cda1517e5e603e8c73fd0f784f0682a4a154779e804",
+      "ordinal": 53,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0054",
+      "configuration_hash_sha256": "c13f1dc63b1e494b5dd066e5ec69d218999e69cf3ec967b44f2d524e72064658",
+      "ordinal": 54,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0055",
+      "configuration_hash_sha256": "73028460e13019044bc2efb6770e443d6e068f6a3309cdc198e08315965436c4",
+      "ordinal": 55,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0056",
+      "configuration_hash_sha256": "c7ec069a77c8fae26e47fda075c2b3beb2dd82b86fd171174b2bb702e3c7d4e0",
+      "ordinal": 56,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0057",
+      "configuration_hash_sha256": "273b6632c736ffe98e4b8539d302000efb7cffdbb4bdd05f04146466786929b6",
+      "ordinal": 57,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0058",
+      "configuration_hash_sha256": "e888a78074f4930a7435fc5a4677115d699c59a360e252fcc1ce1f19fbc64910",
+      "ordinal": 58,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0059",
+      "configuration_hash_sha256": "8427b1cd560a240414a4c664c569595a42730994d7f8ca2574791652dcf3741e",
+      "ordinal": 59,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0060",
+      "configuration_hash_sha256": "379a3715c28e7a1196322c6eb63213e6dbaed6bbe4a5adcebe9bb5127b72b035",
+      "ordinal": 60,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0061",
+      "configuration_hash_sha256": "6b1b3f59974ded37b1eee5aae08361cb7377298561aefb5b8d58c142047ba729",
+      "ordinal": 61,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0062",
+      "configuration_hash_sha256": "3b7b55b323aef7d0081db12108e9f331cfb71bff738db9e3fa9a01c3b594ec60",
+      "ordinal": 62,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0063",
+      "configuration_hash_sha256": "8b4dfde0abf6b9354df37686482443a19597a1fca77cc13cb7a0f2860e813694",
+      "ordinal": 63,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0064",
+      "configuration_hash_sha256": "bd50ed21ccead322743eebfe5aabde1519814cdcc0ec50264266accb4b9ff4b1",
+      "ordinal": 64,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0065",
+      "configuration_hash_sha256": "b99207f350d4f0334f5aa56e3e36806fc63bb221d902ef21fcb36c4611611c28",
+      "ordinal": 65,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0066",
+      "configuration_hash_sha256": "2dd06cdb801b0a89990afd649ce9057cdaefe5fea03fc1544cf1ed0c8a5aa015",
+      "ordinal": 66,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0067",
+      "configuration_hash_sha256": "5c9d80a16f07986878e87bfe65f0cb0617ebfa37f3a2570f8945ce010c7076f8",
+      "ordinal": 67,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0068",
+      "configuration_hash_sha256": "8b86f3ba133a53d18bea201f527006f732fc6dcd412db715bacdbbac793e79c9",
+      "ordinal": 68,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0069",
+      "configuration_hash_sha256": "e27f0da74f8742b326a6ed5c197666ebaec34d4bd1ad2231585826eb13cc9856",
+      "ordinal": 69,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0070",
+      "configuration_hash_sha256": "9d0b8168c912656ca5a050f415252f2649eb98b48e9241310deee50e6fd09bab",
+      "ordinal": 70,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0071",
+      "configuration_hash_sha256": "237aa721e195149a2a38fd4098c48c690c4ee424a108bff93ad6c7dd871fcd07",
+      "ordinal": 71,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0072",
+      "configuration_hash_sha256": "30b3c5b350b297c166edbf714dd16bc4bd958b829918a97f446c0a5639733878",
+      "ordinal": 72,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0073",
+      "configuration_hash_sha256": "aec4ca8a79b48d671a0b17cc185a9ce3d9aa6457706368bf95ee2d4ba23be1f6",
+      "ordinal": 73,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0074",
+      "configuration_hash_sha256": "34b153e742e6ce3744d5b5de8d7c19fef7c9ea138ae833ba13814e728b051b05",
+      "ordinal": 74,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0075",
+      "configuration_hash_sha256": "308d397c1ee91ade9c35e7af9b1ffb049641e632f49463692f977415ee36632a",
+      "ordinal": 75,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0076",
+      "configuration_hash_sha256": "596b33daf20bdc887a0510f9bf4782a75fc90acf5c4ec03f7380cf9498adfe64",
+      "ordinal": 76,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0077",
+      "configuration_hash_sha256": "6299d6f4091c3b67bc06a443ce5ca3dd9a11c8e8f906493d06a94cc17c1e0e17",
+      "ordinal": 77,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0078",
+      "configuration_hash_sha256": "46c0101893e44da6439059063e2d1773addebf8204c506284f81cd865c815432",
+      "ordinal": 78,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0079",
+      "configuration_hash_sha256": "5864e95a14d84af178144556808f69a03c471fde9a403f2325a44173e6429f52",
+      "ordinal": 79,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0080",
+      "configuration_hash_sha256": "25ef245de6ffdf6151c980dce10546e8399d4833f200efacc0c88588ef75cfa9",
+      "ordinal": 80,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0081",
+      "configuration_hash_sha256": "8cc60ed79588147b1223c9b7e739ee62fb0e06ff9f42613c19db57a0905c7712",
+      "ordinal": 81,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0082",
+      "configuration_hash_sha256": "02c522748185213bef4161bfd2432fb3feb0ecc7c1073850647b6a9d83527405",
+      "ordinal": 82,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0083",
+      "configuration_hash_sha256": "2b49b9de8cd8038fa56692fe0edf260a8cd6835df556f1f2b08ccf6b67d81fd4",
+      "ordinal": 83,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0084",
+      "configuration_hash_sha256": "92542fd8f90dd7b3ba253c5b52d607540bec137b67b1c9a931ef592e45fdea80",
+      "ordinal": 84,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0085",
+      "configuration_hash_sha256": "05a2a5cc4faf7829e06514e88ce3ef67c822c1129eb53eef137ce4134567cb7b",
+      "ordinal": 85,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0086",
+      "configuration_hash_sha256": "af52162ddd36f8f26c17df233e5a8e65b53bea9c315d57bb770f5affd3999a9c",
+      "ordinal": 86,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0087",
+      "configuration_hash_sha256": "1d2db9f32ba392455071fcacc002b56f03679d8808592b0114f2f1aabf4b082b",
+      "ordinal": 87,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0088",
+      "configuration_hash_sha256": "d23be19fcb75a638268b67959c73962c2f996b4245b6518daf0d7c98f661984c",
+      "ordinal": 88,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0089",
+      "configuration_hash_sha256": "809d5d521e61fb581e8606693991c55972d3c94ded0c65ddf56e3aea3950eccb",
+      "ordinal": 89,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0090",
+      "configuration_hash_sha256": "fa76402e395b478c5526acc78b341d75d1a90369c129ce9d73a155d917edaa47",
+      "ordinal": 90,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0091",
+      "configuration_hash_sha256": "692d2826fc40da2df827f0329c1753dc2d022f76e1098269b6777ad71be262c3",
+      "ordinal": 91,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0092",
+      "configuration_hash_sha256": "a1d00830f8cbb937ad19eb7e372e6a40774d8ed5f28aba5baa1cef5d506da0a0",
+      "ordinal": 92,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0093",
+      "configuration_hash_sha256": "b2fd184808b629a04c6d818e78afa18a7e06c168faa918a54de3589677f6287d",
+      "ordinal": 93,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0094",
+      "configuration_hash_sha256": "bba6a6b4ff7f28201dabd0e35f91c76288a92979e943da7f3e69252595e96afb",
+      "ordinal": 94,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0095",
+      "configuration_hash_sha256": "719513225a1b8c2c2405d621b39b448c3df05f15b74b3f846881238ecc99d14b",
+      "ordinal": 95,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0096",
+      "configuration_hash_sha256": "ebdec531fb5b47776a5ddcfdc0a786c0772c3de7b14adf1babb892eb74053a73",
+      "ordinal": 96,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0097",
+      "configuration_hash_sha256": "44da31eb1a980fc8223e9fad246dbddd9fee7271edf48284ad48663245683d0b",
+      "ordinal": 97,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0098",
+      "configuration_hash_sha256": "42d47332120d6b6334231682991fb334aa6d280441c92a362e4950024e4d5a74",
+      "ordinal": 98,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0099",
+      "configuration_hash_sha256": "f2ab068010a734916afba92cd8254a952cf82536be8fb5bbe7a7a763131c49b8",
+      "ordinal": 99,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0100",
+      "configuration_hash_sha256": "53691b960d0e05d24c35dfc9898c0550c85160b910129e6e3fa144e34bd3dc8f",
+      "ordinal": 100,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0101",
+      "configuration_hash_sha256": "069d836fc5aec6d8a57751379dfed381b6f7d253398cb95b1bd8a2232870634b",
+      "ordinal": 101,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0102",
+      "configuration_hash_sha256": "0236f390edad17342d35325d5d5d5ca01a0dbbc0423a9a88737a7b4ce6c12146",
+      "ordinal": 102,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0103",
+      "configuration_hash_sha256": "f434df616649007eaa645d9920c20817e391b85d047f55bd91556eb5628df8e3",
+      "ordinal": 103,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0104",
+      "configuration_hash_sha256": "6138007286a22fad49c0823e68a6a82c8af1d0e627f1db58fb61efbebba30acb",
+      "ordinal": 104,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0105",
+      "configuration_hash_sha256": "55dcdef4c609f259713ab587a3a70baf139bd23fc4e8e6c2ba168b28a49f97b1",
+      "ordinal": 105,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0106",
+      "configuration_hash_sha256": "d3a7bdaba740d9b5125d6393b06a39ba8225aca161199898aab6211e4d777a0d",
+      "ordinal": 106,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0107",
+      "configuration_hash_sha256": "7e5c15bf8827e1bffd9a3d4ba3c11dde0d5a6676a9fc8ac24b006723f42670fe",
+      "ordinal": 107,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0108",
+      "configuration_hash_sha256": "3d687fb343df5bd9f72dc6fa02d869fdd170058934093955817c8910de8d41e5",
+      "ordinal": 108,
+      "parameters": {
+        "basis_aggregation_days": 1,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0109",
+      "configuration_hash_sha256": "f5d0d99f0ed9923a7917fa8cf26405b3af7f5671959f25b3eaf00f64fa11f0b0",
+      "ordinal": 109,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0110",
+      "configuration_hash_sha256": "5b0c135500ec14ce1e402624db3c7d32f4080297e80e06a232ffdf9e973c13c3",
+      "ordinal": 110,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0111",
+      "configuration_hash_sha256": "8da563d573dd91312799d5cdc7daf192ae9ec38c7974c26b73117f6abbf6f6c0",
+      "ordinal": 111,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0112",
+      "configuration_hash_sha256": "543f991cb7f649f3cb9ef1fc22bb6252f9c75370b06368f7fa21e71b4d2d2255",
+      "ordinal": 112,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0113",
+      "configuration_hash_sha256": "eb51188d147815c572b4c694baed0d7bf85958e824243a3289fd0000a1d1cc4d",
+      "ordinal": 113,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0114",
+      "configuration_hash_sha256": "998040b425bcb6ba3745f7eba162b1030136c2ac3a0470e80142227b49f040bc",
+      "ordinal": 114,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0115",
+      "configuration_hash_sha256": "2155e1d1d45b8bed90aaf63c2e284a5c3c254bfd9ea66d366bdfa828633171ad",
+      "ordinal": 115,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0116",
+      "configuration_hash_sha256": "64b468c74db7ce9ffc650c0b10543d8419ca285db193a2ff63c82e2d97574a12",
+      "ordinal": 116,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0117",
+      "configuration_hash_sha256": "8a0b25fbe9ff085b88c6f975b5130ba753a35ad357a3dbc7b3635170b00dcbbc",
+      "ordinal": 117,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0118",
+      "configuration_hash_sha256": "7d82aef562f3a12ae09f09700e1769807720bd47225f9856de6283253548f624",
+      "ordinal": 118,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0119",
+      "configuration_hash_sha256": "f41508600a5e76c875667b3ee9c77a675360f6e15da104f732bda7f47efaf331",
+      "ordinal": 119,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0120",
+      "configuration_hash_sha256": "171a8bc57538547e12da2780a0a28f3c273a6789431a655a53d21cba34777d6c",
+      "ordinal": 120,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0121",
+      "configuration_hash_sha256": "c76510ac9554486c31b1892a46f50123b3712ed87d1b70b40db4f6c928009147",
+      "ordinal": 121,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0122",
+      "configuration_hash_sha256": "3b805dd3c3aa4e32495c3405b3fc8b464be4192f24c294097944fc3c6f08a5f4",
+      "ordinal": 122,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0123",
+      "configuration_hash_sha256": "1aba3d0af0e1929928a901c70195187b2bd021ff9ca946f9eefdb09fab0ba0d0",
+      "ordinal": 123,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0124",
+      "configuration_hash_sha256": "b1ecaa2f1b9ff3afc2cbc4a616d8fefa46bcb261f1f5f0bcc5a55510f5ad2d39",
+      "ordinal": 124,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0125",
+      "configuration_hash_sha256": "dc0860abe82d98d256c20c80546dc929b1faea3704ee24895be898c045f6936a",
+      "ordinal": 125,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0126",
+      "configuration_hash_sha256": "853da0d5d0166d182103497af9cd98f7679f232b7791ec865a087e53eee5c336",
+      "ordinal": 126,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0127",
+      "configuration_hash_sha256": "0f5316cc0a4e90e36064cbe500c16263bebd294a657f6aa0c581652e73012ac8",
+      "ordinal": 127,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0128",
+      "configuration_hash_sha256": "9b23e6a1ab3c9d91455ab1c81c4e8a33653c2ca0773458b519ffafb3d4ab0d03",
+      "ordinal": 128,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0129",
+      "configuration_hash_sha256": "2c8504a400d71f8d7bd8bdf6515ea629c00978ed8e52adedb86a94e1ded0b5bb",
+      "ordinal": 129,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0130",
+      "configuration_hash_sha256": "486b55d4b5f4a1c76fd8c4862d9453dc4fb14320e73b5d8a8afd8e82cdd53472",
+      "ordinal": 130,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0131",
+      "configuration_hash_sha256": "988888a7a7ef63c531887654c7269297921428ac074a9e4c6d10eb539425a932",
+      "ordinal": 131,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0132",
+      "configuration_hash_sha256": "412f69c4d8b93b2ba91f103b46da5726b9fdb901ca42d25e451fe556a746c53a",
+      "ordinal": 132,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0133",
+      "configuration_hash_sha256": "df43ace0fba0378e768415ad07889236b9e71332ce2ab0e39c2e1cfe22c98bb2",
+      "ordinal": 133,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0134",
+      "configuration_hash_sha256": "73cdf87d29b5f8fd0a68571ca97da69f02db3f9deea11a05b51ea31bfabd76c4",
+      "ordinal": 134,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0135",
+      "configuration_hash_sha256": "f46cc48e3e94a4cf2f33ccb31f52899f186a9c22080aceb520aa04227095eb20",
+      "ordinal": 135,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0136",
+      "configuration_hash_sha256": "42814db48b3e23d14a637754adc25c306672fb51238d5e331f9ad7b3e693ad7d",
+      "ordinal": 136,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0137",
+      "configuration_hash_sha256": "db9b1681f3bb93bf1f81296824fb0ec5020a5a3011b4d274a21ddf9c251ed36d",
+      "ordinal": 137,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0138",
+      "configuration_hash_sha256": "6ba0cbb8607adef5c9ed833adb8f17739220b1dcc62ee3eb1c7097b16dc506a5",
+      "ordinal": 138,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0139",
+      "configuration_hash_sha256": "e7700c341d90d1b37eca98636d5c35802595761cd7e58bc30950a873d9472dfe",
+      "ordinal": 139,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0140",
+      "configuration_hash_sha256": "fa9da8eefc41818e3810dcf8ab0d1292d4041723d86b4999086108b34c38e7f6",
+      "ordinal": 140,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0141",
+      "configuration_hash_sha256": "311886ed3656546fd0089b1b4d03a4ca08c576fc3816dab8ebf1266c5b786460",
+      "ordinal": 141,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0142",
+      "configuration_hash_sha256": "480dbade42b1311bd170a947fd834caa01e53a66d0ca4578fe4edf6249e38c76",
+      "ordinal": 142,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0143",
+      "configuration_hash_sha256": "5788292bc8f79d9f0edd25f0195f9c367c4e2a730681f1305e1636fc4389bdd3",
+      "ordinal": 143,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0144",
+      "configuration_hash_sha256": "3eb15ac240d7a79a04fe4e39959c985814acccdd36b224ca58a05c7646483394",
+      "ordinal": 144,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0145",
+      "configuration_hash_sha256": "17b17cbcf86a91461d1baeae2fc57c51aba4496f6d8ae1a3a2898e8b6622351f",
+      "ordinal": 145,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0146",
+      "configuration_hash_sha256": "d9d199b86df5d37a662da0928fa5d935f69f93b3b88c51635adc339ea54120b7",
+      "ordinal": 146,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0147",
+      "configuration_hash_sha256": "7a6c14c7345a24bbf6584bf1d09ec07e51b410a22b16884fd0ead0be79d3340b",
+      "ordinal": 147,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0148",
+      "configuration_hash_sha256": "ee95824e76744705ad888ccfbf56278964d959021d74667d229556fc60d396de",
+      "ordinal": 148,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0149",
+      "configuration_hash_sha256": "8e2e2bad07bf7fba68f70230a444fd3c2a852f4a8e4c3bec63f1631316edf9f0",
+      "ordinal": 149,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0150",
+      "configuration_hash_sha256": "52606efbe12266d7d68de43254858934c1391d9f48322706db9eaa651629edea",
+      "ordinal": 150,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0151",
+      "configuration_hash_sha256": "19f9f55dfec0d2b9074ffca76a5bb5bee9353d949c43c47441ee8a302e7b47a5",
+      "ordinal": 151,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0152",
+      "configuration_hash_sha256": "de235f69fd7aa627244887c34a275b683ecbf82ca565145e775cdea45fbe2659",
+      "ordinal": 152,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0153",
+      "configuration_hash_sha256": "4bb104ab488c613c0d801268b9b78480fc727c7637b1c7f270849ddbd4dbbd20",
+      "ordinal": 153,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0154",
+      "configuration_hash_sha256": "6401c249a4d7b76dc9c17622423dcec9dcf25420e4dc50dbadf02709e4f47395",
+      "ordinal": 154,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0155",
+      "configuration_hash_sha256": "03e96fcfbea20093ad9e0c44f4c3d46d483d9d2ead77da518e4fc6e49981f6fc",
+      "ordinal": 155,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0156",
+      "configuration_hash_sha256": "2176d0c4c9caca98bc7a5ca625cd20e3e7b3d9aafc42edc79a606bd26284b73a",
+      "ordinal": 156,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0157",
+      "configuration_hash_sha256": "c804da2dc23a08073da5309d0838e81972fa269cea7a6f5155d5972379aec79c",
+      "ordinal": 157,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0158",
+      "configuration_hash_sha256": "f40db8cca7fc39a9076c939c4b444e92eea8240ce51e80e72bffe805872f5a4d",
+      "ordinal": 158,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0159",
+      "configuration_hash_sha256": "3327df142596cd894eb71084337340e463b750fc529cb6ad5268484296bdfb1d",
+      "ordinal": 159,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0160",
+      "configuration_hash_sha256": "5be44f8a18f246d2144aaa85e3bb2dd76ca0afc6bea736978cd6c41fef6b2237",
+      "ordinal": 160,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0161",
+      "configuration_hash_sha256": "dc08aa8aadbaca2dc0e8399fd663b88b990bbee2f863309a242b75f5ba928059",
+      "ordinal": 161,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0162",
+      "configuration_hash_sha256": "8fd3569031468765a1dc812457ffca43d0a8c583ff263226637926af49d36a62",
+      "ordinal": 162,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0163",
+      "configuration_hash_sha256": "9143e512b82ee7baa3f37e98ed100db41cb1f282ed4972c8131d6d22e093d732",
+      "ordinal": 163,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0164",
+      "configuration_hash_sha256": "d024ef27d639207c2013e54a3b964632904b3a33b7214fcba836fd3c4e527046",
+      "ordinal": 164,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0165",
+      "configuration_hash_sha256": "a3c4ff8eb4360c503e9dc1a29afa1bfeed70d87ac48bd40d243adb5538a84e88",
+      "ordinal": 165,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0166",
+      "configuration_hash_sha256": "5603df02b5c5292efe283d0e544acef5b6e137b8d98646539b8fda83f74721fa",
+      "ordinal": 166,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0167",
+      "configuration_hash_sha256": "84764f72e8b465b4586900122b506e59e38b486021ebe492f58a632e80fdd9e1",
+      "ordinal": 167,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0168",
+      "configuration_hash_sha256": "3634dab2e11b348bda90848fca4877da222b2bad4e64a5635cb561848abd74fc",
+      "ordinal": 168,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0169",
+      "configuration_hash_sha256": "ed0ba596c1118430ce77badd5a7c91e472fa187ff5b6986fe20046970741376f",
+      "ordinal": 169,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0170",
+      "configuration_hash_sha256": "c77577ec29596f501a28a04a6dc3adab1a7d92a0ce49a8cdf06afac235244203",
+      "ordinal": 170,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0171",
+      "configuration_hash_sha256": "9a8ee71caa8e9170f608783bcaffccc442e076a7e101e2908f4abb76aed7e24d",
+      "ordinal": 171,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0172",
+      "configuration_hash_sha256": "b3979467b1a5f040d0b3321373176ca69b135c97cae80ca98af870d65cece415",
+      "ordinal": 172,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0173",
+      "configuration_hash_sha256": "7a8635cc54ab9594146493e896143594224892c30b1f10e2784a60bfaffd22d3",
+      "ordinal": 173,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0174",
+      "configuration_hash_sha256": "1c9ea35fe3fcdc92990bc9a27c5f6910539616a74d1bc3c480f77a3450363fd1",
+      "ordinal": 174,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0175",
+      "configuration_hash_sha256": "af16eaf19f0abd4a7b018c595f457fd9c838e88bda95bdb01409357eca556fda",
+      "ordinal": 175,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0176",
+      "configuration_hash_sha256": "572b1c4a5901a8c1d0c1d08fbeb4d346ea5a2206a172827879f15ed91bdb7baf",
+      "ordinal": 176,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0177",
+      "configuration_hash_sha256": "12149075089c3dccd5f6b412a3bbe7c3c4b29a4f06b7453f6ee37f657899344e",
+      "ordinal": 177,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0178",
+      "configuration_hash_sha256": "ea651a310511af5ff6db54018a09c1beff7d90cd3c0851d92ee09881e9ec5062",
+      "ordinal": 178,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0179",
+      "configuration_hash_sha256": "69ea5507acb0472a434fe38400a7d0b50399a07ec335c15b4cf15614036516ca",
+      "ordinal": 179,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0180",
+      "configuration_hash_sha256": "ab1a0c6f008f818f622b78cb1d64d3625e2fda36773ff1f51a34db0800f08cb1",
+      "ordinal": 180,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0181",
+      "configuration_hash_sha256": "107ce0d45517218f0971ac2f189886f802813e10853d8262ace16a79163042bb",
+      "ordinal": 181,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0182",
+      "configuration_hash_sha256": "7f7d052bcd9e256f6d079c1b5a8b62070c4c4099392f4c19cbc08526579e167a",
+      "ordinal": 182,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0183",
+      "configuration_hash_sha256": "b47e0b4ff1cf121a64628134d57f1a4d4ae6a5e4594b774596149c010508b9a0",
+      "ordinal": 183,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0184",
+      "configuration_hash_sha256": "6b59ce2bac913451e711d9f0dad086bafdfcb2f7277781e57a2ff33d661b803a",
+      "ordinal": 184,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0185",
+      "configuration_hash_sha256": "0bcb62a0d928821fd749386da688d97d6ab39cebc2748e793a580e3773df94a9",
+      "ordinal": 185,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0186",
+      "configuration_hash_sha256": "8db7a8d6e0085d7666444b5d5321d8be5c750c31a481dc6a9cfe2b7c74cb9357",
+      "ordinal": 186,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0187",
+      "configuration_hash_sha256": "f1caff49c426653a4b9e9804d6603e1cda3f810fd9c89524642a62ef38d24fab",
+      "ordinal": 187,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0188",
+      "configuration_hash_sha256": "7758af7f0d4c7a8923da5672d25422283ee4ce717c61b90857581a928c4af758",
+      "ordinal": 188,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0189",
+      "configuration_hash_sha256": "e05c28704f2c9ca6408cfa6f59c0943ed8e8ecc7dfa5ac4e0b7e17dac894cc8c",
+      "ordinal": 189,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0190",
+      "configuration_hash_sha256": "7afffc185991cdb5d60441c70ac25677d18982734339e4e5b5590975d4f2488a",
+      "ordinal": 190,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0191",
+      "configuration_hash_sha256": "0f0e90086cc0eeb05c189655e87717bbc023a143e17a6975fd8f8153c6c1153f",
+      "ordinal": 191,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0192",
+      "configuration_hash_sha256": "4e3056f2f43c3c653e398218fa72fbbf6cbbd421d2fccc06653b90e2be30e7fe",
+      "ordinal": 192,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0193",
+      "configuration_hash_sha256": "aa461edd3aea7d5e7c7a067dd7443020e06e4c72e654ba2d9b098dd7b11b0f7c",
+      "ordinal": 193,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0194",
+      "configuration_hash_sha256": "be2dadca22ca439ad4ee8b02cd22c0e3a8a5d82f65b15cad4860a8e8ab83439b",
+      "ordinal": 194,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0195",
+      "configuration_hash_sha256": "3a2d2fe7da5b75df207186cd17a08b00539e805024ad6062897157c63e3f74db",
+      "ordinal": 195,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0196",
+      "configuration_hash_sha256": "d3bc70ce3d8c1238ece4a4d40d6657e7d5bf3b3471ffa12d9ae121a62c0c04ab",
+      "ordinal": 196,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0197",
+      "configuration_hash_sha256": "c50e816e631746bd3795909a611d20ff11109274c69bff5a8264b033daf59137",
+      "ordinal": 197,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0198",
+      "configuration_hash_sha256": "74a1f71ba0721121760c95982110caec5480c09e2fa2ce755157b983e7e53baf",
+      "ordinal": 198,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0199",
+      "configuration_hash_sha256": "dd018793473d4b515ede64924895a1e4c76b7e766664d6e53aa577daa40d9c01",
+      "ordinal": 199,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0200",
+      "configuration_hash_sha256": "79c29da079e692ed44c66c1a8fda20cdd24412be34b02c45c03af6fd2a267944",
+      "ordinal": 200,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0201",
+      "configuration_hash_sha256": "5c3a0c4eafc870aec64715a114d9d1adfcb8437e6e6c0a15633f242ffa7d399a",
+      "ordinal": 201,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0202",
+      "configuration_hash_sha256": "164e10a8234781be7e4bb5051332c9b3821c7791b66a28fbdd21ff5c3a8992e3",
+      "ordinal": 202,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0203",
+      "configuration_hash_sha256": "73a0507de3b5c6ab0e61e21b46b149f4360ada550b1b6970d6d44b7f3ee108a7",
+      "ordinal": 203,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0204",
+      "configuration_hash_sha256": "94a593f9098ba9a258e1f271253ec86fea063abbdb1b86abb0bc3debb4c4f815",
+      "ordinal": 204,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0205",
+      "configuration_hash_sha256": "d38243d84985ee27f1d0f1a97ea5c30f57e6b74c9ff0b7f6c2fd89e4e0828a37",
+      "ordinal": 205,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0206",
+      "configuration_hash_sha256": "de7f448d9c9b095ce8153bf8b7abfa34f45848730901077db5848af9de2bca1c",
+      "ordinal": 206,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0207",
+      "configuration_hash_sha256": "410c3db2f283410d0387591e926a4beb906274d11c7727410cf69de5a20bffbd",
+      "ordinal": 207,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0208",
+      "configuration_hash_sha256": "e63049793a142bc1ca63439610c004a1d80c0e805b2f466f004a8971b69dbc02",
+      "ordinal": 208,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0209",
+      "configuration_hash_sha256": "a66026234d9dd8ebb684e6bc95d887f7ef354aa71c1a974ec82e72b01e30b474",
+      "ordinal": 209,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0210",
+      "configuration_hash_sha256": "593ca6528c429c99d26e9daf83f327307cae0933bee4022479a6c4fd970f0178",
+      "ordinal": 210,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0211",
+      "configuration_hash_sha256": "58165ced3bac753540ef7078988e4efd4657559a52e6acb968a21305c5d82a41",
+      "ordinal": 211,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0212",
+      "configuration_hash_sha256": "9aa569489a07143cd6320053fee47f5689c7040e90381161af574fd55be4fceb",
+      "ordinal": 212,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0213",
+      "configuration_hash_sha256": "85c9dac15493c9eed5559c94de7783dad1b4e6c4b8bff2e50ceaf56fa2a5a033",
+      "ordinal": 213,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0214",
+      "configuration_hash_sha256": "308885529823fb1209cb63df7cda1b82b78d97fb2ad438753af8f813ce779937",
+      "ordinal": 214,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0215",
+      "configuration_hash_sha256": "1700702c4d0d9f9cd9e507e21fcd6f63fa40cd5c437c471be8dda590a90819d7",
+      "ordinal": 215,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0216",
+      "configuration_hash_sha256": "03eb32f6009c8f227b65f55b20067e53faca365b0a07cb1ce03bb086bee42888",
+      "ordinal": 216,
+      "parameters": {
+        "basis_aggregation_days": 3,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0217",
+      "configuration_hash_sha256": "f63ccd2f154e8b2198fbc4795ae7221ce69ea7b88b6e1208d394831f72246f41",
+      "ordinal": 217,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0218",
+      "configuration_hash_sha256": "49388bc703fb8c94f28f5ee3398e7abf41a2b49bd2a305e46fe787001f9917f3",
+      "ordinal": 218,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0219",
+      "configuration_hash_sha256": "634d93c8e09a68155a8756e1decdd22f91eb3f0c25a5500ee70a8d8d57c0a592",
+      "ordinal": 219,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0220",
+      "configuration_hash_sha256": "8139ad9488680b89559171ccfb1f1397cd0e7bb269ded44b09282ded13ae05ac",
+      "ordinal": 220,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0221",
+      "configuration_hash_sha256": "259d4fb03e47c05d3431778e306d5591bd9834f8f816d42aa04f8abd2f3ae741",
+      "ordinal": 221,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0222",
+      "configuration_hash_sha256": "8b990aec55c18cb64186d45ac5f3f191f74dd3676923ce7e454127ef26530f17",
+      "ordinal": 222,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0223",
+      "configuration_hash_sha256": "4d274f850a8d364a38a7454c7d59f0374d0b91058eb35528a7d495793a956720",
+      "ordinal": 223,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0224",
+      "configuration_hash_sha256": "911ee31b86f8cd355a7ba68f99a336dda4ba3b9af040a39ec4aa9c9692035944",
+      "ordinal": 224,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0225",
+      "configuration_hash_sha256": "91295077531d90035432b571c8270c00378dc64a5e10bb79c302dffdbeffa012",
+      "ordinal": 225,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0226",
+      "configuration_hash_sha256": "7211f5dee69554d9d724e049eb4ae7b24e91489194615861a8208744a28237ab",
+      "ordinal": 226,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0227",
+      "configuration_hash_sha256": "27f729ac7e231799a3d8e52b8de8b6b6fb21846628356a280b93be29433b1ab8",
+      "ordinal": 227,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0228",
+      "configuration_hash_sha256": "3f4e0cb0f41c020f99a5fc51bf83fa8abca9d7e6804cb30f9a62bfc709ed9e9f",
+      "ordinal": 228,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0229",
+      "configuration_hash_sha256": "63828dbee39061adb5854a1deeb799d8afddc35a8768d837c261e6a3cd2393fd",
+      "ordinal": 229,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0230",
+      "configuration_hash_sha256": "9cc0e9ebca849b666f97cbabbaace6ce450b78835eae76335b14c01883b4a51c",
+      "ordinal": 230,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0231",
+      "configuration_hash_sha256": "7796de362693114355a68815ba7e43356e50ed61b9397de7abf240009d66ee94",
+      "ordinal": 231,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0232",
+      "configuration_hash_sha256": "8898cd87f805ce810158140ed7cc41da85471573fec572b55c32cffbb0ac5609",
+      "ordinal": 232,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0233",
+      "configuration_hash_sha256": "75a15cefd4fe93d399118374840105385ed063834c121e1b0897348165aa75e5",
+      "ordinal": 233,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0234",
+      "configuration_hash_sha256": "50913849bc775887e53c52e682758deda91d92c7c894c112b8dab642705ca0c9",
+      "ordinal": 234,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0235",
+      "configuration_hash_sha256": "d7771fb0d47b4e39382dac150b53fa0010f0db02683c525ad0ab4f2b1d2f7705",
+      "ordinal": 235,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0236",
+      "configuration_hash_sha256": "4b82e2d34c3b1513b1c94d54fb297b6df7161eb1cf46fdfac74d43c8c79823ae",
+      "ordinal": 236,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0237",
+      "configuration_hash_sha256": "5b289789adbc952ba8f03fbf8ed8c6e3cf1763de47ec45c67bfd0cd36152f87e",
+      "ordinal": 237,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0238",
+      "configuration_hash_sha256": "6d8ade0243af4d72ecde7f27358bb004229f3a766b90e453ce9d246198816f17",
+      "ordinal": 238,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0239",
+      "configuration_hash_sha256": "1ded0024ebb2a7fbdbfa42563eaafade187462aa2ee00136e77161c8bf3c0775",
+      "ordinal": 239,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0240",
+      "configuration_hash_sha256": "68148943cf7e19a21f5944152fa564e49325160671219cb499d66e6c9caf6922",
+      "ordinal": 240,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0241",
+      "configuration_hash_sha256": "a2de53f94c44a3127e6569400ca9cb7cb4304a8cfe118106f388f91176244043",
+      "ordinal": 241,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0242",
+      "configuration_hash_sha256": "f2de463b117c6d6b12339afc9cb0f98c170513aed7df49342e6a6bba1ca8e012",
+      "ordinal": 242,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0243",
+      "configuration_hash_sha256": "439120b667b635ab5ca57d65d38d264649fff6a03720b262bf46c357386b76ef",
+      "ordinal": 243,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0244",
+      "configuration_hash_sha256": "3a7e3be1b44c15ee5f033f93fd723e3199a025e6ae4af1df699e30a08d3c3f2c",
+      "ordinal": 244,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0245",
+      "configuration_hash_sha256": "39ac59f7ddadc1c6a6ce5953b61ac96fd80c6928e7f51c5a9c01a54c098ad4c9",
+      "ordinal": 245,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0246",
+      "configuration_hash_sha256": "1112d1a5050b9b9c79293e458849ef88622daceeedd593a397b12e10291b74d6",
+      "ordinal": 246,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0247",
+      "configuration_hash_sha256": "f6dbd16575ca96a64f9872c2735753adfa432b9d60f2023c1d060ea24f141c84",
+      "ordinal": 247,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0248",
+      "configuration_hash_sha256": "b594bb15308676fd06e91847844f9650e2d0d3c5bf1aab63199258be47e0995e",
+      "ordinal": 248,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0249",
+      "configuration_hash_sha256": "e04e860718c0b1ce527a4ada91024c1517d15a602f5f79e53255561f9f9f0265",
+      "ordinal": 249,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0250",
+      "configuration_hash_sha256": "2bf547f32bb1dca8a38c80d3dbf2ba18786ab83418f420e9b09bb6b94182fd75",
+      "ordinal": 250,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0251",
+      "configuration_hash_sha256": "d9d04b21b07e9a9ff0cd01ee77f00e4ea85123254d5ca759704d4d23d1679530",
+      "ordinal": 251,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0252",
+      "configuration_hash_sha256": "9189ac59c748320f84f7e685905631128ef2d4647e8ad7754262a6f46d94ff2e",
+      "ordinal": 252,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 90,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0253",
+      "configuration_hash_sha256": "205a99b35ba1b42740733a5dda12f2f140eecccd67ae2ad89ff578a67243521d",
+      "ordinal": 253,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0254",
+      "configuration_hash_sha256": "4dc34c7e953e675f1ed6694db5caef1da8ec17ea3908e519f5d182a0b83ebadc",
+      "ordinal": 254,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0255",
+      "configuration_hash_sha256": "ce779d71bfd875712cc89cf69db1445cbf168f83564b465fc05b07593d59d803",
+      "ordinal": 255,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0256",
+      "configuration_hash_sha256": "9400f11f6199f43f9a8939ec5ddfdcf8a9639e6101ad0548dab53186da1482b9",
+      "ordinal": 256,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0257",
+      "configuration_hash_sha256": "a8e7243b736fd8f5efcbbe6a661a51be23621e26a4c0d7c41fd35450031697e0",
+      "ordinal": 257,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0258",
+      "configuration_hash_sha256": "341569409b38c8b4bcb57640dab41a17aa46e5cf108a3c2e02609faf54ff093d",
+      "ordinal": 258,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0259",
+      "configuration_hash_sha256": "7902f2e5ab07feb1c3bcec456d5d4cb473f3ea5d827b4bf041546a55507dd110",
+      "ordinal": 259,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0260",
+      "configuration_hash_sha256": "46908f44b4fd917e59d5bb7221d0a8a04349f062d1b564cc232a0877433c5713",
+      "ordinal": 260,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0261",
+      "configuration_hash_sha256": "ee4c63b072979c0739874593d5a8140307a73917045312d1ef8305c2825eed4d",
+      "ordinal": 261,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0262",
+      "configuration_hash_sha256": "e086b8d6e144eaf03c5ac966696d5b07f224f36396fa8a72e7d2657590dd0953",
+      "ordinal": 262,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0263",
+      "configuration_hash_sha256": "7456604baee2681ff7641a48aa34226656998e77cb6dfa1de1613abde5b67ed6",
+      "ordinal": 263,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0264",
+      "configuration_hash_sha256": "6a481f9595ac64a0da11b1292506dcb9a8de8ceda53e62f4029eb35faa671840",
+      "ordinal": 264,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0265",
+      "configuration_hash_sha256": "9a563ffc63a281af221f7c7b7ba6a37a6058253acb8626fb59c1f50ec17c6381",
+      "ordinal": 265,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0266",
+      "configuration_hash_sha256": "a141b3b31fb98273a9d2359c9a3907a00e9d3a39222c069d40e2d39cf9285290",
+      "ordinal": 266,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0267",
+      "configuration_hash_sha256": "0c2335e461e1b7c5e083c815f247949def073b875bf71ad9014a0e0a080b65fa",
+      "ordinal": 267,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0268",
+      "configuration_hash_sha256": "5352fdaaea9149c9eb993a7198ee3afd45ef72eb1d5f74d82685f98f166fdee1",
+      "ordinal": 268,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0269",
+      "configuration_hash_sha256": "21ce216a8111b4ee561f8c3690ed87c9f9a4de90ce05fde6db8ef9a7c6f24215",
+      "ordinal": 269,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0270",
+      "configuration_hash_sha256": "db2c9ddc556ef61eb55ba3ed7f97c7b803578c54bb3910477e6b219441982652",
+      "ordinal": 270,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0271",
+      "configuration_hash_sha256": "1df74759828b7c8acbd279f12c22d7057ede86162e85d4e33d2d66d2413f3d36",
+      "ordinal": 271,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0272",
+      "configuration_hash_sha256": "af88d75946b42984bac3e8d449fb96e6b695a9c91c87d3e0b8820ff7c312f653",
+      "ordinal": 272,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0273",
+      "configuration_hash_sha256": "a08ac6347bc4a04e5da4d1204637852e7831f76e57869ddb4655691b0069b801",
+      "ordinal": 273,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0274",
+      "configuration_hash_sha256": "820546b839194255fc414352c91e62437ba5d8e795a35ed604f47903d90d0ddf",
+      "ordinal": 274,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0275",
+      "configuration_hash_sha256": "a468f4eed4e31fc86acb753245f8c3ba9484601b39c01435ae7efd6ceb9e8297",
+      "ordinal": 275,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0276",
+      "configuration_hash_sha256": "8b3f9891a2d26c57c6667df3d87532fdc83d8e1896210922697d531859294028",
+      "ordinal": 276,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0277",
+      "configuration_hash_sha256": "dc0d2b60723402d025af7a0faa8934d262abecd281b0245b5d35da61dc571f7b",
+      "ordinal": 277,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0278",
+      "configuration_hash_sha256": "24f3d272763ae5aed7b4e06d08dd0b77f89f0d3f62f5790c0f6e3b60e4ad66b3",
+      "ordinal": 278,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0279",
+      "configuration_hash_sha256": "e67cf32f098825f7a6409a85bbc7308ae60cc09d47bdd1cf4eba6e8757992847",
+      "ordinal": 279,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0280",
+      "configuration_hash_sha256": "1df2740aaa38a9c0ea6e638e23f9c9176dfc554f3c339d6745a49ede38ed3718",
+      "ordinal": 280,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0281",
+      "configuration_hash_sha256": "238e4a1eae2f554e83b72fa4c9f15f1879ad98a383950bb22c1571db50985993",
+      "ordinal": 281,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0282",
+      "configuration_hash_sha256": "06e53243cc2cdb4e19383a66bc2365567e2e6f89c074d78a51a4dd005b308487",
+      "ordinal": 282,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0283",
+      "configuration_hash_sha256": "bc7e32037f09690ecb649a26fc769f650f917bf94846ee4c9cb397033b54ad0e",
+      "ordinal": 283,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0284",
+      "configuration_hash_sha256": "490ebce11e637e9451bebdfa9ef7385560bf22bde38bba6c1b3e444b07bae53a",
+      "ordinal": 284,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0285",
+      "configuration_hash_sha256": "98224abbd694ba9b290933574368d3b4d3348754468b5212a000b186227d2bb3",
+      "ordinal": 285,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0286",
+      "configuration_hash_sha256": "4431d8d80c423e3958e7f631d82ed8c6566847ec6bb3cb3e4b84e0c022344b9d",
+      "ordinal": 286,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0287",
+      "configuration_hash_sha256": "61b5829b7cf5e70a982c3720eea848d97486e481e9236564398916ff85803b4d",
+      "ordinal": 287,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0288",
+      "configuration_hash_sha256": "47c13bbb60d680ce6759bee48d3f9e94617c77fd2e232380c5b14e1a6e28f755",
+      "ordinal": 288,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 180,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0289",
+      "configuration_hash_sha256": "0de94839dc824b0cf371f21ac8f887ed8aefcf79c4e22709769bc311feed7069",
+      "ordinal": 289,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0290",
+      "configuration_hash_sha256": "8814546d8baf00342315cc9737132768c04f0fe01187d451827a22038bf2800a",
+      "ordinal": 290,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0291",
+      "configuration_hash_sha256": "479a30b35880779e391365c1a79884888948f525cf70ed18aeab42a07ae06e9b",
+      "ordinal": 291,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0292",
+      "configuration_hash_sha256": "c4f2f8ee69ec5fd18ab196345a57da20522aec8351bc20ac72f67412996db7f8",
+      "ordinal": 292,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0293",
+      "configuration_hash_sha256": "a0343118763c8abe0bdd9bdad34d217d74baecc6b2e4c5fd8877c6da66801cb6",
+      "ordinal": 293,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0294",
+      "configuration_hash_sha256": "7b845d3570ccdb30a3c1aa244c496152287a0312fa518b7d30563a82a410f66a",
+      "ordinal": 294,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0295",
+      "configuration_hash_sha256": "8fbc3c468cb987dc9eee0562aa770f9d05ab784334d306a37e13632a5b2a5b0e",
+      "ordinal": 295,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0296",
+      "configuration_hash_sha256": "15c29850bb7a2780ffe4244fb246729c1e1a11f60bbbac6475b470adf0171b54",
+      "ordinal": 296,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0297",
+      "configuration_hash_sha256": "3322748714157fc475e433f0868158e6d46020d1e0a902a386e87788478e3c20",
+      "ordinal": 297,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0298",
+      "configuration_hash_sha256": "af3cba0f40596dc0b747179c681f94097830adea0830c937d82115e89d00af5b",
+      "ordinal": 298,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0299",
+      "configuration_hash_sha256": "ad5ea6212be6bbd5afce48d4c11b2f5321274bd2ccce0010b7f03344b095eaf6",
+      "ordinal": 299,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0300",
+      "configuration_hash_sha256": "137b758e94763e99e44cc25a04f1126c1403b8e76b606cea163d6615ee26997c",
+      "ordinal": 300,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "rich_positive",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0301",
+      "configuration_hash_sha256": "0788c30efc339ed82e4e006c03ee55ae3d7b2528ad9ad79e2a7adcbe59afc519",
+      "ordinal": 301,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0302",
+      "configuration_hash_sha256": "3941432219d323ab3850dcb757cf680198b5ff6e3a2ea43cd7901a16689caf77",
+      "ordinal": 302,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0303",
+      "configuration_hash_sha256": "7d6227350257eedcb29e837d638227554fec3a95b6c3b4d5da6bb6b9c16c2b1f",
+      "ordinal": 303,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0304",
+      "configuration_hash_sha256": "1861fbdfbe923836d2d59ce04287880c83b617fa8a243674646e728c53ddb7d6",
+      "ordinal": 304,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0305",
+      "configuration_hash_sha256": "b77afd71ec645894989978029da75f166b2cc80a31738a1b6a217e9983d1e800",
+      "ordinal": 305,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0306",
+      "configuration_hash_sha256": "030cef53eb0ce0d572f4db6774b89c5d14c06ff3e628aa9c568b606187b88151",
+      "ordinal": 306,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0307",
+      "configuration_hash_sha256": "2c64b21d47f0f4fddbe70b4d7e7d5af8182ce5e45f59d8d0da428fff99b6c2d3",
+      "ordinal": 307,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0308",
+      "configuration_hash_sha256": "dee19715aaa18ebb23530e64bebab6a351e01838e8f81d589a94a5320b2d98d5",
+      "ordinal": 308,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0309",
+      "configuration_hash_sha256": "8fbdf650c67494627325dbf184dabf5eae4dd8b4c69b50d8e4caf9649a714e34",
+      "ordinal": 309,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0310",
+      "configuration_hash_sha256": "67197fc83db3f0ed28ef42b22fe3694affa1902b9a9d24a7cbb94b042a4a4b13",
+      "ordinal": 310,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0311",
+      "configuration_hash_sha256": "2200c862ef41818c94854be8a5f018f18e235dbca0c17d1d1a14cf712b3ab417",
+      "ordinal": 311,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0312",
+      "configuration_hash_sha256": "65f888c178f62b6e9d9a224a17f81538f721d81775d8942ab98ea83e075a8227",
+      "ordinal": 312,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "cheap_negative",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0313",
+      "configuration_hash_sha256": "c8a2eceaf8197e646c740777312275f617a74d26a22f71814cedb1d766f738b3",
+      "ordinal": 313,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0314",
+      "configuration_hash_sha256": "4aa6fb43b06b9a343437f05324e54b22fce73a85b4b0cf835d90ae9fb1a2f3ca",
+      "ordinal": 314,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0315",
+      "configuration_hash_sha256": "9bb602dac51cc791d425426c50bd7f416f07eac8de9ebfe3c4d1358c10eb74ad",
+      "ordinal": 315,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.9
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0316",
+      "configuration_hash_sha256": "edd774adbc79a4c686a6e5de19064f2247ab5b58d6928c6b59ae27810e560cdc",
+      "ordinal": 316,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0317",
+      "configuration_hash_sha256": "1a89098d8857003eba1fc83eae81c9598ab9cba5d12bb0d45b5d4552e973298a",
+      "ordinal": 317,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0318",
+      "configuration_hash_sha256": "98d153894f6f0691174fe88a04d8e1d276c1d5cd1605eb04866cc2bdaa3069fd",
+      "ordinal": 318,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.95
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0319",
+      "configuration_hash_sha256": "c75b99f777c6d07bbc7f6ae752b918e466178f2fc8fe8eaa5ef797bc56c9fc22",
+      "ordinal": 319,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0320",
+      "configuration_hash_sha256": "7d52a105c7f54464d09a0936a4c9338b136ea6a04cec7a67aedd96369d5226ce",
+      "ordinal": 320,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0321",
+      "configuration_hash_sha256": "fc6be8e5497827ed5e22f10ca4ac07f60c847a1c79a75b70aaddb0e8b2bdac98",
+      "ordinal": 321,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.975
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0322",
+      "configuration_hash_sha256": "2558849b64882ed5356300ee2a447d1123337f26dd382db8184a7bc05c81aa6e",
+      "ordinal": 322,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 7,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0323",
+      "configuration_hash_sha256": "d9596a7b66ea308f48f8c4b9f5ef60441baa8e78514c8b60714fb35b074db1db",
+      "ordinal": 323,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 14,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    },
+    {
+      "cell_id": "EBCR-GRID-001-0324",
+      "configuration_hash_sha256": "e7380bb82806d023fa2335a5f69b158e9cb6c37acb5140581a2f43884137b7e6",
+      "ordinal": 324,
+      "parameters": {
+        "basis_aggregation_days": 7,
+        "horizon_days": 28,
+        "orientation": "absolute_extreme",
+        "rolling_reference_days": 365,
+        "tail_quantile": 0.99
+      }
+    }
+  ],
+  "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+  "expected_configuration_count": 324,
+  "experiment_id": "EBCR-001-BASELINE",
+  "grid_id": "EBCR-GRID-001",
+  "primary_anchor": {
+    "basis_aggregation_days": 1,
+    "horizon_days": 14,
+    "orientation": "rich_positive",
+    "rolling_reference_days": 90,
+    "tail_quantile": 0.95
+  },
+  "program_id": "EBCR-001",
+  "schema_version": "1.0"
+}

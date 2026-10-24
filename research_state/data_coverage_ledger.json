@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "assets": [],
+  "venues": {},
+  "cutoffs": {
+    "global_data_cutoff_utc": null,
+    "source_cutoffs": {}
+  },
+  "exclusions": [],
+  "last_updated_utc": null,
+  "notes": [
+    "Empty ledger; populated when sources are audited and data is fetched.",
+    "Every exclusion must record reason, source, evidence path and UTC time."
+  ]
+}

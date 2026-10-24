@@ -5,15 +5,23 @@
   "fixed_top_n": null,
   "batch_size_for_checkpointing": 25,
   "rank_frontier_exhausted": false,
-  "source_cursors": {},
+  "source_cursors": {
+    "coinpaprika": {
+      "endpoint": "https://api.coinpaprika.com/v1/tickers?limit=10",
+      "retrieved_at_utc": "2026-10-24T15:08:12Z",
+      "hash": "f00f330039a81800c3ed993e03c21ba8e903abdb8514db76e294c69c5229c2bd",
+      "status": "ok_discovery_only"
+    }
+  },
   "candidates_discovered": [],
   "candidates_verified_for_pit_analysis": [],
   "candidates_rank_unverified": [],
   "candidates_rejected": [],
-  "last_updated_utc": null,
+  "last_updated_utc": "2026-10-24T15:08:20Z",
   "notes": [
     "Empty initial frontier; source discovery has not yet executed.",
     "Current rank must not be historical membership.",
-    "Persist source URL, retrieval time, raw response hash, cursor and candidate order for each page."
+    "Persist source URL, retrieval time, raw response hash, cursor and candidate order for each page.",
+    "CoinPaprika /v1/coins and /v1/tickers accessible (free). Current ranks only; no confirmed free PIT historical rank history found."
   ]
 }

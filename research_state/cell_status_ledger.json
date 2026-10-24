@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-BASELINE",
+  "grid_id": "EBCR-GRID-001",
+  "grid_manifest_path": "research_state/grid_manifest_v1.json",
+  "total_cells": 324,
+  "cells": {},
+  "summary": {
+    "ok": 0,
+    "blocked": 0,
+    "failed": 0,
+    "incomplete": 0,
+    "invalid": 0,
+    "not_run": 324
+  },
+  "last_updated_utc": null,
+  "notes": [
+    "Ledger initialized; populate as grid execution proceeds.",
+    "Each non-ok cell requires reason, evidence_path, and next_step."
+  ]
+}

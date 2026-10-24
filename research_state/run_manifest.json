@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "program_id": "EBCR-001",
   "experiment_id": "EBCR-001-BASELINE",
-  "status": "initialized",
+  "status": "audit_in_progress",
   "registered_at_utc": null,
   "data_cutoff_utc": null,
   "grid_config_path": "configs/basis_crash_grid_v1.json",
@@ -19,6 +19,7 @@
   "artifact_hashes": {},
   "notes": [
     "Design initialized; no empirical data has been fetched or evaluated.",
-    "Update only with verified execution."
+    "Update only with verified execution.",
+    "Source discovery tested (CoinPaprika OK). PIT historical rank history not confirmed from free sources; treating as discovery-only per protocol."
   ]
 }
