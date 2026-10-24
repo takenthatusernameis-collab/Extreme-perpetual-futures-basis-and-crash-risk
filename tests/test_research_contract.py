@@ -23,7 +23,7 @@ class ResearchContractTests(unittest.TestCase):
 
     def test_point_in_time_and_expanding_universe_rules_exist(self):
         prompt = (ROOT / "prompts/continuous_research_operating_contract_v1.md").read_text(encoding="utf-8")
-        self.assertIn("There is no fixed top-N cutoff", prompt)
+        self.assertIn("with no fixed top-N cutoff", prompt)
         self.assertIn("Current rank must never be projected backward", prompt)
         frontier = json.loads((ROOT / "research_state/universe_frontier.json").read_text(encoding="utf-8"))
         self.assertIsNone(frontier["fixed_top_n"])
@@ -33,7 +33,7 @@ class ResearchContractTests(unittest.TestCase):
         prompt = (ROOT / "prompts/continuous_research_operating_contract_v1.md").read_text(encoding="utf-8")
         self.assertIn("No paid APIs", prompt)
         self.assertIn("exchange credentials", prompt)
-        self.assertIn("live or paper trading", prompt)
+        self.assertIn("live trading or paper trading", prompt)
 
 
 if __name__ == "__main__":
