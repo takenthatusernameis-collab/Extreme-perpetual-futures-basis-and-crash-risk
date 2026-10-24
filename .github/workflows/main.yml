@@ -66,6 +66,7 @@ jobs:
           test_venv="$RUNNER_TEMP/controller-tests-venv"
           python3 -m venv "$test_venv"
           "$test_venv/bin/python" -m pip install --disable-pip-version-check --no-input pytest
+          "$test_venv/bin/python" scripts/generate_grid_manifest.py --output "$RUNNER_TEMP/basis-grid-manifest.json"
           "$test_venv/bin/python" -m pytest -q tests
 
       # Sole durable workflow-level diagnostics collector and ledger writer.
