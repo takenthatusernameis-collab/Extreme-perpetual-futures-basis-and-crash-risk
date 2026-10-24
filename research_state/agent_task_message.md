@@ -3,9 +3,9 @@
 Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
 ## Immediate deliverables
-1. Implement S3 XML (ListBucketResult) listing parser for ETHUSDT mark/index; enumerate missing dates; update data_coverage_ledger.json.
-2. Extend ingestion prototype to multi-day processing with >=95% coverage gate; output research_state/ingestion_multi_day_sample.json.
-3. Verify first 10 candidate mappings against Binance archive file existence; record blocked statuses.
+1. Extend ingestion prototype to multi-day processing with >=95% coverage gate; output research_state/ingestion_multi_day_sample.json.
+2. Verify remaining candidate mappings (ranks 11-25 non-blocked) against Binance archive file existence; record blocked statuses.
+3. Begin multi-symbol ingestion for BTCUSDT+ETHUSDT over overlapping complete-date window.
 4. State updates: update handoff and next task.
 
 ## Boundary

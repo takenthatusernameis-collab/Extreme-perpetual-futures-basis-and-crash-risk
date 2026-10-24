@@ -58,7 +58,7 @@
         "latest": "2026-09",
         "file_count": 81
       },
-      "notes": "index has 367 fewer files than mark (significant gaps); S3 HTML listing attempt returned 0 parseable links (JS-rendered); recorded as incomplete; next: use S3 XML listing API or monthly file enumeration."
+      "notes": "S3 XML listing verified: mark=2464 files (33 missing 2019-12-25..2020-01-18 and 2021-01-25..02-20), index=2097 files (400 missing, sparse early 2020). No forward-fill. scripts/s3_xml_listing.py."
     }
   ],
   "venues": {

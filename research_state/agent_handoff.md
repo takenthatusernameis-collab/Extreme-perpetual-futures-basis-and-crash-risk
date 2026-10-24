@@ -7,20 +7,21 @@
 - Tests: 11 passed.
 - Universe frontier: 25 discovery candidates (rank-unverified).
 - Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (13 candidate mappings, 12 blocked categories).
-- ETHUSDT index gap audit: incomplete — S3 HTML listing not parseable (JS-rendered); needs S3 XML listing or monthly enumeration.
-- Ingestion prototype: single-day BTCUSDT verified.
+- S3 XML listing implemented: scripts/s3_xml_listing.py; ETHUSDT index=2097 files (400 missing), mark=2464 files (33 missing).
+- Candidate mappings spot-check: first 10 binance um symbols all return 200 for 2024-01-01 daily klines.
+- ETHUSDT data_coverage_ledger updated with verified counts.
 
 ## Completed this session
-1-11 prior.
-12. Created S3 directory listing parser (scripts/s3_directory_listing.py); attempt returned 0 parseable links.
-13. Updated data_coverage_ledger ETHUSDT notes (incomplete).
-14. Created candidate_perp_mapping_v1.json.
-15. Ran tests and manifest (see below).
+12-15 prior.
+16. Implemented S3 XML (ListBucketResult) parser with pagination; enumerated missing dates for ETHUSDT mark/index.
+17. Updated data_coverage_ledger ETHUSDT notes with verified file counts and missing-date gaps.
+18. Spot-checked first 10 candidate mappings against Binance archive (all 200).
+19. Ran tests (11 passed) and manifest (324 cells); git diff --check clean.
 
 ## Next action
-1. Implement S3 XML listing (ListBucketResult) parser for ETHUSDT mark/index; enumerate missing dates.
-2. Extend ingestion prototype to multi-day processing with >=95% coverage gate.
-3. Verify candidate mappings against Binance archive file existence (spot-check first 10).
+1. Extend ingestion prototype to multi-day processing with >=95% coverage gate; output research_state/ingestion_multi_day_sample.json.
+2. Verify remaining candidate mappings (ranks 11-25 non-blocked) archive existence.
+3. Begin multi-symbol ingestion for BTCUSDT+ETHUSDT over overlapping complete-date window.
 4. State updates.
 
 ## Reporting rules
