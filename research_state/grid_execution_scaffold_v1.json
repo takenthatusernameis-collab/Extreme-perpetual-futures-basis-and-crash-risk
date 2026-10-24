@@ -32085,7 +32085,7 @@
     "start": "2024-01-01"
   },
   "experiment_id": "EBCR-001-BASELINE",
-  "generated_at_utc": "2026-10-24T19:44:37.435973+00:00",
+  "generated_at_utc": "2026-10-24T20:01:36.652927+00:00",
   "grid_id": "EBCR-GRID-001",
   "grid_manifest_path": "research_state/grid_manifest_v1.json",
   "holm_correction": {

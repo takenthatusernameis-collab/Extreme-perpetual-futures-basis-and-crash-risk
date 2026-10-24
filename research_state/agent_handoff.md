@@ -13,15 +13,20 @@
 - Basis computation (all 13 verified symbols): research_state/basis_computation_q1_all.json (1001 obs, coverage 1.0 all symbols, 91 days each, 2024-01-01..2024-03-31).
 - Crash labels computed: research_state/crash_labels_q1.json (1001 labels ok, 0 exclusions; horizons 7/14/28d).
 - Integrated dataset: research_state/integrated_q1.json (1001 rows, 0 exclusions, 11 symbols).
+- Grid execution scaffold: research_state/grid_execution_scaffold_v1.json (324 cells mapped).
+- Cell status ledger: research_state/cell_status_ledger.json (324 blocked, 0 ok).
 
 ## Completed this session
-- Joined basis + crash labels on (symbol,date): 1001 rows, 0 exclusions; wrote research_state/integrated_q1.json with schema, row counts, hashes.
+- Built grid execution scaffold mapping integrated_q1 (1001 rows, 11 symbols) to 324 preregistered cells per frozen config; wrote research_state/grid_execution_scaffold_v1.json.
+- Executed all 324 cells: 324 blocked, 0 ok. Reason: minimum_history_rule_unmet (need 90/180/365 prior daily basis obs; Q1-only window cannot satisfy) plus insufficient_forward_horizon. Q1-only data window 2024-01-01..2024-03-31.
+- Recorded cell_status_ledger.json (324 cells, all blocked). Holm correction not applicable (0 tests executed; 2592 registered).
 - Ran required checks: grid manifest 324 cells; unittest 11 passed; git diff --check clean.
 
 ## Next action
-1. Build grid execution scaffold mapping integrated_q1 rows to preregistered cells (frequency/severity) per frozen config; record cell-to-slice mapping without changing config.
-2. Execute grid cells for Q1 cohort, applying correction across full 324-cell family; record terminal statuses.
-3. Update handoff/next task with concrete results and any blocked cells.
+1. Acquire pre-window daily basis history (free public source) for the 11 integrated symbols covering at least 365 days before 2024-01-01 and extend forward data through at least 2024-04-28 to satisfy L-day reference and h-day horizons; write ingestion + coverage ledger updates under a new experiment ID/path (do not modify Q1 artifacts).
+2. Recompute basis/crash labels on extended window and rebuild integrated dataset; rerun grid execution scaffold.
+3. Update handoff/next task with concrete eligible-row counts and any remaining blocked cells.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
+"""

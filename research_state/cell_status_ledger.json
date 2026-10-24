@@ -5848,7 +5848,7 @@
     "tests_blocked": 2592,
     "tests_executed": 0
   },
-  "last_updated_utc": "2026-10-24T19:44:37.449305+00:00",
+  "last_updated_utc": "2026-10-24T20:01:36.668889+00:00",
   "notes": [
     "Ledger populated by scripts/execute_grid_q1.py (Q1 cohort).",
     "Every non-ok cell has reason, evidence_path, and next_step.",
