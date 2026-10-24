@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-24T22:51:53.775926+00:00",
+  "checked_at_utc": "2026-10-24T23:46:42.173549+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -15,7 +15,22 @@
       "name": "CoinPaprika",
       "endpoint": "https://api.coinpaprika.com/v1/",
       "notes": "Current ranks only for discovery per docs; no verified PIT history."
+    },
+    {
+      "name": "CoinGecko market_chart / history",
+      "endpoint": "https://api.coingecko.com/api/v3/",
+      "notes": "Free market_chart returns prices/volumes but not market-cap rank; /coins/{id}/history limited to past 365 days for public users. No bulk PIT rank history available for free."
+    },
+    {
+      "name": "CryptoCompare",
+      "endpoint": "https://min-api.cryptocompare.com/",
+      "notes": "Historical daily endpoint requires API key (401). Not usable as free bulk PIT rank source."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap)",
+      "endpoint": "http://web.archive.org/cdx/search/cdx",
+      "notes": "Network access to web.archive.org returned HTTP 000 (unreachable) in this environment; no additional archival scraping possible this activation. Prior finding (historical pages exist) preserved."
     }
   ],
-  "conclusion": "No bulk free PIT market-cap rank history dataset located; rank remains unverified for all candidates. Listing/lifecycle evidence collected via Binance Vision S3 XML where available."
+  "conclusion": "No bulk free PIT market-cap rank history dataset located via CoinGecko (rank not in free market_chart; history limited 365d), CryptoCompare (API key required), or Wayback CDX (unreachable this activation). Rank remains unverified for all candidates. Listing/lifecycle evidence collected via Binance Vision S3 XML where available."
 }

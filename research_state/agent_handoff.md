@@ -38,6 +38,7 @@
 
 - PIT listing fully verified (re-ran S3 XML 2026-10-24T23:03:05Z): all 13 mapped symbols now carry verified retrieved_at_utc + sha256_last_page (BTCUSDT 3fba4795…, ETHUSDT b489528d…, BNBUSDT ee0e0724…, DOGEUSDT 0c1d69c6…, ADAUSDT 8e318fd7…, BCHUSDT f6c3b674…). Dates/missing counts unchanged and re-confirmed. rank_verified=false preserved for all 13. No null retrieved_at_utc remains.
 - Artifact inconsistency noted (not fabricated): 7 symbols (XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT) have verified retrieved_at_utc (2026-10-24T21:58:10Z) but null sha256_last_page, because their source entries were written by the earlier listing pass before the sha256 field was added to the output. Listing dates/missing counts for these 7 are verified and consistent with re-runs; only the last-page hash field is absent. No hashes were synthesized.
+- PIT rank search extended (2026-10-24T23:45Z): checked CoinGecko (rank not in free market_chart; history limited to 365d), CryptoCompare (API key required, 401), Wayback CDX (unreachable, HTTP 000). No usable free PIT rank source. rank_verified remains false for all 13. research_state/pit_rank_search_v1.json updated with all sources/timestamps.
 
 ## Next action
 1. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
