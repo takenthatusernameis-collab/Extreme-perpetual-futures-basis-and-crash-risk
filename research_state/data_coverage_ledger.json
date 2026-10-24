@@ -2,15 +2,68 @@
   "schema_version": "1.0",
   "program_id": "EBCR-001",
   "assets": [],
-  "venues": {},
+  "venues": {
+    "binance": {
+      "name": "Binance",
+      "types": ["spot", "usd_m_perp", "coin_m_perp"],
+      "archives": {
+        "url": "https://data.binance.vision/",
+        "accessible": true,
+        "spot_daily_klines": {
+          "path_pattern": "data/spot/daily/klines/{SYMBOL}/{interval}/",
+          "intervals_seen": ["1m", "1h"],
+          "format": "zip of CSV",
+          "notes": "Daily files with CHECKSUM"
+        },
+        "um_futures": {
+          "klines": "data/futures/um/daily/klines/{SYMBOL}/{interval}/",
+          "mark_price_klines": "data/futures/um/daily/markPriceKlines/{SYMBOL}/{interval}/",
+          "index_price_klines": "data/futures/um/daily/indexPriceKlines/{SYMBOL}/{interval}/",
+          "funding_rate": {
+            "monthly": "data/futures/um/monthly/fundingRate/{SYMBOL}/",
+            "daily": "unknown/needs_verification"
+          },
+          "agg_trades": "data/futures/um/daily/aggTrades/{SYMBOL}/",
+          "notes": "Mark/index price klines exist for some symbols; funding rate seen in monthly archives"
+        },
+        "cm_futures": {
+          "agg_trades": "data/futures/cm/daily/aggTrades/{SYMBOL}/",
+          "notes": "Structure similar to um"
+        }
+      },
+      "rest_api": {
+        "accessible_from_env": false,
+        "notes": "Binance REST APIs blocked from this environment (restricted location per error); must rely on public archives"
+      },
+      "licensing_notes": "Public data archive terms of use at https://data.binance.vision/terms-of-use.html - must comply",
+      "rate_limits": "Respectful crawling of public S3/archive; no aggressive parallel bulk download without considering limits",
+      "coverage_windows": {
+        "notes": "Major pairs go back years (e.g. BTCUSDT futures klines seen from 2023-06+ in listings; spot also has history). Exact earliest/latest per symbol needs systematic audit."
+      }
+    },
+    "coinpaprika": {
+      "name": "CoinPaprika",
+      "api": "https://api.coinpaprika.com/v1/",
+      "accessible": true,
+      "usage": "current ranks/discovery only; no confirmed free PIT historical rank history"
+    },
+    "coinmetrics": {
+      "name": "Coin Metrics Community API",
+      "api": "https://community-api.coinmetrics.io/v4/",
+      "accessible": true,
+      "usage": "catalog accessible; historical timeseries/marketcap rank availability needs verification"
+    }
+  },
   "cutoffs": {
     "global_data_cutoff_utc": null,
     "source_cutoffs": {}
   },
   "exclusions": [],
-  "last_updated_utc": null,
+  "last_updated_utc": "2026-10-24T15:14:03Z",
   "notes": [
-    "Empty ledger; populated when sources are audited and data is fetched.",
+    "Binance archives accessible via S3 listing; REST APIs blocked from environment.",
+    "Mark/index price klines and funding rate paths identified (funding may be in monthly archives).",
+    "PIT historical market-cap/rank likely limited/unavailable for free bulk; must use discovery-only ranks and labelled coverage cohorts.",
     "Every exclusion must record reason, source, evidence path and UTC time."
   ]
 }

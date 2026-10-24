@@ -32,7 +32,13 @@ Status: Initial audit in progress (design phase). No empirical fetches executed 
 ## Audit results (2026-10-24 UTC)
 - CoinPaprika /v1/coins: OK (62351 coins). Returns current rank/market data; historical PIT rank history not obviously available via this endpoint. Treat as discovery-only.
 - Coin Metrics Community API /v4/catalog/assets: OK (6347 assets). Catalog exists; historical timeseries endpoints exist but may require checking availability/limits. Need to verify if free community API provides historical marketcap/rank.
-- Binance public APIs/archives: Documented; need to test specific endpoints for mark/index/spot/funding. Archives at data.binance.vision exist.
+- Binance public APIs/archives (data.binance.vision): Access confirmed via S3 listing.
+  - Spot daily klines: `data/spot/daily/klines/{SYMBOL}/{interval}/` with daily ZIP files + CHECKSUMs. Provides OHLCV for spot; usable as underlying spot prices.
+  - USD-M futures (um): `data/futures/um/daily/klines/{SYMBOL}/{interval}/` exists. `markPriceKlines/` and `indexPriceKlines/` exist under daily for some symbols/intervals. Funding rate appears under monthly/daily in different paths - `data/futures/um/monthly/fundingRate/` and possibly daily; need to inspect exact locations. Contract info may come from exchangeInfo (REST) but REST blocked from this location; need alternative for contract lifecycle/listings.
+  - COIN-M futures (cm): Similar structure exists (`data/futures/cm/daily/...` has aggTrades).
+  - License/terms: Terms of use present at data.binance.vision/terms-of-use.html. Must comply with terms; data is public archive.
+  - Coverage: Archives go back years for major pairs (BTCUSDT klines seen from 2023+). Need systematic sampling.
+  - Gaps: Funding rate location needs verification (monthly/daily). REST API access may be restricted by location (Binance REST APIs blocked here) - so we must rely on archives and public non-REST sources where possible. Contract lifecycle (listings/delists) via REST may be unavailable; need alternative sources or derive from archive presence gaps. Mark/index availability varies by symbol/interval - must check coverage gates. For basis calculation we need perpetual mark price and underlying spot/index price with UTC alignment. Need to design ingestion to pull matching timestamps.
 
 ## Conclusion
 - Discovery via current ranks possible from free sources.
