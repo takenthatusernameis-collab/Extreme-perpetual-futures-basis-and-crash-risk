@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "ordering": "descending latest publicly available market-cap rank; candidate-discovery only",
+  "fixed_top_n": null,
+  "batch_size_for_checkpointing": 25,
+  "rank_frontier_exhausted": false,
+  "source_cursors": {},
+  "candidates_discovered": [],
+  "candidates_verified_for_pit_analysis": [],
+  "candidates_rank_unverified": [],
+  "candidates_rejected": [],
+  "last_updated_utc": null,
+  "notes": [
+    "Empty initial frontier; source discovery has not yet executed.",
+    "Current rank must not be historical membership.",
+    "Persist source URL, retrieval time, raw response hash, cursor and candidate order for each page."
+  ]
+}
