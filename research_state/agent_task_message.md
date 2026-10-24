@@ -4,16 +4,15 @@ Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_r
 
 ## Context
 - Extended evaluation complete: anchor null (adj p 0.248, 0.949), 424/2451 Holm-significant with dependence caveats.
-- Red-team audit done: research_state/red_team_audit_extended_v1.json (+md).
-- Negative results report: research_state/negative_results_report_v1.json (+md).
-- PIT verification added: research_state/pit_universe_verification_v1.json (listing evidence collected; rank unverified).
-- Prior-only controls (exploratory): research_state/robustness_prior_controls_extended_v1.json (+md) — null preserved, no anchor change.
+- Red-team audit done; negative results report done.
+- PIT verification: listing evidence collected via S3 XML; rank_verified=false for all (no free PIT rank history found). research_state/pit_universe_verification_v1.json.
+- Prior-only controls (exploratory): null preserved.
 - Exclusions 336 preserved; all 324 cells ok.
 
 ## Immediate deliverables
-1. Monitor for free PIT rank sources (e.g. archived listings/snapshots) without fabricating history; if found, record sources/timestamps/checksums and update verification.
-2. If any predeclared alternative orientation needs investigation, preregister separately with own anchor (do not touch frozen anchor/config). Document rationale.
-3. Update handoff/next task with concrete findings; preserve all null/failed/exclusions.
+1. Continue PIT hardening: search free sources (archived rankings, snapshot datasets) for defensible PIT rank history. If found, record source/timestamp/checksum and update verification; else document explicit gaps and keep rank-unverified.
+2. If investigating alternative orientation (cheap-negative/absolute-extreme), preregister separately with its own anchor/config (do not modify frozen anchor/config). Document rationale.
+3. Update handoff/next task with verified findings only; preserve null/failed/exclusions.
 
 ## Boundary
 Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only. Do not modify Q1 artifacts, evaluation reports, or the frozen anchor/config.
