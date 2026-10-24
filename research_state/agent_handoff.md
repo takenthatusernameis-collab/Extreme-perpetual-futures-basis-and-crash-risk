@@ -60,3 +60,5 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Per point-in-time rules: discovery rank ≠ historical membership; no current ranks projected backward. Candidates remain rank-unverified/coverage cohort until defensible PIT rank evidence exists.
 
 (End of file - total updated)
+## PIT rank coverage expanded (2026-10-24T23:55Z)
+- CDX queried for 2019-12-23, 2020-01-17, 2020-01-19, 2020-02-04, 2020-07-10, 2020-09-13, 2020-10-14. Only 2020-01-19 had a capture (timestamp 2020-11-26T21:13:11Z, sha256 520b694b…); saved as /tmp/pit_rank_evidence/cmc_20200119.html. Other six dates have no archived capture. Total captures now 7 dates. rank_verified remains false pending full point-in-time coverage across all formation dates. research_state/pit_rank_search_v1.json updated.

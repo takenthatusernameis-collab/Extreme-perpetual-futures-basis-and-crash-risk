@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-24T23:59:00+00:00",
+  "checked_at_utc": "2026-10-24T23:55:00+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -74,7 +74,7 @@
     {
       "name": "Wayback Machine CMC historical pages",
       "endpoint": "https://web.archive.org/web/*/coinmarketcap.com/historical/*",
-      "notes": "DIRECT ACCESS CONFIRMED. Full ranking tables (rank, name, symbol, market cap, price, circulating supply, volume) retrieved via Wayback snapshots of coinmarketcap.com/historical/<YYYYMMDD>/. No API key required. Captures confirmed at: 2019-12-31 (sha256 0ca492a4…, capture 2021-04-18T13:34:18Z), 2020-01-01 (sha256 90f8ceca…, capture 2021-01-02T05:52:18Z), 2020-09-13 (sha256 c10348af…, capture 2020-12-04T09:08:11Z), 2022-01-01 (sha256 e2c52f63…, capture 2022-03-01T21:53:30Z), 2023-01-01 (sha256 385a5cde…, capture 2023-12-04T06:21:44Z), 2024-01-01 (sha256 79a88bd8…, capture 2026-05-21T10:48:15Z). 2019-12-23 and 2020-10-14 returned 404 (no capture). Saved evidence pages under /tmp/pit_rank_evidence/. Defensible free PIT market-cap rank source at snapshot dates; coverage is snapshot-based, not continuous across every formation date."
+      "notes": "DIRECT ACCESS CONFIRMED. Full ranking tables (rank, name, symbol, market cap, price, circulating supply, volume) retrieved via Wayback snapshots of coinmarketcap.com/historical/<YYYYMMDD>/. No API key required. Captures confirmed at: 2019-12-31 (sha256 0ca492a4…, capture 2021-04-18T13:34:18Z), 2020-01-01 (sha256 90f8ceca…, capture 2021-01-02T05:52:18Z), 2020-01-19 (sha256 520b694b…, capture 2020-11-26T21:13:11Z), 2020-09-13 (sha256 c10348af…, capture 2020-12-04T09:08:11Z), 2022-01-01 (sha256 e2c52f63…, capture 2022-03-01T21:53:30Z), 2023-01-01 (sha256 385a5cde…, capture 2023-12-04T06:21:44Z), 2024-01-01 (sha256 79a88bd8…, capture 2026-05-21T10:48:15Z). CDX query for 2019-12-23, 2020-02-04, 2020-07-10, 2020-10-14 returned no captures (no historical page archived). Saved evidence pages under /tmp/pit_rank_evidence/. Defensible free PIT market-cap rank source at snapshot dates; coverage is snapshot-based, not continuous across every formation date."
     },
     {
       "name": "GitHub scrapers/repos with CMC historical data",
