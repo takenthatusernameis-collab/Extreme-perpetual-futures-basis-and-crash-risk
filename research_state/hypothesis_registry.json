@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "next_hypothesis_sequence": 4,
+  "hypotheses": [
+    {
+      "hypothesis_id": "EBCR-H001",
+      "status": "preregistered_not_tested",
+      "claim": "Rich positive perpetual-futures basis at or above the trailing 95th percentile predicts higher 14-day underlying-asset crash incidence and worse downside tail severity.",
+      "primary_anchor": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "co_primary_endpoints": [
+        "crash_incidence_15pct",
+        "expected_shortfall_5pct_forward_mae"
+      ],
+      "config_path": "configs/basis_crash_grid_v1.json",
+      "artifacts": [],
+      "outcome_summary": null
+    },
+    {
+      "hypothesis_id": "EBCR-H002",
+      "status": "registered_secondary_not_tested",
+      "claim": "Extremely cheap negative basis predicts elevated forward downside tail risk; keep it distinct from rich-positive basis.",
+      "config_path": "configs/basis_crash_grid_v1.json",
+      "outcome_summary": null
+    },
+    {
+      "hypothesis_id": "EBCR-H003",
+      "status": "registered_secondary_not_tested",
+      "claim": "Extreme absolute basis magnitude predicts elevated forward downside tail risk regardless of sign; do not merge this with directional tests.",
+      "config_path": "configs/basis_crash_grid_v1.json",
+      "outcome_summary": null
+    }
+  ],
+  "rules": [
+    "Never overwrite a prior hypothesis or result.",
+    "Every new hypothesis requires a unique ID and preregistration before outcomes.",
+    "Holdout outcomes cannot select replacement parameters."
+  ]
+}
