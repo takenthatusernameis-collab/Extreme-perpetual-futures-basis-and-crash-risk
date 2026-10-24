@@ -1,0 +1,779 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "generated_at_utc": "2026-10-24T16:59:50.676128+00:00",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "window": {
+    "start": "2024-01-01",
+    "end": "2024-01-10"
+  },
+  "coverage_gate": 0.95,
+  "days": [
+    {
+      "BTCUSDT": [
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-01",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 44179.55,
+              "raw_sha256": "6322fa0e83995518b01066a110dca5c03ff837a6ef915a792b718fa76f0de205"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 44230.2,
+              "raw_sha256": "7d98fe904ac7ccb3df3de21e68553c1f803e6dee3340b36b24956c4a726c2972"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 44232.4,
+              "raw_sha256": "c598ac3b7870026007159be7a8548a5218ccc5f83e5cc477936378fa06670d33"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 44178.44574468,
+              "raw_sha256": "6878ec11fc90f32c9b604d2610b14392610f25e52b426ae60960f993dea4d3b8"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00037409,
+                0.00027213,
+                0.00033601
+              ],
+              "median": 0.00033601,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.12212800701911775
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-02",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 44946.91,
+              "raw_sha256": "a1439daf408a371dd3e0b46ea373f96c5cbb397f57347c743d6ae59790b5df14"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 44979.8,
+              "raw_sha256": "a52c985f6ddebbde526ac1d18aba1a677e82bc7e186e7b77e3005f118ccd14b3"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 44973.86526596,
+              "raw_sha256": "da2d4b95827a16883e798d40bbd1077f8f00ae68f91bad1aae6f7fe14c23af40"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 44947.31,
+              "raw_sha256": "180f4f4894901a03cca32e28ecdee8f293e572b5e78e4bb1a91309e89d1f5bb5"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00065846,
+                0.00035179,
+                0.0005373
+              ],
+              "median": 0.0005373,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.05908087927841699
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-03",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 42845.23,
+              "raw_sha256": "af1f20f12be82bc7f3dfad35e4369ac9971385b13f646d0e1ac6d1ef669aaa11"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 42849.5,
+              "raw_sha256": "e62531ff409e221f25990ee14a9525da65a214f2a9f01df12abec458cc03c865"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 42849.4,
+              "raw_sha256": "cf6f13ea08f75294c18d82dc6b3572284de39467ca8374aa21f877540436bc75"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 42841.79851064,
+              "raw_sha256": "1e08d24360cda4189e800f84b541a748484ba69ae7173d658348bb57d8153947"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00021159,
+                0.00017123,
+                0.0001
+              ],
+              "median": 0.00017123,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.017743161174976763
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-04",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 44151.1,
+              "raw_sha256": "8a031f60f38660c72754f24994caadfeb671b7988aa876cf0155a6e2837686c6"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 44143.8,
+              "raw_sha256": "ba7da817c19c1c055df267271931fe991b7e0e6f1ce3dacfc5e46b7abc0eaece"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 44147.1,
+              "raw_sha256": "3ba5de26070e37120b5b987dca6b7df7c9b7b3318c4d27fd36999c1c24ccb180"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 44151.2025,
+              "raw_sha256": "ff3b4adc39faa86416f0e1b2f7fde6d3e80acb3bfcc114144ba2251b30e91b1d"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": -0.009291932648947121
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-05",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 44145.11,
+              "raw_sha256": "4c5b56d49bf47067342a7babaed8fe5cabe9b8313d7bf7f6723839231662131e"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 44145.4,
+              "raw_sha256": "4881a297b6f230df3c2908151919c7a5dfdd586376b94cfa2dbad75d2cfdd2b4"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 44142.952426,
+              "raw_sha256": "1e5ed7cffe904e43ba95643a72f3f6cd3bc9166417341aa66d196fd0af4540a1"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 44143.29,
+              "raw_sha256": "0b35b77c570317602d8c4087d62c4cbe626516949834076e15e6c681cfd4d6b8"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": -0.0007647232455831876
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-06",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 43968.32,
+              "raw_sha256": "6e120b2f750b48db9eee6da407b1714285ef06d74f198ec173e8ea1128ca8c20"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 43956.7,
+              "raw_sha256": "85073d96faf397d64d6a12792728a47343865cf967139caaf98cb8d436789e05"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 43968.00152482,
+              "raw_sha256": "d3718398cda3829a1b277df97790820c040dcf0ff3a57faa64ee0466812f4a85"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 43976.18489362,
+              "raw_sha256": "34287f223a08f7012edff42a2550a5ed0766297ace40ce8ed94a599ee3e8da3f"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": -0.018608637424533114
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-07",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 43929.02,
+              "raw_sha256": "fbace0e8b9ddc00f9a0f37c623a1f2bb6a17147c5913026f86b41688bc5bf85e"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 43916.9,
+              "raw_sha256": "2122af9a4132a8b0d6d8ee00256dd3764cccf14c3a90a819525b8b6ca7575f7c"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 43909.5,
+              "raw_sha256": "961771ab48c9bd0670a9a54d110051e87187b00d81f641a9533dae546e67face"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 43923.66851064,
+              "raw_sha256": "d314c134ceb818013bb387dbdf0de52339c624d64284849dcddd56e400fa8e3c"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": -0.032257120410073004
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-08",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 46951.04,
+              "raw_sha256": "194d4c3f43cab58f923ce5a2ddb6053b9ec147e673a6669c86e551c491f39648"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 46972.7,
+              "raw_sha256": "9324b73f1830e3fece895b42d0ce86639c29b2040910f9e9259162f9dd96cc0c"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 46972.57134823,
+              "raw_sha256": "28dd7c81ae8212b5f19073fd85b2ab440675800e14f32dda37a146a575223882"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 46951.04227273,
+              "raw_sha256": "fea01c5b915991a26cf6f51870731bc1e40dc239db20558face7dd0a4df80ba4"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.045854307929804605
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-09",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 46110.0,
+              "raw_sha256": "00e09acba79c1fa1d254c93728ab36454f76e0b179cf01b4b3f9340e8ba96043"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 46114.0,
+              "raw_sha256": "08209607b951e7676d30d947817637a71429c5ae4198c3b8898406d560d41aae"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 46117.9,
+              "raw_sha256": "29ed5194fce32695f95841c9419524ae5064d5e3492bd9c4c4d87d9dfc51fb8d"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 46111.67042553,
+              "raw_sha256": "785c7cfd65a1d342f90a4c1ebf58d66371e47abd7c7594b27c865e89d6deeda9"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.01350975666791765
+        },
+        {
+          "symbol": "BTCUSDT",
+          "date": "2024-01-10",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 46653.99,
+              "raw_sha256": "aec7da62636a2bf2aa6510a5c9c14b95877a77d870f260ca880995be148da587"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 46662.9,
+              "raw_sha256": "fb3e197a9a6b600b7356489cf6035297f8955a364e0099c7f45c3cee7d027bb2"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 46653.9,
+              "raw_sha256": "82ddfb71cd240d188d9c37e5917fd10a3795518917edc50932b6b0ca88815770"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 46646.00382979,
+              "raw_sha256": "f056afdef928bb5dcea75cf8f2dc45770af574c7171908dbef7d04fdad026ae8"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+            }
+          },
+          "basis_pct": 0.01692785997020607
+        }
+      ]
+    },
+    {
+      "ETHUSDT": [
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-01",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2352.04,
+              "raw_sha256": "54ce6ae0eaaee2712ed2090872e458809e2ee393dc3c27cc44b5adc3f88243d5"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2354.62,
+              "raw_sha256": "850c0b87bdec766027bcd328a383d56bc2bb36c015e1035c2d5711686147bcb3"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2354.63,
+              "raw_sha256": "2069811037202e191ffc70522b590a9678de29ff9e70b8aaf483265d12a6b63d"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2351.96068182,
+              "raw_sha256": "36a1d73166314da8739d4f39cbd0399e0453df4c9e99126849952b2a47294163"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00027858,
+                0.00031096,
+                0.00043011
+              ],
+              "median": 0.00031096,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.11349331647561023
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-02",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2355.34,
+              "raw_sha256": "cf761f6d98392d255aa421964fd25f1749e2b546adf5a3d6883ddb40c7e8a05b"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2356.93,
+              "raw_sha256": "9ca958c8d7bc495ffb7618c457be421504d1c3dc2bb57605ed06d6562f2b0f03"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2356.81568561,
+              "raw_sha256": "6ab7a171811cfb9c8d2c5504b8f7d661e5598d1b181a84570e27e8002cad41f5"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2355.25454545,
+              "raw_sha256": "d0b9f1b3dbe507af981a6ebd11a609426a612f3d5acd2db6cd518282161130f2"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00053505,
+                0.0005124,
+                0.00063801
+              ],
+              "median": 0.00053505,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.06628328827624763
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-03",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2209.72,
+              "raw_sha256": "719fce848c65414b0b738561dc13df071ed3c6a049b12e69e68e39b0efffaaa6"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2210.39,
+              "raw_sha256": "9ca1d39e8b81001541f7646ca0a8d65b81a3dd0caeff2735ba2e69946f35484d"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2210.33810227,
+              "raw_sha256": "721a0c093d119e6c8e649ddace476f6e893abeabddc2332ab8b258382c60e1b2"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2209.65386364,
+              "raw_sha256": "07598a65aab96d407b2dc5fb3c01be93d699ceded4bbdc38d6cd8cd97aa2e65e"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.00028538,
+                0.00024384,
+                0.0001
+              ],
+              "median": 0.00024384,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.03096587394337824
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-04",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2267.11,
+              "raw_sha256": "0e811ec0ad2e734d8038e169b00be0414b0efac03ad8fbc1472259315e951588"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2267.85,
+              "raw_sha256": "b389b3aed7aad9d5b5f67085b80bf9be50c03192b05ad8f157559dee7bfb0e37"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2267.56506911,
+              "raw_sha256": "41cee45278a7dde4a35d62e9b4e058d9ebe6387698c2d273c4a5f981671da9fe"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2267.14560976,
+              "raw_sha256": "e6259aaef6a0273a2311e74412c7d9ba387e1e8a2c160b8e03ced0ae6a87fae5"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.018501650189306496
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-05",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2268.78,
+              "raw_sha256": "de7396ed1df9cfa740a1ebe7591fe6d4b462a7a88feb73121b073f4297e79288"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2268.93,
+              "raw_sha256": "83aa37c201da1a08b6f67c8727a37747d155379daf28b961d42787f3e6aac2a7"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2268.3367439,
+              "raw_sha256": "37abc11f8e9314370e0622c39e4f22766e04b1bf71fb1af2ac301ea025aa5d8d"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2268.24121951,
+              "raw_sha256": "a150efc7008e024b608b691a454b9533a52377d9332bc903ab9b2505f972245a"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.004211385860464212
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-06",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2240.78,
+              "raw_sha256": "827d9378b8c4ad3be757665dd6f3f9d293c30befdee1c5ae051bf25c15086fc0"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2240.36,
+              "raw_sha256": "85471df3c3e454540e3f2a9f99751d783d645340d2253555f1ad2c97f9cf94e6"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2240.47,
+              "raw_sha256": "5961b8998a975578f7baabe1327388851d70bb2b55d0f865f8a612a44e6cbb04"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2240.76022727,
+              "raw_sha256": "fec307503dc4c0e21e7919a18da194e61d7155d3e50cca04dec0c103673eb261"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": -0.012952178750236243
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-07",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2221.42,
+              "raw_sha256": "e5c82afee9823b55d4dc0f75b2e8d7534eb94f00f2dd16ce16cc0586f52ee7b1"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2220.87,
+              "raw_sha256": "8649d76a094513cc617c858c5be72f35114629de26ccf41cd62d11e63d9bf0f0"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2220.87,
+              "raw_sha256": "80de74b5900fe91aeb566d7d1308b556ce17e787ab20f68a52db2b538012062b"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2221.42522727,
+              "raw_sha256": "1b81dbf4ae689671c16fb27eed49fb2c14964f797232afab9eee60923a9c5955"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": -0.02499419125993052
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-08",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2330.44,
+              "raw_sha256": "0a4d1cd31c9f2522747363e80950cee0ec242b5c7435da65e3d1625355dd4c4b"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2331.11,
+              "raw_sha256": "29df27c78c673371376c26db9fdedd5c750484d96e883e42ecf21561dad00fec"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2331.04459487,
+              "raw_sha256": "75f38b58513f7c36e64637755153675e3fc27f429f531e279c6d9c5eeddca3d5"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2330.6397561,
+              "raw_sha256": "a726973e99c5f37fa5cc522696f08a3c4c5ef3ea5b8633ea161f191b571acc04"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.017370285087614512
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-09",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2344.29,
+              "raw_sha256": "39059d7785d5a88ae1a0a12128c5d6c315bdc40d858d6510dea759e509f460da"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2344.44,
+              "raw_sha256": "d2a23aca7d62d30f71fd22e27a6ab778bb4a8c8c9c9c0dbab85f015ea6ffce10"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2344.52,
+              "raw_sha256": "3be0889e9a7896625eda9e5324f0cf157c1a6365aa79f8b84573f69136972db7"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2344.41113636,
+              "raw_sha256": "98760c4c88226b2b8844227b7968e288d3b88d147385d10642aa7ab0713c8b54"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.00464353876807877
+        },
+        {
+          "symbol": "ETHUSDT",
+          "date": "2024-01-10",
+          "status": "ok",
+          "components": {
+            "spot": {
+              "n_bars": 1,
+              "close_median": 2584.38,
+              "raw_sha256": "e4793b634c26e58aab5fea199543969ced88d374ade55732226091b4896d14ef"
+            },
+            "um_kline": {
+              "n_bars": 1,
+              "close_median": 2585.82,
+              "raw_sha256": "b3505370ee63e340182d4c0457852055085edd90dbf791d5198de36be0a2f483"
+            },
+            "mark": {
+              "n_bars": 1,
+              "close_median": 2584.4290303,
+              "raw_sha256": "7685477f9d72e403f46592ca0236a40046ffc56719117e8b600d3756ea90536d"
+            },
+            "index": {
+              "n_bars": 1,
+              "close_median": 2583.46727273,
+              "raw_sha256": "e842d7da706f7a1503cd8903d0519d59c468b3b4137035a4da4157fcc3e16c08"
+            },
+            "funding": {
+              "rates_on_day": [
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "median": 0.0001,
+              "raw_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+            }
+          },
+          "basis_pct": 0.03722739514264717
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "BTCUSDT": {
+      "ok_components": 50,
+      "total_components": 50,
+      "coverage": 1.0,
+      "meets_gate": true
+    },
+    "ETHUSDT": {
+      "ok_components": 50,
+      "total_components": 50,
+      "coverage": 1.0,
+      "meets_gate": true
+    }
+  },
+  "status": "ok"
+}

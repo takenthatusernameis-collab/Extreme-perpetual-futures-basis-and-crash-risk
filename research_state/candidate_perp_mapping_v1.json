@@ -1,31 +1,170 @@
 {
-  "schema_version":"1.0","program_id":"EBCR-001","mapping_status":"discovery_only_unverified",
-  "mappings":[
-    {"rank":1,"asset":"BTC","binance_um_symbol":"BTCUSDT","status":"candidate_mapping_unverified"},
-    {"rank":2,"asset":"ETH","binance_um_symbol":"ETHUSDT","status":"candidate_mapping_unverified"},
-    {"rank":3,"asset":"USDT","binance_um_symbol":null,"status":"blocked_stablecoin_no_perp_expected"},
-    {"rank":4,"asset":"BNB","binance_um_symbol":"BNBUSDT","status":"candidate_mapping_unverified"},
-    {"rank":5,"asset":"XRP","binance_um_symbol":"XRPUSDT","status":"candidate_mapping_unverified"},
-    {"rank":6,"asset":"USDC","binance_um_symbol":null,"status":"blocked_stablecoin_no_perp_expected"},
-    {"rank":7,"asset":"SOL","binance_um_symbol":"SOLUSDT","status":"candidate_mapping_unverified"},
-    {"rank":8,"asset":"TRX","binance_um_symbol":"TRXUSDT","status":"candidate_mapping_unverified"},
-    {"rank":9,"asset":"STETH","binance_um_symbol":null,"status":"blocked_no_direct_binance_um_perp_expected"},
-    {"rank":10,"asset":"ZEC","binance_um_symbol":"ZECUSDT","status":"candidate_mapping_unverified"},
-    {"rank":11,"asset":"HYPE","binance_um_symbol":null,"status":"blocked_no_binance_listing_expected"},
-    {"rank":12,"asset":"DOGE","binance_um_symbol":"DOGEUSDT","status":"candidate_mapping_unverified"},
-    {"rank":13,"asset":"XMR","binance_um_symbol":null,"status":"blocked_no_binance_listing_expected"},
-    {"rank":14,"asset":"WSTETH","binance_um_symbol":null,"status":"blocked_wrapped_staked_no_direct_perp_expected"},
-    {"rank":15,"asset":"USDS","binance_um_symbol":null,"status":"blocked_stablecoin_no_perp_expected"},
-    {"rank":16,"asset":"WBTC","binance_um_symbol":null,"status":"blocked_wrapped_btc_no_direct_perp_expected"},
-    {"rank":17,"asset":"WBT","binance_um_symbol":null,"status":"blocked_exchange_token_no_binance_perp_expected"},
-    {"rank":18,"asset":"LINK","binance_um_symbol":"LINKUSDT","status":"candidate_mapping_unverified"},
-    {"rank":19,"asset":"LEO","binance_um_symbol":null,"status":"blocked_exchange_token_no_binance_perp_expected"},
-    {"rank":20,"asset":"ADA","binance_um_symbol":"ADAUSDT","status":"candidate_mapping_unverified"},
-    {"rank":21,"asset":"CBBTC","binance_um_symbol":null,"status":"blocked_wrapped_btc_no_direct_perp_expected"},
-    {"rank":22,"asset":"XLM","binance_um_symbol":"XLMUSDT","status":"candidate_mapping_unverified"},
-    {"rank":23,"asset":"NEAR","binance_um_symbol":"NEARUSDT","status":"candidate_mapping_unverified"},
-    {"rank":24,"asset":"RAIN","binance_um_symbol":null,"status":"blocked_no_binance_listing_expected"},
-    {"rank":25,"asset":"BCH","binance_um_symbol":"BCHUSDT","status":"candidate_mapping_unverified"}
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "mapping_status": "discovery_only_unverified",
+  "mappings": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "binance_um_symbol": "BTCUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "binance_um_symbol": "ETHUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 3,
+      "asset": "USDT",
+      "binance_um_symbol": null,
+      "status": "blocked_stablecoin_no_perp_expected"
+    },
+    {
+      "rank": 4,
+      "asset": "BNB",
+      "binance_um_symbol": "BNBUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 5,
+      "asset": "XRP",
+      "binance_um_symbol": "XRPUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 6,
+      "asset": "USDC",
+      "binance_um_symbol": null,
+      "status": "blocked_stablecoin_no_perp_expected"
+    },
+    {
+      "rank": 7,
+      "asset": "SOL",
+      "binance_um_symbol": "SOLUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 8,
+      "asset": "TRX",
+      "binance_um_symbol": "TRXUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 9,
+      "asset": "STETH",
+      "binance_um_symbol": null,
+      "status": "blocked_no_direct_binance_um_perp_expected"
+    },
+    {
+      "rank": 10,
+      "asset": "ZEC",
+      "binance_um_symbol": "ZECUSDT",
+      "status": "candidate_mapping_unverified"
+    },
+    {
+      "rank": 11,
+      "asset": "HYPE",
+      "binance_um_symbol": null,
+      "status": "blocked_no_binance_listing_expected"
+    },
+    {
+      "rank": 12,
+      "asset": "DOGE",
+      "binance_um_symbol": "DOGEUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    },
+    {
+      "rank": 13,
+      "asset": "XMR",
+      "binance_um_symbol": null,
+      "status": "blocked_no_binance_listing_expected"
+    },
+    {
+      "rank": 14,
+      "asset": "WSTETH",
+      "binance_um_symbol": null,
+      "status": "blocked_wrapped_staked_no_direct_perp_expected"
+    },
+    {
+      "rank": 15,
+      "asset": "USDS",
+      "binance_um_symbol": null,
+      "status": "blocked_stablecoin_no_perp_expected"
+    },
+    {
+      "rank": 16,
+      "asset": "WBTC",
+      "binance_um_symbol": null,
+      "status": "blocked_wrapped_btc_no_direct_perp_expected"
+    },
+    {
+      "rank": 17,
+      "asset": "WBT",
+      "binance_um_symbol": null,
+      "status": "blocked_exchange_token_no_binance_perp_expected"
+    },
+    {
+      "rank": 18,
+      "asset": "LINK",
+      "binance_um_symbol": "LINKUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    },
+    {
+      "rank": 19,
+      "asset": "LEO",
+      "binance_um_symbol": null,
+      "status": "blocked_exchange_token_no_binance_perp_expected"
+    },
+    {
+      "rank": 20,
+      "asset": "ADA",
+      "binance_um_symbol": "ADAUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    },
+    {
+      "rank": 21,
+      "asset": "CBBTC",
+      "binance_um_symbol": null,
+      "status": "blocked_wrapped_btc_no_direct_perp_expected"
+    },
+    {
+      "rank": 22,
+      "asset": "XLM",
+      "binance_um_symbol": "XLMUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    },
+    {
+      "rank": 23,
+      "asset": "NEAR",
+      "binance_um_symbol": "NEARUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    },
+    {
+      "rank": 24,
+      "asset": "RAIN",
+      "binance_um_symbol": null,
+      "status": "blocked_no_binance_listing_expected"
+    },
+    {
+      "rank": 25,
+      "asset": "BCH",
+      "binance_um_symbol": "BCHUSDT",
+      "status": "verified_archive_has_zips",
+      "verification_source": "s3_xml_listing_sample",
+      "verification_at_utc": "2026-10-24T17:05:00Z"
+    }
   ],
-  "notes":"Mappings are candidate-only; contract lifecycle and archive availability must be verified per symbol before use. No REST API used."
+  "notes": "Mappings verified where possible via S3 XML listing (sample). Contract lifecycle/mark-index/funding coverage still needs per-symbol audit before use."
 }

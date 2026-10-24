@@ -6,23 +6,20 @@
 - Grid manifest generated: research_state/grid_manifest_v1.json (324 cells).
 - Tests: 11 passed.
 - Universe frontier: 25 discovery candidates (rank-unverified).
-- Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (13 candidate mappings, 12 blocked categories).
+- Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (updated with archive verification).
 - S3 XML listing implemented: scripts/s3_xml_listing.py; ETHUSDT index=2097 files (400 missing), mark=2464 files (33 missing).
-- Candidate mappings spot-check: first 10 binance um symbols all return 200 for 2024-01-01 daily klines.
-- ETHUSDT data_coverage_ledger updated with verified counts.
+- Multi-day ingestion sample created: research_state/ingestion_multi_day_sample.json (BTCUSDT, ETHUSDT 2024-01-01..10, coverage 100%, gate >=95% met).
 
 ## Completed this session
-12-15 prior.
-16. Implemented S3 XML (ListBucketResult) parser with pagination; enumerated missing dates for ETHUSDT mark/index.
-17. Updated data_coverage_ledger ETHUSDT notes with verified file counts and missing-date gaps.
-18. Spot-checked first 10 candidate mappings against Binance archive (all 200).
-19. Ran tests (11 passed) and manifest (324 cells); git diff --check clean.
+- Extended ingestion prototype to multi-day processing with >=95% coverage gate (scripts/ingestion_multi_day.py). Output saved.
+- Verified remaining candidate mappings (ranks 11-25 non-blocked): DOGE/LINK/ADA/XLM/NEAR/BCH have zip files present in um klines daily archives (verified via S3 XML sample). Ranks 11,13,14,15,16,17,19,21,24 remain blocked per mapping rules.
+- Began multi-symbol ingestion for BTCUSDT+ETHUSDT over overlapping complete-date window (2024-01-01..10) with full component coverage.
 
 ## Next action
-1. Extend ingestion prototype to multi-day processing with >=95% coverage gate; output research_state/ingestion_multi_day_sample.json.
-2. Verify remaining candidate mappings (ranks 11-25 non-blocked) archive existence.
-3. Begin multi-symbol ingestion for BTCUSDT+ETHUSDT over overlapping complete-date window.
-4. State updates.
+1. Expand multi-symbol ingestion to a larger overlapping window (e.g., 2024-01-01..2024-03-31) and enforce >=95% coverage gate per symbol; log gaps.
+2. For verified symbols (BTC,ETH,BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH), audit mark/index/funding coverage completeness and record exclusions.
+3. Build basis computation path over ingested days with UTC alignment and no forward-fill.
+4. Update handoff/next task with concrete coverage numbers.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
