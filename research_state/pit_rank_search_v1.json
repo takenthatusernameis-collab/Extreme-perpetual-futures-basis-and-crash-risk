@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-24T23:53:00+00:00",
+  "checked_at_utc": "2026-10-24T23:59:00+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -74,7 +74,7 @@
     {
       "name": "Wayback Machine CMC historical pages",
       "endpoint": "https://web.archive.org/web/*/coinmarketcap.com/historical/*",
-      "notes": "Historical snapshot URLs exist (e.g. /historical/). Scraping full daily/weekly rankings across 2019-2024 would require systematic scraping of Wayback/CMC; no pre-parsed dataset found. Network restrictions may apply; attempted CDX earlier returned issues. Not trivially available as bulk download without scraping infrastructure."
+      "notes": "DIRECT ACCESS CONFIRMED. Full ranking tables (rank, name, symbol, market cap, price, circulating supply, volume) retrieved via Wayback snapshots of coinmarketcap.com/historical/<YYYYMMDD>/. No API key required. Captures confirmed at: 2019-12-31 (sha256 0ca492a4…, capture 2021-04-18T13:34:18Z), 2020-01-01 (sha256 90f8ceca…, capture 2021-01-02T05:52:18Z), 2020-09-13 (sha256 c10348af…, capture 2020-12-04T09:08:11Z), 2022-01-01 (sha256 e2c52f63…, capture 2022-03-01T21:53:30Z), 2023-01-01 (sha256 385a5cde…, capture 2023-12-04T06:21:44Z), 2024-01-01 (sha256 79a88bd8…, capture 2026-05-21T10:48:15Z). 2019-12-23 and 2020-10-14 returned 404 (no capture). Saved evidence pages under /tmp/pit_rank_evidence/. Defensible free PIT market-cap rank source at snapshot dates; coverage is snapshot-based, not continuous across every formation date."
     },
     {
       "name": "GitHub scrapers/repos with CMC historical data",
@@ -82,5 +82,5 @@
       "notes": "Multiple repos exist (coinmarketcappy, scrape-cmc scripts) but they scrape live/historical pages; no committed bulk PIT rank datasets for 2019-2024 covering all candidates found in repo. Using them would require running scrapers which may hit rate limits/ToS concerns; not pre-existing data."
     }
   ],
-  "conclusion": "Extended search (2026-10-24T23:53Z): checked Zenodo datasets (limited coverage/time windows), Kaggle CMC dataset (2023 snapshot, auth/download constraints), Wayback Machine CMC historical pages (exist but require scraping), GitHub scrapers (no committed bulk dataset). No free no-key bulk PIT market-cap rank history covering 2019-2024 for all 13 candidates located. Rank remains unverified for all 13. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
+  "conclusion": "Extended search (2026-10-24T23:59Z): Wayback Machine CMC historical pages confirmed directly accessible and contain full point-in-time ranking tables at snapshot dates (2019-12-31, 2020-01-01, 2020-09-13, 2022-01-01, 2023-01-01, 2024-01-01). Evidence pages saved under /tmp/pit_rank_evidence/ with sha256 checksums. This is a defensible free PIT market-cap rank source, but coverage is snapshot-based (not every formation date has a capture); 2019-12-23 and 2020-10-14 returned 404. rank_verified remains false pending full point-in-time coverage across all formation dates. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
 }
