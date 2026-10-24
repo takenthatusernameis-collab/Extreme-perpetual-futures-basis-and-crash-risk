@@ -36,6 +36,8 @@
 - Documented explicit decision not to preregister cheap-negative/absolute-extreme from grid hits (see Status); preserves null result and multiplicity rules.
 - Updated handoff and task message with verified findings only.
 
+- PIT listing gaps filled (re-ran S3 XML): BTCUSDT 2019-12-23..2026-10-23 (missing 56), ETHUSDT 2019-12-23..2026-10-23 (missing 33), BNBUSDT 2019-12-31..2026-10-23 (missing 41), DOGEUSDT 2020-07-10..2026-10-23 (missing 27), ADAUSDT 2020-01-19..2026-10-23 (missing 34), BCHUSDT 2019-12-23..2026-10-23 (missing 40). pit_universe_verification_v1.json updated; rank_verified=false for all.
+
 ## Next action
 1. Re-run S3 XML listing for the 6 symbols with null earliest/latest metadata (BTCUSDT, ETHUSDT, BNBUSDT, DOGEUSDT, ADAUSDT, BCHUSDT) to fill earliest/latest zip dates and missing counts; update pit_universe_verification_v1.json with verified listing evidence. Preserve rank_verified=false.
 2. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
