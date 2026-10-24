@@ -102,7 +102,7 @@ Candidate discovery must continually advance through descending latest publicly 
 
 Candidate ranking is not historical membership. At each formation date, historical universe eligibility requires defensible point-in-time market-cap/rank evidence and valid listing, delisting, migration, spot, index and perpetual contract mappings. Current rank must never be projected backward. If PIT rank history is unavailable, preserve the asset as rank-unverified or a clearly separate coverage cohort; do not silently exclude it or treat it as eligible. Keep delisted contracts, ticker reuse, redenominations and migrations in the audit.
 
-Process the next candidate if one is blocked. No paid APIs, paid data, trials, subscriptions, paid compute, secret credentials or gated scraping. Prefer official public endpoint/history sources listed in `docs/sources.md`, but verify current access and data coverage rather than assuming.
+Process the next candidate if one is blocked. No paid APIs, paid data, trials, subscriptions, paid compute, private or exchange credentials, order placement, live trading or paper trading, or gated scraping. Prefer official public endpoint/history sources listed in `docs/sources.md`, but verify current access and data coverage rather than assuming.
 
 ## Complete accounting of cells and evidence
 
