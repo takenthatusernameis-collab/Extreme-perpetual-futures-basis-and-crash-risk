@@ -2,18 +2,18 @@
   "schema_version": "1.0",
   "program_id": "EBCR-001",
   "verification_type": "pit_listing_evidence",
-  "retrieved_at_utc": null,
-  "notes": "Contract listing presence verified via Binance Vision S3 XML listings (markPriceKlines daily). No free public PIT market-cap rank history source was located in repo; rank verification remains limited. Listing dates are earliest zip date present (not necessarily first public announcement).",
+  "retrieved_at_utc": "2026-10-24T23:03:05.907347+00:00",
+  "notes": "Contract listing presence verified via Binance Vision S3 XML listings (markPriceKlines daily). All 12 symbols re-listed with verified retrieved_at_utc and sha256_last_page. No free public PIT market-cap rank history source was located in repo; rank verification remains limited. Listing dates are earliest zip date present (not necessarily first public announcement).",
   "symbols": [
     {
       "binance_um_symbol": "BTCUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/BTCUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4882
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:05.907347+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/BTCUSDT/1d/",
+           "sha256_last_page": "3fba479562201e8d7aefe6019194328c09526428bbdb6521479f94804cc3f039",
+           "n_keys": 4882
         }
       ],
       "rank_verified": false,
@@ -31,11 +31,11 @@
       "binance_um_symbol": "ETHUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/ETHUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4928
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:13.463722+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/ETHUSDT/1d/",
+           "sha256_last_page": "b489528d2809458fa20395fb152376dd76d826fe690ec800c604ecbb056fdb2c",
+           "n_keys": 4928
         }
       ],
       "rank_verified": false,
@@ -53,11 +53,11 @@
       "binance_um_symbol": "BNBUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/BNBUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4896
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:20.310852+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/BNBUSDT/1d/",
+           "sha256_last_page": "ee0e0724da9433f5aeb90bb95817e8c54f7a8ffe32e34f92cc69aa6270dc95ab",
+           "n_keys": 4896
         }
       ],
       "rank_verified": false,
@@ -147,11 +147,11 @@
       "binance_um_symbol": "DOGEUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/DOGEUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4540
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:26.462625+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/DOGEUSDT/1d/",
+           "sha256_last_page": "0c1d69c6e224d887d47d60b672567537142b9bcfb8d52bed8bba26551a5ae4b6",
+           "n_keys": 4540
         }
       ],
       "rank_verified": false,
@@ -187,11 +187,11 @@
       "binance_um_symbol": "ADAUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/ADAUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4872
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:33.692048+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/ADAUSDT/1d/",
+           "sha256_last_page": "8e318fd7631c48b60ee5e382aa06020f5666af0624b9c73a5afe27d2bab3421d",
+           "n_keys": 4872
         }
       ],
       "rank_verified": false,
@@ -245,11 +245,11 @@
       "binance_um_symbol": "BCHUSDT",
       "sources": [
         {
-          "type": "binance_vision_s3_xml_listing",
-          "retrieved_at_utc": null,
-          "prefix": "data/futures/um/daily/markPriceKlines/BCHUSDT/1d/",
-          "sha256_last_page": null,
-          "n_keys": 4914
+"type": "binance_vision_s3_xml_listing",
+           "retrieved_at_utc": "2026-10-24T23:03:39.794248+00:00",
+           "prefix": "data/futures/um/daily/markPriceKlines/BCHUSDT/1d/",
+           "sha256_last_page": "f6c3b674a78ddff8c62efa59889ec68dd80f81d9b746ad5e858dee1558b6f1bf",
+           "n_keys": 4914
         }
       ],
       "rank_verified": false,
