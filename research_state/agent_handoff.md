@@ -10,6 +10,7 @@
 ## Verified setup
 - Deterministic manifest generator: `scripts/generate_grid_manifest.py`.
 - Regression suite: `python3 -m pytest -q tests`.
+- GitHub Actions run `40090759139` succeeded on 2026-10-24; the suite reported 11 passed. The diagnostics collector and ledger persistence passed. The research worker was intentionally skipped for this push-triggered validation.
 - Historical research only; public free data and open-source tooling; no paid services, credentials, orders or live/paper trading.
 
 ## Next action
