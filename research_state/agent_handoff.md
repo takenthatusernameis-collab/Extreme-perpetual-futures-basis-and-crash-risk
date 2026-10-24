@@ -23,9 +23,9 @@
 - Ran required checks: grid manifest 324 cells; unittest 11 passed; git diff --check clean.
 
 ## Next action
-1. Acquire pre-window daily basis history (free public source) for the 11 integrated symbols covering at least 365 days before 2024-01-01 and extend forward data through at least 2024-04-28 to satisfy L-day reference and h-day horizons; write ingestion + coverage ledger updates under a new experiment ID/path (do not modify Q1 artifacts).
-2. Recompute basis/crash labels on extended window and rebuild integrated dataset; rerun grid execution scaffold.
-3. Update handoff/next task with concrete eligible-row counts and any remaining blocked cells.
+1. Ingestion attempt EBCR-001-EXTENDED-V1 did not complete in this session (network/timeout); rerun scripts/ingest_extended_window.py with longer monitor and verify research_state/ingestion_extended_v1.json before proceeding.
+2. Then run compute_basis_extended.py, compute_crash_labels_extended.py, integrate_extended.py, execute_grid (successor) and record terminal statuses.
+3. Update handoff/next task with concrete eligible-row counts and remaining blocked cells.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
