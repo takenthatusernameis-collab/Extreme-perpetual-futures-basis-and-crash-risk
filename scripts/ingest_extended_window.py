@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import urllib.request
 """Extended-window public-data ingestion for EBCR-001.
 
 Free public source: Binance Public Data Archive (data.binance.vision).

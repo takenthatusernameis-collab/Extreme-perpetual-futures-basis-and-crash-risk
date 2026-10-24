@@ -1,0 +1,4231 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-EXTENDED-V1",
+  "grid_id": "EBCR-GRID-001",
+  "config_path": "configs/basis_crash_grid_v1.json",
+  "config_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+  "grid_manifest_path": "research_state/grid_manifest_v1.json",
+  "data_source": "research_state/integrated_extended_v1.json",
+  "n_rows": 5010,
+  "generated_at_utc": "2026-10-24T21:24:25.026935+00:00",
+  "cells": [
+    {
+      "config_id": "a0a730890f5740a3",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b8a26d7c3a603499",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a3680d68dc880b79",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "67631e1a580ce95b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "85d0d4292c07d172",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "905436a282731119",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "617a85b17cb18d1b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e7985dce8d598218",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "810e3220493bd106",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "dbe8b5bab0decdb7",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3c275158e7dee2cc",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "16b22daff0fbbfd0",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e57ed4a4caeab01a",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "743de6e19c943b41",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9e14a1673fa2d429",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "29e9a17e4c23304c",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "28a27fe18bcf982a",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e3d9b27999fd7d5c",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0fc6a321810024a3",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d43f9fbc6b6fab6d",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1b99b10f8a314396",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "45de262b048fbffd",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3456791ba7bd2554",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0ef825b17966fd4e",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "24e14faed79092c7",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b40d104b685eebb7",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e3832c8ce51d2f10",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9bab82279ca77e7d",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "aa431b3d2a7efa87",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0f8c90235eba71ba",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "6a3642d1af7fd931",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "396462fd0b05c72b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a286a759a5d35095",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1a85ecdb85174775",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7df55a42555f3b4e",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4711643f8ba38be3",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "85240c46375517eb",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7f82747e8f9d0b97",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "23eb675e4b766678",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a07f9a5bc4e87f37",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5275cc5a588351f9",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5d63c180508305e6",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "537a6c5e51408efe",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f05ad9d09a21fe15",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "41b2a03af87c5072",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a2b35aa64749a509",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ea7617c99f75cef2",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cd39cefbf44cbec3",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "759fc8e01291ea77",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7864cd7a9a84b302",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "371ddc6f01b38285",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a8643f0abc88e946",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "6bcaffd7693eb754",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "19e47ae39a393d84",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a8d37202577ca0e2",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7f6f2080f416ef6b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b8213ecee132d9f3",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "48ef88191b2efdaf",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c86693b6e8fba35b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c441224363ec2c47",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ba9c3e6971a88d33",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "75a5b53f54f26924",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "90cab0b1b686094b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cefe8f9d573dcaa6",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "bf0af1bfcde41a28",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7fee16089a72d18c",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "05a484c32581cab0",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f91e06e8e0fa21a0",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e5a320f394437231",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2a851254e9a601f1",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f9c02adf4711ed9f",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "735ee92e5d3300fc",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "46f25076ff61d838",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "478f6c1899be4f21",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cbb7295e0360e911",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a2d4a3735cb6cbc4",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a045086220016dd7",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1d1ef12ed1d57372",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d1f69e4c70605865",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7089ab0f4a02be72",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8812e2dca3999458",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "93ef58e1e72a2690",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "85897e117988fa18",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4d780358a99ef42a",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1fea838658a79e45",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "89ee5c442c47eb77",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "995dc487bae7f5d8",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7c5ab6696f85d36f",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e2537869397516cf",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2effe82240d28418",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1c5440b397fdad46",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "54ec03f972c3a6e7",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "aeb8ddd90748e2c9",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5845e2f1da9f26e1",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9e6463db431b0a5c",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1e03bb3d608b7017",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d06aac0cf683b7d6",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ee38361bf519209e",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "39506b0e7be765f4",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "65f6dbb718d0c609",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7af012fa431d64f4",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "857806a434f4bb1d",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4a7b29456fdbcaaa",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "91523e1f0db38c63",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "be84dc57aa68d8aa",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c3a9825f1b02e9e5",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5b828565cdb664ea",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "820f8f380eb84e7b",
+      "config": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c5f609ea2b061861",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d3b76dda2ee69503",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "6531a1287d565769",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f52fd2c362f7af2b",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2df5e5ded212d963",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3820009353cb30f6",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "23b38beb68d8d8cc",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "803509e58b1c640d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2991c7888908c776",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b03a88a7346ed87e",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "982b936077ea2706",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ef637fd8345bab81",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "fe2d6c2b15f9357d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "678f974ebf263478",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7072953ea751060e",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b50b80f003167554",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b1ca265fc7d98f3a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5500bbcfa60528e3",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e5b713b5a1efc0e4",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c9217bfe856672af",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f3e7ffba4257810b",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "268c358c2604a28b",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "79d6ef2a48a3645e",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5644cedc089326da",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "433b7eb0668a27d0",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "476c57fb2e06905a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9d9a1f94528ff6c1",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "34c2b0f154cbdb3a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1acccf08d2fabfe2",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8b4896a78b6bd2bb",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "45e8fe5e4e5dcfaa",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3f96e409d93384e4",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2ee565201e524b77",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8a900cf8c6b5acd3",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "97468fed2416f9a6",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "283269032af63c08",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ec5e59acf8fd748d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4ff243773f93e43d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "53fa2bffc6dfeeee",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "516ffb2379709759",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5e2cd651eff003aa",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7f2f5198de04eb4f",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2b65333b02ef8e5d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0d24d00788d970b4",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2b378b5cc6ce7cd8",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ec0d9bd0df70b695",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "62ee153457a3a9c5",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8e5a97f5f1335659",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a6fed696a29e1b26",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ccfe8456def0b856",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f8e6124daf1bb258",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "17040d77333ebb0e",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b087d9723857965c",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9c848a8486d36817",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "36b3547b54f1a2d5",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "de89f8f018e87735",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f4a8ccf14464f20f",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9aa14f4fa1db9fcb",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0de3a1a7e3d63c75",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7972b69167a21ed0",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b19b8f7eff20b4f6",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "155c738d3ca6204b",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2c85a2279aa544cf",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b30fc28b91d81f99",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f2fab3b07f5086c7",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "619b0e7cc05b32e3",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "594f0a060a2e37de",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7b26e6bc17c92dcb",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e7112b282dcefc73",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c21ba7ab9cd8e180",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0f582301459e56ea",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7e79de1ed912a738",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "739de82a17153b87",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "74641a15bf69572f",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c927454ac203883a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1e945e38c73c37cc",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c0ba26edd40731fa",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "05a752f018db8d29",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "93a64b6ba89b22d4",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "dd90b31b4c7fedb1",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a8feff95347afcb1",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ac173a8431b71303",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "11ec07343025f7c7",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "aaac9f1bff3a074a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a15233b3a1a3813f",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4cf8289bb54d0eb0",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1b8aab5ad9f5e52c",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "31c8d001ff2d9d90",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b8d5a27e4c3f1a15",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "83fbe039d21238fb",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "093058361d7ee9bc",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "6e2ab7ff8dae0071",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "49363e7347f0d247",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "bccd16b6d9f6213c",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e3b82ad4bad133d8",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7d63c1409b5a974d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "861df8ecac7a76f2",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cb51d95f29f5c82a",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cd8c29faafbf66e9",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "94fb4546c70f0652",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4495f04789ac1c33",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "dbd56bb29d1d6990",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "1241c5a38fa23846",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9e2e6d3288363f13",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "67a10e551d70fb9d",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "96af2694bdd5bb43",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3d888df7348c21cf",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0cff167a71c823a3",
+      "config": {
+        "basis_aggregation_days": 3,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9ad19b489f5fb7f9",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "35948d2ae9fe5e7f",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5aaa92572b17b0d8",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b7020f414d43c9a8",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d20532eac8d6736e",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "64ac71002ad81b2d",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "516ea447f3fe97f8",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "00e9e4d0942f5ea3",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "887271b66b73d9d4",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f843a3ea27f4b94f",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4d091612820affff",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c7a3ec0b550ddc7d",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "dd244a798c3c0a9b",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7ab4bf2bab45dcf5",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "61edd8ef9c146263",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "cee531d294a28b6a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "02d70df08f791655",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "de09303cfa2b6343",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4e3df9c7535300fd",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9f86195bd2596fae",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "36fc8f04d0aab36a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "85561a33c150be13",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "507a48322b6f9539",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "75e65c64cbea06ff",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9499410f7f229590",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "99cf810b665a699b",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "db6eb85a0e841ac9",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "67784addf377dac5",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "dbb491b15d19ed2e",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "51f39f1f460b8269",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "806e8b7339237e68",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b659276e4b232c90",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "722365029bf27472",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "841a23e5dab05ce1",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b7a3c672346029a2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "05935d7ffe7dcb5a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 90,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ac86634968ed63e7",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b3241b273e472be6",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "0b04914d01e8b06b",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9d62da9707a6c52c",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7a2e6d310e4f1aeb",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "fc4e048a108e2f10",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "65d46f0a71198054",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "7068a94adb3936b3",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "593e89f03e288045",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "5fa601584e9e86d2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "91d9c3ef6a78dcad",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "aa0163f067bbcbd7",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2e2ca8f07cfc5b21",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "408a414f49ce9f74",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3e7e692b11992466",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d73444cd09f0eb49",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4d84468057796566",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "58715bb830767e68",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9a596b11e261a9f7",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "4200ea60a521f55a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a04bde22a6559fb6",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "bb6d3a36d35ea96c",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "adfbfccc0d224a21",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b30f9048caea38c7",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e4d6e4c30bc82fbc",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "e102e4cb2b9bc081",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2943d30bf775d753",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "2f47ccbf459b0a45",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3fff9bbb4cfa2b91",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "65ec63911134382c",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9427b1fc2258e8d7",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "af99c4faddb60335",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f78499470fec080a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "6b669a08e7a983b5",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "551ca9d4ab21e9c9",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a55a4b8d58d23e42",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 180,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "70806e79d67c3248",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "433811886d16ee9a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "456a28db7aea4782",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "813b20d6b8c327af",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b762281cd058485e",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "c2491c1fa0298f2e",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "152962703a3b9191",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8105ca95d6c1bd5c",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d5c63c24e6611e9d",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "857249378aaed09a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "227906c7d2b1dd2a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3c5664580ae45c91",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "59f8404e58e332b0",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "78bfe54014604920",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "188bae33d9a9bc3e",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f1ffe64e28acfa59",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "91c6df7322315d74",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "60d1508e2cd79e69",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d460bac4fd7c1694",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "d42eaeebf645e3c2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "385e96ebd388a715",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3a5366ff78963d34",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "3076b8bedec3c3f6",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "b832f89c5e5a1899",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "cheap_negative",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "435269a55ed908b2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "8604bc3e17d957e0",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "baa70dd447c6cb2a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.9,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9c0d73467efa631c",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "9f0860977ce78fe0",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "f79f436f045b907a",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.95,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "fb553bdbadfa6b64",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "a9bf98183da985ca",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "ab6061d3523f2ec9",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.975,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "aa52ce1fc853e083",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 7
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "edd1accba20baef2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 14
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    },
+    {
+      "config_id": "45d9188aa329b3c2",
+      "config": {
+        "basis_aggregation_days": 7,
+        "rolling_reference_days": 365,
+        "orientation": "absolute_extreme",
+        "tail_quantile": 0.99,
+        "horizon_days": 28
+      },
+      "status": "not_run",
+      "reason": null,
+      "evidence_path": null
+    }
+  ],
+  "holm_correction": {
+    "family_size": 2592,
+    "method": "holm",
+    "applied_to": "all_grid_cell_endpoint_tests"
+  }
+}

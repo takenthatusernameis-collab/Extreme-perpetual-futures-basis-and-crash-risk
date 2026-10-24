@@ -1,0 +1,393 @@
+{
+  "config_path": "configs/basis_crash_grid_v1.json",
+  "config_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+  "coverage_gate": 0.95,
+  "experiment_id": "EBCR-001-EXTENDED-V1",
+  "generated_at_utc": "2026-10-24T21:23:26.044801+00:00",
+  "program_id": "EBCR-001",
+  "schema_version": "1.0",
+  "source": "Binance Public Data Archive (data.binance.vision) \u2014 free public",
+  "status": "ok",
+  "symbols": [
+    "ADAUSDT",
+    "BCHUSDT",
+    "BNBUSDT",
+    "DOGEUSDT",
+    "LINKUSDT",
+    "NEARUSDT",
+    "SOLUSDT",
+    "TRXUSDT",
+    "XLMUSDT",
+    "XRPUSDT",
+    "ZECUSDT"
+  ],
+  "symbols_detail": {
+    "ADAUSDT": {
+      "coverage_basis": 0.9938,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 483
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 483,
+      "n_days": 486
+    },
+    "BCHUSDT": {
+      "coverage_basis": 0.9938,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 483
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 483,
+      "n_days": 486
+    },
+    "BNBUSDT": {
+      "coverage_basis": 0.9856,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 479
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 479,
+      "n_days": 486
+    },
+    "DOGEUSDT": {
+      "coverage_basis": 0.9959,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 484
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 484,
+      "n_days": 486
+    },
+    "LINKUSDT": {
+      "coverage_basis": 0.9959,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 484
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 484,
+      "n_days": 486
+    },
+    "NEARUSDT": {
+      "coverage_basis": 0.9959,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 484
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 484,
+      "n_days": 486
+    },
+    "SOLUSDT": {
+      "coverage_basis": 0.9959,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 484,
+      "n_days": 486
+    },
+    "TRXUSDT": {
+      "coverage_basis": 0.9959,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 484,
+      "n_days": 486
+    },
+    "XLMUSDT": {
+      "coverage_basis": 0.9979,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 485,
+      "n_days": 486
+    },
+    "XRPUSDT": {
+      "coverage_basis": 0.9938,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 484
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 483,
+      "n_days": 486
+    },
+    "ZECUSDT": {
+      "coverage_basis": 0.9979,
+      "first_last_valid": {
+        "funding": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "index": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 485
+        },
+        "mark": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "spot": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        },
+        "um": {
+          "first": "2023-01-01",
+          "last": "2024-04-30",
+          "n_days": 486
+        }
+      },
+      "meets_gate": true,
+      "n_basis_days": 485,
+      "n_days": 486
+    }
+  },
+  "window": {
+    "end": "2024-04-30",
+    "start": "2023-01-01"
+  }
+}
