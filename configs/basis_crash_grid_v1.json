@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-BASELINE",
+  "grid_id": "EBCR-GRID-001",
+  "title": "Extreme perpetual basis and forward crash risk",
+  "status": "preregistered_design_not_executed",
+  "research_question": "Do extreme perpetual-futures basis observations predict higher subsequent crash incidence and greater downside-tail severity over 7–28 calendar days?",
+  "feature_definition": {
+    "basis": "100 * (perpetual mark price / contemporaneous underlying spot/index price - 1)",
+    "daily_aggregation": "Median of valid timestamp-aligned basis observations in each UTC day; record matching policy and coverage.",
+    "aggregation_days": [
+      1,
+      3,
+      7
+    ],
+    "feature_at_t": "Median of the last A completed daily basis aggregates; no observation after formation timestamp may enter.",
+    "threshold_at_t": "Empirical quantile estimated strictly from preceding L completed daily feature values, excluding the current formation-day feature.",
+    "positive_extreme": "feature_t > rolling_quantile(q, L)",
+    "negative_extreme": "feature_t < rolling_quantile(1-q, L)",
+    "absolute_extreme": "abs(feature_t) > rolling_quantile(q, L) of abs(feature) over preceding L observations"
+  },
+  "grid": {
+    "axes": {
+      "basis_aggregation_days": [
+        1,
+        3,
+        7
+      ],
+      "rolling_reference_days": [
+        90,
+        180,
+        365
+      ],
+      "orientation": [
+        "rich_positive",
+        "cheap_negative",
+        "absolute_extreme"
+      ],
+      "tail_quantile": [
+        0.9,
+        0.95,
+        0.975,
+        0.99
+      ],
+      "horizon_days": [
+        7,
+        14,
+        28
+      ]
+    },
+    "expected_configuration_count": 324,
+    "enumeration_order": [
+      "basis_aggregation_days",
+      "rolling_reference_days",
+      "orientation",
+      "tail_quantile",
+      "horizon_days"
+    ],
+    "minimum_history_rule": "Require the full rolling_reference_days count of valid prior daily observations; never shorten a window or substitute a threshold.",
+    "primary_anchor": {
+      "basis_aggregation_days": 1,
+      "rolling_reference_days": 90,
+      "orientation": "rich_positive",
+      "tail_quantile": 0.95,
+      "horizon_days": 14
+    },
+    "anchors_are_immutable": true,
+    "grid_is_exploratory": true
+  },
+  "outcomes": {
+    "primary_co_primary": [
+      "crash_incidence_15pct",
+      "expected_shortfall_5pct_forward_mae"
+    ],
+    "endpoints": [
+      "crash_incidence_10pct",
+      "crash_incidence_15pct",
+      "crash_incidence_20pct",
+      "vol_scaled_crash_2sigma",
+      "vol_scaled_crash_3sigma",
+      "vol_scaled_crash_4sigma",
+      "mean_forward_mae",
+      "expected_shortfall_5pct_forward_mae"
+    ],
+    "formation_reference": "Underlying spot/index close at formation UTC daily close t.",
+    "forward_path_loss": "MAE_h = min(spot/index low from t+1 through t+h) / spot/index close at t - 1.",
+    "fixed_crash_definition": "Crash_kpct is 1 when MAE_h <= -k/100, for k in {10,15,20}.",
+    "volatility_scaled_definition": "Use prior-only standard deviation of the 30 valid daily log returns ending at t-1; sigma_h = sigma_30 * sqrt(h); a k-sigma crash means MAE_h/sigma_h <= -k, k in {2,3,4}.",
+    "severity_definition": "Mean forward MAE and expected shortfall of MAE in the worst 5% of observations; more negative means greater downside severity.",
+    "no_lookahead": "Signals use only completed UTC day t. Outcome lows/closes begin t+1. Require the full horizon.",
+    "spot_reference_primary": true,
+    "perpetual_price_outcomes_secondary": true,
+    "average_returns_primary": false
+  },
+  "evaluation": {
+    "chronological_splits": {
+      "development_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "historical_holdout_fraction": 0.2,
+      "split_method": "Boundaries use unique UTC dates and source coverage before forward outcomes are calculated. Keep chronological and apply an embargo of 28 full days at every split boundary.",
+      "development": "Full grid allowed; discovery only.",
+      "validation": "Frozen primary anchor only; no parameter changes after viewing outcomes.",
+      "historical_holdout": "Frozen anchor only; never run the grid or threshold search here.",
+      "live_forward": "After preregistration, freeze the latest fully closed UTC cutoff; assess only the primary anchor after full 7/14/28-day horizons close. Do not call it independent if outcomes were previously inspected."
+    },
+    "primary_inference": {
+      "comparison": "Within-asset, calendar-week-aware standardized event risk versus non-extreme observations; include asset and calendar-week fixed effects where estimable.",
+      "co_primary_endpoints": [
+        "crash_incidence_15pct",
+        "expected_shortfall_5pct_forward_mae"
+      ],
+      "multiplicity": "Holm correction across the two anchor co-primary endpoints separately in validation, historical holdout and each genuinely sealed forward block.",
+      "temporal_dependence": "Moving-block bootstrap over jointly sampled calendar blocks of 56 days, preserving all assets within each selected block; sensitivity uses 28- and 84-day blocks.",
+      "adjusted_controls": [
+        "prior 7-day return",
+        "prior 30-day return",
+        "prior 30-day realized volatility",
+        "prior drawdown",
+        "market/BTC return and volatility",
+        "funding rate",
+        "liquidity/turnover proxy",
+        "open interest when complete"
+      ],
+      "controls_policy": "Covariates must be known at formation t. Report availability and missingness; no forward fill."
+    },
+    "grid_inference": {
+      "endpoints_per_configuration": 8,
+      "total_registered_grid_tests": 2592,
+      "calculation": "324 configurations * 8 endpoints",
+      "correction": "Holm correction across all 2,592 grid cell-endpoint tests for the one registered inferential procedure. Effect sizes and intervals remain reported irrespective of significance.",
+      "status_accounting": [
+        "ok",
+        "blocked",
+        "failed",
+        "incomplete",
+        "invalid",
+        "not_run"
+      ],
+      "no_raw_p_value_winner": true
+    },
+    "reporting": {
+      "report": [
+        "event rate",
+        "absolute risk difference",
+        "risk ratio",
+        "confidence intervals",
+        "mean MAE difference",
+        "5% expected shortfall",
+        "effective event count",
+        "unique asset count",
+        "calendar-block count",
+        "missingness and coverage",
+        "adjusted p-values"
+      ],
+      "stratify": [
+        "orientation",
+        "horizon",
+        "market regime",
+        "asset cohort",
+        "listing age",
+        "liquidity"
+      ],
+      "negative_results_required": true,
+      "no_profitability_claim": true
+    }
+  },
+  "data_gates": {
+    "require_point_in_time_market_cap_rank": true,
+    "current_rank_is_discovery_only": true,
+    "preserve_delisted_and_failed_assets": true,
+    "reject_synthetic_or_forward_filled_data": true,
+    "require_contract_lifecycle_and_identity": true,
+    "compare_spot_and_perpetual_timestamps": true,
+    "minimum_daily_coverage_fraction": 0.95,
+    "record_all_exclusions": true,
+    "source_specific_cutoffs_required": true
+  },
+  "universe": {
+    "discovery_order": "descending latest publicly available market capitalization rank",
+    "discovery_is_not_historical_membership": true,
+    "historical_membership_rule": "At each formation date use a point-in-time historical market-cap rank/rank universe if a free reliable history exists; otherwise retain the asset as a labelled candidate or coverage cohort, never claim it is PIT-eligible.",
+    "fixed_top_n_limit": null,
+    "batch_size_for_checkpointing": 25,
+    "continue_until_source_frontier_exhausted": true,
+    "no_manual_experiment_id_gate": true
+  },
+  "free_only": {
+    "public_data_only": true,
+    "paid_apis_trials_subscriptions_compute": false,
+    "exchange_credentials": false,
+    "trading_orders": false,
+    "live_or_paper_trading": false,
+    "open_source_dependencies_only": true
+  }
+}
