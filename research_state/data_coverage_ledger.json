@@ -18,7 +18,7 @@
       "mark_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2464},
       "index_price_klines": {"earliest_utc_date": "2019-12-23", "latest_utc_date": "2026-10-23", "file_count": 2097},
       "funding_rate_monthly": {"earliest": "2020-01", "latest": "2026-09", "file_count": 81},
-      "notes": "index has 367 fewer files than mark (significant gaps); needs per-day audit"
+      "notes": "index has 367 fewer files than mark (significant gaps); per-day audit requires S3 directory listing; not yet completed"
     }
   ],  "venues": {
     "binance": {

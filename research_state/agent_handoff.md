@@ -23,11 +23,14 @@
 6. Coverage sampling: BTCUSDT/ETHUSDT spot/UM/mark/index daily klines + funding monthly; recorded windows/gaps in data_coverage_ledger.json.
 7. Attempted universe expansion via CoinPaprika offset=25; endpoint returned same first 25 (no pagination exposed) — recorded; frontier remains 25.
 8. Wrote ingestion prototype notes.
+9. Implemented ingestion parser prototype (scripts/ingestion_prototype.py); verified schema on BTCUSDT 2024-01-01 sample; output research_state/ingestion_prototype_sample.json.
+10. CoinPaprika pagination: /v1/coins returns all 62351 rows sorted by rank; no cursor/next page; next 25 obtainable by client-side slice of full list.
+11. ETHUSDT index gap audit: blocked on S3 directory listing; recorded as incomplete.
 
 ## Next action
-1. Implement ingestion parser prototype for one symbol/day; verify schema on downloaded sample.
-2. Audit per-day gaps for ETHUSDT index (367 missing files) vs mark.
-3. Investigate CoinPaprika pagination alternative (cursor/next page) for next 25 candidates.
+1. Implement S3 directory listing parser for ETHUSDT mark/index to enumerate missing dates.
+2. Extend ingestion prototype to multi-day and coverage gating.
+3. Map first 25 candidates to Binance perpetual symbols.
 4. State updates.
 
 ## Reporting rules

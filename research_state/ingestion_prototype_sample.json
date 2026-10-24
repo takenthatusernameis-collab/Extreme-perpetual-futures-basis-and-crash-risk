@@ -1,0 +1,49 @@
+{
+  "symbol": "BTCUSDT",
+  "date": "2024-01-01",
+  "spot": {
+    "date": "2024-01-01",
+    "n_bars": 1,
+    "close_median": 44179.55,
+    "open_time_ms": 1704067200000,
+    "close_time_ms": 1704153599999,
+    "raw_sha256": "6322fa0e83995518b01066a110dca5c03ff837a6ef915a792b718fa76f0de205"
+  },
+  "um_kline": {
+    "date": "2024-01-01",
+    "n_bars": 2,
+    "close_median": 44230.2,
+    "open_time_ms": 1704067200000,
+    "close_time_ms": 1704153599999,
+    "raw_sha256": "7d98fe904ac7ccb3df3de21e68553c1f803e6dee3340b36b24956c4a726c2972"
+  },
+  "mark": {
+    "date": "2024-01-01",
+    "n_bars": 2,
+    "close_median": 44232.4,
+    "open_time_ms": 1704067200000,
+    "close_time_ms": 1704153599999,
+    "raw_sha256": "c598ac3b7870026007159be7a8548a5218ccc5f83e5cc477936378fa06670d33"
+  },
+  "index": {
+    "date": "2024-01-01",
+    "n_bars": 2,
+    "close_median": 44178.44574468,
+    "open_time_ms": 1704067200000,
+    "close_time_ms": 1704153599999,
+    "raw_sha256": "6878ec11fc90f32c9b604d2610b14392610f25e52b426ae60960f993dea4d3b8"
+  },
+  "funding_rates_on_day": [
+    0.00037409,
+    0.00027213,
+    0.00033601
+  ],
+  "funding_median": 0.00033601,
+  "basis_pct": 0.12212800701911775,
+  "funding_raw_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e",
+  "funding_header": [
+    "calc_time",
+    "funding_interval_hours",
+    "last_funding_rate"
+  ]
+}

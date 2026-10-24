@@ -3,9 +3,9 @@
 Read AGENTS.md, SKILLS.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
 ## Immediate deliverables
-1. Implement ingestion parser prototype for one symbol/day (BTCUSDT): download sample ZIPs, parse CSV, compute spot/mark/index median + funding, write output to research_state/ with hash.
-2. Audit per-day gaps: compare ETHUSDT index files vs mark files; record missing dates in data_coverage_ledger.json.
-3. Investigate CoinPaprika pagination for next 25 candidates; record method or blocker.
+1. Implement S3 directory listing parser for ETHUSDT mark/index to enumerate missing dates; update data_coverage_ledger.json.
+2. Extend ingestion prototype to multi-day processing with >=95% coverage gate.
+3. Map first 25 candidates to Binance perpetual symbols; record mapping/blocked status.
 4. State updates: update handoff and next task.
 
 ## Boundary
