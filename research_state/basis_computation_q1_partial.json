@@ -1,0 +1,3284 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "generated_at_utc": "2026-10-24T18:33:21.147365+00:00",
+  "source": "research_state/ingestion_btc_eth_q1_2024.json",
+  "basis_computations": [
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-01",
+      "mark_median": 44232.4,
+      "index_median": 44178.44574468,
+      "basis_pct": 0.12212800701911775,
+      "spot_median": 44179.55,
+      "um_kline_median": 44230.2,
+      "funding_median": 0.00033601,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c598ac3b7870026007159be7a8548a5218ccc5f83e5cc477936378fa06670d33",
+        "index_sha256": "6878ec11fc90f32c9b604d2610b14392610f25e52b426ae60960f993dea4d3b8",
+        "spot_sha256": "6322fa0e83995518b01066a110dca5c03ff837a6ef915a792b718fa76f0de205",
+        "um_sha256": "7d98fe904ac7ccb3df3de21e68553c1f803e6dee3340b36b24956c4a726c2972",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-02",
+      "mark_median": 44973.86526596,
+      "index_median": 44947.31,
+      "basis_pct": 0.05908087927841699,
+      "spot_median": 44946.91,
+      "um_kline_median": 44979.8,
+      "funding_median": 0.0005373,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "da2d4b95827a16883e798d40bbd1077f8f00ae68f91bad1aae6f7fe14c23af40",
+        "index_sha256": "180f4f4894901a03cca32e28ecdee8f293e572b5e78e4bb1a91309e89d1f5bb5",
+        "spot_sha256": "a1439daf408a371dd3e0b46ea373f96c5cbb397f57347c743d6ae59790b5df14",
+        "um_sha256": "a52c985f6ddebbde526ac1d18aba1a677e82bc7e186e7b77e3005f118ccd14b3",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-03",
+      "mark_median": 42849.4,
+      "index_median": 42841.79851064,
+      "basis_pct": 0.017743161174976763,
+      "spot_median": 42845.23,
+      "um_kline_median": 42849.5,
+      "funding_median": 0.00017123,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "cf6f13ea08f75294c18d82dc6b3572284de39467ca8374aa21f877540436bc75",
+        "index_sha256": "1e08d24360cda4189e800f84b541a748484ba69ae7173d658348bb57d8153947",
+        "spot_sha256": "af1f20f12be82bc7f3dfad35e4369ac9971385b13f646d0e1ac6d1ef669aaa11",
+        "um_sha256": "e62531ff409e221f25990ee14a9525da65a214f2a9f01df12abec458cc03c865",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-04",
+      "mark_median": 44147.1,
+      "index_median": 44151.2025,
+      "basis_pct": -0.009291932648947121,
+      "spot_median": 44151.1,
+      "um_kline_median": 44143.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3ba5de26070e37120b5b987dca6b7df7c9b7b3318c4d27fd36999c1c24ccb180",
+        "index_sha256": "ff3b4adc39faa86416f0e1b2f7fde6d3e80acb3bfcc114144ba2251b30e91b1d",
+        "spot_sha256": "8a031f60f38660c72754f24994caadfeb671b7988aa876cf0155a6e2837686c6",
+        "um_sha256": "ba7da817c19c1c055df267271931fe991b7e0e6f1ce3dacfc5e46b7abc0eaece",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-05",
+      "mark_median": 44142.952426,
+      "index_median": 44143.29,
+      "basis_pct": -0.0007647232455831876,
+      "spot_median": 44145.11,
+      "um_kline_median": 44145.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1e5ed7cffe904e43ba95643a72f3f6cd3bc9166417341aa66d196fd0af4540a1",
+        "index_sha256": "0b35b77c570317602d8c4087d62c4cbe626516949834076e15e6c681cfd4d6b8",
+        "spot_sha256": "4c5b56d49bf47067342a7babaed8fe5cabe9b8313d7bf7f6723839231662131e",
+        "um_sha256": "4881a297b6f230df3c2908151919c7a5dfdd586376b94cfa2dbad75d2cfdd2b4",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-06",
+      "mark_median": 43968.00152482,
+      "index_median": 43976.18489362,
+      "basis_pct": -0.018608637424533114,
+      "spot_median": 43968.32,
+      "um_kline_median": 43956.7,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d3718398cda3829a1b277df97790820c040dcf0ff3a57faa64ee0466812f4a85",
+        "index_sha256": "34287f223a08f7012edff42a2550a5ed0766297ace40ce8ed94a599ee3e8da3f",
+        "spot_sha256": "6e120b2f750b48db9eee6da407b1714285ef06d74f198ec173e8ea1128ca8c20",
+        "um_sha256": "85073d96faf397d64d6a12792728a47343865cf967139caaf98cb8d436789e05",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-07",
+      "mark_median": 43909.5,
+      "index_median": 43923.66851064,
+      "basis_pct": -0.032257120410073004,
+      "spot_median": 43929.02,
+      "um_kline_median": 43916.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "961771ab48c9bd0670a9a54d110051e87187b00d81f641a9533dae546e67face",
+        "index_sha256": "d314c134ceb818013bb387dbdf0de52339c624d64284849dcddd56e400fa8e3c",
+        "spot_sha256": "fbace0e8b9ddc00f9a0f37c623a1f2bb6a17147c5913026f86b41688bc5bf85e",
+        "um_sha256": "2122af9a4132a8b0d6d8ee00256dd3764cccf14c3a90a819525b8b6ca7575f7c",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-08",
+      "mark_median": 46972.57134823,
+      "index_median": 46951.04227273,
+      "basis_pct": 0.045854307929804605,
+      "spot_median": 46951.04,
+      "um_kline_median": 46972.7,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "28dd7c81ae8212b5f19073fd85b2ab440675800e14f32dda37a146a575223882",
+        "index_sha256": "fea01c5b915991a26cf6f51870731bc1e40dc239db20558face7dd0a4df80ba4",
+        "spot_sha256": "194d4c3f43cab58f923ce5a2ddb6053b9ec147e673a6669c86e551c491f39648",
+        "um_sha256": "9324b73f1830e3fece895b42d0ce86639c29b2040910f9e9259162f9dd96cc0c",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-09",
+      "mark_median": 46117.9,
+      "index_median": 46111.67042553,
+      "basis_pct": 0.01350975666791765,
+      "spot_median": 46110.0,
+      "um_kline_median": 46114.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "29ed5194fce32695f95841c9419524ae5064d5e3492bd9c4c4d87d9dfc51fb8d",
+        "index_sha256": "785c7cfd65a1d342f90a4c1ebf58d66371e47abd7c7594b27c865e89d6deeda9",
+        "spot_sha256": "00e09acba79c1fa1d254c93728ab36454f76e0b179cf01b4b3f9340e8ba96043",
+        "um_sha256": "08209607b951e7676d30d947817637a71429c5ae4198c3b8898406d560d41aae",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-10",
+      "mark_median": 46653.9,
+      "index_median": 46646.00382979,
+      "basis_pct": 0.01692785997020607,
+      "spot_median": 46653.99,
+      "um_kline_median": 46662.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "82ddfb71cd240d188d9c37e5917fd10a3795518917edc50932b6b0ca88815770",
+        "index_sha256": "f056afdef928bb5dcea75cf8f2dc45770af574c7171908dbef7d04fdad026ae8",
+        "spot_sha256": "aec7da62636a2bf2aa6510a5c9c14b95877a77d870f260ca880995be148da587",
+        "um_sha256": "fb3e197a9a6b600b7356489cf6035297f8955a364e0099c7f45c3cee7d027bb2",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-11",
+      "mark_median": 46341.69739495,
+      "index_median": 46341.69723404,
+      "basis_pct": 3.4722509312246075e-07,
+      "spot_median": 46339.16,
+      "um_kline_median": 46337.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "836cd1cf71ec59e6343560b979f46954a1c9287969de0c10f5245b571e0ea651",
+        "index_sha256": "8f18fc621c2adad741d92293b81a82ff17f0e92810819a5c6ed408a1cfe45ec9",
+        "spot_sha256": "030dc696e0a040ee74bcc2de7479964fa1391ae4e85c0f6205b1d7d73d046360",
+        "um_sha256": "324f04f7b6e8fbf84ae455be183186251cd62d4282bd5feb878f2b3dc0ab4e96",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-12",
+      "mark_median": 42787.57419112,
+      "index_median": 42787.57404255,
+      "basis_pct": 3.472269805016026e-07,
+      "spot_median": 42782.73,
+      "um_kline_median": 42788.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "49019e1df06b0e9dc189f5b373cddc0ef9fcd6472e3d35de19f515f8e8891590",
+        "index_sha256": "230a184d62d95f5e93f5822eb0f7876e08f6b6bbeb16decb418f9807401e9e36",
+        "spot_sha256": "f7548d684317b02b3898e2fa08b95f932a113909c135790445f3f31ae8970509",
+        "um_sha256": "bcd04192d37340a7b41344736dee7f59f7605342478e6860a2e165eff5d82b6c",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-13",
+      "mark_median": 42846.98099984,
+      "index_median": 42847.30638298,
+      "basis_pct": -0.0007594016228074096,
+      "spot_median": 42847.99,
+      "um_kline_median": 42846.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "92ba27261979eb5280ea578b76e37958f82d2251412412bdd684d83a114a2ab9",
+        "index_sha256": "49b2e6c176b23b99735a7b9285725f07f2214de138003fa2ee37006f74b6a75d",
+        "spot_sha256": "d69dfd15c80daea066c001c8a0719c9c1106b5d1b82c32989393433f6e7e5983",
+        "um_sha256": "4f8516b773a98da71e77bdaf52251736a3701a3be52394cff343dc4d74703f9c",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-14",
+      "mark_median": 41743.93801728,
+      "index_median": 41736.64425532,
+      "basis_pct": 0.01747567896301927,
+      "spot_median": 41732.35,
+      "um_kline_median": 41734.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5100f1c9b15b714f9a574e4f693f1054a90f652b906efb17c03c661c828da796",
+        "index_sha256": "26e20af313ffcfe869f16554b9def95c196de43bc162725a348a41d3cb8a75f0",
+        "spot_sha256": "2ad6760f2ad365f13284c8eb9f6d84ccbac1a33ad8d316948de1e26e92343b09",
+        "um_sha256": "bb6981d0d5eae4ac5ebf0afdf5c99ec580ff06c71962925b26062f69d7cfe720",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-15",
+      "mark_median": 42519.44021631,
+      "index_median": 42519.39276596,
+      "basis_pct": 0.00011159696062801316,
+      "spot_median": 42511.1,
+      "um_kline_median": 42515.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "66f59cb36608a8761e1adfcf7ebd47efffbe8919e69912365205424803f08827",
+        "index_sha256": "f8cb25ea7b9d1c3b9ec00a4b7438f64394313d6fc60eb00a513396e1d0fa5f8c",
+        "spot_sha256": "ce70c8b99d7783d9d7ff8a6fde4337d49fcd977b4c92823743210fd430a0416d",
+        "um_sha256": "0a8726ef91a698ecef6fcc9266f565534152cff99cff8e9916d747bda13f7475",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-16",
+      "mark_median": 43140.25228369,
+      "index_median": 43143.55,
+      "basis_pct": -0.0076435905483007716,
+      "spot_median": 43137.95,
+      "um_kline_median": 43133.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "fc925dd901e4592e0c50bdfe4f0af3b563613a7b3cc352dcb0e1837f2e36f91d",
+        "index_sha256": "8ce72f03a1fd31b3fcb5a29bd1b58b732bfb820680755573816ff304336dfdd0",
+        "spot_sha256": "efed782f67e9f71ed6815fbb139320700825436f0686901d617b2714f9a47102",
+        "um_sha256": "c75fd36558b691c457b6c101748c4223102c41d781f879c8dcec2210875fdd92",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-17",
+      "mark_median": 42781.80899645,
+      "index_median": 42776.52978723,
+      "basis_pct": 0.012341368610924164,
+      "spot_median": 42776.1,
+      "um_kline_median": 42783.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2fc74f5f4c436699b6d6066dfa2481ff96da5252263c0c05bc59b5445c289f1f",
+        "index_sha256": "8d6b5b3f6cde53d1b6560a0ab26d3302ed7aa27b19ef7b61635e1c518a40237f",
+        "spot_sha256": "5e855e03b91719b65ff3352db75ea3688cee5285e26c8a98bf4ef5d2bbec4544",
+        "um_sha256": "6f6fbda6e32f486f33407af3407288b6725ecfe0cf34786ab46046d652ac08e7",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-18",
+      "mark_median": 41312.34737749,
+      "index_median": 41312.34723404,
+      "basis_pct": 3.4723275366133066e-07,
+      "spot_median": 41327.5,
+      "um_kline_median": 41323.1,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "33fb43dae6ba25b462c71006ba045b72e980f00e542f352df3bdd7a758e1271c",
+        "index_sha256": "c95e4abc99ddb065e03ebab5f730c24c8a317d32bac2a92357d45f2116d65ca7",
+        "spot_sha256": "a9a5fb91054985c91f81dbe9b1326d72a1f8df08242a95e98ce21c6c00fc09fb",
+        "um_sha256": "8530f347a6f9c69186f14e3c43143b0f810dc4ea6ab07b6ffddd04eee1fd8c1e",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-19",
+      "mark_median": 41662.1,
+      "index_median": 41659.22382979,
+      "basis_pct": 0.006904041759758783,
+      "spot_median": 41659.03,
+      "um_kline_median": 41662.2,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3dd9b23d1c5ccbfd80966a5cae857247417ae6217f915590465e93bc456519e9",
+        "index_sha256": "78b1ea7ce0af8b574db66cf042ca226998975c1da00e231e92165e95d8fd146e",
+        "spot_sha256": "7b43fef70b274b0e4ffc493c13d4e15d203bb2dc60e5860ba7d069b40bdf16e7",
+        "um_sha256": "721b4e27fb583f27a7b14040efaba34abf79f0911f67923d96865be3fa5485be",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-20",
+      "mark_median": 41694.4,
+      "index_median": 41694.36765957,
+      "basis_pct": 7.75654646290036e-05,
+      "spot_median": 41696.04,
+      "um_kline_median": 41691.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f2f48c889a506daf79b872cbc1c22fc2b1f134f0f121bbbf18e020e8747aa43b",
+        "index_sha256": "347992625d833cb52b5bfebdfd3cccc6ed1c9664490882e415283f1477fe369e",
+        "spot_sha256": "32e902cd03cc4f962450a3cdcec319c9a497151ad1f5a8e2be1f3db1e223999a",
+        "um_sha256": "358e0e6a3481a154ebbe243123e71585359fe0f8428ee58cc9d8bd88d114b922",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-21",
+      "mark_median": 41578.5805699,
+      "index_median": 41578.58042553,
+      "basis_pct": 3.472220289069128e-07,
+      "spot_median": 41580.33,
+      "um_kline_median": 41580.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5bf4cc05c27abb7423646551f9d10ed25de69d9210542c9a6d5b58dd13193ad6",
+        "index_sha256": "fce825c460ee164228cb76c0909e9dfd34adf1cd7bbaeeda8f37af417ee18219",
+        "spot_sha256": "c6625528929e9057105e78bc7154ded70338c8552e2cbc7ace5985de745a9c8b",
+        "um_sha256": "03c8d51a0ac06c87fc715001de7d2d575c947d25ae542b3021d954fc359bd9e7",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-22",
+      "mark_median": 39566.15381552,
+      "index_median": 39565.73886364,
+      "basis_pct": 0.0010487656541213752,
+      "spot_median": 39568.02,
+      "um_kline_median": 39567.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "0b05bbdadc8588b7e3a09e5d4cad06868e16d6d1318652cab42a073f1412fcc2",
+        "index_sha256": "d3a5b0d1b9e1abf3545b6c3df743e21f8e0e2ca22fa05d2ab8e4911e4bbaec17",
+        "spot_sha256": "9b8b83fe2dd098e3a6b84f57455705dced6738f0d404eaef12f530de5f21b6cb",
+        "um_sha256": "c1b1f46382a6a8404540da5c0f9473b40ebc8b50044491ee720741c8b7706775",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-23",
+      "mark_median": 39894.53888258,
+      "index_median": 39899.74090909,
+      "basis_pct": -0.013037745086752484,
+      "spot_median": 39897.6,
+      "um_kline_median": 39890.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "38ec220b90577c28d6c8a8fc5528636d4ede9ab39e9f908c932cb1206cd1e64f",
+        "index_sha256": "645e0fd0177ec1a294b519557989bed1cb91e76ad5d4fb07edc8ef073eff40ce",
+        "spot_sha256": "16d967526f8fdcd9c5a99d3c3c545b57f628b6980648f3d6d34858f7351f583e",
+        "um_sha256": "149e80f89c698f0d9c7fe5444c557197701a4d80118e7385c061bfaf21151d3b",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-24",
+      "mark_median": 40075.7,
+      "index_median": 40084.28,
+      "basis_pct": -0.021404899875965278,
+      "spot_median": 40084.88,
+      "um_kline_median": 40078.7,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "8661e1a7d53d3661040f585d919510f71649eb549750682d2d0f6070f4759664",
+        "index_sha256": "2ac1358dbc2312979a3d75c4f25338d32f9e4ecac21ccd30de26c192fba6ffc8",
+        "spot_sha256": "f43e958a20aa77506ccc6c2068a5d2c6b0bf0e0366b3be3a290b2cc7b7e11e8d",
+        "um_sha256": "806d986c563ed4ef30e0b7f651582d0274e4b6ca6e61e9715c30366e340464ba",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-25",
+      "mark_median": 39954.0,
+      "index_median": 39960.1306383,
+      "basis_pct": -0.015341887531572507,
+      "spot_median": 39961.09,
+      "um_kline_median": 39953.3,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "22d591fa1e60af04a78ef3b71fd7c49281e357d937d523a2812cb4664310c760",
+        "index_sha256": "bd8ab32aa548433be1916f734363189b5ebca915bf1e7577ada5d1fde38d2a39",
+        "spot_sha256": "192d159470d7abf6229e63b4d57fff5625d553fe02ca618b58ba211479ff8a6e",
+        "um_sha256": "7d581867600e393b72a9738b06edb33a9cf0af4677645e2b0013ac4d9fd5d12f",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-26",
+      "mark_median": 41802.6,
+      "index_median": 41820.79159091,
+      "basis_pct": -0.043498915773643176,
+      "spot_median": 41823.51,
+      "um_kline_median": 41806.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "38fbbdfa7951747beb82b95d7b3ff4433d23d54165725c4424ff202fc4223cde",
+        "index_sha256": "1ea147ae41e290c49d1b8f70abc50b1aefc28269dd8b8dc9c4ce838a6de2cf67",
+        "spot_sha256": "82fcad3c158f86988b99e01effd9a12fa14829647e25dd687bb745744e47935a",
+        "um_sha256": "141a4e34ceb5b9a3df8ec308d2baa46cd2eb6b23fbf3cfe1bf91d83324770eac",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-27",
+      "mark_median": 42102.2,
+      "index_median": 42119.49148936,
+      "basis_pct": -0.04105341434231802,
+      "spot_median": 42120.63,
+      "um_kline_median": 42102.2,
+      "funding_median": 8.966e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e86ef6463beb8921719527ce9b98194bf6a9d6ecfd3ca767713553a0a1bddd8e",
+        "index_sha256": "17c220ffc50d12fa5fb8c7308b80bd35f2b8cab4bce7c0a8478abab23e9cf569",
+        "spot_sha256": "b4c842eaa1175507fa5f2e430b7cbe3c795e39c1927083491e3c1b384c272145",
+        "um_sha256": "2ad535246786087c53938793e523b85a74ec0599ef1d74f887aca671d9939248",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-28",
+      "mark_median": 42021.2,
+      "index_median": 42032.87595745,
+      "basis_pct": -0.027778155037072594,
+      "spot_median": 42031.06,
+      "um_kline_median": 42021.2,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ecc8b8b89fe6cd47be7913a5c606a8e35362b93e104dadc0ea15a6d0740ec8f1",
+        "index_sha256": "c54dd2276b4ff057e89fd363a49f1486e934c66b67e370747cf52e193bfddd39",
+        "spot_sha256": "daa8eb336c482c54ca04dfe17bb4e4845717151b38c15706e44821759ad59526",
+        "um_sha256": "7382375fb0194454d51028741f45f960cd10b998ac2f381ca9b5ca0661645e24",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-29",
+      "mark_median": 43287.6,
+      "index_median": 43298.59957447,
+      "basis_pct": -0.025403995921580158,
+      "spot_median": 43302.7,
+      "um_kline_median": 43287.7,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "71b035e24d32d717bd1685a1d01785b1f70346e7c97ca74d7984df47e4567788",
+        "index_sha256": "a17259a9a27c89bb60547beb5865baf0fc9cdab3d05d8452bf21038a8561ea00",
+        "spot_sha256": "4e250ef4e83a849b1446253f262c7fff6525fea6c3ed68df1f24c6926c91c02d",
+        "um_sha256": "baf8b366e8d36dd9356333c75a6745cc940c6124fbb3fb416e47db2eb023b28f",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-30",
+      "mark_median": 42927.6603617,
+      "index_median": 42944.56744681,
+      "basis_pct": -0.03936955502215067,
+      "spot_median": 42941.1,
+      "um_kline_median": 42918.3,
+      "funding_median": 9.492e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "eb89141d755df4801a084213c0748505d3752bb9edc9051d0884a42805935d1b",
+        "index_sha256": "3467da654f0ea5e5d2b0b4ea0b4df3988b8bb00debb9ae96ea8a6b8dc17fe19c",
+        "spot_sha256": "7843e6720b3e7b7eeb9fdb1b32a4704644ac01ae807c4262e2b6a0f739ab1740",
+        "um_sha256": "091e18338d48268e755e21a6abe0db4b7b4aa3fb666c701ff225d39685b24a7e",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-01-31",
+      "mark_median": 42563.08635461,
+      "index_median": 42580.62361702,
+      "basis_pct": -0.041186015892424876,
+      "spot_median": 42580.0,
+      "um_kline_median": 42560.5,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ae4bff2cd342c72683fd5418a3f9d9f98abfe4117ac71c1e1ad0fae290ff236e",
+        "index_sha256": "020faa405bd2cb4576265f5edc6e7a614ab6044bd16b27b8aaae73a6c091776c",
+        "spot_sha256": "31961386e610c37f07d46b8e95662a42654202d55afbfefe33dcfcc7d36c1f66",
+        "um_sha256": "c518ecb1668814cd00fdfb1a4d39f2924c1e2e856d95d3cf7b98690aba40db4c",
+        "funding_sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-01",
+      "mark_median": 43069.94338435,
+      "index_median": 43082.56090909,
+      "basis_pct": -0.02928684942063997,
+      "spot_median": 43082.94,
+      "um_kline_median": 43072.6,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "6ca35ec0fd741a6c700b2b8542f12a520824aa3e1b56bf38f53e1a32ab117096",
+        "index_sha256": "a21525b9964e72cef5884a980b04fce7a55a9b013776d4052e96f6de66e52cbc",
+        "spot_sha256": "05aecc726bbcb64cbea63717973afadc67807db5a8288e86d7301d6093ea8050",
+        "um_sha256": "7ff1f76d3e940da2602d51ae333767eaacc19eb4bd0b51d7b22add31489ab906",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-02",
+      "mark_median": 43182.1,
+      "index_median": 43199.89704545,
+      "basis_pct": -0.04119696264849315,
+      "spot_median": 43200.0,
+      "um_kline_median": 43182.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "fe91b72eaca7ea6cb89823ba19c06fe8364f8ad299f17e10d00b4468eebb53cf",
+        "index_sha256": "9348eb430c3e4883d9cf9052912aaecea33f2d8392f8e339d4cfc6ffaa70f025",
+        "spot_sha256": "24efba81cf7831b97164f8ba761de748e9f0e2ef4744a9e6dce77eee1c6895ff",
+        "um_sha256": "615d3fec0076e3ca705e4f22eef577c20f9369d61d47886ab74b44e4934193a6",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-03",
+      "mark_median": 42993.24426596,
+      "index_median": 43012.00148936,
+      "basis_pct": -0.043609278225853476,
+      "spot_median": 43011.09,
+      "um_kline_median": 42992.4,
+      "funding_median": 8.028e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "72a8adebeca6d5b773448b1a5ce04f508f0a34eb448fee1de92a84d6c261ee88",
+        "index_sha256": "6beae894e7e6b13b03e5a40612a784489eb1bebdd3085b299f2ec242aec6e1a5",
+        "spot_sha256": "222bfb1d6a0a629acae2e77e02f789c8d3da6f78f1b60a15ca9fc5f9ef4e398f",
+        "um_sha256": "96cb1b04fb56fd2270478114dfdd7c884b15a1fe1c8737ee78075c232b970597",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-04",
+      "mark_median": 42570.3,
+      "index_median": 42587.61234043,
+      "basis_pct": -0.04065111772787455,
+      "spot_median": 42582.88,
+      "um_kline_median": 42570.3,
+      "funding_median": 8.846e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3690cf7a9d628d896ae6eb649d02ab3d061246006e6568bdf8eee5caa17644cf",
+        "index_sha256": "2096575f1c4072dea6f599ffe25a2d4e343a6baba3d06d76bb77456b3eb00d5b",
+        "spot_sha256": "6df7acfe1e2d82aaf7ec767b67e43df3a1ef0f003080e361afb33a967c230638",
+        "um_sha256": "e5dc05983297939b150e0d42d1382f0c2a65cb8faeb3f1a6739abe9d010f2eba",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-05",
+      "mark_median": 42694.9,
+      "index_median": 42708.80446809,
+      "basis_pct": -0.03255644418795889,
+      "spot_median": 42708.7,
+      "um_kline_median": 42692.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "4a20f3ee6d0c775979cb5110a3246f8fb41fceb744e1e9a8eedadf8269f6f684",
+        "index_sha256": "995127605011ef4b78d1889a0bd370e3e19a634008e2e623f16d60e48707f3cb",
+        "spot_sha256": "063e5f70380872eae3a0ea91014a9cb7421425646df4708ecb99e420991c1608",
+        "um_sha256": "a692186c4ce1b3ec3616981dd8d196fbf7120588aa505881f9f7d3b24ad1a119",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-06",
+      "mark_median": 43079.1,
+      "index_median": 43096.26255319,
+      "basis_pct": -0.03982376237108287,
+      "spot_median": 43098.95,
+      "um_kline_median": 43079.1,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5bb008240a3b1e7fc4c24abe0bbb0f45f30cc0635cb1a49980bc88f8bb645ac6",
+        "index_sha256": "e4688331fddc899c03aed05d43fd9cd25bc9ff63ac268aa501d3295c1da90f37",
+        "spot_sha256": "a78460415c8f3407d6c7b24a0f44cc48cc2d63641d68d284d0af3d071d9ecca7",
+        "um_sha256": "7e748a3fe71295dc55b9ec8115e99ae9cc5dfe3b2549a54657b8b3676af42d37",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-07",
+      "mark_median": 44326.2,
+      "index_median": 44347.60148936,
+      "basis_pct": -0.04825850472462978,
+      "spot_median": 44349.6,
+      "um_kline_median": 44326.2,
+      "funding_median": 7.527e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "9f8a27d9c099efcc7bb76341224e96d8b5590954e0c85def36e72dcbfb740f23",
+        "index_sha256": "2e4402cbfb5ea9cd431a3083da2b5be924b2fe7c4aef59f8fe525ad4e94c8766",
+        "spot_sha256": "e5d538f156de549b4cc08070244808610fedc47fd4f8844a28c85957a30cfebe",
+        "um_sha256": "a99d4705701c3b7cc22cc6d66af2f2dbf14d3356dc61a40449a062dc097b022b",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-08",
+      "mark_median": 45269.7,
+      "index_median": 45289.65021277,
+      "basis_pct": -0.044050269048834245,
+      "spot_median": 45288.65,
+      "um_kline_median": 45269.1,
+      "funding_median": 6.535e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "20b0c64f8655ae9bddf966b3d0d5a2ffc858c54354fdc44bfa0699be1dc2e75d",
+        "index_sha256": "2e814fab489ac313e978ef11d5c57b7d085786c853a794301cd4be668731beef",
+        "spot_sha256": "a75fe415550171ee0ef98b601f0d89f7ee232e538adad3219fc2e85df9c3d347",
+        "um_sha256": "77c9fc621893d50522ddc9fc75b2dc0b6ad5742bfa8fe62e0f808e763f739062",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-09",
+      "mark_median": 47119.9,
+      "index_median": 47130.23090909,
+      "basis_pct": -0.021919920379609437,
+      "spot_median": 47132.77,
+      "um_kline_median": 47116.1,
+      "funding_median": 9.801e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "82d8f1ee03b6d717425ce4116d6846a61e89bccc757dde29da6776422c3b1f83",
+        "index_sha256": "7f1d6fb449081dd458eaf26712d609e1d437298298f86af1e78f78d2d72af638",
+        "spot_sha256": "774a43209eab2875f381f7aa011388c5663cd9312fb1d518261b792fb87db9b9",
+        "um_sha256": "6192527ae67da25f186206f8d559e2062f77b107bfcf24387e0b69ed107092b6",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-10",
+      "mark_median": 47735.43587121,
+      "index_median": 47750.81954545,
+      "basis_pct": -0.03221656588607846,
+      "spot_median": 47751.09,
+      "um_kline_median": 47732.6,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "9db78f468d71f3a4527060fb91b2c71fb3bad5d111dbd5cab8708be941d98249",
+        "index_sha256": "af7e35a69645bc4cdef2c83a7f260b0f2d8ba8f1fd21127c1f301884637ebc81",
+        "spot_sha256": "40ad2b1f83ff277e6e2e072bbcb9141ca84a9d33a4489594c3e1f3deee97d9f9",
+        "um_sha256": "3fd262d1379a8fc70aad14c0147b88a30922fb06f7fdbe5ab5955566e2481ba5",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-11",
+      "mark_median": 48297.93764773,
+      "index_median": 48293.94454545,
+      "basis_pct": 0.008268329119909268,
+      "spot_median": 48299.99,
+      "um_kline_median": 48303.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "fd891985917171f8c1d12c51bca527e8173756dfab5b59eff91b13b0377bd44c",
+        "index_sha256": "1aa5800989df7f085afe6aded6faaeb720b53be2b137cf853aaa85605cf5056d",
+        "spot_sha256": "1e68ec7e9ea2c55ea655786d5febe595134e97885a54458189709ae8a39f889f",
+        "um_sha256": "b7bf2ab9a3032b9493997bdbcbb4c884b53d3e47e0616d01662f0b7e6ec372f6",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-12",
+      "mark_median": 49935.63231439,
+      "index_median": 49922.425,
+      "basis_pct": 0.026455674759384706,
+      "spot_median": 49917.27,
+      "um_kline_median": 49943.6,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "52eb58d9cc4b65f7386e1f56ca0bbe7033e6b3c9abf91c2bd59687cd992d18d3",
+        "index_sha256": "6b9409ecfbb2999fc3d009062dae10d2b1b41c3ac017d3d33bf4a306021bda97",
+        "spot_sha256": "37eb287e947f0472af8f3615237488e9e397aaf6c73f8e9ae33843a85ffb04c8",
+        "um_sha256": "d529aefd4c81e8a8986059c36ca83f40ee42374dec5a51c1588b8be8e7fc405c",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-13",
+      "mark_median": 49697.28120567,
+      "index_median": 49700.26702128,
+      "basis_pct": -0.006007645006667062,
+      "spot_median": 49699.59,
+      "um_kline_median": 49696.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "191dce31ec465405cddb272f039fc12aa220d67fdff2826f6bf7c99aed464e6d",
+        "index_sha256": "2e9d1be68cc2986d3c4d336569179132d51b33e0f7db874e98bb599bd68929e0",
+        "spot_sha256": "6c39c01babc28aad19397fb2dfaae5597eba20593f41678ec44ae37c340a0af4",
+        "um_sha256": "c4ea6823cb4aa516c6c633a84ebc6a5a78678c810d02ddd439944946a3ccddfc",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-14",
+      "mark_median": 51809.06603901,
+      "index_median": 51793.4293617,
+      "basis_pct": 0.030190465282387002,
+      "spot_median": 51795.17,
+      "um_kline_median": 51823.2,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "9f41db303c1afeeb6e5261e5c0b8ca349bf4f53ab14b78f422205fd907a352ee",
+        "index_sha256": "8a396b21edd8a2d95aad7792aeadddf5acb4d3d827ff58224a2e1d30ec44a39a",
+        "spot_sha256": "022c3b409d2d15b29b79a2d7064ec6a6a89643b5880a983ba0361c482fd01909",
+        "um_sha256": "95c866f073c3c985fefb8b347aa88686e83841371776d20e6acbcddb6e75b81c",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-15",
+      "mark_median": 51900.0,
+      "index_median": 51882.57234043,
+      "basis_pct": 0.033590585015041974,
+      "spot_median": 51880.0,
+      "um_kline_median": 51898.5,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "626e0ed204fcd4fd7ea6745948ddb36bbc6186315a9d2ffd043cbaa13306c507",
+        "index_sha256": "33fc4f65a1223a268c7226d6ef41f9bf0e7145d89cec1d66cba86cd138a9c83f",
+        "spot_sha256": "4acf8f55074471a746452512c58e3fd3ea891bc227d08dd84c6baa1b2f146597",
+        "um_sha256": "8eb6e5c6c10ae3b560e5920eaba2ca4926147f89d5be3fb6aad3c38db7c25706",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-16",
+      "mark_median": 52145.88639716,
+      "index_median": 52123.71829787,
+      "basis_pct": 0.042529773419697214,
+      "spot_median": 52124.11,
+      "um_kline_median": 52148.6,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "feb735fe9a96ea84c6f49bab4a3037004d31fef64c8cc0d8ea2725888d5dfe81",
+        "index_sha256": "bcfd0b29648d053f0b2fc5c24a88e5bc53137714dc994a1100fd962f23318ea7",
+        "spot_sha256": "14bad8c5960725dc1e7c4c22fb07b59828777e4816735946b482455882dfb79e",
+        "um_sha256": "8ec3ba551b227fdb7a11bfbda8392499985ab4f1777dfb6fc5d36416b2a1c0c8",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-17",
+      "mark_median": 51675.01519697,
+      "index_median": 51643.58,
+      "basis_pct": 0.06086951557191522,
+      "spot_median": 51642.64,
+      "um_kline_median": 51679.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3046eb1681055353ea37eab2eed74cd5fa04b575a35e17c78db91eae4b2d061a",
+        "index_sha256": "5d6e2d034af9ac169dab275c260305b080a75b87f007088bbea79a3f267929da",
+        "spot_sha256": "800132ac33a0e2deefe471ecfd0ba13edc8a961c120376beb0515bcb9762f8ab",
+        "um_sha256": "98ec58c4e3785ae2605cc4529e4297afeb6b203b64fe0c4e5ae3079c1c92a114",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-18",
+      "mark_median": 52163.05813741,
+      "index_median": 52130.8812766,
+      "basis_pct": 0.0617232243577126,
+      "spot_median": 52137.67,
+      "um_kline_median": 52175.9,
+      "funding_median": 0.00017095,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2e4669a33a4c85f1579c49f00aaa5642825628c7c3fb85ccda2f5de5314aff09",
+        "index_sha256": "95a05920c3a6ea3bb9a60524949858a6e9f7feeab2a8bad43747610c8acbaffb",
+        "spot_sha256": "2972fb16cae7ef167c0cbf0aa8b094ac14e0ea8210730e787a41b089e607bbb4",
+        "um_sha256": "12424fb2f2fe18fd71f7031b58e6a8389c77ce465ad59129ee28e328eac5bbce",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-19",
+      "mark_median": 51810.6,
+      "index_median": 51776.55159091,
+      "basis_pct": 0.0657602873189056,
+      "spot_median": 51774.73,
+      "um_kline_median": 51813.8,
+      "funding_median": 0.00019594,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c52df0c5ac62d8272f2c56309508267889a3398b7f3329ea6916a35ea034e254",
+        "index_sha256": "aef8e0c05f647e97513751309df5d4b7d26189cfd01fcb036be004cb38154fd8",
+        "spot_sha256": "32c3bc4f964ed180aa5b2a969c1e365ff9f8da45e879447922d340cb3bd9002f",
+        "um_sha256": "723562ebdc089cda9693df457cfbee4c6f01b75eaf76c9d8df30f83c3c9e3ca6",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-20",
+      "mark_median": 52297.4,
+      "index_median": 52263.77234043,
+      "basis_pct": 0.06434219740389935,
+      "spot_median": 52258.82,
+      "um_kline_median": 52297.4,
+      "funding_median": 0.00010912,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "4e78a5d641a3a8a26be73a3adb1bf68e0eb85e0f9dcdfea938fb290004bfa6e3",
+        "index_sha256": "2081a527b5a09649b06d1ce0b7dd1ef37fbe4027eb9a94ee5f87e72c8e820885",
+        "spot_sha256": "019a60206c83ec4e136b7bcc2bbb75b5d53c4fa596a3f23713e0dfb87cdc27c5",
+        "um_sha256": "afe825c7fb7386e5050b4a85b2e5d0f86e45c3889faa0a66282b248bd5abf067",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-21",
+      "mark_median": 51877.9,
+      "index_median": 51850.12361702,
+      "basis_pct": 0.053570524122892316,
+      "spot_median": 51849.39,
+      "um_kline_median": 51877.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "542bdf6d73d3ded547ea1bd0c6719e07262d402eb1f9101f9ae5183f36f49837",
+        "index_sha256": "1bcbb3505f068204267af693739fd77c7379e3f14a2002c67c86399f95d322bd",
+        "spot_sha256": "09021396f4df9d55fe506ced40eba353191b20fe797c9048e8cd73dadcf44f1e",
+        "um_sha256": "89ffc5cb05a8eda7329a067bb4df63fa3f5373efea820685b3b582bc66400836",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-22",
+      "mark_median": 51315.77902837,
+      "index_median": 51289.9106383,
+      "basis_pct": 0.05043563100046722,
+      "spot_median": 51288.42,
+      "um_kline_median": 51316.9,
+      "funding_median": 0.00012557,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "75101f7a4c3d98116a0ed010298193c74a98d71c58bf5ce45e3072c55444e7dc",
+        "index_sha256": "fba6c8f3ea90b19b38225954dfc144ba81afea5915daa3f27863e8efd77714dd",
+        "spot_sha256": "3107d8b5b0b3b0704e35625f5470f977043fd981ac9c9705906c5057b42e4afe",
+        "um_sha256": "352ebe25960e16ad0b87f4b614df94e01df54bb60421fb8d179788ec4f1f9bb3",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-23",
+      "mark_median": 50758.91139716,
+      "index_median": 50744.59893617,
+      "basis_pct": 0.02820489527961545,
+      "spot_median": 50744.15,
+      "um_kline_median": 50771.9,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "cc44d8ecb2beb264f7088f5f76b0eebd27ad1cf8116af119dc58f012a0d56234",
+        "index_sha256": "50c438d9b1095f25ac11831a9a8f60854c27e856bbcd978431bde4be598bc068",
+        "spot_sha256": "3aaa842dc0588dde0b875224b34b4bca2d69dcc82b7ea280b300cd52c3f2b740",
+        "um_sha256": "0c113b6f7a321b69ee2d23cd4f58a0b5a3e7a4e0e0f95f5efffbf2e833afae1a",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-24",
+      "mark_median": 51601.57573485,
+      "index_median": 51567.62613636,
+      "basis_pct": 0.06583510049547048,
+      "spot_median": 51568.22,
+      "um_kline_median": 51602.1,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "6f31e263d695d6d0e15c6ce7b86be78559f185ffd62c879c6e229b3ef8aac110",
+        "index_sha256": "7668ad73d1d1413f3a48b36801114823bcf19f64dbf9f76d9a1ea55ecb10778e",
+        "spot_sha256": "49b872876e26eb18eca3a1ac563eaebcf0f40f8ea310d5959c8260810e234d38",
+        "um_sha256": "8c1337307b245fb6684841ce2a02858beb55e5ef71de1319411132cad0f4d0a4",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-25",
+      "mark_median": 51758.41013636,
+      "index_median": 51727.43113636,
+      "basis_pct": 0.059888920287454184,
+      "spot_median": 51728.85,
+      "um_kline_median": 51764.9,
+      "funding_median": 0.00015012,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "53f966cd516b9ad4959485b494902ecdb7c04415f9d70a49157486e43da9f5af",
+        "index_sha256": "701acc7ed6844e9885118d7cc840c140f939b0591d28f9511dcf750cda5d82a0",
+        "spot_sha256": "d43eb54c1b72d398f732397007a28dfbbda0f73140a158f743e69756d3a89de9",
+        "um_sha256": "19bbe553013161a26bd356194e4910fc4ab34767e672352ad9ab4a54d18c57c5",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-26",
+      "mark_median": 54511.6,
+      "index_median": 54477.63181818,
+      "basis_pct": 0.06235253017856657,
+      "spot_median": 54476.47,
+      "um_kline_median": 54511.6,
+      "funding_median": 0.00026761,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "15851c3178e4f466979ce5cca97e413c6d5b8922a00181aeed4ac4f62893c0e5",
+        "index_sha256": "32ed2c4afe8d2e701bccc03707e54555d4710c001fa86421b0d4715ede82b888",
+        "spot_sha256": "4c8d2cb20a953ef49992d23b10498e8fc41f625d55587d34bf4b0d0e4a758be7",
+        "um_sha256": "e3bb331888b33a4c2628d6ca0c131c75baba02b9111e55d4aa392b0d5e30f597",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-27",
+      "mark_median": 57074.4,
+      "index_median": 57037.47510638,
+      "basis_pct": 0.06473795263750581,
+      "spot_median": 57037.34,
+      "um_kline_median": 57074.5,
+      "funding_median": 0.00032262,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d76aed6e53299e8d7405e756cb7f4e40aa4a5b9d246fcdd46300b57223366a44",
+        "index_sha256": "277eb864dbf025f91282025fbec8a79be3e664cc27c89480f20bb610834ad55c",
+        "spot_sha256": "98b1c07cd698f56fe1b76d4510a51859e71a4406bcffd83c6d8984499582d5df",
+        "um_sha256": "53cae48d9115c91ac9b6d4c9823ca70270a980c876c70b4bc2c424d733493511",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-28",
+      "mark_median": 62477.3189921,
+      "index_median": 62432.51454545,
+      "basis_pct": 0.07176460371043358,
+      "spot_median": 62432.1,
+      "um_kline_median": 62487.9,
+      "funding_median": 0.00026729,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "39163c8358b46a1405f2b0c944f155bbae229d8f532fcb355061a5f5ec5797e5",
+        "index_sha256": "c2fe93386a7adca219ada771e9faaea558c536187c57783ed63d5da49f9573c1",
+        "spot_sha256": "dddb25eb9434599147d84b16a94ae64a2b85c0bc2d20f639286508bd25c254f1",
+        "um_sha256": "a90d3be5e60fc5bbcd114192de0995036d0d53dd1d4c54ce6e69f10fef75ac69",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-02-29",
+      "mark_median": 61203.4,
+      "index_median": 61148.61404255,
+      "basis_pct": 0.08959476565058022,
+      "spot_median": 61130.98,
+      "um_kline_median": 61203.3,
+      "funding_median": 0.00069091,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "449983c2185d7a132f785ef94ab261f1e9c331e63f6984ef6e82a859a6de6d1c",
+        "index_sha256": "3be6b7892532f999f986f2474380fa2fe2bd594f45b53bf3d9a0353e3f1d0ebb",
+        "spot_sha256": "d5e237a5339c12abd021d00c38395b47bc84d96914253830788560e2b4d61ffe",
+        "um_sha256": "e19e48978eba99812cbda1f5ef021112f09160a241825bf14afe6b6d7c243740",
+        "funding_sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-01",
+      "mark_median": 62426.84696809,
+      "index_median": 62383.9706383,
+      "basis_pct": 0.06872972231697361,
+      "spot_median": 62387.9,
+      "um_kline_median": 62430.6,
+      "funding_median": 0.00053322,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ff28afd17650c2251d8fac39fa53ea0950eebabc14d8d13381f81ab337504e83",
+        "index_sha256": "42a6636d2a49d65bc26e89d3a394dd6140efee302d01b071b6599ad32bb8ec58",
+        "spot_sha256": "0b4c5ab830167d5b0728998f7f9b14103dd3edb6b1a5fbb796a40a47551cd146",
+        "um_sha256": "63028524c4e4a345b4276abca420780e806b6f093d0e7f33e22d5e6ed3492b17",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-02",
+      "mark_median": 62040.0,
+      "index_median": 61991.27319149,
+      "basis_pct": 0.07860269034882794,
+      "spot_median": 61987.28,
+      "um_kline_median": 62039.9,
+      "funding_median": 0.00056396,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d051f24332c52cd2c5f60388aa4476c9f46ea14311363ab16dfbaccaa4229d41",
+        "index_sha256": "cd3cb92dc7ed127d2cd95c2f53e1fb315fc13c3c5b9552de4ff2cb30df0f091e",
+        "spot_sha256": "475a3c0ece276a9d0a44a38d09f8a28c1d2796e0b7e884f949e66577e86b3265",
+        "um_sha256": "63e5767ef9b61b7933f6550e5b3a2d4521e4842ec4a7956af31f90ca3ebde1cd",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-03",
+      "mark_median": 63173.7,
+      "index_median": 63113.87638298,
+      "basis_pct": 0.09478678929017992,
+      "spot_median": 63113.97,
+      "um_kline_median": 63178.5,
+      "funding_median": 0.00044598,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "a6b00ace3c6cc4532f6a9f115233c6b6e6e48dbb683613c4504f925789c77220",
+        "index_sha256": "2d93560a445f656d920bb4724cff16596502330210fc2dbafbdeb50e94bca8ff",
+        "spot_sha256": "9d5f26e6d307228fa1b30f99dd4b82ab99899d23a9cc74eb65eb3300d26031d5",
+        "um_sha256": "93811d3f86c1ff51a58d1e0d22a98e2a72f18c79b630d04c490761cde036b004",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-04",
+      "mark_median": 68280.2,
+      "index_median": 68242.13893617,
+      "basis_pct": 0.05577355051193944,
+      "spot_median": 68245.71,
+      "um_kline_median": 68296.4,
+      "funding_median": 0.00055071,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "b33d1be6aa5b6bb7f3226988a499f6cf72cf2ba1e7ce322bd7fe349cadf907bd",
+        "index_sha256": "54ba712bec647058030ceeba43c74f4992807dd99398d61c3aa965c40afe6a70",
+        "spot_sha256": "3e42805a05e81f2fb4f155967dc9ff2960c4e96079328bdc13aa82c3eb58055a",
+        "um_sha256": "6905a0a5538fa2876d02e20ddf6a08d6f470fc64cb2b3108d6472ba973f4b60b",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-05",
+      "mark_median": 63738.28205319,
+      "index_median": 63720.43914894,
+      "basis_pct": 0.028001853860892822,
+      "spot_median": 63724.01,
+      "um_kline_median": 63747.4,
+      "funding_median": 0.00082969,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ea90d1d17dee8a5ba6abf8a41ddb985b34fa4f9ca9ca120afd3662b2fbd806ce",
+        "index_sha256": "66c62b04d7f72bd65c0119e5f50ec05fd27daca7fed211df93d4c1adde1fc99f",
+        "spot_sha256": "f5f8ad33f57e4d0c820be64633e82bf7d5999e5b7112c33fef168877ebf5999a",
+        "um_sha256": "0be0181ec9e1bd514ed29a84688ef0da93f6a4b1e66ce622fba498451ac14ef8",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-06",
+      "mark_median": 66118.62804545,
+      "index_median": 66073.04522727,
+      "basis_pct": 0.0689885232672438,
+      "spot_median": 66074.04,
+      "um_kline_median": 66128.1,
+      "funding_median": 0.0003628,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1c8a7d1234a953ee64831f1d2e567c3630d4ae4d579130f1b11eb786b42c8880",
+        "index_sha256": "39991ca7f58f705226e47f04e3a0d1a11e9a98995919af4c921e817f408333a4",
+        "spot_sha256": "e04f9b8a74ff96f85651f51a740486ce6b6f8b40e60c7a687746cb3e2a1836fc",
+        "um_sha256": "2903450cdf427de80c8ba96a9516a70e8535c8efb80be40e1551a34e307fc48d",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-07",
+      "mark_median": 66869.9,
+      "index_median": 66826.74204545,
+      "basis_pct": 0.06458186233386787,
+      "spot_median": 66823.17,
+      "um_kline_median": 66870.0,
+      "funding_median": 0.00040984,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "04b38b1d41f1441f909fe2901b37e0eed1c85da327037776681549520ba8e14d",
+        "index_sha256": "e3d9c504805b67014fb780a2ccd61d211c6505452ddd6e86f8c4d32bd6ed0314",
+        "spot_sha256": "6be3d5c32efa4814a44cdd2e75e7b2d29d25237151f253a0801277f13eb98619",
+        "um_sha256": "b874742b5100337c9e7c438706f2b50dccdbef2689e8c8af6d4ee80af78f2df8",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-08",
+      "mark_median": 68175.01037234,
+      "index_median": 68126.01893617,
+      "basis_pct": 0.07191295915278673,
+      "spot_median": 68124.19,
+      "um_kline_median": 68180.2,
+      "funding_median": 0.00043497,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e25ab1b6e229bdacf3aea5ed1032d792cdabb5c28e12a1f65b94275818aebbac",
+        "index_sha256": "693459c209d989a79090467b48dc0d7d21175e2c87054d3485f3eb692f51e8cb",
+        "spot_sha256": "f37a81d3e60ed4ab31fbe8eca355f88850c19d568f4fe4f0879b3fe0af2c4f63",
+        "um_sha256": "1b6f68f1d3e43f7a9b6ef0813d57f743534c263d61d1052999e5219392cec87b",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-09",
+      "mark_median": 68360.2,
+      "index_median": 68319.33234043,
+      "basis_pct": 0.05981858746271218,
+      "spot_median": 68313.27,
+      "um_kline_median": 68360.1,
+      "funding_median": 0.00026407,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "0dc1bcdb5f9bee7a79146b1aa04ca138cd016082b4c8b39ba7b0dd11e34fd8e7",
+        "index_sha256": "3cb747174eed57853ce97739d3fe94fd1f5771ca55abba83d67c6f9a22427ccc",
+        "spot_sha256": "a3bb60fd15fa3e3b78ae9a543388ee90fc9613e561cd0865b1a5b7f8b0a947f0",
+        "um_sha256": "06fcd2de3737c7360093a116d223cfe979c7461658adb2ecbde68f9c3eabb1ba",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-10",
+      "mark_median": 69007.0,
+      "index_median": 68957.28113636,
+      "basis_pct": 0.07210096282896927,
+      "spot_median": 68955.88,
+      "um_kline_median": 69001.8,
+      "funding_median": 0.00054479,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "73e794aacffe7726323ae022bbae44cf2c4b96854a4cfa1a627229c917cb0044",
+        "index_sha256": "1abd32193503b9c316e7aa39afd542c5877e40387acb53e0fab525d7b2fc0e4e",
+        "spot_sha256": "c1dc732f371aac9016b1f32c8914af85c6ab9de730af1d62ae7e555b5328241a",
+        "um_sha256": "418709adf21d860445511025cd83c84a398f3709811ab367e4a079b407060afd",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-11",
+      "mark_median": 72154.00986879,
+      "index_median": 72084.25893617,
+      "basis_pct": 0.09676305707986277,
+      "spot_median": 72078.1,
+      "um_kline_median": 72153.8,
+      "funding_median": 0.00066396,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "128931b6730b84187b7e3947e4fdcb3a911f2de9b8a194d67a21be121ff5b9e6",
+        "index_sha256": "87b0ea77a581fa0514256edda5385a40d9b138900b6af056664ccd207ae77213",
+        "spot_sha256": "0d28ac588b6554b6bcbe0821266dfd00734d8c0c5862db81de1e5c643f39a615",
+        "um_sha256": "66fa55f1e4eb118801ba3daf7e16c3dbd8de2c46d88647a9c26a6ef7431702d2",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-12",
+      "mark_median": 71506.8,
+      "index_median": 71456.68382979,
+      "basis_pct": 0.07013503499460061,
+      "spot_median": 71452.01,
+      "um_kline_median": 71503.2,
+      "funding_median": 0.000453,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "bd612d074f63d6a786d009440c95ca596936a93110ceaaf9029a1d392015e296",
+        "index_sha256": "f58179109d5d33f908c197bc589fd3552e054c3714d19b500fde4332967a0a8b",
+        "spot_sha256": "2e17d1e0760cdb6c232e62f7080e241eb0794b6d5332455cbb1144e8f7d7b2d9",
+        "um_sha256": "d7eee240059f818cca090cf5dd10a229bf69004bd7ff44af922e7c410c4c53d1",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-13",
+      "mark_median": 73120.70119365,
+      "index_median": 73071.79723404,
+      "basis_pct": 0.06692590227850292,
+      "spot_median": 73072.41,
+      "um_kline_median": 73127.6,
+      "funding_median": 0.00045402,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f5b261d4acc626ea803a274f691fad2faa59e9f333ba976c2e105526834d3621",
+        "index_sha256": "c0c9edb0ee8175e9af5c395abfcc2edd586b1d5c430bc1a45653b7e7826a9722",
+        "spot_sha256": "dc0fce2f2c83eeb15dc4c2572a8cb8723a9979ce8bd9700e3df1a56bc1c3eb54",
+        "um_sha256": "5b78b07cca8c1aa7662c98bac0050de35d0ef225c358ef3b9f625880ddcaeac3",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-14",
+      "mark_median": 71453.2439539,
+      "index_median": 71394.88893617,
+      "basis_pct": 0.08173556762891554,
+      "spot_median": 71388.94,
+      "um_kline_median": 71455.5,
+      "funding_median": 0.00038258,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "0931eeb10564c77f6c689fbdb11f963f5a5e5ffa9e25467b628ad16582012ddf",
+        "index_sha256": "a5ceb094b9d2788fe26610773434a474ea53471692e1db39bb3cfb09bb876836",
+        "spot_sha256": "2a0c9fda47607d2b54fbcc478dec1cf1d451cfcdbce90de4ff17cd41e8d916ba",
+        "um_sha256": "964307ea7a6ddefba53036f0ed4749afdae6f6d19e1531fa0eca7f3cc91344c6",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-15",
+      "mark_median": 69517.50178723,
+      "index_median": 69477.18425532,
+      "basis_pct": 0.05802988756975491,
+      "spot_median": 69499.85,
+      "um_kline_median": 69552.2,
+      "funding_median": 0.00015306,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "69afb22cbd45d9318f1287d90bf622f543c41bebb15381b876a2227a16e34ac8",
+        "index_sha256": "1bb30c1fd0bd3a98414b5227ce83ce97fb0b29d622dc3c40cea91142674a2e78",
+        "spot_sha256": "8978b4384c7a64ad7cda6f7a10705f902e9e02bc9b654ba635756731f96a710c",
+        "um_sha256": "2dc581f3d1d5389aaac8771d7061785aef1f575c682c9dc4eea8ef57705309e3",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-16",
+      "mark_median": 65350.9,
+      "index_median": 65314.81744681,
+      "basis_pct": 0.0552440542598065,
+      "spot_median": 65300.63,
+      "um_kline_median": 65351.0,
+      "funding_median": 0.00020813,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d2d90c881dc334d1535e1c4bd7a01965eeeb452204e8882d711cfdca644593d9",
+        "index_sha256": "5ba6b725fedada74fd42ff9ce4d39f12a77a393c6419508fad753b65af862b9c",
+        "spot_sha256": "da9b865a25c2b2f040171358cacde276c308e9880c76f474e0af78fcea45a71c",
+        "um_sha256": "883b556ef2ca591898f010f9353ff406819505e7edd2b7ec880b11253ff11125",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-17",
+      "mark_median": 68447.9,
+      "index_median": 68397.42531915,
+      "basis_pct": 0.07379617085654377,
+      "spot_median": 68393.48,
+      "um_kline_median": 68447.9,
+      "funding_median": 0.00017773,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "995d4cf7c53f28f417e13f48ab3c082126a6ce6b5f45b568e1e37339b82a1381",
+        "index_sha256": "f70dd39adb7ee998249937558ee686ae28f7e25e7210fc3af08184c8550bfc05",
+        "spot_sha256": "452bfe4a8a4c7b7c086cc7626da6ca5ec273d1ea4f109e1c97d2348168c4e7a2",
+        "um_sha256": "81f59d7671050ed8b5c163a8d9101cdcb50ba20e1f9a4e132363f1fa6876eca7",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-18",
+      "mark_median": 67648.11365538,
+      "index_median": 67604.13042553,
+      "basis_pct": 0.06505997425474419,
+      "spot_median": 67609.99,
+      "um_kline_median": 67660.0,
+      "funding_median": 0.00027195,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "72abb47df8c79ab9d75ef2642cf11e317d0a8a0ca538baf7819a26f3e1c51015",
+        "index_sha256": "594d290dee31968713aae2fd8b70d65f720b4fc240bdbe3a2f015b49025ddb7b",
+        "spot_sha256": "7401686f7525a557d0e71b6865aa08f037d6eed39af2e1f7b6a8c5732119ed9e",
+        "um_sha256": "3ed25b0ffdadc52d6c6fc8efbea1ac842d4dfbcc46d9a9b8951f4470c5aeffeb",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-19",
+      "mark_median": 61977.9,
+      "index_median": 61942.46022727,
+      "basis_pct": 0.05721402185183688,
+      "spot_median": 61937.4,
+      "um_kline_median": 61974.1,
+      "funding_median": 0.00026923,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "50a210ac1737e674b9e25fa580399d305fee71d7f2fb6ebe8ec7ef30f047f503",
+        "index_sha256": "2cd655c8a3ba58ad5eee1d5aa2529288edb72e769fdd993b60d1dfaf8423b605",
+        "spot_sha256": "f83d6e6892a10253e689900f7383545dec5a9ca4e3eb8b14b5060d1a85eb67ff",
+        "um_sha256": "2dfd830f6a777e5955c8e207ed0a606bca027802485675d8f6209df91a812260",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-20",
+      "mark_median": 67863.6,
+      "index_median": 67848.19954545,
+      "basis_pct": 0.02269839826727349,
+      "spot_median": 67840.51,
+      "um_kline_median": 67876.4,
+      "funding_median": 0.00015847,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5d4c500179ee29738bdfea1a491d10c27a32f98ff5af99235bb422420d0a8e99",
+        "index_sha256": "065bdfb8d1c5bcc0774f4bbc50b01886ab3a15173b3559d2be11c5ffd35cde6b",
+        "spot_sha256": "7f96d9a1e9ced65fb39e3acc3423b1f17008c2bada05f005cf40b206df03052d",
+        "um_sha256": "ff8a03d164a453627475d2563d7cd83e3fc79baee8574ef6d5286c961e641f24",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-21",
+      "mark_median": 65543.80570493,
+      "index_median": 65505.52568182,
+      "basis_pct": 0.058437853465886924,
+      "spot_median": 65501.27,
+      "um_kline_median": 65539.9,
+      "funding_median": 0.00019304,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3508784fbce374825e2d91f991d473a141515863fa44eed03ab80c8a270c0f2d",
+        "index_sha256": "4e2213dffb1d242a0f12434931efdcc826986ee60e70d7423a1ff105dd82ce77",
+        "spot_sha256": "a8a5491327a5b3462534d9b7ec0dd560856577788a1ccfa8b2fc9a0c1e97e899",
+        "um_sha256": "5688886b6c1a89f74c7a86bb5cc93cc10b054b821c6e5a2d96252a769a600c43",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-22",
+      "mark_median": 63813.34398582,
+      "index_median": 63769.50808511,
+      "basis_pct": 0.06874116176573963,
+      "spot_median": 63796.64,
+      "um_kline_median": 63826.0,
+      "funding_median": 0.00011993,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "595c81dde47cdf3b61c075d9724a4011cb46f1a7fa541cf6b42af9cf12ca1ea1",
+        "index_sha256": "5a23ac1a0a434cd8487877c9f9355f645bbf565af2a8546ef8e71d1315e4def6",
+        "spot_sha256": "7754deeb71108ed6b329149b463def773dae05a3a7ae1339ed7c4d2b92eb725f",
+        "um_sha256": "5d1e5ab4664adce6aac069484fabab44c97bb57c38243b83a5936f940a793de1",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-23",
+      "mark_median": 64020.3,
+      "index_median": 63997.9406383,
+      "basis_pct": 0.03493762686266333,
+      "spot_median": 63990.01,
+      "um_kline_median": 64020.3,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "152e90da66bd189070eee38f3f4648476840988a8a86aebb2671b49892d6be13",
+        "index_sha256": "4658954331b44e095c6f0019d4276ea511d6aa9a2afeeff27aa664a7a3d38410",
+        "spot_sha256": "c974de4531a7db7c0032f470ef83e26227287cc564e9d94f463492654b4aadf4",
+        "um_sha256": "fb726e817328c654be3241cee9dbbd8e94ee83cd6feda4eec60c9fd0083c7e1c",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-24",
+      "mark_median": 67255.74783333,
+      "index_median": 67209.54978723,
+      "basis_pct": 0.06873732415444422,
+      "spot_median": 67209.99,
+      "um_kline_median": 67260.9,
+      "funding_median": 0.00014616,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c27b4f7d88bc28c005234950846d7971bac8262459109f56a13e8388c91a550b",
+        "index_sha256": "691a10e02d7e038d3dbfc4580bbc2d806ee3bc0031c56c4d73210b835782c1a5",
+        "spot_sha256": "331be6677753c72d189ea77e10aa32d14d779820b44d5be576324a5831f0ec55",
+        "um_sha256": "c3760c958b74479db1042088cc5d425dcf9c2f5db4e09bbce4d5693a9f306026",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-25",
+      "mark_median": 69931.1,
+      "index_median": 69889.60680851,
+      "basis_pct": 0.05936961643480121,
+      "spot_median": 69880.01,
+      "um_kline_median": 69920.5,
+      "funding_median": 0.00025549,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1b49ff88143588b7f8f04cac926852b695eea5e59cc9bc3c3b315b446fbb7d26",
+        "index_sha256": "481584972c80772e8d96993ca3a2458df741454bb1aa0c4b385f5a76534f6c06",
+        "spot_sha256": "d5fc4665121955156fffe3156ddacdf206ddc65ab6eceafed67839837cc2a11a",
+        "um_sha256": "dc87fee831a6fe4d067fbb5731f4a3e4d79b21a0372315aa322d6a9ad3a118e9",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-26",
+      "mark_median": 70039.82099291,
+      "index_median": 69991.23446809,
+      "basis_pct": 0.06941801382593926,
+      "spot_median": 69988.0,
+      "um_kline_median": 70044.1,
+      "funding_median": 0.00021963,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "853b408edfd9f220e26bf14402e1510976548ebd683c4c8e5ec4944ed984b56d",
+        "index_sha256": "cfb7aab7b4d4134a7710b4929c484ae938fbed8e8d4631c71a580608d9d2130c",
+        "spot_sha256": "cb483a2ec09244b0d1972264f4ff4710245a440860f8954dad797d5761892a2a",
+        "um_sha256": "85b41a9f56361c5350c3399361e7f4a2da418fab7486052e1416af2738b14be7",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-27",
+      "mark_median": 69532.7,
+      "index_median": 69471.93361702,
+      "basis_pct": 0.08746896741782528,
+      "spot_median": 69469.99,
+      "um_kline_median": 69532.6,
+      "funding_median": 0.00029551,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f35bf230910b104ba312cdbede4b982ed64935cdf801d8da72051e286cceb345",
+        "index_sha256": "7a8e5c9f6f205ded8d62fa4bd7de3e894d5d7e47c98bc1db61ff5c39e3d8100d",
+        "spot_sha256": "2594c1c9e76feddae5b77d32bcdde95577c4b748fc59401b92592cd9399f5f61",
+        "um_sha256": "fc2078935f377089a774383ff67420626ae3caf509c0803008724f461b11b765",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-28",
+      "mark_median": 70833.26096809,
+      "index_median": 70784.42680851,
+      "basis_pct": 0.06898997672484253,
+      "spot_median": 70780.6,
+      "um_kline_median": 70838.7,
+      "funding_median": 0.0002943,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "38806a7d85a32834fe11898266fefb17ff1a0c2bc7ea3ffd576c661a2b1d87e5",
+        "index_sha256": "c9c1004f90354ab4b018bc3058edb4c73e27a32748c030e0af2fc49e67c55dc0",
+        "spot_sha256": "3e8174500c860ad0ce7ba12573555627c808e0498ed3b6fe64e16c6e811860a6",
+        "um_sha256": "1fc4e8588242e53eeed32c1aa09ff004079b81f1a3acbf934fc2475ae3e3eacf",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-29",
+      "mark_median": 69898.41060284,
+      "index_median": 69853.45957447,
+      "basis_pct": 0.06435046831441138,
+      "spot_median": 69850.54,
+      "um_kline_median": 69903.6,
+      "funding_median": 0.00025456,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1ebb7c5ddb4900b0ca4df5311e12991c286b2b1f1a92bbcac90193c53a4c6005",
+        "index_sha256": "03a737aeaca45e2b70aa6646441661953413b020e576e077e022929e18925ee0",
+        "spot_sha256": "1463c59cc99105703cad19a57e0e093d6d3bbf2f4c8f78cd39b5721145a99efe",
+        "um_sha256": "7a3e46040a2e46f161bad48a8f94a623acef43bebd614eb23e833c3a9cb5df09",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-30",
+      "mark_median": 69634.8723156,
+      "index_median": 69584.87489362,
+      "basis_pct": 0.07185099068791612,
+      "spot_median": 69582.18,
+      "um_kline_median": 69642.1,
+      "funding_median": 0.00032267,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2d937dab91f502eefc02872d0723b38a243c0f2a345417e1fe59f6a5ba2482e0",
+        "index_sha256": "5714d763b180bb1073a84c18a6bbbee3a047ded36d45d918aed7fccc8151d6b8",
+        "spot_sha256": "c9d75f90b1fc5cabe87ac1cc0e2a640244a2b3fb985d75131869d341b52c8dae",
+        "um_sha256": "e32f14094a0ab572e28e6143b06f6e6eb7c1c74d67a888e6ca4e3df1486b3d62",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2024-03-31",
+      "mark_median": 71365.6,
+      "index_median": 71287.90680851,
+      "basis_pct": 0.10898509293968406,
+      "spot_median": 71280.01,
+      "um_kline_median": 71363.0,
+      "funding_median": 0.00039889,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f4fc3bba382e5e45d4d1c34cce6c3453c71526f4b7026cfe416b89a10c4d176e",
+        "index_sha256": "4a0b003ca4adf9b6b9941a63c32d0295a040a522fa008ce75f771e84994c314c",
+        "spot_sha256": "e69f2fda8a111e092c049622b988ad4c028fb1f2db0db6591500de4568514876",
+        "um_sha256": "bc965b723d88b4b1b5b8ec39cf6ece8326c098c76ce8b3504379acc272753e83",
+        "funding_sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-01",
+      "mark_median": 2354.63,
+      "index_median": 2351.96068182,
+      "basis_pct": 0.11349331647561023,
+      "spot_median": 2352.04,
+      "um_kline_median": 2354.62,
+      "funding_median": 0.00031096,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2069811037202e191ffc70522b590a9678de29ff9e70b8aaf483265d12a6b63d",
+        "index_sha256": "36a1d73166314da8739d4f39cbd0399e0453df4c9e99126849952b2a47294163",
+        "spot_sha256": "54ce6ae0eaaee2712ed2090872e458809e2ee393dc3c27cc44b5adc3f88243d5",
+        "um_sha256": "850c0b87bdec766027bcd328a383d56bc2bb36c015e1035c2d5711686147bcb3",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-02",
+      "mark_median": 2356.81568561,
+      "index_median": 2355.25454545,
+      "basis_pct": 0.06628328827624763,
+      "spot_median": 2355.34,
+      "um_kline_median": 2356.93,
+      "funding_median": 0.00053505,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "6ab7a171811cfb9c8d2c5504b8f7d661e5598d1b181a84570e27e8002cad41f5",
+        "index_sha256": "d0b9f1b3dbe507af981a6ebd11a609426a612f3d5acd2db6cd518282161130f2",
+        "spot_sha256": "cf761f6d98392d255aa421964fd25f1749e2b546adf5a3d6883ddb40c7e8a05b",
+        "um_sha256": "9ca958c8d7bc495ffb7618c457be421504d1c3dc2bb57605ed06d6562f2b0f03",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-03",
+      "mark_median": 2210.33810227,
+      "index_median": 2209.65386364,
+      "basis_pct": 0.03096587394337824,
+      "spot_median": 2209.72,
+      "um_kline_median": 2210.39,
+      "funding_median": 0.00024384,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "721a0c093d119e6c8e649ddace476f6e893abeabddc2332ab8b258382c60e1b2",
+        "index_sha256": "07598a65aab96d407b2dc5fb3c01be93d699ceded4bbdc38d6cd8cd97aa2e65e",
+        "spot_sha256": "719fce848c65414b0b738561dc13df071ed3c6a049b12e69e68e39b0efffaaa6",
+        "um_sha256": "9ca1d39e8b81001541f7646ca0a8d65b81a3dd0caeff2735ba2e69946f35484d",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-04",
+      "mark_median": 2267.56506911,
+      "index_median": 2267.14560976,
+      "basis_pct": 0.018501650189306496,
+      "spot_median": 2267.11,
+      "um_kline_median": 2267.85,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "41cee45278a7dde4a35d62e9b4e058d9ebe6387698c2d273c4a5f981671da9fe",
+        "index_sha256": "e6259aaef6a0273a2311e74412c7d9ba387e1e8a2c160b8e03ced0ae6a87fae5",
+        "spot_sha256": "0e811ec0ad2e734d8038e169b00be0414b0efac03ad8fbc1472259315e951588",
+        "um_sha256": "b389b3aed7aad9d5b5f67085b80bf9be50c03192b05ad8f157559dee7bfb0e37",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-05",
+      "mark_median": 2268.3367439,
+      "index_median": 2268.24121951,
+      "basis_pct": 0.004211385860464212,
+      "spot_median": 2268.78,
+      "um_kline_median": 2268.93,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "37abc11f8e9314370e0622c39e4f22766e04b1bf71fb1af2ac301ea025aa5d8d",
+        "index_sha256": "a150efc7008e024b608b691a454b9533a52377d9332bc903ab9b2505f972245a",
+        "spot_sha256": "de7396ed1df9cfa740a1ebe7591fe6d4b462a7a88feb73121b073f4297e79288",
+        "um_sha256": "83aa37c201da1a08b6f67c8727a37747d155379daf28b961d42787f3e6aac2a7",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-06",
+      "mark_median": 2240.47,
+      "index_median": 2240.76022727,
+      "basis_pct": -0.012952178750236243,
+      "spot_median": 2240.78,
+      "um_kline_median": 2240.36,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5961b8998a975578f7baabe1327388851d70bb2b55d0f865f8a612a44e6cbb04",
+        "index_sha256": "fec307503dc4c0e21e7919a18da194e61d7155d3e50cca04dec0c103673eb261",
+        "spot_sha256": "827d9378b8c4ad3be757665dd6f3f9d293c30befdee1c5ae051bf25c15086fc0",
+        "um_sha256": "85471df3c3e454540e3f2a9f99751d783d645340d2253555f1ad2c97f9cf94e6",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-07",
+      "mark_median": 2220.87,
+      "index_median": 2221.42522727,
+      "basis_pct": -0.02499419125993052,
+      "spot_median": 2221.42,
+      "um_kline_median": 2220.87,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "80de74b5900fe91aeb566d7d1308b556ce17e787ab20f68a52db2b538012062b",
+        "index_sha256": "1b81dbf4ae689671c16fb27eed49fb2c14964f797232afab9eee60923a9c5955",
+        "spot_sha256": "e5c82afee9823b55d4dc0f75b2e8d7534eb94f00f2dd16ce16cc0586f52ee7b1",
+        "um_sha256": "8649d76a094513cc617c858c5be72f35114629de26ccf41cd62d11e63d9bf0f0",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-08",
+      "mark_median": 2331.04459487,
+      "index_median": 2330.6397561,
+      "basis_pct": 0.017370285087614512,
+      "spot_median": 2330.44,
+      "um_kline_median": 2331.11,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "75f38b58513f7c36e64637755153675e3fc27f429f531e279c6d9c5eeddca3d5",
+        "index_sha256": "a726973e99c5f37fa5cc522696f08a3c4c5ef3ea5b8633ea161f191b571acc04",
+        "spot_sha256": "0a4d1cd31c9f2522747363e80950cee0ec242b5c7435da65e3d1625355dd4c4b",
+        "um_sha256": "29df27c78c673371376c26db9fdedd5c750484d96e883e42ecf21561dad00fec",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-09",
+      "mark_median": 2344.52,
+      "index_median": 2344.41113636,
+      "basis_pct": 0.00464353876807877,
+      "spot_median": 2344.29,
+      "um_kline_median": 2344.44,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3be0889e9a7896625eda9e5324f0cf157c1a6365aa79f8b84573f69136972db7",
+        "index_sha256": "98760c4c88226b2b8844227b7968e288d3b88d147385d10642aa7ab0713c8b54",
+        "spot_sha256": "39059d7785d5a88ae1a0a12128c5d6c315bdc40d858d6510dea759e509f460da",
+        "um_sha256": "d2a23aca7d62d30f71fd22e27a6ab778bb4a8c8c9c9c0dbab85f015ea6ffce10",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-10",
+      "mark_median": 2584.4290303,
+      "index_median": 2583.46727273,
+      "basis_pct": 0.03722739514264717,
+      "spot_median": 2584.38,
+      "um_kline_median": 2585.82,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "7685477f9d72e403f46592ca0236a40046ffc56719117e8b600d3756ea90536d",
+        "index_sha256": "e842d7da706f7a1503cd8903d0519d59c468b3b4137035a4da4157fcc3e16c08",
+        "spot_sha256": "e4793b634c26e58aab5fea199543969ced88d374ade55732226091b4896d14ef",
+        "um_sha256": "b3505370ee63e340182d4c0457852055085edd90dbf791d5198de36be0a2f483",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-11",
+      "mark_median": 2618.58,
+      "index_median": 2618.15681818,
+      "basis_pct": 0.016163348851438997,
+      "spot_median": 2618.01,
+      "um_kline_median": 2618.59,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ee2165ff8579b086b742476c2505873fc4305b49e4bedaf66683f7085d9e0ce3",
+        "index_sha256": "12f8fc9e3a7f8a28c4c3dc43f2071201072e0a383fd719fcbaec43f5d2fbc6bc",
+        "spot_sha256": "7979245ad5ee69f60b4dce2da56ba4e22fa10ed56af9d3e1927612f29b8884ba",
+        "um_sha256": "104ce1924be75aeebcc2ed324ce5aad24ce0c3712a3f5841e2299f1ad80beb3c",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-12",
+      "mark_median": 2523.06,
+      "index_median": 2522.51704545,
+      "basis_pct": 0.021524316395771237,
+      "spot_median": 2522.54,
+      "um_kline_median": 2523.3,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ad65a71f1caf26011090944024d2cfd39bd293dfc550eae5feefa5c6145801b7",
+        "index_sha256": "4874d287829422d20ed0b30695ac30a5d06251f875fe29ca342104a9663e784b",
+        "spot_sha256": "1efb717be3b2f0b8812eeac10356e39ff575c074f487963fbf080d7245da3684",
+        "um_sha256": "f2d76e7fd742338fbabd7f64ccc0c78b8a5e6d2763081e52d4fa92a45f60cfba",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-13",
+      "mark_median": 2578.44187879,
+      "index_median": 2578.12477273,
+      "basis_pct": 0.012299872502441467,
+      "spot_median": 2578.19,
+      "um_kline_median": 2578.5,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2b63d298dbb54849604b16ffc34c1221e68ea3812c9d8a4402930140c0fcfaae",
+        "index_sha256": "0eafd0bc2298edb5222a347ad9dcc21cca92ae016ac4b24a8453e58cbe1c05c2",
+        "spot_sha256": "2c47ee29ddf373ebc5dd049dee2ea21169c97acc5b01fc8577b2fd4d701401d1",
+        "um_sha256": "a781e870bc798a7694db883524f95c3465e41c09d30886f049232a8a48e720d5",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-14",
+      "mark_median": 2474.02,
+      "index_median": 2473.05545455,
+      "basis_pct": 0.039002176365499075,
+      "spot_median": 2472.87,
+      "um_kline_median": 2474.36,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "9ee93578d3d7eeb1f98e02e446b840bbe33f0008e9b186c4111d798a2427b086",
+        "index_sha256": "927e64588031cd24d17ab1106f87623bbc60c0f62e5db86b2f00019446fc0d01",
+        "spot_sha256": "9a134afd3983a5bc10a8ad44fd7c17e741e1686c025ad86231fad67f43285ee1",
+        "um_sha256": "efac52fd2e1b4bea734dc36e394ec17167e62b8c287f2fae8d200eb625940725",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-15",
+      "mark_median": 2512.26607197,
+      "index_median": 2512.07090909,
+      "basis_pct": 0.007769003625424098,
+      "spot_median": 2511.78,
+      "um_kline_median": 2512.21,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "b0a340073ba231e763c0c514bbce892b07ef83a71c524e5842d1d36933d7774f",
+        "index_sha256": "5c2917ea8dc90a41f83e583c0e7d93e4cd932e41f77bbe31c23fb14750f2395a",
+        "spot_sha256": "dcbe4a9e1130a2a765ff09d5c7d029022ff8187c1cb142d2c6bcc493fd6b4403",
+        "um_sha256": "1516439b0cbff61c96ebc2a6808d7c33e7f2f5f2bf6cc1cd6fe6729dc2b0d2cd",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-16",
+      "mark_median": 2587.67,
+      "index_median": 2587.57931818,
+      "basis_pct": 0.0035045039726178118,
+      "spot_median": 2587.4,
+      "um_kline_median": 2587.4,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c9025a8acca4bfedfba5bbc3d076b836d3ce38aaf3d1683a3f8fe9800e7a8698",
+        "index_sha256": "194bd6662abbb0b5714d31e2c41f771b0d36bf0b8a31c49f706bad9ac0aa8687",
+        "spot_sha256": "ca0fdbc751409087bd38a5a8ff59684bd926e5f56ed58221649b4dc0f5ff0924",
+        "um_sha256": "886fc42f0001ea4547d40381a2702dd06ca95996c32794b079360388420aaec9",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-17",
+      "mark_median": 2530.53731439,
+      "index_median": 2530.41909091,
+      "basis_pct": 0.00467209089691778,
+      "spot_median": 2530.19,
+      "um_kline_median": 2530.62,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3f4d55a40ebde271fe35da1bd286640d27581da33547fa2e059da6a308a6f996",
+        "index_sha256": "1c375e236729243a61707532cbebcc1dd1107b037ea6fc171214935365c2e071",
+        "spot_sha256": "f0185165901150334a7cb8afa147fb4915beec86d23393911266f359ec47f68d",
+        "um_sha256": "d1a43578e09414a1e2b7260c20d05efcf7e8f8db9ee5e3cd54cc87dcfb8822d0",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-18",
+      "mark_median": 2470.45503788,
+      "index_median": 2470.22204545,
+      "basis_pct": 0.009432043990909023,
+      "spot_median": 2470.81,
+      "um_kline_median": 2471.29,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "8eb3ed6491f5a26b4ca671be497b602976191144d375b5c9be74fc7472f015ae",
+        "index_sha256": "e53f596f7b86edf4761b45d9b7a83ff84061644e784a645ec0d25be8e2c8b978",
+        "spot_sha256": "9bf3cb2c221d23e768f293b2d3d2f80e058d7fdda2fd0418108a3d12d2388c35",
+        "um_sha256": "cc99e4853708b9e67d0a7940e3da4937e9a53ec1df5183dc0bdb164f0c520463",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-19",
+      "mark_median": 2492.21836672,
+      "index_median": 2491.76068182,
+      "basis_pct": 0.018367931693408224,
+      "spot_median": 2492.0,
+      "um_kline_median": 2492.46,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "38fbd1055f6a4d61104ed4dd2e257bea111637cb7d801f01ee6e9b34abd6ef35",
+        "index_sha256": "b2ce0f5282306b937a625cb5c357a431338821423d01672efdc49a308519210c",
+        "spot_sha256": "2c3e0089c1d9745faadaa8a50d9e60f858bfbb9eb06e04896b61fd3ece260fc5",
+        "um_sha256": "7aa7a68dd8036a696da984f2ee40fd844d520b8e70366becce835211e42ae8e4",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-20",
+      "mark_median": 2472.24977392,
+      "index_median": 2471.94659091,
+      "basis_pct": 0.01226494986237281,
+      "spot_median": 2472.01,
+      "um_kline_median": 2472.27,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "acd64dce079f0799f328a000b80e0c5cf198b1e037f0ac495305e50902560a8c",
+        "index_sha256": "79121af46749341169e2949fddd32fcd30c811f1cad20676af6b3830a33ea1af",
+        "spot_sha256": "b9a3d5c332cc039cfff11443edf021f90acf3f6cdc450c6dfa422bc40d49d2a2",
+        "um_sha256": "479b2a0c7377309ea60ae6ded16e0fcb96e5774363e92fc0e26c6ee76d6fc04d",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-21",
+      "mark_median": 2456.80548485,
+      "index_median": 2456.70636364,
+      "basis_pct": 0.004034719471057713,
+      "spot_median": 2457.05,
+      "um_kline_median": 2457.02,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "be5f5528510530a778026f21482ce4fc80b5cd2617973a9e7f6def60f73a9609",
+        "index_sha256": "714d2718cbc700e1495a59a8df9cfc4cc403224ab1b1f7b6cdfd8624831928dc",
+        "spot_sha256": "010dc6cddb6e85803713ecc2671a2c89b859c6a14806e56e354ec7b865f566ed",
+        "um_sha256": "cd3b4f17a8e0fc4843c58eaf3712f72acbdef7dea3384ec603b090672646ec36",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-22",
+      "mark_median": 2314.34,
+      "index_median": 2314.11097561,
+      "basis_pct": 0.009896862873648438,
+      "spot_median": 2314.2,
+      "um_kline_median": 2314.33,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f138f795cebc3fd860b3ea0841cb69e1c6debf5ba497740a278ff6fb94c0f679",
+        "index_sha256": "80a276c8abceb950138d8266903524edf400bf3fc41df20763826131746efd35",
+        "spot_sha256": "65d68da5a8e6cc485f48d6c5dd9dd2a949042d166394a367feff3b8e1d722c03",
+        "um_sha256": "eab8fb1ff3b7351a7a23b2662f93094a75886c12cbfcc1d741a1d86eb1ae18d5",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-23",
+      "mark_median": 2242.01014634,
+      "index_median": 2242.69097561,
+      "basis_pct": -0.030357694279059544,
+      "spot_median": 2242.6,
+      "um_kline_median": 2241.67,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "8de50e4064de5f5d7939c384c42664c1411067d3d922d98e79256a43431e0cc5",
+        "index_sha256": "73159f70c0b373638750ae51e61dcd3c1c0a483e6f47cb697b80561ec41438c1",
+        "spot_sha256": "e6f32565881935c7c246ba0715caabfabe6dd4756204d97fb0410fd10bdc6ec7",
+        "um_sha256": "56c796dafbcc00d9c905ae1134cdd7e2132f2de4c24e0828c7affa882b0521f2",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-24",
+      "mark_median": 2234.44,
+      "index_median": 2234.80022727,
+      "basis_pct": -0.016118992006730615,
+      "spot_median": 2235.02,
+      "um_kline_median": 2234.62,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1581f6872a2014bd4bb089c87ff098de282d5df0322967880e21ca6f1fa0f28a",
+        "index_sha256": "4ca3b1e1c2ef9829518643f3284d981b77a26ea67b0ac9a445eeb0edb563f17f",
+        "spot_sha256": "82da326cc7a132030011d6b43ff9809b333b063100e617b8e8067846a38cc920",
+        "um_sha256": "d75e336c2c97b7ddca854073e713dd91751c774db9e25d6bd0d2c4d8397b90a7",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-25",
+      "mark_median": 2218.01,
+      "index_median": 2218.44113636,
+      "basis_pct": -0.019434203276058604,
+      "spot_median": 2218.64,
+      "um_kline_median": 2218.02,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "528769d8c3512a51ad2a8e673fda555a9d61be9cf70c84f70b02b87d6b754b63",
+        "index_sha256": "f763727e146da6599c49fade2f44dcbdeaff773bce3d09ff5cbb889aac78f8d6",
+        "spot_sha256": "f21e2a78b66657538576f687718e6a2d801851667eb6fff20ab911391453fae5",
+        "um_sha256": "5b5a9dffc5f183dd0af09f2a6f05755909fb48b7c370d19f1b46d5c5d43ff44d",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-26",
+      "mark_median": 2266.66,
+      "index_median": 2267.58512195,
+      "basis_pct": -0.04079767242450849,
+      "spot_median": 2267.68,
+      "um_kline_median": 2266.72,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "b117e6fbe3c66d543f44e164221d8ae4225ddac786adff40ce457a381c5420d2",
+        "index_sha256": "7bb4cc02be78cb6c668a79a1f796d3a7e5275e78b34dd8e7f2e06adf403b9792",
+        "spot_sha256": "ac3529414dd26ebfb1e381cec18abf2fd7fc39326703bcefd197a70dbe741faf",
+        "um_sha256": "3b67b6a18e80c471f1dbef65ceb3e559081512b6510d180cd048b99f68315959",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-27",
+      "mark_median": 2266.99,
+      "index_median": 2267.92772727,
+      "basis_pct": -0.04134731714441342,
+      "spot_median": 2267.94,
+      "um_kline_median": 2266.99,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2c4566fd5825e97faf39e50825906d9947bf49f514ae418c492d070a602ed33e",
+        "index_sha256": "557b89e6abe0dc7eadd1cb09f572dde0c2ba23ed445e180ac7f55c06c53b1969",
+        "spot_sha256": "adad90595eb7c5590163112b40f939365561cd4004bdfa98be51d5f75e49b3a2",
+        "um_sha256": "ac7b3cd7bb0c76a1296400d9662665dd40db468c12f6d97cce762ed407bfcc66",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-28",
+      "mark_median": 2256.11057011,
+      "index_median": 2256.90113636,
+      "basis_pct": -0.03502883831565384,
+      "spot_median": 2256.9,
+      "um_kline_median": 2256.0,
+      "funding_median": 6.557e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d6aacd490dc2f8acfe9861eb933480fa3ddc46b8591cf515a851a19074e59a2e",
+        "index_sha256": "fe3abf85b0a9a4720b9a9087d310410f9c8b5b7b2ef06653efc13023de97b4fc",
+        "spot_sha256": "feba015c4f663b85a0584bfc1129050ec12d27f46118cc4be0ab67cf4f9e3e6f",
+        "um_sha256": "3a1a033651598515a37c637c561cbefa14eb9033cdc87c4efd0a2895f5a1d7ca",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-29",
+      "mark_median": 2316.79567803,
+      "index_median": 2317.69909091,
+      "basis_pct": -0.038978868462391514,
+      "spot_median": 2317.6,
+      "um_kline_median": 2316.52,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "35c0bd2ccccc7f41702d4286ea6f8a8a7d62131d773a155abf9b76bc0a87dc70",
+        "index_sha256": "e1713631246c64b53cf53489e561ea0464afd553e38ceedf0a1bd38c27802f3c",
+        "spot_sha256": "be069b27ed6a96e1370f8ee2ac9194ada36f601ed53a8457a60b6a24305f4dd1",
+        "um_sha256": "b1e94e5ee9fbe0c230703d85e86387a66d87d8fe2eb7718bd7916b6e4109fbcf",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-30",
+      "mark_median": 2342.277625,
+      "index_median": 2343.20227273,
+      "basis_pct": -0.03946085836297186,
+      "spot_median": 2343.01,
+      "um_kline_median": 2341.95,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "00e5a3b8d541d7db4bdbcbc51e00654613280ce6dbb09c44d91cbb9c23efcfa9",
+        "index_sha256": "165754a06e3064df49932b813c4cb98dc8b1831b9c7d02adc5e2688557f0efe7",
+        "spot_sha256": "e7a891396c607eb43af1b040c50e44e455e354ac6bbc3c8611a269dedcae6baa",
+        "um_sha256": "ba6987821a2f51fe8cba9ef779060336982e4d81a2ce2e1ef9f21b153c169251",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-01-31",
+      "mark_median": 2282.1538447,
+      "index_median": 2283.285,
+      "basis_pct": -0.04954069684687257,
+      "spot_median": 2283.14,
+      "um_kline_median": 2282.0,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "4d08f767173de24adc14f34d80927a5bf8624bd044bdab8450a7b3dc82f200dd",
+        "index_sha256": "1fc967bff8ecd5449bca3037387597c2f5a8772bdaaf5c3e706d95d743555248",
+        "spot_sha256": "702088cb19a34648aefe73bcfeaa73cd1ef61dd4b88aa7c8fab4f33debb3d090",
+        "um_sha256": "7940ed98b77ce67041ff20435f797e899efaaae5ccc94c88f5be8d9c96a985f9",
+        "funding_sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-01",
+      "mark_median": 2303.55129231,
+      "index_median": 2304.15756098,
+      "basis_pct": -0.026311944993129277,
+      "spot_median": 2304.28,
+      "um_kline_median": 2303.33,
+      "funding_median": 7.871e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c0d67375d3dfb692c1aa52a9399ca7ba361ef47228786431f9e5e1dd2607b55e",
+        "index_sha256": "fdf6c77f3d7b9836d1d16a66228c960171508946859722fbc42097132e6c69d5",
+        "spot_sha256": "ba86c343dd02ff7889576d8db938d0d5c482d63573fd15631caee272361917a0",
+        "um_sha256": "b31d780dc08dd847e390959e2d21895471ba0786ca76d6c7a705278b08be5929",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-02",
+      "mark_median": 2308.21849559,
+      "index_median": 2308.96170732,
+      "basis_pct": -0.03218813580336821,
+      "spot_median": 2309.06,
+      "um_kline_median": 2307.99,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e98ad6837d067d4ed70f72f6fbc167c6eb634bfb9a83ec8149a7aed36cb4977d",
+        "index_sha256": "d52f71497caa5c1fe45798a9840d94a365403a9b96a7c7b6ec922504562b6d94",
+        "spot_sha256": "9c2f71e11fab1be3ec308c5e4e96d1a6b285cdfd6d08d6761fd7da1c0ae3ef40",
+        "um_sha256": "c60092be0d9e59eb11e35dac030a755dbb50891503dfde469dbc6e77858b42f1",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-03",
+      "mark_median": 2295.43727831,
+      "index_median": 2296.52863636,
+      "basis_pct": -0.04752207452243251,
+      "spot_median": 2296.49,
+      "um_kline_median": 2295.42,
+      "funding_median": 8.15e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "aa3d7e91f63585ac16692172f1564656a006cc229def6dfc51ff197511e5e8ba",
+        "index_sha256": "489ddb48c7aa5c291c3969037727b63c4d330ca4ba10bc39f69800c286023c72",
+        "spot_sha256": "4b941dea31e8e4ca77f7db89857582e4c7ee9bbe9aafc79ac3aa0626f1dd6407",
+        "um_sha256": "e014aa5409c9e220ee296db166e9aa364adf235d7d38d9a02b389d09099fe5d9",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-04",
+      "mark_median": 2288.7670301,
+      "index_median": 2289.79,
+      "basis_pct": -0.044675271531458005,
+      "spot_median": 2289.79,
+      "um_kline_median": 2288.66,
+      "funding_median": 9.094e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e83be12a9d6f908fcd17d763b46c4ecd68ddf67a0daabbc572986db9c2e65836",
+        "index_sha256": "132974f927e39ebe35e68b533c0d82595fad6efcde29d459e53cc6a59b4b9605",
+        "spot_sha256": "0f27127b5235b33bc5ff3f79f4704f617967138acf7dae23e23f1033355741e6",
+        "um_sha256": "73219250e3df6ec61cf05208ce22a8f26c206a176b9d1722fb1c7dc3b0ff14b7",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-05",
+      "mark_median": 2300.83,
+      "index_median": 2301.81272727,
+      "basis_pct": -0.04269362395807885,
+      "spot_median": 2301.83,
+      "um_kline_median": 2300.83,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "2dba438f379bb58ec5c9045aab6a7d3eba1b30c0f8cfc173736debcdf85a3014",
+        "index_sha256": "cb4332a6a1035a2ff9194f2bd0a4d9c6d8944d35628f3606f1864f10d1c1ef58",
+        "spot_sha256": "4aafcccff1b148bf5863917bad8c7281506638257aabfdc01457331c523ccbd4",
+        "um_sha256": "ff0c6d4b8048e9ffea57540bdc7326c3ae690e6390c9904a102658985331576e",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-06",
+      "mark_median": 2371.73,
+      "index_median": 2372.56727273,
+      "basis_pct": -0.03528973612775266,
+      "spot_median": 2372.64,
+      "um_kline_median": 2371.74,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "4bc998f2854d64613911cf30258da641874a56fbbbd32867dffe605726ab78a2",
+        "index_sha256": "dbfa8675f2e9479534f4c7820c857c626a9779a44725cdaf4c6af06ce384923f",
+        "spot_sha256": "6d10b09bc0bf8abb6f30627425f0309231d0cacda41f948e0b9f6b84a3f6f744",
+        "um_sha256": "c0c14b6c5e100f22ee2e6d885cf7ded3aba90a03e4421c399e6332d10c06f82e",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-07",
+      "mark_median": 2424.21,
+      "index_median": 2424.84659091,
+      "basis_pct": -0.026252832339435095,
+      "spot_median": 2425.1,
+      "um_kline_median": 2424.22,
+      "funding_median": 4.883e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "afefe7526f8bf18981588d7c3c6d679078b765aefa808cff63675483a2decfb3",
+        "index_sha256": "8548bfeef43ae519e183b5462719e19ae6c1315a67819e9ae5f69028d6975e98",
+        "spot_sha256": "cb5916737f5ffa3e4bf32fa359e76913d3879a05aa24893107e74d971541812b",
+        "um_sha256": "b8f4a64c086513f0e64314f9e2ef44ec0463d47bbe4399ef4e265897e2e74ef9",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-08",
+      "mark_median": 2418.76,
+      "index_median": 2419.58863636,
+      "basis_pct": -0.03424699337513104,
+      "spot_median": 2419.55,
+      "um_kline_median": 2418.76,
+      "funding_median": 9.802e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f85650835b54fdb0a744971949d453edd349bcefb8f6956e693abbf8b5247f4e",
+        "index_sha256": "4cfbcde966814f4372262bc9af8abe767f6474841118b39ae7cc9d940613ecd3",
+        "spot_sha256": "946fbc0975048b81ced2d024b0c55fe88f1ff35c5010e5970c867ff9b52f2d8d",
+        "um_sha256": "8f59dbb1d4a11cb2c9399cc99889eab11128971e706c102e36aa65f0ade0beb8",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-09",
+      "mark_median": 2485.29932927,
+      "index_median": 2486.45243902,
+      "basis_pct": -0.046375701055223484,
+      "spot_median": 2486.56,
+      "um_kline_median": 2485.24,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "64263141fd7fe3afbf34e076d6e95080a3128ec958c6769f40e5cbbde9d78178",
+        "index_sha256": "69aff0c0fe8fa0b6162e3a93bf1de3952510ce3bd6006fc60b06f0048b99f1cb",
+        "spot_sha256": "1af88e684f699d1630116210d8d313d3ca78423f9b0afe3ea5cfec376aff6f8c",
+        "um_sha256": "f5860f7f6e5da1f91d65f32c07af2871afbd66ba87fe300c66e70178cc718c76",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-10",
+      "mark_median": 2499.41585017,
+      "index_median": 2500.30317073,
+      "basis_pct": -0.035488518767956556,
+      "spot_median": 2500.24,
+      "um_kline_median": 2499.2,
+      "funding_median": 9.615e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e2df90233cc41f5a00d4e801590083cb20be41b18e0b8a7170d81724a82f2a8b",
+        "index_sha256": "955307fd0f8ff7a75b28547575ce23bace264df25ce92cd834365b1dd6aa43ea",
+        "spot_sha256": "ca904e180657e470ab99ef0d231484226ece1ffc1382cfdeb6f2b37e61dfdcc1",
+        "um_sha256": "e8f8f2674e2acea34b5243719deb5a58071dd48faca1ddac8020a76e6c69d6ec",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-11",
+      "mark_median": 2506.11,
+      "index_median": 2507.06,
+      "basis_pct": -0.037892990195675935,
+      "spot_median": 2507.21,
+      "um_kline_median": 2506.1,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "080478f9492814a4f0d6f804c6f555c4c4826041693d89ddd992916ce0809088",
+        "index_sha256": "bac9cde6e3431fa6bb2c1748e1de18c0df865760600b1b1aa2840f037e83e382",
+        "spot_sha256": "9a1751bfa6b6c75098338e0e04c8eba2f63853442883355781511d188e2481fb",
+        "um_sha256": "3e0a7c0d8740570055938fa9859f8173cd88aaef25346afafa2238831971e800",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-12",
+      "mark_median": 2659.7936626,
+      "index_median": 2659.38926829,
+      "basis_pct": 0.015206284947533177,
+      "spot_median": 2659.99,
+      "um_kline_median": 2660.91,
+      "funding_median": 9.971e-05,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "af20a5eaf915b7c9525f2d575a6e1763ee29b370715eca924ecb0d0970717847",
+        "index_sha256": "cd4885af3002fda1a6b4c150bc0dc362cbf1f4c98ac621e05955fd1a880ea0f3",
+        "spot_sha256": "bf6c4c77662612758b1bcc9bf6c76dda3ee412bf68aa75b92dd5027fbd6c9186",
+        "um_sha256": "b4165a568ba681b628ed15c2ac543919ad2a56f7564bae09de3ea2d449f3d384",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-13",
+      "mark_median": 2640.63,
+      "index_median": 2640.12272727,
+      "basis_pct": 0.01921398292437093,
+      "spot_median": 2639.99,
+      "um_kline_median": 2640.83,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "42c0699c05bd9481d00afb7ce2f952634aa6dfb973e1d7df273120af9d753565",
+        "index_sha256": "22e59cad9181a23b38fd9263bca490bb8fda91bb2a5d87b0cbb3270fa710a74b",
+        "spot_sha256": "22fa92ee031e544616b2daa765ca1f24ba177ec300062bf9b93bde0bdf60f9d2",
+        "um_sha256": "8b446e6a98a63e639774c286eb1d79cca4910ba3ef07df782393bd3825f0ea55",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-14",
+      "mark_median": 2776.14,
+      "index_median": 2774.89068182,
+      "basis_pct": 0.04502224855866821,
+      "spot_median": 2774.81,
+      "um_kline_median": 2776.14,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "a8baee112a81aa467e7d9274fd42f946fb4f80a233c1bf17d5386e07313bcaa8",
+        "index_sha256": "cc11bf83d902405fec5e84fd4b8a010cbf25a4deb3507a6e758eca464348800e",
+        "spot_sha256": "31cee411a958241291d75320ba129095d2a30b7ded422e60d64ec13bba68d87f",
+        "um_sha256": "29ec8f9fc486d2b8f13872af72c00e9aa58971494073309162f98d9cf84ec65e",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-15",
+      "mark_median": 2824.36010985,
+      "index_median": 2822.65295455,
+      "basis_pct": 0.06048052408456073,
+      "spot_median": 2822.59,
+      "um_kline_median": 2824.54,
+      "funding_median": 0.00012136,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "bb180b6564f8e3bd412c09c48721a1591d169a838c7d2a41e370094c4b57eb39",
+        "index_sha256": "78bd997cd5bca350d32eda61ed26c89a4f720b8bbfc86d287004da21021e8b78",
+        "spot_sha256": "e8ccad87bb8c9f484b1f3ffcc6e2acce9d4096e397ad54c4dcc44d2bde7a7394",
+        "um_sha256": "a0edf9295cc2bb5f93a23c093976f2f03b83442f994c6adacc5040cacd6b8044",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-16",
+      "mark_median": 2803.3795303,
+      "index_median": 2801.84022727,
+      "basis_pct": 0.05493900098294535,
+      "spot_median": 2801.8,
+      "um_kline_median": 2803.69,
+      "funding_median": 0.00011125,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5900f33c4c0903c2399f45c478a3b8b6461c093897eca707dd33a1158a4ef7e3",
+        "index_sha256": "d51ed61a5bc4ec1a1eb4d0370d03ce3480db356a41c675b82c12f36fb2916d72",
+        "spot_sha256": "7dd395484015fef667268f11be2f3fecbeb9cf39e4358f49e3cbffc376ea6d91",
+        "um_sha256": "503e834e74ac1ee1a632753659e8d459afbce67d903fe2cb372c0cbd1ab246f5",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-17",
+      "mark_median": 2787.41459338,
+      "index_median": 2785.96170732,
+      "basis_pct": 0.05215025232336856,
+      "spot_median": 2785.93,
+      "um_kline_median": 2787.43,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "aebc3b1fa9fb4c3797c17f4adebc2e499aa0e7cfd39638fcad80ecc8ded26bba",
+        "index_sha256": "74c6150ae84e7299a6f4cf35fcdadae5c9763f686334d5c19f0a95cb989adb6c",
+        "spot_sha256": "e642fc5dc1b07c8c03d9572ce4208bd4d2303f110d6a9e1bf7bbf3c08f49e3cb",
+        "um_sha256": "13304741564ca1614cedfcf99ae8664a28548faa6f54d320f4155ec950c00730",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-18",
+      "mark_median": 2882.59928788,
+      "index_median": 2880.77863636,
+      "basis_pct": 0.06319997992974002,
+      "spot_median": 2881.2,
+      "um_kline_median": 2883.58,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "ab88a22615a59c629d924f5ac2b3bea7791df5c9ec18e4669a1c2200e5b6dda1",
+        "index_sha256": "54a4ba89d9aac3e8ecfb8790338488cc6d5c2f99ad2c9a44e47df0848b561475",
+        "spot_sha256": "b565cbe65e9e93411ae6079c0af30ddc2b93a3591a98929b2e6e489af616d746",
+        "um_sha256": "aac25ee23743391a487279e2de739d4c4208aedd4095169b52f8bd1c45fb3d20",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-19",
+      "mark_median": 2946.79613415,
+      "index_median": 2944.65243902,
+      "basis_pct": 0.07279959772479305,
+      "spot_median": 2944.8,
+      "um_kline_median": 2946.55,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "8e318a89b8feb6404f85d50b0784576bb2c6281c951098aff66a099a52af6fde",
+        "index_sha256": "5cc1b09c2c2589205a944d2e863ec153fb4b63b785aa339d98b7b07f31446fb0",
+        "spot_sha256": "15d6ba66732eead4c3082529fdfc6a1418afd84deb864ceb9341bb59aab4fdd5",
+        "um_sha256": "cf42c88d414ccfa0df35530561b8e5c3c31b3fc78cf3fcf52a2e61cdea712caf",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-20",
+      "mark_median": 3017.14272727,
+      "index_median": 3014.81590909,
+      "basis_pct": 0.07717944478746741,
+      "spot_median": 3014.81,
+      "um_kline_median": 3017.21,
+      "funding_median": 0.00025431,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d4ef45920b348580c2397c1b5a0188dbe70e84cb83c6d0786d3f4f80db6657e7",
+        "index_sha256": "3ffff45172855fe91b9c13d8c3ed7778781c19884efd2513b7843b010c5daeec",
+        "spot_sha256": "71e8a5a617307f7e3b2e9482880e68fd0c3cd1c1778b308ff51da2536d04bdb6",
+        "um_sha256": "14ae260dde4ee0fb60e71e7ae9a42469316e71fffe00e0c0e053171cba559537",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-21",
+      "mark_median": 2969.4,
+      "index_median": 2968.65136364,
+      "basis_pct": 0.025218062624987603,
+      "spot_median": 2967.9,
+      "um_kline_median": 2969.65,
+      "funding_median": 0.00011802,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "452ac0fac4bf92d6c146cbd57df03ed44d7e19a2ef3e3c1ac1d186da49affc9c",
+        "index_sha256": "7460e746bac54022eee18b0a60ae32d40f133ea0e836b61f122c491cb9a37523",
+        "spot_sha256": "2e34e5b8d289806304603e14e6104065a844dabd90915008f2379d7a88dd6694",
+        "um_sha256": "3448ce171c562d0e0b0ddd384967f9beda39ef910cd6c4ad785bfd0a11a1bcca",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-22",
+      "mark_median": 2972.68395455,
+      "index_median": 2971.33340909,
+      "basis_pct": 0.04545250478686924,
+      "spot_median": 2971.4,
+      "um_kline_median": 2972.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "92083d4467180388b66835ebc6c8373c8352ebf50f729431cb1fd657de44a938",
+        "index_sha256": "c9dca44baed263e1f35a842aaa5a85467e17f152a95f569ab3033273627d2448",
+        "spot_sha256": "729338bd4fe2ead451fbc37546529a0138bb132a56d38950375e516575fe4f1e",
+        "um_sha256": "e627f642af238bf5bc244165535dab2c8ebcff76bfc38073794c8b32bad7642f",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-23",
+      "mark_median": 2922.82210606,
+      "index_median": 2922.16545455,
+      "basis_pct": 0.022471400754442428,
+      "spot_median": 2922.24,
+      "um_kline_median": 2923.35,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "8dd7f5345d598fd2e9157f57eb98af7a6aadb7edc2e1f278580ffafb7f2b8433",
+        "index_sha256": "9ccfe91cb8a82e8627140eead4cab6e36768a5eb04f8419183832a59f9ad7d6a",
+        "spot_sha256": "11dea3ab5c9aecedd2729d6ca973741fb8977e467314f1a23a36001a3e7d9fae",
+        "um_sha256": "b4efb0a1dcec00d113b5378f0df92b92dfb817e75a7ed9dd2ada3c8714eb1832",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-24",
+      "mark_median": 2994.39,
+      "index_median": 2992.4704878,
+      "basis_pct": 0.06414473284952482,
+      "spot_median": 2992.62,
+      "um_kline_median": 2994.39,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d0bcf4ebe3e8e8739c62038aa93fe8f0d33be43d410013db8360c6b08c52a004",
+        "index_sha256": "1b569eaea02cac48c21fbe992770a31337805fc13507fb32704d6bc9e8c6fedb",
+        "spot_sha256": "332a24e5f90b80bf936ac233cd9d5f0723e22154629c0db3ed83c8498e599376",
+        "um_sha256": "0392021b465d14858a87108cc5fea920231fa87529857ddad4b6f60c07434cd9",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-25",
+      "mark_median": 3115.08368699,
+      "index_median": 3112.78439024,
+      "basis_pct": 0.0738662387671063,
+      "spot_median": 3112.59,
+      "um_kline_median": 3115.24,
+      "funding_median": 0.0002111,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d5eb69dece26d194d658a26cd7b363225735d8b98400d9107fc1b5b90acc5500",
+        "index_sha256": "b38597cb82d6b670c4d1aa23ebbcb01e16475955d3d56aefdcfa08ad37bde949",
+        "spot_sha256": "e64f96ec9865d0c4a5105122887e32148a372e13cf840a0982c0aa2611714097",
+        "um_sha256": "c3fbdebef64ea39b9ed109f7c8dd54b8cf6b97382cb75d69788b99569401f048",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-26",
+      "mark_median": 3178.59,
+      "index_median": 3176.20853659,
+      "basis_pct": 0.07497818177129023,
+      "spot_median": 3175.94,
+      "um_kline_median": 3178.6,
+      "funding_median": 0.00020172,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "a43f083f9b61626545926f6e9ce99b9cd8773c39889e34756317e92375ce47d7",
+        "index_sha256": "9fd013ae06f85b0497480e7ee5756939f26c369cff3e9111697e95db1959858b",
+        "spot_sha256": "a2784ed92f0905fb037aea0ab844bc9fa0ae39cd822f78dad5b4fab92bd8a9c9",
+        "um_sha256": "9b0d73e3da07f03c8d1940ffdb01b9ee9445554baacd79bc1301ad283eed4f67",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-27",
+      "mark_median": 3244.96891667,
+      "index_median": 3242.45545455,
+      "basis_pct": 0.07751724442268682,
+      "spot_median": 3242.36,
+      "um_kline_median": 3244.98,
+      "funding_median": 0.00029666,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "26e733dfc369e972526975a7319d0d508049853967ef9369ec74d8803fcd0af0",
+        "index_sha256": "88d300793b005895aeacfa2f002a5c0e8c53408b64dca1d61da5a4acf06f5604",
+        "spot_sha256": "6ac6d4d9c6441f7ba0ef044103e818a62b1ec3680e8336e9edf49e8137834523",
+        "um_sha256": "8bc945af6ac8f01b3d8c62c1f60b63bc7165f3b710fb6946808335919b425adb",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-28",
+      "mark_median": 3386.47732955,
+      "index_median": 3382.98545455,
+      "basis_pct": 0.10321874116554497,
+      "spot_median": 3383.1,
+      "um_kline_median": 3387.07,
+      "funding_median": 0.00033546,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "1bb3f11a7d41cf64f32fb569dd14c837f5a49d2a956c161026c113dfc4d8ce92",
+        "index_sha256": "98e2ad67ef2f06fc3f817fba5f59be449a8289c755e296d3553ee3a6f43b2712",
+        "spot_sha256": "b8f4dd7b6c16e424a7af739dde706bf2d09caf13e638f6adf8e90ebe32b8fec3",
+        "um_sha256": "39993aa81e61f30d5e26d8d3358dc03f3ac656c783529cf33b5eb401faefde5c",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-02-29",
+      "mark_median": 3343.04560606,
+      "index_median": 3340.29386364,
+      "basis_pct": 0.08238024953293177,
+      "spot_median": 3340.09,
+      "um_kline_median": 3343.15,
+      "funding_median": 0.00073381,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "c593c9ae47ae89d99fe1b2d1e3428cff72a268e20485739bea08cf3c777be52b",
+        "index_sha256": "d5635cc2ec7d64ac382e86bc218cca9294a10a8737f23204639f0a7a90ae5a2d",
+        "spot_sha256": "f40267caa5d48b0c289506d3ecac0f2dd16df7467d3e109ced2fe1a2ff9ba032",
+        "um_sha256": "a32a0b58f972149ef0d04b317388702ea4daa30373d804ef3c6106c15c4ee929",
+        "funding_sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-01",
+      "mark_median": 3435.82,
+      "index_median": 3433.29977273,
+      "basis_pct": 0.07340539529983037,
+      "spot_median": 3433.43,
+      "um_kline_median": 3435.82,
+      "funding_median": 0.00052446,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "0516b9eade28b6fa41fd7628b95b84a66945f4a990e57fe64bdc3e5123bfb672",
+        "index_sha256": "27c0762fd2e8682783a7df028808bc204817a9829d86acdd8240e6377a27c71e",
+        "spot_sha256": "dbfcbbf86745b3b797565f4ed148d21a8c33da01b21a9b01c8439d054c94629e",
+        "um_sha256": "c8f341bcedc62851158f210f4ac7ff5fa176265a623ac1370599361bc84698f3",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-02",
+      "mark_median": 3424.23777273,
+      "index_median": 3420.9775,
+      "basis_pct": 0.09530237278672082,
+      "spot_median": 3421.4,
+      "um_kline_median": 3424.43,
+      "funding_median": 0.00055344,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "fa0fa089a7bf6834a64f36a8f91451d9392026aaac365d9de51663cbf1040357",
+        "index_sha256": "6f5a53f70870dc19c6f052fea6d70962a4dd0cfa7f693f569ac963662ecf8c4f",
+        "spot_sha256": "ab8440371f224f42ce86e8129cb46fb427ab5e60ce5c4dadf8eac8db319b70c1",
+        "um_sha256": "9c06d5a84cf349ae75d4900fd6d0c8461139ace50fa8fff544367a6dc7cab8ce",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-03",
+      "mark_median": 3491.48,
+      "index_median": 3487.77181818,
+      "basis_pct": 0.10631950750537023,
+      "spot_median": 3487.81,
+      "um_kline_median": 3491.77,
+      "funding_median": 0.00038668,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "51f127694e33afc4a69223d2d1b65881fbdda7c005dc0b3dc43c5726d8fab175",
+        "index_sha256": "86f3eef8ff823d7fd8d59b46db3d2cea80ad9fdae9a568572dd82ca1e61ea6a2",
+        "spot_sha256": "c65d9e2f61ab5b3ece0ec934d49406ad1f1eef544ed81d05224ab6d4d0a59e19",
+        "um_sha256": "836bca49a8857283018410100ebe73d0a411906ee7f0b2c0d0272d1e3cc528a2",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-04",
+      "mark_median": 3628.5,
+      "index_median": 3627.00090909,
+      "basis_pct": 0.04133141809374852,
+      "spot_median": 3627.76,
+      "um_kline_median": 3629.72,
+      "funding_median": 0.00041907,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "131031725dd1f02e94a7b2fb9b2f6a7cf155fdd02c49ce5d0d30ea8bf1366172",
+        "index_sha256": "98fed44bf15f19f09dbe0b93c6dc34a68f61e39e733332e46fdbdf80d4971d53",
+        "spot_sha256": "034eb2a028e3055afc1c93e54d924caa46a6d78328754364233f91135c57faa9",
+        "um_sha256": "75c2a2dc68aebf3a5b04c715f6fa6f01284c36b46b707ceab511d3ff4ee8740e",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-05",
+      "mark_median": 3555.05254167,
+      "index_median": 3553.23045455,
+      "basis_pct": 0.05127973384519979,
+      "spot_median": 3553.65,
+      "um_kline_median": 3555.43,
+      "funding_median": 0.00082409,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "80310709da7800ab6e029aec93179bb0721c36833987b165f2ee9a9f62facde4",
+        "index_sha256": "bccc0c2c289445119a48f8a1cf82d80247c2404f6d18a397e966566f59b65fea",
+        "spot_sha256": "448341a71151a7329b63165e1bc720b84e11800e9e456c5a91fa3906aef302fe",
+        "um_sha256": "0276547019073e3ad8acdfbafb258c4e7cde5f6b610bd1074fd806a7a66a9e2f",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-06",
+      "mark_median": 3821.2499065,
+      "index_median": 3818.80634146,
+      "basis_pct": 0.06398766581774407,
+      "spot_median": 3818.59,
+      "um_kline_median": 3822.36,
+      "funding_median": 0.00038362,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "f9768a1b1bef202f6430f72c8d6160e149e9ba4c60dff18df6b0f9813eadd1f6",
+        "index_sha256": "2f7fc656969b26a50c4b33ae24a3766a3f852b0012ec50b6cc60374ab8988c76",
+        "spot_sha256": "95eabf99f5472279874d9eabb34c9c7007916e93e9bee07a7e814307c75a3505",
+        "um_sha256": "ba5b94e5e46a81d30cc557787a01410d9340d4f7ff01db6d7215223888b99a60",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-07",
+      "mark_median": 3871.54,
+      "index_median": 3868.71634146,
+      "basis_pct": 0.07298696236113233,
+      "spot_median": 3868.76,
+      "um_kline_median": 3871.69,
+      "funding_median": 0.00039169,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "71c17002ae7729fc449fd316fb8af49f205520fca77867b2588c20cd2c25930a",
+        "index_sha256": "704244fb72851c1bd471036bc80821b57196849ad00b424ad73e248bc15cf44b",
+        "spot_sha256": "6ec41feeb07c4a20d202ee68684aa1867432cb20f0a9027f100f328b7f90e8da",
+        "um_sha256": "84f519e1937cec26730961773f05751cfa995b215b7031e14f82dd576e8f8e05",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-08",
+      "mark_median": 3886.04,
+      "index_median": 3883.84863636,
+      "basis_pct": 0.056422477938111726,
+      "spot_median": 3883.36,
+      "um_kline_median": 3886.04,
+      "funding_median": 0.00048823,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "54db2ecb01df90b76f4c139ffd3767a9e27592a8eb1edb77b035c3bbb753b3ed",
+        "index_sha256": "485506e0981f84a1aef143021ac960967cb036626208845f3e15340c2da5b006",
+        "spot_sha256": "ba7d193fe1791b26779d1b67f3291b8519e9bf9e35dbba8f2b1b8b5dc36d9a3e",
+        "um_sha256": "8ba2802074ae5eaa89701f675e287dca4c15e765ecb6569411862af05f7a0070",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-09",
+      "mark_median": 3908.15,
+      "index_median": 3905.24272727,
+      "basis_pct": 0.07444537850871402,
+      "spot_median": 3905.21,
+      "um_kline_median": 3908.15,
+      "funding_median": 0.00035498,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e9bd5cef265a081a668316357cf9b6b63dcf918375e332532ca737d90c554398",
+        "index_sha256": "83c861cf109291cb5d8c3dd248f09d7518414867fdb26fdf1b90cec8bed91f6c",
+        "spot_sha256": "0bee0dd88104d196bf78ae1e49c30b2b658d2c05b413a6de510b7ac5346585cd",
+        "um_sha256": "05f9e890bc282d8a206d9b8a28feac69ad437058dca15507b157bea9d15708a3",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-10",
+      "mark_median": 3881.39526457,
+      "index_median": 3878.67829268,
+      "basis_pct": 0.07004891060771179,
+      "spot_median": 3878.47,
+      "um_kline_median": 3881.22,
+      "funding_median": 0.00034688,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "293a1c61b81cb3d692ea9e4b87bd4e35875f2e22ab6227d51c81d2db654f2aa2",
+        "index_sha256": "48f986a8a464565aa2062a84da72c41084325ea7a325ed34243ff706e1bb126b",
+        "spot_sha256": "cc5afea844cd2dc5e5e1dd0eaeb9dd0a060459725cefc70c1bafc7d30c5dbccd",
+        "um_sha256": "182c2eaa0c94c742af29f45c8632173fd095b292fbab046de2e2da176583b6a5",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-11",
+      "mark_median": 4070.53,
+      "index_median": 4065.37727273,
+      "basis_pct": 0.1267465950715918,
+      "spot_median": 4064.8,
+      "um_kline_median": 4070.52,
+      "funding_median": 0.00064296,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "989731ecb605e0ba58958541e0090b0c2157469aadd936f200324fc12a6e806a",
+        "index_sha256": "37d9d40ac21993ffc2f6be15f2e569b7388f6d83aa68a2b3714a9d318cae26a4",
+        "spot_sha256": "96bb4b41477bdce6fd36b6e6a1596553e0c8124854dc384ea24dbe655785d036",
+        "um_sha256": "2ee3629e32b8654fe821340b4b166d38cd296b53739fa1dc4dfa61f43b043d57",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-12",
+      "mark_median": 3983.90856818,
+      "index_median": 3979.85068182,
+      "basis_pct": 0.10196076899409157,
+      "spot_median": 3979.96,
+      "um_kline_median": 3984.18,
+      "funding_median": 0.00048306,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "a6cc4902727d49689aceb6e8c601154861219818d16d108d04f99b7d91206770",
+        "index_sha256": "2e01c9a513fce54a575970df176238789539391373725b32147611550ff80054",
+        "spot_sha256": "b1bbbd52f1711d26e49e8dd655029b97b83fc77f4dc97de9dbb431f2471213c6",
+        "um_sha256": "4a484bae1052a325c3f8263092fc71a78442c39b1b014fd82a93ce47676fdbb6",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-13",
+      "mark_median": 4008.66901387,
+      "index_median": 4004.99840909,
+      "basis_pct": 0.0916505927110789,
+      "spot_median": 4004.79,
+      "um_kline_median": 4008.76,
+      "funding_median": 0.00046983,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "3a542b6256b1041cbbab9191a16fbd4ba8d4d953caf54e7bf48ce903284449ee",
+        "index_sha256": "fb4d45101ed1a4ed3f065db428dd4c9d238fe2dfade982e327fc938940913779",
+        "spot_sha256": "60c014d9a8c93e951a66f8d1173e10d3b9b889dbbf7a230114b428596a3f9212",
+        "um_sha256": "ad20a4a0df1cdf75e31a2009ff36d01109566eba56b9a035eb57e60c1bad3377",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-14",
+      "mark_median": 3885.0,
+      "index_median": 3881.87522727,
+      "basis_pct": 0.08049647520993464,
+      "spot_median": 3881.7,
+      "um_kline_median": 3884.99,
+      "funding_median": 0.00040995,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "b6a8e254299a65df690d88abac40e4adba8024ac0ebb232c944dac7143e31075",
+        "index_sha256": "0c0ef94cdce35d1a5633d3701aba3fb720e46cc2c6ea091033ff8f71ba9dcb8d",
+        "spot_sha256": "a7029701e193e1751072feccf13c14df7214238c6b924c913a33a069fc1f80a4",
+        "um_sha256": "68366481e3f1c93767225c65f951449d8c014b1ceaf2d8e023f0615779708a55",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-15",
+      "mark_median": 3743.7235,
+      "index_median": 3741.35636364,
+      "basis_pct": 0.0632694704788106,
+      "spot_median": 3742.19,
+      "um_kline_median": 3745.0,
+      "funding_median": 0.00033557,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "adfd0e3778b5e3c99cace9a66e61cc1e9dc4c873462618080e2997bfc3508974",
+        "index_sha256": "8c8c244bcf1b1918510f05e8cfa943c8f8b20b0e27f3bb222bec34e489d96ec9",
+        "spot_sha256": "895378eeee51de5f2f5bac793ad085330965bc00b048dd87fd1e02643ae55b0d",
+        "um_sha256": "3f3391fa9faca472f39c0a9d3ff127c1a736bfed8586849fc1540f5aa783f83b",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-16",
+      "mark_median": 3525.57,
+      "index_median": 3523.15181818,
+      "basis_pct": 0.06863688948974822,
+      "spot_median": 3523.09,
+      "um_kline_median": 3525.58,
+      "funding_median": 0.0002749,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "05db6dac8bd22d00ff21648fc05ed5fa2bc64dc4f5aeec346214648e88bea009",
+        "index_sha256": "96edfd1da3c081010301a69ed7d4d019619af047fff9d0edc2b4743e7574f5c5",
+        "spot_sha256": "60c5c3fc92e0a324fb122cbce1c52e410edc9f3449920b55af716f7dcae68abd",
+        "um_sha256": "c97e9c1931c10cfbc9ad0e2e7665e5d02af1d427f5600bc666b04820db92ba3d",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-17",
+      "mark_median": 3646.99,
+      "index_median": 3644.50886364,
+      "basis_pct": 0.06807875773751082,
+      "spot_median": 3644.71,
+      "um_kline_median": 3646.99,
+      "funding_median": 0.00013396,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e28d364fecbe1f54e9e6208e167c5d88d9bc461075f223d6c2990dc19b6c29f0",
+        "index_sha256": "1596baec187c41c0a8aa267c578629cb7cc3add5608e6d157d368758c326f979",
+        "spot_sha256": "6306719f2ed538f82596859e2c7a6e7725dd002d04c3ac329d923e9a6c2e96cc",
+        "um_sha256": "fb6e3e9ec136c6b54a6224599ae89c5e41efea976405b6f2c4e0cbee37895986",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-18",
+      "mark_median": 3522.92928409,
+      "index_median": 3520.51181818,
+      "basis_pct": 0.06866802427749619,
+      "spot_median": 3520.46,
+      "um_kline_median": 3523.43,
+      "funding_median": 0.00026393,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "23102c92a390e24f6d82436cd79a728b4c8d2e937dd39fd8944608fbe40caac0",
+        "index_sha256": "58c220a75b10f6412abe4adaec944b6a2b34d460729202f1d846579f62510b97",
+        "spot_sha256": "6bed17ff2f9ac67076ba83ac9413f3d268b2afd700d5ab1f7a87aa56e7e6b3cd",
+        "um_sha256": "e6c41e0f7c3e2f669a7a3a408c370f58de9baaf8aa3058bb0d7fdaad3db00e32",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-19",
+      "mark_median": 3161.29,
+      "index_median": 3159.17272727,
+      "basis_pct": 0.06701984705437258,
+      "spot_median": 3158.64,
+      "um_kline_median": 3161.0,
+      "funding_median": 0.00023311,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "78d555b245b0e71611a310fe1273df14bbdf8639d3763d652d4d635930ce3cd8",
+        "index_sha256": "abd429453d76883b01782cae3c56f7a5d397385fb0023a962d4506c2f1842cac",
+        "spot_sha256": "397a0a74e9010fb1a28816de8cf0bdb65dab768a732781a4c909012f48e0ab2d",
+        "um_sha256": "c4b5c6847f27496eb945ffeab1e6522c7245b90a1d454efd3e235cc1dc39a74d",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-20",
+      "mark_median": 3517.8,
+      "index_median": 3516.18487805,
+      "basis_pct": 0.045933931406239026,
+      "spot_median": 3516.53,
+      "um_kline_median": 3517.8,
+      "funding_median": 0.0001,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "965bae4ec174a4af51f66d536301ced24606903d2439d7f60be7fddb3f417ecf",
+        "index_sha256": "ae2f26f5a9e450972874bef2ab1d04dc23bc5f4916651924578f0ddbdf387b89",
+        "spot_sha256": "f7e7ba8e5e9a155b8564b9de33bd05919874f19d7905a1e28c895bfa064b2bfb",
+        "um_sha256": "cb1e8402352afbfa0267652e594a2083dedd7ba3d3a6cc61cdc3f1046a75693a",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-21",
+      "mark_median": 3495.23894453,
+      "index_median": 3492.88977273,
+      "basis_pct": 0.06725582405551211,
+      "spot_median": 3492.85,
+      "um_kline_median": 3495.16,
+      "funding_median": 0.00017743,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "790fdc33404217e668a7fdbd48ea6f135921df458558b0fefcdc7f7c29ae47aa",
+        "index_sha256": "3dd21b8bd8c0f7ab898674507aa150a27a14664e8137353ae679bd3bd744effb",
+        "spot_sha256": "91e782ff7c748a3b3a098072ed35baab5b951b909e289c6d3b9e810d1edd3fcc",
+        "um_sha256": "845dc1d888602f08e2f4929aa6f04ef6d64db32230a55e06454c19dd42e10bd6",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-22",
+      "mark_median": 3337.88931439,
+      "index_median": 3335.8175,
+      "basis_pct": 0.06210814560447808,
+      "spot_median": 3336.35,
+      "um_kline_median": 3339.0,
+      "funding_median": 0.00022775,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "666a1e1eb883131037b5e7257ce800fe2d5de580e997b5e743b35457dd4db7ff",
+        "index_sha256": "f3ca220ead417135168792aaacf8d2061753ad02a729b2d0650debbdd9577fb6",
+        "spot_sha256": "f33411f91913c44e7799ade9633c47c5ab4b69df923608603de2ec549862a01f",
+        "um_sha256": "d71bf00aa9ba21a907fb34b3a2295c56a571f61b0af9fc12b191e0bc5d2fba0a",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-23",
+      "mark_median": 3330.83,
+      "index_median": 3330.12795455,
+      "basis_pct": 0.02108163588852019,
+      "spot_median": 3329.53,
+      "um_kline_median": 3330.96,
+      "funding_median": 0.00012459,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "aa0085375265d7b36e21a69ca89c96b2bf5a7caf78327352ea185521efb9e179",
+        "index_sha256": "9f99ac542db314d46f17a020a5098165b20d34a7208da0aa85607341e27161f6",
+        "spot_sha256": "c913a73b9dcbe47d69fd90ca55312b23c3a6afc313da688343407ffea13defeb",
+        "um_sha256": "0959577cf142e393755d3b51d9635974438b976e9f8a09534dfef078e987b8bb",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-24",
+      "mark_median": 3456.55247727,
+      "index_median": 3454.44318182,
+      "basis_pct": 0.061060360208009534,
+      "spot_median": 3454.98,
+      "um_kline_median": 3457.16,
+      "funding_median": 0.00017171,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "5fdb15fc6ca77e024ef4128a78a223241079b7c30cc7530e64f3d43d069c083e",
+        "index_sha256": "10a69b9df371fd06e1f0bcbc6b7dc257f239196604a515131b1046147c70541f",
+        "spot_sha256": "7657d2aaecb979e97847c1e3083579baf7690cb9b31fba40aaca751b23c7f69f",
+        "um_sha256": "789c63766beaaaa6ceaf38b26848c375964603441c34a468d586084643c8559f",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-25",
+      "mark_median": 3593.02,
+      "index_median": 3590.43522727,
+      "basis_pct": 0.07199051274811019,
+      "spot_median": 3590.42,
+      "um_kline_median": 3592.94,
+      "funding_median": 0.00020242,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "15a904889c5df1a9547e774afa5613bdd425c35cec780e85f9616c1a4412de9e",
+        "index_sha256": "d5968bc3fb960b0d0e6c49225ae3640171fc49a1c85d251dfa191f4fea608d58",
+        "spot_sha256": "baac20295044edb7452bc44066018bcbd651b06e9a5326f3e6bd5c990add28b5",
+        "um_sha256": "0462508ee3de1031aabf2ca6f38e85927ff81f327a0e4c999ee486ab7651bfad",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-26",
+      "mark_median": 3589.64,
+      "index_median": 3587.50954545,
+      "basis_pct": 0.05938533467324536,
+      "spot_median": 3587.33,
+      "um_kline_median": 3589.64,
+      "funding_median": 0.00026242,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "facb88f99c33b480cec1dc03ddd6e66c5f2594b6364d98541047c68a468fb11f",
+        "index_sha256": "8c92438590edbd58ee5e3bf118696d246d812ab653100c86b1cff690923c8dae",
+        "spot_sha256": "bf46d7ef7c1e7f20a0abc8858c4aac489a8ddc2ab21c14612c9e038678ffeda1",
+        "um_sha256": "ed19b9a0146bb077fbced2ceed11bc244df3ab9d174ef6edee0db6ede820554e",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-27",
+      "mark_median": 3504.60146212,
+      "index_median": 3501.35545455,
+      "basis_pct": 0.0927071704696969,
+      "spot_median": 3501.19,
+      "um_kline_median": 3504.99,
+      "funding_median": 0.00024667,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "e3a462848411256899c5b407b1d8d24b213b0e09254150e03fe9938ac3dfe33b",
+        "index_sha256": "a0c027344139c0224ae62eaba62750e7abc7a5af61b3f31710fb61b186291c3b",
+        "spot_sha256": "89b8c3494d026f13b0495ed277843931439117807c552fa8935d02b83c0fd0f1",
+        "um_sha256": "bff7c065e9374adacfc30f45c4e38196a521458c23b5e5b849ca0bab5fd9b756",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-28",
+      "mark_median": 3563.41656061,
+      "index_median": 3560.72318182,
+      "basis_pct": 0.07564134172945991,
+      "spot_median": 3560.49,
+      "um_kline_median": 3563.99,
+      "funding_median": 0.00036879,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "d5e89b07059bf1e1cb4778d89706c4f9a7d11ed11fb1ae8134a1dbd0409db604",
+        "index_sha256": "44bbd051eba5313bfe3e236a31430359590f12e463aef7277e550668bd13e8fc",
+        "spot_sha256": "d19756fce6a31c522e425293a002c763c1db4ac84c2ef26e0aeb7786b8319a45",
+        "um_sha256": "54162ce7f0a0ff6b5ebe34805f4df61f606f3a4fcdc7ab1c9c2718076634952a",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-29",
+      "mark_median": 3512.46,
+      "index_median": 3509.79181818,
+      "basis_pct": 0.07602108495949889,
+      "spot_median": 3509.74,
+      "um_kline_median": 3512.46,
+      "funding_median": 0.00034117,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "63c9252f6b442b005846034609d777ab411643090281ce4588db310226438f0e",
+        "index_sha256": "52248a47d963e14070f501840e4374a46006e0ea1a82e347fceb9a4d041453b8",
+        "spot_sha256": "9fef31fa82648e2fed235c000dafebe08eb9b4095bca72652ce5af44330ad30a",
+        "um_sha256": "c471de44fa84154601fadc948768c18914a9b12fc1daf41c16027c5fb0025800",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-30",
+      "mark_median": 3508.17596212,
+      "index_median": 3505.64340909,
+      "basis_pct": 0.07224217453014603,
+      "spot_median": 3505.64,
+      "um_kline_median": 3508.66,
+      "funding_median": 0.00024854,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "9a4d02f1f5970f573dbb465c69f6d67ca9f11edc3aa89071a0260798cd7a4733",
+        "index_sha256": "718b6c3b47f6a2d9c949ef7f870230c139f517d9304120a44e182322384ee21f",
+        "spot_sha256": "70133e296e05192974f6e6d1a35f02a6eaf074e693233241d5bb608db0ed0e67",
+        "um_sha256": "92e37d7ed700d4b648c94bd01ea30b7d0188f716dbf174695699fad1f1b90935",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2024-03-31",
+      "mark_median": 3648.79,
+      "index_median": 3645.37136364,
+      "basis_pct": 0.09378019463528453,
+      "spot_median": 3645.29,
+      "um_kline_median": 3648.79,
+      "funding_median": 0.00058292,
+      "status": "ok",
+      "hashes": {
+        "mark_sha256": "92e52e78461dfa2ae6c51037739588399f06b9bbad55c00d0be5eaa44dec51cb",
+        "index_sha256": "c7ee0e186cafc4afe88b78cef97511e613d485646e13c531a7abf46705f0dd47",
+        "spot_sha256": "7c66de2c187f37c41800166ca71f2298da346cee96bb3d14fbb3c024e46de755",
+        "um_sha256": "3aee424dffd1fb04c8b819a9604c99887f4bd54d4f2a0cbefb7b90dba32534e5",
+        "funding_sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+      }
+    }
+  ]
+}

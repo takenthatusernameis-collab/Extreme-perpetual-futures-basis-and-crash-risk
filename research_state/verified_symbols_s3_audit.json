@@ -1,85 +1,102 @@
 {
   "schema_version": "1.0",
   "program_id": "EBCR-001",
-  "generated_at_utc": "2026-10-24T18:05:03.609672+00:00",
+  "generated_at_utc": "2026-10-24T18:27:04.613356+00:00",
+  "window": {
+    "start": "2024-01-01",
+    "end": "2024-03-31"
+  },
   "audit": {
     "BTCUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "ETHUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "BNBUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "XRPUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "SOLUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "TRXUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "ZECUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "DOGEUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "LINKUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "ADAUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "XLMUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "NEARUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     },
     "BCHUSDT": {
-      "um_klines_count": 2,
-      "mark_klines_count": 2,
-      "index_klines_count": 2,
-      "funding_monthly_count": 2
+      "um_klines_count": 91,
+      "mark_klines_count": 91,
+      "index_klines_count": 91,
+      "funding_monthly_count": 3,
+      "coverage": 1.0
     }
   }
 }

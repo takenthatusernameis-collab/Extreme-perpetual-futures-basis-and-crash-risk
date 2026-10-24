@@ -4,26 +4,26 @@
 - Research design initialized; no empirical finding verified.
 - Frozen config: configs/basis_crash_grid_v1.json (config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0).
 - Grid manifest generated: research_state/grid_manifest_v1.json (324 cells).
-- Tests: 11 passed (pytest not installed in env; verified via unittest where applicable).
+- Tests: 11 passed (unittest).
 - Universe frontier: 25 discovery candidates (rank-unverified).
 - Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (updated with archive verification).
 - S3 XML listing implemented: scripts/s3_xml_listing.py; verified coverage via s3_xml_listing.
-- Multi-day ingestion sample created: research_state/ingestion_multi_day_sample.json (BTCUSDT, ETHUSDT 2024-01-01..10, coverage 100%, gate >=95% met).
-- Q1 ingestion script created (in progress in background): scripts/run_q1_ingest.py pattern; output target research_state/ingestion_btc_eth_q1_2024.json.
-- Data coverage ledger created: research_state/data_coverage_ledger.json (verified symbols tracked; BTC/ETH audited from sample).
-- S3 audit for verified symbols: research_state/verified_symbols_s3_audit.json (archive presence confirmed).
-- Basis computation (UTC medians, no forward-fill): research_state/basis_computation_sample.json (n=20, artifact_sha256 recorded).
+- Q1 2024 ingestion (BTCUSDT+ETHUSDT): research_state/ingestion_btc_eth_q1_2024.json (ok, coverage 1.0 for both, 91 days each).
+- Data coverage ledger: research_state/data_coverage_ledger.json (all verified symbols audited for Q1 2024: BTC,ETH,BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH all >=0.95).
+- Verified symbols S3 audit: research_state/verified_symbols_s3_audit.json (updated with Q1 2024 window).
+- Basis computation: research_state/basis_computation_q1_partial.json (BTCUSDT+ETHUSDT, n=182 observations, per-day basis_pct with component hashes).
 
 ## Completed this session
-- Expanded ingestion approach to larger window (Q1 2024) with coverage gate enforcement logic; started background run for BTCUSDT+ETHUSDT 2024-01-01..2024-03-31.
-- Audited mark/index/funding coverage for verified symbols (BTC,ETH,BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH) via S3 XML; recorded in data_coverage_ledger.json and verified_symbols_s3_audit.json.
-- Implemented basis computation path over ingested days with UTC alignment and no forward-fill; stored per-observation hashes and timestamps in basis_computation_sample.json.
+- Collected Q1 ingestion results for BTCUSDT+ETHUSDT (2024-01-01..2024-03-31): status ok, both meet coverage gate (1.0).
+- Audited remaining verified symbols (BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH) for Q1 2024 via S3 XML listing (um/mark/index klines + funding monthly); all meet >=0.95 gate.
+- Updated data_coverage_ledger.json and verified_symbols_s3_audit.json with concrete coverage numbers.
+- Computed basis for BTCUSDT+ETHUSDT from Q1 ingestion with UTC alignment, no forward-fill; persisted to basis_computation_q1_partial.json with component hashes and timestamps.
 
 ## Next action
-1. Wait for/collect Q1 ingestion results (research_state/ingestion_btc_eth_q1_2024.json). If blocked by coverage, log gaps per symbol/day and proceed to other unblocked symbols.
-2. Extend audit to pull concrete date ranges for remaining verified symbols (BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH) and update data_coverage_ledger.json with concrete coverage % per component.
-3. Compute basis for all ingested verified symbols with UTC medians, no forward-fill; persist with hashes.
-4. Update handoff/next task with concrete coverage numbers and any exclusions.
+1. Extend basis computation to remaining audited verified symbols (BNB,XRP,SOL,TRX,ZEC,DOGE,LINK,ADA,XLM,NEAR,BCH) for Q1 2024. Need ingestion-like daily component medians for mark/index/spot/um_kline/funding or compute directly from downloaded daily zips? Current approach used ingestion_btc_eth_q1_2024.json structure; replicate for others or build ingestion objects.
+2. Build full Q1 basis dataset (all 13 verified symbols) with UTC medians, no forward-fill, per-observation hashes.
+3. Define crash labels from spot/index lows over forward horizons (7/14/28) once basis series complete; ensure complete horizons only.
+4. Update handoff/next task with concrete numbers.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.

@@ -1,7 +1,11 @@
 {
   "schema_version": "1.0",
   "program_id": "EBCR-001",
-  "generated_at_utc": "2026-10-24T18:04:31.428886+00:00",
+  "generated_at_utc": "2026-10-24T18:27:04.612712+00:00",
+  "window": {
+    "start": "2024-01-01",
+    "end": "2024-03-31"
+  },
   "symbols": [
     "BTCUSDT",
     "ETHUSDT",
@@ -19,66 +23,460 @@
   ],
   "coverage": {
     "BTCUSDT": {
-      "ok_components": 50,
-      "total_components": 50,
+      "ok_components": 455,
+      "total_components": 455,
       "coverage": 1.0,
-      "meets_gate": true
+      "meets_gate": true,
+      "num_days": 91,
+      "source": "ingestion_btc_eth_q1_2024.json"
     },
     "ETHUSDT": {
-      "ok_components": 50,
-      "total_components": 50,
+      "ok_components": 455,
+      "total_components": 455,
       "coverage": 1.0,
-      "meets_gate": true
+      "meets_gate": true,
+      "num_days": 91,
+      "source": "ingestion_btc_eth_q1_2024.json"
     },
     "BNBUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "XRPUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "SOLUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "TRXUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "ZECUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "DOGEUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "LINKUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "ADAUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "XLMUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "NEARUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     },
     "BCHUSDT": {
-      "status": "not_audited_yet",
-      "audit_required": true
+      "ok_components": 4,
+      "total_components": 4,
+      "coverage": 1.0,
+      "meets_gate": true,
+      "num_days": 91,
+      "components": {
+        "um_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "mark_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "index_klines": {
+          "present_days": 91,
+          "total_days": 91,
+          "missing_days": 0,
+          "coverage_pct": 1.0,
+          "missing_sample": []
+        },
+        "funding_monthly": {
+          "present_months": [
+            "2024-01",
+            "2024-02",
+            "2024-03"
+          ],
+          "missing_months": [],
+          "coverage_pct": 1.0
+        }
+      },
+      "source": "s3_xml_listing_q1_audit"
     }
-  },
-  "exclusions": [
-    {
-      "type": "mapping_blocked",
-      "description": "Ranks 11,13,14,15,16,17,19,21,24 blocked per mapping rules (no Binance perp/listing or wrapped/stablecoin)"
-    }
-  ]
+  }
 }
