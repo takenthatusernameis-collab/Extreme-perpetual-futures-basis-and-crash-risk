@@ -30,9 +30,9 @@
 - **Alternative orientation:** NOT preregistered this session. H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested in research_state/hypothesis_registry.json. Rationale: grid hits (absolute_extreme 224/864, cheap_negative 65/864 Holm-significant) are inspected results; preregistering now would constitute selection by raw p-value, prohibited by the operating contract and research protocol. Independent predeclared rationale + new experiment ID required before any separate preregistration.
 
 ## Completed this session
-- Regenerated grid manifest (324 cells; config hash matches frozen config) and confirmed 11 unittest tests pass and git diff --check clean.
-- PIT hardening re-confirmed: pit_rank_search_v1.json — no bulk free PIT market-cap rank history source located; rank remains unverified for all candidates; explicit gaps documented, no fabrication, no current ranks projected backward.
-- Listed PIT listing-evidence gaps: complete earliest/latest markPriceKlines zip dates for XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT; null earliest/latest (incomplete listing metadata via S3 XML) for BTCUSDT, ETHUSDT, BNBUSDT, DOGEUSDT, ADAUSDT, BCHUSDT. Q1 coverage ledger shows full coverage (1.0) for all 11 symbols in 2024-01-01..2024-03-31; extended window 5,010 rows, 336 exclusions (missing_label).
+- Re-verified required checks: grid manifest regenerated (324 cells; config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config), 11 unittest tests pass, git diff --check clean. Q1 artifacts, evaluation reports, frozen anchor/config unmodified.
+- PIT hardening re-confirmed: pit_rank_search_v1.json — no bulk free PIT market-cap rank history source located (CMC/Wayback CDX, CoinMetrics Community API, CoinPaprika checked); rank remains unverified for all candidates; explicit gaps documented, no fabrication, no current ranks projected backward.
+- PIT listing gaps: complete earliest/latest markPriceKlines zip dates for XRPUSDT, SOLUSDT, TRXUSDT, ZECUSDT, LINKUSDT, XLMUSDT, NEARUSDT; null earliest/latest (incomplete listing metadata via S3 XML) for BTCUSDT, ETHUSDT, BNBUSDT, DOGEUSDT, ADAUSDT, BCHUSDT.
 - Documented explicit decision not to preregister cheap-negative/absolute-extreme from grid hits (see Status); preserves null result and multiplicity rules.
 - Updated handoff and task message with verified findings only.
 
@@ -40,7 +40,7 @@
 1. If a defensible free PIT market-cap rank history source appears, record source/timestamp/checksum in research_state/pit_rank_search_v1.json and update pit_universe_verification_v1.json; otherwise keep rank-unverified and continue with the coverage-cohort approach. Do not project current ranks backward.
 2. Do not preregister cheap-negative or absolute-extreme from inspected grid hits; only via separate predeclared rationale with a new experiment ID (H002/H003 remain registered_secondary_not_tested).
 3. Expand coverage notes for symbols with limited history (PIT listing gaps above); preserve all exclusions/statuses and terminal cell statuses.
-4. Update handoff and next task at every activation.
+4. At every activation: verify branch/workflow/state/cutoff/pending cells/diagnostics, run required checks, update handoff and next task with verified findings only.
 
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
