@@ -19,7 +19,7 @@ class ResearchContractTests(unittest.TestCase):
         prompt = (ROOT / "prompts/continuous_research_operating_contract_v1.md").read_text(encoding="utf-8")
         self.assertIn("Average returns may be flat or positive", prompt)
         self.assertIn("2,592", prompt)
-        self.assertIn("frozen primary anchor", prompt)
+        self.assertIn("Frozen primary anchor", prompt)
 
     def test_point_in_time_and_expanding_universe_rules_exist(self):
         prompt = (ROOT / "prompts/continuous_research_operating_contract_v1.md").read_text(encoding="utf-8")
