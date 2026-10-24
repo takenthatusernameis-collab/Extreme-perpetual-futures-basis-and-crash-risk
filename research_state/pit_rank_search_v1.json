@@ -30,7 +30,28 @@
       "name": "Wayback CDX (coinmarketcap)",
       "endpoint": "http://web.archive.org/cdx/search/cdx",
       "notes": "Network access to web.archive.org returned HTTP 000 (unreachable) in this environment; no additional archival scraping possible this activation. Prior finding (historical pages exist) preserved."
+    },
+    {
+      "name": "CoinMarketCap listings/historical (free Basic)",
+      "endpoint": "https://coinmarketcap.com/api/v1/cryptocurrency/listings/historical",
+      "notes": "Endpoint returns ranked snapshot for a historical UTC date back to 2013-04-28, but requires a free Basic plan API key (signup). Per hard invariants (no credentials/private endpoints), not usable as a no-key free bulk source in this environment; not fetched. Recorded as potential future source if a keyless/public mirror is located."
+    },
+    {
+      "name": "Coinranking rank-history",
+      "endpoint": "https://api.coinranking.com/v2/coin/:uuid/rank-history",
+      "notes": "Rank history (by market cap) available only on Growth (paid) plan; free tier limited to price history <=1y. Not usable as free bulk PIT rank source."
+    },
+    {
+      "name": "Kaggle daily crypto market tracker (CoinGecko scrape)",
+      "endpoint": "https://www.kaggle.com/datasets/darkmatternet/daily-crypto-market-tracker",
+      "notes": "Free CC0 dataset with daily top-250 market_cap_rank, but scraping began 2026-03 (CoinGecko free API has no historical rank); does not cover 2019-2024 candidate membership period. Not usable as defensible PIT rank history for this study window."
+    },
+    {
+      "name": "Zenodo cryptocurrency historical snapshot (2022-09)",
+      "endpoint": "https://zenodo.org/records/7342586",
+      "notes": "Single-date (Sep 2022) top-20 snapshot only; not a time series across candidate listing dates. Insufficient for PIT membership."
     }
   ],
-  "conclusion": "No bulk free PIT market-cap rank history dataset located via CoinGecko (rank not in free market_chart; history limited 365d), CryptoCompare (API key required), or Wayback CDX (unreachable this activation). Rank remains unverified for all candidates. Listing/lifecycle evidence collected via Binance Vision S3 XML where available."
+  "checked_at_utc": "2026-10-24T23:48:00+00:00",
+  "conclusion": "No additional free (no-key, no-signup) bulk PIT market-cap rank history located this activation (CoinMarketCap listings/historical requires API key; Coinranking rank-history paid; Kaggle tracker covers 2026 only; Zenodo single-date snapshot). Rank remains unverified for all 13 candidates. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
 }
