@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Extreme Basis Crash Risk Run Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "program_id",
+    "experiment_id",
+    "status",
+    "grid_config_path",
+    "grid_expected_cells",
+    "grid_status_counts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "program_id": {
+      "const": "EBCR-001"
+    },
+    "experiment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "initialized",
+        "preregistered",
+        "running",
+        "complete",
+        "blocked",
+        "failed",
+        "inconclusive"
+      ]
+    },
+    "registered_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_cutoff_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grid_config_path": {
+      "type": "string"
+    },
+    "grid_manifest_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grid_expected_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "grid_status_counts": {
+      "type": "object",
+      "required": [
+        "ok",
+        "blocked",
+        "failed",
+        "incomplete",
+        "invalid",
+        "not_run"
+      ],
+      "properties": {
+        "ok": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocked": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "incomplete": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "invalid": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_run": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifact_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
