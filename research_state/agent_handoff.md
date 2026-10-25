@@ -713,3 +713,8 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m unittest discover -s tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
 - Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label). Reporting only verified findings.
+
+## Completed this session (activation 88)
+- Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m unittest discover -s tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
+- Prior task from activation 87 completed: clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label). Reporting only verified findings.
