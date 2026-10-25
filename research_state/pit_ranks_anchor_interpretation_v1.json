@@ -1,0 +1,26 @@
+{
+  "artifact_id": "EBCR-001-PIT-RANKS-ANCHOR-INTERP-V1",
+  "created_at_utc": "2026-10-25T13:48:11Z",
+  "inputs": [
+    "research_state/evaluation_summary_extended_v1.md",
+    "research_state/pit_rank_verification_v1.json",
+    "research_state/red_team_audit_extended_v1.json"
+  ],
+  "finding": "no_change",
+  "rationale": "PIT ranks verified for all 13 coverage-cohort symbols via free Wayback-CMC snapshots (conservative upper bounds). Anchor null unchanged (adj p 0.248/0.949). Red-team audit updated with no finding dependent on rank-unverified assumption.",
+  "anchor": {
+    "endpoints": ["crash_incidence_15pct", "expected_shortfall_5pct_forward_mae"],
+    "adj_p": [0.248, 0.949],
+    "significant": false
+  },
+  "pit": {
+    "rank_verified_all": true,
+    "source": "Wayback Machine CMC historical snapshots (free, no key)",
+    "conservative_bound": true
+  },
+  "constraints": {
+    "preregister_from_grid_hits": false,
+    "frozen_artifacts_modified": false,
+    "h002_h003_status": "registered_secondary_not_tested"
+  }
+}
