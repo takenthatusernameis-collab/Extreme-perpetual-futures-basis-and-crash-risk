@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v33",
+  "program_id": "EBCR-001",
+  "activation": 165,
+  "generated_at_utc": "2026-10-25T19:26:22Z",
+  "required_checks": {
+    "grid_manifest_regenerated": true,
+    "manifest_output": "/tmp/basis-grid-manifest.json",
+    "cells": 324,
+    "config_sha256_match_frozen_canonical": true,
+    "canonical_config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "pytest_q_tests": {
+      "passed": 11,
+      "total": 11
+    },
+    "git_diff_check_clean": true,
+    "git_status_short_clean_tracked": true
+  },
+  "verifications": {
+    "hypothesis_registry_consistency": {
+      "checked": true,
+      "H001": {
+        "status": "tested_not_supported",
+        "matches_anchor": "EBCR-GRID-001-0005",
+        "adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "adj_p_es_5pct_mae": 0.9485,
+        "matches_evaluation_report_extended_v1": true,
+        "matches_leakage_audit_extended_v1": true,
+        "matches_red_team_audit_extended_v1": true
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "changes_made": false
+    },
+    "audits_reviewed": {
+      "red_team_audit_extended_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Anchor null preserved after correction; caveats on dependence/multiplicity; PIT verified for coverage cohort; exclusions 336 preserved."
+      },
+      "leakage_audit_extended_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Past-only/forward-only verified; permutation consistent with null; temporal placebo opposite direction (regime) consistent with non-leakage."
+      },
+      "evaluation_ledger_consistency_audit_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "324 cells × 8 endpoints = 2592; counts match; all cells ok; anchor null preserved."
+      }
+    },
+    "durable_state_upkeep_v32": {
+      "reviewed_as_reference": true,
+      "verdict": "no_gaps_found"
+    }
+  },
+  "preservations": {
+    "frozen_anchor_config_q1_extended_untouched": true,
+    "anchor_null_preserved_adj_p": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    },
+    "exclusions_missing_label": 336,
+    "H002_H003_registered_secondary_not_tested": true,
+    "PIT_rank_inquiry_closed": true,
+    "pit_rank_verification_durable": "research_state/pit_rank_verification_v1.json"
+  },
+  "outcome": {
+    "verdict": "no_gaps_found",
+    "new_gaps_found": false,
+    "gaps_documented": [],
+    "preregistration_from_grid_hits": false,
+    "registry_or_audit_modifications": false,
+    "frozen_artifacts_modified": false
+  },
+  "concrete_next_task": "Continue durable-state upkeep — re-verify hypothesis registry consistency remains accurate and re-review red-team audit, leakage audit and evaluation-ledger consistency audit for any new unaddressed items; document findings only if gaps found, else record explicit 'no_gaps_found' artifact (new version suffix v34). Update handoff and task message with verified findings only. A concrete next task must always remain."
+}
