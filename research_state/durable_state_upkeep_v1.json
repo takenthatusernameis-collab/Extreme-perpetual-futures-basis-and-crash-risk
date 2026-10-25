@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 133,
+  "task_id": "EBCR-001-DURABLE-STATE-UPKEEP-V1",
+  "generated_at_utc": "2026-10-25T14:20:20Z",
+  "frozen_config": {
+    "path": "configs/basis_crash_grid_v1.json",
+    "sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "matches_frozen_config": true,
+    "modified": false
+  },
+  "required_checks": {
+    "grid_manifest_cells": 324,
+    "grid_manifest_output": "/tmp/basis-grid-manifest.json",
+    "tests_passed": 11,
+    "git_diff_check": "clean",
+    "git_status_short": "empty",
+    "modified_files": "none"
+  },
+  "hypothesis_registry_consistency": {
+    "file": "research_state/hypothesis_registry.json",
+    "consistent_with_evaluation_report": true,
+    "authoritative_outcome_record": "research_state/evaluation_report_extended_v1.json",
+    "findings": [
+      {
+        "hypothesis_id": "EBCR-H001",
+        "status": "tested_not_supported",
+        "prior_status": "preregistered_not_tested",
+        "prior_status_preserved": true,
+        "anchor_cell_id": "EBCR-GRID-001-0005",
+        "grid_id": "EBCR-GRID-001",
+        "experiment_id": "EBCR-001-EXTENDED-V1",
+        "co_primary_endpoints": [
+          "crash_incidence_15pct",
+          "expected_shortfall_5pct_forward_mae"
+        ],
+        "outcome_summary": {
+          "verdict": "null_preserved_not_significant",
+          "crash_incidence_15pct_adjusted_p": 0.24830545694889028,
+          "expected_shortfall_5pct_forward_mae_adjusted_p": 0.9485,
+          "anchor_co_primary_significant": false,
+          "holm_significant": false
+        },
+        "reconciliation": {
+          "reconciled_at_activation": 122,
+          "reason": "Registry reconciliation only; preserved prior_status=preregistered_not_tested. No frozen artifacts modified."
+        },
+        "registry_matches_evaluation_report": true,
+        "gaps": []
+      },
+      {
+        "hypothesis_id": "EBCR-H002",
+        "status": "registered_secondary_not_tested",
+        "outcome_summary": null,
+        "preregistered_from_grid_hits": false,
+        "gaps": []
+      },
+      {
+        "hypothesis_id": "EBCR-H003",
+        "status": "registered_secondary_not_tested",
+        "outcome_summary": null,
+        "preregistered_from_grid_hits": false,
+        "gaps": []
+      }
+    ]
+  },
+  "red_team_audit_review": {
+    "file_json": "research_state/red_team_audit_extended_v1.json",
+    "file_md": "research_state/red_team_audit_extended_v1.md",
+    "sections_reviewed": [
+      "leakage/permutation/placebo",
+      "overlapping_horizons_dependence",
+      "survivorship_missingness_selection",
+      "confounding_vs_prior_controls",
+      "multiplicity_full_family",
+      "anchor_co_primary"
+    ],
+    "unaddressed_items": [],
+    "gaps": [],
+    "notes": "All audit sections addressed. PIT rank verification reflected (rank_verified=true for all 13 coverage-cohort symbols). Confounding section notes a follow-up recommendation (stratified/regression with controls), not a gap requiring modification. Exclusions 336 preserved (missing_label). Anchor co-primary not significant after correction (adj p 0.248/0.949).",
+    "verdict": "no_gaps_found"
+  },
+  "preserved_state": {
+    "exclusions": 336,
+    "exclusion_reason": "missing_label",
+    "cells_ok": 324,
+    "anchor_null_preserved": true,
+    "anchor_adj_p": {
+      "crash_incidence_15pct": 0.248,
+      "expected_shortfall_5pct_forward_mae": 0.949
+    },
+    "pit_rank_inquiry": "CLOSED",
+    "pit_rank_source": "free Wayback-CMC historical snapshots (__NEXT_DATA__ parsing), no key/auth/paid",
+    "pit_rank_verified": true,
+    "pit_evidence_record": "/tmp/pit_rank_evidence/",
+    "h002_h003": "registered_secondary_not_tested",
+    "preregistration_from_grid_hits": false
+  },
+  "verdict": "no_gaps_found",
+  "durable_state_action": "recorded_no_gaps_found_artifact; no modifications to registry, red-team audit, or frozen artifacts"
+}
