@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v44",
+  "program_id": "EBCR-001",
+  "activation": 177,
+  "generated_at_utc": "2026-10-25T20:14:03Z",
+  "required_checks": {
+    "grid_manifest_regenerated": true,
+    "manifest_output": "/tmp/basis-grid-manifest.json",
+    "cells": 324,
+    "config_sha256_match_frozen_canonical": true,
+    "canonical_config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "pytest_q_tests": {
+      "passed": 11,
+      "total": 11,
+      "note": "python3 -m pytest -q tests -> 11 passed."
+    },
+    "git_diff_check_clean": true,
+    "git_status_short_clean_tracked": true
+  },
+  "verifications": {
+    "hypothesis_registry_consistency": {
+      "checked": true,
+      "method": "programmatic cross-check hypothesis_registry.json vs evaluation_report_extended_v1.json inference.anchor_co_primary_adjusted_p_values",
+      "H001": {
+        "status": "tested_not_supported",
+        "prior_status": "preregistered_not_tested",
+        "matches_anchor": "EBCR-GRID-001-0005",
+        "adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "adj_p_es_5pct_forward_mae": 0.9485,
+        "matches_evaluation_report_extended_v1": true,
+        "matches_leakage_audit_extended_v1": true,
+        "matches_red_team_audit_extended_v1": true,
+        "evidence": "evaluation_report_extended_v1.json inference.anchor_co_primary_adjusted_p_values = {crash_incidence_15pct: 0.24830545694889028, expected_shortfall_5pct_forward_mae: 0.9485}; registry records identical values with anchor_co_primary_significant=false and holm_significant=false."
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested",
+        "outcome_summary_null": true
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested",
+        "outcome_summary_null": true
+      },
+      "next_hypothesis_sequence": 4,
+      "changes_made": false
+    },
+    "cell_ledger_consistency": {
+      "checked": true,
+      "ledger_cells": 324,
+      "ledger_statuses": {"ok": 324, "blocked": 0, "failed": 0, "incomplete": 0, "invalid": 0, "not_run": 0},
+      "eval_n_cells": 324,
+      "eval_n_registered_grid_tests": 2592,
+      "expected_grid_tests": 324 * 8,
+      "eval_n_recorded_exclusions": 336,
+      "eval_family_tests_with_p_value": 2451,
+      "eval_family_tests_blocked_no_p": 141,
+      "consistent": true
+    },
+    "pit_rank_verification": {
+      "checked": true,
+      "symbols": 13,
+      "rank_verified_all_true": true,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": {
+      "red_team_audit_extended_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Anchor null preserved after Holm correction (adj p 0.248/0.949); family multiplicity 2,592 registered tests, 2,451 with p, 141 blocked no-p, 424 Holm-significant (dependence caveat); PIT verified for coverage cohort; exclusions 336 preserved; confounding_vs_prior_only_controls caveat preserved as unexhausted-by-design."
+      },
+      "leakage_audit_extended_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Past-only signal and forward-only labels verified; permutation consistent with null (risk_difference_perm_p 0.738, es_difference_perm_p 0.9855); temporal placebo associations negative/opposite direction consistent with serial regime correlation. No new gap."
+      },
+      "evaluation_ledger_consistency_audit_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Eval n_cells=324, ledger 324 cells all status ok; registered tests 324x8=2,592; anchor co-primary adjusted p match. Counts consistent. No discrepancy."
+      },
+      "evaluation_artifact_audit_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "PASS. Frozen config sha256 matches; 324 cells with 8 endpoints each; exclusions 336 missing_label; anchor null preserved; H002/H003 registered_secondary_not_tested; PIT listing_verified 13/13."
+      },
+      "leakage_audit_verification_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "JSON/MD cross-check clean; permutation p-values and placebo results consistent; schema valid."
+      },
+      "robustness_prior_controls_extended_v2": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "Bounded prior-only controls on fixed anchor; no anchor/config change; null result preserved."
+      },
+      "h002_h003_feasibility_review_v1": {
+        "reviewed": true,
+        "new_unaddressed_gaps": false,
+        "notes": "H002/H003 remain covered by frozen grid/data but not testable without new experiment ID and independent preregistration; no preregistration performed."
+      },
+      "durable_state_upkeep_v43": {
+        "reviewed_as_reference": true,
+        "verdict": "no_gaps_found"
+      }
+    }
+  },
+  "preservations": {
+    "frozen_anchor_config_q1_extended_untouched": true,
+    "anchor_null_preserved_adj_p": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    },
+    "exclusions_missing_label": 336,
+    "cells_ok": 324,
+    "H002_H003_registered_secondary_not_tested": true,
+    "PIT_rank_inquiry_closed": true,
+    "pit_rank_verification_durable": "research_state/pit_rank_verification_v1.json",
+    "candidate_discovery_state_preserved": "research_state/candidate_perp_mapping_v1.json (unverified mappings + explicit blockers preserved)"
+  },
+  "outcome": {
+    "verdict": "no_gaps_found",
+    "new_gaps_found": false,
+    "gaps_documented": [],
+    "preregistration_from_grid_hits": false,
+    "registry_or_audit_modifications": false,
+    "frozen_artifacts_modified": false
+  },
+  "concrete_next_task": "Continue durable-state upkeep — re-verify hypothesis registry consistency remains accurate and re-review red-team audit, leakage audit and evaluation-ledger consistency audit for any new unaddressed items; document findings only if gaps found, else record explicit 'no_gaps_found' artifact (new version suffix v45). Update handoff and task message with verified findings only. A concrete next task must always remain."
+}
