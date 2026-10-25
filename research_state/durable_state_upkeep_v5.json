@@ -1,0 +1,43 @@
+{
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V5",
+  "activation": 137,
+  "generated_at_utc": "2026-10-25T15:14:41Z",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen": true
+    },
+    "tests": {
+      "command": "python3 -m pytest -q tests",
+      "result": "11 passed"
+    },
+    "git_diff_check": 0,
+    "git_status_short": 0
+  },
+  "hypothesis_registry_consistency": {
+    "verified": true,
+    "h001": {
+      "status": "tested_not_supported",
+      "prior_status": "preregistered_not_tested",
+      "outcome_summary_anchor_cell": "EBCR-GRID-001-0005",
+      "adj_p_crash_incidence_15pct": 0.24830545694889028,
+      "adj_p_es_5pct": 0.9485,
+      "matches_anchor": true,
+      "note": "Registry remains accurate post-reconciliation (activation 122); evaluation report remains authoritative outcome record. No change since upkeep v4."
+    },
+    "h002": {"status": "registered_secondary_not_tested"},
+    "h003": {"status": "registered_secondary_not_tested"}
+  },
+  "red_team_audit_review": {
+    "artifact": "research_state/red_team_audit_extended_v1.json",
+    "unaddressed_gaps_found": false,
+    "notes": "PIT verification reflected (rank_verified=true for coverage cohort); leakage audit complete (no structural leakage); confounding notes predeclared follow-up only; thin-tail caveats recorded; overlapping-horizon dependence caveat recorded. No new unaddressed items since upkeep v4."
+  },
+  "frozen_artifacts_untouched": true,
+  "pit_rank_inquiry": "CLOSED (verified free Wayback-CMC source, rank_verified=true for all 13)",
+  "anchor_preserved": {"adj_p_crash_incidence_15pct": 0.248, "adj_p_es_5pct": 0.949},
+  "exclusions_preserved": 336,
+  "verdict": "no_gaps_found"
+}
