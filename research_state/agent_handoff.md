@@ -146,8 +146,15 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Evaluation artifact audit completed: research_state/evaluation_artifact_audit_v1.md written with checksums and pass/fail. 324 cells x 8 endpoints; 336 exclusions preserved; anchor null preserved; no data gaps; no frozen artifacts modified.
 - H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
 
+## Completed this session (activation 21)
+- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); 11 unittest tests pass; git diff --check clean.
+- Confirmed clean state: no modified/staged files (git status clean), frozen anchor/config/Q1/extended artifacts untouched.
+- H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested; no preregistration from grid hits.
+- PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source located.
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved; 324 cells ok.
+
 ## Next action
 1. Required checks re-run and pass; clean state confirmed.
-2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
-3. PIT rank inquiry closed; coverage-cohort final; rank_verified=false for all 13.
-4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain null/exclusions; if a genuinely new free PIT rank source is located, reopen PIT rank inquiry with a new activation. A concrete next task must always remain.
+2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
+3. PIT rank inquiry closed; coverage-cohort final; rank_verified=false for all 13. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen with a new activation.
+4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; report only verified findings. A concrete next task must always remain.
