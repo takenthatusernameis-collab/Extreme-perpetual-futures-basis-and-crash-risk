@@ -172,3 +172,11 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 4. No preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config). Do not modify frozen anchor/config/Q1/extended artifacts.
 5. Next concrete task: reconcile the durable-state inconsistency in `research_state/hypothesis_registry.json` (EBCR-H001 still recorded as `preregistered_not_tested` with `outcome_summary: null` despite the extended evaluation EBCR-GRID-001-0005 testing that anchor and recording null, adj p 0.248/0.949). Registry is not a frozen artifact; update it to reflect the tested null outcome (new version suffix not required, but preserve the prior value via a note/field rather than overwriting silently). The evaluation report remains the authoritative outcome record. Do not modify frozen artifacts.
 6. Update handoff and this task message with verified findings only. A concrete next task must always remain.
+
+## Completed this session (activation 122)
+- Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
+- Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
+- Reconciled `research_state/hypothesis_registry.json`: EBCR-H001 changed from `preregistered_not_tested` (outcome_summary null) to `tested_not_supported` with `prior_status` preserved, artifacts linked, and outcome_summary recording null (adj p 0.248/0.949 for co-primaries). Registry not frozen; evaluation report remains authoritative. No frozen artifacts modified.
+- H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source located.
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
+- Report only verified findings. No preregistration from grid hits.

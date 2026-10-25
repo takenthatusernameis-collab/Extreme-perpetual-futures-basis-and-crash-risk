@@ -5,7 +5,8 @@
   "hypotheses": [
     {
       "hypothesis_id": "EBCR-H001",
-      "status": "preregistered_not_tested",
+      "status": "tested_not_supported",
+      "prior_status": "preregistered_not_tested",
       "claim": "Rich positive perpetual-futures basis at or above the trailing 95th percentile predicts higher 14-day underlying-asset crash incidence and worse downside tail severity.",
       "primary_anchor": {
         "basis_aggregation_days": 1,
@@ -19,8 +20,37 @@
         "expected_shortfall_5pct_forward_mae"
       ],
       "config_path": "configs/basis_crash_grid_v1.json",
-      "artifacts": [],
-      "outcome_summary": null
+      "artifacts": [
+        "research_state/evaluation_report_extended_v1.json",
+        "research_state/evaluation_summary_extended_v1.md",
+        "research_state/grid_execution_scaffold_extended_v1.json",
+        "research_state/cell_status_ledger_extended_v1.json"
+      ],
+      "outcome_summary": {
+        "experiment_id": "EBCR-001-EXTENDED-V1",
+        "grid_id": "EBCR-GRID-001",
+        "anchor_cell_id": "EBCR-GRID-001-0005",
+        "verdict": "null_preserved_not_significant",
+        "co_primary": {
+          "crash_incidence_15pct": {
+            "adjusted_p_value": 0.24830545694889028,
+            "anchor_co_primary_adjusted_p_value": 0.24830545694889028,
+            "anchor_co_primary_significant": false,
+            "holm_significant": false
+          },
+          "expected_shortfall_5pct_forward_mae": {
+            "adjusted_p_value": 0.9485,
+            "anchor_co_primary_adjusted_p_value": 0.9485,
+            "anchor_co_primary_significant": false,
+            "holm_significant": false
+          }
+        },
+        "notes": "Extended evaluation tested anchor; primary hypothesis not supported. Null preserved. Evaluation report remains authoritative."
+      },
+      "reconciliation": {
+        "reconciled_at_activation": 122,
+        "reason": "Registry reconciliation only; preserved prior_status=preregistered_not_tested. No frozen artifacts (config/Q1/extended) modified."
+      }
     },
     {
       "hypothesis_id": "EBCR-H002",
