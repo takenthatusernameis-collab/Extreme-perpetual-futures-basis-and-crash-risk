@@ -1,0 +1,7 @@
+{
+  "experiment_id": "EBCR-001-PIT-INTERPRETATION-NOTE",
+  "description": "Review of whether verified PIT ranks change interpretation of the null anchor result.",
+  "basis": "PIT ranks are conservative upper bounds (earliest snapshot at/after formation date; rank can only fall after listing, not rise before it). The extended evaluation (EBCR-GRID-001-0005) anchor co-primaries crash_incidence_15pct and expected_shortfall_5pct_forward_mae were not significant (adj p 0.248, 0.949). The signal (extreme perpetual-futures basis) and crash labels are computed from per-symbol price/basis series, independent of universe rank. Rank verification affects only candidate-discovery/survivorship interpretation, not the tested association within the coverage cohort.",
+  "finding": "No non-null implication. Verified PIT ranks do not alter the null anchor result; coverage-cohort conclusions stand. Exclusions 336 (missing_label) preserved. 324 cells ok. H002/H003 remain registered_secondary_not_tested.",
+  "frozen_artifacts_modified": false
+}
