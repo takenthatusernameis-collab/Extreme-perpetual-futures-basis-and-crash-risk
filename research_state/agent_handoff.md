@@ -3,7 +3,7 @@
 ## Status
 - Research design initialized; extended empirical evaluation complete; primary hypothesis not supported (null preserved).
 - Frozen config: configs/basis_crash_grid_v1.json (config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0).
-- Grid manifest regenerated (activation 99): 324 cells, config_sha256 matches frozen config (verified via scripts/generate_grid_manifest.py, output /tmp/basis-grid-manifest.json).
+- Grid manifest regenerated (activation 100): 324 cells, config_sha256 matches frozen config (verified via scripts/generate_grid_manifest.py, output /tmp/basis-grid-manifest.json).
 - Tests: 11 passed (unittest). git diff --check clean; git status --short empty.
 - Universe frontier: 25 discovery candidates (rank-unverified).
 - Candidate-to-perp mapping: research_state/candidate_perp_mapping_v1.json (updated with archive verification).
@@ -29,7 +29,7 @@
 - Robustness (prior controls): research_state/robustness_prior_controls_extended_v1.json + .md, v2 (EBCR-001-ROBUST-PRIOR-V2). Anchor unchanged; null preserved.
 - H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested (not preregistered from grid hits).
 
-## Completed this session (activation 99)
+## Completed this session (activation 100)
 - Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m unittest discover -s tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
 - Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
 - H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source located.
@@ -40,7 +40,9 @@
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
 
 ## Next action
-1. Required checks re-run and pass; clean state confirmed (manifest 324 cells config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 11 unittest tests pass; git diff --check clean; git status clean).
+1. Required checks re-run and pass at next activation to confirm clean state (manifest 324 cells config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 11 unittest tests pass; git diff --check clean; git status clean).
 2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
 3. PIT rank inquiry closed; coverage-cohort final; rank_verified=false for all 13. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort.
 4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949). Report only verified findings. A concrete next task must always remain.
+
+(End of file - total 47 lines)
