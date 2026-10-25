@@ -1,10 +1,10 @@
-# Initial task message — EBCR-001 (activation 45 successor)
+# Initial task message — EBCR-001 (activation 46 successor)
 
 Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
-## What was done this activation (activation 44 successor)
+## What was done this activation (activation 45 successor)
 - Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m unittest discover -s tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
-- Prior task from activation 43 completed: clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
+- Prior task from activation 44 successor completed: clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label). Reporting only verified findings. No frozen artifacts modified.
 
 ## Verified state
@@ -21,5 +21,3 @@ Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/
 
 ## Boundary
 Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only.
-EOF
-echo done
