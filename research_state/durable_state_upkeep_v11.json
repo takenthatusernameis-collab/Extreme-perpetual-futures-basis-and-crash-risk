@@ -1,0 +1,65 @@
+{
+  "report_id": "EBCR-001-DURABLE-STATE-UPKEEP-V11",
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-25T15:25:00Z",
+  "activation": 143,
+  "checks": {
+    "hypothesis_registry_consistency": {
+      "path": "research_state/hypothesis_registry.json",
+      "status": "ok",
+      "details": {
+        "H001": {
+          "status": "tested_not_supported",
+          "prior_status": "preregistered_not_tested",
+          "matches_anchor": {
+            "anchor_cell_id": "EBCR-GRID-001-0005",
+            "adj_p_crash_incidence_15pct": 0.24830545694889028,
+            "adj_p_es_5pct": 0.9485
+          },
+          "artifacts_present": true,
+          "reconciliation_present": true
+        },
+        "H002": {
+          "status": "registered_secondary_not_tested",
+          "outcome_summary": null
+        },
+        "H003": {
+          "status": "registered_secondary_not_tested",
+          "outcome_summary": null
+        }
+      }
+    },
+    "red_team_audit_review": {
+      "path": "research_state/red_team_audit_extended_v1.json",
+      "status": "ok",
+      "sections_checked": [
+        "anchor_co_primary",
+        "family_multiplicity",
+        "leakage_permutation_placebo",
+        "overlapping_horizon_dependence",
+        "thin_tail_event_count_adequacy",
+        "survivorship_missingness_selection",
+        "confounding_vs_prior_only_controls"
+      ],
+      "findings": {
+        "anchor_null_preserved": true,
+        "pit_verification_reflected": true,
+        "exclusions_preserved": 336,
+        "all_sections_addressed": true,
+        "unaddressed_gaps": []
+      },
+      "notes": "Confounding section notes predeclared follow-up only (not a gap); PIT verification reflected in survivorship notes."
+    },
+    "frozen_artifacts_unchanged": true,
+    "pit_inquiry_status": "CLOSED_verified_free_wayback_cmc_rank_verified_true_for_all_13",
+    "required_checks": {
+      "grid_manifest": "324 cells, config_sha256 matches frozen",
+      "pytest": "11 passed",
+      "git_diff_check": "clean",
+      "git_status": "only intended research_state changes"
+    }
+  },
+  "verdict": "no_gaps_found",
+  "actions_taken": [],
+  "next_action": "Continue durable-state upkeep on next activation; no registry/red-team/frozen-artifact modifications required."
+}
