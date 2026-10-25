@@ -1,13 +1,11 @@
-# Initial task message — EBCR-001 (activation 28 successor)
+# Initial task message — EBCR-001 (activation 29 successor)
 
 Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
-## What was done this activation (activation 28)
+## What was done this activation (activation 29)
 - Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); 11 unittest tests pass; git diff --check clean; git status clean.
-- Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
-- H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
-- PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
-- Anchor null preserved; exclusions 336 preserved.
+- Prior task from activation 28 completed: clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
+- Anchor null preserved; exclusions 336 preserved. Reporting only verified findings.
 
 ## Verified state
 - Anchor null preserved (adj p 0.248 / 0.949).
@@ -15,7 +13,7 @@ Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/
 - H002/H003 registered_secondary_not_tested.
 
 ## Your task
-1. Re-run required checks to confirm clean state: manifest, unittest, git diff --check. Do not modify frozen anchor/config or Q1/extended artifacts.
+1. Re-run required checks to confirm clean state: `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (expect 324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config), `python3 -m unittest discover -s tests` (expect 11 pass), `git diff --check` (expect clean), `git status --short` (expect empty). Do not modify frozen anchor/config or Q1/extended artifacts.
 2. Maintain H002 (cheap_negative) and H003 (absolute_extreme) as registered_secondary_not_tested; do not preregister from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
 3. Report only verified findings; preserve null result and exclusions (336). A concrete next task must always remain.
 4. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort.
@@ -23,4 +21,3 @@ Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/
 
 ## Boundary
 Free public data only. No fabrication. Preserve null/failed/exclusions. Complete horizons only.
-"
