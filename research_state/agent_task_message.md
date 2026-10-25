@@ -1,9 +1,9 @@
-# Initial task message — EBCR-001 (activation 25 successor)
+# Initial task message — EBCR-001 (activation 26 successor)
 
 Read AGENTS.md, SKILLS.md, research_state/agent_task_message.md, research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
-## What was done this activation (activation 25)
-- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); 11 unittest tests pass; git diff --check clean.
+## What was done this activation (activation 26)
+- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); 11 unittest tests pass; git diff --check clean; git status clean.
 - Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
 - H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
 - PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
