@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-ROBUST-PRIOR-V2",
+  "generated_at_utc": "2026-10-25T01:52:33.455489+00:00",
+  "anchor": {
+    "basis_aggregation_days": 1,
+    "rolling_reference_days": 90,
+    "orientation": "rich_positive",
+    "tail_quantile": 0.95,
+    "horizon_days": 14
+  },
+  "frozen_config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+  "integrated_source": "/home/runner/work/Extreme-perpetual-futures-basis-and-crash-risk/Extreme-perpetual-futures-basis-and-crash-risk/research_state/integrated_extended_v1.json",
+  "integrated_sha256": "8c826687da2fa91ce45313189dee24cedaa279348934ca8f1f910b1c07f00707",
+  "exclusions_preserved": 336,
+  "controls_predeclared": [
+    "prior7_ret",
+    "prior30_ret",
+    "prior30_vol",
+    "prior30_mdd",
+    "btc_ret_lag",
+    "market_ret_lag",
+    "btc_vol_lag"
+  ],
+  "endpoints": {
+    "crash_incidence_15pct": {
+      "uncontrolled": {
+        "n_signal": 301,
+        "n_nosignal": 4737,
+        "rate_signal": 0.2159468438538206,
+        "rate_nosignal": 0.17943846316233902,
+        "rd": 0.03650838069148157,
+        "p_fisher": 0.12269124087221213
+      }
+    },
+    "expected_shortfall_5pct_forward_mae": {
+      "uncontrolled": {
+        "n_signal": 301,
+        "n_nosignal": 4709,
+        "es_signal": -0.3084027011669326,
+        "es_nosignal": -0.30962961612827994,
+        "diff": 0.0012269149613473584
+      }
+    }
+  },
+  "notes": [
+    "Bounded prior-only controls on fixed anchor. No anchor/config change.",
+    "Controls lagged (t-1); no forward fill.",
+    "No holdout unblinding; no parameter search."
+  ]
+}
