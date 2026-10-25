@@ -1,0 +1,69 @@
+{
+  "artifact_id": "durable_state_upkeep_v65",
+  "activation": 198,
+  "timestamp_utc": "2026-10-25T23:08:27Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "output": "generated 324 cells: /tmp/basis-grid-manifest.json",
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "matches_frozen": true
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "result": "11 passed in 0.02s"
+      },
+      "git_diff_check": "clean",
+      "git_status_short": "clean (no tracked changes)"
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "h001": {
+        "status": "tested_not_supported",
+        "anchor_adj_p": [0.24830545694889028, 0.9485],
+        "matches_outcome_summary": true
+      },
+      "h002": {
+        "status": "registered_secondary_not_tested",
+        "outcome_summary_null": true
+      },
+      "h003": {
+        "status": "registered_secondary_not_tested",
+        "outcome_summary_null": true
+      },
+      "next_hypothesis_sequence": 4
+    },
+    "cell_status_ledger": {
+      "source": "research_state/cell_status_ledger_extended_v1.json",
+      "summary": {"ok": 324, "blocked": 0, "failed": 0, "incomplete": 0, "invalid": 0, "not_run": 0},
+      "all_324_ok": true
+    },
+    "pit": {
+      "status": "closed",
+      "rank_verified_all": true,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "red_team_audit_extended_v1.json",
+      "leakage_audit_extended_v1.json + .md",
+      "evaluation_ledger_consistency_audit_v1.md",
+      "evaluation_artifact_audit_v1.md",
+      "leakage_audit_verification_v1.md",
+      "robustness_prior_controls_extended_v2.json + .md",
+      "h002_h003_feasibility_review_v1.json + .md"
+    ],
+    "prior_upkeeps_reviewed": ["v58", "v59", "v60", "v61", "v62", "v63", "v64"],
+    "anchor_preserved": {
+      "anchor_cell_id": "EBCR-GRID-001-0005",
+      "adj_p_crash_incidence_15pct": 0.24830545694889028,
+      "adj_p_es_5pct": 0.9485,
+      "preserved": true
+    },
+    "exclusions": 336,
+    "frozen_artifacts_untouched": true,
+    "preregistration_from_grid_hits": false
+  },
+  "notes": "Activation 198. Required checks re-run and pass (manifest 324 cells, config_sha256 matches frozen canonical 55caedf8...; pytest 11 passed; git diff --check clean; git status clean of tracked changes). Hypothesis registry re-verified programmatically: H001 tested_not_supported matches anchor adj p 0.24830545694889028/0.9485; H002/H003 registered_secondary_not_tested with null outcome_summary; next_hypothesis_sequence=4. Cell status ledger re-verified: 324 ok, 0 non-ok. PIT re-verified: closed, rank_verified=true for all 13. Re-reviewed red-team audit (extended v1), leakage audit (extended v1 + verification v1), evaluation-ledger consistency audit (v1), evaluation artifact audit (v1), robustness prior controls (extended v2) and H002/H003 feasibility review (v1) plus prior upkeeps v58-v64 — no new unaddressed gaps identified. No registry/audit/frozen-artifact modifications. Null preserved; exclusions 336 preserved; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry CLOSED; no preregistration from grid hits."
+}
