@@ -140,3 +140,14 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Completed bounded robustness pass on fixed anchor (EBCR-GRID-001-0005) using predeclared prior-only controls on extended window: new experiment ID EBCR-001-ROBUST-PRIOR-V2. Artifacts: research_state/robustness_prior_controls_extended_v2.json + .md. No anchor/config change, no selection/unblinding/parameter search. Exclusions preserved (336). Anchor co-primary uncontrolled: crash_incidence_15pct rd +0.0365 (p_fisher 0.123), ES5 diff +0.00123 (signal slightly less negative) — null preserved.
 - PIT rank line of inquiry closed (coverage-cohort, rank_verified=false for all 13); H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
 - No frozen anchor/config/Q1/extended artifacts modified.
+
+## Completed this session (activation 20)
+- Required checks re-run and pass: manifest 324 cells config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 11 unittest tests pass; git diff --check clean.
+- Evaluation artifact audit completed: research_state/evaluation_artifact_audit_v1.md written with checksums and pass/fail. 324 cells x 8 endpoints; 336 exclusions preserved; anchor null preserved; no data gaps; no frozen artifacts modified.
+- H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13).
+
+## Next action
+1. Required checks re-run and pass; clean state confirmed.
+2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
+3. PIT rank inquiry closed; coverage-cohort final; rank_verified=false for all 13.
+4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain null/exclusions; if a genuinely new free PIT rank source is located, reopen PIT rank inquiry with a new activation. A concrete next task must always remain.
