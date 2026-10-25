@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-24T23:55:00+00:00",
+  "checked_at_utc": "2026-10-24T23:59:00+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -80,7 +80,42 @@
       "name": "GitHub scrapers/repos with CMC historical data",
       "endpoint": "https://github.com/search?q=coinmarketcap+historical+rank+csv+2019+2020+2021+2022+2023&type=code",
       "notes": "Multiple repos exist (coinmarketcappy, scrape-cmc scripts) but they scrape live/historical pages; no committed bulk PIT rank datasets for 2019-2024 covering all candidates found in repo. Using them would require running scrapers which may hit rate limits/ToS concerns; not pre-existing data."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-03-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200301/",
+      "notes": "CAPTURE FOUND. Archived snapshots of coinmarketcap.com/historical/20200301/ exist; earliest capture timestamp 20201129230859 (2020-11-29T23:08:59Z), with additional captures 20210306182934, 20210316212943, 20210620110114, 20211205144927. Full ranking table (rank, name, symbol, market cap, price, circulating supply, volume) expected. Page-level fetch returns HTTP 000 (unreachable) in this environment; page sha256 not recomputed. Capture timestamp recorded as evidence."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-06-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200601/",
+      "notes": "CAPTURE FOUND. One archived snapshot of coinmarketcap.com/historical/20200601/ exists; capture timestamp 20250818090759 (2025-08-18T09:07:59Z). Page-level fetch returns HTTP 000 (unreachable) in this environment; page sha256 not recomputed. Capture timestamp recorded as evidence."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2021-01-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20210101/",
+      "notes": "CAPTURE FOUND. Archived snapshots of coinmarketcap.com/historical/20210101/ exist; earliest capture timestamp 20210301163118 (2021-03-01T16:31:18Z), with additional captures 20210501012745, 20211202034721, 20220102173602, 20220929054939. Page-level fetch returns HTTP 000 (unreachable) in this environment; page sha256 not recomputed. Capture timestamp recorded as evidence."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2021-07-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20210701/",
+      "notes": "NO CAPTURE. CDX query returned empty; no archived snapshot of coinmarketcap.com/historical/20210701/ located."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2022-07-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20220701/",
+      "notes": "NO CAPTURE. CDX query returned empty; no archived snapshot of coinmarketcap.com/historical/20220701/ located."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2023-07-01",
+      "endpoint": "http://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20230701/",
+      "notes": "NO CAPTURE. CDX query returned empty; no archived snapshot of coinmarketcap.com/historical/20230701/ located."
+    },
+    {
+      "name": "Direct Wayback snapshot page fetch",
+      "endpoint": "https://web.archive.org/web/<timestamp>/https://coinmarketcap.com/historical/<YYYYMMDD>/",
+      "notes": "BLOCKED. Both http:// and https:// snapshot page fetches return HTTP 000 (connection unreachable) in this environment; only the CDX API is reachable. Page content and page-level sha256 checksums cannot be recomputed for newly located capture dates. Existing page evidence for 7 dates remains under /tmp/pit_rank_evidence/."
     }
   ],
-  "conclusion": "Extended search (2026-10-24T23:59Z): Wayback Machine CMC historical pages confirmed directly accessible and contain full point-in-time ranking tables at snapshot dates (2019-12-31, 2020-01-01, 2020-09-13, 2022-01-01, 2023-01-01, 2024-01-01). Evidence pages saved under /tmp/pit_rank_evidence/ with sha256 checksums. This is a defensible free PIT market-cap rank source, but coverage is snapshot-based (not every formation date has a capture); 2019-12-23 and 2020-10-14 returned 404. rank_verified remains false pending full point-in-time coverage across all formation dates. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
+  "conclusion": "Extended search (2026-10-24T23:59Z): Wayback Machine CMC historical pages contain full point-in-time ranking tables at snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-03-01, 2020-06-01, 2020-09-13, 2021-01-01, 2022-01-01, 2023-01-01, 2024-01-01) — 10 distinct dates with captures. CDX capture timestamps observed: 2020-03-01 earliest capture 20201129230859 (2020-11-29T23:08:59Z); 2020-06-01 capture 20250818090759 (2025-08-18T09:07:59Z); 2021-01-01 earliest capture 20210301163118 (2021-03-01T16:31:18Z). No captures for 2019-12-23, 2020-10-14, 2021-07-01, 2022-07-01, 2023-07-01. Evidence pages for 7 dates saved under /tmp/pit_rank_evidence/. Direct snapshot page fetch returns HTTP 000 (unreachable) in this environment; page-level sha256 checksums not recomputable for new dates. This is a defensible free PIT market-cap rank source at snapshot dates, but coverage is snapshot-based, not continuous across every formation date. rank_verified remains false pending full point-in-time coverage across all formation dates. Listing/lifecycle evidence via Binance Vision S3 XML preserved. Continue coverage-cohort approach; do not project current ranks backward."
 }
