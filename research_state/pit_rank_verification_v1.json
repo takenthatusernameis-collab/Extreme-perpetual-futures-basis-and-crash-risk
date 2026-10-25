@@ -1,0 +1,2465 @@
+{
+  "symbols": {
+    "BTCUSDT": {
+      "asset": "BTC",
+      "binance_um_symbol": "BTCUSDT",
+      "earliest_zip_date": "2019-12-23",
+      "snapshots": [
+        {
+          "snapshot_date": "2019-12-31",
+          "cmc_rank": 1,
+          "market_cap": 130446112598.42046,
+          "price": 7193.59897843,
+          "last_updated": "2019-12-31T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-01-01",
+          "cmc_rank": 1,
+          "market_cap": 130580829149.58699,
+          "price": 7200.17439274,
+          "last_updated": "2020-01-01T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 1,
+          "market_cap": 158194319734.79562,
+          "price": 8706.24512993,
+          "last_updated": "2020-01-19T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 1,
+          "market_cap": 170900662180.11383,
+          "price": 9392.87536841,
+          "last_updated": "2020-02-01T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 1,
+          "market_cap": 186993405740.44864,
+          "price": 10167.2681012,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 1,
+          "market_cap": 216950669097.90942,
+          "price": 11759.5927707,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 1,
+          "market_cap": 190870759062.07874,
+          "price": 10323.7557975,
+          "last_updated": "2020-09-13T23:59:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 1,
+          "market_cap": 254569759062.58606,
+          "price": 13737.10982864,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 1,
+          "market_cap": 349699328163.4894,
+          "price": 18802.99829969,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 1,
+          "market_cap": 546001594837.51166,
+          "price": 29374.15188907,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 1,
+          "market_cap": 624349044409.1147,
+          "price": 33537.1768196,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 1,
+          "market_cap": 1103377830758.2969,
+          "price": 59095.80797806,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 1,
+          "market_cap": 1081174515342.5381,
+          "price": 57828.05063222,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 1,
+          "market_cap": 686891021224.9233,
+          "price": 36684.92451667,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 1,
+          "market_cap": 750472428208.3677,
+          "price": 39974.89602594,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 1,
+          "market_cap": 918501510157.022,
+          "price": 48847.02907417,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 1,
+          "market_cap": 1080977744339.2195,
+          "price": 57229.82989945,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 1,
+          "market_cap": 902104193384.608,
+          "price": 47686.81150918,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 1,
+          "market_cap": 731986764311.8785,
+          "price": 38469.09390254,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 1,
+          "market_cap": 320025834692.39905,
+          "price": 16625.08055071,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 1,
+          "market_cap": 545719315434.0459,
+          "price": 27983.75038178,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 1,
+          "market_cap": 756690015947.5225,
+          "price": 38688.74836119,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 1,
+          "market_cap": 865106026911.0958,
+          "price": 44167.33021408,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Bitcoin"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 1,
+          "market_cap": 1371084777892.6519,
+          "price": 69702.14611344,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Bitcoin"
+        }
+      ],
+      "rank_at_earliest_snapshot": 1,
+      "market_cap_at_earliest_snapshot": 130446112598.42046,
+      "earliest_snapshot_date": "2019-12-31",
+      "rank_min": 1,
+      "rank_max": 1,
+      "rank_spread": 0,
+      "n_snapshots_with_symbol": 24,
+      "rank_verified": true
+    },
+    "ETHUSDT": {
+      "asset": "ETH",
+      "binance_um_symbol": "ETHUSDT",
+      "earliest_zip_date": "2019-12-23",
+      "snapshots": [
+        {
+          "snapshot_date": "2019-12-31",
+          "cmc_rank": 2,
+          "market_cap": 14139765786.435047,
+          "price": 129.61085943,
+          "last_updated": "2019-12-31T23:59:02.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-01-01",
+          "cmc_rank": 2,
+          "market_cap": 14271059633.075512,
+          "price": 130.80200808,
+          "last_updated": "2020-01-01T23:59:01.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 2,
+          "market_cap": 18257853531.62322,
+          "price": 166.96984198,
+          "last_updated": "2020-01-19T23:59:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 2,
+          "market_cap": 20116913727.950874,
+          "price": 183.673947121,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 2,
+          "market_cap": 27459257209.333447,
+          "price": 246.99176033,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 2,
+          "market_cap": 43144477508.40312,
+          "price": 385.199719325,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 2,
+          "market_cap": 41160025962.32555,
+          "price": 365.57000505,
+          "last_updated": "2020-09-13T23:59:09.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 2,
+          "market_cap": 44888307221.40616,
+          "price": 396.35818693,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 2,
+          "market_cap": 67082609014.28527,
+          "price": 587.32418713,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 2,
+          "market_cap": 83318539689.41852,
+          "price": 730.36756913,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 2,
+          "market_cap": 156750867717.36276,
+          "price": 1369.04046855,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 2,
+          "market_cap": 227970125751.27646,
+          "price": 1977.27688844,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 2,
+          "market_cap": 340840444354.05853,
+          "price": 2945.89270802,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 2,
+          "market_cap": 305798597367.0854,
+          "price": 2633.51841662,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 2,
+          "market_cap": 299564961374.274,
+          "price": 2561.85215266,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 2,
+          "market_cap": 450021945300.4826,
+          "price": 3834.82800549,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 2,
+          "market_cap": 543871223794.93976,
+          "price": 4586.99013149,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 2,
+          "market_cap": 448537615143.00366,
+          "price": 3769.69691601,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 2,
+          "market_cap": 341049885442.04346,
+          "price": 2827.75614426,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 2,
+          "market_cap": 146966709631.13104,
+          "price": 1200.96483157,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 2,
+          "market_cap": 208471009287.77515,
+          "price": 1733.81047844,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 2,
+          "market_cap": 250953198636.80478,
+          "price": 2087.14000743,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 2,
+          "market_cap": 282712004769.55237,
+          "price": 2352.32794067,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Ethereum"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 2,
+          "market_cap": 420851845571.74316,
+          "price": 3505.03003864,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Ethereum"
+        }
+      ],
+      "rank_at_earliest_snapshot": 2,
+      "market_cap_at_earliest_snapshot": 14139765786.435047,
+      "earliest_snapshot_date": "2019-12-31",
+      "rank_min": 2,
+      "rank_max": 2,
+      "rank_spread": 0,
+      "n_snapshots_with_symbol": 24,
+      "rank_verified": true
+    },
+    "BNBUSDT": {
+      "asset": "BNB",
+      "binance_um_symbol": "BNBUSDT",
+      "earliest_zip_date": "2019-12-31",
+      "snapshots": [
+        {
+          "snapshot_date": "2019-12-31",
+          "cmc_rank": 8,
+          "market_cap": 2135152371.1427026,
+          "price": 13.72764237,
+          "last_updated": "2019-12-31T23:59:04.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-01-01",
+          "cmc_rank": 8,
+          "market_cap": 2129155037.0765138,
+          "price": 13.68908341,
+          "last_updated": "2020-01-01T23:59:02.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 9,
+          "market_cap": 2701556607.3391175,
+          "price": 17.36925357,
+          "last_updated": "2020-01-19T23:59:01.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 9,
+          "market_cap": 2833617692.689821,
+          "price": 18.2183205369,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 8,
+          "market_cap": 2786431039.3886104,
+          "price": 17.91494102,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 10,
+          "market_cap": 3109135452.8789883,
+          "price": 21.5304308397,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 6,
+          "market_cap": 4485069874.893744,
+          "price": 31.05862971,
+          "last_updated": "2020-09-13T23:59:10.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 7,
+          "market_cap": 4110036786.411451,
+          "price": 28.46156546,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 11,
+          "market_cap": 4347836463.326504,
+          "price": 30.10830281,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 9,
+          "market_cap": 5473732252.439035,
+          "price": 37.90501081,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 9,
+          "market_cap": 7975081034.007848,
+          "price": 51.60769628,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 3,
+          "market_cap": 51801379680.39348,
+          "price": 335.21287849,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 3,
+          "market_cap": 95028239639.53941,
+          "price": 619.34722929,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 5,
+          "market_cap": 55664633493.58419,
+          "price": 362.79464562,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 4,
+          "market_cap": 56071010565.4293,
+          "price": 333.48399555,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 4,
+          "market_cap": 82398701800.93932,
+          "price": 490.06871871,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 3,
+          "market_cap": 104746377980.80815,
+          "price": 627.97156516,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 3,
+          "market_cap": 87963039449.38103,
+          "price": 527.35272211,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Binance Coin"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 4,
+          "market_cap": 63724060207.06527,
+          "price": 390.28197547,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "BNB"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 5,
+          "market_cap": 39053263491.0563,
+          "price": 244.13698456,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "BNB"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 4,
+          "market_cap": 33545795242.039948,
+          "price": 218.04713353,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "BNB"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 4,
+          "market_cap": 34665643050.490166,
+          "price": 228.54563724,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "BNB"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 4,
+          "market_cap": 47693236942.17084,
+          "price": 314.40829535,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "BNB"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 4,
+          "market_cap": 86191921653.28702,
+          "price": 576.39664466,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "BNB"
+        }
+      ],
+      "rank_at_earliest_snapshot": 8,
+      "market_cap_at_earliest_snapshot": 2135152371.1427026,
+      "earliest_snapshot_date": "2019-12-31",
+      "rank_min": 3,
+      "rank_max": 11,
+      "rank_spread": 8,
+      "n_snapshots_with_symbol": 24,
+      "rank_verified": true
+    },
+    "XRPUSDT": {
+      "asset": "XRP",
+      "binance_um_symbol": "XRPUSDT",
+      "earliest_zip_date": "2020-01-06",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 3,
+          "market_cap": 10284187005.369366,
+          "price": 0.23558528,
+          "last_updated": "2020-01-19T23:59:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 3,
+          "market_cap": 10548109280.563622,
+          "price": 0.241455293678,
+          "last_updated": "2020-02-01T23:59:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 3,
+          "market_cap": 9274691762.971666,
+          "price": 0.21024919,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 3,
+          "market_cap": 12989037257.567886,
+          "price": 0.289528998555,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 4,
+          "market_cap": 10883759100.85247,
+          "price": 0.24180092,
+          "last_updated": "2020-09-13T23:59:09.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 4,
+          "market_cap": 10859147268.257517,
+          "price": 0.23979745,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 3,
+          "market_cap": 27829192236.315895,
+          "price": 0.61292341,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 4,
+          "market_cap": 10780931627.255676,
+          "price": 0.23744438,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 4,
+          "market_cap": 16867989811.851019,
+          "price": 0.37150866,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 7,
+          "market_cap": 26302184998.89809,
+          "price": 0.57929188,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 4,
+          "market_cap": 74963184004.40733,
+          "price": 1.65102495,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 7,
+          "market_cap": 46658714117.170815,
+          "price": 1.01100086,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 6,
+          "market_cap": 33619230716.931442,
+          "price": 0.7259222,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 6,
+          "market_cap": 57474640799.59189,
+          "price": 1.23488941,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 7,
+          "market_cap": 46787835444.71974,
+          "price": 0.99092962,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 8,
+          "market_cap": 40380448983.187225,
+          "price": 0.84947154,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 7,
+          "market_cap": 29240494806.06945,
+          "price": 0.60784434,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 6,
+          "market_cap": 17054534692.05654,
+          "price": 0.33876339,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 5,
+          "market_cap": 27946579472.92458,
+          "price": 0.52420447,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 5,
+          "market_cap": 33029097728.211914,
+          "price": 0.6129147,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 6,
+          "market_cap": 34103276615.246426,
+          "price": 0.6300819,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "XRP"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 6,
+          "market_cap": 33583982916.930355,
+          "price": 0.61125802,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "XRP"
+        }
+      ],
+      "rank_at_earliest_snapshot": 3,
+      "market_cap_at_earliest_snapshot": 10284187005.369366,
+      "earliest_snapshot_date": "2020-01-19",
+      "rank_min": 3,
+      "rank_max": 8,
+      "rank_spread": 5,
+      "n_snapshots_with_symbol": 22,
+      "rank_verified": true
+    },
+    "SOLUSDT": {
+      "asset": "SOL",
+      "binance_um_symbol": "SOLUSDT",
+      "earliest_zip_date": "2020-09-13",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 108,
+          "market_cap": 113349810.37363145,
+          "price": 3.22583906,
+          "last_updated": "2020-09-13T23:59:12.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 108,
+          "market_cap": 73254104.4517357,
+          "price": 1.5998403,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 42,
+          "market_cap": 517596487.0485789,
+          "price": 1.97630826,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 120,
+          "market_cap": 85785758.3765321,
+          "price": 1.84208404,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 36,
+          "market_cap": 1207779152.9096549,
+          "price": 4.61160184,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 25,
+          "market_cap": 5121089267.420815,
+          "price": 19.08490113,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 14,
+          "market_cap": 13490574630.95943,
+          "price": 49.50802136,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 18,
+          "market_cap": 8447741686.951626,
+          "price": 30.9852604,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 15,
+          "market_cap": 9339020650.680443,
+          "price": 34.25436021,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 9,
+          "market_cap": 32279142628.123947,
+          "price": 111.03300412,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 5,
+          "market_cap": 70205130263.46628,
+          "price": 229.79923429,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 5,
+          "market_cap": 55188725653.365486,
+          "price": 178.51794056,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 6,
+          "market_cap": 29986417059.759163,
+          "price": 89.67150526,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 17,
+          "market_cap": 3671464072.156915,
+          "price": 9.98217272,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 7,
+          "market_cap": 9844132494.96014,
+          "price": 23.83648626,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 6,
+          "market_cap": 25369600095.531548,
+          "price": 59.80399734,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 5,
+          "market_cap": 47090921460.19452,
+          "price": 109.50867921,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Solana"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 5,
+          "market_cap": 85635905165.51648,
+          "price": 192.56782365,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Solana"
+        }
+      ],
+      "rank_at_earliest_snapshot": 108,
+      "market_cap_at_earliest_snapshot": 113349810.37363145,
+      "earliest_snapshot_date": "2020-09-13",
+      "rank_min": 5,
+      "rank_max": 120,
+      "rank_spread": 115,
+      "n_snapshots_with_symbol": 18,
+      "rank_verified": true
+    },
+    "TRXUSDT": {
+      "asset": "TRX",
+      "binance_um_symbol": "TRXUSDT",
+      "earliest_zip_date": "2020-01-15",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 12,
+          "market_cap": 1108254027.536171,
+          "price": 0.01661997,
+          "last_updated": "2020-01-19T23:59:01.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 13,
+          "market_cap": 1271241659.377994,
+          "price": 0.0190642194761,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 17,
+          "market_cap": 1134090518.0005658,
+          "price": 0.01700743,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 16,
+          "market_cap": 1461540770.744665,
+          "price": 0.0203955869229,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 14,
+          "market_cap": 2191568821.2826076,
+          "price": 0.03058302,
+          "last_updated": "2020-09-13T23:59:10.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 15,
+          "market_cap": 1843620256.3425765,
+          "price": 0.02572745,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 17,
+          "market_cap": 2169664590.852571,
+          "price": 0.03027735,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 19,
+          "market_cap": 1930480208.2789793,
+          "price": 0.02693957,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 21,
+          "market_cap": 2359548093.563805,
+          "price": 0.03292715,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 20,
+          "market_cap": 6171329844.515892,
+          "price": 0.08612,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 20,
+          "market_cap": 9395162184.750137,
+          "price": 0.13110811,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 24,
+          "market_cap": 5455869263.306632,
+          "price": 0.07613585,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 26,
+          "market_cap": 4537330584.743802,
+          "price": 0.06331778,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 26,
+          "market_cap": 6815597311.299531,
+          "price": 0.09511066,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 32,
+          "market_cap": 6943812070.09497,
+          "price": 0.09689988,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 27,
+          "market_cap": 7803062412.706308,
+          "price": 0.07661014,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 21,
+          "market_cap": 7204837036.492694,
+          "price": 0.07090638,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 13,
+          "market_cap": 5041253171.645859,
+          "price": 0.05481967,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 10,
+          "market_cap": 8025916797.687739,
+          "price": 0.09011799,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 10,
+          "market_cap": 9134138067.00858,
+          "price": 0.10317655,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 13,
+          "market_cap": 9521523025.370115,
+          "price": 0.10781219,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "TRON"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 16,
+          "market_cap": 10578973514.529486,
+          "price": 0.12059128,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "TRON"
+        }
+      ],
+      "rank_at_earliest_snapshot": 12,
+      "market_cap_at_earliest_snapshot": 1108254027.536171,
+      "earliest_snapshot_date": "2020-01-19",
+      "rank_min": 10,
+      "rank_max": 32,
+      "rank_spread": 22,
+      "n_snapshots_with_symbol": 22,
+      "rank_verified": true
+    },
+    "ZECUSDT": {
+      "asset": "ZEC",
+      "binance_um_symbol": "ZECUSDT",
+      "earliest_zip_date": "2020-02-04",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 28,
+          "market_cap": 506504027.8290623,
+          "price": 54.54942523,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 25,
+          "market_cap": 872565051.9550377,
+          "price": 89.7488879057,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 31,
+          "market_cap": 627940205.1400625,
+          "price": 62.60390029,
+          "last_updated": "2020-09-13T23:59:09.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 33,
+          "market_cap": 602860459.8453637,
+          "price": 58.07348259,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 33,
+          "market_cap": 817947505.8560013,
+          "price": 75.09668914,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 43,
+          "market_cap": 614377755.8180543,
+          "price": 56.79283185,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 45,
+          "market_cap": 971335222.2187142,
+          "price": 87.98420927,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 59,
+          "market_cap": 1882087840.8357286,
+          "price": 164.19693254,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 51,
+          "market_cap": 2990835521.397561,
+          "price": 256.12581097,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 55,
+          "market_cap": 1834664916.10695,
+          "price": 154.1847785,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 64,
+          "market_cap": 1427283086.561655,
+          "price": 115.70192895,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 66,
+          "market_cap": 1901957271.5510974,
+          "price": 151.45662493,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 58,
+          "market_cap": 3032904828.2646356,
+          "price": 229.60407693,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 68,
+          "market_cap": 2014035228.4353049,
+          "price": 149.9513665,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 51,
+          "market_cap": 1776239808.6309798,
+          "price": 124.29150566,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 55,
+          "market_cap": 596739332.9637511,
+          "price": 37.18907182,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 73,
+          "market_cap": 458225419.0145752,
+          "price": 28.06331927,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 93,
+          "market_cap": 486137059.90748096,
+          "price": 29.77272529,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 121,
+          "market_cap": 454360233.44598025,
+          "price": 27.82660185,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Zcash"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 175,
+          "market_cap": 473301533.950533,
+          "price": 28.98663301,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Zcash"
+        }
+      ],
+      "rank_at_earliest_snapshot": 28,
+      "market_cap_at_earliest_snapshot": 506504027.8290623,
+      "earliest_snapshot_date": "2020-06-01",
+      "rank_min": 25,
+      "rank_max": 175,
+      "rank_spread": 150,
+      "n_snapshots_with_symbol": 20,
+      "rank_verified": true
+    },
+    "DOGEUSDT": {
+      "asset": "DOGE",
+      "binance_um_symbol": "DOGEUSDT",
+      "earliest_zip_date": "2020-07-10",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 32,
+          "market_cap": 463485084.36844957,
+          "price": 0.00368863841675,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 50,
+          "market_cap": 350476175.95395714,
+          "price": 0.00277614,
+          "last_updated": "2020-09-13T23:59:09.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 44,
+          "market_cap": 327678834.57824594,
+          "price": 0.00258175,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 48,
+          "market_cap": 426510976.5703267,
+          "price": 0.0033347,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 38,
+          "market_cap": 726323310.6655002,
+          "price": 0.00568496,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 14,
+          "market_cap": 4470660188.630976,
+          "price": 0.03487468,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 18,
+          "market_cap": 7996434168.484545,
+          "price": 0.06198606,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 6,
+          "market_cap": 50860335490.54295,
+          "price": 0.39298743,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 6,
+          "market_cap": 48050998400.696075,
+          "price": 0.37007655,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 8,
+          "market_cap": 26715951374.75049,
+          "price": 0.20443724,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 7,
+          "market_cap": 38596297312.75097,
+          "price": 0.29440085,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 10,
+          "market_cap": 27724626414.513996,
+          "price": 0.20948696,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 12,
+          "market_cap": 22956735266.072746,
+          "price": 0.17303537,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 12,
+          "market_cap": 17615033707.187874,
+          "price": 0.13277254,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 8,
+          "market_cap": 9316760628.853369,
+          "price": 0.07022467,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 9,
+          "market_cap": 8925275654.05237,
+          "price": 0.06319316,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 9,
+          "market_cap": 11912714621.646458,
+          "price": 0.08385656,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 10,
+          "market_cap": 13111468130.225855,
+          "price": 0.09202374,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Dogecoin"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 8,
+          "market_cap": 29543014239.060814,
+          "price": 0.20557041,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Dogecoin"
+        }
+      ],
+      "rank_at_earliest_snapshot": 32,
+      "market_cap_at_earliest_snapshot": 463485084.36844957,
+      "earliest_snapshot_date": "2020-08-01",
+      "rank_min": 6,
+      "rank_max": 50,
+      "rank_spread": 44,
+      "n_snapshots_with_symbol": 19,
+      "rank_verified": true
+    },
+    "LINKUSDT": {
+      "asset": "LINK",
+      "binance_um_symbol": "LINKUSDT",
+      "earliest_zip_date": "2020-01-17",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 17,
+          "market_cap": 916632783.6049999,
+          "price": 2.61895081,
+          "last_updated": "2020-01-19T23:59:02.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 17,
+          "market_cap": 993633620.0070001,
+          "price": 2.83895320002,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 13,
+          "market_cap": 1533224811.188,
+          "price": 4.38064232,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 12,
+          "market_cap": 2906560597.6749997,
+          "price": 8.3044588505,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 7,
+          "market_cap": 4197741154.11,
+          "price": 11.99354615,
+          "last_updated": "2020-09-13T23:59:10.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 6,
+          "market_cap": 4505164094.002379,
+          "price": 11.53662956,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 6,
+          "market_cap": 5362636739.984089,
+          "price": 13.38953504,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 10,
+          "market_cap": 4737262863.865625,
+          "price": 11.8725549,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 7,
+          "market_cap": 9227433045.354393,
+          "price": 22.83964054,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 10,
+          "market_cap": 12577308561.027805,
+          "price": 30.23322029,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 12,
+          "market_cap": 17228105963.21693,
+          "price": 41.11626023,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 12,
+          "market_cap": 13185519244.07061,
+          "price": 30.69901269,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 13,
+          "market_cap": 9802400540.326122,
+          "price": 22.12683779,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 12,
+          "market_cap": 13351380854.390554,
+          "price": 29.73518211,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 21,
+          "market_cap": 11841592727.484642,
+          "price": 25.35621087,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 22,
+          "market_cap": 9650793465.597067,
+          "price": 20.66508802,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 25,
+          "market_cap": 5282820439.709868,
+          "price": 11.31201802,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 21,
+          "market_cap": 2856200812.197638,
+          "price": 5.62244287,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 18,
+          "market_cap": 4481026225.552357,
+          "price": 8.0470979,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 11,
+          "market_cap": 8343410791.602787,
+          "price": 14.9832293,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 14,
+          "market_cap": 8825892482.887999,
+          "price": 15.53580873,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Chainlink"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 15,
+          "market_cap": 10791052148.828333,
+          "price": 18.38026348,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Chainlink"
+        }
+      ],
+      "rank_at_earliest_snapshot": 17,
+      "market_cap_at_earliest_snapshot": 916632783.6049999,
+      "earliest_snapshot_date": "2020-01-19",
+      "rank_min": 6,
+      "rank_max": 25,
+      "rank_spread": 19,
+      "n_snapshots_with_symbol": 22,
+      "rank_verified": true
+    },
+    "ADAUSDT": {
+      "asset": "ADA",
+      "binance_um_symbol": "ADAUSDT",
+      "earliest_zip_date": "2020-01-19",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 13,
+          "market_cap": 1088389472.2005517,
+          "price": 0.04197888,
+          "last_updated": "2020-01-19T23:59:02.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 10,
+          "market_cap": 1454290892.693255,
+          "price": 0.0560916008834,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 11,
+          "market_cap": 2104444095.6623135,
+          "price": 0.08116783,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 8,
+          "market_cap": 3722421374.2240725,
+          "price": 0.143572771508,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 13,
+          "market_cap": 2459337148.6904297,
+          "price": 0.09485596,
+          "last_updated": "2020-09-13T23:59:10.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 11,
+          "market_cap": 3055149296.555805,
+          "price": 0.09819689,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 8,
+          "market_cap": 4853014491.5149765,
+          "price": 0.15598286,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 8,
+          "market_cap": 5455571952.5957365,
+          "price": 0.17534993,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 6,
+          "market_cap": 12508252625.666323,
+          "price": 0.40203323,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 5,
+          "market_cap": 37994346512.429985,
+          "price": 1.18924435,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 7,
+          "market_cap": 43228336016.92599,
+          "price": 1.35307116,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 4,
+          "market_cap": 55422434614.773285,
+          "price": 1.73475328,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 5,
+          "market_cap": 42274401646.456406,
+          "price": 1.3177302,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 3,
+          "market_cap": 92281796867.89447,
+          "price": 2.87076676,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 6,
+          "market_cap": 51559334595.581505,
+          "price": 1.54771268,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 6,
+          "market_cap": 46108724312.74501,
+          "price": 1.37697508,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 9,
+          "market_cap": 26676154076.970715,
+          "price": 0.7903445,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 9,
+          "market_cap": 8621727158.3239,
+          "price": 0.2497706,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 8,
+          "market_cap": 9342534384.336525,
+          "price": 0.26589525,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 8,
+          "market_cap": 13565396567.420017,
+          "price": 0.38420165,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 8,
+          "market_cap": 22037177200.273846,
+          "price": 0.62310994,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Cardano"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 9,
+          "market_cap": 22124452333.341686,
+          "price": 0.62168366,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Cardano"
+        }
+      ],
+      "rank_at_earliest_snapshot": 13,
+      "market_cap_at_earliest_snapshot": 1088389472.2005517,
+      "earliest_snapshot_date": "2020-01-19",
+      "rank_min": 3,
+      "rank_max": 13,
+      "rank_spread": 10,
+      "n_snapshots_with_symbol": 22,
+      "rank_verified": true
+    },
+    "XLMUSDT": {
+      "asset": "XLM",
+      "binance_um_symbol": "XLMUSDT",
+      "earliest_zip_date": "2020-01-19",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 10,
+          "market_cap": 1203196279.4138572,
+          "price": 0.06004437,
+          "last_updated": "2020-01-19T23:59:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 14,
+          "market_cap": 1213096236.3882644,
+          "price": 0.0604702700747,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 14,
+          "market_cap": 1530037892.671754,
+          "price": 0.07551779,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 14,
+          "market_cap": 2192580350.8879333,
+          "price": 0.10699543047,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 17,
+          "market_cap": 1653024464.4406068,
+          "price": 0.08006114,
+          "last_updated": "2020-09-13T23:59:09.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 17,
+          "market_cap": 1638302979.691819,
+          "price": 0.07847773,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 12,
+          "market_cap": 4071575453.120391,
+          "price": 0.18442527,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 14,
+          "market_cap": 2901669479.1338143,
+          "price": 0.13240799,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 11,
+          "market_cap": 7167741271.189015,
+          "price": 0.32183469,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 16,
+          "market_cap": 9826535682.146992,
+          "price": 0.43251203,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 16,
+          "market_cap": 12402481464.715015,
+          "price": 0.53980174,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 16,
+          "market_cap": 9655686712.0842,
+          "price": 0.41770956,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 19,
+          "market_cap": 6460780552.907192,
+          "price": 0.27617663,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 22,
+          "market_cap": 8360282476.83238,
+          "price": 0.35384355,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 26,
+          "market_cap": 7985165162.616214,
+          "price": 0.32787982,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 28,
+          "market_cap": 6836261756.498241,
+          "price": 0.27633537,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 30,
+          "market_cap": 4361953969.288985,
+          "price": 0.17599016,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 26,
+          "market_cap": 1893577776.7076983,
+          "price": 0.07252433,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 23,
+          "market_cap": 3174508011.383938,
+          "price": 0.11438795,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 24,
+          "market_cap": 3359004007.937587,
+          "price": 0.11979376,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 24,
+          "market_cap": 3729102815.3069005,
+          "price": 0.13190516,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Stellar"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 34,
+          "market_cap": 3911442694.774028,
+          "price": 0.13569956,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Stellar"
+        }
+      ],
+      "rank_at_earliest_snapshot": 10,
+      "market_cap_at_earliest_snapshot": 1203196279.4138572,
+      "earliest_snapshot_date": "2020-01-19",
+      "rank_min": 10,
+      "rank_max": 34,
+      "rank_spread": 24,
+      "n_snapshots_with_symbol": 22,
+      "rank_verified": true
+    },
+    "NEARUSDT": {
+      "asset": "NEAR",
+      "binance_um_symbol": "NEARUSDT",
+      "earliest_zip_date": "2020-10-14",
+      "snapshots": [
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 82,
+          "market_cap": 110923368.56484078,
+          "price": 0.63429566,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 72,
+          "market_cap": 208746440.70179507,
+          "price": 1.06010543,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 67,
+          "market_cap": 267271665.54687363,
+          "price": 1.35732204,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 60,
+          "market_cap": 613244949.7615215,
+          "price": 2.25426442,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 56,
+          "market_cap": 2012408730.831254,
+          "price": 5.9865709,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 67,
+          "market_cap": 1998810637.2384336,
+          "price": 5.48429631,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 71,
+          "market_cap": 1261938426.9808142,
+          "price": 3.2249991,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 76,
+          "market_cap": 1008898598.7934159,
+          "price": 2.39321864,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 55,
+          "market_cap": 2450089614.79173,
+          "price": 5.49582672,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 41,
+          "market_cap": 4831353256.40365,
+          "price": 8.51161581,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 24,
+          "market_cap": 9119330844.50842,
+          "price": 15.16956591,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 19,
+          "market_cap": 7988583206.309917,
+          "price": 11.83907225,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 36,
+          "market_cap": 1076948379.2090197,
+          "price": 1.27581873,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 40,
+          "market_cap": 1132089767.338134,
+          "price": 1.16062065,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 36,
+          "market_cap": 1900068162.8055222,
+          "price": 1.89367998,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 23,
+          "market_cap": 3816929596.627973,
+          "price": 3.79920074,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "NEAR Protocol"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 21,
+          "market_cap": 7106412575.754336,
+          "price": 6.74222258,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "NEAR Protocol"
+        }
+      ],
+      "rank_at_earliest_snapshot": 82,
+      "market_cap_at_earliest_snapshot": 110923368.56484078,
+      "earliest_snapshot_date": "2020-11-01",
+      "rank_min": 19,
+      "rank_max": 82,
+      "rank_spread": 63,
+      "n_snapshots_with_symbol": 17,
+      "rank_verified": true
+    },
+    "BCHUSDT": {
+      "asset": "BCH",
+      "binance_um_symbol": "BCHUSDT",
+      "earliest_zip_date": "2019-12-23",
+      "snapshots": [
+        {
+          "snapshot_date": "2019-12-31",
+          "cmc_rank": 5,
+          "market_cap": 3723637896.6646724,
+          "price": 204.62317479,
+          "last_updated": "2019-12-31T23:59:03.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-01-01",
+          "cmc_rank": 5,
+          "market_cap": 3719917644.434037,
+          "price": 204.39753698,
+          "last_updated": "2020-01-01T23:59:02.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-01-19",
+          "cmc_rank": 4,
+          "market_cap": 6167961887.4394455,
+          "price": 338.30511204,
+          "last_updated": "2020-01-19T23:59:01.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-02-01",
+          "cmc_rank": 4,
+          "market_cap": 6955699068.234295,
+          "price": 381.013367308,
+          "last_updated": "2020-02-01T23:59:01.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-06-01",
+          "cmc_rank": 5,
+          "market_cap": 4704471365.822327,
+          "price": 255.35218289,
+          "last_updated": "2020-06-01T23:59:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-08-01",
+          "cmc_rank": 5,
+          "market_cap": 5875986524.349751,
+          "price": 317.996472826,
+          "last_updated": "2020-08-01T23:59:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-09-13",
+          "cmc_rank": 8,
+          "market_cap": 4107511805.743984,
+          "price": 221.82599836,
+          "last_updated": "2020-09-13T23:59:10.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-11-01",
+          "cmc_rank": 5,
+          "market_cap": 4966023215.627303,
+          "price": 267.55581501,
+          "last_updated": "2020-11-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2020-12-01",
+          "cmc_rank": 7,
+          "market_cap": 5359575214.142652,
+          "price": 288.13584392,
+          "last_updated": "2020-12-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-01-01",
+          "cmc_rank": 7,
+          "market_cap": 6361227988.967737,
+          "price": 341.98564658,
+          "last_updated": "2021-01-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-02-01",
+          "cmc_rank": 10,
+          "market_cap": 7718642898.181707,
+          "price": 414.02045716,
+          "last_updated": "2021-02-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-04-01",
+          "cmc_rank": 14,
+          "market_cap": 10500685120.586271,
+          "price": 561.65823431,
+          "last_updated": "2021-04-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-05-01",
+          "cmc_rank": 10,
+          "market_cap": 18819685196.13764,
+          "price": 1005.08010247,
+          "last_updated": "2021-05-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-06-01",
+          "cmc_rank": 13,
+          "market_cap": 12965590139.899548,
+          "price": 691.4038794,
+          "last_updated": "2021-06-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-08-01",
+          "cmc_rank": 12,
+          "market_cap": 9926443814.553099,
+          "price": 527.84159157,
+          "last_updated": "2021-08-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-09-01",
+          "cmc_rank": 15,
+          "market_cap": 12370554297.58948,
+          "price": 656.81707131,
+          "last_updated": "2021-09-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2021-12-01",
+          "cmc_rank": 22,
+          "market_cap": 10802015894.372162,
+          "price": 571.05689682,
+          "last_updated": "2021-12-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2022-01-01",
+          "cmc_rank": 25,
+          "market_cap": 8419725269.321481,
+          "price": 444.45618922,
+          "last_updated": "2022-01-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2022-05-01",
+          "cmc_rank": 23,
+          "market_cap": 5418553401.319485,
+          "price": 284.41199843,
+          "last_updated": "2022-05-01T23:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2023-01-01",
+          "cmc_rank": 27,
+          "market_cap": 1868535141.950397,
+          "price": 96.95507341,
+          "last_updated": "2023-01-01T00:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2023-10-01",
+          "cmc_rank": 16,
+          "market_cap": 4727608863.583491,
+          "price": 242.19152611,
+          "last_updated": "2023-10-01T00:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2023-12-01",
+          "cmc_rank": 19,
+          "market_cap": 4408458003.195213,
+          "price": 225.216852,
+          "last_updated": "2023-12-01T00:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2024-01-01",
+          "cmc_rank": 20,
+          "market_cap": 5226247275.621958,
+          "price": 266.61593801,
+          "last_updated": "2024-01-01T00:00:00.000Z",
+          "name": "Bitcoin Cash"
+        },
+        {
+          "snapshot_date": "2024-04-01",
+          "cmc_rank": 14,
+          "market_cap": 12777314780.650923,
+          "price": 649.05838972,
+          "last_updated": "2024-04-01T00:00:00.000Z",
+          "name": "Bitcoin Cash"
+        }
+      ],
+      "rank_at_earliest_snapshot": 5,
+      "market_cap_at_earliest_snapshot": 3723637896.6646724,
+      "earliest_snapshot_date": "2019-12-31",
+      "rank_min": 4,
+      "rank_max": 27,
+      "rank_spread": 23,
+      "n_snapshots_with_symbol": 24,
+      "rank_verified": true
+    }
+  },
+  "snapshot_dates_available": [
+    "2019-12-31",
+    "2020-01-01",
+    "2020-01-19",
+    "2020-02-01",
+    "2020-06-01",
+    "2020-08-01",
+    "2020-09-13",
+    "2020-11-01",
+    "2020-12-01",
+    "2021-01-01",
+    "2021-02-01",
+    "2021-04-01",
+    "2021-05-01",
+    "2021-06-01",
+    "2021-08-01",
+    "2021-09-01",
+    "2021-12-01",
+    "2022-01-01",
+    "2022-05-01",
+    "2023-01-01",
+    "2023-10-01",
+    "2023-12-01",
+    "2024-01-01",
+    "2024-04-01"
+  ]
+}

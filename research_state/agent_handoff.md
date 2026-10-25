@@ -210,13 +210,25 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
 - Report only verified findings. No preregistration from grid hits. No frozen artifacts modified.
 
-## Next action (activation 127)
-1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` empty).
+## Completed this session (activation 127)
+- Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config, independently re-verified via canonical-JSON sha256 with ensure_ascii=False); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` shows only the 4 intended research_state changes.
+- PIT rank inquiry RESOLVED (previously rank_verified=false for all 13). The prior search record noted Wayback CMC historical captures *exist* but were never parsed; this activation parsed the embedded `__NEXT_DATA__` JSON (`props.initialState.cryptocurrency.listingHistorical.data`, 200 coins/snapshot with `cmcRank` + `quote.USD.marketCap`) from 24 of 25 captured snapshot dates via a new fetch/parse script (`/tmp/pit_rank_evidence/fetch_cmc_snapshots.py`; evidence under `/tmp/pit_rank_evidence/`).
+  - 2020-03-01 excluded: its only Wayback capture is a dead 418-byte stub (HTTP 200, no body).
+  - All 13 Binance-UM perp symbols matched to PIT rank at the earliest snapshot at/after formation date (conservative upper bound — rank can fall after listing, not rise before it).
+  - New artifact: `research_state/pit_rank_verification_v1.json` (full per-symbol trajectory, methodology, coverage limitation).
+  - Updated `research_state/pit_universe_verification_v1.json` (rank_verified=true for all 13, prior notes preserved verbatim), `research_state/universe_frontier.json` (13 candidates -> rank_verified_pit_cmc_wayback), `research_state/pit_rank_search_v1.json` (extraction_result appended).
+  - Ranks: BTC=1, ETH=2, BCH=5, XRP=3, XLM=10, TRX=12, ADA=13, LINK=17, BNB=8, DOGE=32, ZEC=28, SOL=108, NEAR=82.
+- PIT rank inquiry now CLOSED with a verified free source (no key/auth/paid). Universe is no longer rank-unverified.
+- H002/H003 remain registered_secondary_not_tested; anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
+- No frozen artifacts modified (config_sha256 re-verified = 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0). No preregistration from grid hits.
+
+## Next action (activation 128)
+1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` shows only intended research_state changes).
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
-3. PIT rank inquiry closed -- do not reopen unless genuinely new free PIT rank source (no key/auth/paid) is located.
+3. PIT rank inquiry now CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Do not reopen unless a genuinely new free PIT rank source (no key/auth/paid) is located.
 4. No preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config). Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Next concrete task: locate a genuinely new free point-in-time rank source (no key/auth/paid) to resolve rank_verified=false for all 13 candidates; otherwise continue durable-state/red-team follow-ups. Record artifact path and findings. Do not relax gates.
-6. Update handoff and task message with verified findings only. A concrete next task must always remain.
+5. Next concrete task: with PIT ranks now verified, re-run the red-team audit (research_state/red_team_audit_extended_v1.json) to check whether any prior finding depended on the rank-unverified assumption, and record any update. Do not modify frozen artifacts. Update handoff and task message with verified findings only. A concrete next task must always remain.
+6. Preserve the /tmp/pit_rank_evidence/ fetch script and per-date sha256 + JSON as the auditable extraction record.
 
 ## Completed this session (activation 123)
 - Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.

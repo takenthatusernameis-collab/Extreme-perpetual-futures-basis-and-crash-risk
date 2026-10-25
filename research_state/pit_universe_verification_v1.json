@@ -9,67 +9,103 @@
       "binance_um_symbol": "BTCUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-"retrieved_at_utc": "2026-10-24T23:59:00+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/BTCUSDT/1d/",
-           "sha256_last_page": "3fba479562201e8d7aefe6019194328c09526428bbdb6521479f94804cc3f039",
-           "n_keys": 4882
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:59:00+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/BTCUSDT/1d/",
+          "sha256_last_page": "3fba479562201e8d7aefe6019194328c09526428bbdb6521479f94804cc3f039",
+          "n_keys": 4882
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2019-12-23, latest: 2026-10-23, missing_count: 56",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=1 at earliest CMC Wayback snapshot 2019-12-31 (>= formation date 2019-12-23), market_cap=130446112598 USD, rank spread 1..1 across 24 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2019-12-23",
       "latest_zip_date": "2026-10-23",
       "missing_count": 56,
-      "n_zip_dates": 2441
+      "n_zip_dates": 2441,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 1,
+        "market_cap_at_earliest_snapshot": 130446112598.42046,
+        "earliest_snapshot_date": "2019-12-31",
+        "rank_min": 1,
+        "rank_max": 1,
+        "rank_spread": 0,
+        "n_snapshots_with_symbol": 24,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "ETHUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-           "retrieved_at_utc": "2026-10-24T23:03:13.463722+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/ETHUSDT/1d/",
-           "sha256_last_page": "b489528d2809458fa20395fb152376dd76d826fe690ec800c604ecbb056fdb2c",
-           "n_keys": 4928
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:03:13.463722+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/ETHUSDT/1d/",
+          "sha256_last_page": "b489528d2809458fa20395fb152376dd76d826fe690ec800c604ecbb056fdb2c",
+          "n_keys": 4928
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2019-12-23, latest: 2026-10-23, missing_count: 33",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=2 at earliest CMC Wayback snapshot 2019-12-31 (>= formation date 2019-12-23), market_cap=14139765786 USD, rank spread 2..2 across 24 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2019-12-23",
       "latest_zip_date": "2026-10-23",
       "missing_count": 33,
-      "n_zip_dates": 2464
+      "n_zip_dates": 2464,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 2,
+        "market_cap_at_earliest_snapshot": 14139765786.435047,
+        "earliest_snapshot_date": "2019-12-31",
+        "rank_min": 2,
+        "rank_max": 2,
+        "rank_spread": 0,
+        "n_snapshots_with_symbol": 24,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "BNBUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-           "retrieved_at_utc": "2026-10-24T23:03:20.310852+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/BNBUSDT/1d/",
-           "sha256_last_page": "ee0e0724da9433f5aeb90bb95817e8c54f7a8ffe32e34f92cc69aa6270dc95ab",
-           "n_keys": 4896
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:03:20.310852+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/BNBUSDT/1d/",
+          "sha256_last_page": "ee0e0724da9433f5aeb90bb95817e8c54f7a8ffe32e34f92cc69aa6270dc95ab",
+          "n_keys": 4896
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2019-12-31, latest: 2026-10-23, missing_count: 41",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=8 at earliest CMC Wayback snapshot 2019-12-31 (>= formation date 2019-12-31), market_cap=2135152371 USD, rank spread 3..11 across 24 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2019-12-31",
       "latest_zip_date": "2026-10-23",
       "n_zip_dates": 2448,
-      "missing_count": 41
+      "missing_count": 41,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 8,
+        "market_cap_at_earliest_snapshot": 2135152371.1427026,
+        "earliest_snapshot_date": "2019-12-31",
+        "rank_min": 3,
+        "rank_max": 11,
+        "rank_spread": 8,
+        "n_snapshots_with_symbol": 24,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "XRPUSDT",
@@ -79,15 +115,27 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493269+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-01-06, latest: 2026-10-23, missing_count: 49",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=3 at earliest CMC Wayback snapshot 2020-01-19 (>= formation date 2020-01-06), market_cap=10284187005 USD, rank spread 3..8 across 22 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-01-06",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 49
+      "missing_count": 49,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 3,
+        "market_cap_at_earliest_snapshot": 10284187005.369366,
+        "earliest_snapshot_date": "2020-01-19",
+        "rank_min": 3,
+        "rank_max": 8,
+        "rank_spread": 5,
+        "n_snapshots_with_symbol": 22,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "SOLUSDT",
@@ -97,15 +145,27 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493276+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-09-13, latest: 2026-10-23, missing_count: 56",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=108 at earliest CMC Wayback snapshot 2020-09-13 (>= formation date 2020-09-13), market_cap=113349810 USD, rank spread 5..120 across 18 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-09-13",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 56
+      "missing_count": 56,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 108,
+        "market_cap_at_earliest_snapshot": 113349810.37363145,
+        "earliest_snapshot_date": "2020-09-13",
+        "rank_min": 5,
+        "rank_max": 120,
+        "rank_spread": 115,
+        "n_snapshots_with_symbol": 18,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "TRXUSDT",
@@ -115,15 +175,27 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493279+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-01-15, latest: 2026-10-23, missing_count: 42",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=12 at earliest CMC Wayback snapshot 2020-01-19 (>= formation date 2020-01-15), market_cap=1108254028 USD, rank spread 10..32 across 22 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-01-15",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 42
+      "missing_count": 42,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 12,
+        "market_cap_at_earliest_snapshot": 1108254027.536171,
+        "earliest_snapshot_date": "2020-01-19",
+        "rank_min": 10,
+        "rank_max": 32,
+        "rank_spread": 22,
+        "n_snapshots_with_symbol": 22,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "ZECUSDT",
@@ -133,37 +205,61 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493282+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-02-04, latest: 2026-10-23, missing_count: 29",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=28 at earliest CMC Wayback snapshot 2020-06-01 (>= formation date 2020-02-04), market_cap=506504028 USD, rank spread 25..175 across 20 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-02-04",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 29
+      "missing_count": 29,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 28,
+        "market_cap_at_earliest_snapshot": 506504027.8290623,
+        "earliest_snapshot_date": "2020-06-01",
+        "rank_min": 25,
+        "rank_max": 175,
+        "rank_spread": 150,
+        "n_snapshots_with_symbol": 20,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "DOGEUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-           "retrieved_at_utc": "2026-10-24T23:03:26.462625+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/DOGEUSDT/1d/",
-           "sha256_last_page": "0c1d69c6e224d887d47d60b672567537142b9bcfb8d52bed8bba26551a5ae4b6",
-           "n_keys": 4540
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:03:26.462625+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/DOGEUSDT/1d/",
+          "sha256_last_page": "0c1d69c6e224d887d47d60b672567537142b9bcfb8d52bed8bba26551a5ae4b6",
+          "n_keys": 4540
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-07-10, latest: 2026-10-23, missing_count: 27",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=32 at earliest CMC Wayback snapshot 2020-08-01 (>= formation date 2020-07-10), market_cap=463485084 USD, rank spread 6..50 across 19 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-07-10",
       "latest_zip_date": "2026-10-23",
       "n_zip_dates": 2270,
-      "missing_count": 27
+      "missing_count": 27,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 32,
+        "market_cap_at_earliest_snapshot": 463485084.36844957,
+        "earliest_snapshot_date": "2020-08-01",
+        "rank_min": 6,
+        "rank_max": 50,
+        "rank_spread": 44,
+        "n_snapshots_with_symbol": 19,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "LINKUSDT",
@@ -173,37 +269,61 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493504+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-01-17, latest: 2026-10-23, missing_count: 39",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=17 at earliest CMC Wayback snapshot 2020-01-19 (>= formation date 2020-01-17), market_cap=916632784 USD, rank spread 6..25 across 22 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-01-17",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 39
+      "missing_count": 39,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 17,
+        "market_cap_at_earliest_snapshot": 916632783.6049999,
+        "earliest_snapshot_date": "2020-01-19",
+        "rank_min": 6,
+        "rank_max": 25,
+        "rank_spread": 19,
+        "n_snapshots_with_symbol": 22,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "ADAUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-           "retrieved_at_utc": "2026-10-24T23:03:33.692048+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/ADAUSDT/1d/",
-           "sha256_last_page": "8e318fd7631c48b60ee5e382aa06020f5666af0624b9c73a5afe27d2bab3421d",
-           "n_keys": 4872
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:03:33.692048+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/ADAUSDT/1d/",
+          "sha256_last_page": "8e318fd7631c48b60ee5e382aa06020f5666af0624b9c73a5afe27d2bab3421d",
+          "n_keys": 4872
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-01-19, latest: 2026-10-23, missing_count: 34",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=13 at earliest CMC Wayback snapshot 2020-01-19 (>= formation date 2020-01-19), market_cap=1088389472 USD, rank spread 3..13 across 22 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-01-19",
       "latest_zip_date": "2026-10-23",
       "n_zip_dates": 2436,
-      "missing_count": 34
+      "missing_count": 34,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 13,
+        "market_cap_at_earliest_snapshot": 1088389472.2005517,
+        "earliest_snapshot_date": "2020-01-19",
+        "rank_min": 3,
+        "rank_max": 13,
+        "rank_spread": 10,
+        "n_snapshots_with_symbol": 22,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "XLMUSDT",
@@ -213,15 +333,27 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493683+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-01-19, latest: 2026-10-23, missing_count: 39",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=10 at earliest CMC Wayback snapshot 2020-01-19 (>= formation date 2020-01-19), market_cap=1203196279 USD, rank spread 10..34 across 22 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-01-19",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 39
+      "missing_count": 39,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 10,
+        "market_cap_at_earliest_snapshot": 1203196279.4138572,
+        "earliest_snapshot_date": "2020-01-19",
+        "rank_min": 10,
+        "rank_max": 34,
+        "rank_spread": 24,
+        "n_snapshots_with_symbol": 22,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "NEARUSDT",
@@ -231,37 +363,96 @@
           "retrieved_at_utc": "2026-10-24T21:58:10.493691+00:00"
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2020-10-14, latest: 2026-10-23, missing_count: 34",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=82 at earliest CMC Wayback snapshot 2020-11-01 (>= formation date 2020-10-14), market_cap=110923369 USD, rank spread 19..82 across 17 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2020-10-14",
       "latest_zip_date": "2026-10-23",
-      "missing_count": 34
+      "missing_count": 34,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 82,
+        "market_cap_at_earliest_snapshot": 110923368.56484078,
+        "earliest_snapshot_date": "2020-11-01",
+        "rank_min": 19,
+        "rank_max": 82,
+        "rank_spread": 63,
+        "n_snapshots_with_symbol": 17,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     },
     {
       "binance_um_symbol": "BCHUSDT",
       "sources": [
         {
-"type": "binance_vision_s3_xml_listing",
-           "retrieved_at_utc": "2026-10-24T23:03:39.794248+00:00",
-           "prefix": "data/futures/um/daily/markPriceKlines/BCHUSDT/1d/",
-           "sha256_last_page": "f6c3b674a78ddff8c62efa59889ec68dd80f81d9b746ad5e858dee1558b6f1bf",
-           "n_keys": 4914
+          "type": "binance_vision_s3_xml_listing",
+          "retrieved_at_utc": "2026-10-24T23:03:39.794248+00:00",
+          "prefix": "data/futures/um/daily/markPriceKlines/BCHUSDT/1d/",
+          "sha256_last_page": "f6c3b674a78ddff8c62efa59889ec68dd80f81d9b746ad5e858dee1558b6f1bf",
+          "n_keys": 4914
         }
       ],
-      "rank_verified": false,
+      "rank_verified": true,
       "listing_verified": true,
       "notes": [
         "Earliest daily markPriceKlines zip: 2019-12-23, latest: 2026-10-23, missing_count: 40",
-        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain."
+        "Rank verification: PIT market-cap rank evidence available via Wayback Machine CMC historical snapshots at 25 snapshot dates (2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01); coverage is snapshot-based, not continuous across every formation date. rank_verified=false pending full point-in-time coverage across all formation dates. Final CDX audit (2026-10-25T00:56Z): all formation dates definitively checked (HTTP 200, endpoint sanity-verified against known-good captures); 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no CMC historical capture (empty '[]' body). No rate-limited/unconfirmed formation dates remain.",
+        "RANK VERIFIED (2026-10-25T13:20Z): PIT market-cap rank=5 at earliest CMC Wayback snapshot 2019-12-31 (>= formation date 2019-12-23), market_cap=3723637897 USD, rank spread 4..27 across 24 snapshots. Source: CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no key). Artifact: research_state/pit_rank_verification_v1.json. Conservative bound: snapshot is at/after formation date, so rank is an upper bound (rank can fall after listing, not rise before it)."
       ],
       "earliest_zip_date": "2019-12-23",
       "latest_zip_date": "2026-10-23",
       "n_zip_dates": 2457,
-      "missing_count": 40
+      "missing_count": 40,
+      "rank_evidence": {
+        "rank_at_earliest_snapshot": 5,
+        "market_cap_at_earliest_snapshot": 3723637896.6646724,
+        "earliest_snapshot_date": "2019-12-31",
+        "rank_min": 4,
+        "rank_max": 27,
+        "rank_spread": 23,
+        "n_snapshots_with_symbol": 24,
+        "artifact": "research_state/pit_rank_verification_v1.json",
+        "source": "Wayback Machine CMC historical snapshots (free, no key)"
+      }
     }
-  ]
+  ],
+  "rank_verification": {
+    "verified_at_utc": "2026-10-25T13:20:00+00:00",
+    "n_symbols_rank_verified": 13,
+    "artifact": "research_state/pit_rank_verification_v1.json",
+    "source": "CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no API key)",
+    "n_snapshots_used": 24,
+    "snapshot_dates": [
+      "2019-12-31",
+      "2020-01-01",
+      "2020-01-19",
+      "2020-02-01",
+      "2020-06-01",
+      "2020-08-01",
+      "2020-09-13",
+      "2020-11-01",
+      "2020-12-01",
+      "2021-01-01",
+      "2021-02-01",
+      "2021-04-01",
+      "2021-05-01",
+      "2021-06-01",
+      "2021-08-01",
+      "2021-09-01",
+      "2021-12-01",
+      "2022-01-01",
+      "2022-05-01",
+      "2023-01-01",
+      "2023-10-01",
+      "2023-12-01",
+      "2024-01-01",
+      "2024-04-01"
+    ],
+    "methodology": "For each Binance-UM perp symbol, the earliest Wayback CMC historical snapshot at or after the symbol's earliest Binance Vision S3 markPriceKlines zip date (formation date) was used as the point-in-time rank evidence. Rank stability was assessed as rank spread across all snapshots containing the symbol. A symbol is rank_verified=true iff it appears in at least one snapshot at/after its formation date with a numeric cmcRank. This is a coverage-cohort verification, not a claim that the rank held continuously; ranks are snapshot-based only.",
+    "coverage_limitation": "24 of 25 candidate snapshot dates returned parseable CMC pages; 2020-03-01 is a dead 418-byte Wayback stub (HTTP 200, no body) and was excluded. Formation dates without any archived CMC historical page (2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 confirmed no capture in prior CDX audit) are covered by the next available later snapshot, which is a conservative upper bound on rank (rank can only fall after listing, not rise before it)."
+  }
 }

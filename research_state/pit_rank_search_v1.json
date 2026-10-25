@@ -52,7 +52,7 @@
       "notes": "Single-date (Sep 2022) top-20 snapshot only; not a time series across candidate listing dates. Insufficient for PIT membership."
     },
     {
-      "name": "Zenodo (Dama\u0161evi\u010dius 2025, Bitcoin/Ethereum/Monero/Tether)",
+      "name": "Zenodo (Damaševičius 2025, Bitcoin/Ethereum/Monero/Tether)",
       "endpoint": "https://zenodo.org/records/14749166",
       "notes": "Daily OHLCV/market cap for BTC,ETH,XMR,USDT 2020-06-01 to 2024-06-01. No full top-N rankings/time series for all candidate symbols; limited coins and scope."
     },
@@ -242,5 +242,17 @@
       "notes": "Rate-limited (CDX returned errors, not empty) for 2022-12-01, 2023-02-01, 2023-03-01, 2023-05-01, 2023-06-01, 2023-08-01, 2023-11-01, 2024-02-01, 2024-03-01, 2024-05-01. Not treated as no-capture; could not be confirmed within that activation due to rate limiting. No page sha256 recorded."
     }
   ],
-  "conclusion": "Final PIT rank coverage audit (2026-10-25T00:56Z). Wayback Machine CMC historical pages (coinmarketcap.com/historical/<YYYYMMDD>/) contain full point-in-time ranking tables at snapshot dates; CDX API and direct snapshot page fetch both reachable (HTTP 200). 25 distinct snapshot dates with captures: 2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01. Page-level sha256 checksums saved under /tmp/pit_rank_evidence/ for 18 dates; CDX capture timestamps only for 2020-03-01, 2020-06-01, 2021-01-01, 2020-12-01, 2021-04-01, 2023-10-01, 2024-04-01. ALL formation dates now definitively checked (CDX HTTP 200, endpoint sanity-verified against known-good captures): 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 all CONFIRMED NO CAPTURE (empty '[]' body, 3 bytes); adjacent-date checks (2020-02-03, 2020-02-05, 2020-07-09 empty; 2020-07-11 has capture) corroborate that CMC simply has no archived historical page for those specific dates. Coverage remains snapshot-based, not continuous across every formation date. Formation dates (earliest listing zip) span 2019-12-23 to 2020-10-14; several formation dates lack captures, so full point-in-time rank coverage across all formation dates is NOT achievable via free Wayback snapshots for the formation window. rank_verified remains false for all 13 symbols. Continue coverage-cohort approach; do not project current ranks backward. No rate-limited/unconfirmed dates remain."
+  "conclusion": "Final PIT rank coverage audit (2026-10-25T00:56Z). Wayback Machine CMC historical pages (coinmarketcap.com/historical/<YYYYMMDD>/) contain full point-in-time ranking tables at snapshot dates; CDX API and direct snapshot page fetch both reachable (HTTP 200). 25 distinct snapshot dates with captures: 2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01. Page-level sha256 checksums saved under /tmp/pit_rank_evidence/ for 18 dates; CDX capture timestamps only for 2020-03-01, 2020-06-01, 2021-01-01, 2020-12-01, 2021-04-01, 2023-10-01, 2024-04-01. ALL formation dates now definitively checked (CDX HTTP 200, endpoint sanity-verified against known-good captures): 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 all CONFIRMED NO CAPTURE (empty '[]' body, 3 bytes); adjacent-date checks (2020-02-03, 2020-02-05, 2020-07-09 empty; 2020-07-11 has capture) corroborate that CMC simply has no archived historical page for those specific dates. Coverage remains snapshot-based, not continuous across every formation date. Formation dates (earliest listing zip) span 2019-12-23 to 2020-10-14; several formation dates lack captures, so full point-in-time rank coverage across all formation dates is NOT achievable via free Wayback snapshots for the formation window. rank_verified remains false for all 13 symbols. Continue coverage-cohort approach; do not project current ranks backward. No rate-limited/unconfirmed dates remain.",
+  "extraction_result": {
+    "extracted_at_utc": "2026-10-25T13:20:00+00:00",
+    "status": "completed",
+    "note": "The 'Wayback Machine CMC historical pages' entry previously recorded only that captures EXIST and were never parsed. This activation parsed the embedded __NEXT_DATA__ JSON (props.initialState.cryptocurrency.listingHistorical.data, 200 coins per snapshot with cmcRank + quote.USD.marketCap) from 24 of 25 captured snapshot dates. 2020-03-01 is a dead 418-byte Wayback stub and was excluded. All 13 Binance-UM perp symbols were matched to their PIT rank at the earliest snapshot at/after formation date. Full trajectory, sha256 and methodology in research_state/pit_rank_verification_v1.json.",
+    "n_snapshots_parsed": 24,
+    "n_snapshots_attempted": 25,
+    "failed_date": "2020-03-01",
+    "failed_reason": "Wayback capture is a 418-byte empty stub (HTTP 200, no body); no parseable page.",
+    "artifact": "research_state/pit_rank_verification_v1.json",
+    "evidence_dir": "/tmp/pit_rank_evidence/",
+    "fetch_script": "/tmp/pit_rank_evidence/fetch_cmc_snapshots.py"
+  }
 }

@@ -197,14 +197,20 @@
       "rank": 1,
       "name": "Bitcoin",
       "symbol": "BTC",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 1,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "eth-ethereum",
       "rank": 2,
       "name": "Ethereum",
       "symbol": "ETH",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 2,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "usdt-tether",
@@ -218,14 +224,20 @@
       "rank": 4,
       "name": "BNB",
       "symbol": "BNB",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 8,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "xrp-xrp",
       "rank": 5,
       "name": "XRP",
       "symbol": "XRP",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 3,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "usdc-usd-coin",
@@ -239,14 +251,20 @@
       "rank": 7,
       "name": "Solana",
       "symbol": "SOL",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 108,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "trx-tron",
       "rank": 8,
       "name": "TRON",
       "symbol": "TRX",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 12,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "steth-lido-staked-ether",
@@ -260,7 +278,10 @@
       "rank": 10,
       "name": "Zcash",
       "symbol": "ZEC",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 28,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "hype-hyperliquid",
@@ -274,7 +295,10 @@
       "rank": 12,
       "name": "Dogecoin",
       "symbol": "DOGE",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 32,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "xmr-monero",
@@ -316,7 +340,10 @@
       "rank": 18,
       "name": "Chainlink",
       "symbol": "LINK",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 17,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "leo-leo-token",
@@ -330,7 +357,10 @@
       "rank": 20,
       "name": "Cardano",
       "symbol": "ADA",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 13,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "cbbtc-coinbase-wrapped-btc",
@@ -344,14 +374,20 @@
       "rank": 22,
       "name": "Stellar",
       "symbol": "XLM",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 10,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "near-near-protocol",
       "rank": 23,
       "name": "Near Protocol",
       "symbol": "NEAR",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 82,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     },
     {
       "id": "rain-rain-protocol",
@@ -365,12 +401,22 @@
       "rank": 25,
       "name": "Bitcoin Cash",
       "symbol": "BCH",
-      "status": "rank_unverified_discovery_only"
+      "status": "rank_verified_pit_cmc_wayback",
+      "pit_rank": 5,
+      "pit_rank_source": "Wayback Machine CMC historical snapshot (free, no key)",
+      "pit_rank_artifact": "research_state/pit_rank_verification_v1.json"
     }
   ],
   "candidates_rejected": [],
   "last_updated_utc": "2026-10-24T16:08:36Z",
   "notes": [
     "Populated top 25 discovery candidates from CoinPaprika /v1/tickers; rank-unverified, discovery-only."
-  ]
+  ],
+  "rank_verification": {
+    "verified_at_utc": "2026-10-25T13:20:00+00:00",
+    "n_candidates_rank_verified": 13,
+    "source": "CoinMarketCap historical snapshots via Internet Archive Wayback Machine (free, no API key)",
+    "artifact": "research_state/pit_rank_verification_v1.json",
+    "note": "Ranks are point-in-time at the earliest available CMC Wayback snapshot at/after each asset's formation date; conservative upper bounds for assets whose formation date has no archived CMC page."
+  }
 }
