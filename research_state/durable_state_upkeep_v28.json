@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v28",
+  "activation": 160,
+  "generated_at": "2026-10-25T18:25:00Z",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "manifest_cells": 324,
+    "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "config_sha256_matches_frozen": true,
+    "pytest_q_tests": "11 passed",
+    "git_diff_check": "clean",
+    "git_status_tracked_clean": true
+  },
+  "hypothesis_registry_consistency": {
+    "verified": true,
+    "H001": {
+      "status": "tested_not_supported",
+      "anchor_cell_id": "EBCR-GRID-001-0005",
+      "anchor_co_primary_adjusted_p_values": {
+        "crash_incidence_15pct": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae": 0.9485
+      },
+      "matches_registry": true,
+      "matches_evaluation_report": true,
+      "matches_leakage_audit": true,
+      "matches_red_team_audit": true
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested",
+      "matches_registry": true
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested",
+      "matches_registry": true
+    }
+  },
+  "red_team_audit_review": {
+    "audit_id": "red_team_audit_extended_v1",
+    "reviewed": true,
+    "unaddressed_gaps_found": false,
+    "notes": "Re-reviewed extended v1 audit. PIT verification reflected; exclusions 336 preserved; multiplicity/overlap caveats noted; thin-tail adequacy noted; confounding-vs-prior-only-controls noted as unaddressed but predeclared/recommended. No new unaddressed items identified."
+  },
+  "leakage_audit_review": {
+    "audit_id": "leakage_audit_extended_v1",
+    "reviewed": true,
+    "unaddressed_gaps_found": false,
+    "notes": "Leakage audit consistent with red-team audit and evaluation report (anchor adj p 0.2483/0.9485; permutation ES p 0.9855, risk-diff p 0.738; temporal placebo negative). No new unaddressed items."
+  },
+  "evaluation_ledger_consistency_review": {
+    "reviewed": true,
+    "artifact": "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "counts_match": true,
+    "notes": "324 cells x 8 endpoints = 2592 registered tests; 2451 with p-value; 141 blocked without p. All 324 cells terminal ok. Anchor null preserved."
+  },
+  "state_preservation": {
+    "frozen_anchor_config_q1_extended_untouched": true,
+    "exclusions_preserved": 336,
+    "pit_rank_inquiry_closed": true,
+    "pit_evidence_preserved": "/tmp/pit_rank_evidence/",
+    "no_preregistration_from_grid_hits": true
+  },
+  "verdict": "no_gaps_found"
+}
