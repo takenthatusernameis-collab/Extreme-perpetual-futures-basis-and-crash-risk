@@ -202,6 +202,22 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
 - Report only verified findings. No preregistration from grid hits.
 
+## Completed this session (activation 126)
+- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
+- Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
+- Documented H002/H003 rationale/feasibility against existing data (5010 rows, 336 exclusions; 324 cells ok) without preregistering new tests from grid hits. Artifact: research_state/h002_h003_feasibility_v1.json + .md.
+- H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source.
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
+- Report only verified findings. No preregistration from grid hits. No frozen artifacts modified.
+
+## Next action (activation 127)
+1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` empty).
+2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
+3. PIT rank inquiry closed -- do not reopen unless genuinely new free PIT rank source (no key/auth/paid) is located.
+4. No preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config). Do not modify frozen anchor/config/Q1/extended artifacts.
+5. Next concrete task: locate a genuinely new free point-in-time rank source (no key/auth/paid) to resolve rank_verified=false for all 13 candidates; otherwise continue durable-state/red-team follow-ups. Record artifact path and findings. Do not relax gates.
+6. Update handoff and task message with verified findings only. A concrete next task must always remain.
+
 ## Completed this session (activation 123)
 - Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
 - Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.

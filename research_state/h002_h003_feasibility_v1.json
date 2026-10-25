@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-H002-H003-FEASIBILITY-V1",
+  "program_id": "EBCR-001",
+  "activation": 126,
+  "status": "documented_not_tested",
+  "summary": "Rationale and feasibility assessment of registered secondary hypotheses H002 (cheap_negative) and H003 (absolute_extreme) against existing extended data, without preregistering new tests from grid hits or relaxing gates.",
+  "hypotheses": [
+    {
+      "hypothesis_id": "EBCR-H002",
+      "orientation_axis": "cheap_negative",
+      "claim": "Extremely cheap negative basis predicts elevated forward downside tail risk; kept distinct from rich-positive basis.",
+      "rationale": "Negative basis (perpetual below spot) may reflect funding stress/short squeeze exhaustion or forced deleveraging; distinct mechanism from rich-positive basis. Already represented as a registered orientation in the frozen grid (cheap_negative).",
+      "feasibility_against_existing_data": "Data available: extended dataset has 5010 rows / 336 missing_label exclusions and covers all 324 grid cells including cheap_negative cells (324 ok in extended ledger). No new data or new experiment ID required to test; however any test must be a preregistered hypothesis with new experiment ID and independent rationale, not selected from grid hits.",
+      "current_status": "registered_secondary_not_tested",
+      "blockers_to_testing": "No preregistered experiment beyond H001; must not select anchor/parameters from inspected grid results (holdout/multiplicity). Requires new experiment ID + predeclared rationale + new anchor/config."
+    },
+    {
+      "hypothesis_id": "EBCR-H003",
+      "orientation_axis": "absolute_extreme",
+      "claim": "Extreme absolute basis magnitude predicts elevated forward downside tail risk regardless of sign; not merged with directional tests.",
+      "rationale": "Magnitude of basis dislocation (either direction) may proxy market stress/liquidity dislocation; orientation already in frozen grid (absolute_extreme).",
+      "feasibility_against_existing_data": "Same extended dataset and grid coverage as H002; absolute_extreme cells present in extended ledger (324 ok). No new data required.",
+      "current_status": "registered_secondary_not_tested",
+      "blockers_to_testing": "Same as H002: no preregistration; must not derive parameters from grid hits; needs new experiment ID + independent predeclared rationale + new anchor/config."
+    }
+  ],
+  "data_references": {
+    "extended_dataset": "research_state/integrated_extended_v1.json",
+    "extended_rows": 5010,
+    "exclusions": 336,
+    "cell_ledger": "research_state/cell_status_ledger_extended_v1.json",
+    "cells_ok": 324,
+    "config": "configs/basis_crash_grid_v1.json"
+  },
+  "gates_preserved": {
+    "no_preregistration_from_grid_hits": true,
+    "frozen_artifacts_untouched": true,
+    "null_preserved": true,
+    "exclusions_preserved": 336
+  },
+  "next_concrete_task": "Locate a genuinely new free point-in-time rank source (no key/auth/paid) to resolve coverage-cohort rank_verified=false for all 13 candidates; otherwise continue documenting durable-state and red-team follow-ups. Do not reopen PIT rank inquiry without new source."
+}
