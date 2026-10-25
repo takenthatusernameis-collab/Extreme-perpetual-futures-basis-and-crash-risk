@@ -110,13 +110,13 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 3. Required checks re-run and pass: manifest (324 cells, config_sha256 matches frozen config), unittest (11 pass), git diff --check clean.
 4. Next concrete task: re-run required checks at next activation to confirm clean state; continue holding H002/H003 as registered_secondary_not_tested; report only verified findings; maintain a concrete next task. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort.
 
-## Completed this session (activation 16)
+## Completed this session (activation 17)
 - Required checks re-run and pass: grid manifest 324 cells (config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); 11 unittest tests pass (python3 -m unittest discover -s tests); git diff --check clean.
-- Prior task message (activation 14 successor) completed: extended evaluation artifact audit verified (no unaddressed data gaps; exclusions 336 preserved; 141 blocked cell-endpoint tests documented; 324 cells ok; no silent data changes). Null result preserved. H002/H003 remain registered_secondary_not_tested.
+- Prior task message (activation 16 successor) completed: confirmed clean state; H002/H003 remain registered_secondary_not_tested; null/exclusions preserved; PIT rank line of inquiry closed (coverage-cohort, rank_verified=false for all 13).
 - No frozen anchor/config/Q1/extended artifacts modified. No preregistration from grid hits.
 
 ## Next action
 1. Required checks re-run and pass; clean state confirmed.
 2. H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested; no preregistration from grid hits.
 3. PIT rank line of inquiry closed; coverage-cohort approach final; rank_verified=false for all 13 symbols.
-4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain H002/H003 as registered_secondary_not_tested; report only verified findings; a concrete next task must always remain. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort. No unblocked work remains beyond verification; preserve null result.
+4. Next concrete task: re-run required checks at next activation to confirm clean state; maintain H002/H003 as registered_secondary_not_tested; report only verified findings; preserve null result and exclusions (336). A concrete next task must always remain. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort. No unblocked work remains beyond verification.
