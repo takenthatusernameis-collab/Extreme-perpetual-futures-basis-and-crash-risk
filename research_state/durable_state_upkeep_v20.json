@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 152,
+  "timestamp": "2026-10-25T17:26:30Z",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "ok": true,
+      "cells": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "pytest": {
+      "command": "python3 -m pytest -q tests",
+      "ok": true,
+      "passed": 11
+    },
+    "git_diff_check": {
+      "ok": true
+    },
+    "git_status_short": {
+      "clean_of_tracked_changes": true
+    }
+  },
+  "hypothesis_registry_consistency": {
+    "verified": true,
+    "EBCR-H001": {
+      "status": "tested_not_supported",
+      "matches_anchor": true,
+      "anchor_cell_id": "EBCR-GRID-001-0005",
+      "co_primary_adj_p": {
+        "crash_incidence_15pct": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae": 0.9485
+      }
+    },
+    "EBCR-H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "EBCR-H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "gaps_found": false
+  },
+  "red_team_audit_review": {
+    "reviewed": true,
+    "documents": [
+      "research_state/red_team_audit_extended_v1.md",
+      "research_state/red_team_audit_extended_v1.json"
+    ],
+    "unaddressed_gaps_found": false,
+    "notes": [
+      "PIT verification reflected (rank_verified=true for all 13, Wayback-CMC).",
+      "Exclusions 336 preserved (missing_label).",
+      "Multiplicity/dependence caveats present; no new unaddressed items identified."
+    ]
+  },
+  "frozen_artifacts": {
+    "modified": false,
+    "config": "configs/basis_crash_grid_v1.json",
+    "anchor_q1_extended": "untouched"
+  },
+  "pit": {
+    "status": "CLOSED",
+    "verified_free_source": "Wayback Machine CMC snapshots",
+    "rank_verified_all_13": true,
+    "extraction_record_preserved": true,
+    "path": "/tmp/pit_rank_evidence/"
+  },
+  "null_preserved": {
+    "anchor_adj_p": [0.24830545694889028, 0.9485],
+    "exclusions": 336,
+    "cells_ok": 324
+  },
+  "verdict": "no_gaps_found",
+  "notes": "Durable-state upkeep v20 complete. No hypothesis/red-team/frozen-artifact modifications. Null and exclusions preserved."
+}
