@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-H002-H003-FEASIBILITY-REVIEW-V1",
+  "program_id": "EBCR-001",
+  "activation": 132,
+  "status": "reviewed_not_testable_without_new_preregistration",
+  "summary": "Reviewed existing feasibility (EBCR-001-H002-H003-FEASIBILITY-V1) against extended data and registered secondary orientations. No testable path without new experiment ID, independent predeclared rationale, and new anchor/config; cannot preregister from inspected grid hits.",
+  "review_against_data": {
+    "extended_dataset": "research_state/integrated_extended_v1.json",
+    "extended_rows": 5010,
+    "exclusions": 336,
+    "cell_ledger": "research_state/cell_status_ledger_extended_v1.json",
+    "cells_ok": 324,
+    "config_frozen": "configs/basis_crash_grid_v1.json",
+    "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "anchor_null": {"co_primary_15pct_adj_p": 0.248, "co_primary_es5pct_adj_p": 0.949}
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "EBCR-H002",
+      "orientation": "cheap_negative",
+      "registered_status": "registered_secondary_not_tested",
+      "review_conclusion": "Covered by frozen grid/orientations and extended data exist, but testing requires new experiment ID + independent predeclared rationale + new anchor/config. Selecting parameters from inspected grid hits is forbidden. Not testable in this activation without violating preregistration/multiplicity gates."
+    },
+    {
+      "hypothesis_id": "EBCR-H003",
+      "orientation": "absolute_extreme",
+      "registered_status": "registered_secondary_not_tested",
+      "review_conclusion": "Covered by frozen grid/orientations and extended data exist, but same constraints apply. Not testable in this activation without new preregistration independent of grid hits."
+    }
+  ],
+  "gates": {
+    "no_preregistration_from_grid_hits": true,
+    "frozen_artifacts_untouched": true,
+    "null_preserved": true,
+    "exclusions_preserved": 336,
+    "pit_rank_closed_verified": true
+  },
+  "next_concrete_task": "PIT rank inquiry CLOSED (verified free Wayback-CMC, rank_verified=true for all 13). No genuinely new free PIT rank source located. Continue durable-state upkeep/red-team follow-ups as unblocked; do not preregister H002/H003 from grid hits. Update handoff/task message with verified findings only."
+}
