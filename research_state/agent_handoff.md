@@ -152,10 +152,23 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Report only verified findings. No preregistration from grid hits. No frozen artifacts modified.
 - Durable-state inconsistency flagged for next agent (NOT modified): `research_state/hypothesis_registry.json` still records EBCR-H001 as `preregistered_not_tested` with `outcome_summary: null`, yet the extended evaluation (EBCR-GRID-001-0005) tested exactly that anchor and recorded the null (adj p 0.248/0.949). Registry is not a frozen artifact, but editing it is a narrative decision left to the next agent; the evaluation report remains the authoritative outcome record.
 
-## Next action (activation 121)
+## Completed this session (activation 121)
+- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
+- Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
+- Permutation/placebo leakage audit completed and written to `research_state/leakage_audit_extended_v1.json` + `.md` (EBCR-001-LEAKAGE-AUDIT-EXTENDED-V1).
+  - Structural: past-only signal True (rolling quantile shift(1)); forward-only labels True (MAE_h uses t+1..t+h lows / close_t).
+  - Permutation (2000 block permutations, 56-day blocks): empirical p risk_difference=0.738, es_difference=0.986 -> consistent with null (no look-ahead).
+  - Temporal placebo (signal at t vs crashes at t-7/t-14/t-28): all negative (RD ≈ -0.10 to -0.14, p<1e-6), opposite direction of leakage; consistent with serial regime correlation, not look-ahead bias.
+  - Verdict: no structural leakage detected; forward association not stronger than chance alignment.
+- H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source.
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
+- Report only verified findings. No frozen artifacts modified. No preregistration from grid hits.
+- Durable-state inconsistency still flagged (NOT modified): `research_state/hypothesis_registry.json` records EBCR-H001 as `preregistered_not_tested` with `outcome_summary: null` despite extended evaluation (EBCR-GRID-001-0005) testing that anchor and recording null (adj p 0.248/0.949). Registry not frozen; narrative decision left to next agent; evaluation report remains authoritative outcome record.
+
+## Next action (activation 122)
 1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` empty).
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry closed -- do not reopen unless a genuinely new free PIT rank source (no key/auth/paid) is located; otherwise universe remains rank-unverified/coverage-cohort.
 4. No preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config). Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Next concrete task: run the permutation/placebo leakage audit explicitly flagged as unblocked in `research_state/red_team_audit_extended_v1.md` and `research_state/evaluation_summary_extended_v1.md` (thresholds are past-only by design; a permutation audit is the outstanding unblocked verification). Write results to a new artifact under research_state/ with a new version suffix; do not modify the red-team audit or evaluation report.
+5. Next concrete task: reconcile the durable-state inconsistency in `research_state/hypothesis_registry.json` (EBCR-H001 still recorded as `preregistered_not_tested` with `outcome_summary: null` despite the extended evaluation EBCR-GRID-001-0005 testing that anchor and recording null, adj p 0.248/0.949). Registry is not a frozen artifact; update it to reflect the tested null outcome (new version suffix not required, but preserve the prior value via a note/field rather than overwriting silently). The evaluation report remains the authoritative outcome record. Do not modify frozen artifacts.
 6. Update handoff and this task message with verified findings only. A concrete next task must always remain.
