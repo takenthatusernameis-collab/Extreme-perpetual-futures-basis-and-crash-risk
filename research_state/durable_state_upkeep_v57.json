@@ -1,0 +1,63 @@
+{
+  "activation": 190,
+  "upkeep_version": "v57",
+  "timestamp_utc": "2026-10-25T22:08:06Z",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "config_sha256_matches_frozen": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "tests_pass": "11 passed",
+    "git_diff_check_clean": true,
+    "git_status_only_research_state": true
+  },
+  "hypothesis_registry_verification": {
+    "next_hypothesis_sequence": 4,
+    "H001": {
+      "status": "tested_not_supported",
+      "anchor_co_primary_adjusted_p_values": {
+        "crash_incidence_15pct": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae": 0.9485
+      },
+      "matches": true
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested",
+      "outcome_summary": null
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested",
+      "outcome_summary": null
+    },
+    "consistent": true
+  },
+  "cell_status_verification": {
+    "total_cells": 324,
+    "ok": 324,
+    "blocked": 0,
+    "failed": 0,
+    "incomplete": 0,
+    "invalid": 0,
+    "not_run": 0,
+    "exclusions_recorded": 336,
+    "matches_evaluation_report": true
+  },
+  "pit_verification": {
+    "rank_verified_all": true,
+    "count": 13,
+    "closed": true,
+    "durable_record": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "red_team_audit_extended_v1.json/md",
+    "leakage_audit_extended_v1.json/md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1",
+    "leakage_audit_verification_v1.md",
+    "robustness_prior_controls_extended_v2",
+    "h002_h003_feasibility_review_v1",
+    "durable_state_upkeep_v56.json"
+  ],
+  "verdict": "no_gaps_found",
+  "frozen_artifacts_modified": false,
+  "preregistration_from_grid_hits": false,
+  "notes": "Registry consistency confirmed; all audits reviewed, no new unaddressed gaps identified. Anchor null preserved."
+}
