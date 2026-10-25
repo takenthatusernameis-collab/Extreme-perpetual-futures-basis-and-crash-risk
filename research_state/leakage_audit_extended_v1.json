@@ -1,0 +1,136 @@
+{
+  "anchor": {
+    "basis_aggregation_days": 1,
+    "horizon_days": 14,
+    "orientation": "rich_positive",
+    "rolling_reference_days": 90,
+    "tail_quantile": 0.95
+  },
+  "anchor_cell_id": "EBCR-GRID-001-0005",
+  "anchor_observed_statistics": {
+    "es_control": -0.30962961612827994,
+    "es_difference": 0.0012269149613473584,
+    "es_signal": -0.3084027011669326,
+    "events_control": 850,
+    "events_signal": 65,
+    "n_control": 4709,
+    "n_signal": 301,
+    "rate_control": 0.18050541516245489,
+    "rate_signal": 0.2159468438538206,
+    "risk_difference": 0.03544142869136571
+  },
+  "config_path": "configs/basis_crash_grid_v1.json",
+  "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+  "experiment_id": "EBCR-001-EXTENDED-V1",
+  "generated_at_utc": "2026-10-25T11:48:13.791961+00:00",
+  "grid_id": "EBCR-GRID-001",
+  "integrated_rows_sha256": "e8a3ebab4baf151337a1de93313316f72a63da735f04cdd5d7f36abe37a50861",
+  "integrated_source": "research_state/integrated_extended_v1.json",
+  "leakage_verdict": {
+    "forward_only_labels": true,
+    "past_only_signal": true,
+    "permutation_consistent_with_null": true,
+    "placebo_null_for_all_lags": false,
+    "placebo_interpretation": "Placebo associations are NEGATIVE (rich basis at t follows calm past regimes), the opposite direction of leakage; consistent with serial regime correlation, not look-ahead bias."
+  },
+  "n_rows": 5010,
+  "n_symbols": 11,
+  "notes": [
+    "All statistics computed from research_state/integrated_extended_v1.json; nothing fabricated.",
+    "Permutation uses contiguous 56-day date blocks (same blocks across all symbols) to preserve cross-asset serial dependence while breaking signal-outcome alignment.",
+    "Temporal placebo tests signal at t against crashes already realized at t-7, t-14, t-28; under no leakage these associations should be null.",
+    "This audit verifies the design's causal time alignment; it does not re-estimate the preregistered evaluation or modify frozen artifacts."
+  ],
+  "permutation_test": {
+    "conclusion": "Observed anchor statistic within permutation null (no evidence of spurious alignment) if empirical p > 0.05.",
+    "empirical_p_values": {
+      "es_difference_perm_p": 0.9855,
+      "risk_difference_perm_p": 0.738
+    },
+    "observed": {
+      "es_difference": 0.0012269149613473584,
+      "n_control": 4709,
+      "n_signal": 301,
+      "risk_difference": 0.03544142869136571
+    },
+    "perm_null": {
+      "block_days": 56,
+      "es_difference_ci_2_5": -0.09087566812917403,
+      "es_difference_ci_97_5": 0.1237567856570671,
+      "es_difference_mean": 0.02448752763029016,
+      "es_difference_std": 0.05591038620430736,
+      "n_permutations": 2000,
+      "risk_difference_ci_2_5": -0.1330698061519685,
+      "risk_difference_ci_97_5": 0.20415413918702893,
+      "risk_difference_mean": 0.00010683982849979457,
+      "risk_difference_std": 0.09522509465561502
+    }
+  },
+  "program_id": "EBCR-001",
+  "report_id": "EBCR-001-LEAKAGE-AUDIT-EXTENDED-V1",
+  "schema_version": "1.0",
+  "structural_checks": {
+    "labels_use_forward_only": {
+      "description": "MAE_h uses spot/index lows from t+1 through t+h divided by close at t; horizons complete within window; no truncated or crossed horizons.",
+      "evidence": "research_state/integrated_extended_v1.json",
+      "verified": true
+    },
+    "threshold_uses_past_only": {
+      "description": "Rolling-L quantile threshold at day t computed exclusively from completed daily features at dates < t (rolling(L).quantile.shift(1)); current formation day excluded.",
+      "evidence": "scripts/leakage_audit_extended.py::compute_anchor_signal",
+      "verified": true
+    }
+  },
+  "symbols": [
+    "ADAUSDT",
+    "BCHUSDT",
+    "BNBUSDT",
+    "DOGEUSDT",
+    "LINKUSDT",
+    "NEARUSDT",
+    "SOLUSDT",
+    "TRXUSDT",
+    "XLMUSDT",
+    "XRPUSDT",
+    "ZECUSDT"
+  ],
+  "temporal_placebo": [
+    {
+      "events_control": 841,
+      "events_signal": 22,
+      "lag_days": 7,
+      "n_control": 4737,
+      "n_signal": 301,
+      "p_value": 5.126989673064192e-07,
+      "rate_control": 0.17753852649356133,
+      "rate_signal": 0.07308970099667775,
+      "risk_difference": -0.10444882549688358
+    },
+    {
+      "events_control": 847,
+      "events_signal": 11,
+      "lag_days": 14,
+      "n_control": 4737,
+      "n_signal": 301,
+      "p_value": 3.122309792951181e-13,
+      "rate_control": 0.17880515093941313,
+      "rate_signal": 0.036544850498338874,
+      "risk_difference": -0.14226030044107424
+    },
+    {
+      "events_control": 763,
+      "events_signal": 10,
+      "lag_days": 28,
+      "n_control": 4737,
+      "n_signal": 301,
+      "p_value": 8.227770497415961e-12,
+      "rate_control": 0.16107240869748787,
+      "rate_signal": 0.03322259136212625,
+      "risk_difference": -0.12784981733536163
+    }
+  ],
+  "window": {
+    "end": "2024-04-02",
+    "start": "2023-01-01"
+  }
+}
