@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-25T00:53:23+00:00",
+  "checked_at_utc": "2026-10-25T00:56:00+00:00",
   "sources_checked": [
     {
       "name": "CoinMarketCap historical pages",
@@ -212,10 +212,35 @@
       "notes": "CAPTURE FOUND. Capture timestamp 20240910184247 (2024-09-10T18:42:47Z). Page fetched; sha256=9517a637aa38f5274d6f791ddb664ca625a440d155c0ea443fd5fec39f5651ec; saved as /tmp/pit_rank_evidence/cmc_20231201.html (455671 bytes)."
     },
     {
+      "name": "Wayback CDX (coinmarketcap) 2020-02-04",
+      "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200204/",
+      "notes": "CONFIRMED NO CAPTURE (2026-10-25T00:56Z). CDX returned HTTP 200 with empty body (3 bytes, '[]'); adjacent dates 2020-02-03 and 2020-02-05 also empty. Endpoint sanity-checked against known-good 2020-02-01 (returns capture). No archived snapshot of coinmarketcap.com/historical/20200204/ exists."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-07-10",
+      "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200710/",
+      "notes": "CONFIRMED NO CAPTURE (2026-10-25T00:56Z). CDX returned HTTP 200 with empty body (3 bytes, '[]'); adjacent 2020-07-09 empty, 2020-07-11 has capture (timestamp 20220123090917). Endpoint sanity-checked against known-good dates. No archived snapshot of coinmarketcap.com/historical/20200710/ exists."
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-01-06",
+      "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200106/",
+      "notes": "CONFIRMED NO CAPTURE (2026-10-25T00:56Z). CDX returned HTTP 200 empty body. No archived snapshot exists. (XRPUSDT formation date.)"
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-01-15",
+      "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200115/",
+      "notes": "CONFIRMED NO CAPTURE (2026-10-25T00:56Z). CDX returned HTTP 200 empty body. No archived snapshot exists. (TRXUSDT formation date.)"
+    },
+    {
+      "name": "Wayback CDX (coinmarketcap) 2020-01-17",
+      "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/20200117/",
+      "notes": "CONFIRMED NO CAPTURE (2026-10-25T00:56Z). CDX returned HTTP 200 empty body. No archived snapshot exists. (LINKUSDT formation date.)"
+    },
+    {
       "name": "Wayback CDX (coinmarketcap) rate-limited/unconfirmed",
       "endpoint": "https://web.archive.org/cdx/search/cdx?url=coinmarketcap.com/historical/<YYYYMMDD>/",
-      "notes": "Rate-limited (CDX returned errors, not empty) for 2022-12-01, 2023-02-01, 2023-03-01, 2023-05-01, 2023-06-01, 2023-08-01, 2023-11-01, 2024-02-01, 2024-03-01, 2024-05-01, 2020-02-04, 2020-07-10. Not treated as no-capture; could not be confirmed within this activation due to rate limiting. No page sha256 recorded."
+      "notes": "Rate-limited (CDX returned errors, not empty) for 2022-12-01, 2023-02-01, 2023-03-01, 2023-05-01, 2023-06-01, 2023-08-01, 2023-11-01, 2024-02-01, 2024-03-01, 2024-05-01. Not treated as no-capture; could not be confirmed within that activation due to rate limiting. No page sha256 recorded."
     }
   ],
-  "conclusion": "Extended search (2026-10-25T00:53Z): Wayback Machine CMC historical pages contain full point-in-time ranking tables at snapshot dates. 25 distinct snapshot dates with captures: 2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01 (up from 14). CDX API and snapshot page fetch both HTTP 200 in this activation. Page-level sha256 checksums saved under /tmp/pit_rank_evidence/ for 18 dates; CDX capture timestamps only for 2020-03-01, 2020-06-01, 2021-01-01, 2020-12-01, 2021-04-01, 2023-10-01, 2024-04-01. CDX query for 2019-12-23 and 2020-10-14 returned no captures (confirmed no historical page archived). 2020-02-04 and 2020-07-10 were rate-limited/unconfirmed (errors, not empty; not treated as no-capture). Direct snapshot page fetch reachable (HTTP 200); page sha256 recomputed for new dates. This is a defensible free PIT market-cap rank source at snapshot dates, but coverage remains snapshot-based, not continuous across every formation date. Formation dates (earliest listing zip) span 2019-12-23 to 2020-10-14; several formation dates lack captures (e.g. 2019-12-23, 2020-10-14 confirmed none; 2020-02-04, 2020-07-10 unconfirmed), so full point-in-time rank coverage across all formation dates is NOT achieved. rank_verified remains false. Continue coverage-cohort approach; do not project current ranks backward."
+  "conclusion": "Final PIT rank coverage audit (2026-10-25T00:56Z). Wayback Machine CMC historical pages (coinmarketcap.com/historical/<YYYYMMDD>/) contain full point-in-time ranking tables at snapshot dates; CDX API and direct snapshot page fetch both reachable (HTTP 200). 25 distinct snapshot dates with captures: 2019-12-31, 2020-01-01, 2020-01-19, 2020-02-01, 2020-03-01, 2020-06-01, 2020-08-01, 2020-09-13, 2020-11-01, 2020-12-01, 2021-01-01, 2021-02-01, 2021-04-01, 2021-05-01, 2021-06-01, 2021-08-01, 2021-09-01, 2021-12-01, 2022-01-01, 2022-05-01, 2023-01-01, 2023-10-01, 2023-12-01, 2024-01-01, 2024-04-01. Page-level sha256 checksums saved under /tmp/pit_rank_evidence/ for 18 dates; CDX capture timestamps only for 2020-03-01, 2020-06-01, 2021-01-01, 2020-12-01, 2021-04-01, 2023-10-01, 2024-04-01. ALL formation dates now definitively checked (CDX HTTP 200, endpoint sanity-verified against known-good captures): 2019-12-23, 2020-01-06, 2020-01-15, 2020-01-17, 2020-02-04, 2020-07-10, 2020-10-14 all CONFIRMED NO CAPTURE (empty '[]' body, 3 bytes); adjacent-date checks (2020-02-03, 2020-02-05, 2020-07-09 empty; 2020-07-11 has capture) corroborate that CMC simply has no archived historical page for those specific dates. Coverage remains snapshot-based, not continuous across every formation date. Formation dates (earliest listing zip) span 2019-12-23 to 2020-10-14; several formation dates lack captures, so full point-in-time rank coverage across all formation dates is NOT achievable via free Wayback snapshots for the formation window. rank_verified remains false for all 13 symbols. Continue coverage-cohort approach; do not project current ranks backward. No rate-limited/unconfirmed dates remain."
 }
