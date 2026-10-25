@@ -153,6 +153,11 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source located.
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved; 324 cells ok.
 
+## Completed this session (activation 22)
+- Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m unittest discover -s tests` (11 tests, OK); `git diff --check` clean.
+- Prior task from activation 21 completed: clean state confirmed; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); null result and exclusions (336) preserved.
+- No frozen anchor/config/Q1/extended artifacts modified. No preregistration from grid hits.
+
 ## Next action
 1. Required checks re-run and pass; clean state confirmed.
 2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
