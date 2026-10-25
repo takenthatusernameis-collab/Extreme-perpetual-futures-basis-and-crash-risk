@@ -93,3 +93,14 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 (End of file - total updated)
 ## PIT rank coverage expanded (2026-10-24T23:55Z)
 - CDX queried for 2019-12-23, 2020-01-17, 2020-01-19, 2020-02-04, 2020-07-10, 2020-09-13, 2020-10-14. Only 2020-01-19 had a capture (timestamp 2020-11-26T21:13:11Z, sha256 520b694b…); saved as /tmp/pit_rank_evidence/cmc_20200119.html. Other six dates have no archived capture. Total captures now 7 dates. rank_verified remains false pending full point-in-time coverage across all formation dates. research_state/pit_rank_search_v1.json updated.
+
+## Completed this session (activation 13)
+- Required checks re-run and pass: grid manifest 324 cells (config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); 11 unittest tests pass (python3 -m unittest discover -s tests); git diff --check clean.
+- PIT rank line of inquiry remains closed: all formation dates definitively checked; 7 confirmed no capture; 0 rate-limited/unconfirmed remaining; rank_verified=false for all 13 symbols; coverage-cohort approach is final. No frozen anchor/config/Q1/extended artifacts modified. H002/H003 remain registered_secondary_not_tested.
+- No preregistration of cheap-negative/absolute-extreme from grid hits. Null result preserved.
+
+## Next action
+1. Coverage-cohort follow-up: audit research_state/data_coverage_ledger.json and research_state/candidate_perp_mapping_v1.json for consistency across all 13 symbols (listing_verified, missing-day counts, retrieved_at_utc/sha256 fields); document any gaps without fabricating hashes. Do not modify frozen anchor/config/Q1/extended artifacts.
+2. H002 (cheap_negative) and H003 (absolute_extreme) remain registered_secondary_not_tested; not preregistered from grid hits.
+3. Re-run required checks before any further change: manifest, unittest, git diff --check.
+4. Update handoff and task message with verified findings only. A concrete next task must always remain.
