@@ -1,0 +1,64 @@
+{
+  "activation": 158,
+  "version": "v26",
+  "timestamp_utc": "2026-10-25T18:21:29Z",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen": true
+    },
+    "pytest": {
+      "command": "python3 -m pytest -q tests",
+      "result": "11 passed"
+    },
+    "git_diff_check": "clean",
+    "git_status_short_tracked_clean": true
+  },
+  "hypothesis_registry": {
+    "verified": true,
+    "H001": {
+      "status": "tested_not_supported",
+      "anchor_cell_id": "EBCR-GRID-001-0005",
+      "co_primary": {
+        "crash_incidence_15pct_adj_p": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+      },
+      "matches_anchor_null": true
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "modifications": []
+  },
+  "red_team_audit": {
+    "source": "research_state/red_team_audit_extended_v1.json",
+    "reviewed": true,
+    "unaddressed_gaps_found": false,
+    "notes": [
+      "Anchor null preserved (not significant after correction).",
+      "PIT verification reflected (rank_verified true for all 13).",
+      "Leakage/survivorship/multiplicity/horizons addressed per audit; confounding remains caveat (predictive association only)."
+    ]
+  },
+  "frozen_artifacts": {
+    "modified": false,
+    "config_path": "configs/basis_crash_grid_v1.json",
+    "anchor_q1_extended_untouched": true
+  },
+  "pit": {
+    "status": "CLOSED",
+    "rank_verified_all13": true,
+    "evidence_dir": "/tmp/pit_rank_evidence/"
+  },
+  "null_and_exclusions": {
+    "anchor_null_preserved": true,
+    "exclusions_missing_label": 336,
+    "cells_ok": 324
+  },
+  "verdict": "no_gaps_found"
+}
