@@ -37,7 +37,7 @@
     "registered_grid_tests": 2592,
     "tests_with_pvalue": 2451
   },
-  "generated_at_utc": "2026-10-24T21:52:41Z",
+  "generated_at_utc": "2026-10-25T13:46:33Z",
   "leakage_permutation_placebo": {
     "labels_start_at_t1": {
       "description": "Forward outcomes use t+1 onward; horizons complete within window.",
@@ -79,10 +79,10 @@
     },
     "exclusions_total": 336,
     "notes": [
-      "Exclusions recorded and preserved.",
-      "PIT rank verification ongoing per point-in-time-universe skill."
+      "Exclusions recorded and preserved (missing_label=336).",
+      "PIT rank verification completed via Wayback Machine CMC historical snapshots (__NEXT_DATA__ parsed); rank_verified=true for all 13 Binance-UM perp symbols in the coverage cohort (see research_state/pit_rank_verification_v1.json)."
     ],
-    "selection_risk": "Possible if missingness correlates with basis/crash dynamics; cannot rule out without fuller PIT history."
+    "selection_risk": "PIT ranks now verified for the coverage cohort (13 symbols) via free Wayback-CMC snapshots; selection risk from missing rank history is reduced for this cohort. Residual missingness (exclusions=336, missing_label) remains recorded and preserved."
   },
   "thin_tail_event_count_adequacy": {
     "adequacy": "Event counts moderate; worst-5% ES estimated but sensitive to tail sparsity.",
