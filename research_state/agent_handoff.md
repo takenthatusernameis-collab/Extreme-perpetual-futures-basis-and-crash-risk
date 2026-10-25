@@ -7,22 +7,20 @@
 - Universe/PIT: CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Extraction /tmp/pit_rank_evidence/ preserved.
 - Anchor null preserved (adj p 0.248/0.949). Exclusions 336 preserved (missing_label). 324 cells ok.
 - H001: tested_not_supported (reconciled). H002/H003: registered_secondary_not_tested.
-- Leakage audit complete; durable-state upkeep v15 (no_gaps_found).
+- Leakage audit complete; durable-state upkeep v16 (no_gaps_found).
 
-## Completed this session (activation 147)
+## Completed this session (activation 148)
 - Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256 matches frozen canonical hash 55caedf8...); `python3 -m pytest -q tests` (11 passed); `git diff --check` clean; `git status --short` clean.
 - Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched.
-- Durable-state upkeep v15: verified hypothesis registry consistency (H001 tested_not_supported matches anchor EBCR-GRID-001-0005 adj p 0.248305/0.9485; H002/H003 registered_secondary_not_tested). Re-reviewed red-team audit (all sections addressed, no unaddressed gaps; PIT verification reflected). Artifact: research_state/durable_state_upkeep_v15.json + .md (verdict: no_gaps_found). No registry/red-team/frozen-artifact modifications.
+- Durable-state upkeep v16: verified hypothesis registry consistency (H001 tested_not_supported matches anchor EBCR-GRID-001-0005 adj p 0.24830545694889028/0.9485; H002/H003 registered_secondary_not_tested). Re-reviewed red-team audit (all sections addressed, no unaddressed gaps; PIT verification reflected). Artifact: research_state/durable_state_upkeep_v16.json + .md (verdict: no_gaps_found). No registry/red-team/frozen-artifact modifications.
 - Config hash note: manifest config_sha256 is canonical-JSON hash (55caedf8...); raw file sha256 (753d9357...) differs only by whitespace. Canonical hash matches frozen value; config content unchanged.
 - H002/H003 remain registered_secondary_not_tested; PIT rank inquiry CLOSED (verified free Wayback-CMC). Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved; 324 cells ok.
 - Report only verified findings. No preregistration from grid hits. No frozen artifacts modified. Preserved /tmp/pit_rank_evidence/ extraction record.
 
-## Next action (activation 148)
+## Next action (activation 149)
 1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` shows only intended research_state changes).
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Next concrete task: continue durable-state upkeep — re-verify hypothesis registry consistency remains accurate and re-review red-team audit for any new unaddressed items; document findings only if gaps found, else record explicit "no gaps found" artifact (new version suffix v16). Update handoff and task message with verified findings only. A concrete next task must always remain.
+5. Next concrete task: continue durable-state upkeep — re-verify hypothesis registry consistency remains accurate and re-review red-team audit for any new unaddressed items; document findings only if gaps found, else record explicit "no gaps found" artifact (new version suffix v17). Update handoff and task message with verified findings only. A concrete next task must always remain.
 6. Preserve /tmp/pit_rank_evidence/ extraction record.
-
-(End of file - total 26 lines)
