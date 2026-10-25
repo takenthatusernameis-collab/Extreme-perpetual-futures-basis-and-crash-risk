@@ -1,46 +1,53 @@
 {
   "schema_version": "1.0",
+  "program_id": "EBCR-001",
   "activation": 156,
   "upkeep_version": 24,
-  "verdict": "no_gaps_found",
+  "timestamp_utc": "2026-10-25T18:19:20Z",
   "checks": {
-    "grid_manifest": {
-      "cells": 324,
+    "required_checks": {
+      "grid_manifest_regenerated": true,
+      "manifest_cells": 324,
       "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-      "matches_frozen": true
+      "tests": {"command": "python3 -m pytest -q tests", "result": "11 passed"},
+      "git_diff_check_clean": true,
+      "git_status_short_clean_tracked": true
     },
-    "pytest": "11 passed",
-    "git_diff_check": "clean",
-    "git_status_short_tracked": "clean"
-  },
-  "hypotheses": {
-    "EBCR-H001": {
-      "status": "tested_not_supported",
-      "anchor_cell_id": "EBCR-GRID-001-0005",
-      "crash_incidence_15pct_adj_p": 0.24830545694889028,
-      "es5_mae_adj_p": 0.9485,
-      "null_preserved": true
+    "hypothesis_registry_consistency": {
+      "verified": true,
+      "H001": {
+        "status": "tested_not_supported",
+        "anchor": "EBCR-GRID-001-0005",
+        "co_primary_adjusted_p": {
+          "crash_incidence_15pct": 0.24830545694889028,
+          "expected_shortfall_5pct_forward_mae": 0.9485
+        },
+        "matches": true
+      },
+      "H002": {"status": "registered_secondary_not_tested", "matches": true},
+      "H003": {"status": "registered_secondary_not_tested", "matches": true},
+      "notes": "No registry modifications."
     },
-    "EBCR-H002": {
-      "status": "registered_secondary_not_tested"
+    "red_team_audit_review": {
+      "reviewed": ["research_state/red_team_audit_extended_v1.json", "research_state/red_team_audit_extended_v1.md"],
+      "pit_verification_reflected": true,
+      "new_unaddressed_items_found": false,
+      "notes": "PIT rank inquiry CLOSED (verified free Wayback-CMC). No new gaps identified."
     },
-    "EBCR-H003": {
-      "status": "registered_secondary_not_tested"
+    "frozen_artifacts": {
+      "modified": false,
+      "config": "configs/basis_crash_grid_v1.json",
+      "anchor_q1_extended_untouched": true
+    },
+    "preserved": {
+      "exclusions": 336,
+      "pit_extraction_record": "/tmp/pit_rank_evidence/",
+      "no_prereg_from_grid_hits": true
     }
   },
-  "red_team": {
-    "reviewed": true,
-    "artifact": "research_state/red_team_audit_extended_v1.json",
-    "artifact_md": "research_state/red_team_audit_extended_v1.md",
-    "pit_verification_reflected": true,
-    "unaddressed_gaps": []
-  },
-  "invariants": {
-    "exclusions": 336,
-    "cells_ok": 324,
-    "pit_closed": true,
-    "frozen_artifacts_untouched": true,
-    "pit_evidence_preserved": true
-  },
-  "notes": "Durable-state upkeep only; no registry/red-team/frozen-artifact modifications."
+  "verdict": "no_gaps_found",
+  "artifacts_created": [
+    "research_state/durable_state_upkeep_v24.json",
+    "research_state/durable_state_upkeep_v24.md"
+  ]
 }
