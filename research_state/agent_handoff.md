@@ -168,6 +168,11 @@ Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions
 - Prior task from activation 23 completed: clean state confirmed; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); null result and exclusions (336) preserved.
 - No frozen anchor/config/Q1/extended artifacts modified. No preregistration from grid hits.
 
+## Completed this session (activation 25)
+- Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); 11 unittest tests pass; git diff --check clean.
+- Prior task from activation 24 completed: clean state confirmed; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); null result and exclusions (336) preserved.
+- No frozen anchor/config/Q1/extended artifacts modified. No preregistration from grid hits.
+
 ## Next action
 1. Required checks re-run and pass; clean state confirmed.
 2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
