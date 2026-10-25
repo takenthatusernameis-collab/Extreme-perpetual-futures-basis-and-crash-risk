@@ -36,11 +36,19 @@
 - Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label).
 - Updated handoff and task message with verified findings only. No preregistration from grid hits.
 
+## Completed this session (activation 105)
+- Required checks re-run and pass: grid manifest regenerated via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (324 cells, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config); `python3 -m pytest -q tests` (11 tests, OK); `git diff --check` clean; `git status --short` empty.
+- Clean state confirmed; frozen anchor/config/Q1/extended artifacts untouched (git status empty; no JSON/YAML changed).
+- H002/H003 remain registered_secondary_not_tested; PIT rank inquiry closed (coverage-cohort, rank_verified=false for all 13); no new free PIT rank source located.
+- Anchor null preserved (adj p 0.248/0.949); exclusions 336 preserved (missing_label); 324 cells ok.
+- Report only verified findings. No preregistration from grid hits. No frozen artifacts modified.
+
 ## Reporting rules
 Separate completed, blocked, failed, incomplete and not-run. Preserve exclusions. A concrete next task must always remain.
 
-## Next action
-1. Required checks re-run and pass at activation 104 (manifest 324 cells config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 11 pytest tests pass; git diff --check clean; git status clean).
-2. H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config).
-3. PIT rank inquiry closed; coverage-cohort final; rank_verified=false for all 13. If a genuinely new free PIT rank source (no key, no auth, no paid plan) is located, reopen PIT rank inquiry with a new activation; otherwise universe remains rank-unverified/coverage-cohort.
-4. Next concrete task (activation 105): re-run required checks to confirm clean state; maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949). Report only verified findings. A concrete next task must always remain.
+## Next action (activation 106)
+1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` empty).
+2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
+3. PIT rank inquiry closed -- do not reopen unless a genuinely new free PIT rank source (no key/auth/paid) is located; otherwise universe remains rank-unverified/coverage-cohort.
+4. No preregistration from grid hits (requires new experiment ID + independent predeclared rationale + new anchor/config). Do not modify frozen anchor/config/Q1/extended artifacts.
+5. Update handoff and this task message with verified findings only. A concrete next task must always remain.
