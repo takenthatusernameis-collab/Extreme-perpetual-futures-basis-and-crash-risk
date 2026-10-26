@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v150",
+  "activation": 283,
+  "timestamp_utc": "2026-10-26T12:19:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "output_path": "/tmp/basis-grid-manifest.json"
+      },
+      "tests": {
+        "ok": true,
+        "runner": "unittest",
+        "count": 11
+      },
+      "git_diff_check": "clean",
+      "git_status": "clean"
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "h001": "tested_not_supported",
+      "h002": "registered_secondary_not_tested",
+      "h003": "registered_secondary_not_tested"
+    },
+    "cell_ledger": {
+      "extended_v1": {
+        "ok": 324,
+        "exclusions": 336
+      }
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor_null_preserved": true,
+    "audits_reviewed": [
+      "evaluation_artifact_audit_v1",
+      "evaluation_ledger_consistency_audit_v1",
+      "leakage_audit_extended_v1",
+      "leakage_audit_verification_v1",
+      "red_team_audit_extended_v1",
+      "robustness_prior_controls_extended_v2",
+      "h002_h003_feasibility_review_v1",
+      "negative_results_report_v1",
+      "source_audit",
+      "verified_symbols_s3_audit"
+    ],
+    "gaps_found": false
+  },
+  "notes": "Activation 283: Re-ran required checks (manifest/tests/git clean). Re-verified hypothesis registry consistency and re-reviewed on-disk audits. No new unaddressed items found. Anchor null preserved (adj p 0.248/0.949). Exclusions 336. H002/H003 remain registered_secondary_not_tested. PIT rank inquiry CLOSED. No frozen artifacts modified."
+}
