@@ -1,0 +1,66 @@
+{
+  "artifact_id": "durable_state_upkeep_v203",
+  "activation": 336,
+  "generated_at_utc": "2026-10-26T20:26:54Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "output": "/tmp/basis-grid-manifest.json",
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "tests": {
+        "ok": true,
+        "ran": 11,
+        "result": "OK"
+      },
+      "git_diff_check": true,
+      "git_status_clean": true
+    },
+    "hypothesis_registry": {
+      "ok": true,
+      "hypotheses": [
+        {
+          "hypothesis_id": "EBCR-H001",
+          "status": "tested_not_supported"
+        },
+        {
+          "hypothesis_id": "EBCR-H002",
+          "status": "registered_secondary_not_tested"
+        },
+        {
+          "hypothesis_id": "EBCR-H003",
+          "status": "registered_secondary_not_tested"
+        }
+      ],
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger_extended_v1": {
+      "ok": true,
+      "total": 324,
+      "statuses": {
+        "ok": 324
+      }
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor_null": {
+      "preserved": true,
+      "crash_incidence_15pct_adjusted_p": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae_adjusted_p": 0.9485
+    },
+    "exclusions": 336,
+    "audits_reviewed": [
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/verified_symbols_s3_audit.json"
+    ],
+    "new_unaddressed_items": false
+  },
+  "notes": "Activation 336 upkeep: all checks pass; no gaps found. No frozen artifacts modified."
+}
