@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v68",
+  "activation": 201,
+  "created_at_utc": "2026-10-26T00:21:13Z",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "pytest_passed": 11,
+    "git_diff_check_clean": true,
+    "git_status_only_research_state_changes": true
+  },
+  "verifications": {
+    "hypothesis_registry": {
+      "h001_status": "tested_not_supported",
+      "h001_anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
+      "h001_anchor_adj_p_es5pct_mae": 0.9485,
+      "h002_status": "registered_secondary_not_tested",
+      "h003_status": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_status_ledger_extended_v1": {
+      "ok": 324,
+      "total": 324
+    },
+    "pit_rank_verification_v1": {
+      "n_symbols": 13,
+      "rank_verified_all": true
+    }
+  },
+  "audits_reviewed": [
+    "red-team_audit_extended_v1",
+    "leakage_audit_extended_v1",
+    "leakage_audit_verification_v1",
+    "evaluation_ledger_consistency_audit_v1",
+    "evaluation_artifact_audit_v1",
+    "robustness_prior_controls_extended_v2",
+    "h002_h003_feasibility_review_v1",
+    "durable_state_upkeep_v58_v67"
+  ],
+  "verdict": "no_gaps_found",
+  "notes": "Activation 201: required checks pass; hypothesis/cell/PIT state unchanged and consistent; audits reviewed with no new unaddressed gaps. Anchor null preserved (adj p 0.248/0.949), exclusions 336 preserved, H002/H003 registered_secondary_not_tested, PIT rank inquiry CLOSED. No frozen artifacts modified, no preregistration from grid hits."
+}
