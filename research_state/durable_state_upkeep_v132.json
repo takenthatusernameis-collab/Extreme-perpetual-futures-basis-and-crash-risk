@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 265,
+  "upkeep_version": 132,
+  "generated_at_utc": "2026-10-26T09:06:00+00:00",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "manifest_regenerated": true,
+      "manifest_output": "/tmp/basis-grid-manifest.json",
+      "config_sha256_manifest_matches_frozen_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "tests": {
+        "command": "python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract",
+        "ran": 11,
+        "passed": 11
+      },
+      "git_diff_check_clean": true,
+      "git_status_clean": true
+    },
+    "hypothesis_registry": {
+      "next_hypothesis_sequence": 4,
+      "H001": {
+        "status": "tested_not_supported",
+        "anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "anchor_adj_p_es5pct_mae": 0.9485
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      }
+    },
+    "cell_status_ledger_extended_v1": {
+      "n_cells": 324,
+      "ok": 324,
+      "non_ok": 0,
+      "exclusions_preserved": 336
+    },
+    "pit": {
+      "status": "CLOSED",
+      "n_symbols": 13,
+      "all_rank_verified": true,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "red_team_audit_extended_v1",
+      "leakage_audit_extended_v1",
+      "robustness_prior_controls_extended_v2",
+      "h002_h003_feasibility_review_v1"
+    ],
+    "frozen_artifacts_unchanged": [
+      "configs/basis_crash_grid_v1.json",
+      "research_state/evaluation_report_extended_v1.json",
+      "research_state/evaluation_summary_extended_v1.md"
+    ]
+  },
+  "notes": "Activation 265 upkeep: required checks pass (324 cells, config_sha256 matches frozen canonical). Hypotheses consistent; 324 ok/0 non-ok, exclusions 336 preserved. PIT CLOSED with verified free Wayback-CMC evidence. Audits internally consistent with anchor null; no gaps found. No preregistration from grid hits."
+}
