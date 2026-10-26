@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V143",
+  "program_id": "EBCR-001",
+  "activation": 276,
+  "generated_at_utc": "2026-10-26T10:48:25.000000+00:00",
+  "checks_run": [
+    {
+      "name": "grid_manifest",
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "result": "ok",
+      "details": "324 cells, config_sha256 matches frozen canonical 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    {
+      "name": "tests",
+      "command": "python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract",
+      "result": "ok",
+      "details": "11 passed"
+    },
+    {
+      "name": "git_diff_check",
+      "command": "git diff --check",
+      "result": "ok",
+      "details": "clean"
+    },
+    {
+      "name": "git_status_short",
+      "command": "git status --short",
+      "result": "ok",
+      "details": "clean"
+    }
+  ],
+  "hypothesis_registry_consistency": {
+    "next_hypothesis_sequence": 4,
+    "hypotheses": [
+      {
+        "hypothesis_id": "EBCR-H001",
+        "status": "tested_not_supported",
+        "anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "anchor_adj_p_es_5pct_forward_mae": 0.9485,
+        "verdict": "null_preserved_not_significant"
+      },
+      {
+        "hypothesis_id": "EBCR-H002",
+        "status": "registered_secondary_not_tested"
+      },
+      {
+        "hypothesis_id": "EBCR-H003",
+        "status": "registered_secondary_not_tested"
+      }
+    ],
+    "consistent": true
+  },
+  "cell_ledger_consistency": {
+    "source": "research_state/cell_status_ledger_extended_v1.json",
+    "experiment_id": "EBCR-001-EXTENDED-V1",
+    "grid_id": "EBCR-GRID-001",
+    "n_cells_total": 324,
+    "cells_ok": 324,
+    "cells_non_ok": 0,
+    "exclusions_preserved": 336,
+    "consistent": true
+  },
+  "pit_rank_verification": {
+    "source": "research_state/pit_rank_verification_v1.json",
+    "status": "CLOSED",
+    "rank_verified_all_13": true,
+    "durable_record_persistent": true
+  },
+  "audits_reviewed": [
+    "red_team_audit_extended_v1",
+    "leakage_audit_extended_v1",
+    "robustness_prior_controls_extended_v2",
+    "h002_h003_feasibility_review_v1"
+  ],
+  "new_gaps_found": false,
+  "verdict": "no_gaps_found",
+  "notes": [
+    "No frozen artifacts modified.",
+    "No preregistration from grid hits.",
+    "Anchor null preserved; exclusions 336 preserved; H002/H003 remain registered_secondary_not_tested; PIT rank inquiry CLOSED."
+  ]
+}
