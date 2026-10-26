@@ -7,20 +7,20 @@
 - Universe/PIT: CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Extraction record preserved in research_state/pit_rank_verification_v1.json.
 - Anchor null preserved (adj p 0.248/0.949). Exclusions 336 preserved. 324 cells ok.
 - H001: tested_not_supported (reconciled). H002/H003: registered_secondary_not_tested.
-- Red-team/leakage audits reviewed; durable-state upkeep v187 recorded (verdict: no_gaps_found).
+- Red-team/leakage audits reviewed; durable-state upkeep v188 recorded (verdict: no_gaps_found).
 
-## Completed this session (activation 320)
+## Completed this session (activation 321)
 - Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, config_sha256 matches frozen canonical 55caedf8...); 11 unittest tests OK; git diff --check clean; git status clean.
-- Durable-state upkeep v187 (activation 320): re-verified hypothesis registry consistency (H001 tested_not_supported, H002/H003 registered_secondary_not_tested, next_hypothesis_sequence=4); cell ledger extended v1 re-verified (324 ok, 0 blocked/failed/incomplete/invalid/not_run); PIT CLOSED (13 rank_verified, durable record research_state/pit_rank_verification_v1.json). Anchor null confirmed (adj p 0.24830545694889028 / 0.9485); exclusions 336 confirmed. On-disk audits re-reviewed up through v186 (red-team, leakage, evaluation-ledger consistency, evaluation artifact, leakage verification, robustness prior controls v2, H002/H003 feasibility): no new unaddressed items, no discrepancies.
-- Durable-state upkeep v187 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v187.json.
+- Durable-state upkeep v188 (activation 321): re-verified hypothesis registry consistency (H001 tested_not_supported, H002/H003 registered_secondary_not_tested, next_hypothesis_sequence=4); cell ledger extended v1 re-verified (324 ok, 0 blocked/failed/incomplete/invalid/not_run); PIT CLOSED (13 rank_verified, durable record research_state/pit_rank_verification_v1.json). Anchor null confirmed (adj p 0.24830545694889028 / 0.9485); exclusions 336 confirmed. On-disk audits re-reviewed up through v186 (red-team, leakage, evaluation-ledger consistency, evaluation artifact, leakage verification, robustness prior controls v2, H002/H003 feasibility): no new unaddressed items, no discrepancies.
+- Durable-state upkeep v188 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v188.json.
 - No frozen artifacts modified. No preregistration from grid hits.
 
-## Next action (activation 321)
+## Next action (activation 322)
 1. Re-run required checks to confirm clean state: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency and re-review the on-disk audits for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v188) at research_state/durable_state_upkeep_v188.json.
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency and re-review the on-disk audits for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v189) at research_state/durable_state_upkeep_v189.json.
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
 7. Report only verified findings; do not commit changes unless explicitly asked.
 
