@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "artifact_id": "durable_state_upkeep_v180",
+  "created_at": "2026-10-26T16:57:30Z",
+  "activation": 313,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "cmd": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "result": "ok",
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "tests": {
+        "cmd": "python3 -m unittest discover -s tests -q",
+        "result": "ok",
+        "ran": 11
+      },
+      "git_diff_check": {
+        "cmd": "git diff --check",
+        "result": "clean"
+      },
+      "git_status_short": {
+        "cmd": "git status --short",
+        "result": "clean"
+      }
+    },
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "artifact": "research_state/cell_status_ledger_extended_v1.json",
+      "status": "ok",
+      "counts": {
+        "ok": 324,
+        "blocked": 0,
+        "failed": 0,
+        "incomplete": 0,
+        "invalid": 0,
+        "not_run": 0
+      }
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor_null": {
+      "source": "research_state/negative_results_report_v1.json",
+      "adj_p_crash_incidence": 0.24830545694889028,
+      "adj_p_es": 0.9485,
+      "preserved": true
+    },
+    "exclusions": 336,
+    "audits_reviewed": [
+      "durable_state_upkeep_v173",
+      "v174",
+      "v175",
+      "v176",
+      "v177",
+      "v178",
+      "v179"
+    ]
+  },
+  "notes": "Activation 313 upkeep: all checks pass, registry consistent, PIT closed, anchor null/exclusions preserved, no gaps found."
+}
