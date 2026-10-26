@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "EBCR-001-DURABLE-UPKEEP-V147",
+  "activation": 280,
+  "timestamp_utc": "2026-10-26T10:55:00Z",
+  "checks": [
+    "grid_manifest_regenerated",
+    "tests_passed_unittest_11_of_11",
+    "git_diff_check_clean",
+    "git_status_clean"
+  ],
+  "hypothesis_registry_consistency": {
+    "verified": true,
+    "h001": "tested_not_supported",
+    "h002": "registered_secondary_not_tested",
+    "h003": "registered_secondary_not_tested",
+    "no_preregistration_from_grid_hits": true
+  },
+  "ledgers": {
+    "cell_status_ledger_extended_v1": {
+      "ok": 324,
+      "exclusions": 336
+    },
+    "anchor_null_preserved": true,
+    "adjusted_p_values": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    }
+  },
+  "pit": {
+    "status": "CLOSED",
+    "rank_verified_all": 13,
+    "durable_record": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/leakage_audit_extended_v1.json",
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/leakage_audit_verification_v1.md",
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/robustness_prior_controls_extended_v2.json",
+    "research_state/robustness_prior_controls_extended_v2.md",
+    "research_state/h002_h003_feasibility_review_v1.json",
+    "research_state/h002_h003_feasibility_review_v1.md",
+    "research_state/negative_results_report_v1.json",
+    "research_state/negative_results_report_v1.md",
+    "research_state/source_audit.md",
+    "research_state/verified_symbols_s3_audit.json"
+  ],
+  "unaddressed_items_found": [],
+  "verdict": "no_gaps_found",
+  "notes": "Activation 280 upkeep complete. All invariants preserved; no frozen artifacts modified. PIT rank inquiry remains CLOSED; H002/H003 remain registered_secondary_not_tested."
+}
