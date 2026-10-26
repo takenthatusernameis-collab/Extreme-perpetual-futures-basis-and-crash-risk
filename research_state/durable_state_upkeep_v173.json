@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v173",
+  "activation": 306,
+  "timestamp_utc": "2026-10-26T15:42:19Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "output_path": "/tmp/basis-grid-manifest.json",
+        "note": "Canonical JSON sha256 of frozen config matches."
+      },
+      "tests": {
+        "ok": true,
+        "runner": "unittest",
+        "count": 11,
+        "note": "python3 -m unittest discover -s tests -q -> 11 tests OK."
+      },
+      "git_diff_check": "clean",
+      "git_status": "clean"
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "h001": "tested_not_supported",
+      "h002": "registered_secondary_not_tested",
+      "h003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "extended_v1": {
+        "ok": 324,
+        "exclusions": 336,
+        "config_sha256_recorded": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+        "status_counts": {
+          "ok": 324,
+          "blocked": 0,
+          "failed": 0,
+          "incomplete": 0,
+          "invalid": 0,
+          "not_run": 0
+        },
+        "matches_run_manifest": true
+      }
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor_null_preserved": true,
+    "anchor_adj_p": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    },
+    "audits_reviewed": [
+      "evaluation_artifact_audit_v1",
+      "evaluation_ledger_consistency_audit_v1",
+      "leakage_audit_extended_v1",
+      "leakage_audit_verification_v1",
+      "red_team_audit_extended_v1",
+      "robustness_prior_controls_extended_v2",
+      "h002_h003_feasibility_review_v1",
+      "negative_results_report_v1",
+      "source_audit",
+      "verified_symbols_s3_audit",
+      "pit_ranks_anchor_interpretation_v1",
+      "evaluation_summary_extended_v1",
+      "robustness_prior_controls_extended_v1",
+      "h002_h003_feasibility_v1",
+      "durable_state_upkeep_v166",
+      "durable_state_upkeep_v167",
+      "durable_state_upkeep_v168",
+      "durable_state_upkeep_v169",
+      "durable_state_upkeep_v170",
+      "durable_state_upkeep_v171",
+      "durable_state_upkeep_v172"
+    ]
+  },
+  "gaps_found": false,
+  "notes": "Activation 306: Re-ran required checks (grid manifest regenerated 324 cells, config_sha256 matches frozen canonical 55caedf8...; 11 unittest tests OK; git diff --check clean; git status clean). Re-verified hypothesis registry consistency (H001 tested_not_supported, H002/H003 registered_secondary_not_tested; next_hypothesis_sequence=4). Re-reviewed all on-disk audits (incl. v172): consistent with frozen anchor null (adj p 0.248/0.949), 324 ok cells, exclusions 336, H002/H003 registered_secondary_not_tested. Cell ledger extended v1 re-verified. PIT CLOSED (13 rank_verified). No unaddressed items, no discrepancies. No frozen artifacts modified. No preregistration from grid hits."
+}
