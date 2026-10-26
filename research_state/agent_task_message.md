@@ -1,6 +1,6 @@
-# Agent task message (activation 206)
+# Agent task message (activation 207)
 
-## Prior task (from handoff activation 205)
+## Prior task (from handoff activation 206)
 1. Re-run required checks to confirm clean state (manifest via `scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`, config_sha256 matches frozen config; `python3 -m pytest -q tests`; `git diff --check` clean; `git status --short` clean).
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
@@ -9,11 +9,11 @@
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
 
 ## What was done (activation 206)
-- Read handoff and task message for activation 205; confirmed prior activation 205 already completed the listed prior task (state files had been stale and updated then).
+- Read handoff and task message for activation 205; confirmed prior activation 205 completed the listed prior task.
 - Required checks re-run and pass: grid manifest regenerated (324 cells, config_sha256 matches frozen canonical hash 55caedf8...); `python3 -m pytest -q tests` (11 passed); `git diff --check` clean; `git status --short` clean (no untracked or modified files).
 - Confirmed clean state; frozen anchor/config/Q1/extended artifacts untouched.
 - Hypothesis registry consistent (H001 tested_not_supported with adj p 0.248/0.949; H002/H003 registered_secondary_not_tested; next_hypothesis_sequence=4). Cell ledger 324 ok/0 non-ok. PIT verified (rank_verified=true for all 13). Audits red_team_audit_extended_v1, leakage_audit_extended_v1, robustness_prior_controls_extended_v2, h002_h003_feasibility_review_v1 remain consistent with current state.
-- Handoff and task message updated to reflect activation 206; prior staleness resolved (if any). Anchor null preserved; exclusions 336 preserved; PIT rank inquiry CLOSED; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
+- Durable-state upkeep v73 created (verdict: no_gaps_found). Handoff and task message updated to reflect activation 206. Anchor null preserved; exclusions 336 preserved; PIT rank inquiry CLOSED; H002/H003 remain registered_secondary_not_tested; no preregistration from grid hits.
 
 ## Durable state (verified)
 - Frozen config: configs/basis_crash_grid_v1.json (canonical sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; raw file sha256 753d9357... differs only by whitespace). Anchor EBCR-GRID-001-0005 null preserved. Exclusions 336. 324 cells ok.
@@ -26,7 +26,5 @@
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Next concrete task: continue durable-state upkeep — re-verify hypothesis registry consistency remains accurate and re-review the on-disk audits (red_team_audit_extended_v1, leakage_audit_extended_v1, robustness_prior_controls_extended_v2, h002_h003_feasibility_review_v1) for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v74).
+5. Next concrete task: continue durable-state upkeep — re-verify hypothesis registry consistency and re-review the on-disk audits (red_team_audit_extended_v1, leakage_audit_extended_v1, robustness_prior_controls_extended_v2, h002_h003_feasibility_review_v1) for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v74).
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
-
-(End of file - total 47 lines)
