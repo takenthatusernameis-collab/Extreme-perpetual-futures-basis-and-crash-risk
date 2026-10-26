@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V218",
+  "activation": 351,
+  "generated_at_utc": "2026-10-26T21:45:58.463038+00:00",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "unit_tests": {
+        "ok": true,
+        "ran": 11
+      },
+      "git_diff_check": {
+        "ok": true
+      },
+      "git_status_clean": {
+        "ok": true
+      }
+    },
+    "hypothesis_registry": {
+      "ok": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "ok": true,
+      "cells_total": 324,
+      "cells_ok": 324,
+      "non_ok": 0
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor": {
+      "adj_p_crash_incidence": 0.24830545694889028,
+      "adj_p_es": 0.9485,
+      "preserved": true
+    },
+    "exclusions": 336,
+    "audits_reviewed": [
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/verified_symbols_s3_audit.json"
+    ],
+    "new_unaddressed_items": 0
+  },
+  "notes": "Re-verified clean state. Hypothesis registry consistent. Audits reviewed with no new unaddressed items. Preserved nulls/exclusions, H002/H003 secondary status, anchor null. PIT remains CLOSED."
+}
