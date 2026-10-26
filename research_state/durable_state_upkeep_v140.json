@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V140",
+  "program_id": "EBCR-001",
+  "activation": 273,
+  "generated_at_utc": "2026-10-26T09:54:28.373429Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "hypothesis_registry": {
+      "next_hypothesis_sequence": 4,
+      "h001": {
+        "status": "tested_not_supported",
+        "anchor_adj_p_crash_inc15": 0.24830545694889028
+      },
+      "h002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "h003": {
+        "status": "registered_secondary_not_tested"
+      }
+    },
+    "cell_status_ledger": {
+      "n_cells": 324,
+      "ok": 324,
+      "non_ok": 0
+    },
+    "exclusions_preserved": 336,
+    "pit": {
+      "snapshot_dates_available": [
+        "2019-12-31",
+        "2020-01-01",
+        "2020-01-19",
+        "2020-02-01",
+        "2020-06-01",
+        "2020-08-01",
+        "2020-09-13",
+        "2020-11-01",
+        "2020-12-01",
+        "2021-01-01",
+        "2021-02-01",
+        "2021-04-01",
+        "2021-05-01",
+        "2021-06-01",
+        "2021-08-01",
+        "2021-09-01",
+        "2021-12-01",
+        "2022-01-01",
+        "2022-05-01",
+        "2023-01-01",
+        "2023-10-01",
+        "2023-12-01",
+        "2024-01-01",
+        "2024-04-01"
+      ],
+      "n_symbols": 13,
+      "note": "rank_verified true for all per PIT verification record"
+    },
+    "audits_reviewed": [
+      "red_team_audit_extended_v1.json",
+      "leakage_audit_extended_v1.json",
+      "robustness_prior_controls_extended_v2.json",
+      "h002_h003_feasibility_review_v1.json"
+    ],
+    "notes": "All consistent with frozen anchor null (adj p 0.248/0.949), exclusions 336 preserved, 324 cells ok, PIT CLOSED with verified ranks, H002/H003 registered_secondary_not_tested. No gaps found."
+  }
+}
