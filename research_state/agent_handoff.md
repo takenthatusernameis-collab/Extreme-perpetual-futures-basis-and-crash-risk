@@ -7,15 +7,15 @@
 - Universe/PIT: CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Extraction record preserved in research_state/pit_rank_verification_v1.json.
 - Anchor null preserved (adj p 0.248/0.949). Exclusions 336 preserved. 324 cells ok.
 - H001: tested_not_supported (reconciled). H002/H003: registered_secondary_not_tested.
-- Red-team/leakage audits reviewed; durable-state upkeep v155 recorded (verdict: no_gaps_found).
+- Red-team/leakage audits reviewed; durable-state upkeep v156 recorded (verdict: no_gaps_found).
 
-## Completed this session (activation 288)
+## Completed this session (activation 289)
 - Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, config_sha256 matches frozen canonical 55caedf8...); tests 11 passed (unittest discover; pytest module unavailable in env); git diff --check clean; git status clean.
-- Durable-state upkeep v155 (activation 288): re-verified hypothesis registry consistency (H001 tested_not_supported, H002/H003 registered_secondary_not_tested); cell ledger extended v1 (324 ok, exclusions 336); PIT CLOSED (13 rank_verified). Audits re-reviewed; no gaps found. Artifact: research_state/durable_state_upkeep_v155.json (verdict: no_gaps_found).
+- Durable-state upkeep v156 (activation 289): re-verified hypothesis registry consistency (H001 tested_not_supported, H002/H003 registered_secondary_not_tested); cell ledger extended v1 (324 ok, exclusions 336); PIT CLOSED (13 rank_verified). Audits re-reviewed; no gaps found. Artifact: research_state/durable_state_upkeep_v155.json (verdict: no_gaps_found).
 - H002/H003 remain registered_secondary_not_tested; PIT rank inquiry CLOSED. Anchor null preserved; exclusions 336 preserved; 324 cells ok.
 - Report only verified findings. No preregistration from grid hits. No frozen artifacts modified.
 
-## Next action (activation 289)
+## Next action (activation 290)
 1. Re-run required checks to confirm clean state.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
