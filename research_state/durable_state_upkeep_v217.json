@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v217",
+  "activation": 350,
+  "created_at_utc": "2026-10-26T21:45:30Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "cmd": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "tests": {
+        "cmd": "python3 -m unittest discover -s tests -q",
+        "ok": true,
+        "ran": 11
+      },
+      "git_diff_check": {
+        "cmd": "git diff --check",
+        "ok": true,
+        "output": ""
+      },
+      "git_status_short": {
+        "cmd": "git status --short",
+        "ok": true,
+        "output": ""
+      }
+    },
+    "hypothesis_registry": {
+      "path": "research_state/hypothesis_registry.json",
+      "ok": true,
+      "h001_status": "tested_not_supported",
+      "h002_status": "registered_secondary_not_tested",
+      "h003_status": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "path": "research_state/cell_status_ledger_extended_v1.json",
+      "ok": true,
+      "n_cells": 324,
+      "ok_count": 324,
+      "non_ok_count": 0
+    },
+    "anchor": {
+      "h001_co_primary": {
+        "crash_incidence_15pct_adj_p": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+      },
+      "verdict": "null_preserved_not_significant"
+    },
+    "exclusions": 336,
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/verified_symbols_s3_audit.json"
+    ]
+  },
+  "notes": "Activation 350 upkeep; no gaps found. No frozen artifacts modified. No preregistration from grid hits."
+}
