@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V78",
+  "program_id": "EBCR-001",
+  "activation": 211,
+  "timestamp_utc": "2026-10-26T01:54:05Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "ok": true
+      },
+      "tests": {
+        "command": "python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract",
+        "result": "11 tests OK",
+        "ok": true
+      },
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry": {
+      "file": "research_state/hypothesis_registry.json",
+      "next_hypothesis_sequence": 4,
+      "h001": {
+        "status": "tested_not_supported",
+        "anchor_adj_p_15pct": 0.24830545694889028,
+        "anchor_adj_p_es5pct": 0.9485,
+        "null_preserved": true
+      },
+      "h002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "h003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "consistent": true
+    },
+    "cell_ledger": {
+      "file": "research_state/cell_status_ledger_extended_v1.json",
+      "ok": 324,
+      "non_ok": 0,
+      "exclusions_preserved": 336
+    },
+    "pit": {
+      "status": "closed",
+      "verified_free_source": "Wayback-CMC",
+      "rank_verified_all_13": true,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json"
+    ],
+    "audits_consistent": true,
+    "frozen_artifacts_untouched": true,
+    "no_preregistration_from_grid_hits": true
+  },
+  "notes": "Durable-state upkeep v78: all checks pass, no gaps found. H002/H003 remain registered_secondary_not_tested per feasibility review (require new preregistration independent of grid hits). Anchor null preserved. PIT rank inquiry CLOSED."
+}
