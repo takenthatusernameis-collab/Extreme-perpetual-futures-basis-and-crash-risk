@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V79",
+  "program_id": "EBCR-001",
+  "activation": 212,
+  "generated_at_utc": "2026-10-26T02:02:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "ok": true
+      },
+      "tests": {
+        "command": "python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract",
+        "ran": 11,
+        "passed": 11,
+        "ok": true
+      },
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry_consistency": {
+      "file": "research_state/hypothesis_registry.json",
+      "next_hypothesis_sequence": 4,
+      "hypotheses": [
+        {
+          "hypothesis_id": "EBCR-H001",
+          "status": "tested_not_supported",
+          "anchor_co_primary_adj_p": {
+            "crash_incidence_15pct": 0.24830545694889028,
+            "expected_shortfall_5pct_forward_mae": 0.9485
+          },
+          "anchor_significant": false,
+          "notes": "Null preserved"
+        },
+        {
+          "hypothesis_id": "EBCR-H002",
+          "status": "registered_secondary_not_tested",
+          "outcome_summary": null
+        },
+        {
+          "hypothesis_id": "EBCR-H003",
+          "status": "registered_secondary_not_tested",
+          "outcome_summary": null
+        }
+      ],
+      "consistent": true
+    },
+    "cell_ledger": {
+      "file": "research_state/cell_status_ledger_extended_v1.json",
+      "n_cells": 324,
+      "ok": 324,
+      "non_ok": 0,
+      "consistent": true
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_all": true,
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "consistent": true
+    },
+    "audits_reviewed": [
+      {
+        "file": "research_state/red_team_audit_extended_v1.json",
+        "status": "reviewed",
+        "notes": "Anchor not significant after correction; multiplicity/dependence/caveats present; exclusions preserved"
+      },
+      {
+        "file": "research_state/leakage_audit_extended_v1.json",
+        "status": "reviewed",
+        "notes": "Past-only signal/forward-only labels verified; permutation consistent with null; temporal placebo opposite direction (regime correlation)"
+      },
+      {
+        "file": "research_state/robustness_prior_controls_extended_v2.json",
+        "status": "reviewed",
+        "notes": "Bounded prior-only controls on anchor; no parameter search/holdout unblinding"
+      },
+      {
+        "file": "research_state/h002_h003_feasibility_review_v1.json",
+        "status": "reviewed",
+        "notes": "Cannot preregister/test H002/H003 from grid hits without new preregistration/experiment ID; remain registered_secondary_not_tested"
+      }
+    ],
+    "invariants": {
+      "anchor_null_preserved": true,
+      "exclusions_336_preserved": true,
+      "frozen_artifacts_untouched": true,
+      "no_preregistration_from_grid_hits": true
+    }
+  },
+  "findings": [],
+  "action_taken": "Re-ran required checks (manifest+tests+git clean). Re-verified hypothesis registry, cell ledger, PIT status, and reviewed all four audits. No gaps found."
+}
