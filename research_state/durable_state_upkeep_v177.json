@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v177",
+  "activation": 310,
+  "timestamp_utc": "2026-10-26T16:41:12Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "output": "/tmp/basis-grid-manifest.json",
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "unittests": {
+        "ok": true,
+        "result": "Ran 11 tests in 0.007s\n\nOK"
+      },
+      "git_diff_check": {
+        "ok": true,
+        "clean": true
+      },
+      "git_status_short": {
+        "ok": true,
+        "clean": true
+      }
+    },
+    "hypothesis_registry": {
+      "ok": true,
+      "registry": "research_state/hypothesis_registry.json",
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "ok": true,
+      "ledger": "research_state/cell_status_ledger_extended_v1.json",
+      "cells_total": 324,
+      "ok": 324,
+      "blocked": 0,
+      "failed": 0,
+      "incomplete": 0,
+      "invalid": 0,
+      "not_run": 0,
+      "config_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+      "matches_run_manifest": true
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor": {
+      "null_preserved": true,
+      "source": "research_state/negative_results_report_v1.json",
+      "crash_incidence_15pct_adjusted_p": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae_adjusted_p": 0.9485
+    },
+    "exclusions": 336,
+    "on_disk_audits_reviewed": [
+      "durable_state_upkeep_v173",
+      "durable_state_upkeep_v174",
+      "durable_state_upkeep_v175",
+      "durable_state_upkeep_v176"
+    ]
+  },
+  "findings": [],
+  "notes": "No discrepancies found. Anchor null preserved (adj p 0.2483/0.9485); H002/H003 remain registered_secondary_not_tested; PIT closed (13 rank_verified); exclusions 336 preserved; 324 cells ok. No frozen artifacts modified. No preregistration from grid hits."
+}
