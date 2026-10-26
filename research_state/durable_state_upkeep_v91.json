@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v91",
+  "activation": 224,
+  "generated_at_utc": "2026-10-26T03:03:30Z",
+  "checks": {
+    "required_checks": {
+      "manifest_regenerated": "/tmp/basis-grid-manifest.json",
+      "config_sha256_matches_frozen": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "tests": "11 passed (tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract)",
+      "git_diff_check_clean": true,
+      "git_status_clean": true
+    },
+    "hypothesis_registry_consistency": {
+      "H001": "tested_not_supported",
+      "H001_anchor_adj_p": 0.24830545694889028,
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4,
+      "verdict": "consistent"
+    },
+    "cell_status_ledger": {
+      "total_ok": 324,
+      "non_ok": 0,
+      "verdict": "consistent"
+    },
+    "pit": {
+      "closed": true,
+      "rank_verified_all": true,
+      "durable_record": "research_state/pit_rank_verification_v1.json",
+      "verdict": "consistent"
+    },
+    "audits_review": {
+      "red_team_audit_extended_v1.json": "readable_consistent",
+      "leakage_audit_extended_v1.json": "readable_consistent",
+      "robustness_prior_controls_extended_v2.json": "readable_consistent",
+      "h002_h003_feasibility_review_v1.json": "readable_consistent"
+    }
+  },
+  "verdict": "no_gaps_found",
+  "notes": [
+    "Anchor null preserved (adj p 0.248/0.949).",
+    "Exclusions 336 preserved.",
+    "H002/H003 registered_secondary_not_tested.",
+    "PIT rank inquiry CLOSED; do not reopen without genuinely new free PIT rank source.",
+    "No preregistration from grid hits; frozen artifacts unchanged."
+  ]
+}
