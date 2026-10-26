@@ -3,7 +3,7 @@
   "program_id": "EBCR-001",
   "activation": 266,
   "upkeep_version": 133,
-  "generated_at_utc": "2026-10-26T09:06:10+00:00",
+  "generated_at_utc": "2026-10-26T09:07:18+00:00",
   "verdict": "no_gaps_found",
   "checks": {
     "required_checks": {
@@ -25,8 +25,12 @@
         "anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
         "anchor_adj_p_es5pct_mae": 0.9485
       },
-      "H002": {"status": "registered_secondary_not_tested"},
-      "H003": {"status": "registered_secondary_not_tested"}
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      }
     },
     "cell_status_ledger_extended_v1": {
       "n_cells": 324,
@@ -52,5 +56,5 @@
       "research_state/evaluation_summary_extended_v1.md"
     ]
   },
-  "notes": "Activation 266 upkeep: required checks pass (324 cells, config_sha256 matches frozen canonical). Hypotheses consistent (H001 tested_not_supported, H002/H003 registered_secondary_not_tested). 324 ok/0 non-ok, exclusions 336 preserved. PIT CLOSED with verified free Wayback-CMC evidence. Audits red_team_audit_extended_v1, leakage_audit_extended_v1, robustness_prior_controls_extended_v2, h002_h003_feasibility_review_v1 re-reviewed; internally consistent with anchor null; no gaps found. No preregistration from grid hits."
+  "notes": "Activation 266 upkeep: required checks re-run and pass (324 cells, config_sha256 matches frozen canonical). Hypothesis registry consistent (H001 tested_not_supported anchor adj p 0.248/0.949; H002/H003 registered_secondary_not_tested; next_hypothesis_sequence=4). Cell ledger: 324 ok/0 non-ok, exclusions 336 preserved. PIT CLOSED (13 symbols, all rank_verified=true). On-disk audits re-reviewed for new unaddressed items: none found. No preregistration from grid hits; no frozen artifacts modified."
 }
