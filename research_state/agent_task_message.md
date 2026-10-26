@@ -1,28 +1,6 @@
-# Agent task message (activation 316)
+# Agent task message (activation 317)
 
-## Prior task (from handoff activation 315)
-1. Re-run required checks to confirm clean state: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`.
-2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
-3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
-4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency and re-review the on-disk audits for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v182) at research_state/durable_state_upkeep_v182.json.
-6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
-7. Report only verified findings; do not commit changes unless explicitly asked.
-
-## What was done (activation 315)
-- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, config_sha256 matches frozen canonical 55caedf8...); 11 unittest tests OK; git diff --check clean; git status clean.
-- Hypothesis registry consistent (H001 tested_not_supported, H002/H003 registered_secondary_not_tested, next_hypothesis_sequence=4); cell ledger extended v1 re-verified (324 ok); PIT CLOSED (13 rank_verified, durable record research_state/pit_rank_verification_v1.json). Anchor null confirmed (adj p 0.24830545694889028 / 0.9485); exclusions 336 confirmed.
-- Audits reviewed up through v181 (durable_state_upkeep_v174-v181): all consistent with frozen state. No unaddressed items, no discrepancies.
-- Durable-state upkeep v182 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v182.json.
-- No frozen artifacts modified. No preregistration from grid hits.
-
-## Durable state (verified after activation 315)
-- Frozen config canonical sha256 55caedf8... Anchor null preserved (adj p 0.24830545694889028 / 0.9485). Exclusions 336. 324 cells ok.
-- PIT: CLOSED (13 rank_verified). Durable record: research_state/pit_rank_verification_v1.json.
-- Hypotheses: H001 tested_not_supported; H002/H003 registered_secondary_not_tested.
-- Latest durable-state upkeep: research_state/durable_state_upkeep_v182.json (verdict: no_gaps_found).
-
-## Next concrete task (for activation 316)
+## Prior task (from handoff activation 316)
 1. Re-run required checks to confirm clean state: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
@@ -31,4 +9,24 @@
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
 7. Report only verified findings; do not commit changes unless explicitly asked.
 
-(End of file - total 32 lines)
+## What was done (activation 316)
+- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, config_sha256 matches frozen canonical 55caedf8...); 11 unittest tests OK; git diff --check clean; git status clean.
+- Hypothesis registry consistent (H001 tested_not_supported, H002/H003 registered_secondary_not_tested, next_hypothesis_sequence=4); cell ledger extended v1 re-verified (324 ok); PIT CLOSED (13 rank_verified, durable record research_state/pit_rank_verification_v1.json). Anchor null confirmed (adj p 0.24830545694889028 / 0.9485); exclusions 336 confirmed.
+- Audits reviewed up through v182 (durable_state_upkeep_v173-v182): all consistent with frozen state. No unaddressed items, no discrepancies.
+- Durable-state upkeep v183 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v183.json.
+- No frozen artifacts modified. No preregistration from grid hits.
+
+## Durable state (verified after activation 316)
+- Frozen config canonical sha256 55caedf8... Anchor null preserved (adj p 0.24830545694889028 / 0.9485). Exclusions 336. 324 cells ok.
+- PIT: CLOSED (13 rank_verified). Durable record: research_state/pit_rank_verification_v1.json.
+- Hypotheses: H001 tested_not_supported; H002/H003 registered_secondary_not_tested.
+- Latest durable-state upkeep: research_state/durable_state_upkeep_v183.json (verdict: no_gaps_found).
+
+## Next concrete task (for activation 317)
+1. Re-run required checks to confirm clean state: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`.
+2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.248/0.949).
+3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
+4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency and re-review the on-disk audits for any new unaddressed items; document findings only if gaps found, else record explicit "no_gaps_found" artifact (new version suffix v184) at research_state/durable_state_upkeep_v184.json.
+6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json (the /tmp extraction dir is not persistent across hosts).
+7. Report only verified findings; do not commit changes unless explicitly asked.
