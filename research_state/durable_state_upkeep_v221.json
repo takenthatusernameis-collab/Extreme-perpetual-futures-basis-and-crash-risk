@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V221",
+  "activation": 354,
+  "generated_at_utc": "2026-10-26T22:02:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "unit_tests": {
+        "ok": true,
+        "ran": 11
+      },
+      "git_diff_check": {
+        "ok": true
+      },
+      "git_status_clean": {
+        "ok": true
+      }
+    },
+    "hypothesis_registry": {
+      "ok": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "cell_ledger": {
+      "ok": true,
+      "cells_total": 324,
+      "cells_ok": 324,
+      "non_ok": 0
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_count": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor": {
+      "adj_p_crash_incidence": 0.24830545694889028,
+      "adj_p_es": 0.9485,
+      "preserved": true
+    },
+    "exclusions": 336,
+    "audits_reviewed": [
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/verified_symbols_s3_audit.json"
+    ],
+    "new_unaddressed_items": 0
+  },
+  "notes": "Re-verified clean state (grid manifest 324 cells, config_sha256 matches frozen canonical 55caedf8...; 11 unittest tests OK; git diff --check clean; git status clean). Hypothesis registry consistent (H001 tested_not_supported, H002/H003 registered_secondary_not_tested, next_hypothesis_sequence=4). On-disk audits re-reviewed: leakage_audit_extended_v1.json, red_team_audit_extended_v1.json, verified_symbols_s3_audit.json — no new unaddressed items. PIT remains CLOSED (13 rank_verified). Anchor null preserved (adj p 0.24830545694889028 / 0.9485). Exclusions 336 preserved. No frozen artifacts modified. No preregistration from grid hits."
+}
