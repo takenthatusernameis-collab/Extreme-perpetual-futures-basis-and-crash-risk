@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "EBCR-001-DURABLE-STATE-UPKEEP-V136",
+  "program_id": "EBCR-001",
+  "activation": 269,
+  "timestamp_utc": "2026-10-26T09:13:30Z",
+  "status": "ok",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "tests": {
+      "command": "python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract",
+      "passed": 11,
+      "failed": 0,
+      "ok": true
+    },
+    "git": {
+      "diff_check_clean": true,
+      "status_short_clean": true
+    },
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "H001_anchor_adj_p_co_primary_15pct": 0.24830545694889028,
+      "H001_anchor_adj_p_co_primary_es5pct": 0.9485,
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4,
+      "consistent": true
+    },
+    "cell_ledger": {
+      "cells_ok": 324,
+      "cells_non_ok": 0,
+      "exclusions_preserved": 336,
+      "consistent": true
+    },
+    "pit": {
+      "status": "CLOSED",
+      "rank_verified_all": true,
+      "symbols_count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json"
+    ],
+    "new_gaps_found": false,
+    "notes": "No new unaddressed items found. Anchor null preserved, exclusions 336 preserved, H002/H003 remain registered_secondary_not_tested, no preregistration from grid hits."
+  }
+}
