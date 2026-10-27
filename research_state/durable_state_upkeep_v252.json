@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation_id": 385,
+  "created_at_utc": "2026-10-27T01:18:54Z",
+  "task_source": "research_state/agent_task_message.md (activation 385)",
+  "checks": {
+    "grid_manifest_regen": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "result": "ok",
+      "cells": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "ok",
+      "tests_run": 11
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "result": "clean"
+    },
+    "git_status_short": {
+      "command": "git status --short",
+      "result": "clean"
+    }
+  },
+  "verifications": {
+    "hypothesis_registry": {
+      "file": "research_state/hypothesis_registry.json",
+      "next_hypothesis_sequence": 4,
+      "h001": {
+        "status": "tested_not_supported",
+        "anchor_adjusted_p": {"crash_incidence_15pct": 0.24830545694889028, "expected_shortfall_5pct_forward_mae": 0.9485},
+        "anchor_significant": false
+      },
+      "h002": {"status": "registered_secondary_not_tested"},
+      "h003": {"status": "registered_secondary_not_tested"},
+      "consistent": true
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/red_team_audit_extended_v1.md"
+    ],
+    "audit_findings": [],
+    "new_unaddressed_items": []
+  },
+  "exclusions": {
+    "count": 336,
+    "reason": "missing_label",
+    "preserved": true
+  },
+  "pit_rank": {
+    "status": "CLOSED",
+    "durable_record": "research_state/pit_rank_verification_v1.json"
+  },
+  "frozen_artifacts_unchanged": true,
+  "preregistration_from_grid_hits": false,
+  "verdict": "no_gaps_found"
+}
