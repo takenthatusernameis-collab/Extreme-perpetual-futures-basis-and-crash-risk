@@ -1,7 +1,7 @@
 {
   "version": 390,
   "activation": 519,
-  "created_utc": "2026-10-27T19:51:10Z",
+  "created_utc": "2026-10-27T20:58:54Z",
   "verdict": "no_gaps_found",
   "checks": {
     "grid_manifest": {
@@ -22,10 +22,22 @@
   "hypothesis_registry": {
     "source": "durable records / hypothesis registry state",
     "hypotheses": [
-      {"hypothesis_id": "EBCR-H001", "status": "tested_not_supported"},
-      {"hypothesis_id": "EBCR-H002", "status": "registered_secondary_not_tested"},
-      {"hypothesis_id": "EBCR-H003", "status": "registered_secondary_not_tested"},
-      {"hypothesis_id": "EBCR-H004", "status": "registered_secondary_not_tested"}
+      {
+        "hypothesis_id": "EBCR-H001",
+        "status": "tested_not_supported"
+      },
+      {
+        "hypothesis_id": "EBCR-H002",
+        "status": "registered_secondary_not_tested"
+      },
+      {
+        "hypothesis_id": "EBCR-H003",
+        "status": "registered_secondary_not_tested"
+      },
+      {
+        "hypothesis_id": "EBCR-H004",
+        "status": "registered_secondary_not_tested"
+      }
     ],
     "next_hypothesis_sequence": 5
   },
