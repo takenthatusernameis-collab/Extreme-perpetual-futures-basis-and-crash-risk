@@ -1,68 +1,42 @@
 {
   "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v304",
   "program_id": "EBCR-001",
+  "generated_at": "2026-10-27T08:10:21Z",
   "activation": 433,
-  "created_at_utc": "2026-10-27T08:08:20Z",
-  "verdict": "no_gaps_found",
-  "checks_summary": {
-    "required_checks": {
-      "grid_manifest_regenerated": {
-        "status": "ok",
-        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
-        "output": "/tmp/basis-grid-manifest.json",
-        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-        "cells": 324
-      },
-      "unittest": {
-        "status": "ok",
-        "command": "python3 -m unittest discover -s tests -q",
-        "result": "Ran 11 tests in 0.007s\nOK"
-      },
-      "git_diff_check": {
-        "status": "ok"
-      },
-      "git_status_short": {
-        "status": "ok",
-        "output": ""
-      }
-    },
-    "hypothesis_registry": {
-      "status": "verified",
-      "EBCR-H001": {
-        "status": "tested_not_supported",
-        "anchor_co_primary_adjusted_p": {
-          "crash_incidence_15pct": 0.24830545694889028,
-          "expected_shortfall_5pct_forward_mae": 0.9485
-        },
-        "anchor_null_preserved": true
-      },
-      "EBCR-H002": {
-        "status": "registered_secondary_not_tested"
-      },
-      "EBCR-H003": {
-        "status": "registered_secondary_not_tested"
-      },
-      "next_hypothesis_sequence": 4,
-      "exclusions": {
-        "count": 336,
-        "reason": "missing_label",
-        "source": "research_state/integrated_extended_v1.json",
-        "labels_sha256": "a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58"
-      }
-    },
-    "pit": {
-      "status": "closed",
-      "rank_verified_all_13": true,
-      "evidence": "research_state/pit_rank_verification_v1.json",
-      "reopen_requires_new_free_source": true
-    },
-    "audits_reviewed": [
-      "research_state/evaluation_artifact_audit_v1.md",
-      "research_state/evaluation_ledger_consistency_audit_v1.md",
-      "research_state/leakage_audit_extended_v1.md",
-      "research_state/red_team_audit_extended_v1.md"
-    ],
-    "gaps_found": false
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "grid_manifest_path": "/tmp/basis-grid-manifest.json",
+    "config_sha256_frozen_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "config_sha256_matches_frozen": true,
+    "tests_passed": true,
+    "tests_count": 11,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
   },
-  "notes": "Activation 433: required checks pass (grid manifest 324 cells regenerated to /tmp/basis-grid-manifest.json, config_sha256 matches frozen canonical 55caedf8...; 11 unittest tests OK; git diff --check clean; git status --short clean). Hypothesis registry verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003 registered_secondary_not_tested; next_hypothesis_sequence 4). Exclusions 336 (missing_label) re-verified in integrated_extended_v1.json (labels_sha256 a6413457...). PIT CLOSED: rank_verified true for all 13 symbols in pit_rank_verification_v1.json. All four audits re-reviewed; no unaddressed items. No frozen artifacts modified; no preregistration from grid hits."
+  "hypothesis_registry_consistency": {
+    "next_hypothesis_sequence": 4,
+    "h001_status": "tested_not_supported",
+    "h001_adj_p_crash_inc": 0.24830545694889028,
+    "h001_adj_p_es": 0.9485,
+    "anchor_null_preserved": true,
+    "h002_status": "registered_secondary_not_tested",
+    "h003_status": "registered_secondary_not_tested",
+    "exclusions_count": 336,
+    "exclusions_reason": "missing_label",
+    "labels_sha256": null
+  },
+  "audits_reviewed": [
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/red_team_audit_extended_v1.md"
+  ],
+  "pit": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "rank_verified_all_13": true
+  },
+  "verdict": "no_gaps_found",
+  "notes": "Activation 433: re-ran required checks (manifest/tests/diff/status all pass/clean). Re-verified hypothesis registry (H001 tested_not_supported, adj p 0.24830545694889028/0.9485, anchor null preserved; H002/H003 registered_secondary_not_tested). PIT remains CLOSED (all 13 rank_verified). Audits re-reviewed, no unaddressed items. No frozen artifacts modified; no preregistration from grid hits."
 }
