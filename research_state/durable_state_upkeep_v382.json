@@ -1,76 +1,89 @@
 {
   "schema_version": "1.0",
-  "artifact_id": "durable_state_upkeep_v382",
+  "upkeep_id": "durable_state_upkeep_v382",
   "activation": 511,
-  "upkeep_version": 382,
-  "timestamp_utc": "2026-10-27T18:52:00Z",
+  "created_at_utc": "2026-10-27T20:56:58Z",
   "verdict": "no_gaps_found",
   "checks": {
     "required_checks": {
       "grid_manifest": {
-        "output": "/tmp/basis-grid-manifest.json",
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "status": "pass",
         "cells": 324,
         "unique_config_hashes": 324,
-        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-        "ok": true
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
       },
       "tests": {
         "command": "python3 -m unittest discover -s tests -q",
-        "result": "OK",
-        "count": 11,
-        "ok": true
+        "status": "pass",
+        "result": "Ran 11 tests in 0.007s\n\nOK"
       },
-      "git_diff_check": "clean",
-      "git_status_short": "clean"
-    },
-    "hypothesis_registry_consistency": {
-      "H001": "tested_not_supported",
-      "H002": "registered_secondary_not_tested",
-      "H003": "registered_secondary_not_tested",
-      "H004": "registered_secondary_not_tested",
-      "next_hypothesis_sequence": 5,
-      "anchor_null_preserved": true,
-      "anchor_adj_p": {
-        "crash_incidence_15pct": 0.24830545694889028,
-        "es5_mae": 0.9485
+      "git_diff_check": {
+        "command": "git diff --check",
+        "status": "pass"
+      },
+      "git_status_short": {
+        "command": "git status --short",
+        "status": "clean"
       }
     },
-    "exclusions": {
-      "count": 336,
-      "preserved": true,
-      "source": "research_state/integrated_extended_v1.json"
+    "hypothesis_registry": {
+      "path": "research_state/hypothesis_registry.json",
+      "consistent": true,
+      "H001": {
+        "status": "tested_not_supported",
+        "anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "anchor_adj_p_es_5pct": 0.9485,
+        "anchor_significant": false,
+        "holm_significant": false,
+        "null_preserved": true
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H004": {
+        "status": "registered_secondary_not_tested"
+      },
+      "next_hypothesis_sequence": 5,
+      "exclusions": 336,
+      "exclusions_verified_from": "research_state/integrated_extended_v1.json"
+    },
+    "frozen_artifacts_untouched": {
+      "configs/basis_crash_grid_v1.json": {
+        "literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+        "canonical_sha256": "223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac",
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "research_state/evaluation_report_extended_v1.json": {
+        "literal_sha256": "9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4"
+      },
+      "research_state/integrated_extended_v1.json": {
+        "literal_sha256": "28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf",
+        "n_exclusions": 336
+      }
     },
     "pit_rank": {
       "status": "CLOSED",
-      "rank_verified": 13,
-      "durable_record": "research_state/pit_rank_verification_v1.json"
-    },
-    "frozen_artifacts_untouched": {
-      "config_json": {
-        "literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
-        "canonical_sha256": "223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac"
-      },
-      "evaluation_report_extended_v1.json": {
-        "literal_sha256": "9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4"
-      },
-      "integrated_extended_v1.json": {
-        "literal_sha256": "28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf"
-      },
-      "verified_by_git_clean": true
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all_13": true,
+      "reopen_without_new_free_source": true
     },
     "audits_reviewed": [
       "research_state/red_team_audit_extended_v1.json",
-      "research_state/red_team_audit_extended_v1.md",
       "research_state/leakage_audit_extended_v1.json",
-      "research_state/leakage_audit_extended_v1.md",
       "research_state/robustness_prior_controls_extended_v2.json",
-      "research_state/robustness_prior_controls_extended_v2.md",
       "research_state/h002_h003_feasibility_review_v1.json",
-      "research_state/h002_h003_feasibility_review_v1.md",
       "research_state/source_audit.md"
     ],
-    "preregistration_from_grid_hits": false
+    "unaddressed_new_items": [],
+    "pre_existing_unresolved_preserved": [
+      "Contract listing/delisting/migration history (source_audit.md) - UNRESOLVED: contract lifecycle via REST unavailable; must derive from archive presence gaps or alternative free source.",
+      "Data revision behavior (source_audit.md) - UNRESOLVED: not explicitly tested in this pass.",
+      "Monthly fundingRate file verification (source_audit.md) - noted as known gap context"
+    ]
   },
-  "gaps": [],
-  "notes": "Activation 511: required checks re-run (grid manifest 324 cells/config_sha256 matches frozen, 11 tests OK, git clean). Verified H001 tested_not_supported (adj p 0.24830545694889028/0.9485), H002-H004 registered_secondary_not_tested, exclusions 336 preserved, PIT CLOSED (13/13), frozen artifacts untouched. Reviewed on-disk audits - no new unaddressed items; pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps, preserved as-is. No preregistration from grid hits; no frozen artifacts modified."
+  "notes": "Durable-state upkeep v382: all required checks pass, hypothesis registry consistent, frozen artifacts untouched, PIT rank remains CLOSED with all 13 verified, no new unaddressed audit items found. Pre-existing UNRESOLVED items in source_audit.md preserved as-is."
 }
