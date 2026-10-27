@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v305",
+  "program_id": "EBCR-001",
+  "activation": 434,
+  "created_at_utc": "2026-10-27T08:11:23Z",
+  "verdict": "no_gaps_found",
+  "checks": [
+    {
+      "name": "required_checks",
+      "status": "ok",
+      "details": {
+        "grid_manifest": "/tmp/basis-grid-manifest.json",
+        "grid_cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "unittest": "11 tests OK",
+        "git_diff_check": "clean",
+        "git_status_short": "clean"
+      }
+    },
+    {
+      "name": "hypothesis_registry_consistency",
+      "status": "ok",
+      "details": {
+        "next_hypothesis_sequence": 4,
+        "H001": "tested_not_supported",
+        "H001_anchor_adj_p": [0.24830545694889028, 0.9485],
+        "H002": "registered_secondary_not_tested",
+        "H003": "registered_secondary_not_tested",
+        "notes": "Anchor null preserved; registry consistent with outcome_summary"
+      }
+    },
+    {
+      "name": "exclusions_preserved",
+      "status": "ok",
+      "details": {
+        "exclusions_count": 336,
+        "reason": "missing_label",
+        "labels_sha256": "a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58",
+        "source": "research_state/integrated_extended_v1.json"
+      }
+    },
+    {
+      "name": "pit_rank_closed",
+      "status": "ok",
+      "details": {
+        "file": "research_state/pit_rank_verification_v1.json",
+        "all_rank_verified": true,
+        "symbols": 13,
+        "notes": "PIT rank inquiry CLOSED; do not reopen without genuinely new free PIT rank source"
+      }
+    },
+    {
+      "name": "audits_review",
+      "status": "ok",
+      "details": {
+        "reviewed": [
+          "research_state/evaluation_artifact_audit_v1.md",
+          "research_state/evaluation_ledger_consistency_audit_v1.md",
+          "research_state/leakage_audit_extended_v1.md",
+          "research_state/red_team_audit_extended_v1.md"
+        ],
+        "new_unaddressed_items": false,
+        "notes": "No unaddressed items found"
+      }
+    },
+    {
+      "name": "frozen_artifacts_untouched",
+      "status": "ok",
+      "details": {
+        "configs/basis_crash_grid_v1.json": "unchanged (sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0)",
+        "research_state/evaluation_report_extended_v1.json": "present",
+        "research_state/integrated_extended_v1.json": "present",
+        "preregistration_from_grid_hits": "none"
+      }
+    }
+  ],
+  "notes": "Activation 434 upkeep complete. No gaps found. H001 remains tested_not_supported with null preserved; H002/H003 remain registered_secondary_not_tested."
+}
