@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v410",
+  "program_id": "EBCR-001",
+  "activation": 539,
+  "created_at_utc": "2026-10-27T22:57:28Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest_regenerated": true,
+      "grid_manifest_path": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_matches_frozen": true,
+      "unittest_discover_q": "11 tests in 0.007s OK",
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry": {
+      "verified": true,
+      "h001": {
+        "status": "tested_not_supported",
+        "adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "adj_p_es_5pct": 0.9485,
+        "anchor_null_preserved": true
+      },
+      "h002": {"status": "registered_secondary_not_tested"},
+      "h003": {"status": "registered_secondary_not_tested"},
+      "h004": {"status": "registered_secondary_not_tested"},
+      "next_hypothesis_sequence": 5
+    },
+    "null_exclusions": {
+      "n_exclusions": 336,
+      "exclusion_reason_missing_label": 336,
+      "preserved": true
+    },
+    "frozen_artifacts_untouched": true,
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all_13": true
+    },
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json",
+      "source_audit.md"
+    ],
+    "new_unaddressed_items": [],
+    "notes": "Pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps, preserved as-is. No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts."
+  }
+}
