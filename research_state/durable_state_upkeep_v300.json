@@ -1,0 +1,38 @@
+{
+  "version": 300,
+  "activation": 429,
+  "timestamp_utc": "2026-10-27T07:07:10Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": "generated 324 cells, config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "tests": "11/11 passed (unittest discover -s tests -q)",
+    "git_diff_check": "clean",
+    "git_status_short": "clean",
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "adj_p_crash_incidence_15pct": 0.24830545694889028,
+      "adj_p_expected_shortfall_5pct": 0.9485,
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4,
+      "anchor_null_preserved": true
+    },
+    "exclusions": {
+      "count": 336,
+      "source": "research_state/integrated_extended_v1.json",
+      "labels_sha256": "a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58"
+    },
+    "pit": {
+      "rank_verified_all": true,
+      "count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/red_team_audit_extended_v1.md"
+    ]
+  },
+  "notes": "No unaddressed gaps found. No frozen artifacts modified. No preregistration from grid hits."
+}
