@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v318",
+  "program_id": "EBCR-001",
+  "activation": 447,
+  "created_at_utc": "2026-10-27T10:11:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "anchor_cell_id": "EBCR-GRID-001-0005",
+      "anchor_configuration_hash": "280bd60c42affcbab42b649240a640f51354224b4034ec94f770843509c92b47",
+      "ok": true
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "Ran 11 tests in 0.007s\n\nOK",
+      "ok": true
+    },
+    "git_diff_check": {
+      "ok": true,
+      "output": ""
+    },
+    "git_status_short": {
+      "ok": true,
+      "output": ""
+    },
+    "hypothesis_registry_consistency": {
+      "ok": true,
+      "next_hypothesis_sequence": 5,
+      "hypotheses": {
+        "EBCR-H001": {
+          "status": "tested_not_supported",
+          "adj_p_co_primary_1": 0.24830545694889028,
+          "adj_p_co_primary_2": 0.9485
+        },
+        "EBCR-H002": {"status": "registered_secondary_not_tested"},
+        "EBCR-H003": {"status": "registered_secondary_not_tested"},
+        "EBCR-H004": {"status": "registered_secondary_not_tested"}
+      }
+    },
+    "audit_review": {
+      "ok": true,
+      "notes": "Re-reviewed on-disk audits; no new unaddressed items found. Pre-existing UNRESOLVED items in source_audit.md (contract lifecycle; data revision behavior) remain documented as known gaps, preserved as-is."
+    },
+    "frozen_artifacts_untouched": {
+      "ok": true,
+      "configs/basis_crash_grid_v1.json": {"literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16", "canonical_sha256": "223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac"},
+      "research_state/evaluation_report_extended_v1.json": {"sha256": "9487b36d57f40c02a5b2124eb2845c7903b3dd2eeed26512e6f9535f1c80ee10"},
+      "research_state/integrated_extended_v1.json": {"sha256": "28ec0163fbe1c7582c65ff4489e0e02b5b0f980e8e24b871cd0780b193fa4b7d"}
+    },
+    "pit": {
+      "status": "closed",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "all_rank_verified": true
+    }
+  },
+  "notes": "Activation 447 upkeep complete; null/exclusions preserved; no preregistration from grid hits."
+}
