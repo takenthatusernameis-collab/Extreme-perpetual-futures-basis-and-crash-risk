@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 420,
+  "upkeep_version": 287,
+  "timestamp_utc": "2026-10-27T05:25:30Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest_regenerated": {
+      "output": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "count": 11
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean",
+    "hypothesis_registry_consistency": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 4
+    },
+    "pit_rank": {
+      "status": "CLOSED",
+      "rank_verified": 13,
+      "durable_record": "research_state/pit_rank_verification_v1.json"
+    },
+    "anchor_null": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "es5_mae_adj_p": 0.9485,
+      "preserved": true
+    },
+    "exclusions": {
+      "count": 336,
+      "reason": "missing_label",
+      "source": "research_state/integrated_extended_v1.json",
+      "labels_sha256": "a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58"
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/red_team_audit_extended_v1.md"
+    ],
+    "unaddressed_items": 0,
+    "frozen_artifacts_untouched": true,
+    "preregistration_from_grid_hits": false
+  },
+  "gaps": [],
+  "notes": "Activation 420: required checks pass (grid manifest 324 cells, config sha matches; 11 tests OK; git diff --check clean; git status clean). Hypothesis registry consistent (H001 tested_not_supported adj p 0.248305/0.9485; H002/H003 registered_secondary_not_tested; next_hypothesis_sequence 4). Exclusions 336 (missing_label) re-verified. PIT CLOSED (13/13 rank_verified). Audits re-reviewed: no unaddressed items. No frozen artifacts modified; no preregistration from grid hits."
+}
