@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v415",
+  "activation": 544,
+  "created_at_utc": "2026-10-27T23:53:37Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest_regenerated": true,
+      "grid_manifest_path": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_matches_frozen": true,
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "OK",
+        "tests": 11
+      },
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "h001_status": "tested_not_supported",
+      "h001_adj_p_inc15": 0.24830545694889028,
+      "h001_adj_p_es5": 0.9485,
+      "h002_h003_h004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_null_preserved": true,
+      "exclusions_preserved": 336,
+      "exclusions_verified_in": "research_state/integrated_extended_v1.json"
+    },
+    "frozen_artifacts_untouched": {
+      "verified_by_git_clean": true,
+      "config_literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+      "config_canonical_sha256": "223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac",
+      "evaluation_report_extended_v1_literal_sha256": "9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4",
+      "integrated_extended_v1_literal_sha256": "28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf"
+    },
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_true_count": 13,
+      "rank_verified_false_count": 0
+    },
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json",
+      "research_state/source_audit.md"
+    ],
+    "new_unaddressed_items_found": false,
+    "notes": "Pre-existing UNRESOLVED items in research_state/source_audit.md remain documented as known gaps (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment). Preserved as-is; no fixes to frozen artifacts."
+  },
+  "no_preregistration_from_grid_hits": true,
+  "no_modifications_to_frozen_artifacts": true
+}
