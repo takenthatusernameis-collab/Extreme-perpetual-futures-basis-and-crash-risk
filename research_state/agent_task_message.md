@@ -14,5 +14,7 @@
 5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v376.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json.
 7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 504 completion and set next action for activation 505.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 505.
+8. Update `research_state/agent_handoff.md` to record activation 505 completion and set next action for activation 506.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 506.
+
+(End of file - total 19 lines)
