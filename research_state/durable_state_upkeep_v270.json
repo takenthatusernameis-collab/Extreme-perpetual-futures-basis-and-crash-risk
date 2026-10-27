@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v270",
+  "activation": 403,
+  "created_at_utc": "2026-10-27T03:30:10Z",
+  "verdict": "no_gaps_found",
+  "checks_summary": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "tests": {
+        "ok": true,
+        "passed": 11
+      },
+      "git_diff_check": {
+        "ok": true
+      },
+      "git_status_clean": {
+        "ok": true
+      }
+    },
+    "hypothesis_registry": {
+      "EBCR-H001": {
+        "status": "tested_not_supported"
+      },
+      "EBCR-H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "EBCR-H003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "next_hypothesis_sequence": 4,
+      "anchor_preserved": true,
+      "exclusions_preserved": 336
+    },
+    "pit": {
+      "closed": true,
+      "rank_verified_count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/red_team_audit_extended_v1.md"
+    ],
+    "unaddressed_items_found": false
+  },
+  "notes": "Activation 403 complete. No frozen artifacts modified. No preregistration from grid hits."
+}
