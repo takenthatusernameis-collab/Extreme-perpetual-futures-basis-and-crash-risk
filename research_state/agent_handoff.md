@@ -9,15 +9,15 @@
 - H001: tested_not_supported (reconciled). H002/H003: registered_secondary_not_tested.
 - Red-team/leakage audits reviewed; durable-state upkeep v294 recorded (verdict: no_gaps_found).
 
-## Completed this session (activation 427)
+## Completed this session (activation 428)
 - Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, config_sha256 matches frozen canonical 55caedf8...); 11 unittest tests OK; git diff --check clean; git status --short clean.
 - Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003 registered_secondary_not_tested; next_hypothesis_sequence 4; anchor null preserved; exclusions 336 re-verified in integrated_extended_v1.json, labels_sha256 a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58).
 - PIT rank inquiry CLOSED: rank_verified true for all 13 symbols in research_state/pit_rank_verification_v1.json (confirmed 13/13 verified). Do not reopen without genuinely new free PIT rank source.
 - Audits re-reviewed: evaluation_artifact_audit_v1.md (PASS), evaluation_ledger_consistency_audit_v1.md (no discrepancy), leakage_audit_extended_v1.md (no structural leakage; negative temporal placebo explained), red_team_audit_extended_v1.md (null preserved; caveats noted). No unaddressed items found.
-- Durable-state upkeep v294 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v294.json.
+- Durable-state upkeep v295 created (verdict: no_gaps_found). Artifact: research_state/durable_state_upkeep_v295.json.
 - No frozen artifacts modified. No preregistration from grid hits. PIT remains CLOSED.
 
-## Next action (activation 428)
+## Next action (activation 429)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. All must pass/clean.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen unless genuinely new free PIT rank source.
