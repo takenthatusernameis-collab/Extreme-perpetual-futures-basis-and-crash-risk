@@ -1,0 +1,45 @@
+{
+  "upkeep_id": "v406",
+  "activation": 535,
+  "timestamp_utc": "2026-10-27T22:52:21Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "ok": true,
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "ok": true,
+      "passed": 11,
+      "framework": "unittest"
+    },
+    "git": {
+      "diff_check_clean": true,
+      "status_short_clean": true
+    },
+    "hypotheses": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "anchor_adj_p": [0.24830545694889028, 0.9485],
+      "exclusions_n": 336
+    },
+    "pit": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all": true
+    },
+    "frozen_artifacts_untouched": true,
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json/md",
+      "research_state/leakage_audit_extended_v1.json/md",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json/md",
+      "research_state/source_audit.md"
+    ],
+    "notes": "Pre-existing UNRESOLVED items in source_audit.md (contract listing/delisting/migration history; data revision behavior; monthly fundingRate file verification) remain documented as known gaps, preserved as-is. No new unaddressed items found."
+  }
+}
