@@ -1,30 +1,23 @@
-# Agent task message (for next activation)
+# Agent task message — EBCR-001 (for activation 452)
 
-## Objective
-Activate for EBCR-001 (activation 451). Complete the next action from the durable handoff.
+## Prior task (from handoff activation 451)
+Complete required checks, verify hypothesis registry/frozen artifacts/PIT closed state, perform durable-state upkeep (create v322), update handoff (record 451, set next for 452), and write clear task message for next agent.
 
-## Prior context (read first)
-- Handoff: research_state/agent_handoff.md (activation 450 completed)
-- Contract: prompts/continuous_research_operating_contract_v1.md
-- Protocol: docs/research_protocol.md
-- Skills: SKILLS.md (basis-crash-risk-research, point-in-time-universe, resumable-research-operations, statistical-red-team)
-- Frozen: configs/basis_crash_grid_v1.json (manifest config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; canonical-JSON sha256 223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac; literal file sha256 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16), evaluation_report_extended_v1.json (sha256 9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4), integrated_extended_v1.json (sha256 28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf)
-- Hypothesis registry: research_state/hypothesis_registry.json (H001 tested_not_supported, adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5)
-- PIT: CLOSED (research_state/pit_rank_verification_v1.json, all 13 rank_verified)
-- Exclusions: 336 (missing_label), labels_sha256 a64134574206f246ca6943703aa06508bbae7a4bda6c4a2457247afa7158eb58
-- Durable-state upkeep: v311-v321 (all verdict: no_gaps_found)
+## Task for activation 452
+1. Re-run required checks:
+   - `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (expect 324 cells, config_sha256 55caedf8..., canonical 223498aa...)
+   - `python3 -m unittest discover -s tests -q` (expect 11 tests OK)
+   - `git diff --check` (clean)
+   - `git status --short` (clean)
+2. Preserve invariants: exclusions 336 preserved; H001 tested_not_supported (anchor adj p 0.24830545694889028/0.9485); H002/H003/H004 registered_secondary_not_tested (next_hypothesis_sequence 5); PIT rank inquiry CLOSED (research_state/pit_rank_verification_v1.json, rank_verified true for all 13). Do not modify frozen artifacts (configs/basis_crash_grid_v1.json, evaluation_report_extended_v1.json, integrated_extended_v1.json).
+3. Durable-state upkeep: re-verify hypothesis registry consistency (H001..H004) and re-review on-disk audits for new unaddressed items. If none found, create `research_state/durable_state_upkeep_v323.json` with verdict `no_gaps_found` following the structure/style of v322 (include checks, audit_consistency). If gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+4. Update `research_state/agent_handoff.md`: record activation 452 completion and set next action for activation 453.
+5. Update `research_state/agent_task_message.md`: write clear next task for activation 453.
+6. Report only verified findings; do not commit changes unless explicitly asked.
 
-## Required actions (activation 451)
-1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. All must pass/clean.
-2. Maintain null/exclusions (336); preserve H002/H003/H004 as registered_secondary_not_tested; preserve anchor null.
-3. PIT rank inquiry CLOSED — do not reopen without genuinely new free PIT rank source.
-4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Durable-state upkeep: re-verify hypothesis registry consistency (H001..H004, next_hypothesis_sequence 5) and re-review on-disk audits for new unaddressed items; if none found, create `research_state/durable_state_upkeep_v322.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
-6. Update `research_state/agent_handoff.md` to record activation 451 completion and set next action for activation 452.
-7. Update this file (`research_state/agent_task_message.md`) with clear next task for activation 452.
-8. Report only verified findings. Do not commit unless explicitly asked.
-
-## Constraints
-- Free public data/open-source only. No paid APIs/trials/compute/private endpoints/credentials/trading.
-- Preserve immutable configs/snapshots/hashes/raw inputs/prior results. New experiment/config/data version => new experiment ID and output path.
-- Every grid cell terminal status tracked; apply correction across complete registered family; never select by raw p/best return/inspected holdout.
+## Key artifacts
+- Config (frozen): configs/basis_crash_grid_v1.json (literal 753d9357..., canonical 223498aa..., manifest 55caedf8...)
+- Extended results (frozen): research_state/evaluation_report_extended_v1.json (9487b36d...), research_state/integrated_extended_v1.json (28ec0163...), research_state/cell_status_ledger_extended_v1.json
+- Registry: research_state/hypothesis_registry.json (H001 tested_not_supported, H002/H003/H004 registered_secondary_not_tested)
+- PIT: research_state/pit_rank_verification_v1.json (CLOSED, all 13 verified)
+- Exclusions: 336 (missing_label) preserved
