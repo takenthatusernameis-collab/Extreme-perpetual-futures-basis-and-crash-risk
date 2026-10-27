@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v269",
+  "activation": 402,
+  "generated_utc": "2026-10-27T03:29:00Z",
+  "verdict": "no_gaps_found",
+  "checks": [
+    {
+      "name": "required_checks",
+      "status": "pass",
+      "details": "grid manifest regenerated (324 cells, config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0), unittest discover -s tests -q OK (11 tests), git diff --check clean, git status --short clean"
+    },
+    {
+      "name": "hypothesis_registry_consistency",
+      "status": "pass",
+      "details": "EBCR-H001 tested_not_supported (anchor null preserved; adj p 0.24830545694889028 / 0.9485), EBCR-H002/H003 registered_secondary_not_tested, next_hypothesis_sequence 4, exclusions 336 preserved (missing_label)"
+    },
+    {
+      "name": "audits_review",
+      "status": "pass",
+      "details": "Re-reviewed evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, leakage_audit_extended_v1.md, red_team_audit_extended_v1.md - no new unaddressed gaps found; consistent with v268"
+    },
+    {
+      "name": "pit_universe",
+      "status": "pass",
+      "details": "CLOSED (13/13 rank_verified). Durable record research_state/pit_rank_verification_v1.json"
+    },
+    {
+      "name": "frozen_artifacts",
+      "status": "pass",
+      "details": "No modifications to frozen anchor/config/Q1/extended artifacts; no preregistration from grid hits"
+    }
+  ],
+  "notes": "Activation 402 upkeep complete. State consistent with prior handoff; no new gaps found."
+}
