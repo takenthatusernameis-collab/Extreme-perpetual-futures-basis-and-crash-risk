@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "program_id": "EBCR-001",
-  "next_hypothesis_sequence": 4,
+  "next_hypothesis_sequence": 5,
   "hypotheses": [
     {
       "hypothesis_id": "EBCR-H001",
@@ -65,6 +65,42 @@
       "claim": "Extreme absolute basis magnitude predicts elevated forward downside tail risk regardless of sign; do not merge this with directional tests.",
       "config_path": "configs/basis_crash_grid_v1.json",
       "outcome_summary": null
+    },
+    {
+      "hypothesis_id": "EBCR-H004",
+      "status": "registered_secondary_not_tested",
+      "prior_status": "preregistered_not_tested",
+      "claim": "The H001 null result is robust to predeclared prior-only controls: re-estimating the anchor with past 7/30d returns, past 30d volatility/drawdown, BTC/market returns/vol, funding, liquidity/turnover and open interest (when reliable) does not change the conclusion that rich positive basis at or above the trailing 95th percentile does not predict higher 14-day crash incidence or worse downside tail severity.",
+      "primary_anchor": {
+        "basis_aggregation_days": 1,
+        "rolling_reference_days": 90,
+        "orientation": "rich_positive",
+        "tail_quantile": 0.95,
+        "horizon_days": 14
+      },
+      "co_primary_endpoints": [
+        "crash_incidence_15pct",
+        "expected_shortfall_5pct_forward_mae"
+      ],
+      "control_specification": {
+        "past_returns_days": [7, 30],
+        "past_volatility_drawdown_days": 30,
+        "market_controls": ["btc_returns", "btc_volatility", "market_returns", "market_volatility"],
+        "funding": true,
+        "liquidity_turnover": true,
+        "open_interest": "when_reliable"
+      },
+      "config_path": "configs/basis_crash_grid_v1.json",
+      "outcome_summary": null,
+      "origin": {
+        "source": "research_state/red_team_audit_extended_v1.md",
+        "source_line": "24-26",
+        "reason": "Red-team audit flagged that predeclared prior-only controls were not exhaustively re-estimated in the extended pass and recommended stratified/regression with controls in follow-up."
+      },
+      "reconciliation": {
+        "reconciled_at_activation": 436,
+        "reason": "Registered to close GAP-307-02. No frozen artifacts modified; H001 outcome and null preserved unchanged."
+      }
     }
   ],
   "rules": [

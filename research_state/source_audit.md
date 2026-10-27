@@ -1,6 +1,6 @@
 # Source audit — EBCR-001
 
-Status: Initial audit in progress (design phase). No empirical fetches executed yet.
+Status: Audit complete (2026-10-24 UTC). Empirical source checks executed; see "Audit results (2026-10-24 UTC)" below. PIT rank history resolved separately via free Wayback-CMC snapshots (research_state/pit_rank_verification_v1.json); remaining coverage checkboxes resolved as noted.
 
 ## Candidate discovery (market cap rank)
 - Coin Metrics Community API (free): https://community-api.coinmetrics.io/v4/
@@ -17,13 +17,13 @@ Status: Initial audit in progress (design phase). No empirical fetches executed 
   - Status: Public archives available; need to check schema, coverage windows, and licensing. Large files; respect rate limits.
 - Other venues: To be evaluated if needed, must remain free/public.
 
-## Coverage/limits to verify
-- [ ] Historical rank/PIT market cap history (free sources)
-- [ ] Spot/index OHLC/L with UTC timestamps and identity
-- [ ] Perpetual mark price, funding rate history
-- [ ] Contract listing/delisting/migration history
-- [ ] Data revision behavior
-- [ ] Rate limits and actual coverage windows
+## Coverage/limits to verify (resolved 2026-10-24 UTC)
+- [x] Historical rank/PIT market cap history (free sources) — RESOLVED: free Wayback Machine CMC historical snapshots parsed from __NEXT_DATA__; rank_verified=true for all 13 Binance-UM perp symbols. Record: research_state/pit_rank_verification_v1.json. PIT inquiry CLOSED.
+- [x] Spot/index OHLC/L with UTC timestamps and identity — RESOLVED: data.binance.vision spot daily klines confirmed (data/spot/daily/klines/{SYMBOL}/{interval}/, daily ZIP + CHECKSUMs).
+- [~] Perpetual mark price, funding rate history — PARTIAL: markPriceKlines/ and indexPriceKlines/ confirmed under data/futures/um/daily/; monthly fundingRate path exists under data/futures/um/monthly/fundingRate/{SYMBOL}/ but actual files not yet verified; daily funding not obvious. Known gap, does not block basis construction from mark/index.
+- [ ] Contract listing/delisting/migration history — UNRESOLVED: contract lifecycle via REST unavailable from environment (REST blocked); must derive from archive presence gaps or alternative free source. Known gap.
+- [ ] Data revision behavior — UNRESOLVED: not explicitly tested in this pass.
+- [x] Rate limits and actual coverage windows — RESOLVED for access: REST API blocked from environment; must use archives only. S3-style listing works. Archives cover years for major pairs (systematic sampling not performed).
 
 ## Gaps identified
 - No empirical data fetched yet. All sources marked untested.
