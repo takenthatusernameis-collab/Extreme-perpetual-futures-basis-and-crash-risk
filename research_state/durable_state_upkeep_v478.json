@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v478",
+  "activation": 608,
+  "generated_at_utc": "2026-10-28T07:30:47Z",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "unittests": {
+        "ok": true,
+        "count": 11
+      },
+      "git_diff_check": {
+        "ok": true
+      },
+      "git_status_short": {
+        "clean": true
+      }
+    },
+    "hypothesis_registry": {
+      "ok": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_null_preserved": true,
+      "anchor_adj_p": [
+        0.24830545694889028,
+        0.9485
+      ],
+      "exclusions": 336
+    },
+    "frozen_artifacts_untouched": true,
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "all_verified": true
+    }
+  },
+  "audit_review": {
+    "reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json",
+      "research_state/source_audit.md"
+    ],
+    "new_unaddressed_items": false,
+    "preexisting_unresolved": "documented in research_state/source_audit.md (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment) - preserved as-is"
+  },
+  "verdict": "no_gaps_found",
+  "notes": "No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts."
+}
