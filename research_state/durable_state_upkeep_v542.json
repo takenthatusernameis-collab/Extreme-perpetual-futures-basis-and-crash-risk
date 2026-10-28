@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 672,
+  "created_at": "2026-10-28T16:42:35Z",
+  "verdict": "no_gaps_found",
+  "checks": [
+    "grid manifest regenerated (324 cells, 324 unique configuration hashes) to /tmp/basis-grid-manifest.json; config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen config",
+    "unittest discover -s tests -q: 11 OK",
+    "pytest -q tests: pytest not available (python3 -m pytest module absent); unittest used instead",
+    "git diff --check: clean",
+    "git status --short: clean",
+    "hypothesis_registry H001-H004 consistent (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5)",
+    "anchor null preserved (adj p 0.24830545694889028/0.9485), exclusions 336 preserved",
+    "frozen artifacts untouched (configs/basis_crash_grid_v1.json, Q1/extended artifacts)",
+    "PIT rank closed (research_state/pit_rank_verification_v1.json; rank_verified=true for all 13)",
+    "on-disk audits re-reviewed - no new unaddressed items since v541",
+    "pre-existing known gaps (not new, not frozen artifacts, left unmodified): invalid historical upkeep JSON research_state/durable_state_upkeep_v44.json, v168.json, v169.json, v170.json, v171.json, v349.json, v463.json"
+  ],
+  "notes": "Durable-state upkeep completed per activation 672; no new gaps found requiring action beyond recorded state. Pre-existing invalid historical upkeep files documented as known gaps; no fixes applied to any frozen artifact."
+}
