@@ -9,88 +9,20 @@
 - H001: tested_not_supported (reconciled). H002/H003/H004: registered_secondary_not_tested.
 - Red-team/leakage audits reviewed; durable-state upkeep v577/v578/v579 created (verdict: no_gaps_found).
 
-## Completed this session (activation 711)
-- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, 324 unique cell_ids, 324 unique configuration hashes, config_sha256 matches frozen canonical config 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified.
-- No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts.
-- Durable-state upkeep v581 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v581.json; JSON validated; no new unaddressed items found.
-
-## Completed this session (activation 712)
-- Required checks re-run and pass: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical config); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified. No preregistration from grid hits.
-- Durable-state upkeep v582 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v582.json; JSON validated; no new unaddressed items found.
-
-## Completed this session (activation 713)
-- Required checks re-run and pass: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical config); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified. No preregistration from grid hits.
-- Durable-state upkeep v583 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v583.json; JSON validated; no new unaddressed items found.
-
-## Completed this session (activation 714)
-- Required checks re-run and pass: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical config); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified. No preregistration from grid hits.
-- Durable-state upkeep v584 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v584.json; JSON validated; no new unaddressed items found.
-
-## Completed this session (activation 715)
-- Required checks re-run and pass: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical config); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified. No preregistration from grid hits.
-- Durable-state upkeep v585 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v585.json; JSON validated; no new unaddressed items found.
-
-## Completed this session (activation 716)
-- Required checks re-run and pass: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical config); `python3 -m unittest discover -s tests -q` → 11 OK; pytest not available (No module named pytest); `git diff --check` clean; `git status --short` clean.
-- Hypothesis registry re-verified (research_state/hypothesis_registry.json): H001 tested_not_supported adj p 0.24830545694889028/0.9485 (anchor not significant); H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null and exclusions (336) preserved.
-- On-disk audits re-reviewed (source_audit.md, red_team_audit_extended_v1.md, leakage_audit_extended_v1.md, evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, pit_rank_verification_v1.json): pre-existing UNRESOLVED items in source_audit.md preserved as-is; no new unaddressed items found.
-- Frozen artifacts untouched. Hashes re-verified. No preregistration from grid hits.
-- Durable-state upkeep v586 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v586.json; JSON validated; no new unaddressed items found.
-
-## Next action (activation 717)
-1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. (AGENTS.md also lists `python3 -m pytest -q tests`; run both if available.)
-2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
-3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
-4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v587.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
-6. PIT rank evidence: durable record is `research_state/pit_rank_verification_v1.json`.
-7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 716 completion and set next action for activation 717.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 718.
-
-## Completed this session (activation 717)
+## Completed this session (activation 720)
 - Required checks re-run and pass: grid manifest 324 cells/324 hashes, config_sha256 matches frozen; unittest 11 OK; pytest unavailable; git diff --check clean; git status clean.
 - Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next seq 5).
 - On-disk audits re-reviewed; no new unaddressed items. Pre-existing UNRESOLVED in source_audit.md preserved.
 - Frozen artifacts untouched. No preregistration from grid hits.
-- Durable-state upkeep v587 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v587.json; JSON validated.
+- PIT rank closed (13 symbols). Durable-state upkeep v590 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v590.json; JSON validated.
 
-## Completed this session (activation 718)
-- Required checks re-run and pass: grid manifest 324 cells/324 hashes, config_sha256 matches frozen; unittest 11 OK; pytest unavailable; git diff --check clean; git status clean.
-- Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next seq 5).
-- On-disk audits re-reviewed; no new unaddressed items. Pre-existing UNRESOLVED in source_audit.md preserved.
-- Frozen artifacts untouched. No preregistration from grid hits.
-- Durable-state upkeep v588 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v588.json; JSON validated.
-
-## Completed this session (activation 719)
-- Required checks re-run and pass: grid manifest 324 cells/324 hashes, config_sha256 matches frozen; unittest 11 OK; pytest unavailable; git diff --check clean; git status clean.
-- Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next seq 5).
-- On-disk audits re-reviewed; no new unaddressed items. Pre-existing UNRESOLVED in source_audit.md preserved.
-- Frozen artifacts untouched. No preregistration from grid hits.
-- PIT rank closed (13 symbols). Durable-state upkeep v589 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v589.json; JSON validated.
-
-## Next action (activation 720)
+## Next action (activation 721)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. (AGENTS.md also lists `python3 -m pytest -q tests`; run both if available.)
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v590.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v591.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
 6. PIT rank evidence: durable record is `research_state/pit_rank_verification_v1.json` (13 symbols, rank_verified=true).
 7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 719 completion and set next action for activation 720.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 721.
+8. Update `research_state/agent_handoff.md` to record activation 720 completion and set next action for activation 721.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 722.
