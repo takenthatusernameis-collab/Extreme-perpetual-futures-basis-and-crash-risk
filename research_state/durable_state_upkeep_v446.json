@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v446",
+  "program_id": "EBCR-001",
+  "activation": 576,
+  "created_at_utc": "2026-10-28T03:40:07Z",
+  "verdict": "no_gaps_found",
+  "checked": {
+    "required_checks": {
+      "grid_manifest_regenerated": true,
+      "grid_manifest_path": "/tmp/basis-grid-manifest.json",
+      "grid_cells": 324,
+      "grid_unique_config_hashes": 324,
+      "config_sha256_match_frozen": true,
+      "tests_unittest": {
+        "ran": 11,
+        "ok": true
+      },
+      "git_diff_check": "clean",
+      "git_status_short_clean": true
+    },
+    "hypothesis_registry": {
+      "H001": {
+        "status": "tested_not_supported",
+        "adj_p_co_primary1": 0.24830545694889028,
+        "adj_p_co_primary2": 0.9485
+      },
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_null_preserved": true,
+      "exclusions_336_preserved": true
+    },
+    "frozen_artifacts_untouched": {
+      "config_literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+      "config_canonical_sha256": "223498aa8555e5ec9410771c67f99fd32fee14b34aab20b8444dcc95ab4b1bac",
+      "evaluation_report_extended_v1.json_literal_sha256": "9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4",
+      "integrated_extended_v1.json_literal_sha256": "28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf",
+      "verified_by_git_clean": true
+    },
+    "pit": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all": true
+    },
+    "audits_reviewed": [
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/robustness_prior_controls_extended_v2.json",
+      "research_state/h002_h003_feasibility_review_v1.json",
+      "research_state/source_audit.md"
+    ]
+  },
+  "gaps": [],
+  "notes": "Activation 576: required checks passed (grid 324 cells/config_sha256 matches frozen, 11 tests OK, git clean). Verified H001 tested_not_supported (adj p 0.24830545694889028/0.9485), H002-H004 registered_secondary_not_tested, exclusions 336 preserved, PIT CLOSED (13/13), frozen artifacts untouched. Reviewed on-disk audits - no new unaddressed items; pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps, preserved as-is. No preregistration from grid hits; no frozen artifacts modified."
+}
