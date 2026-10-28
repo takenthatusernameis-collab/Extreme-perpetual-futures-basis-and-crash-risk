@@ -1,0 +1,36 @@
+{
+  "upkeep_id": "durable_state_upkeep_v462",
+  "activation": 592,
+  "timestamp_utc": "2026-10-28T04:51:01Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "path": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "11 tests OK"
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean",
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_adj_p": 0.24830545694889028,
+      "anchor_adj_p_alt": 0.9485,
+      "n_exclusions": 336
+    },
+    "pit_rank_verification": {
+      "path": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all": true
+    },
+    "frozen_artifacts_untouched": true,
+    "notes": "Re-reviewed red_team_audit_extended_v1.json, leakage_audit_extended_v1.json, robustness_prior_controls_extended_v2.json, h002_h003_feasibility_review_v1.json, research_state/source_audit.md. Pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps, preserved as-is (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment). No preregistration from grid hits."
+  }
+}
