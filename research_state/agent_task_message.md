@@ -1,6 +1,6 @@
 # Agent Task Message
 
-## Next task (activation 666)
+## Next task (activation 667)
 
 1. Re-run required checks:
    - `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`
@@ -14,5 +14,5 @@
 5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v537.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json.
 7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 665 completion and set next action for activation 666.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 666.
+8. Update `research_state/agent_handoff.md` to record activation 667 completion and set next action for activation 667.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 667.
