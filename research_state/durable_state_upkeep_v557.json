@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v557",
+  "activation": 687,
+  "created_at_utc": "2026-10-28T18:12:28Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "result": "generated 324 cells, config_sha256 matches frozen canonical config (55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0)"
+      },
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "11 OK"
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "result": "not available (No module named pytest)"
+      },
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry": {
+      "H001": {
+        "status": "tested_not_supported",
+        "adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "adj_p_es5pct": 0.9485,
+        "null_preserved": true
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H004": {
+        "status": "registered_secondary_not_tested"
+      },
+      "next_hypothesis_sequence": 5,
+      "consistent": true
+    },
+    "frozen_artifacts": {
+      "config_basis_crash_grid_v1_json": {
+        "canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "untouched": true
+      },
+      "anchor_null_preserved": true,
+      "exclusions_336_preserved": true,
+      "pit_rank_inquiry": {
+        "status": "CLOSED",
+        "evidence": "research_state/pit_rank_verification_v1.json",
+        "rank_verified_all_13": true
+      }
+    },
+    "audits_reviewed": ["research_state/source_audit.md", "research_state/red_team_audit_extended_v1.md"],
+    "unaddressed_items": "none_new_found; pre-existing documented gaps in source_audit.md remain as known gaps (contract lifecycle/funding details/revision behavior) without unresolved contradictions affecting current frozen null"
+  },
+  "actions_taken": [
+    "Re-ran required checks; all passed/clean",
+    "Verified hypothesis registry consistency H001-004",
+    "Reviewed audits for new unaddressed items; none found",
+    "Created upkeep record v557"
+  ],
+  "next_recommendation": "Activation 688: repeat required checks, maintain null/exclusions and H002-H004 secondary-not-tested status, preserve anchor null, do not reopen PIT rank without new free source, continue upkeep if audits change; no preregistration from grid hits"
+}
