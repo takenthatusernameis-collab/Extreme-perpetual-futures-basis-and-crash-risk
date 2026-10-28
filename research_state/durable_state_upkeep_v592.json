@@ -1,0 +1,49 @@
+{
+  "version": "v592",
+  "activation": 722,
+  "timestamp_utc": "2026-10-28T22:19:30Z",
+  "checks": {
+    "grid_manifest": {
+      "ok": true,
+      "cells": 324,
+      "unique_cell_ids": 324,
+      "unique_configuration_hashes": 324
+    },
+    "unittest": {
+      "ok": true,
+      "ran": 11
+    },
+    "pytest": {
+      "ok": false,
+      "reason": "module_unavailable"
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypothesis_registry": {
+    "EBCR-H001": {
+      "status": "tested_not_supported",
+      "anchor_adj_p": 0.24830545694889028
+    },
+    "EBCR-H002": "registered_secondary_not_tested",
+    "EBCR-H003": "registered_secondary_not_tested",
+    "EBCR-H004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5
+  },
+  "preserved": {
+    "exclusions_336": true,
+    "anchor_null": true,
+    "frozen_artifacts": true,
+    "pit_rank_closed": true
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "red_team_audit_extended_v1.md",
+    "leakage_audit_extended_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "pit_rank_verification_v1.json"
+  ],
+  "verdict": "no_gaps_found",
+  "notes": "Hypothesis registry consistent (H001 tested_not_supported, H002/H003/H004 registered_secondary_not_tested). No new unaddressed items found; pre-existing UNRESOLVED in source_audit.md preserved."
+}
