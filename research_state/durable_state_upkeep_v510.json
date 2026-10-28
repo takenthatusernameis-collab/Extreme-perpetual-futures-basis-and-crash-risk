@@ -1,0 +1,45 @@
+{
+ "schema_version": "1.0",
+ "program_id": "EBCR-001",
+ "upkeep_id": "durable_state_upkeep_v510",
+ "activation": 640,
+ "created_at_utc": "2026-10-28T11:39:09Z",
+ "verdict": "no_gaps_found",
+ "checks": {
+  "grid_manifest": {
+   "cells": 324,
+   "unique_config_hashes": 324,
+   "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+  },
+  "tests": {
+   "status": "ok",
+   "count": 11
+  },
+  "git_diff_check": "clean",
+  "git_status_short": "clean",
+  "hypothesis_registry": {
+   "H001": "tested_not_supported",
+   "H002": "registered_secondary_not_tested",
+   "H003": "registered_secondary_not_tested",
+   "H004": "registered_secondary_not_tested",
+   "anchor_adj_p": [
+    0.24830545694889028,
+    0.9485
+   ],
+   "exclusions": 336
+  },
+  "frozen_artifacts_untouched": true,
+  "pit_rank": {
+   "status": "CLOSED",
+   "rank_verified_all": true
+  }
+ },
+ "audits_reviewed": [
+  "research_state/red_team_audit_extended_v1.json",
+  "research_state/leakage_audit_extended_v1.json",
+  "research_state/robustness_prior_controls_extended_v2.json",
+  "research_state/h002_h003_feasibility_review_v1.json",
+  "research_state/source_audit.md"
+ ],
+ "notes": "Pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment). No new unaddressed items found."
+}
