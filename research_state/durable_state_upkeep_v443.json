@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v443",
+  "activation": 573,
+  "timestamp_utc": "2026-10-28T02:44:30Z",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "grid_manifest_path": "/tmp/basis-grid-manifest.json",
+    "config_sha256_match": true,
+    "tests_pass": true,
+    "tests_count": 11,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
+  },
+  "hypothesis_registry": {
+    "H001": {
+      "status": "tested_not_supported",
+      "anchor_co_primary_adjusted_p_values": {
+        "crash_incidence_15pct": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae": 0.9485
+      },
+      "anchor_co_primary_significant": false
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "next_hypothesis_sequence": 5
+  },
+  "anchor_null_preserved": true,
+  "exclusions": {
+    "n_exclusions": 336,
+    "source": "research_state/integrated_extended_v1.json"
+  },
+  "pit_rank_inquiry": {
+    "status": "CLOSED",
+    "rank_verified_all": true,
+    "evidence": "research_state/pit_rank_verification_v1.json"
+  },
+  "frozen_artifacts_untouched": true,
+  "audits_reviewed": [
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/leakage_audit_extended_v1.json",
+    "research_state/robustness_prior_controls_extended_v2.json",
+    "research_state/h002_h003_feasibility_review_v1.json",
+    "research_state/source_audit.md"
+  ],
+  "preexisting_unresolved_preserved": true,
+  "new_unaddressed_items": false,
+  "verdict": "no_gaps_found"
+}
