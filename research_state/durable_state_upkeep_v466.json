@@ -1,0 +1,47 @@
+{
+  "version": 466,
+  "activation": 596,
+  "timestamp_utc": "2026-10-28T05:46:30Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "manifest_cells": 324,
+    "manifest_unique_hashes": 324,
+    "config_sha256_match": true,
+    "unittest_ok": true,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
+  },
+  "hypothesis_registry": {
+    "H001": {
+      "id": "EBCR-H001",
+      "status": "tested_not_supported",
+      "adjusted_p_values": {
+        "incidence_15pct": 0.24830545694889028,
+        "worst5_es": 0.9485
+      }
+    },
+    "H002": {"id": "EBCR-H002", "status": "registered_secondary_not_tested"},
+    "H003": {"id": "EBCR-H003", "status": "registered_secondary_not_tested"},
+    "H004": {"id": "EBCR-H004", "status": "registered_secondary_not_tested"},
+    "next_hypothesis_sequence": 5,
+    "anchor_null_preserved": true,
+    "exclusions": 336
+  },
+  "frozen_artifacts_untouched": true,
+  "pit_rank_inquiry": {
+    "status": "CLOSED",
+    "rank_verified_all_13": true,
+    "evidence": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "red_team_audit_extended_v1.json",
+    "leakage_audit_extended_v1.json",
+    "robustness_prior_controls_extended_v2.json",
+    "h002_h003_feasibility_review_v1.json",
+    "research_state/source_audit.md"
+  ],
+  "preexisting_unresolved_documented": true,
+  "preregistration_from_grid_hits": false,
+  "notes": "Re-verified hypothesis registry and audits; no new gaps found. All frozen artifacts unchanged."
+}
