@@ -1204,13 +1204,21 @@
 - Durable-state upkeep v493 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v493.json.
 - No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts.
 
-## Next action (activation 624)
+## Completed this session (activation 624)
+- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, 324 unique configuration hashes, config_sha256 matches frozen 55caedf8...); `python3 -m unittest discover -s tests -q` → 11 tests OK; `git diff --check` clean; `git status --short` clean.
+- Hypothesis registry re-verified (research_state/hypothesis_registry.json: EBCR-H001 tested_not_supported adj p 0.24830545694889028/0.9485; EBCR-H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5; anchor null preserved; exclusions 336 preserved — verified programmatically in research_state/integrated_extended_v1.json n_exclusions=336).
+- Frozen artifacts verified untouched (git clean).
+- PIT rank inquiry CLOSED: rank_verified true for all 13 symbols.
+- Durable-state upkeep v494 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v494.json. Re-review of on-disk audits found no new unaddressed items; pre-existing UNRESOLVED items in research_state/source_audit.md remain documented as known gaps, preserved as-is.
+- No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts.
+
+## Next action (activation 625)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. All must pass/clean.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v494.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v495.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
 6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json.
 7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 624 completion and set next action for activation 625.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 625.
+8. Update `research_state/agent_handoff.md` to record activation 625 completion and set next action for activation 626.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 626.
