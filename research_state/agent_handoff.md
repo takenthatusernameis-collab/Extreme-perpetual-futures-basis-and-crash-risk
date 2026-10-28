@@ -2250,3 +2250,11 @@ config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 
 7. Report only verified findings; do not commit changes unless explicitly asked.
 8. Update `research_state/agent_handoff.md` to record activation 643 completion and set next action for activation 644.
 9. Update `research_state/agent_task_message.md` with clear next task for activation 644.
+
+## Completed this session (activation 646)
+- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, 324 unique configuration hashes, config_sha256 matches frozen 55caedf8...);  → 11 tests OK;  clean; ?? research_state/durable_state_upkeep_v517.json clean.
+- Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5; anchor null preserved; exclusions 336 preserved — verified programmatically in integrated_extended_v1.json n_exclusions=336).
+- Frozen artifacts verified untouched (git clean): config literal 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16/canonical 223498aa...; evaluation_report_extended_v1.json literal sha256 9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4; integrated_extended_v1.json literal sha256 28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf.
+- PIT rank inquiry CLOSED: rank_verified true for all 13 symbols in research_state/pit_rank_verification_v1.json.
+- Durable-state upkeep v517 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v517.json. Re-review of on-disk audits (red_team_audit_extended_v1.json, leakage_audit_extended_v1.json, robustness_prior_controls_extended_v2.json, h002_h003_feasibility_review_v1.json, research_state/source_audit.md) found no new unaddressed items; pre-existing UNRESOLVED items in research_state/source_audit.md remain documented as known gaps, preserved as-is (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment).
+- No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts.
