@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable-state-upkeep-v508",
+  "activation": 638,
+  "generated_at_utc": "2026-10-28T11:36:49Z",
+  "verdict": "no_gaps_found",
+  "summary": "Re-verified required checks (grid manifest regenerated, 11 tests passed, git diff/check clean, status clean). Hypothesis registry consistent (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next_hypothesis_sequence 5; anchor null preserved; exclusions 336 preserved). Re-reviewed on-disk audits (red_team_audit_extended_v1.json, leakage_audit_extended_v1.json, robustness_prior_controls_extended_v2.json, h002_h003_feasibility_review_v1.json, research_state/source_audit.md); no new unaddressed items found. Pre-existing UNRESOLVED items in source_audit.md remain documented as known gaps, preserved as-is. Frozen artifacts untouched; PIT rank inquiry CLOSED (rank_verified true for all 13); no preregistration from grid hits.",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "grid_manifest_cells": 324,
+    "grid_manifest_unique_hashes": 324,
+    "config_sha256_match_frozen": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "tests": {
+      "framework": "unittest",
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "count": 11
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypothesis_registry": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5,
+    "anchor_adj_p_crash_incidence_15pct": 0.24830545694889028,
+    "anchor_adj_p_es_5pct": 0.9485,
+    "exclusions_preserved": 336
+  },
+  "audits_reviewed": [
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/leakage_audit_extended_v1.json",
+    "research_state/robustness_prior_controls_extended_v2.json",
+    "research_state/h002_h003_feasibility_review_v1.json",
+    "research_state/source_audit.md"
+  ],
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "rank_verified_all_13": true
+  },
+  "frozen_artifacts_untouched": true,
+  "preregistration_from_grid_hits": false
+}
