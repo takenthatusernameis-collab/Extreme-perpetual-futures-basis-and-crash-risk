@@ -1,70 +1,58 @@
 {
   "schema_version": "1.0",
-  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v477",
   "activation": 607,
-  "generated_at_utc": "2026-10-28T06:36:53Z",
-  "verdict": "no_gaps_found",
+  "generated_at_utc": "2026-10-28T07:30:03Z",
   "checks": {
-    "grid_manifest": {
-      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
-      "result": "324 cells, 324 unique configuration hashes, config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-      "matches_frozen": true
+    "required_checks": {
+      "grid_manifest": {
+        "ok": true,
+        "cells": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "unittests": {
+        "ok": true,
+        "count": 11
+      },
+      "git_diff_check": {
+        "ok": true
+      },
+      "git_status_short": {
+        "clean": true
+      }
     },
-    "unittest": {
-      "command": "python3 -m unittest discover -s tests -q",
-      "result": "11 tests OK"
+    "hypothesis_registry": {
+      "ok": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_null_preserved": true,
+      "anchor_adj_p": [
+        0.24830545694889028,
+        0.9485
+      ],
+      "exclusions": 336
     },
-    "git_diff_check": {
-      "command": "git diff --check",
-      "result": "clean"
-    },
-    "git_status": {
-      "command": "git status --short",
-      "result": "clean"
+    "frozen_artifacts_untouched": true,
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "all_verified": true
     }
   },
-  "hypothesis_registry": {
-    "file": "research_state/hypothesis_registry.json",
-    "H001": "tested_not_supported",
-    "H001_adj_p": [0.24830545694889028, 0.9485],
-    "H002": "registered_secondary_not_tested",
-    "H003": "registered_secondary_not_tested",
-    "H004": "registered_secondary_not_tested",
-    "next_hypothesis_sequence": 5,
-    "anchor_null_preserved": true
-  },
-  "exclusions": {
-    "file": "research_state/integrated_extended_v1.json",
-    "n_exclusions": 336,
-    "verified": true
-  },
-  "frozen_artifacts": {
-    "configs/basis_crash_grid_v1.json": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
-    "research_state/evaluation_report_extended_v1.json": "9487b36d08cad6eeb5b1af2a4748f959e6d0e47bd629024d4b29dbde60926cd4",
-    "research_state/integrated_extended_v1.json": "28ec0163a95c857073c35c6d908fa2b62f9e1117d2e84b686150de02cce0fabf"
-  },
-  "pit": {
-    "status": "CLOSED",
-    "evidence": "research_state/pit_rank_verification_v1.json",
-    "rank_verified": true,
-    "symbols": 13
-  },
-  "preregistration_from_grid_hits": "none",
   "audit_review": {
-    "audits": [
+    "reviewed": [
       "research_state/red_team_audit_extended_v1.json",
       "research_state/leakage_audit_extended_v1.json",
       "research_state/robustness_prior_controls_extended_v2.json",
       "research_state/h002_h003_feasibility_review_v1.json",
       "research_state/source_audit.md"
     ],
-    "new_unaddressed_items": 0,
-    "pre_existing_unresolved_items": [
-      "funding-rate verification",
-      "contract lifecycle via REST unavailable",
-      "data revision behavior not tested",
-      "mark/index timestamp alignment"
-    ]
+    "new_unaddressed_items": false,
+    "preexisting_unresolved": "documented in research_state/source_audit.md (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment) - preserved as-is"
   },
-  "modifications_to_frozen_artifacts": "none"
+  "verdict": "no_gaps_found",
+  "notes": "No preregistration from grid hits. No modifications to frozen anchor/config/Q1/extended artifacts."
 }
