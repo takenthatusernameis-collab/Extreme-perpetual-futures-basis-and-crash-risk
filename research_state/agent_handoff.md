@@ -1260,3 +1260,21 @@
 7. Report only verified findings; do not commit changes unless explicitly asked.
 8. Update `research_state/agent_handoff.md` to record activation 627 completion and set next action for activation 628.
 9. Update `research_state/agent_task_message.md` with clear next task for activation 628.
+
+## Completed this session (activation 627)
+- Required checks re-run and pass: grid manifest regenerated to /tmp/basis-grid-manifest.json (324 cells, 324 unique configuration hashes, config_sha256 matches frozen 55caedf8...); `python3 -m unittest discover -s tests -q` → 11 tests OK; `git diff --check` clean; `git status --short` clean.
+- Hypothesis registry re-verified (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; anchor null preserved; exclusions 336 preserved — verified programmatically in integrated_extended_v1.json n_exclusions=336).
+- Frozen artifacts verified untouched; no preregistration from grid hits.
+- PIT rank inquiry CLOSED: evidence in research_state/pit_rank_verification_v1.json.
+- Durable-state upkeep v497 created (verdict: no_gaps_found) at research_state/durable_state_upkeep_v497.json. Re-review of on-disk audits found no new unaddressed items; pre-existing UNRESOLVED items in research_state/source_audit.md remain documented as known gaps, preserved as-is.
+
+## Next action (activation 628)
+1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. All must pass/clean.
+2. Maintain null/exclusions (336); preserve registered_secondary_not_tested status for H002/H003/H004; preserve anchor null.
+3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v498.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+6. PIT rank evidence: durable record is research_state/pit_rank_verification_v1.json.
+7. Report only verified findings; do not commit changes unless explicitly asked.
+8. Update `research_state/agent_handoff.md` to record activation 628 completion and set next action for activation 629.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 629.
