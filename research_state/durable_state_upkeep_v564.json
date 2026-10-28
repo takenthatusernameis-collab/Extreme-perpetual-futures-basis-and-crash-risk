@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "v564",
+  "created_at_activation": 694,
+  "created_utc": "2026-10-28T19:11:24Z",
+  "verdict": "no_gaps_found",
+  "scope": [
+    "hypothesis_registry_consistency",
+    "durable_audits_review"
+  ],
+  "findings": {
+    "hypotheses": {
+      "H001": "tested_not_supported (adj p 0.24830545694889028/0.9485)",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "anchor_null_preserved": true,
+    "exclusions_336_preserved": true,
+    "pit_rank_inquiry_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json (13 symbols, rank_verified=true)",
+    "preexisting_unresolved": [
+      {
+        "source": "research_state/source_audit.md",
+        "items": [
+          "Contract listing/delisting/migration history — UNRESOLVED (REST blocked; derive from archive presence gaps or alternative free source)",
+          "Data revision behavior — UNRESOLVED (not explicitly tested)"
+        ],
+        "status": "preserved_as_is"
+      }
+    ],
+    "new_unaddressed_items": []
+  },
+  "actions_taken": [],
+  "frozen_artifacts_untouched": [
+    "configs/basis_crash_grid_v1.json",
+    "research_state/evaluation_report_extended_v1.json",
+    "research_state/evaluation_summary_extended_v1.md",
+    "research_state/grid_execution_scaffold_extended_v1.json",
+    "research_state/cell_status_ledger_extended_v1.json"
+  ],
+  "notes": "Re-verified required checks pass; no new gaps found. Pre-existing UNRESOLVED items documented, preserved. No preregistration from grid hits; no modifications to frozen artifacts."
+}
