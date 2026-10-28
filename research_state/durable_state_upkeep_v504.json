@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v504",
+  "activation": 634,
+  "created_at_utc": "2026-10-28T10:38:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks_passed": true,
+    "grid_manifest_cells": 324,
+    "grid_manifest_unique_config_hashes": 324,
+    "config_sha256_match_frozen": true,
+    "tests_passed": 11,
+    "git_diff_check_clean": true,
+    "git_status_clean": true,
+    "hypothesis_registry_verified": true,
+    "h001_status": "tested_not_supported",
+    "h002_h003_h004_status": "registered_secondary_not_tested",
+    "anchor_null_preserved": true,
+    "exclusions_preserved": 336,
+    "pit_rank_inquiry_closed": true,
+    "rank_verified_all_symbols": true,
+    "frozen_artifacts_untouched": true,
+    "no_preregistration_from_grid_hits": true
+  },
+  "audits_reviewed": [
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/leakage_audit_extended_v1.json",
+    "research_state/robustness_prior_controls_extended_v2.json",
+    "research_state/h002_h003_feasibility_review_v1.json",
+    "research_state/source_audit.md"
+  ],
+  "notes": "Re-reviewed on-disk audits; no new unaddressed items found. Pre-existing UNRESOLVED items in research_state/source_audit.md remain documented as known gaps, preserved as-is (funding-rate verification, contract lifecycle via REST unavailable, data revision behavior not tested, mark/index timestamp alignment)."
+}
