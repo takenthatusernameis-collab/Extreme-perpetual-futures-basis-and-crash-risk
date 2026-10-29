@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "EBCR-DURABLE-STATE-UPKEEP-V672",
+  "program_id": "EBCR-001",
+  "activation": 801,
+  "created_at_utc": "2026-10-29T08:01:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regen": {
+      "cmd": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "unittest": {
+      "cmd": "python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "tests": 11
+    },
+    "pytest": {
+      "cmd": "python3 -m pytest -q tests",
+      "result": "unavailable (No module named pytest)"
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypothesis_registry": {
+    "verified": true,
+    "hypotheses": [
+      "EBCR-H001",
+      "EBCR-H002",
+      "EBCR-H003",
+      "EBCR-H004"
+    ],
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p_co_primary": [
+        0.24830545694889028,
+        0.9485
+      ],
+      "anchor_preserved": true
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "next_hypothesis_sequence": 5,
+    "preregistration_from_grid_hits": false
+  },
+  "null_and_exclusions": {
+    "exclusions_count": 336,
+    "maintained": true,
+    "anchor_null_preserved": true
+  },
+  "pit_rank": {
+    "status": "closed",
+    "symbols_verified": 13,
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "reopen_without_new_free_source": true
+  },
+  "audits_reviewed": [
+    "research_state/source_audit.md",
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/leakage_audit_verification_v1.md"
+  ],
+  "preexisting_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": [],
+  "frozen_artifacts_untouched": true,
+  "notes": "Durable upkeep only. No preregistration from grid hits. No fixes to frozen artifacts."
+}
