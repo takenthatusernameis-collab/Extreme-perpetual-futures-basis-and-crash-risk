@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "activation": 853,
+  "verdict": "no_gaps_found",
+  "hypotheses": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "next_seq": 5
+  },
+  "null_exclusions": 336,
+  "anchor_adj_p": [0.24830545694889028, 0.9485],
+  "pit_rank": {
+    "file": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified": true
+  },
+  "manifest": {
+    "cells": 324,
+    "unique_configuration_hashes": 324,
+    "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+  },
+  "tests": {
+    "unittest": "11 OK",
+    "pytest": "unavailable (No module named pytest)"
+  },
+  "audits": {
+    "pre_existing_unresolved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ],
+    "new_unaddressed_items": []
+  },
+  "frozen_artifacts_modified": false
+}
