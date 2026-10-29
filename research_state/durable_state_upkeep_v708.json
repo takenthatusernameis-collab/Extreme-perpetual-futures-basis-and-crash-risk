@@ -1,0 +1,54 @@
+{
+  "version": 708,
+  "activation": 837,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regen": {
+      "output": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "manifest_on_disk_check": {
+      "output": "/tmp/x.json",
+      "identical_to_research_state_grid_manifest_v1": true
+    },
+    "unittest": {
+      "cmd": "python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "tests": 11
+    },
+    "pytest": {
+      "cmd": "python3 -m pytest -q tests",
+      "available": false
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypotheses": {
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p": [0.24830545694889028, 0.9485]
+    },
+    "H002": {"status": "registered_secondary_not_tested"},
+    "H003": {"status": "registered_secondary_not_tested"},
+    "H004": {"status": "registered_secondary_not_tested"},
+    "next_seq": 5,
+    "prereg_from_grid_hits": false
+  },
+  "state": {
+    "null_exclusions": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "pit_rank_symbols": 13,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json",
+    "frozen_artifacts_untouched": true
+  },
+  "audits": {
+    "reviewed": ["source_audit.md", "leakage_audit_extended_v1.md", "red_team_audit_extended_v1.md", "evaluation_ledger_consistency_audit_v1.md", "evaluation_artifact_audit_v1.md", "leakage_audit_verification_v1.md"],
+    "new_unaddressed": [],
+    "preexisting_unresolved_preserved": ["Contract listing/delisting/migration history", "Data revision behavior"]
+  },
+  "notes": "No new gaps found. No preregistration from grid hits. No changes to frozen artifacts."
+}
