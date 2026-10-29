@@ -1,41 +1,46 @@
 {
-  "version": 694,
+  "schema_version": "1.0",
+  "upkeep_id": "EBCR-001-DURABLE-STATE-UPKEEP-v694",
   "activation": 823,
-  "created_at": "2026-10-29T14:48:00Z",
+  "timestamp_utc": "2026-10-29T16:44:50Z",
   "verdict": "no_gaps_found",
   "checks": {
-    "manifest": {
-      "cells": 324,
-      "unique_config_hashes": 324,
-      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-      "matches_frozen_canonical": true
+    "manifest_regenerated": true,
+    "manifest_cells": 324,
+    "manifest_unique_hashes": 324,
+    "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "unittest": {
+      "passed": 11
     },
-    "tests": {
-      "unittest": {"ran": 11, "ok": true},
-      "pytest": {"available": false}
-    },
-    "git": {
-      "diff_check_clean": true,
-      "status_short_clean": true
-    }
+    "pytest": "unavailable",
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
   },
   "hypotheses": {
-    "H001": {"status": "tested_not_supported", "adj_p": {"crash_incidence_15pct": 0.24830545694889028, "es5_forward_mae": 0.9485}},
-    "H002": {"status": "registered_secondary_not_tested"},
-    "H003": {"status": "registered_secondary_not_tested"},
-    "H004": {"status": "registered_secondary_not_tested"}
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested"
   },
-  "constraints_preserved": {
-    "null_exclusions": 336,
-    "anchor_null_preserved": true,
-    "pit_rank_closed": true,
-    "pit_rank_symbols": 13,
-    "frozen_artifacts_untouched": true
+  "null_exclusions": 336,
+  "anchor_null_preserved": true,
+  "pit_rank": {
+    "status": "closed",
+    "symbols": 13,
+    "evidence": "research_state/pit_rank_verification_v1.json"
   },
-  "audits": {
-    "reviewed": ["source_audit.md", "leakage_audit_extended_v1.md", "red_team_audit_extended_v1.md", "evaluation_ledger_consistency_audit_v1.md", "evaluation_artifact_audit_v1.md", "leakage_audit_verification_v1.md"],
-    "preexisting_unresolved": ["Contract listing/delisting/migration history", "Data revision behavior"],
-    "new_unaddressed": []
-  },
-  "notes": "Activation 823 upkeep: no gaps found; no preregistration from grid hits; no changes committed."
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "preexisting_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "frozen_artifacts_untouched": true,
+  "notes": "No preregistration from grid hits. No new unaddressed items found."
 }
