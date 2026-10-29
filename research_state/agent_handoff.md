@@ -7,7 +7,7 @@
 - Universe/PIT: CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Extraction record preserved in research_state/pit_rank_verification_v1.json.
 - Anchor null preserved (adj p 0.24830545694889028/0.9485). Exclusions 336 preserved.
 - H001: tested_not_supported (reconciled). H002/H003/H004: registered_secondary_not_tested.
-- Red-team/leakage audits reviewed; durable-state upkeep v627-v635 created (verdict: no_gaps_found).
+- Red-team/leakage audits reviewed; durable-state upkeep v627-v636 created (verdict: no_gaps_found).
 
 ## Completed this session (activation 764)
 - Required checks re-run and pass: manifest regenerated 324 cells / 324 unique configuration hashes / config_sha256 matches frozen canonical (55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; raw 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16); unittest 11 OK (0.006s); pytest unavailable (`No module named pytest`); git diff --check clean; git status clean.
