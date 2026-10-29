@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v724",
+  "program_id": "EBCR-001",
+  "activation": 854,
+  "created_at_utc": "2026-10-29T16:41:35Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest_regenerated": {
+      "output": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "tests": {
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "Ran 11 tests in 0.007s OK"
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "result": "No module named pytest"
+      }
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    }
+  },
+  "hypothesis_registry": {
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p_crash_incidence": 0.24830545694889028,
+      "adj_p_es5": 0.9485,
+      "anchor_preserved": true
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "next_hypothesis_sequence": 5,
+    "preregistration_from_grid_hits": false
+  },
+  "preserved_state": {
+    "null_exclusions_count": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json",
+    "pit_symbols_verified": 13,
+    "frozen_artifacts_untouched": true
+  },
+  "audits_reviewed": [
+    "research_state/source_audit.md",
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/leakage_audit_verification_v1.md"
+  ],
+  "preexisting_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": [],
+  "notes": "Durable-state upkeep v724 complete. No new gaps found. All pre-existing unresolved items preserved as documented."
+}
