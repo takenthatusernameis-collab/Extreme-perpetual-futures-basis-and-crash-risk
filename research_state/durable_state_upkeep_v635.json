@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v635",
+  "activation": 764,
+  "created_utc": "2026-10-29T03:11:17Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regenerated": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "unittest": {"command": "python3 -m unittest discover -s tests -q", "result": "OK", "count": 11},
+      "pytest": {"command": "python3 -m pytest -q tests", "result": "unavailable", "reason": "No module named pytest"}
+    },
+    "git": {"diff_check": "clean", "status_short": ""}
+  },
+  "state_verification": {
+    "hypotheses": {
+      "H001": "tested_not_supported (adj p 0.24830545694889028/0.9485)",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "null_exclusions_preserved": 336,
+    "anchor_null_preserved": true,
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "symbols": 13,
+      "rank_verified": true
+    },
+    "frozen_artifacts_untouched": true,
+    "audits_reviewed": [
+      "source_audit.md",
+      "evaluation_artifact_audit_v1.md",
+      "evaluation_ledger_consistency_audit_v1.md",
+      "leakage_audit_verification_v1.md",
+      "red_team_audit_extended_v1.md"
+    ],
+    "preexisting_unresolved_preserved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ]
+  },
+  "notes": "No gaps found. No frozen artifacts modified. No preregistration from grid hits."
+}
