@@ -1,1 +1,68 @@
-{"activation":814,"verdict":"no_gaps_found","checks":{"grid_manifest":{"command":"python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json","cells":324,"unique_configuration_hashes":324,"config_sha256":"55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0","frozen_canonical_match":true,"deterministic_regeneration_sha256":"1b393cd6b087ea3cd1e62d4191ad8158356598df42ea8719c257627b778072bf","on_disk_manifest_sha256":"1b393cd6b087ea3cd1e62d4191ad8158356598df42ea8719c257627b778072bf","manifest_identical":true},"unittest":{"command":"python3 -m unittest discover -s tests -q","result":"OK","tests_run":11,"duration_seconds":0.007},"pytest":{"command":"python3 -m pytest -q tests","result":"unavailable","note":"No module named pytest"},"git_diff_check":"clean","git_status_short":"clean"},"hypothesis_registry":{"H001":"tested_not_supported","H002":"registered_secondary_not_tested","H003":"registered_secondary_not_tested","H004":"registered_secondary_not_tested","next_seq":5,"anchor_null_preserved":true,"adj_p":0.24830545694889028,"adj_p_alt":0.9485},"exclusions":{"count":336,"preserved":true},"pit_rank":{"status":"CLOSED","symbols":13,"evidence":"research_state/pit_rank_verification_v1.json","rank_verified":true},"frozen_artifacts":{"config":"configs/basis_crash_grid_v1.json","canonical_sha256":"55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0","raw_sha256":"753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16","modified":false},"preregistration_from_grid_hits":false,"on_disk_audits_reviewed":["source_audit.md","leakage_audit_extended_v1.md","red_team_audit_extended_v1.md","evaluation_ledger_consistency_audit_v1.md","evaluation_artifact_audit_v1.md","leakage_audit_verification_v1.json"],"pre_existing_unresolved":["Contract listing/delisting/migration history","Data revision behavior"],"new_unaddressed_items_found":false,"committed":false}
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable-state-upkeep-v685",
+  "activation": 814,
+  "created_at_utc": "2026-10-29T09:51:40Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regenerated": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "config_sha256_match_frozen_canonical": true
+    },
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "Ran 11 tests in 0.007s\n\nOK"
+    },
+    "pytest": {
+      "command": "python3 -m pytest -q tests",
+      "available": false,
+      "note": "No module named pytest"
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypothesis_registry_consistency": {
+    "file": "research_state/hypothesis_registry.json",
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p_crash_incidence_15pct": 0.24830545694889028,
+      "adj_p_es5pct": 0.9485
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "next_hypothesis_sequence": 5,
+    "no_preregistration_from_grid_hits": true
+  },
+  "preserved_state": {
+    "null_exclusions_count": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json",
+    "pit_rank_symbols_verified": 13,
+    "frozen_artifacts_untouched": true
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "pre_existing_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": [],
+  "notes": "Activation 814 upkeep complete. No gaps found."
+}
