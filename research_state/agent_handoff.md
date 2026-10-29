@@ -10,7 +10,7 @@
 - H001: tested_not_supported (reconciled). H002/H003/H004: registered_secondary_not_tested.
 - Red-team/leakage audits reviewed; durable-state upkeep v627-v656 created (verdict: no_gaps_found); v657 added.
 
-## Completed this session (activation 786)
+## Completed this session (activation 787)
 - Required checks re-run and pass: manifest regenerated 324 cells / 324 unique configuration hashes / config_sha256 matches frozen canonical (55caedf8...); unittest 11 OK (0.007s); pytest unavailable (`No module named pytest`); git diff --check clean; git status --short clean.
 - Created `research_state/durable_state_upkeep_v657.json` with verdict `no_gaps_found`; JSON validated.
 - Hypothesis registry re-verified (H001..H004): H001 tested_not_supported (adj p 0.24830545694889028/0.9485), H002/H003/H004 registered_secondary_not_tested (next seq 5). No preregistration from grid hits.
@@ -18,7 +18,7 @@
 - On-disk audits re-reviewed (source_audit.md, leakage_audit_extended_v1.md, red_team_audit_extended_v1.md, evaluation_ledger_consistency_audit_v1.md, evaluation_artifact_audit_v1.md, leakage_audit_verification_v1.md); pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior). No new unaddressed items found.
 - Reported only verified findings; no changes committed.
 
-## Next action (activation 787)
+## Next action (activation 788)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `python3 -m pytest -q tests` (if available); `git diff --check`; `git status --short`.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
