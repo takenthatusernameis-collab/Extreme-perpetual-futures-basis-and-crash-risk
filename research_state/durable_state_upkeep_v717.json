@@ -1,0 +1,62 @@
+{
+  "upkeep_id": "v717",
+  "activation": 846,
+  "timestamp_utc": "2026-10-29T12:52:50Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regenerated": true,
+    "cells": 324,
+    "unique_configuration_hashes": 324,
+    "config_sha256_matches_frozen_canonical": true,
+    "frozen_canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "on_disk_manifest_identical_to_regen": "verified_via_check_or_diff_identical",
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "OK",
+      "count": 11,
+      "time_s": 0.007
+    },
+    "pytest_available": false,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
+  },
+  "hypothesis_registry": {
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p": 0.24830545694889028,
+      "notes": "anchor null preserved"
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested",
+      "next_seq": 5
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "prereg_from_grid_hits": false
+  },
+  "preserved": {
+    "null_exclusions_count": 336,
+    "pit_rank_closed": true,
+    "pit_rank_symbols": 13,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json",
+    "frozen_artifacts_untouched": true,
+    "preexisting_unresolved_preserved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ]
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "new_unaddressed_items": [],
+  "notes": "Activation 846 durable upkeep complete. No gaps found."
+}
