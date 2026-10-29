@@ -1,0 +1,58 @@
+{
+  "upkeep_id": "v711",
+  "activation": 840,
+  "timestamp_utc": "2026-10-29T12:44:06Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regenerated": {
+      "cells": 324,
+      "unique_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "manifest_check_identical": true,
+    "unittest": "11 OK (0.007s)",
+    "pytest": "unavailable (No module named pytest)",
+    "git_diff_check": "clean",
+    "git_status_clean": true
+  },
+  "hypothesis_registry": {
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p": 0.24830545694889028,
+      "q_value": 0.9485
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "preregistration_from_grid_hits": false,
+    "next_seq": 5
+  },
+  "state": {
+    "null_exclusions_count": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "pit_rank_symbols": 13,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json",
+    "frozen_artifacts_untouched": true
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "preexisting_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": []
+}
