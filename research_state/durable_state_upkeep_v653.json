@@ -1,0 +1,80 @@
+{
+  "upkeep_id": "v653",
+  "activation": 782,
+  "program": "EBCR-001",
+  "timestamp_utc": "2026-10-29T05:48:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "expected_configuration_count": 324,
+      "config_sha256_canonical_match": true,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "manifest_path": "/tmp/basis-grid-manifest.json"
+    },
+    "tests": {
+      "unittest": {
+        "ran": 11,
+        "ok": true
+      },
+      "pytest": {
+        "available": false
+      }
+    },
+    "git": {
+      "diff_check_clean": true,
+      "status_clean": true
+    }
+  },
+  "hypotheses": {
+    "H001": {
+      "status": "tested_not_supported",
+      "adj_p": 0.24830545694889028,
+      "min_adj_p_overall": 0.9485
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested",
+      "next_seq": 5
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    }
+  },
+  "constraints_preserved": {
+    "null_exclusions": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": {
+      "count": 13,
+      "evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "frozen_artifacts_untouched": true,
+    "no_prereg_from_grid_hits": true
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "preexisting_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_gaps_found": false,
+  "actions_taken": [
+    "regenerated_grid_manifest",
+    "ran_unittest",
+    "checked_pytest_availability",
+    "ran_git_diff_check",
+    "checked_git_status",
+    "reverified_hypothesis_registry",
+    "reviewed_on_disk_audits"
+  ],
+  "notes": "Durable upkeep v653 created; no new unaddressed items found. Pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior). PIT rank inquiry remains CLOSED. No frozen artifacts modified."
+}
