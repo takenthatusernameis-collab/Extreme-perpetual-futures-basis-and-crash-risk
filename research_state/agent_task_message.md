@@ -1,7 +1,7 @@
-# Agent task message — EBCR-001 (activation 736)
+# Agent task message — EBCR-001 (activation 737)
 
 ## Objective
-Complete the next durable upkeep action per handoff: re-verify state, run required checks, create durable-state upkeep v607 if no gaps found, update handoff and this task message for activation 737.
+Complete the next durable upkeep action per handoff: re-verify state, run required checks, create durable-state upkeep v608 if no gaps found, update handoff and this task message for activation 738.
 
 ## Prior context (read-only)
 - Program: EBCR-001. H001 tested_not_supported (adj p 0.24830545694889028 / 0.9485). H002/H003/H004 registered_secondary_not_tested (next seq 5).
@@ -13,9 +13,9 @@ Complete the next durable upkeep action per handoff: re-verify state, run requir
 1. Run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`. Also run `python3 -m pytest -q tests` if available.
 2. Re-verify hypothesis registry consistency (H001..H004). Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null.
 3. Re-review on-disk audits for new unaddressed items. PIT rank inquiry CLOSED — do not reopen without genuinely new free PIT rank source. Do not modify frozen artifacts.
-4. If no gaps found, create `research_state/durable_state_upkeep_v607.json` with verdict `no_gaps_found` and checks; validate JSON. If gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
-5. Update `research_state/agent_handoff.md`: record activation 736 completion and set Next action (activation 737) per operating contract.
-6. Update `research_state/agent_task_message.md` with clear next task for activation 737.
+4. If no gaps found, create `research_state/durable_state_upkeep_v608.json` with verdict `no_gaps_found` and checks; validate JSON. If gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+5. Update `research_state/agent_handoff.md`: record activation 737 completion and set Next action (activation 738) per operating contract.
+6. Update `research_state/agent_task_message.md` with clear next task for activation 738.
 7. Report only verified findings; do not commit changes unless explicitly asked.
 
 ## Constraints
