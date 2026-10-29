@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v753",
+  "activation": 884,
+  "timestamp_utc": "2026-10-29T19:35:55Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "status": "ok"
+    },
+    "tests": {
+      "unittest_discover": {"ran": 11, "ok": true},
+      "pytest": {"available": false}
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    }
+  },
+  "hypothesis_registry": {
+    "h001": "tested_not_supported",
+    "h002": "registered_secondary_not_tested",
+    "h003": "registered_secondary_not_tested",
+    "h004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5
+  },
+  "preserved": {
+    "anchor_null": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+    },
+    "exclusions_count": 336
+  },
+  "pit_rank": {
+    "status": "closed",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified": true
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "pre_existing_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "notes": "No new unaddressed items found. No preregistration from grid hits. Frozen artifacts untouched."
+}
