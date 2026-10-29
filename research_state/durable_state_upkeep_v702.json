@@ -1,78 +1,79 @@
 {
   "schema_version": "1.0",
-  "upkeep_id": "durable_state_upkeep_v702",
   "program_id": "EBCR-001",
-  "activation": 831,
-  "timestamp_utc": "2026-10-29T11:39:00Z",
+  "activation": 832,
+  "upkeep_version": 702,
+  "timestamp_utc": "2026-10-29T15:44:00Z",
   "verdict": "no_gaps_found",
   "checks": {
-    "grid_manifest_regen": {
-      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+    "grid_manifest_regenerated": {
+      "output": "/tmp/basis-grid-manifest.json",
       "cells": 324,
       "unique_config_hashes": 324,
-      "config_sha256_matches_frozen_canonical": true,
-      "frozen_canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
     },
-    "grid_manifest_on_disk_check": {
-      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/x.json --check",
-      "result": "verified",
-      "diff_from_regen": "IDENTICAL"
-    },
-    "tests_unittest": {
-      "command": "python3 -m unittest discover -s tests -q",
-      "result": "OK",
-      "count": 11
-    },
-    "tests_pytest": {
-      "command": "python3 -m pytest -q tests",
-      "result": "unavailable",
-      "error": "No module named pytest"
+    "tests": {
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "OK",
+        "count": 11
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "result": "unavailable",
+        "note": "No module named pytest"
+      }
     },
     "git_diff_check": "clean",
     "git_status_short": "clean"
   },
-  "hypothesis_registry": {
-    "H001": {
-      "status": "tested_not_supported",
-      "adj_p_anchor_15pct": 0.24830545694889028,
-      "adj_p_anchor_es5pct": 0.9485
-    },
-    "H002": {
-      "status": "registered_secondary_not_tested",
-      "next_seq": 5
-    },
-    "H003": {
-      "status": "registered_secondary_not_tested",
-      "next_seq": 5
-    },
-    "H004": {
-      "status": "registered_secondary_not_tested",
-      "next_seq": 5
-    },
-    "preregistration_from_grid_hits": false
-  },
-  "preserved_state": {
-    "null_exclusions_count": 336,
+  "hypothesis_registry_consistency": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5,
     "anchor_null_preserved": true,
-    "pit_rank": {
-      "status": "closed",
-      "symbols": 13,
-      "evidence": "research_state/pit_rank_verification_v1.json",
-      "rank_verified": true
-    },
-    "frozen_artifacts_untouched": true
+    "anchor_co_primary_adjusted_p": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485,
+      "anchor_co_primary_significant": false
+    }
+  },
+  "cell_ledger_extended_v1": {
+    "ok": 324,
+    "non_ok": 0
+  },
+  "pit_rank": {
+    "status": "CLOSED",
+    "rank_verified": 13,
+    "rank_verified_all": true,
+    "durable_record": "research_state/pit_rank_verification_v1.json"
+  },
+  "anchor_null_preserved": true,
+  "exclusions": {
+    "n_exclusions": 336,
+    "source": "research_state/integrated_extended_v1.json"
   },
   "audits_reviewed": [
-    "source_audit.md",
-    "leakage_audit_extended_v1.md",
-    "red_team_audit_extended_v1.md",
-    "evaluation_ledger_consistency_audit_v1.md",
-    "evaluation_artifact_audit_v1.md",
-    "leakage_audit_verification_v1.md"
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/leakage_audit_verification_v1.md",
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/robustness_prior_controls_extended_v2.json",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/source_audit.md",
+    "research_state/h002_h003_feasibility_review_v1.json"
   ],
-  "pre_existing_unresolved": [
+  "preexisting_unresolved_preserved": true,
+  "preexisting_unresolved": [
     "Contract listing/delisting/migration history",
     "Data revision behavior"
   ],
-  "new_unaddressed_items": []
+  "new_unaddressed_items": false,
+  "frozen_artifacts_untouched": true,
+  "preregistration_from_grid_hits": false,
+  "gaps": [],
+  "notes": "Activation 832: re-ran required checks (all pass), verified registry/ledger/PIT/null/exclusions, reviewed all on-disk audits - no new unaddressed items. No frozen artifacts modified; no preregistration from grid hits."
 }
