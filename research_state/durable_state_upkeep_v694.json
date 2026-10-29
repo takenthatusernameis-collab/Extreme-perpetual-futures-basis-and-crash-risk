@@ -1,54 +1,41 @@
 {
-  "schema_version": 1,
-  "upkeep_id": "durable_state_upkeep_v694",
+  "version": 694,
   "activation": 823,
-  "timestamp_utc": "2026-10-29T10:58:42Z",
+  "created_at": "2026-10-29T14:48:00Z",
   "verdict": "no_gaps_found",
   "checks": {
-    "manifest_regenerated": true,
-    "manifest_cells": 324,
-    "manifest_unique_hashes": 324,
-    "config_sha256_match_frozen_canonical": true,
-    "ondisk_manifest_check_identical": true,
-    "unittest_count": 11,
-    "unittest_ok": true,
-    "pytest_available": false,
-    "git_diff_check_clean": true,
-    "git_status_clean": true
-  },
-  "hypothesis_registry": {
-    "H001": {
-      "status": "tested_not_supported"
+    "manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
     },
-    "H002": {
-      "status": "registered_secondary_not_tested"
+    "tests": {
+      "unittest": {"ran": 11, "ok": true},
+      "pytest": {"available": false}
     },
-    "H003": {
-      "status": "registered_secondary_not_tested"
-    },
-    "H004": {
-      "status": "registered_secondary_not_tested"
+    "git": {
+      "diff_check_clean": true,
+      "status_short_clean": true
     }
   },
-  "preserved": {
-    "anchor_null": true,
-    "exclusions_count": 336,
+  "hypotheses": {
+    "H001": {"status": "tested_not_supported", "adj_p": {"crash_incidence_15pct": 0.24830545694889028, "es5_forward_mae": 0.9485}},
+    "H002": {"status": "registered_secondary_not_tested"},
+    "H003": {"status": "registered_secondary_not_tested"},
+    "H004": {"status": "registered_secondary_not_tested"}
+  },
+  "constraints_preserved": {
+    "null_exclusions": 336,
+    "anchor_null_preserved": true,
     "pit_rank_closed": true,
     "pit_rank_symbols": 13,
     "frozen_artifacts_untouched": true
   },
-  "audits_reviewed": [
-    "source_audit.md",
-    "leakage_audit_extended_v1.md",
-    "red_team_audit_extended_v1.md",
-    "evaluation_ledger_consistency_audit_v1.md",
-    "evaluation_artifact_audit_v1.md",
-    "leakage_audit_verification_v1.md"
-  ],
-  "preexisting_unresolved_preserved": [
-    "Contract listing/delisting/migration history",
-    "Data revision behavior"
-  ],
-  "new_unaddressed_items": [],
-  "notes": "Re-verified state; no gaps found."
+  "audits": {
+    "reviewed": ["source_audit.md", "leakage_audit_extended_v1.md", "red_team_audit_extended_v1.md", "evaluation_ledger_consistency_audit_v1.md", "evaluation_artifact_audit_v1.md", "leakage_audit_verification_v1.md"],
+    "preexisting_unresolved": ["Contract listing/delisting/migration history", "Data revision behavior"],
+    "new_unaddressed": []
+  },
+  "notes": "Activation 823 upkeep: no gaps found; no preregistration from grid hits; no changes committed."
 }
