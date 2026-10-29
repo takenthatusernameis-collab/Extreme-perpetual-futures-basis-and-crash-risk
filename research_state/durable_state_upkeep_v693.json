@@ -1,0 +1,56 @@
+{
+  "version": 693,
+  "activation": 822,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_regenerate": {
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "manifest_check": {
+      "verified": true,
+      "diff": "IDENTICAL"
+    },
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "ok",
+      "tests": 11
+    },
+    "pytest": {
+      "available": false
+    },
+    "git_diff_check": "clean",
+    "git_status_short": "clean"
+  },
+  "hypothesis_registry": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "adj_p_anchor": 0.24830545694889028,
+    "q1_adj_p_anchor": 0.9485,
+    "no_preregistration_from_grid_hits": true
+  },
+  "state": {
+    "exclusions": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "pit_symbols": 13,
+    "frozen_artifacts_untouched": true
+  },
+  "audits_reviewed": [
+    "source_audit.md",
+    "leakage_audit_extended_v1.md",
+    "red_team_audit_extended_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "evaluation_artifact_audit_v1.md",
+    "leakage_audit_verification_v1.md"
+  ],
+  "unresolved_preexisting": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "notes": "No new unaddressed items found. Reported only verified findings."
+}
