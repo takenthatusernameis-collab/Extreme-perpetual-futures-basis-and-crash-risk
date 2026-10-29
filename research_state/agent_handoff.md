@@ -9,15 +9,15 @@
 - H001: tested_not_supported (reconciled). H002/H003/H004: registered_secondary_not_tested.
 - Red-team/leakage audits reviewed; durable-state upkeep v614 created (verdict: no_gaps_found).
 
-## Completed this session (activation 743)
-- Required checks re-run and pass: manifest regenerated 324 cells / 324 unique configuration hashes / config_sha256 matches frozen canonical (55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); unittest 11 OK (0.006s); pytest unavailable (`No module named pytest`); git diff --check clean; git status clean.
-- Created `research_state/durable_state_upkeep_v614.json` with verdict `no_gaps_found`; JSON validated.
+## Completed this session (activation 744)
+- Required checks re-run and pass: manifest regenerated 324 cells / 324 unique configuration hashes / config_sha256 matches frozen canonical (55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); unittest 11 OK (0.008s); pytest unavailable (`No module named pytest`); git diff --check clean; git status clean.
+- Created `research_state/durable_state_upkeep_v615.json` with verdict `no_gaps_found`; JSON validated.
 - Hypothesis registry re-verified (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002/H003/H004 registered_secondary_not_tested; next seq 5). H002/H003 feasibility remains `registered_secondary_not_tested` (no preregistration from grid hits).
 - Null/exclusions (336) maintained; anchor null preserved; PIT rank closed (13 symbols); no preregistration from grid hits; frozen artifacts untouched.
 - On-disk audits re-reviewed; pre-existing UNRESOLVED in source_audit.md preserved (Contract listing/delisting/migration history; Data revision behavior). No new unaddressed items found.
 - Reported only verified findings; no changes committed.
 
-## Next action (activation 744)
+## Next action (activation 745)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `python3 -m pytest -q tests` (if available); `git diff --check`; `git status --short`.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
