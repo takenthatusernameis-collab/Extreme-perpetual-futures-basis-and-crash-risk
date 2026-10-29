@@ -1,0 +1,48 @@
+{
+  "activation": 913,
+  "verdict": "no_gaps_found",
+  "created_utc": "2026-10-29T22:40:00Z",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "cells": 324,
+    "unique_config_hashes": 324,
+    "config_sha256_matches_frozen": true,
+    "frozen_config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "unittest_discover_q": "11 OK",
+    "pytest_available": false,
+    "git_diff_check_clean": true,
+    "git_status_short_clean": true
+  },
+  "hypotheses": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "next_seq": 5
+  },
+  "anchor": {
+    "adj_p_crash_incidence_15pct": 0.24830545694889028,
+    "adj_p_expected_shortfall_5pct_forward_mae": 0.9485,
+    "exclusions": 336,
+    "null_preserved": true
+  },
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified": true
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "pre_existing_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "notes": "Activation 913 upkeep complete; no preregistration from grid hits; frozen artifacts untouched; PIT rank inquiry remains CLOSED."
+}
