@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "upkeep_id": "durable-state-upkeep-v630",
+  "activation": 759,
+  "timestamp_utc": "2026-10-29T03:04:46Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "config_sha256_raw": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+      "manifest_sha256_raw": "1b393cd6b087ea3cd1e62d4191ad8158356598df42ea8719c257627b778072bf"
+    },
+    "tests_unittest": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "Ran 11 tests in 0.006s\n\nOK"
+    },
+    "tests_pytest": {
+      "command": "python3 -m pytest -q tests",
+      "result": "No module named pytest"
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": ""
+    }
+  },
+  "verifications": {
+    "hypothesis_registry": {
+      "H001": "tested_not_supported (adj p 0.24830545694889028/0.9485)",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "preserved": {
+      "null_exclusions_336": true,
+      "anchor_null_preserved": true,
+      "frozen_artifacts_untouched": true,
+      "pit_rank_closed": true,
+      "pit_evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/source_audit.md",
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_verification_v1.md"
+    ],
+    "pre_existing_unresolved_preserved": [
+      "Contract listing/delisting/migration history (source_audit)",
+      "Data revision behavior (source_audit)"
+    ]
+  },
+  "notes": "Activation 759 upkeep complete. Required checks pass (manifest 324/324 cells, 324 unique config hashes, config sha matches frozen canonical 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; unittest 11 OK; pytest unavailable; git clean). No new unaddressed items found in on-disk audits; pre-existing UNRESOLVED source_audit items preserved. No preregistration from grid hits; no frozen artifacts modified."
+}
