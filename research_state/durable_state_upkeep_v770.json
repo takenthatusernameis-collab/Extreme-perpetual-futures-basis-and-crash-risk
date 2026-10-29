@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "upkeep_id": "durable_state_upkeep_v770",
+  "activation": 901,
+  "created_at": "2026-10-29T21:35:42Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest_regenerated": true,
+    "grid_cells": 324,
+    "unique_config_hashes": 324,
+    "config_sha256_canonical_match": true,
+    "unittest": {"ok": true, "count": 11},
+    "pytest": {"available": false},
+    "git_diff_check_clean": true,
+    "git_status_clean": true
+  },
+  "hypothesis_registry": {
+    "H001": {"status": "tested_not_supported"},
+    "H002": {"status": "registered_secondary_not_tested"},
+    "H003": {"status": "registered_secondary_not_tested"},
+    "H004": {"status": "registered_secondary_not_tested"},
+    "next_seq": 5
+  },
+  "anchor": {
+    "crash_incidence_15pct_adj_p": 0.24830545694889028,
+    "expected_shortfall_5pct_forward_mae": 0.9485,
+    "exclusions": 336,
+    "null_preserved": true
+  },
+  "pit_rank": {
+    "status": "closed",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified": true
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "pre_existing_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": [],
+  "frozen_artifacts_untouched": true,
+  "preregistration_from_grid_hits": false
+}
