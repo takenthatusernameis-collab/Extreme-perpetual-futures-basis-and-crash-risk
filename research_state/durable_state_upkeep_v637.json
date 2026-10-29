@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v637",
+  "program_id": "EBCR-001",
+  "activation": 766,
+  "created_utc": "2026-10-29T04:04:30Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "config_sha256_raw": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+      "ok": true
+    },
+    "tests": {
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "ran": 11,
+        "ok": true
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "available": false,
+        "note": "No module named pytest"
+      }
+    },
+    "git": {
+      "diff_check": {
+        "command": "git diff --check",
+        "clean": true
+      },
+      "status_short": {
+        "command": "git status --short",
+        "clean": true
+      }
+    }
+  },
+  "state_verification": {
+    "hypothesis_registry": {
+      "H001": {
+        "status": "tested_not_supported",
+        "adj_p_crash_incidence_15pct": 0.24830545694889028,
+        "adj_p_es_5pct": 0.9485,
+        "anchor_significant": false,
+        "holm_significant": false
+      },
+      "H002": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H003": {
+        "status": "registered_secondary_not_tested"
+      },
+      "H004": {
+        "status": "registered_secondary_not_tested",
+        "origin": "red_team_audit_extended_v1.md:24-26"
+      },
+      "next_hypothesis_sequence": 5,
+      "no_preregistration_from_grid_hits": true
+    },
+    "null_exclusions": {
+      "exclusions_preserved": 336,
+      "anchor_null_preserved": true
+    },
+    "pit_rank": {
+      "status": "closed",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "symbols_verified": 13,
+      "rank_verified_all": true,
+      "reopen_requires_new_free_source": true
+    },
+    "frozen_artifacts_untouched": true,
+    "preexisting_unresolved_preserved": [
+      "source_audit.md: Contract listing/delisting/migration history",
+      "source_audit.md: Data revision behavior"
+    ]
+  },
+  "notes": "Durable-state upkeep complete. No gaps found. All invariants preserved."
+}
