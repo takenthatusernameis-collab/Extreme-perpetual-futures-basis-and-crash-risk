@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "activation": 1056,
+  "generated_at_utc": "2026-10-30T14:11:00Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "output": "/tmp/basis-grid-manifest.json",
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen_canonical": true
+    },
+    "tests": {
+      "unittest_discover_q": {
+        "ran": 11,
+        "ok": true
+      },
+      "pytest_q": {
+        "available": false
+      }
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    }
+  },
+  "hypothesis_registry": {
+    "consistent": true,
+    "h001_status": "tested_not_supported",
+    "h002_h004_status": [
+      "registered_secondary_not_tested",
+      "registered_secondary_not_tested",
+      "registered_secondary_not_tested"
+    ],
+    "next_hypothesis_sequence": 5
+  },
+  "preserved": {
+    "null_exclusions": 336,
+    "anchor_null_adj_p": {
+      "crash_incidence_15pct": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae": 0.9485
+    },
+    "pit_rank_closed": true,
+    "pit_evidence": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/leakage_audit_extended_v1.json",
+    "research_state/leakage_audit_extended_v1.md",
+    "research_state/leakage_audit_verification_v1.md",
+    "research_state/red_team_audit_extended_v1.json",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/source_audit.md",
+    "research_state/verified_symbols_s3_audit.json"
+  ],
+  "unaddressed_preexisting": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed": [],
+  "frozen_artifacts_modified": false,
+  "notes": "Durable-state upkeep only; no grid hits preresgistered; no reopening of PIT rank."
+}
