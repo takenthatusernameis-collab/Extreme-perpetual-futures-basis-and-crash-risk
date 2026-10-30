@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "v925",
+  "activation": 1058,
+  "created_at_utc": "2026-10-30T14:14:32Z",
+  "program_id": "EBCR-001",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "path": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical_match": true,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "unittest_discover": "OK (11 tests)",
+      "pytest": "unavailable"
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "preserved_state": {
+      "null_preserved": true,
+      "exclusions_count": 336,
+      "anchor_null_adj_p_crash_incidence": 0.24830545694889028,
+      "anchor_null_adj_p_es5pct": 0.9485,
+      "pit_rank_closed": true,
+      "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/leakage_audit_verification_v1.md",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.md",
+      "research_state/source_audit.md",
+      "research_state/verified_symbols_s3_audit.json"
+    ],
+    "preexisting_unresolved_preserved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ],
+    "new_unaddressed_items": []
+  },
+  "notes": "No gaps found. No frozen artifacts modified. Required checks pass for activation 1058."
+}
