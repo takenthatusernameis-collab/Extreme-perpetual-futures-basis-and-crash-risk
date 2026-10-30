@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v873",
+  "activation": 1005,
+  "timestamp_utc": "2026-10-30T08:16:54Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks": {
+      "grid_manifest": {
+        "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+        "result": "ok",
+        "cells": 324,
+        "unique_configuration_hashes": 324,
+        "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      },
+      "tests": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "ok",
+        "ran": 11
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "result": "unavailable",
+        "notes": "No module named pytest"
+      },
+      "git_diff_check": {
+        "command": "git diff --check",
+        "result": "clean"
+      },
+      "git_status_short": {
+        "command": "git status --short",
+        "result": "clean"
+      }
+    },
+    "hypothesis_registry": {
+      "consistent": true,
+      "hypotheses": ["EBCR-H001", "EBCR-H002", "EBCR-H003", "EBCR-H004"],
+      "H001_status": "tested_not_supported",
+      "H002_status": "registered_secondary_not_tested",
+      "H003_status": "registered_secondary_not_tested",
+      "H004_status": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5,
+      "anchor_null_preserved": true,
+      "adj_p": [0.24830545694889028, 0.9485]
+    },
+    "frozen_artifacts_untouched": {
+      "configs/basis_crash_grid_v1.json": {
+        "literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+        "canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+        "manifest_config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+      }
+    },
+    "exclusions": {
+      "count": 336,
+      "preserved": true
+    },
+    "pit": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "all_rank_verified": true,
+      "symbols_verified": 13
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/leakage_audit_verification_v1.md",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.md",
+      "research_state/source_audit.md",
+      "research_state/pit_rank_verification_v1.json"
+    ],
+    "preexisting_known_gaps": [
+      {
+        "file": "research_state/source_audit.md",
+        "items": ["Contract listing/delisting/migration history (UNRESOLVED)", "Data revision behavior (UNRESOLVED)"],
+        "notes": "Pre-existing documented gaps from prior audit passes; preserved as-is, do not block basis construction."
+      }
+    ],
+    "new_unaddressed_items": []
+  },
+  "notes": "Activation 1005 upkeep complete. Required checks pass (manifest 324 cells/config sha matches frozen canonical 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; 11 unittest tests OK; git diff --check clean; git status clean; pytest unavailable). Hypothesis registry consistent (H001 tested_not_supported adj p 0.24830545694889028/0.9485; H002-H004 registered_secondary_not_tested; next_hypothesis_sequence 5). Anchor null/exclusions (336) preserved. PIT remains CLOSED (research_state/pit_rank_verification_v1.json, 13 symbols rank_verified). Audits re-reviewed; no new unaddressed items. Pre-existing UNRESOLVED items in source_audit.md preserved. No fixes to frozen artifacts."
+}
