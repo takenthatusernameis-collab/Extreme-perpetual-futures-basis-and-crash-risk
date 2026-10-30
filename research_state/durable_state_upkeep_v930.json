@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "activation": 1063,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "output": "/tmp/basis-grid-manifest.json"
+    },
+    "tests": {
+      "unittest_discover": {
+        "ran": 11,
+        "ok": true
+      },
+      "pytest": {
+        "available": false,
+        "note": "python3 -m pytest not installed"
+      }
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": ""
+    }
+  },
+  "invariants_preserved": {
+    "anchor_null": {
+      "crash_incidence_adj_p": 0.24830545694889028,
+      "es5pct_adj_p": 0.9485
+    },
+    "exclusions": 336,
+    "hypotheses": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_seq": 5
+    },
+    "pit_rank": {
+      "status": "CLOSED",
+      "evidence": "research_state/pit_rank_verification_v1.json",
+      "rank_verified_all": true,
+      "symbols": 13
+    }
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_extended_v1.json",
+    "leakage_audit_extended_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.json",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "preexisting_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "notes": "No gaps found. No frozen artifacts modified. Required checks pass for activation 1063."
+}
