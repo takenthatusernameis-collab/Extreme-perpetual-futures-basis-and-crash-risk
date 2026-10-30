@@ -1,3 +1,18 @@
+# DELAY-ELIMINATION OVERRIDE — ACTIVATION 1103 AND LATER
+
+The handoff records repeated no-gap upkeep activations with unchanged state. This task now uses the state-change gate below instead of requiring a new numbered upkeep artifact on every activation.
+
+1. Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest durable upkeep artifact.
+2. If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
+3. If code/tests changed, run targeted affected tests first. If frozen config/grid/registry/frontier or source data changed, run the specific integrity validators affected. Run the full required gates only at a material milestone or when relevant inputs changed.
+4. Create the next numbered upkeep artifact only when new evidence, a real state transition, a new integrity issue, or a code/config change was actually reviewed.
+5. Do not re-open PIT rank verification or repeat source searches while the exact structural blocker is unchanged. Re-evaluate only with a genuinely new free PIT source, documented source schema/coverage change, or relevant provider change.
+6. Preserve the frozen 324-cell grid, anchor null, 336 exclusions, H001 tested_not_supported, secondary hypotheses untested, and PIT-rank closed status.
+
+See AGENTS.md and prompts/continuous_research_operating_contract_v1_1_addendum.md. Research design and evidence gates are unchanged.
+
+---
+
 # Agent task message — EBCR-001 (activation 1102)
 
 ## Objective
