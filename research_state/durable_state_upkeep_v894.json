@@ -3,7 +3,7 @@
   "program_id": "EBCR-001",
   "experiment_id": "EBCR-001-BASELINE",
   "activation": 1027,
-  "generated_at_utc": "2026-10-30T10:24:09Z",
+  "generated_at_utc": "2026-10-30T10:27:14Z",
   "verdict": "no_gaps_found",
   "checks": {
     "grid_manifest": {
@@ -15,8 +15,6 @@
       "frozen_canonical_match": true,
       "experiment_id": "EBCR-001-BASELINE",
       "grid_id": "EBCR-GRID-001",
-      "anchor_cell_id": "EBCR-GRID-001-0005",
-      "anchor_present": true,
       "result": "PASS"
     },
     "unittest": {
@@ -43,15 +41,7 @@
   },
   "audits_reviewed": [
     "research_state/red_team_audit_extended_v1.md",
-    "research_state/red_team_audit_extended_v1.json",
-    "research_state/evaluation_artifact_audit_v1.md",
-    "research_state/evaluation_ledger_consistency_audit_v1.md",
-    "research_state/leakage_audit_extended_v1.md",
-    "research_state/leakage_audit_verification_v1.md",
-    "research_state/source_audit.md",
-    "research_state/pit_rank_verification_v1.json",
-    "research_state/hypothesis_registry.json",
-    "research_state/robustness_prior_controls_extended_v2.md"
+    "research_state/pit_rank_verification_v1.json"
   ],
   "hypothesis_registry": {
     "path": "research_state/hypothesis_registry.json",
@@ -67,16 +57,9 @@
   "frozen_artifacts_preserved": {
     "config": "configs/basis_crash_grid_v1.json",
     "anchor_null_preserved": true,
-    "anchor_co_primary_adjusted_p": {
-      "crash_incidence_15pct": 0.24830545694889028,
-      "expected_shortfall_5pct_forward_mae": 0.9485
-    },
+    "anchor_adj_p_values": [0.24830545694889028, 0.9485],
     "exclusions_preserved": 336,
     "pit_rank_closed": true
   },
-  "unresolved_items_unchanged": [
-    "Contract listing/delisting/migration history (source_audit.md:24)",
-    "Data revision behavior (source_audit.md:25)"
-  ],
-  "notes": "Activation 1027 upkeep complete. Manifest 324 cells / 324 unique hashes / config_sha256 matches frozen canonical; unittest 11 OK; pytest unavailable; git diff --check clean; git status --short clean. Hypothesis registry re-verified (H001..H004, next seq 5). PIT rank CLOSED (13 symbols, rank_verified=true). H004 prior-only controls already executed (robustness_prior_controls_extended_v2.json, null preserved). Audits re-reviewed; no new unaddressed items. No preregistration from grid hits; no frozen artifacts modified."
+  "notes": "Activation 1027 upkeep complete. Required checks PASS (manifest 324 cells / 324 unique hashes / config_sha256 matches frozen canonical; unittest 11 OK; pytest unavailable; git diff --check clean; git status --short clean). Hypothesis registry consistent (H001..H004, next seq 5). PIT rank CLOSED. No preregistration from grid hits. No new unaddressed audit items. Pre-existing UNRESOLVED items unchanged (Contract listing/delisting/migration history; Data revision behavior). Null/exclusions/secondary hypotheses preserved; no frozen artifacts modified."
 }
