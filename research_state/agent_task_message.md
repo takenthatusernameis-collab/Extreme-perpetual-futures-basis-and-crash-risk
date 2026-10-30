@@ -1,9 +1,9 @@
-# Agent task message (for next activation 1077)
+# Agent task message (for next activation 1078)
 
 You are continuing EBCR-001. Read first: SKILLS.md, research_state/agent_task_message.md (this file), research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
 ## Immediate objective
-Run upkeep for activation 1077: verify integrity, preserve state, create durable_state_upkeep_v944.json if no gaps found, update handoff/task message.
+Run upkeep for activation 1078: verify integrity, preserve state, create durable_state_upkeep_v945.json if no gaps found, update handoff/task message.
 
 ## Required actions
 1. Run required checks:
@@ -20,9 +20,9 @@ Run upkeep for activation 1077: verify integrity, preserve state, create durable
    - PIT rank CLOSED (evidence: research_state/pit_rank_verification_v1.json); do not reopen without genuinely new free PIT rank source
    - No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts
 3. Review audits on disk: evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, leakage_audit_extended_v1.*, leakage_audit_verification_v1.md, red_team_audit_extended_v1.*, source_audit.md, verified_symbols_s3_audit.json. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior. Note any new unaddressed items explicitly with paths.
-4. If no gaps found, create `research_state/durable_state_upkeep_v944.json` (schema_version 1.0, activation 1077) with verdict `no_gaps_found`, same preserved values, checks, audits_reviewed, and notes "No gaps found. No frozen artifacts modified. Required checks pass for activation 1077." If gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
-5. Update `research_state/agent_handoff.md`: record activation 1076 completion (done), set next action for activation 1077 done context, add v944 to list; set next action for activation 1078.
-6. Update this file for activation 1078 with concrete next task.
+4. If no gaps found, create `research_state/durable_state_upkeep_v945.json` (schema_version 1.0, activation 1078) with verdict `no_gaps_found`, same preserved values, checks, audits_reviewed, and notes "No gaps found. No frozen artifacts modified. Required checks pass for activation 1078." If gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+5. Update `research_state/agent_handoff.md`: record activation 1077 completion (done), set next action for activation 1078 done context, add v945 to list; set next action for activation 1079.
+6. Update this file for activation 1079 with concrete next task.
 
 ## Hard constraints
 - Free public data/open-source only. No paid APIs/trials/compute, credentials, trading.
