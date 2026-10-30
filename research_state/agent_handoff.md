@@ -431,3 +431,22 @@
 7. Report only verified findings; do not commit changes unless explicitly asked.
 8. Update `research_state/agent_handoff.md` to record activation 986 completion and set next action for activation 987.
 9. Update `research_state/agent_task_message.md` with clear next task for activation 987.
+
+## Completed this session (activation 986)
+- Required checks re-run: manifest regenerated 324 cells / 324 unique configuration hashes / config_sha256 matches frozen canonical (55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0); unittest 11 OK (0.007s); pytest unavailable (`No module named pytest`); git diff --check clean; git status --short clean.
+- Created `research_state/durable_state_upkeep_v854.json` with verdict `no_gaps_found` (activation 986).
+- Hypothesis registry re-verified (H001..H004): H001 tested_not_supported, H002/H003/H004 registered_secondary_not_tested (next seq 5). Anchor null/exclusions (336) preserved. Adj p crash_incidence_15pct=0.24830545694889028; expected_shortfall_5pct_forward_mae=0.9485.
+- PIT rank remains CLOSED (evidence `research_state/pit_rank_verification_v1.json`, 13 symbols, rank_verified=true). No preregistration from grid hits; frozen artifacts untouched.
+- Audits re-reviewed: evaluation_artifact_audit_v1.md, evaluation_ledger_consistency_audit_v1.md, leakage_audit_verification_v1.md, red_team_audit_extended_v1.md, source_audit.md, verified_symbols_s3_audit.json. Pre-existing UNRESOLVED preserved. No new unaddressed items found.
+- Updated handoff and task message for next activation; no changes committed.
+
+## Next action (activation 987)
+1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `python3 -m pytest -q tests` (if available); `git diff --check`; `git status --short`.
+2. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
+3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v855.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+6. PIT rank evidence: `research_state/pit_rank_verification_v1.json` (13 symbols, rank_verified=true).
+7. Report only verified findings; do not commit changes unless explicitly asked.
+8. Update `research_state/agent_handoff.md` to record activation 987 completion and set next action for activation 988.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 988.
