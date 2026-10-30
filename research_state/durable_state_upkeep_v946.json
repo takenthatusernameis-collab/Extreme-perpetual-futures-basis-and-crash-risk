@@ -1,38 +1,27 @@
 {
   "schema_version": "1.0",
-  "upkeep_id": "durable_state_upkeep_v946",
   "activation": 1079,
-  "timestamp_utc": "2026-10-30T17:03:08Z",
   "verdict": "no_gaps_found",
   "checks": {
-    "grid_manifest": {
-      "generated": true,
-      "cells": 324,
-      "unique_config_hashes": 324,
-      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-      "matches_frozen": true
+    "grid_manifest_cells": 324,
+    "grid_manifest_unique_hashes": 324,
+    "config_canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "unittest": {
+      "ran": 11,
+      "ok": true
     },
-    "tests": {
-      "unittest_discover": {"ran": 11, "ok": true},
-      "pytest": {"available": false}
-    },
-    "git": {
-      "diff_check_clean": true,
-      "status_short_clean": true
-    }
+    "pytest_available": false,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
   },
-  "preserved": {
-    "anchor_null": {
-      "crash_incidence_15pct_adjusted_p": 0.24830545694889028,
-      "expected_shortfall_5pct_forward_mae_adjusted_p": 0.9485
-    },
-    "exclusions_count": 336,
+  "invariants_preserved": {
+    "anchor_crash_incidence_adj_p": 0.24830545694889028,
+    "anchor_es5pct_adj_p": 0.9485,
+    "exclusions": 336,
     "h001_status": "tested_not_supported",
-    "h002_status": "registered_secondary_not_tested",
-    "h003_status": "registered_secondary_not_tested",
-    "h004_status": "registered_secondary_not_tested",
-    "hypothesis_next_seq": 5,
-    "pit_rank": "CLOSED",
+    "h002_h003_h004_status": "registered_secondary_not_tested",
+    "h_next_seq": 5,
+    "pit_rank_closed": true,
     "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
   },
   "audits_reviewed": [
@@ -46,9 +35,10 @@
     "source_audit.md",
     "verified_symbols_s3_audit.json"
   ],
-  "preexisting_unresolved": [
+  "pre_existing_unresolved": [
     "Contract listing/delisting/migration history",
     "Data revision behavior"
   ],
+  "new_unaddressed_items": [],
   "notes": "No gaps found. No frozen artifacts modified. Required checks pass for activation 1079."
 }
