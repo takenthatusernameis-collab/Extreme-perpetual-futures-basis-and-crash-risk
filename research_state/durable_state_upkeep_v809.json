@@ -1,0 +1,46 @@
+{
+  "upkeep_id": "v809",
+  "activation": 939,
+  "timestamp_utc": "2026-10-30T01:22:26Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "unittest": "11 OK"
+    },
+    "pytest": "unavailable",
+    "git_diff_check": "clean",
+    "git_status": "clean"
+  },
+  "hypothesis_registry": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested"
+  },
+  "preserved": {
+    "anchor_null": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+    },
+    "exclusions": 336
+  },
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "verified_symbols": 13
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "notes": "Pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior). No new unaddressed items found."
+}
