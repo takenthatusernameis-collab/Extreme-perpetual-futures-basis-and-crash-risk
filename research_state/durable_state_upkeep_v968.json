@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v968",
+  "activation": 1101,
+  "created_utc": "2026-10-30T20:11:14Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "output": "/tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+    },
+    "tests": {
+      "unittest_discover_tests_q": "OK (Ran 11 tests in 0.008s)",
+      "pytest_q_tests": "unavailable"
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short_count": 0
+    }
+  },
+  "state_verification": {
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "preserved": {
+      "null_exclusions_count": 336,
+      "anchor_null_co_primary": {
+        "crash_incidence_15pct_adjusted_p": 0.24830545694889028,
+        "expected_shortfall_5pct_forward_mae_adjusted_p": 0.9485
+      },
+      "pit_rank": "CLOSED (rank_verified true for all 13; no new free PIT rank source)",
+      "frozen_artifacts_unchanged": true
+    },
+    "audits": {
+      "preexisting_unresolved": [
+        "Contract listing/delisting/migration history (source_audit.md:24)",
+        "Data revision behavior (source_audit.md:25)"
+      ],
+      "new_unaddressed_found": false
+    }
+  },
+  "notes": "Activation 1101 upkeep: all required checks pass; hypothesis registry consistent; no new audit gaps found. Null/exclusions/anchor null/secondary hypotheses preserved; PIT rank closed; no frozen artifacts modified."
+}
