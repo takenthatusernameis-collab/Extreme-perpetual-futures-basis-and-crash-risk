@@ -1,7 +1,7 @@
-# Agent task message — EBCR-001 (activation 1104)
+# Agent task message — EBCR-001 (activation 1105)
 
 ## Objective
-Continue durable-state upkeep for EBCR-001 under the state-change gate (see DELAY-ELIMINATION OVERRIDE in agent_handoff.md). Do not reopen testing of H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
+Continue durable-state upkeep for EBCR-001 under the state-change gate. Do not reopen testing of H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
 ## State-change gate (run first)
 Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest durable upkeep artifact (research_state/durable_state_upkeep_v969.json). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit. Otherwise proceed.
@@ -26,5 +26,5 @@ Review on-disk audits for any new unaddressed items only if state changed. Pre-e
 ## Deliverables
 1. Apply state-change gate; record outcome.
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1104 summary and concrete Next action (activation 1105) only if a real state transition occurred.
+3. Update research_state/agent_handoff.md with activation 1105 summary and concrete Next action (activation 1106) only if a real state transition occurred.
 4. Report only verified findings; do not commit changes unless explicitly asked.
