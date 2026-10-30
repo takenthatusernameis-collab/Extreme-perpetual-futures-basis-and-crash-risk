@@ -113,3 +113,14 @@
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
 5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v970.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps.
 6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1103 (completed)
+- State-change gate: required checks PASS (manifest 324/324 unique hashes, config_sha256 55caedf8... matches frozen canonical; unittest 11 OK; pytest unavailable; git diff --check clean; git status --short clean). No code/config/grid/registry/audit changes since v969. NO-OP: no new durable_state_upkeep artifact, no timestamp-only handoff change beyond this completion record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1104)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest upkeep artifact (v969). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
+4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+5. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+6. Report only verified findings; do not commit changes unless explicitly asked.
