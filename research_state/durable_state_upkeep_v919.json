@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "activation": 1052,
+  "created_at_utc": "2026-10-30T14:02:48Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "required_checks_rerun": {
+      "grid_manifest": "ok",
+      "unittest_discover_tests_q": "ok",
+      "pytest_q_tests": "unavailable",
+      "git_diff_check": "clean",
+      "git_status_short": "clean"
+    },
+    "hypothesis_registry_consistency": {
+      "ok": true,
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_hypothesis_sequence": 5
+    },
+    "constraints_preserved": {
+      "null_exclusions_count": 336,
+      "anchor_null_preserved": true,
+      "anchor_adj_p_crash_incidence": 0.24830545694889028,
+      "anchor_adj_p_es": 0.9485,
+      "registered_secondary_not_tested_preserved": true,
+      "pit_rank_closed": true,
+      "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
+    },
+    "audits_reviewed": [
+      "research_state/evaluation_artifact_audit_v1.md",
+      "research_state/evaluation_ledger_consistency_audit_v1.md",
+      "research_state/leakage_audit_extended_v1.json",
+      "research_state/leakage_audit_extended_v1.md",
+      "research_state/leakage_audit_verification_v1.md",
+      "research_state/red_team_audit_extended_v1.json",
+      "research_state/red_team_audit_extended_v1.md",
+      "research_state/source_audit.md",
+      "research_state/verified_symbols_s3_audit.json"
+    ],
+    "new_unaddressed_items_found": false,
+    "pre_existing_unresolved_preserved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ],
+    "frozen_artifacts_modified": false
+  },
+  "notes": "Activation 1052 upkeep complete; no gaps found."
+}
