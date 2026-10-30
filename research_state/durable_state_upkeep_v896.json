@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v896",
+  "program_id": "EBCR-001",
+  "activation_id": 1029,
+  "created_at_utc": "2026-10-30T11:01:59Z",
+  "required_checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "status": "ok",
+      "details": "generated 324 cells: /tmp/basis-grid-manifest.json; config_sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 (matches frozen canonical)"
+    },
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests -q",
+      "status": "ok",
+      "details": "Ran 11 tests in 0.006s; OK"
+    },
+    "pytest": {
+      "command": "python3 -m pytest -q tests",
+      "status": "unavailable",
+      "details": "No module named pytest"
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "status": "ok",
+      "details": "(no output)"
+    },
+    "git_status_short": {
+      "command": "git status --short",
+      "status": "ok",
+      "details": "(no output)"
+    }
+  },
+  "hypothesis_registry_check": {
+    "status": "consistent",
+    "details": "H001 tested_not_supported; H002-H004 registered_secondary_not_tested; next_hypothesis_sequence 5. Anchor null preserved (adj p 0.24830545694889028/0.9485)."
+  },
+  "preserved_state": {
+    "frozen_config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "exclusions": 336,
+    "anchor_null": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "es_5pct_adj_p": 0.9485,
+      "significant": false
+    },
+    "pit_rank_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json (13 symbols, rank_verified=true)",
+    "no_preregistration_from_grid_hits": true,
+    "no_frozen_artifact_modifications": true
+  },
+  "audits_review": {
+    "status": "reviewed",
+    "unaddressed_new_items": false,
+    "notes": "Pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior). No new unaddressed items found."
+  },
+  "verdict": "no_gaps_found",
+  "notes": "Activation 1029 upkeep cycle complete. All required checks pass; null/exclusions/secondary hypotheses preserved; PIT rank remains closed; no frozen artifacts modified."
+}
