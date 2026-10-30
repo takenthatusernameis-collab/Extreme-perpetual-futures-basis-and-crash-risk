@@ -13,15 +13,15 @@
 ## Recent activations (kept for continuity)
 - 1012-1024: required checks re-run (manifest 324 cells / 324 unique hashes / config_sha256 matches frozen canonical; unittest 11 OK; pytest unavailable; git diff --check clean; git status --short clean); hypothesis registry re-verified (H001..H004, next seq 5); PIT rank CLOSED; no preregistration from grid hits; audits re-reviewed; no new unaddressed items. Each created a durable_state_upkeep_v*.json with verdict no_gaps_found.
 
-## Next action (activation 1025)
+## Next action (activation 1026)
 1. Re-run required checks: `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `python3 -m pytest -q tests` (if available); `git diff --check`; `git status --short`.
 2. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 3. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 4. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
-5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v892.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
+5. Continue durable-state upkeep — re-verify hypothesis registry consistency (H001..H004) and re-review the on-disk audits for any new unaddressed items; if none found, create `research_state/durable_state_upkeep_v893.json` with verdict `no_gaps_found`; if gaps found, document explicitly with artifact paths and concrete next steps (no fixes to frozen artifacts).
 6. PIT rank evidence: `research_state/pit_rank_verification_v1.json` (13 symbols, rank_verified=true).
 7. Report only verified findings; do not commit changes unless explicitly asked.
-8. Update `research_state/agent_handoff.md` to record activation 1025 completion and set next action for activation 1026.
-9. Update `research_state/agent_task_message.md` with clear next task for activation 1026.
+8. Update `research_state/agent_handoff.md` to record activation 1026 completion and set next action for activation 1027.
+9. Update `research_state/agent_task_message.md` with clear next task for activation 1027.
 
 (End of file - total 44 lines)
