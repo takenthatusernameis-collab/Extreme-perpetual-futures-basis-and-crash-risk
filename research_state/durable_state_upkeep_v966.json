@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "durable_state_upkeep_v966",
+  "program_id": "EBCR-001",
+  "activation": 1099,
+  "created_at_utc": "2026-10-30T20:02:18Z",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "command": "python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json",
+      "cells": 324,
+      "unique_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen": true
+    },
+    "tests": {
+      "unittest": {
+        "command": "python3 -m unittest discover -s tests -q",
+        "result": "Ran 11 tests in 0.007s\n\nOK",
+        "status": "passed"
+      },
+      "pytest": {
+        "command": "python3 -m pytest -q tests",
+        "status": "unavailable_module"
+      }
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    }
+  },
+  "invariants_preserved": {
+    "anchor_null": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "expected_shortfall_5pct_adj_p": 0.9485
+    },
+    "exclusions": 336,
+    "hypothesis_registry": {
+      "H001": "tested_not_supported",
+      "H002": "registered_secondary_not_tested",
+      "H003": "registered_secondary_not_tested",
+      "H004": "registered_secondary_not_tested",
+      "next_seq": 5
+    },
+    "pit_rank": "CLOSED (evidence: research_state/pit_rank_verification_v1.json)"
+  },
+  "audits_reviewed": {
+    "pre_existing_unresolved_preserved": ["Contract listing/delisting/migration history", "Data revision behavior"],
+    "new_unaddressed_items": []
+  },
+  "frozen_artifacts_unchanged": true,
+  "notes": "Activation 1099 upkeep complete. Required checks PASS (manifest 324/324 unique hashes, config_sha256 55caedf8... matches frozen canonical; unittest 11 OK; pytest unavailable; git diff --check clean; git status --short clean). Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next seq 5). Audits reviewed; pre-existing UNRESOLVED preserved; no new unaddressed items found. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified."
+}
