@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "v914",
+  "program_id": "EBCR-001",
+  "activation": 1047,
+  "created_at_utc": "2026-10-30T13:05:37Z",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_config_hashes": 324,
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "ok": true
+    },
+    "tests": {
+      "unittest_discover": {"ran": 11, "ok": true},
+      "pytest": {"available": false}
+    },
+    "git": {
+      "diff_check_clean": true,
+      "status_short_clean": true
+    }
+  },
+  "hypothesis_registry": {
+    "path": "research_state/hypothesis_registry.json",
+    "h001": "tested_not_supported",
+    "h002": "registered_secondary_not_tested",
+    "h003": "registered_secondary_not_tested",
+    "h004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5,
+    "consistent": true
+  },
+  "preserved_state": {
+    "exclusions_count": 336,
+    "anchor_null_adj_p_incidence": 0.24830545694889028,
+    "anchor_null_adj_p_es": 0.9485,
+    "pit_rank_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "research_state/evaluation_artifact_audit_v1.md",
+    "research_state/evaluation_ledger_consistency_audit_v1.md",
+    "research_state/leakage_audit_verification_v1.md",
+    "research_state/red_team_audit_extended_v1.md",
+    "research_state/source_audit.md",
+    "research_state/verified_symbols_s3_audit.json"
+  ],
+  "unaddressed_items": [
+    {
+      "source": "research_state/source_audit.md",
+      "items": [
+        "Contract listing/delisting/migration history — UNRESOLVED (pre-existing)",
+        "Data revision behavior — UNRESOLVED (pre-existing)"
+      ]
+    }
+  ],
+  "verdict": "no_gaps_found",
+  "notes": "No new unaddressed items found. All frozen artifacts unchanged. Null/exclusions (336)/anchor null preserved; H002-H004 registered_secondary_not_tested; PIT rank CLOSED."
+}
