@@ -28,3 +28,8 @@ Also validate changed JSON/JSONL, YAML and schemas; inspect `git diff --check`; 
 
 ## Definition of done
 Each activation creates a verifiable artifact, test, source coverage improvement, evidence audit or explicit blocker-resolution attempt; updates the durable handoff and next task; and reports only verified findings. A scheduled loop is resumable, not a guarantee of uninterrupted uptime.
+
+
+## Activation cadence — state-change driven
+
+Do not treat every activation as a requirement to create a new artifact. Compare relevant code/test/config/grid/source/registry/frontier/audit identities against the last verified checkpoint first. If nothing changed and there is no new admissible source or dated event, exit without full repeated checks, a new upkeep artifact, timestamp-only handoff changes, or a commit. Run targeted checks after relevant changes and the complete gates at material milestones. Re-probe a blocked source only after a documented cooldown or meaningful source/network change. See prompts/continuous_research_operating_contract_v1_1_addendum.md. Preserve all frozen research and integrity safeguards.
