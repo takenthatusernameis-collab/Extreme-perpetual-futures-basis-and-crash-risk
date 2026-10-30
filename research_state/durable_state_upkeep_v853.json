@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "upkeep_id": "durable_state_upkeep_v853",
+  "activation": 985,
+  "timestamp_utc": "2026-10-30T06:12:49Z",
+  "program_id": "EBCR-001",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest": {
+      "cells": 324,
+      "unique_configuration_hashes": 324,
+      "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+      "matches_frozen": true,
+      "output": "/tmp/basis-grid-manifest.json"
+    },
+    "tests": {
+      "unittest_discover": {
+        "status": "ok",
+        "ran": 11,
+        "failures": 0,
+        "errors": 0
+      },
+      "pytest": {
+        "status": "unavailable",
+        "reason": "No module named pytest"
+      }
+    },
+    "git": {
+      "diff_check": "clean",
+      "status_short": "clean"
+    }
+  },
+  "hypothesis_registry": {
+    "hypotheses": [
+      "EBCR-H001",
+      "EBCR-H002",
+      "EBCR-H003",
+      "EBCR-H004"
+    ],
+    "H001": {
+      "status": "tested_not_supported"
+    },
+    "H002": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H003": {
+      "status": "registered_secondary_not_tested"
+    },
+    "H004": {
+      "status": "registered_secondary_not_tested"
+    },
+    "next_hypothesis_sequence": 5
+  },
+  "anchor": {
+    "co_primary_endpoints": [
+      "crash_incidence_15pct",
+      "expected_shortfall_5pct_forward_mae"
+    ],
+    "adj_p_crash_incidence_15pct": 0.24830545694889028,
+    "adj_p_expected_shortfall_5pct_forward_mae": 0.9485,
+    "null_preserved": true,
+    "exclusions_count": 336
+  },
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified_all": true
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "preexisting_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "new_unaddressed_items": [],
+  "frozen_artifacts_untouched": true,
+  "preregistration_from_grid_hits": false,
+  "committed": false
+}
