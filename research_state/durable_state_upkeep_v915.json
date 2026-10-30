@@ -1,59 +1,55 @@
 {
   "schema_version": "1.0",
-  "upkeep_id": "v915",
-  "program_id": "EBCR-001",
+  "upkeep_id": "durable_state_upkeep_v915",
   "activation": 1048,
-  "created_at_utc": "2026-10-30T13:07:00Z",
+  "timestamp_utc": "2026-10-30T13:13:50Z",
+  "program_id": "EBCR-001",
+  "verdict": "no_gaps_found",
   "checks": {
     "grid_manifest": {
+      "path": "/tmp/basis-grid-manifest.json",
       "cells": 324,
       "unique_config_hashes": 324,
-      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
-      "ok": true
+      "config_sha256_canonical": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
     },
     "tests": {
-      "unittest_discover": {"ran": 11, "ok": true},
-      "pytest": {"available": false}
+      "unittest_discover_q": "OK (11 tests)",
+      "pytest_q_tests": "unavailable"
     },
     "git": {
-      "diff_check_clean": true,
-      "status_short_clean": true
+      "diff_check": "clean",
+      "status_short": "clean"
     }
   },
   "hypothesis_registry": {
-    "path": "research_state/hypothesis_registry.json",
-    "h001": "tested_not_supported",
-    "h002": "registered_secondary_not_tested",
-    "h003": "registered_secondary_not_tested",
-    "h004": "registered_secondary_not_tested",
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
     "next_hypothesis_sequence": 5,
-    "consistent": true
+    "anchor_null_preserved": {
+      "crash_incidence_15pct_adj_p": 0.24830545694889028,
+      "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+    },
+    "exclusions_preserved": 336
   },
-  "preserved_state": {
-    "exclusions_count": 336,
-    "anchor_null_adj_p_incidence": 0.24830545694889028,
-    "anchor_null_adj_p_es": 0.9485,
-    "pit_rank_closed": true,
-    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json (13 symbols, rank_verified=true)"
   },
   "audits_reviewed": [
-    "research_state/evaluation_artifact_audit_v1.md",
-    "research_state/evaluation_ledger_consistency_audit_v1.md",
-    "research_state/leakage_audit_verification_v1.md",
-    "research_state/leakage_audit_extended_v1.md",
-    "research_state/red_team_audit_extended_v1.md",
-    "research_state/source_audit.md",
-    "research_state/verified_symbols_s3_audit.json"
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
   ],
-  "unaddressed_items": [
-    {
-      "source": "research_state/source_audit.md",
-      "items": [
-        "Contract listing/delisting/migration history — UNRESOLVED (pre-existing)",
-        "Data revision behavior — UNRESOLVED (pre-existing)"
-      ]
-    }
+  "pre_existing_unresolved_preserved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
   ],
-  "verdict": "no_gaps_found",
-  "notes": "Required checks PASS (manifest 324/324 unique hashes, config_sha256 matches frozen canonical 55caedf8..., unittest 11 OK, pytest unavailable, git diff --check clean, git status clean). Hypothesis registry consistent (H001 tested_not_supported; H002-H004 registered_secondary_not_tested; next seq 5). Audits reviewed including leakage_audit_extended_v1.md and red_team_audit_extended_v1.md; pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified."
+  "new_unaddressed_items": [],
+  "frozen_artifacts_modified": false,
+  "notes": "Activation 1048 upkeep complete; no gaps found. Null/exclusions/anchor null/secondary hypotheses preserved; PIT rank CLOSED."
 }
