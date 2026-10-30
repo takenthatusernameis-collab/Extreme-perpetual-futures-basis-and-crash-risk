@@ -1,0 +1,44 @@
+{
+  "activation": 987,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "manifest_cells": 324,
+    "unique_config_hashes": 324,
+    "config_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "unittest": "11 OK (0.007s)",
+    "pytest": "unavailable (No module named pytest)",
+    "git_diff_check": "clean",
+    "git_status": "clean"
+  },
+  "hypotheses": {
+    "H001": "tested_not_supported",
+    "H002": "registered_secondary_not_tested",
+    "H003": "registered_secondary_not_tested",
+    "H004": "registered_secondary_not_tested",
+    "next_seq": 5
+  },
+  "anchor_null": {
+    "crash_incidence_15pct_adj_p": 0.24830545694889028,
+    "expected_shortfall_5pct_forward_mae_adj_p": 0.9485
+  },
+  "exclusions": 336,
+  "pit_rank": {
+    "status": "CLOSED",
+    "evidence": "research_state/pit_rank_verification_v1.json",
+    "symbols": 13,
+    "rank_verified": true
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "new_unaddressed_items": 0,
+  "pre_existing_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ]
+}
