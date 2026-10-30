@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "activation": 1078,
+  "verdict": "no_gaps_found",
+  "checks": {
+    "grid_manifest_cells": 324,
+    "grid_manifest_unique_hashes": 324,
+    "config_canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "unittest": {
+      "ran": 11,
+      "ok": true
+    },
+    "pytest_available": false,
+    "git_diff_check_clean": true,
+    "git_status_clean": true
+  },
+  "invariants_preserved": {
+    "anchor_crash_incidence_adj_p": 0.24830545694889028,
+    "anchor_es5pct_adj_p": 0.9485,
+    "exclusions": 336,
+    "h001_status": "tested_not_supported",
+    "h002_h003_h004_status": "registered_secondary_not_tested",
+    "h_next_seq": 5,
+    "pit_rank_closed": true,
+    "pit_rank_evidence": "research_state/pit_rank_verification_v1.json"
+  },
+  "audits_reviewed": [
+    "evaluation_artifact_audit_v1.md",
+    "evaluation_ledger_consistency_audit_v1.md",
+    "leakage_audit_extended_v1.json",
+    "leakage_audit_extended_v1.md",
+    "leakage_audit_verification_v1.md",
+    "red_team_audit_extended_v1.json",
+    "red_team_audit_extended_v1.md",
+    "source_audit.md",
+    "verified_symbols_s3_audit.json"
+  ],
+  "pre_existing_unresolved": [
+    "Contract listing/delisting/migration history",
+    "Data revision behavior"
+  ],
+  "notes": "No gaps found. No frozen artifacts modified. Required checks pass for activation 1078."
+}
