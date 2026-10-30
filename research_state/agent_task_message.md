@@ -1,9 +1,9 @@
-# Agent task message (for next activation 1092)
+# Agent task message (for next activation 1093)
 
 You are continuing EBCR-001. Read first: SKILLS.md, research_state/agent_task_message.md (this file), research_state/agent_handoff.md, prompts/continuous_research_operating_contract_v1.md, docs/research_protocol.md, configs/basis_crash_grid_v1.json.
 
 ## Immediate objective
-Run upkeep for activation 1092: verify integrity, preserve state, create durable_state_upkeep_v959.json if no gaps found, update handoff/task message.
+Run upkeep for activation 1093: verify integrity, preserve state, create durable_state_upkeep_v960.json if no gaps found, update handoff/task message.
 
 ## Required actions
 1. Run required checks:
@@ -20,9 +20,9 @@ Run upkeep for activation 1092: verify integrity, preserve state, create durable
    - PIT rank CLOSED (evidence: research_state/pit_rank_verification_v1.json); do not reopen without genuinely new free PIT rank source
    - No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts
 3. Review audits on disk. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior. Note any new unaddressed items explicitly with paths.
-4. If no gaps found, create `research_state/durable_state_upkeep_v959.json` (schema_version 1.0, activation 1092) with verdict `no_gaps_found`. If gaps found, document explicitly.
-5. Update `research_state/agent_handoff.md`: record activation 1092 completion (done), set next action for activation 1093.
-6. Update this file for activation 1093 with concrete next task.
+4. If no gaps found, create `research_state/durable_state_upkeep_v960.json` (schema_version 1.0, activation 1093) with verdict `no_gaps_found`. If gaps found, document explicitly.
+5. Update `research_state/agent_handoff.md`: record activation 1093 completion (done), set next action for activation 1094.
+6. Update this file for activation 1094 with concrete next task.
 
 ## Hard constraints
 - Free public data/open-source only. No paid APIs/trials/compute, credentials, trading.
