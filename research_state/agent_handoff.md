@@ -648,3 +648,14 @@
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
 6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1181 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v969.json, commit a097f1b; unchanged since 1180 NO-OP). Working tree clean (git status --short empty; git diff --check clean). No new admissible source data; no dated event. No repeated full tests, no new durable_state_upkeep artifact, no timestamp-only handoff update beyond this record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next_seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1182)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v969, unchanged since 1181 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
+4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
+6. Report only verified findings; do not commit changes unless explicitly asked.
