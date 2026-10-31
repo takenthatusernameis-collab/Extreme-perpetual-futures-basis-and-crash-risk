@@ -1,9 +1,9 @@
-# Agent task message — EBCR-001 (activation 1256)
+# Agent task message — EBCR-001 (activation 1258)
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate. Do not reopen testing of H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
 ## State-change gate (run first)
-Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v969.json, unchanged since 1255 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
+Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v969.json, unchanged since 1257 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
 
 ## Required checks (only if state changed or material milestone)
 - `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique per-cell configuration_hash_sha256, config_sha256 matches frozen 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; top-level `primary_anchor` present
@@ -25,5 +25,5 @@ Review on-disk audits for any new unaddressed items only if state changed. Pre-e
 ## Deliverables
 1. Apply state-change gate; record outcome.
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1256 summary and concrete Next action (activation 1256) only if a real state transition occurred.
+3. Update research_state/agent_handoff.md with activation 1258 summary and concrete Next action (activation 1258) only if a real state transition occurred.
 4. Report only verified findings; do not commit changes unless explicitly asked.
