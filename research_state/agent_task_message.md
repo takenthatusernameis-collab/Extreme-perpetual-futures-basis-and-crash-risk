@@ -1,13 +1,13 @@
-# Agent task message — EBCR-001 (activation 1121)
+# Agent task message — EBCR-001 (activation 1122)
 
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate. Do not reopen testing of H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
 ## State-change gate (run first)
-Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v969.json; unchanged since activation 1120 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit. Otherwise proceed.
+Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v969.json; unchanged since activation 1121 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit. Otherwise proceed.
 
 ## Required checks (only if state changed or material milestone)
-- `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (expect 324 cells, 324 unique per-cell JSON hashes, config_sha256 matches frozen 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0)
+- `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (expect 324 cells, 324 unique per-cell configuration_hash_sha256, config_sha256 matches frozen 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0)
 - `python3 -m unittest discover -s tests -q` (expect OK, 11 tests)
 - `python3 -m pytest -q tests` (if available; otherwise record unavailable)
 - `git diff --check` (clean)
@@ -26,5 +26,5 @@ Review on-disk audits for any new unaddressed items only if state changed. Pre-e
 ## Deliverables
 1. Apply state-change gate; record outcome.
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1121 summary and concrete Next action (activation 1122) only if a real state transition occurred.
+3. Update research_state/agent_handoff.md with activation 1122 summary and concrete Next action (activation 1123) only if a real state transition occurred.
 4. Report only verified findings; do not commit changes unless explicitly asked.
