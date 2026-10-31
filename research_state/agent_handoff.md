@@ -135,8 +135,13 @@
 ## Activation 1109 (completed)
 - State-change gate: NO-OP. Compared all code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v969.json, created 2026-10-30T20:28:48Z, commit a097f1b). Only post-v969 changes are the operating-cadence amendment docs (AGENTS.md, prompts/continuous_research_operating_contract_v1_1_addendum.md), which the amendment itself declares changes only activation cadence and leaves the v1 research design, 324-cell grid, endpoint family, holdout rules, PIT requirements, outcome definitions and inference gates frozen. Working tree clean (git status --short empty, git diff --check clean). No new admissible source data; no dated event. No repeated full tests, no new durable_state_upkeep artifact, no timestamp-only handoff update beyond this record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
 
-## Next action (activation 1110)
-1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v969, unchanged since 1109 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1319 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v970.json, created 2026-10-31T15:53:13Z, commit 3fa955c). Only post-v970 changes are harness checkpoint commits appending to research_state/workflow_run_diagnostics.jsonl and operating-cadence amendment docs — neither affect research state/code/config/grid/source/registry/frontier/audit. Working tree clean (git status --short empty, git diff --check clean). No new admissible source data; no dated event. No repeated full tests, no new durable_state_upkeep artifact, no timestamp-only handoff update beyond this record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next_seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1320)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v970, unchanged since 1319 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
@@ -1741,6 +1746,17 @@
 
 ## Next action (activation 1319)
 1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v970, unchanged since 1318 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
+4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+5. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1319 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v970.json, created 2026-10-31T15:53:13Z, commit 3fa955c). Only post-v970 changes are harness checkpoint commits and operating-cadence amendment docs — neither affect research state/code/config/grid/source/registry/frontier/audit. Working tree clean (git status --short empty, git diff --check clean). No new admissible source data; no dated event. No repeated full tests, no new durable_state_upkeep artifact, no timestamp-only handoff update beyond this record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next_seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1320)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v970, unchanged since 1319 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for H002/H003/H004; preserve anchor null (adj p 0.24830545694889028/0.9485).
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
