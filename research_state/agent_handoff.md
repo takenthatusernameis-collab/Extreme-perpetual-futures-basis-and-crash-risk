@@ -1173,3 +1173,6 @@
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
 6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1249 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v969.json; unchanged since 1248 NO-OP). Grid manifest regenerated: 324 cells, 324 unique hashes, config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen canonical; unittest 11 OK (Ran 11 tests in 0.007s, OK); pytest unavailable (No module named pytest); git diff --check clean; git status --short clean. No new admissible source data; no dated event. No new durable_state_upkeep artifact; no timestamp-only handoff update beyond this record. Hypothesis registry consistent (H001 tested_not_supported; H002/H003/H004 registered_secondary_not_tested; next_seq 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (adj p 0.24830545694889028/0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
