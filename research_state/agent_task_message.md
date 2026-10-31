@@ -1,10 +1,10 @@
-# Agent task message — EBCR-001 (activation 1313)
+# Agent task message — EBCR-001 (activation 1314)
 
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate (v1.1). Do not reopen testing of EBCR-H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
 ## State-change gate (run first)
-Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v970.json, created 2026-10-31T15:53:13Z, commit 3fa955c; unchanged since 1312 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
+Compare current code/test/config/grid/source/registry/frontier/audit hashes against the latest verified state (research_state/durable_state_upkeep_v970.json, created 2026-10-31T15:53:13Z, commit 3fa955c; unchanged since 1313 NO-OP). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
 
 ## Required checks (only if state changed or material milestone)
 - `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` → 324 cells, 324 unique per-cell configuration_hash_sha256, config_sha256 matches frozen 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; top-level `primary_anchor` present
@@ -24,7 +24,7 @@ Compare current code/test/config/grid/source/registry/frontier/audit hashes agai
 Review on-disk audits for any new unaddressed items only if state changed. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior (research_state/source_audit.md).
 
 ## Deliverables
-1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1313 (completed).
+1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1314 (completed).
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1313 summary and concrete Next action (activation 1314) only if a real state transition occurred.
+3. Update research_state/agent_handoff.md with activation 1314 summary and concrete Next action (activation 1315) only if a real state transition occurred.
 4. Report only verified findings; do not commit changes unless explicitly asked.
