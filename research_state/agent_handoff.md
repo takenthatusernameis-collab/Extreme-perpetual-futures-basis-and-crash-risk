@@ -2767,3 +2767,14 @@
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 5. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
 6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1448 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v970.json, created 2026-10-31T15:53:13Z, commit 3fa955c; unchanged). Only post-v970 changes are harness checkpoint/handoff files, none affecting research state. Working tree clean. No new admissible source data; no dated event. No new durable_state_upkeep artifact; no timestamp-only handoff update beyond this record. Hypothesis registry consistent (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5). Exclusions 336. Pre-existing UNRESOLVED preserved. Null/exclusions/anchor null/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1449)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v970, unchanged since 1448 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485).
+4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+5. No preregistration from grid hits. Do not modify frozen anchor/config/Q1/extended artifacts.
+6. Report only verified findings; do not commit changes unless explicitly asked.
