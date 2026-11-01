@@ -1,4 +1,4 @@
-# Agent task message — EBCR-001 (activation 1584)
+# Agent task message — EBCR-001 (activation 1585)
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate (v1.1). Do not reopen testing of EBCR-H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
@@ -23,9 +23,9 @@ Compare current code/test/config/grid/source/registry/frontier/audit hashes agai
 Review on-disk audits for any new unaddressed items only if state changed. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior.
 
 ## Deliverables
-1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1584.
+1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1585.
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1584 summary and concrete Next action (activation 1585) only if a real state transition occurred.
+3. Update research_state/agent_handoff.md with activation 1585 summary and concrete Next action (activation 1586) only if a real state transition occurred.
 4. Report only verified findings; do not commit changes unless explicitly asked.
 " filePath">
 research_state/agent_task_message.md
