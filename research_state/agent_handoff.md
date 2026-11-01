@@ -210,6 +210,17 @@
 ## Next action (activation 1602)
 1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v971, unchanged since 1601 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485).
+4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
+5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
+6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1602 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities against latest verified state (research_state/durable_state_upkeep_v971.json, created 2026-11-01T19:05:53Z, commit 92fe842). `git diff --name-only 92fe842 HEAD -- ':!research_state/agent_handoff.md' ':!research_state/agent_task_message.md' ':!research_state/durable_state_upkeep_v971.json' ':!research_state/workflow_run_diagnostics.jsonl'` returns empty — no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean (git status --short empty, git diff --check clean). No new admissible source data; no dated event. No repeated full tests, no new durable_state_upkeep artifact, no timestamp-only handoff update beyond this record. Hypothesis registry consistent (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. Null/exclusions (336)/anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485)/secondary hypotheses preserved; PIT rank CLOSED; no frozen artifacts modified.
+
+## Next action (activation 1603)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (v971, unchanged since 1602 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485).
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
