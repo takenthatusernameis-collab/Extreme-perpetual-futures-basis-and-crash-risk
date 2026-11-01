@@ -1,4 +1,4 @@
-# Agent task message — EBCR-001 (activation 1553)
+# Agent task message — EBCR-001 (activation 1554)
 
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate (v1.1). Do not reopen testing of EBCR-H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
