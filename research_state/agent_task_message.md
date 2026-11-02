@@ -20,5 +20,3 @@ Continue durable-state upkeep under the state-change-driven cadence. Activation 
 ## Verified baseline
 - Frozen config canonical sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`. Grid 324/324 unique hashes. unittest 11 OK; pytest unavailable. git diff --check clean; git status clean.
 - Exclusions n=336. Anchor null preserved. PIT rank CLOSED (verified free Wayback-CMC). Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
-
-(End of file - total 22 lines)
