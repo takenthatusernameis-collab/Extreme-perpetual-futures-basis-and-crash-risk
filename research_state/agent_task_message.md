@@ -1,28 +1,22 @@
-# Agent task message — EBCR-001 (activation 1738)
+# Agent task message (EBCR-001) — activation 1739
+
+## Read first (required)
+- `research_state/agent_handoff.md` (this handoff; latest activation 1738 NO-OP)
+- `research_state/agent_task_message.md` (this file)
+- `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
+- `docs/research_protocol.md`
+- `configs/basis_crash_grid_v1.json` (frozen)
+
 ## Objective
-Continue durable-state upkeep for EBCR-001 under state-change gate (v1.1). Do not reopen testing of EBCR-H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1738 was a NO-OP (only harness checkpoint/handoff files changed). The prior action is complete; proceed to activation 1739.
 
-## State-change gate (run first)
-Compare current code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (research_state/durable_state_upkeep_v972.json). If unchanged and no new admissible source data or dated event exists, exit NO-OP: no repeated full tests, no new durable_state_upkeep_vNNN.json, no timestamp-only handoff update, no empty commit.
+## Required action (activation 1739)
+1. **State-change gate first.** Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v972.json`, unchanged since 1738 NO-OP). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
+2. **If changed**, run targeted affected tests first; full required gates (`python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`) only at material milestone or relevant input change.
+3. **Preserve invariants.** Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank inquiry CLOSED — do not reopen without genuinely new free PIT rank source. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
+4. **Durable upkeep.** Re-verify hypothesis registry consistency (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5) and re-review on-disk audits for any new unaddressed items. If none found, create `research_state/durable_state_upkeep_v973.json` with verdict `no_gaps_found` (following numbering/format of prior upkeep artifacts). If gaps found, document explicitly with artifact paths and concrete next steps.
+5. **Report only verified findings.** Do not commit changes unless explicitly asked.
 
-## Required checks (only if state changed or material milestone)
-- `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` -> 324 cells, 324 unique per-cell configuration_hash_sha256, config_sha256 matches frozen canonical; top-level `primary_anchor` present
-- `python3 -m unittest discover -s tests -q` -> OK
-- `python3 -m pytest -q tests` -> record unavailable if missing
-- `git diff --check` -> clean
-- `git status --short` -> clean
-
-## Invariants to preserve
-- Anchor null: crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485
-- Exclusions: n_recorded_exclusions=336
-- Hypothesis registry: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5)
-- PIT rank: CLOSED. Do not reopen without genuinely new free PIT rank source.
-
-## Audits
-Review on-disk audits for any new unaddressed items only if state changed. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior.
-
-## Deliverables
-1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1738.
-2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1738 summary and concrete Next action (activation 1739) only if a real state transition occurred (or record NO-OP if none). Follow state-change gate strictly.
-4. Report only verified findings; do not commit changes unless explicitly asked.
+## Verified baseline
+- Frozen config canonical sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (matches). Grid 324/324 unique hashes. unittest 11 OK; pytest unavailable. git diff --check clean; git status clean.
+- Exclusions n=336. Anchor null preserved. PIT rank CLOSED (verified free Wayback-CMC). Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior (preserved).
