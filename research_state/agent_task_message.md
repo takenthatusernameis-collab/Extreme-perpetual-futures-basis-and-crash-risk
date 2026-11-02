@@ -1,4 +1,4 @@
-# Agent task message — EBCR-001 (activation 1622)
+# Agent task message — EBCR-001 (activation 1623)
 ## Objective
 Continue durable-state upkeep for EBCR-001 under the state-change gate (v1.1). Do not reopen testing of EBCR-H001 (tested_not_supported; null preserved). Keep secondary hypotheses untested. Preserve frozen artifacts and invariants.
 
@@ -13,7 +13,7 @@ Compare current code/test/config/grid/source/registry/frontier/audit hashes agai
 - `git status --short` -> clean
 
 ## Invariants to preserve
-- Anchor null: crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485 (source: research_state/durable_state_upkeep_v1.json)
+- Anchor null: crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485 (source: research_state/durable_state_upkeep_v971.json)
 - Exclusions: 336 (n_recorded_exclusions=336) in evaluation_report_extended_v1.json
 - Hypothesis registry: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5)
 - PIT rank: CLOSED. Do not reopen without genuinely new free PIT rank source.
@@ -23,8 +23,7 @@ Compare current code/test/config/grid/source/registry/frontier/audit hashes agai
 Review on-disk audits for any new unaddressed items only if state changed. Pre-existing UNRESOLVED preserved: Contract listing/delisting/migration history; Data revision behavior.
 
 ## Deliverables
-1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1622.
+1. Apply state-change gate; record outcome in research_state/agent_handoff.md as activation 1623.
 2. If state changed, run required checks and record exact commands/results; re-verify hypothesis registry consistency; create next upkeep artifact only if new evidence/transition/issue/change reviewed.
-3. Update research_state/agent_handoff.md with activation 1622 summary and concrete Next action (activation 1623) only if a real state transition occurred (or record NO-OP if none). Follow state-change gate strictly.
+3. Update research_state/agent_handoff.md with activation 1623 summary and concrete Next action (activation 1624) only if a real state transition occurred (or record NO-OP if none). Follow state-change gate strictly.
 4. Report only verified findings; do not commit changes unless explicitly asked.
-"
