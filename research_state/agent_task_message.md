@@ -1,20 +1,20 @@
-# Agent task message (EBCR-001) — activation 1746
+# Agent task message (EBCR-001) — activation 1747
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 1745 completed, NO-OP; latest verified upkeep v977)
+- `research_state/agent_handoff.md` (activation 1746 completed, NO-OP; latest verified upkeep v977)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 1745 was NO-OP: compared v977 (commit e9d61d3) to HEAD (0ae6118); only harness checkpoint/handoff/task/upkeep files changed, no research state/code/config/grid/source/registry/frontier/audit changes, working tree clean, no new admissible source data or dated event. v977 remains the latest verified upkeep. Proceed to activation 1746.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1746 was NO-OP: compared v977 (commit e9d61d3) to HEAD (d9af290); only harness checkpoint/handoff/task/upkeep files changed, no research state/code/config/grid/source/registry/frontier/audit changes, working tree clean, no new admissible source data or dated event. v977 remains the latest verified upkeep. Proceed to activation 1747.
 
-## Required action (activation 1746)
+## Required action (activation 1747)
 1. **State-change gate first.** Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v977.json`, created 2026-11-02T13:35:00Z, commit e9d61d3). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. **If changed**, run targeted affected tests first; full required gates (`python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json`; `python3 -m unittest discover -s tests -q`; `git diff --check`; `git status --short`) only at material milestone or relevant input change.
 3. **Preserve invariants.** Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank inquiry CLOSED — do not reopen without genuinely new free PIT rank source. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
-4. **Durable upkeep.** Re-verify hypothesis registry consistency (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5) and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v979.json` with verdict `no_gaps_found` (following numbering/format of prior upkeep artifacts). If gaps found, document explicitly with artifact paths and concrete next steps. Do not create v979 on NO-OP.
+4. **Durable upkeep.** Re-verify hypothesis registry consistency (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5) and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v980.json` with verdict `no_gaps_found` (following numbering/format of prior upkeep artifacts). If gaps found, document explicitly with artifact paths and concrete next steps. Do not create v980 on NO-OP.
 5. **Report only verified findings.** Do not commit changes unless explicitly asked.
 
 ## Verified baseline
