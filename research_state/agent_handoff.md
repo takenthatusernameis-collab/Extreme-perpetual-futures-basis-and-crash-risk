@@ -337,3 +337,13 @@
 4. PIT rank inquiry CLOSED. Do not reopen without genuinely new free PIT rank source.
 5. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
 6. Report only verified findings; do not commit changes unless explicitly asked.
+
+## Activation 1783 (completed)
+- State-change gate: NO-OP. Diff e9d61d3..HEAD touched only harness checkpoint/handoff/task/upkeep files; no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean. No new admissible source data; no dated event. Per v1.1 addendum NO-OP: no repeated full tests, no new upkeep artifact (no v982), no timestamp-only handoff rewrite beyond this record, no empty checkpoint commit. Previous verified state (v977) intact. Hypothesis registry consistent (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5). Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items. No frozen artifacts modified.
+
+## Next action (activation 1784)
+1. State-change gate first: compare code/test/config/grid/source/registry/frontier/audit hashes against latest verified state (`research_state/durable_state_upkeep_v977.json`, created 2026-11-02T13:35:00Z, commit e9d61d3). If unchanged and no new admissible source data or dated event, exit NO-OP.
+2. If changed, run targeted affected tests first; full required gates only at material milestone.
+3. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null.
+4. PIT rank inquiry CLOSED. No preregistration from grid hits; do not modify frozen artifacts.
+5. Report only verified findings; do not commit unless explicitly asked.
