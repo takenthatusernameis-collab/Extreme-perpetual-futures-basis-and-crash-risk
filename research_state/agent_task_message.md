@@ -1,22 +1,24 @@
-# Agent task message (EBCR-001) — activation 1985
+# Agent task message (EBCR-001) — activation 1986
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 1984 completed as NO-OP; latest verified upkeep v980)
+- `research_state/agent_handoff.md` (activation 1985 completed as NO-OP; latest verified upkeep v980)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 1984 completed as NO-OP (no changes; latest verified upkeep remains v980). Proceed to activation 1985.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1985 completed as NO-OP (no changes; latest verified upkeep remains v980). Proceed to activation 1986.
 
-## Required action (activation 1985)
+## Required action (activation 1986)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, created 2026-11-03T09:53:27Z, commit d9e5fec). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Preserve invariants. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null. PIT rank CLOSED. No preregistration from grid hits; do not modify frozen anchor/config artifacts.
-4. Durable upkeep. Re-verify hypothesis registry consistency and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v985.json` with verdict `no_gaps_found`. If gaps found, document explicitly. Do not create v985 on NO-OP.
+4. Durable upkeep. Re-verify hypothesis registry consistency and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v986.json` with verdict `no_gaps_found`. If gaps found, document explicitly. Do not create v986 on NO-OP.
 5. Report only verified findings. Do not commit changes unless explicitly asked.
 
 ## Verified baseline
 - Frozen config canonical sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; literal file sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`. Grid 324/324 unique hashes. unittest 11 OK; pytest unavailable. git diff --check clean; git status clean.
 - Exclusions n=336. Anchor null preserved. PIT rank CLOSED. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
+" filePath">
+/home/runner/work/Extreme-perpetual-futures-basis-and-crash-risk/Extreme-perpetual-futures-basis-and-crash-risk/research_state/agent_task_message.md
