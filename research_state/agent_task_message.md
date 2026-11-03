@@ -1,20 +1,20 @@
-# Agent task message (EBCR-001) — activation 1991
+# Agent task message (EBCR-001) — activation 1992
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 1990 completed as NO-OP; latest verified upkeep v980)
+- `research_state/agent_handoff.md` (activation 1991 completed as NO-OP; latest verified upkeep v980)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 1990 completed as NO-OP (no changes; latest verified upkeep remains v980). Proceed to activation 1991.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1991 completed as NO-OP (no changes; latest verified upkeep remains v980). Proceed to activation 1992.
 
-## Required action (activation 1991)
+## Required action (activation 1992)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Preserve invariants. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null. PIT rank CLOSED. No preregistration from grid hits; do not modify frozen anchor/config artifacts.
-4. Durable upkeep. Re-verify hypothesis registry consistency and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v991.json` with verdict `no_gaps_found`. If gaps found, document explicitly. Do not create v991 on NO-OP.
+4. Durable upkeep. Re-verify hypothesis registry consistency and re-review on-disk audits for any new unaddressed items. If changed and no gaps found, create `research_state/durable_state_upkeep_v992.json` with verdict `no_gaps_found`. If gaps found, document explicitly. Do not create v992 on NO-OP.
 5. Report only verified findings. Do not commit changes unless explicitly asked.
 
 ## Verified baseline
