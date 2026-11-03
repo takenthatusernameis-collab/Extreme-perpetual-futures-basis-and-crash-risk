@@ -1,16 +1,16 @@
-# Agent task message (EBCR-001) — activation 1904
+# Agent task message (EBCR-001) — activation 1905
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 1903 completed; latest verified upkeep v979)
+- `research_state/agent_handoff.md` (activation 1904 completed; latest verified upkeep v979)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 1903 was NO-OP. Latest verified upkeep is v979 (commit fc6f76d, created 2026-11-03T03:49:39Z). Proceed to activation 1904.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1904 was NO-OP. Latest verified upkeep is v979 (commit fc6f76d, created 2026-11-03T03:49:39Z). Proceed to activation 1905.
 
-## Required action (activation 1904)
+## Required action (activation 1905)
 1. **State-change gate first.** Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v979.json`, created 2026-11-03T03:49:39Z, commit fc6f76d). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. **If changed**, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. **Preserve invariants.** Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED — do not reopen without genuinely new free PIT rank source. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
