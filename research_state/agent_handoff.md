@@ -239,3 +239,8 @@
 - Verified baseline unchanged: frozen config `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324/324 unique cells). Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items.
 
 (End of file)
+
+## Activation 1957 (completed) — NO-OP
+- State-change gate: working tree clean; frozen config literal sha256 matches; no new admissible source data or dated event.
+- Exit NO-OP: latest verified upkeep remains v980.
+- Verified baseline unchanged: frozen config `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324/324 unique cells). Exclusions n=336; anchor null preserved. PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved; no new unaddressed items.
