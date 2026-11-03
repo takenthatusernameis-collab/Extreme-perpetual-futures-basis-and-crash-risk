@@ -1,16 +1,16 @@
-# Agent task message (EBCR-001) — activation 1841
+# Agent task message (EBCR-001) — activation 1842
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 1840 completed; latest verified upkeep v978)
+- `research_state/agent_handoff.md` (activation 1841 completed; latest verified upkeep v978)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 1840 was NO-OP creating upkeep v978 (gate compared against v977 at commit e9d61d3; only harness checkpoint/handoff/task/upkeep/diagnostics files changed since; working tree clean). Latest verified upkeep is v978 (commit 16eab93). Proceed to activation 1841.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 1841 was NO-OP (gate compared against v978 at commit 16eab93; only harness checkpoint/handoff/task/upkeep/diagnostics files changed since; working tree clean). Latest verified upkeep is v978 (commit 16eab93). Proceed to activation 1842.
 
-## Required action (activation 1841)
+## Required action (activation 1842)
 1. **State-change gate first.** Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v978.json`, created 2026-11-03T00:53:55Z, commit 16eab93). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no new upkeep artifact, no timestamp-only handoff update, no empty commit).
 2. **If changed**, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. **Preserve invariants.** Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED — do not reopen without genuinely new free PIT rank source. No preregistration from grid hits; do not modify frozen anchor/config/Q1/extended artifacts.
