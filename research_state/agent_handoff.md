@@ -172,6 +172,11 @@
 ## Activation 1857 (completed)
 
 ## Activation 1860 (completed)
+
+## Activation 1868 (completed)
+- State-change gate: NO-OP. Compared code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v979.json`, created 2026-11-03T03:49:39Z, commit fc6f76d). Diff fc6f76d..HEAD touched only harness checkpoint/handoff/task/upkeep/diagnostics files (agent_handoff.md, agent_task_message.md, durable_state_upkeep_v979.json); no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean (git status --short empty, git diff --check clean).
+- Verified baseline unchanged: frozen config canonical sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324/324 unique cells). unittest 11 OK; pytest unavailable. Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items.
+- Per v1.1 addendum NO-OP: no repeated full tests, no new upkeep artifact (v980 not created), no empty commit. No frozen artifacts modified.
 - State-change gate: NO-OP. Compared against v977/v978 baseline (commits e9d61d3/16eab93). Diff touched only harness checkpoint/handoff/task/upkeep/diagnostics files; no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean, git diff --check clean. Verified baseline unchanged (frozen config 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0, 324/324 unique). Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028, expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported, EBCR-H002/H003/H004 registered_secondary_not_tested (seq 5). Pre-existing UNRESOLVED preserved. Per v1.1 addendum NO-OP.
 
 ## Activation 1861 (completed)
