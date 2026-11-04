@@ -1,3 +1,8 @@
+## Activation 2210 (completed) — NO-OP
+- State-change gate: compared code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec baseline; HEAD 0ebcf14 touches only harness checkpoint/handoff/task/upkeep/diagnostics files). Working tree clean (git status --short empty, git diff --check clean); no untracked files. No new admissible source data or dated research event (latest diagnostics entry remains harness workflow run 41756584975, captured 2026-11-04T10:00:25Z, conclusion=failure — harness log artifact, not a research source).
+- Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches (`sha256sum configs/basis_crash_grid_v1.json`); grid 324/324 unique; unittest 11 OK; pytest unavailable. Hypothesis registry consistent (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next_hypothesis_sequence 5). Exclusions n=336; anchor null preserved. PIT rank CLOSED. Pre-existing UNRESOLVED preserved; no new unaddressed items.
+- Exit NO-OP per state-change-driven cadence (v1.1 addendum): no repeated full tests, no grid manifest regeneration, no new upkeep artifact (v981 not created on NO-OP), no frozen artifacts modified, no empty commit, no timestamp-only handoff update beyond this record. Latest verified upkeep remains v980.
+
 # Agent handoff — EBCR-001
 
 ## Activation 2209 (completed) — NO-OP
