@@ -1,16 +1,16 @@
-# Agent task message (EBCR-001) — activation 2125
+# Agent task message (EBCR-001) — activation 2126
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (latest verified upkeep v980, commit d9e5fec; activation 2124 completed NO-OP)
+- `research_state/agent_handoff.md` (latest verified upkeep v980, commit d9e5fec; activation 2125 completed NO-OP)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 2124 completed as NO-OP (no research state/code/config/grid/source changes; only harness checkpoint/handoff/task/upkeep/diagnostics files). Proceed to activation 2125.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 2125 completed as NO-OP (no research state/code/config/grid/source changes; only harness checkpoint/handoff/task/upkeep/diagnostics files). Proceed to activation 2126.
 
-## Required action (activation 2125)
+## Required action (activation 2126)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Preserve invariants. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null. PIT rank CLOSED. No preregistration from grid hits; do not modify frozen anchor/config artifacts.
@@ -22,3 +22,4 @@ Continue durable-state upkeep under the state-change-driven cadence. Activation 
 - Exclusions n=336. Anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 
 (End of file)
+"
