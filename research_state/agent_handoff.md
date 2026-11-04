@@ -1,8 +1,13 @@
 # Agent handoff — EBCR-001
 
+## Activation 2161 (completed) — NO-OP
+- State-change gate: compared code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). Diff d9e5fec..HEAD touches only harness checkpoint/handoff/task/upkeep/diagnostics files (research_state/agent_handoff.md, research_state/agent_task_message.md, research_state/durable_state_upkeep_v980.json, research_state/workflow_run_diagnostics.jsonl); no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean (git status --short empty, git diff --check clean); no untracked files. No new admissible source data or dated research event. Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; grid manifest 324 cells, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` matches frozen canonical.
+- Exit NO-OP: no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no empty commit. Latest verified upkeep remains v980.
+- Verified baseline unchanged: frozen config `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324/324 unique cells). Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved (contract listing/delisting/migration history; data revision behavior); no new unaddressed items.
+
 ## Activation 2160 (completed) — NO-OP
 - State-change gate: compared code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). Diff touches only harness checkpoint/handoff/task/upkeep/diagnostics files; no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean (git status --short empty, git diff --check clean); no untracked files. No new admissible source data or dated research event. Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; grid manifest 324 cells, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` matches frozen canonical.
-- Exit NO-OP: no repeated full tests, no grid manifest regeneration beyond gate, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit. Latest verified upkeep remains v980.
+- Exit NO-OP: no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit. Latest verified upkeep remains v980.
 - Verified baseline unchanged: frozen config `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324/324 unique cells). Exclusions n=336; anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED. Hypotheses: EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested (next_hypothesis_sequence 5). Pre-existing UNRESOLVED preserved; no new unaddressed items.
 
 ## Activation 2159 (completed) — NO-OP
@@ -106,12 +111,12 @@
 - Research design initialized; extended empirical evaluation complete; primary hypothesis not supported (null preserved).
 - Frozen config: configs/basis_crash_grid_v1.json (canonical-JSON sha256=55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0; literal file sha256=753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16).
 - Grid manifest: 324 cells, 324 unique per-cell configuration_hash_sha256. Tests: 11 passed (unittest); pytest module unavailable. git diff --check clean; git status clean.
-- Durable-state upkeep lineage: ... v979 (verdict no_gaps_found). Latest verified: v980 (commit d9e5fec, created 2026-11-03T09:53:27Z). Latest activation: 2150 (completed NO-OP, 2026-11-04T08:22:28Z).
+- Durable-state upkeep lineage: ... v979 (verdict no_gaps_found). Latest verified: v980 (commit d9e5fec, created 2026-11-03T09:53:27Z).
 - Universe/PIT: CLOSED with verified free Wayback-CMC source (rank_verified=true for all 13). Extraction record preserved in research_state/pit_rank_verification_v1.json.
 - Anchor null preserved (adj p 0.24830545694889028/0.9485). Exclusions 336 preserved.
 - H001/EBCR-H001: tested_not_supported (reconciled). H002/H003/H004/EBCR-H002/EBCR-H003/EBCR-H004: registered_secondary_not_tested (next_hypothesis_sequence 5).
 - Red-team/leakage audits reviewed; pre-existing UNRESOLVED preserved (Contract listing/delisting/migration history; Data revision behavior). No new unaddressed items found.
-- Latest activation: 2160 (completed NO-OP, 2026-11-04T09:22:23Z).
+- Latest activation: 2161 (completed NO-OP, 2026-11-04T09:22:53Z).
 
 ## Activation 2135 (completed) — NO-OP
 - State-change gate: compared code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). Diff d9e5fec..HEAD touches only harness checkpoint/handoff/task/upkeep/diagnostics files (research_state/agent_handoff.md, research_state/agent_task_message.md, research_state/durable_state_upkeep_v980.json, research_state/workflow_run_diagnostics.jsonl); no research state/code/config/grid/source/registry/frontier/audit changes. Working tree clean (git status --short empty, git diff --check clean); no untracked files. No new admissible source data or dated event.
