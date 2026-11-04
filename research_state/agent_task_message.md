@@ -1,14 +1,14 @@
-# Agent task message (EBCR-001) — activation 2087
+# Agent task message (EBCR-001) — activation 2088
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 2086 completed as NO-OP; latest verified upkeep v980)
+- `research_state/agent_handoff.md` (activation 2087 completed as NO-OP; latest verified upkeep v980)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 2086 completed as NO-OP. Proceed to activation 2087.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 2087 completed as NO-OP. Proceed to activation 2088.
 
 ## Required action (activation 2087)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff update beyond this record, no empty commit).
