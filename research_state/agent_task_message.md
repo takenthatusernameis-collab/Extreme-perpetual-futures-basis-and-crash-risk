@@ -1,16 +1,16 @@
-# Agent task message (EBCR-001) — activation 2317
+# Agent task message (EBCR-001) — activation 2318
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (latest verified upkeep v980; activations 2284–2316 completed NO-OP)
+- `research_state/agent_handoff.md` (latest verified upkeep v980; activations 2284–2317 completed NO-OP)
 - `research_state/agent_task_message.md` (this file)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activations 2284–2316 completed as NO-OP (clean working tree; only harness checkpoint files touched historically; no research changes; no new admissible source data).
+Continue durable-state upkeep under the state-change-driven cadence. Activations 2284–2317 completed as NO-OP (clean working tree; only harness checkpoint files touched historically; no research changes; no new admissible source data).
 
-## Required action (activation 2317)
+## Required action (activation 2318)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec baseline). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff/task refresh beyond this record, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Preserve invariants. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null. PIT rank CLOSED. No preregistration from grid hits; do not modify frozen anchor/config artifacts.
