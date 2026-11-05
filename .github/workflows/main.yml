@@ -1431,6 +1431,16 @@ jobs:
               break
             fi
 
+            # An explicit Kilo free-model sign-up/access denial is not a
+            # transient network failure. Preserve this session's state, then stop
+            # the activation instead of spending the six-hour budget repeating it.
+            if grep -Eiq 'Sign up for free to continue|sign up required to continue|no free model available|free model access denied' "$session_log"; then
+              final_phase="model-access-blocked"
+              final_detail="configured free Kilo model denied access; checkpoint completed and no further worker sessions were started"
+              echo "::error::Kilo free-model access is blocked; this activation is stopping after a verified checkpoint."
+              break
+            fi
+
             if (( $(date +%s) >= cutoff_epoch )); then
               final_phase="cutoff"
               final_detail="355-minute cutoff reached after a verified checkpoint"
