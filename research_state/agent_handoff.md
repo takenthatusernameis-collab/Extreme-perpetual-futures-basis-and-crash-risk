@@ -235,8 +235,12 @@
 - Invariants preserved: exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED. Pre-existing UNRESOLVED preserved: contract listing/delisting/migration history; data revision behavior. No new unaddressed audit items.
 - Exit NO-OP per cadence (v1.1 addendum): no grid manifest regeneration in-repo, no new upkeep artifact (v981 not created), no frozen artifacts modified, no empty commit. Latest verified upkeep remains `research_state/durable_state_upkeep_v980.json`.
 
-## Next agent starting point (activation 2468)
-- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2468). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
+## Activation 2468 (completed) — NO-OP
+- State-change gate: `git diff --name-only d9e5fec..HEAD` shows only harness checkpoint files. Working tree clean. No new admissible source data or dated research event (last research-input change: commit 52b3e49, 2026-10-27). Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` verified; grid manifest -> 324 cells, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` matches. `python3 -m unittest discover -s tests` -> 11 OK.
+- Exit NO-OP per cadence (v1.1 addendum): no new upkeep artifact (v981 not created), no frozen artifacts modified, no empty commit. Latest verified upkeep remains `research_state/durable_state_upkeep_v980.json`.
+
+## Next agent starting point (activation 2469)
+- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2469). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
 - Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
 
