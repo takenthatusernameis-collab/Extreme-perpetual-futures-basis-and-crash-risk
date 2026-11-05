@@ -232,8 +232,14 @@
 - No new admissible source data or dated research event (last research-input change commit 52b3e49, 2026-10-27). Diagnostics are harness workflow artifacts, not research sources. Hypothesis registry/invariants unchanged (H001 tested_not_supported; H002-H004 registered_secondary_not_tested; exclusions n=336; anchor null; PIT rank CLOSED; pre-existing UNRESOLVED preserved).
 - Exit NO-OP per v1.1 addendum: no new upkeep artifact, no frozen artifacts modified, no empty commit. Latest verified upkeep remains `research_state/durable_state_upkeep_v980.json`.
 
-## Next agent starting point (activation 2491)
-- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2491). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
+## Activation 2491 (completed) — NO-OP
+- State-change gate: `d9e5fec..HEAD` touches only harness checkpoint files (`agent_handoff.md`, `agent_task_message.md`, `durable_state_upkeep_v980.json`, `workflow_run_diagnostics.jsonl`); no code/test/config/grid/source/registry/frontier/audit changes. Working tree clean (`git status --short` empty, `git diff --check` clean, `git ls-files --others --exclude-standard` empty).
+- No new admissible source data or dated research event (last research-input change commit 52b3e49, 2026-10-27). Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` verified; manifest regenerated/check -> 324 cells, 324 unique hashes, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; `python3 -m unittest discover -s tests` -> 11 OK.
+- Hypothesis registry/invariants unchanged (EBCR-H001 tested_not_supported; EBCR-H002-H004 registered_secondary_not_tested; next seq 5; exclusions n=336; anchor null; PIT rank CLOSED; pre-existing UNRESOLVED preserved). No new unaddressed audit items.
+- Exit NO-OP per v1.1 addendum: no new upkeep artifact (v981 not created), no frozen artifacts modified, no empty commit. Latest verified upkeep remains `research_state/durable_state_upkeep_v980.json`.
+
+## Next agent starting point (activation 2492)
+- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2492). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
 - Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
 
