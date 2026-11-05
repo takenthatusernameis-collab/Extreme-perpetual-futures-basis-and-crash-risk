@@ -287,3 +287,9 @@
 - Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2443). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
 - Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
+
+## Activation 2443 (completed) — NO-OP
+- State-change gate: working tree clean; no new admissible source data or dated research event. Frozen config hashes unchanged; grid 324/324; tests 11 OK. Exit NO-OP. Latest verified upkeep remains v980.
+
+## Next agent starting point (activation 2444)
+- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2444). Expect NO-OP unless inputs change.
