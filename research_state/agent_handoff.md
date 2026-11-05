@@ -565,3 +565,13 @@
 - Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2483). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
 - Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
+
+## Activation 2483 (completed) — NO-OP
+- State-change gate: `d9e5fec..HEAD` touches only harness checkpoint files (agent_handoff.md, agent_task_message.md, durable_state_upkeep_v980.json, workflow_run_diagnostics.jsonl). Working tree clean (`git status --short` empty). No new admissible source data or dated research event (last research-input change commit 52b3e49, 2026-10-27).
+- Verified: frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` unchanged; hypothesis registry consistent (EBCR-H001 tested_not_supported; EBCR-H002/EBCR-H003/EBCR-H004 registered_secondary_not_tested; next seq 5). Latest verified upkeep remains `research_state/durable_state_upkeep_v980.json`. Invariants preserved (exclusions n=336, anchor null, PIT rank CLOSED). Pre-existing UNRESOLVED preserved; no new unaddressed audit items.
+- Exit NO-OP per cadence (v1.1 addendum): no repeated full tests, no grid manifest regeneration in-repo, no new upkeep artifact (v981 not created), no frozen artifacts modified, no empty commit.
+
+## Next agent starting point (activation 2484)
+- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2484). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
+- Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
+- If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
