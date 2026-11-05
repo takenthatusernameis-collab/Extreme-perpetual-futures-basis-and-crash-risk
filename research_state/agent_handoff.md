@@ -28,8 +28,16 @@
 - **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior. No new unaddressed audit items.
 - **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
 
-## Next agent starting point (activation 2574)
-- Continue state-change-driven upkeep; follow `research_state/agent_task_message.md` (activation 2574). Compare against `research_state/durable_state_upkeep_v981.json` and commit `76256d1`. **Expect NO-OP** unless research-material inputs change (code/test/config/grid/source/registry/frontier/audit) or a new admissible source/dated event appears.
+## Activation 2574 (completed, 2026-11-05) — NO-OP
+- **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1` (HEAD `d8a27d5`): `git status --short` clean; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json` only (operational harness/checkpoint, no research-material changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
+- **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Workflow diagnostics are harness artifacts only.
+- **Verified:** frozen config literal sha256 `753d9357...ebd16` matches; hypothesis registry consistent (H001 tested_not_supported; H002-H004 registered_secondary_not_tested; next_hypothesis_sequence 5); v981 exclusions_n 336 preserved; anchor null/PIT CLOSED preserved per v981 baseline.
+- **Tests:** not re-run per NO-OP (unchanged since activation 2541). `pytest` unavailable.
+- **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior. No new unaddressed audit items.
+- **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
+
+## Next agent starting point (activation 2575)
+- Continue state-change-driven upkeep; follow `research_state/agent_task_message.md` (activation 2575). Compare against `research_state/durable_state_upkeep_v981.json` and commit `76256d1`. **Expect NO-OP** unless research-material inputs change (code/test/config/grid/source/registry/frontier/audit) or a new admissible source/dated event appears.
 - Preserve invariants: exclusions n=336 (v981), anchor null, PIT rank CLOSED, EBCR-H001 `tested_not_supported`, EBCR-H002-H004 `registered_secondary_not_tested`. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If controller progress code changes, run `tests/test_controller_progress_accounting.py` function tests explicitly in addition to `unittest discover`. If a source becomes admissible/reachable or config/grid/registry/frontier changes, follow full required gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
 
