@@ -769,3 +769,15 @@
 - Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2505). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
 - Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
 - If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
+
+## Activation 2505 (completed) — NO-OP
+- State-change gate: `d9e5fec..HEAD` limited to harness checkpoint files (`agent_handoff.md`, `agent_task_message.md`, `durable_state_upkeep_v980.json`, `workflow_run_diagnostics.jsonl`); no code/test/config/grid/source/registry/frontier/audit/results/docs source changes. Working tree clean (`git status --short` empty, `git diff --check` clean, `git ls-files --others --exclude-standard` empty). Frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` verified. Grid manifest regenerated to /tmp -> 324 cells, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` matches. No new admissible source data or dated research event (last research-input change commit 52b3e49, 2026-10-27). Latest verified upkeep: `research_state/durable_state_upkeep_v980.json`.
+- `python3 -m unittest discover -s tests` -> 11 OK (Ran 11 tests in 0.007s, OK).
+- Hypothesis registry consistent: EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; next seq 5. Exclusions n=336 (v980). Anchor null preserved (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485). PIT rank CLOSED.
+- Pre-existing UNRESOLVED (preserved): contract listing/delisting/migration history; data revision behavior. No new unaddressed audit items.
+- Exit NO-OP per state-change-driven cadence (v1.1 addendum): no repeated full tests, no grid manifest regeneration in-repo, no new upkeep artifact (v981 not created), no frozen artifacts modified, no empty commit, no timestamp-only refresh beyond this record. Latest verified upkeep remains v980.
+
+## Next agent starting point (activation 2506)
+- Continue state-change-driven upkeep; see `research_state/agent_task_message.md` (activation 2506). Expect NO-OP unless inputs change (code/test/config/grid/source/registry/frontier/audit).
+- Preserve invariants: exclusions n=336, anchor null, PIT rank CLOSED, EBCR-H001 tested_not_supported, EBCR-H002-H004 registered_secondary_not_tested. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
+- If a source becomes admissible/reachable or code/config changes, follow full gates; else exit NO-OP without creating upkeep artifacts or timestamp-only changes.
