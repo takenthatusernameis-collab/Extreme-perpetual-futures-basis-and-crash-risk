@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "artifact_id": "durable_state_upkeep_v981",
+  "activation": 2541,
+  "created_at": "2026-11-05T17:14:00Z",
+  "commit": "76256d1",
+  "baseline_commit_gate": "d9e5fec",
+  "verdict": "no_gaps_found",
+  "checks": {
+    "state_change_gate": "material_change_detected",
+    "git_diff_name_only_d9e5fec_head": [
+      "research_state/agent_handoff.md",
+      "research_state/agent_task_message.md",
+      "research_state/durable_state_upkeep_v980.json",
+      "research_state/workflow_run_diagnostics.jsonl",
+      "scripts/controller_progress.py",
+      "tests/test_controller_progress_accounting.py"
+    ],
+    "code_test_changes": [
+      "scripts/controller_progress.py (new)",
+      "tests/test_controller_progress_accounting.py (new)"
+    ],
+    "grid_manifest_cells": 324,
+    "grid_manifest_unique_hashes": 324,
+    "config_sha256_frozen_match": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0",
+    "config_literal_sha256_disk": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+    "unittest_discover": "OK (11 tests)",
+    "controller_progress_function_tests": "OK (7 tests including workflow wiring contract)",
+    "pytest": "unavailable (No module named pytest)",
+    "git_diff_check": "clean",
+    "git_status_short_at_gate": "clean_except_harness_checkpoints_in_worktree_context",
+    "untracked_files": "none"
+  },
+  "hypotheses": {
+    "EBCR-H001": "tested_not_supported",
+    "EBCR-H002": "registered_secondary_not_tested",
+    "EBCR-H003": "registered_secondary_not_tested",
+    "EBCR-H004": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5
+  },
+  "preserved": {
+    "anchor_null_crash_incidence_15pct_adj_p": 0.24830545694889028,
+    "anchor_null_expected_shortfall_5pct_forward_mae_adj_p": 0.9485,
+    "exclusions_n": 336,
+    "pit_rank": "CLOSED"
+  },
+  "audits": {
+    "preexisting_unresolved_preserved": [
+      "Contract listing/delisting/migration history",
+      "Data revision behavior"
+    ],
+    "new_unaddressed_items": []
+  },
+  "frozen_artifacts_modified": false,
+  "notes": "Activation 2541 state-change gate detected material code/test changes since d9e5fec (HEAD 76256d1 adds scripts/controller_progress.py and tests/test_controller_progress_accounting.py in commits f22b3e1/f8e7c12; harness checkpoint files also changed). This is not a NO-OP. Targeted verification: frozen config literal sha256 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16 matches disk; grid manifest regenerated to /tmp -> 324 cells, 324 unique per-cell configuration_hash_sha256, config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0 matches frozen canonical. python3 -m unittest discover -s tests -> 11 OK. Controller progress module function tests executed directly -> 7 OK (workflow wiring contract verified). pytest unavailable. git diff --check clean. No new admissible source data or dated research event (last research-input change remains commit 52b3e49, 2026-10-27); workflow_run_diagnostics.jsonl remains harness-only. Hypothesis registry consistent. Exclusions n=336; anchor null preserved. PIT rank CLOSED. Pre-existing UNRESOLVED preserved; no new unaddressed items. No frozen artifacts modified. No commit made (not requested)."
+}
