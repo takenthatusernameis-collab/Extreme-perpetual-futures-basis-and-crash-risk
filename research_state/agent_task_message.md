@@ -1,4 +1,4 @@
-# Agent task message (EBCR-001) — activation 2412
+# Agent task message (EBCR-001) — activation 2413
 
 ## Read first (required)
 - `research_state/agent_handoff.md` (latest)
@@ -8,9 +8,9 @@
 - `configs/basis_crash_grid_v1.json` (frozen)
 
 ## Objective
-Continue durable-state upkeep under the state-change-driven cadence. Activation 2411 completed as NO-OP; this is activation 2412.
+Continue durable-state upkeep under the state-change-driven cadence. Activation 2412 completed as NO-OP; this is activation 2413.
 
-## Required action (activation 2412)
+## Required action (activation 2413)
 1. State-change gate first. Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against latest verified state (`research_state/durable_state_upkeep_v980.json`, commit d9e5fec baseline). If unchanged and no new admissible source data or dated event, exit NO-OP (no repeated full tests, no grid manifest regeneration, no new upkeep artifact, no timestamp-only handoff/task refresh beyond this record, no empty commit).
 2. If changed, run targeted affected tests first; full required gates only at material milestone or relevant input change.
 3. Preserve invariants. Maintain null/exclusions (336); preserve registered_secondary_not_tested for EBCR-H002/EBCR-H003/EBCR-H004; preserve anchor null. PIT rank CLOSED. No preregistration from grid hits; do not modify frozen anchor/config artifacts.
