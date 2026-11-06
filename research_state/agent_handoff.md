@@ -1,5 +1,14 @@
 # Agent handoff — EBCR-001
 
+## Activation 2630 (completed, 2026-11-06) — NO-OP
+- **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean at gate; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` only (operational harness/checkpoint/diagnostics — no research-material code/test/config/grid/source/registry/frontier/audit changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
+- **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Harness diagnostics are not research sources.
+- **Verified:** frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches disk. Hypothesis registry consistent (`research_state/hypothesis_registry.json`): EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. v981 invariants preserved: exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED.
+- **Audits re-review:** no new unaddressed audit items identified; harness-checkout mtimes on older research artifacts already accounted for in v981 (substantive content unchanged vs `76256d1`).
+- **Tests:** not re-run per NO-OP (unchanged since activation 2541; run `tests/test_controller_progress_accounting.py` explicitly if controller progress code changes). `pytest` unavailable.
+- **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior.
+- **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
+
 ## Activation 2629 (completed, 2026-11-06) — NO-OP
 - **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean at gate; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` only (operational harness/checkpoint/diagnostics — no research-material code/test/config/grid/source/registry/frontier/audit changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
 - **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Harness diagnostics are not research sources.
