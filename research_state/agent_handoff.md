@@ -1,5 +1,14 @@
 # Agent handoff — EBCR-001
 
+## Activation 2635 (completed, 2026-11-06) — NO-OP
+- **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` only (operational harness/checkpoint/diagnostics — no research-material code/test/config/grid/source/registry/frontier/audit changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
+- **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Harness diagnostics are not research sources.
+- **Verified:** frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches disk. `research_state/hypothesis_registry.json` consistent: EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. v981 invariants preserved: exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED.
+- **Audits re-review:** `find research_state -newer durable_state_upkeep_v981.json` returns older research artifacts with harness-refreshed mtimes; substantive content unchanged vs `76256d1` (no new unaddressed audit items).
+- **Tests:** not re-run per NO-OP (unchanged since activation 2541; run `tests/test_controller_progress_accounting.py` explicitly if controller progress code changes). `pytest` unavailable.
+- **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior.
+- **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
+
 ## Activation 2634 (completed, 2026-11-06) — NO-OP
 - **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` only (operational harness/checkpoint/diagnostics — no research-material code/test/config/grid/source/registry/frontier/audit changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
 - **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Harness diagnostics are not research sources.
@@ -82,11 +91,11 @@
 - **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
 
 ## Latest verified state (compact)
-- **Verified research baseline:** `research_state/durable_state_upkeep_v981.json` (commit `76256d1`). No successor upkeep artifact created (no research-material state change since v981). Latest gate: activation 2632 (2026-11-06) — NO-OP.
+- **Verified research baseline:** `research_state/durable_state_upkeep_v981.json` (commit `76256d1`). No successor upkeep artifact created (no research-material state change since v981). Latest gate: activation 2635 (2026-11-06) — NO-OP.
 - **Invariants preserved:** exclusions n=336 (v981); anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED. EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; hypothesis registry `next_hypothesis_sequence` 5.
 - **Frozen config:** `configs/basis_crash_grid_v1.json` literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` (unchanged). Grid manifest verification (when run to `/tmp`): 324 cells, 324 unique `configuration_hash_sha256`, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
 - **Pre-existing UNRESOLVED (do not silently close):** contract listing/delisting/migration history; data revision behavior.
-- **Last research-input commit:** `52b3e49` (2026-10-27). Post-v981 changes observed through activation 2615 are operational harness/checkpoint only (`.github/workflows/main.yml`, harness checkpoints, workflow diagnostics).
+- **Last research-input commit:** `52b3e49` (2026-10-27). Post-v981 changes observed through activation 2635 are operational harness/checkpoint/diagnostics only (`.github/workflows/main.yml`, handoff/task/checkpoint, harness diagnostics).
 - **Tests at last material verification (activation 2541, v981):** `python3 -m unittest discover -s tests` → 11 OK; `tests/test_controller_progress_accounting.py` function tests → 7 OK (run explicitly). `pytest` unavailable.
 - **Workflow diagnostics:** harness-only artifacts (not research sources).
 
