@@ -217,8 +217,17 @@
 - **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior.
 - **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
 
+## Activation 2652 (completed, 2026-11-06) — NO-OP
+- **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean; `git diff --name-only 76256d1..HEAD` → `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` only (operational harness/checkpoint/diagnostics — no research-material code/test/config/grid/source/registry/frontier/audit changes); `git diff --check` clean; `git ls-files --others --exclude-standard` empty.
+- **Admissible source/data:** none (last research-input `52b3e49`, 2026-10-27). Harness diagnostics are not research sources.
+- **Verified:** frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches disk (`sha256sum configs/basis_crash_grid_v1.json`). Hypothesis registry consistent (`research_state/hypothesis_registry.json`): EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. v981 invariants preserved: exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED.
+- **Audits re-review:** no new unaddressed audit items; substantive content unchanged vs `76256d1`.
+- **Tests:** not re-run per NO-OP (unchanged since activation 2541). `pytest` unavailable.
+- **Unresolved preserved:** contract listing/delisting/migration history; data revision behavior.
+- **Exit:** NO-OP per state-change-driven cadence (v1.1 addendum) — no repeated full tests, no in-repo grid manifest regeneration, no new upkeep artifact (v982 not created), no frozen artifacts modified, no commit made (not requested). Latest verified upkeep remains `research_state/durable_state_upkeep_v981.json`.
+
 ## Latest verified state (compact)
-- **Verified research baseline:** `research_state/durable_state_upkeep_v981.json` (commit `76256d1`). No successor upkeep artifact created (no research-material state change since v981). Latest gate: activation 2648 (2026-11-06) — NO-OP.
+- **Verified research baseline:** `research_state/durable_state_upkeep_v981.json` (commit `76256d1`). No successor upkeep artifact created (no research-material state change since v981). Latest gate: activation 2652 (2026-11-06) — NO-OP.
 - **Invariants preserved:** exclusions n=336 (v981); anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED. EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; hypothesis registry `next_hypothesis_sequence` 5.
 - **Frozen config:** `configs/basis_crash_grid_v1.json` literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` (unchanged). Grid manifest verification (when run to `/tmp`): 324 cells, 324 unique `configuration_hash_sha256`, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
 - **Pre-existing UNRESOLVED (do not silently close):** contract listing/delisting/migration history; data revision behavior.
