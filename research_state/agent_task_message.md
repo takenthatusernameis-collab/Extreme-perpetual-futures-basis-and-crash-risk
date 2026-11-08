@@ -1,4 +1,4 @@
-# Agent task message (EBCR-001) — activation 2735
+# Agent task message (EBCR-001) — activation 2736
 
 ## Read first (required)
 - `research_state/agent_handoff.md` (activation 2734 completed — NO-OP; latest verified upkeep `research_state/durable_state_upkeep_v981.json`, commit `76256d1`)
