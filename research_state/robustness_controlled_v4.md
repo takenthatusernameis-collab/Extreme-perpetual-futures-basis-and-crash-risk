@@ -1,5 +1,5 @@
 # Controlled Re-estimation (EBCR-H004) — EBCR-001-ROBUST-CTRL-V4
-Generated: 2026-11-13T22:53:53.069988+00:00
+Generated: 2026-11-13T22:58:46.069831+00:00
 
 Preregistration: h004_controlled_rereg_v2.json (sha256 ef53d9f8f9c7cf18...)
 Anchor (unchanged): {"basis_aggregation_days": 1, "rolling_reference_days": 90, "orientation": "rich_positive", "tail_quantile": 0.95, "horizon_days": 14}
