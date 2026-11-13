@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-ROBUST-CTRL-V3",
+  "preregistered_at_utc": "2026-11-13T17:48:32Z",
+  "source_hypothesis": "EBCR-H004",
+  "anchor": {
+    "basis_aggregation_days": 1,
+    "rolling_reference_days": 90,
+    "orientation": "rich_positive",
+    "tail_quantile": 0.95,
+    "horizon_days": 14
+  },
+  "co_primary_endpoints": [
+    "crash_incidence_15pct",
+    "expected_shortfall_5pct_forward_mae"
+  ],
+  "control_specification": {
+    "past_returns_days": [7, 30],
+    "past_volatility_drawdown_days": 30,
+    "market_controls": ["btc_returns", "btc_volatility", "market_returns", "market_volatility"],
+    "funding": true,
+    "liquidity_turnover": "not_available_in_derived_data",
+    "open_interest": "when_reliable_not_available_in_derived_data"
+  },
+  "model_form": {
+    "crash_incidence_15pct": {
+      "estimator": "logistic_regression",
+      "link": "logit",
+      "dependent_variable": "binary_indicator_mae_h14_le_neg15pct",
+      "independent_variables": [
+        "signal_rich_positive_basis_95pct",
+        "ret_lag_7d",
+        "ret_lag_30d",
+        "vol_lag_30d",
+        "mdd_lag_30d",
+        "btc_ret_lag_1d",
+        "btc_vol_lag_30d",
+        "market_ret_lag_1d",
+        "market_vol_lag_30d",
+        "funding_median_lag_1d"
+      ],
+      "missing_data_handling": "complete_case_drop_rows_with_any_missing_control",
+      "inference": "robust_standard_errors_clustered_by_symbol_and_month",
+      "multiple_testing": "holm_across_two_co_primary_endpoints_within_registered_family"
+    },
+    "expected_shortfall_5pct_forward_mae": {
+      "estimator": "linear_regression_on_conditional_expected_shortfall",
+      "dependent_variable": "mae_h14",
+      "conditional_quantile": 0.05,
+      "independent_variables": [
+        "signal_rich_positive_basis_95pct",
+        "ret_lag_7d",
+        "ret_lag_30d",
+        "vol_lag_30d",
+        "mdd_lag_30d",
+        "btc_ret_lag_1d",
+        "btc_vol_lag_30d",
+        "market_ret_lag_1d",
+        "market_vol_lag_30d",
+        "funding_median_lag_1d"
+      ],
+      "estimation_approach": "estimate_5pct_expected_shortfall_in_signal_and_nosignal_groups_with_controls_via_regression",
+      "missing_data_handling": "complete_case_drop_rows_with_any_missing_control",
+      "inference": "bootstrap_standard_errors_clustered_by_symbol_and_month_1000_resamples",
+      "multiple_testing": "holm_across_two_co_primary_endpoints_within_registered_family"
+    }
+  },
+  "data_source": {
+    "integrated_file": "research_state/integrated_extended_v1.json",
+    "integrated_sha256": "4dee3684a6b8c7d5e8f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3",
+    "n_rows": 5010,
+    "n_exclusions": 336,
+    "window": {
+      "start": "2023-01-01",
+      "end": "2024-04-30"
+    }
+  },
+  "frozen_config": {
+    "config_path": "configs/basis_crash_grid_v1.json",
+    "literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+    "canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+  },
+  "preserved_invariants": {
+    "hypothesis_registry_sha256": "d5b299bf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8",
+    "exclusions_n": 336,
+    "anchor_null_preserved": true,
+    "pit_rank_closed": true,
+    "h001_status": "tested_not_supported",
+    "h002_h003_h004_status": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5
+  },
+  "output_artifacts": {
+    "results_json": "research_state/robustness_controlled_v3.json",
+    "results_md": "research_state/robustness_controlled_v3.md",
+    "no_overwrite_of_frozen": true
+  },
+  "notes": [
+    "Preregistration written BEFORE computing outcomes per operating contract.",
+    "Liquidity/turnover and open interest are noted as predeclared but not available in the derived integrated_extended_v1.json; only funding_median is available as a market microstructure control.",
+    "All controls are lagged (t-1) to respect causal ordering; no forward fill.",
+    "Complete-case analysis drops rows with any missing control variable.",
+    "Clustering by symbol and calendar month for standard errors.",
+    "Holm correction applied across the two co-primary endpoints within the registered family (EBCR-H001 + EBCR-H004 share endpoints).",
+    "This experiment does not modify frozen config, anchor, or prior evaluation reports."
+  ]
+}
