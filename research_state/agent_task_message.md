@@ -1,39 +1,41 @@
-# Agent task message (EBCR-001) — activation 2935
+# Agent task message (EBCR-001) — activation 2938 (written at end of activation 2937)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 2935 completed — NO-OP; state-change gate verified; latest verified upkeep `research_state/durable_state_upkeep_v981.json`, commit `76256d1`)
-- `research_state/agent_task_message.md` (this file)
+- `research_state/agent_handoff.md` (activation 2937 completed — BLOCKER RESOLVED + REPRODUCTION VERIFIED; artifacts `research_state/repro_verification_v982.json`, `research_state/evaluation_report_repro_v982.json`, commit still `76256d1` + operational checkpoints)
+- `research_state/agent_task_message.md` (previous task message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
 - `configs/basis_crash_grid_v1.json` (frozen)
 
-## Objective
-Continue durable-state upkeep under the state-change-driven cadence, and pursue genuinely unblocked research only if a real external gate permits. Do not manufacture work. Expect NO-OP unless a research-material input changes or a new admissible source/dated research event appears.
+## What changed since the previous activation
+1. **The runtime analysis stack is now available.** A free-OSS venv exists at `.venv` (gitignored) with python 3.12.3, numpy 2.5.4, pandas 3.1.1, scipy 1.18.1, pytest 9.2.0. PyPI is reachable. Use `.venv/bin/python` as the analysis interpreter; do not reinstall unless it is gone.
+2. **The frozen extended evaluation was reproduced exactly.** `scripts/evaluate_grid_extended.py` re-run on `research_state/integrated_extended_v1.json` into a NEW path produced a report whose 324 cells are identical to `research_state/evaluation_report_extended_v1.json` (identical canonical sha256 excluding `generated_at_utc` = `abc3dfe418fdc09a5483f0c56d3f7579b20f94ab20d61b6eebfd5a2b9d817aac`). Anchor co-primary adj p: crash_incidence_15pct 0.24830545694889028; expected_shortfall_5pct_forward_mae 0.9485. Full required gates pass: manifest 324 cells/canonical `55caedf…`, `pytest -q tests` 18 passed.
+3. **New constraint:** raw per-timestamp ingestion snapshots are not in-repo (`data/raw/` gitignored), so re-ingestion is NOT reproducible. Only the derived `integrated_extended_v1.json` (5010 rows, 336 exclusions) is reproducible.
 
-## Required action (activation 2935)
-1. **State-change gate first.** Compare code/test/config/grid/source/registry/frontier/audit identities/hashes against `research_state/durable_state_upkeep_v981.json` (commit `76256d1`). Run `git status --short`, `git diff --name-only 76256d1..HEAD`, `git diff --check`, `git ls-files --others --exclude-standard`. Verify frozen config on disk: literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`, canonical-JSON sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`. If unchanged from verified material state and no new admissible source data or dated research event, exit NO-OP: no repeated full gate, no in-repo grid manifest regeneration, no new upkeep artifact, no empty commit.
-2. **If changed:** run targeted affected tests first; full required gates only at a material milestone or relevant input change.
-3. **Preserve invariants.** Exclusions n=336 (v981), anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485), PIT rank CLOSED. EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. No preregistration from grid hits; do not modify frozen anchor/config artifacts. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
-4. **Unblocked research status (none cleanly unblocked as NO-OP):**
-   - `numpy`/`pandas`/`scipy` are ABSENT in this runtime (re-confirmed activation 2935). Every analysis script raises `ModuleNotFoundError`. Real analysis needs a free-OSS venv first (`pip install numpy pandas scipy`) AND a new experiment ID + preregistration, and must not overwrite frozen artifacts (several scripts write to existing output paths — copy to a new experiment path).
-   - EBCR-H004 (prior-only-control robustness): controlled re-estimation is UNIMPLEMENTED — `scripts/robustness_prior_controls_v2.py` computes only `uncontrolled`. A valid test needs a preregistered model form; do not invent it post-hoc.
-   - EBCR-H002/H003: `research_state/h002_h003_feasibility_v1.md` requires a NEW experiment ID + independent preregistered rationale + a NEW anchor/config; fixed grid already covers those orientations on the inspected window (double-dipping risk).
-5. **Durable upkeep (changed path only).** Re-verify hypothesis registry consistency and re-review on-disk audits for new unaddressed items. Create a successor upkeep artifact only if state changed and no gaps found; do not create on NO-OP.
-6. **Report only verified findings. Do not commit changes unless explicitly asked.**
+## Objective (activation 2938)
+Advance the highest-value genuinely unblocked work now that the stack works. Do not manufacture work, do not re-run the already-reproduced frozen evaluation for a third time, and do not touch frozen artifacts. Expect at least one real, verifiable deliverable or an explicit, documented blocker.
 
-## Verified baseline (activation 2935, 2026-11-13)
-- **State-change gate** vs `research_state/durable_state_upkeep_v981.json` / commit `76256d1`: `git status --short` clean at gate; `git diff --name-only 76256d1..HEAD` = `.github/workflows/main.yml`, `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/durable_state_upkeep_v981.json`, `research_state/persistence_failure_diagnosis_v1.md`, `research_state/workflow_run_diagnostics.jsonl` (operational/handoff/harness only). Research-material diff empty; no research-material commits for those paths. `git diff --check` clean; `git ls-files --others --exclude-standard` empty. HEAD `c94b528c` operational-only ahead of `76256d1`.
-- **Activation 2935 completed — NO-OP:** frozen config literal sha256 `753d9357…` and canonical-JSON sha256 `55caedf…` verified (manifest 324 cells, 324 unique hashes, expected 324, anchor rich_positive/1d/90d/q0.95/14d). No new admissible source data or dated research event. `research_state/audit/` absent; no `data/` directory.
-- `research_state/hypothesis_registry.json` verified consistent with v981 (`next_hypothesis_sequence` 5): EBCR-H001 `tested_not_supported`; EBCR-H002/EBCR-H003/EBCR-H004 `registered_secondary_not_tested`.
-- Invariants preserved (v981): exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED. Pre-existing UNRESOLVED unchanged (contract listing/delisting/migration history; data revision behavior).
-- Verification executed: `generate_grid_manifest.py` → 324 cells, canonical sha256 `55caedf…` (matches); `python3 -m unittest tests.test_grid_manifest tests.test_research_contract tests.test_workflow_contract` → 11 tests OK. `pytest` unavailable. `numpy`/`pandas`/`scipy` absent (re-confirmed 2935).
-- No new `durable_state_upkeep` artifact created; no frozen artifacts modified; no commit made.
+## Required actions (activation 2938)
+1. **State-change gate first** (cheap): compare code/test/config/grid/source/registry/frontier/audit identities against `research_state/durable_state_upkeep_v981.json` / commit `76256d1`, and note that the environment change (venv + repro artifacts) is already recorded in `repro_verification_v982.json`. Verify frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`. Do not rerun the full gate if nothing changed.
+2. **Pick ONE unblocked task and preregister it before computing outcomes:**
+   - **(A) EBCR-H004 controlled re-estimation (highest value).** The control set is already preregistered in `research_state/hypothesis_registry.json` (`control_specification`: past 7/30-day returns, 30-day volatility/drawdown, BTC/market return+vol, funding, liquidity/turnover, open interest when reliable; covariates must be known at formation t, no forward fill). What is missing is implementation: `scripts/robustness_prior_controls_v2.py` computes only `uncontrolled`. **Write the model form down in a new preregistration artifact BEFORE running it** (e.g. a new experiment ID `EBCR-001-ROBUST-CTRL-V3` with explicit estimator, covariate list, missing-data handling, inference/cluster approach and co-primary Holm handling). Then implement in a NEW script or a new output path; never overwrite `research_state/robustness_prior_controls_extended_v2.json` or the frozen evaluation.
+   - **(B) EBCR-H002 / EBCR-H003.** Still require a NEW experiment ID + independent preregistered rationale + a NEW anchor/config, because the fixed grid already covers those orientations on the inspected window (double-dipping risk). See `research_state/h002_h003_feasibility_v1.md`. Do not re-use the anchor.
+   - **(C) Evidence audit.** Audit the derived artifacts (`integrated_extended_v1.json`, `basis_computation_extended_v1.json`, `crash_labels_extended_v1.json`) for undocumented assumptions, coverage/missingness and exclusion accounting, and record findings in `research_state/audit/` (directory currently absent). This does not contaminate frozen evidence.
+3. **Preserve invariants:** exclusions n=336; anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485); PIT rank CLOSED; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. No preregistration derived from inspected grid hits; no frozen artifact edits; apply Holm across the complete registered family; preserve null/contradictory/failed evidence.
+4. **Do not repeat already-completed work:** the extended evaluation reproduction (activation 2937) is done; do not re-run it unless an input changes.
+5. **Report only verified findings.** Do not commit unless explicitly asked. Update this handoff and write the next task message.
 
-## Next agent starting point (activation 2936)
-- Follow this task message (activation 2935). Run the state-change gate first against `research_state/durable_state_upkeep_v981.json` and commit `76256d1`. Expect NO-OP unless a research-material input changes or a new admissible source/dated research event appears.
-- **Do not burn cycles re-attempting analysis scripts in this runtime:** `numpy`/`pandas`/`scipy` absent (re-confirmed 2935). Real analysis requires a free-OSS venv (`pip install numpy pandas scipy`) AND a new experiment ID + preregistration, and must not overwrite frozen artifacts (copy to a new experiment path).
-- Preserve invariants: exclusions n=336, anchor null (crash_incidence_15pct adj p 0.24830545694889028; expected_shortfall_5pct_forward_mae adj p 0.9485), PIT rank CLOSED. EBCR-H001 `tested_not_supported`, EBCR-H002/H003/H004 `registered_secondary_not_tested`, `next_hypothesis_sequence` 5. Pre-existing UNRESOLVED: contract listing/delisting/migration history; data revision behavior.
-- Genuinely unblocked research is NOT currently available as NO-OP: H002/H003 need a new experiment + new anchor/config; H004's controlled step is unimplemented and needs a preregistered model form. Low-risk contribution on no-change activation is verification (manifest + stdlib tests) and evidence auditing.
-- If controller progress code changes, run `tests/test_controller_progress_accounting.py` function tests explicitly with isolated temp dirs (pytest-style `tmp_path`; `pytest` module absent). If a material state change occurs and gates pass with no gaps, create a successor upkeep artifact only on the changed path; else exit NO-OP. Do not commit unless explicitly asked.
+## Verified baseline (activation 2937, 2026-11-13)
+- State-change gate: research-material diff vs `76256d1` empty; no research-material commits; `git diff --check` clean; untracked = only the two new `research_state/` repro files.
+- Frozen config hashes match; manifest 324 cells; anchor rich_positive/1d/90d/q0.95/14d; config immutable (`8b53966b`).
+- Venv: `.venv`, python 3.12.3, numpy 2.5.4, pandas 3.1.1, scipy 1.18.1, pytest 9.2.0.
+- Repro: `.venv/bin/python scripts/evaluate_grid_extended.py --report-out research_state/evaluation_report_repro_v982.json` → cells=324, tests=2592, with_p=2451, blocked_no_p=141, family Holm significant=424; cells identical to frozen report.
+- Gates: manifest canonical `55caedf…` matches; `pytest -q tests` → 18 passed.
+- Registry: `research_state/hypothesis_registry.json` sha256 `d5b299bf…` unchanged; universe frontier `research_state/universe_frontier.json` sha256 `e8826caf…` unchanged.
+- No new `durable_state_upkeep` artifact (environment/tooling-only change); no frozen artifact modified; no commit.
 
-(End of file - total 37 lines)
+## Known blockers still open (do not re-probe every activation)
+- Raw ingestion snapshots absent from the repo → re-ingestion not reproducible; only derived data.
+- Contract listing/delisting/migration history: unresolved.
+- Data revision behavior: unresolved.
+- `scripts/robustness_prior_controls_v2.py` controlled step unimplemented (now actionable under task A).
