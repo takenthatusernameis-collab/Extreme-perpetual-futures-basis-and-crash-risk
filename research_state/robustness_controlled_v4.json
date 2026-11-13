@@ -4,7 +4,7 @@
   "experiment_id": "EBCR-001-ROBUST-CTRL-V4",
   "preregistration": "/home/runner/work/Extreme-perpetual-futures-basis-and-crash-risk/Extreme-perpetual-futures-basis-and-crash-risk/research_state/h004_controlled_rereg_v2.json",
   "preregistration_sha256": "ef53d9f8f9c7cf18389560c263b5495e2eeea2e3b11c223943608320c6316364",
-  "generated_at_utc": "2026-11-13T22:58:46.069831+00:00",
+  "generated_at_utc": "2026-11-13T23:03:01.245136+00:00",
   "anchor": {
     "basis_aggregation_days": 1,
     "rolling_reference_days": 90,
