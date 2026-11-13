@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "experiment_id": "EBCR-001-ROBUST-CTRL-V4",
+  "preregistered_at_utc": "2026-11-13T22:52:02Z",
+  "source_hypothesis": "EBCR-H004",
+  "supersedes": "EBCR-001-ROBUST-CTRL-V3 (research_state/h004_controlled_rereg_v1.json; outputs research_state/robustness_controlled_v3.json/.md)",
+  "reason_for_new_experiment": "V3 cluster-robust standard errors computed bread=(X'X)^-1 for both OLS and Logit; this matrix is misspecified for Logit (inverse Hessian of the log-likelihood is required). V3's Holm-significant crash_incidence_15pct claim (cluster p=5.6517738045158694e-08 vs model p=0.3118; uncontrolled frozen anchor adj p=0.24830545694889028) is therefore not trustworthy and must not override the preserved EBCR-H001 null. V4 corrects inference using statsmodels' built-in cluster-robust covariance (cov_type='cluster', groups=symbol-month) for both estimators. V3 outputs are preserved untouched; V4 writes only to new paths (research_state/robustness_controlled_v4.json/.md, scripts/robustness_controlled_v4.py). No frozen artifact, config, anchor, hypothesis registry status, or prior output is modified.",
+  "anchor": {
+    "basis_aggregation_days": 1,
+    "rolling_reference_days": 90,
+    "orientation": "rich_positive",
+    "tail_quantile": 0.95,
+    "horizon_days": 14
+  },
+  "co_primary_endpoints": [
+    "crash_incidence_15pct",
+    "expected_shortfall_5pct_forward_mae"
+  ],
+  "control_specification": {
+    "past_returns_days": [7, 30],
+    "past_volatility_drawdown_days": 30,
+    "market_controls": ["btc_returns", "btc_volatility", "market_returns", "market_volatility"],
+    "funding": true,
+    "liquidity_turnover": "not_available_in_derived_data",
+    "open_interest": "when_reliable_not_available_in_derived_data"
+  },
+  "model_form": {
+    "crash_incidence_15pct": {
+      "estimator": "logistic_regression",
+      "link": "logit",
+      "dependent_variable": "binary_indicator_mae_h14_le_neg15pct",
+      "independent_variables": [
+        "signal_rich_positive_basis_95pct",
+        "ret_lag_7d",
+        "ret_lag_30d",
+        "vol_lag_30d",
+        "mdd_lag_30d",
+        "btc_ret_lag_1d",
+        "btc_vol_lag_30d",
+        "market_ret_lag_1d",
+        "market_vol_lag_30d",
+        "funding_median_lag_1d"
+      ],
+      "covariance": "cluster_robust_by_symbol_month_via_statsmodels_cov_type_cluster",
+      "uncontrolled_reference": "logit_on_signal_only",
+      "missing_data_handling": "complete_case_drop_rows_with_any_missing_control",
+      "multiple_testing": "holm_across_two_co_primary_endpoints_within_registered_family"
+    },
+    "expected_shortfall_5pct_forward_mae": {
+      "estimator": "linear_regression_ols",
+      "dependent_variable": "mae_h14",
+      "independent_variables": [
+        "signal_rich_positive_basis_95pct",
+        "ret_lag_7d",
+        "ret_lag_30d",
+        "vol_lag_30d",
+        "mdd_lag_30d",
+        "btc_ret_lag_1d",
+        "btc_vol_lag_30d",
+        "market_ret_lag_1d",
+        "market_vol_lag_30d",
+        "funding_median_lag_1d"
+      ],
+      "covariance": "cluster_robust_by_symbol_month_via_statsmodels_cov_type_cluster",
+      "es5_descriptive": "worst_5pct_mean_of_mae_in_signal_and_nosignal_groups",
+      "controlled_mean_shift": "ols_coefficient_on_signal_at_mean_controls",
+      "es5_inference": "bootstrap_resampled_se_of_group_es5_difference_1000_resamples_seed_42",
+      "uncontrolled_reference": "group_es5_difference_only",
+      "missing_data_handling": "complete_case_drop_rows_with_any_missing_control",
+      "multiple_testing": "holm_across_two_co_primary_endpoints_within_registered_family"
+    }
+  },
+  "data_source": {
+    "integrated_file": "research_state/integrated_extended_v1.json",
+    "n_rows": 5010,
+    "n_exclusions": 336,
+    "window": {
+      "start": "2023-01-01",
+      "end": "2024-04-30"
+    }
+  },
+  "frozen_config": {
+    "config_path": "configs/basis_crash_grid_v1.json",
+    "literal_sha256": "753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16",
+    "canonical_sha256": "55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0"
+  },
+  "preserved_invariants": {
+    "exclusions_n": 336,
+    "anchor_null_preserved": true,
+    "anchor_co_primary_crash_incidence_15pct_adj_p": 0.24830545694889028,
+    "anchor_co_primary_expected_shortfall_5pct_forward_mae_adj_p": 0.9485,
+    "pit_rank_closed": true,
+    "h001_status": "tested_not_supported",
+    "h002_h003_h004_status": "registered_secondary_not_tested",
+    "next_hypothesis_sequence": 5,
+    "no_overwrite_of_frozen_or_v3_outputs": true
+  },
+  "output_artifacts": {
+    "results_json": "research_state/robustness_controlled_v4.json",
+    "results_md": "research_state/robustness_controlled_v4.md",
+    "script": "scripts/robustness_controlled_v4.py",
+    "no_overwrite_of_frozen": true,
+    "no_overwrite_of_v3": true
+  },
+  "notes": [
+    "Preregistration written BEFORE computing outcomes per operating contract.",
+    "Correction vs V3: statsmodels cov_type='cluster' (symbol-month) replaces the hand-rolled cluster_robust_se whose (X'X)^-1 bread is invalid for Logit.",
+    "All controls are lagged (t-1) to respect causal ordering; no forward fill.",
+    "Complete-case analysis drops rows with any missing control variable.",
+    "Liquidity/turnover and open interest are predeclared but unavailable in derived integrated_extended_v1.json; only funding_median is used as a market-microstructure control.",
+    "Holm correction applied across the two co-primary endpoints within the registered family.",
+    "This experiment does not modify frozen config, anchor, prior evaluation reports, V3 outputs, or hypothesis registry statuses."
+  ]
+}
