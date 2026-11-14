@@ -1,0 +1,608 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V2",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-14T09:28:39Z",
+  "task_activation": 2948,
+  "purpose": "De-duplicated candidate-frontier advance and verification of the activation-2947 delta (v1). Extends descending market-cap discovery to the top 75 by stable asset id; records cursor, retrieval timestamp and response checksum. Discovery only: current rank is never historical point-in-time membership.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v1.json",
+    "sha256": "847a3f2abb7c87dbc9a1238209a3cac276af8d8e57e02831e368c23612dda7d4",
+    "entries_in_batch": 25,
+    "rank_range": [
+      26,
+      50
+    ],
+    "duplicate_ids_already_in_frontier": [
+      "bch-bitcoin-cash",
+      "rain-rain-protocol"
+    ],
+    "net_new_candidates": 23,
+    "defect": "v1 recorded a rank-window batch (26-50) without a set-difference check against the existing frontier. Ranking drift between the 2026-10-24 frontier snapshot and the 2026-11-14 retrieval meant 2 of 25 entries (BCH, RAIN) were already discovered. v1 is preserved unmodified as evidence."
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-14T09:27:58Z",
+    "response_sha256": "e4eda12a65673f5d6b0c2cbdce79f3f7656c1b1ba6825c0139416ffc4bdc9bee",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 11788,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) was non-functional in this environment; /v1/coins used as ranked discovery source. Raw response is 7.59 MB and is not stored in-repo (only its checksum)."
+  },
+  "frontier_state": {
+    "frontier_artifact": "research_state/universe_frontier.json",
+    "discovered_before_this_artifact": 48,
+    "new_candidates_this_artifact": 27,
+    "discovered_after_this_artifact": 75,
+    "top_rank_covered": 75,
+    "rank_frontier_exhausted": false,
+    "next_batch_start_rank": 76,
+    "batch_size_for_checkpointing": 25
+  },
+  "discovery_method": {
+    "ordering": "descending current market-cap rank",
+    "rank_window_scanned": "1-75",
+    "dedup": "set difference of stable asset id against union(universe_frontier.candidates_rank_unverified, v1.candidates_discovered_delta)",
+    "pit_status": "all entries are rank_unverified_discovery_only; current rank must never be projected backward as historical membership",
+    "duplicate_policy": "preserve duplicates with an explicit already_discovered reason; never silently omit"
+  },
+  "candidates_discovered_delta": [
+    {
+      "id": "wbeth-wrapped-beacon-eth",
+      "rank": 19,
+      "name": "Wrapped Beacon ETH",
+      "symbol": "WBETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dai-dai",
+      "rank": 24,
+      "name": "Dai",
+      "symbol": "DAI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "paxg-pax-gold",
+      "rank": 49,
+      "name": "PAX Gold",
+      "symbol": "PAXG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdf-falcon-finance",
+      "rank": 52,
+      "name": "Falcon USD",
+      "symbol": "USDF",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aave-new",
+      "rank": 53,
+      "name": "Aave",
+      "symbol": "AAVE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ondo-ondo",
+      "rank": 54,
+      "name": "Ondo",
+      "symbol": "ONDO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pump-pumpfun",
+      "rank": 55,
+      "name": "Pump.fun",
+      "symbol": "PUMP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wlfi-official-world-liberty-financial",
+      "rank": 56,
+      "name": "Official World Liberty Financial",
+      "symbol": "WLFI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jst-just",
+      "rank": 57,
+      "name": "JUST",
+      "symbol": "JST",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "icp-internet-computer",
+      "rank": 58,
+      "name": "Internet Computer",
+      "symbol": "ICP",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ftm-fantom",
+      "rank": 59,
+      "name": "Fantom",
+      "symbol": "FTM",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dot-polkadot",
+      "rank": 60,
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sky-sky",
+      "rank": 61,
+      "name": "Sky",
+      "symbol": "SKY",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mnt-mantle",
+      "rank": 62,
+      "name": "Mantle",
+      "symbol": "MNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bfusd-bfusd",
+      "rank": 63,
+      "name": "BFUSD",
+      "symbol": "BFUSD",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "syrupusdc-syrupusdc",
+      "rank": 64,
+      "name": "SyrupUSDC",
+      "symbol": "SYRUPUSDC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "susde-ethena-staked-usde",
+      "rank": 65,
+      "name": "Ethena Staked USDe",
+      "symbol": "SUSDE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdd-usdd",
+      "rank": 66,
+      "name": "USDD",
+      "symbol": "USDD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eth-ethereum-token",
+      "rank": 67,
+      "name": "Binance-Peg Ethereum Token",
+      "symbol": "WETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bgb-bitget-token",
+      "rank": 68,
+      "name": "Bitget Token",
+      "symbol": "BGB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wld-worldcoin",
+      "rank": 69,
+      "name": "Worldcoin",
+      "symbol": "WLD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aster-aster",
+      "rank": 70,
+      "name": "Aster",
+      "symbol": "ASTER",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gt-gatechain-token",
+      "rank": 71,
+      "name": "GateToken",
+      "symbol": "GT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jitosol-jito-staked-sol",
+      "rank": 72,
+      "name": "Jito Staked SOL",
+      "symbol": "JITOSOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "etc-ethereum-classic",
+      "rank": 73,
+      "name": "Ethereum Classic",
+      "symbol": "ETC",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "khype-kinetiq-staked-hype",
+      "rank": 74,
+      "name": "Kinetiq Staked HYPE",
+      "symbol": "KHYPE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbnb-wrapped-bnb",
+      "rank": 75,
+      "name": "Wrapped BNB",
+      "symbol": "WBNB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "rank": 1,
+      "id": "btc-bitcoin",
+      "symbol": "BTC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 2,
+      "id": "eth-ethereum",
+      "symbol": "ETH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 3,
+      "id": "usdt-tether",
+      "symbol": "USDT",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 4,
+      "id": "bnb-binance-coin",
+      "symbol": "BNB",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 5,
+      "id": "usdc-usd-coin",
+      "symbol": "USDC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 6,
+      "id": "xrp-xrp",
+      "symbol": "XRP",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 7,
+      "id": "sol-solana",
+      "symbol": "SOL",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 8,
+      "id": "trx-tron",
+      "symbol": "TRX",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 9,
+      "id": "steth-lido-staked-ether",
+      "symbol": "STETH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 10,
+      "id": "hype-hyperliquid",
+      "symbol": "HYPE",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 11,
+      "id": "zec-zcash",
+      "symbol": "ZEC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 12,
+      "id": "doge-dogecoin",
+      "symbol": "DOGE",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 13,
+      "id": "xmr-monero",
+      "symbol": "XMR",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 14,
+      "id": "wsteth-wrapped-liquid-staked-ether-20",
+      "symbol": "WSTETH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 15,
+      "id": "leo-leo-token",
+      "symbol": "LEO",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 16,
+      "id": "usds-usds",
+      "symbol": "USDS",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 17,
+      "id": "wbtc-wrapped-bitcoin",
+      "symbol": "WBTC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 18,
+      "id": "wbt-whitebit",
+      "symbol": "WBT",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 20,
+      "id": "link-chainlink",
+      "symbol": "LINK",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 21,
+      "id": "cbbtc-coinbase-wrapped-btc",
+      "symbol": "CBBTC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 22,
+      "id": "ada-cardano",
+      "symbol": "ADA",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 23,
+      "id": "xlm-stellar",
+      "symbol": "XLM",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 25,
+      "id": "near-near-protocol",
+      "symbol": "NEAR",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 26,
+      "id": "bch-bitcoin-cash",
+      "symbol": "BCH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 27,
+      "id": "weeth-wrapped-eeth",
+      "symbol": "WEETH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 28,
+      "id": "weth-weth",
+      "symbol": "WETH",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 29,
+      "id": "usde-ethena-usde",
+      "symbol": "USDE",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 30,
+      "id": "susds-susds",
+      "symbol": "sUSDS",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 31,
+      "id": "ltc-litecoin",
+      "symbol": "LTC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 32,
+      "id": "avax-avalanche",
+      "symbol": "AVAX",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 33,
+      "id": "uni-uniswap",
+      "symbol": "UNI",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 34,
+      "id": "cc-canton-network",
+      "symbol": "CC",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 35,
+      "id": "sui-sui",
+      "symbol": "SUI",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 36,
+      "id": "toncoin-the-open-network",
+      "symbol": "GRAM",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 37,
+      "id": "usd1-usd1",
+      "symbol": "USD1",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 38,
+      "id": "hbar-hedera-hashgraph",
+      "symbol": "HBAR",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 39,
+      "id": "usdg-global-dollar",
+      "symbol": "USDG",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 40,
+      "id": "rain-rain-protocol",
+      "symbol": "RAIN",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 41,
+      "id": "pyusd-paypal-usd",
+      "symbol": "PYUSD",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 42,
+      "id": "shib-shiba-inu",
+      "symbol": "SHIB",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 43,
+      "id": "cro-cryptocom-chain",
+      "symbol": "CRO",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 44,
+      "id": "tao-bittensor",
+      "symbol": "TAO",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 45,
+      "id": "okb-okb",
+      "symbol": "OKB",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 46,
+      "id": "m-memecore",
+      "symbol": "M",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 47,
+      "id": "qnt-quant",
+      "symbol": "QNT",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 48,
+      "id": "pepe-pepe",
+      "symbol": "PEPE",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 50,
+      "id": "ena-ethena",
+      "symbol": "ENA",
+      "reason": "already_discovered_in_frontier_or_v1"
+    },
+    {
+      "rank": 51,
+      "id": "btw-bitway",
+      "symbol": "BTW",
+      "reason": "already_discovered_in_frontier_or_v1"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "WETH",
+      "new_id": "eth-ethereum-token",
+      "new_name": "Binance-Peg Ethereum Token",
+      "existing_ids": [
+        "weth-weth"
+      ]
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 75,
+    "top_rank_covered": 75,
+    "next_batch_start_rank": 76,
+    "next_batch_end_rank": 100,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "Delta artifact only; does not modify frozen research_state/universe_frontier.json.",
+    "All candidates are discovery-only and rank-unverified for PIT purposes. Current rank must never be projected backward as historical membership.",
+    "Two additional new candidates appear at ranks 19 (WBETH) and 24 (DAI) because current ranking drift moved previously-unseen assets into the top 25; they are recorded here rather than dropped.",
+    "Symbol collision flagged: WETH is used by two distinct CoinPaprika ids (weth-weth and eth-ethereum-token / Binance-Peg Ethereum Token). Any future perpetual mapping must key on stable asset id, not symbol.",
+    "rank_frontier_exhausted remains false in upstream frontier until explicitly exhausted with evidence; next scan should start at rank 76 and de-duplicate by id."
+  ]
+}
