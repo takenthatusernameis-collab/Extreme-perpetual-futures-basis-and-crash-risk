@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 2962 (written at end of activation 2961)
+# Agent task message (EBCR-001) — activation 2963 (written at end of activation 2962)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 2961: NO-OP — state-change gate clean, frontier just advanced in v5, no new admissible source/date event)
+- `research_state/agent_handoff.md` (activation 2962: NO-OP — state-change gate clean, frontier v5 at rank 150, no meaningful cooldown for v6, no new admissible source/date event)
 - `research_state/agent_task_message.md` (this message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
@@ -10,14 +10,14 @@
 - `.agents/skills/point-in-time-universe/SKILL.md` (discovery → PIT eligibility; never project current rank backward)
 
 ## What changed since the previous activation
-- **Nothing material.** Activation 2961 was a NO-OP: the state-change gate was clean and no unblocked research-material task was newly actionable. The frontier was advanced to rank 150 in v5 (activation 2960), committed at `d7f31dc5` (2026-11-14T20:30:57Z) after a `/v1/coins` retrieval at 2026-11-14T20:30:25Z (`response_sha256 = db41c9af9d33d0dcf273e87c8b2f83795490d04a50dec9b1b52fe8b81cca62e9`). v5 is now tracked (no longer untracked).
+- **Nothing material.** Activation 2962 was a NO-OP: the state-change gate was clean and no unblocked research-material task was newly actionable. The frontier remains at v5 (activation 2960), rank 150, committed at `d7f31dc5` (2026-11-14T20:30:57Z) after a `/v1/coins` retrieval at 2026-11-14T20:30:25Z (`response_sha256 = db41c9af9d33d0dcf273e87c8b2f83795490d04a50dec9b1b52fe8b81cca62e9`).
 - **Frozen inputs unchanged:** config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`; canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324 cells). `git diff --check` clean; no commits under frozen-input paths since `d34780d2`.
 - `.venv` absent (not recreated — no test gate required for NO-OP). Last known tests: **18 passed** (activation 2948).
 
-## Objective (activation 2962)
+## Objective (activation 2963)
 Advance the highest-value genuinely unblocked work, or document a blocker. Do NOT manufacture work and do NOT tight-poll any external source. Acceptable outcomes: (a) a real verifiable deliverable (e.g. frontier advance v6 to ranks 151–175, an evidence audit, a blocker-resolution attempt), (b) a documented blocker, or (c) a NO-OP if the state-change gate is clean AND no new admissible source/date event exists AND no standing unblocked task is newly actionable.
 
-## Required actions (activation 2962)
+## Required actions (activation 2963)
 1. **State-change gate first (cheap):** verify config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; check `git status --short` and no new commits under frozen-input paths `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/integrated_extended_v1.json research_state/evaluation_report_extended_v1.json`. If nothing changed and no task below is newly actionable, classify as NO-OP per the v1.1 addendum.
 2. **Frontier advance v6 (only if newly actionable AND a meaningful cooldown has elapsed):** the only genuinely unblocked standing task is frontier advance v6 to ranks 151–175. It is newly actionable ONLY after a meaningful cooldown since the last retrieval (2026-11-14T20:30:25Z) or a documented source/network change — re-probing CoinPaprika shortly after the last retrieval is tight polling and is prohibited. If you proceed: fresh `/v1/coins` retrieval, de-duplicate by stable asset id against the union of frontier candidates_discovered + candidates_rank_unverified, v1 delta, v2 delta, v3 delta, v4 delta, v5 delta = 148 known ids. Write `research_state/universe_frontier_advance_v6.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V6`) using the same v5 schema: retrieval UTC, raw-response sha256, rank window, dedup set-difference, duplicates with explicit reason, symbol collisions, cursor (`discovered_id_count`, `top_rank_covered`, `next_batch_start_rank=176`, `next_batch_end_rank=200`, `rank_frontier_exhausted`), notes. Do not edit frozen `research_state/universe_frontier.json` or `research_state/candidate_perp_mapping_v1.json`. Respect CoinPaprika rate limits; do not tight-poll.
 3. **Do NOT re-run completed work:** frontier advance v1–v5; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit. Re-run only if an input changes.
@@ -37,8 +37,8 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and schemas
 ```
 
-## Verified baseline (activation 2961, 2026-11-14)
-- State-change gate: config sha256 `753d9357…` verified; canonical manifest sha256 `55caedf8…` verified (324 cells, per-cell file sha256 `1b393cd6…`); `git status` clean; no frozen-path commits since `d34780d2`.
+## Verified baseline (activation 2962, 2026-11-14)
+- State-change gate: config sha256 `753d9357…` verified; canonical manifest sha256 `55caedf8…` verified (324 cells); `git status` clean; no frozen-path commits since `d34780d2`.
 - Frontier advance v5: `research_state/universe_frontier_advance_v5.json` (tracked, commit `d7f31dc5`), sha256 `f5205cd57bedba4110710cb85beb952b6ba66e4adca1e6bea8a7f69dd554526f`; 25 net-new at ranks 126–150; 0 duplicates; 0 symbol collisions; discovered-after 148; top rank covered 150; `rank_frontier_exhausted = false`; next batch start 151.
 - Frontier advance v4: `research_state/universe_frontier_advance_v4.json`, sha256 `d32f5c87…`, committed `82c39d03`; v3 sha256 `99b0daab…`; v2 sha256 `52070b3f…`; all tracked, frozen inputs unmodified.
 - Mapping v2 artifact: `research_state/candidate_perp_mapping_v2.json`, sha256 `d2b442dd…`, committed `d34780d2`.
