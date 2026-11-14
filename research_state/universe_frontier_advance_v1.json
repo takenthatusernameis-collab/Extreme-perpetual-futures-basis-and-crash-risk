@@ -1,0 +1,203 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V1",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-14T03:08:58Z",
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-14T03:08:58Z",
+    "response_sha256": "04cd18064a4c650c17080c4830911bfa22e111a1de9ccda775c75bdb5d3c010b",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 12183,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination params (start/offset) observed non-functional in this environment; /v1/coins used as ranked discovery source."
+  },
+  "cursor": {
+    "previous_frontier_artifact": "research_state/universe_frontier.json",
+    "previous_max_rank_in_frontier": 25,
+    "batch_start_rank": 26,
+    "batch_end_rank": 50,
+    "batch_size": 25
+  },
+  "candidates_discovered_delta": [
+    {
+      "id": "bch-bitcoin-cash",
+      "rank": 26,
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "weeth-wrapped-eeth",
+      "rank": 27,
+      "name": "Wrapped eETH",
+      "symbol": "WEETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "weth-weth",
+      "rank": 28,
+      "name": "WETH",
+      "symbol": "WETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usde-ethena-usde",
+      "rank": 29,
+      "name": "Ethena USDe",
+      "symbol": "USDE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "susds-susds",
+      "rank": 30,
+      "name": "sUSDS",
+      "symbol": "sUSDS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ltc-litecoin",
+      "rank": 31,
+      "name": "Litecoin",
+      "symbol": "LTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "avax-avalanche",
+      "rank": 32,
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "uni-uniswap",
+      "rank": 33,
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cc-canton-network",
+      "rank": 34,
+      "name": "Canton Network",
+      "symbol": "CC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sui-sui",
+      "rank": 35,
+      "name": "Sui",
+      "symbol": "SUI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usd1-usd1",
+      "rank": 36,
+      "name": "USD1",
+      "symbol": "USD1",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "toncoin-the-open-network",
+      "rank": 37,
+      "name": "Gram (prev. Toncoin)",
+      "symbol": "GRAM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hbar-hedera-hashgraph",
+      "rank": 38,
+      "name": "Hedera Hashgraph",
+      "symbol": "HBAR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdg-global-dollar",
+      "rank": 39,
+      "name": "Global Dollar",
+      "symbol": "USDG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rain-rain-protocol",
+      "rank": 40,
+      "name": "Rain Protocol",
+      "symbol": "RAIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pyusd-paypal-usd",
+      "rank": 41,
+      "name": "PayPal USD",
+      "symbol": "PYUSD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "shib-shiba-inu",
+      "rank": 42,
+      "name": "Shiba Inu",
+      "symbol": "SHIB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cro-cryptocom-chain",
+      "rank": 43,
+      "name": "Cronos",
+      "symbol": "CRO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tao-bittensor",
+      "rank": 44,
+      "name": "BitTensor",
+      "symbol": "TAO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "okb-okb",
+      "rank": 45,
+      "name": "OKB",
+      "symbol": "OKB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "qnt-quant",
+      "rank": 46,
+      "name": "Quant",
+      "symbol": "QNT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "m-memecore",
+      "rank": 47,
+      "name": "MemeCore ",
+      "symbol": "M",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pepe-pepe",
+      "rank": 48,
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ena-ethena",
+      "rank": 49,
+      "name": "Ethena",
+      "symbol": "ENA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "btw-bitway",
+      "rank": 50,
+      "name": "Bitway",
+      "symbol": "BTW",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "notes": [
+    "Delta artifact only; does not modify frozen research_state/universe_frontier.json.",
+    "All candidates are discovery-only and rank-unverified for PIT purposes. Current rank must never be projected backward as historical membership.",
+    "rank_frontier_exhausted remains false in upstream frontier until explicitly exhausted with evidence."
+  ]
+}
