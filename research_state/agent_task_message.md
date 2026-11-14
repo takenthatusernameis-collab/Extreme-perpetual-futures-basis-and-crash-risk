@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 2956 (written at end of activation 2955)
+# Agent task message (EBCR-001) — activation 2957 (written at end of activation 2956)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 2955: NO-OP — state-change gate clean, no new source/dated event)
+- `research_state/agent_handoff.md` (activation 2956: NO-OP — state-change gate clean, no new source/dated event)
 - `research_state/agent_task_message.md` (this message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
@@ -10,15 +10,15 @@
 - `.agents/skills/point-in-time-universe/SKILL.md` (discovery → PIT eligibility; never project current rank backward)
 
 ## What changed since the previous activation
-- **No research-material change.** Activation 2955 ran the cheap state-change gate: config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` both match frozen; `git status --short` clean; `git diff --check` clean; commits since research checkpoint `d34780d2` are bookkeeping/diagnostics only. No new admissible source or dated event.
+- **No research-material change.** Activation 2956 ran the cheap state-change gate: config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` both match frozen; `git status --short` clean; `git diff --check` clean; commits since research checkpoint `d34780d2` are bookkeeping/diagnostics only. No new admissible source or dated event.
 - **Candidate → perpetual-contract mapping v2 is DONE** (activation 2949, committed `d34780d2`). Maps all 75 discovered candidate ids against Binance USD-M `exchangeInfo`: 41 `mapped_discovery_only_unverified`, 25 `no_perp_expected`, 1 `no_trading_perp` (FTM SETTLING), 8 `not_listed_binance_um`, 0 `blocked_unknown`. All mappings discovery-only; never PIT-verified.
 - **Frontier state:** 75 distinct discovered ids; top 75 fully covered; `rank_frontier_exhausted` remains `false`; next scan starts at rank 76 and de-duplicates by stable asset id. All candidates `rank_unverified_discovery_only`.
 - `.venv` absent (not recreated — no full gate required for NO-OP). Last known tests: **18 passed** (activation 2948).
 
-## Objective (activation 2956)
+## Objective (activation 2957)
 Advance the highest-value genuinely unblocked work. Do not manufacture work. Expect at least one real, verifiable deliverable or an explicit, documented blocker. If the state-change gate is clean AND no new admissible source or dated event exists AND the remaining unblocked task is not newly actionable, classify as NO-OP per the v1.1 addendum and exit with the previous verified state intact — do not refresh timestamps or create empty artifacts.
 
-## Required actions (activation 2956)
+## Required actions (activation 2957)
 1. **State-change gate first (cheap):** verify frozen config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; check `git status --short` (clean tree expected) and no new commits under frozen-input paths `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/integrated_extended_v1.json research_state/evaluation_report_extended_v1.json`. If nothing changed and no task below is newly actionable, NO-OP.
 2. **Environment:** `.venv` is absent. Recreate it (numpy 2.5.4, pandas 3.1.1, scipy 1.18.1, statsmodels 0.15.0, pytest 9.2.0) before the test gate can run; do not reinstall unless it is missing and a test gate is required.
 3. **Do NOT re-run completed work:** frontier advance v1/v2 (2947/2948), candidate→perp mapping v2 (2949), contract-lifecycle audit (2946), V4 controlled re-estimation (2938), V3→V4 inference audit (2939), exclusion accounting audit (2941). Re-run only if an input changes.
@@ -38,7 +38,7 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and schemas
 ```
 
-## Verified baseline (activation 2955, 2026-11-14)
+## Verified baseline (activation 2956, 2026-11-14)
 - Mapping v2 artifact: `research_state/candidate_perp_mapping_v2.json`, sha256 `d2b442dd…`, committed `d34780d2`; frontier v2 sha256 `52070b3f…`; both tracked, frozen inputs unmodified.
 - Tests: could not run (`.venv` absent); last known `.venv/bin/python -m pytest -q tests` → 18 passed (activation 2948).
 - Manifest: 324 cells, canonical sha256 `55caedf8…`; config sha256 `753d9357…`.
