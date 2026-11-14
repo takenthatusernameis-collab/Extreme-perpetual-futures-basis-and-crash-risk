@@ -1,0 +1,281 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V3",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-14T16:18:21Z",
+  "task_activation": 2958,
+  "purpose": "De-duplicated candidate-frontier advance to the top 100 by stable asset id. Extends descending current market-cap discovery across rank window 76-100; records cursor, retrieval timestamp, raw-response checksum, dedup set-difference and any symbol collisions. Discovery only: current rank is never historical point-in-time membership.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v2.json",
+    "sha256": "52070b3f7a110c078e5d606234c01c6dae4f5b87bbd163e8f797a16f0f640bf8",
+    "discovered_after_v2": 75,
+    "top_rank_covered_v2": 75,
+    "next_batch_start_rank_v2": 76
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-14T16:18:21Z",
+    "response_sha256": "7a8e717d3436d2df4fc089135e405675d12089a6542a48a03dd9e2e599bd1ecc",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 12389,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source. Raw response ~7.6 MB is not stored in-repo; only its checksum is recorded."
+  },
+  "frontier_state": {
+    "frontier_artifact": "research_state/universe_frontier.json",
+    "discovered_before_this_artifact": 75,
+    "new_candidates_this_artifact": 23,
+    "discovered_after_this_artifact": 98,
+    "top_rank_covered": 100,
+    "rank_frontier_exhausted": false,
+    "next_batch_start_rank": 101,
+    "batch_size_for_checkpointing": 25
+  },
+  "discovery_method": {
+    "ordering": "descending current market-cap rank",
+    "rank_window_scanned": "76-100",
+    "dedup": "set difference of stable asset id against union(universe_frontier.candidates_rank_unverified, v1.candidates_discovered_delta, v2.candidates_discovered_delta)",
+    "pit_status": "all entries are rank_unverified_discovery_only; current rank must never be projected backward as historical membership",
+    "duplicate_policy": "preserve duplicates with an explicit already_discovered reason; never silently omit"
+  },
+  "candidates_discovered_delta": [
+    {
+      "id": "xaut-tether-gold",
+      "rank": 77,
+      "name": "Tether Gold",
+      "symbol": "XAUT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "reth-rocket-pool-eth",
+      "rank": 79,
+      "name": "Rocket Pool ETH",
+      "symbol": "RETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "arb-arbitrum",
+      "rank": 80,
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kcs-kucoin-token",
+      "rank": 81,
+      "name": "KuCoin Token",
+      "symbol": "KCS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vvv-venice-token",
+      "rank": 82,
+      "name": "Venice Token",
+      "symbol": "VVV",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pol-polygon-ecosystem-token",
+      "rank": 83,
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rseth-rseth",
+      "rank": 84,
+      "name": "Kelp DAO Restaked ETH",
+      "symbol": "RSETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jlp-jupiter-perpetuals-liquidity-provider-token",
+      "rank": 85,
+      "name": "Jupiter Perpetuals Liquidity Provider Token",
+      "symbol": "JLP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jup-jupiter-exchange-token",
+      "rank": 86,
+      "name": "Jupiter Exchange Token",
+      "symbol": "JUP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "night-midnight2",
+      "rank": 87,
+      "name": "Midnight",
+      "symbol": "NIGHT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lbtc-lombard-staked-btc",
+      "rank": 88,
+      "name": "Lombard Staked BTC",
+      "symbol": "LBTC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "meth-meth",
+      "rank": 89,
+      "name": "mETH",
+      "symbol": "METH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kas-kaspa",
+      "rank": 90,
+      "name": "Kaspa",
+      "symbol": "KAS",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rndr-render-token",
+      "rank": 91,
+      "name": "Render",
+      "symbol": "RENDER",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pi2-pi-network",
+      "rank": 92,
+      "name": "Pi Network",
+      "symbol": "PI",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lit-lighter",
+      "rank": 93,
+      "name": "Lighter",
+      "symbol": "LIT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "algo-algorand",
+      "rank": 94,
+      "name": "Algorand",
+      "symbol": "ALGO",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "inj-injective-protocol",
+      "rank": 95,
+      "name": "Injective Protocol",
+      "symbol": "INJ",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdce-usd-coine",
+      "rank": 96,
+      "name": "USD Coin.E",
+      "symbol": "USDC.e",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gho-gho",
+      "rank": 97,
+      "name": "GHO",
+      "symbol": "GHO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bnsol-binance-staked-sol",
+      "rank": 98,
+      "name": "Binance Staked SOL",
+      "symbol": "BNSOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lseth-liquid-staked-ethereum",
+      "rank": 99,
+      "name": "Liquid Staked Ethereum",
+      "symbol": "LSETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bdx-beldex",
+      "rank": 100,
+      "name": "Beldex",
+      "symbol": "BDX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "rank": 76,
+      "id": "etc-ethereum-classic",
+      "symbol": "ETC",
+      "reason": "already_discovered_in_frontier_v1_or_v2",
+      "first_seen_in": "v2"
+    },
+    {
+      "rank": 78,
+      "id": "wbnb-wrapped-bnb",
+      "symbol": "WBNB",
+      "reason": "already_discovered_in_frontier_v1_or_v2",
+      "first_seen_in": "v2"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 98,
+    "top_rank_covered": 100,
+    "next_batch_start_rank": 101,
+    "next_batch_end_rank": 125,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "Delta artifact only; does not modify frozen research_state/universe_frontier.json or prior v1/v2 artifacts.",
+    "All candidates are discovery-only and rank-unverified for PIT purposes. Current rank must never be projected backward as historical membership.",
+    "Two entries (ETC rank 76, WBNB rank 78) were already discovered in v2 (ranks 73/75); ranking drift between the 2026-11-14T09:27:58Z v2 retrieval and this retrieval re-ordered them. They are recorded as duplicates with an explicit reason, not silently dropped.",
+    "rank_frontier_exhausted remains false; discovery is open-ended. Next scan should start at rank 101 and de-duplicate by stable asset id against the union of frontier + v1 + v2 + v3.",
+    "Frontier remains discovery-only: no current rank has been promoted to point-in-time membership. Mapping candidates to perpetual contracts remains a separate registration decision."
+  ]
+}
