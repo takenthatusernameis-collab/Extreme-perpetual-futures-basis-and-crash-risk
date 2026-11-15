@@ -1,0 +1,276 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V10",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-15T23:30:52Z",
+  "task_activation": 3010,
+  "purpose": "Advance rank frontier discovery batch (ranks 251-275) after documented cooldown since v9; discovery-only, not PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v9.json",
+    "sha256": "8146b833fe4782d0dd19cd951d404ca9095b943a9d655c90910cd2d02e3ac9f5",
+    "discovered_after_v9": 245,
+    "top_rank_covered_v9": 250,
+    "next_batch_start_rank_v9": 251
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-15T23:30:52Z",
+    "response_sha256": "f0aed86feb6202ad421ceae5f27ad69c8aa1cc3d579d35bd000adc468a672f3c",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 62635,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source (items carry a `rank` field). Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval performed at activation 3010 (~4.0 hours after v9 retrieval at 2026-11-15T19:29:43Z, past the ~3.5-hour cooldown)."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      251,
+      275
+    ],
+    "known_ids_before_dedup": 245,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 25,
+    "duplicates_skipped_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1-v9 delta ids). Current ranks used for discovery ordering only; status recorded as rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "egld-elrond",
+      "rank": 251,
+      "name": "MultiversX (Elrond)",
+      "symbol": "EGLD",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "flr-flare",
+      "rank": 252,
+      "name": "Flare",
+      "symbol": "FLR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ath14-aethir",
+      "rank": 253,
+      "name": "Aethir",
+      "symbol": "ATH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xpl-plasma",
+      "rank": 254,
+      "name": "Plasma",
+      "symbol": "XPL",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jto-jito",
+      "rank": 255,
+      "name": "Jito",
+      "symbol": "JTO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sol-binance-peg-sol",
+      "rank": 256,
+      "name": "Binance-Peg SOL",
+      "symbol": "SOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "o-o1exchange",
+      "rank": 257,
+      "name": "o1.exchange",
+      "symbol": "O",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ezeth-renzo-restaked-eth",
+      "rank": 258,
+      "name": "Renzo Restaked ETH",
+      "symbol": "EZETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hay-hay",
+      "rank": 259,
+      "name": "Lista USD",
+      "symbol": "LISUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spcxb-spacex-tokenized-bstocks",
+      "rank": 260,
+      "name": "SpaceX Tokenized bStocks",
+      "symbol": "SPCXB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gmx-gmx",
+      "rank": 261,
+      "name": "GMX",
+      "symbol": "GMX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mag7ssi-mag7ssi",
+      "rank": 262,
+      "name": "MAG7.ssi",
+      "symbol": "MAG7.SSI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "-doggotothemoon",
+      "rank": 263,
+      "name": "Dog (Bitcoin)",
+      "symbol": "DOG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "orca-orca",
+      "rank": 264,
+      "name": "Orca",
+      "symbol": "ORCA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "plsx-pulsex",
+      "rank": 265,
+      "name": "PulseX",
+      "symbol": "PLSX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "inst-instadapp",
+      "rank": 266,
+      "name": "Fluid",
+      "symbol": "FLUID",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cards-collector-crypt",
+      "rank": 267,
+      "name": "Collector Crypt",
+      "symbol": "CARDS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zrx-0x",
+      "rank": 268,
+      "name": "0x",
+      "symbol": "ZRX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "busd-binance-usd",
+      "rank": 269,
+      "name": "BUSD",
+      "symbol": "BUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zen-horizen",
+      "rank": 270,
+      "name": "Horizen",
+      "symbol": "ZEN",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "data-streamr-datacoin",
+      "rank": 271,
+      "name": "Streamr DATAcoin",
+      "symbol": "DATA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "geod-geodnet-token",
+      "rank": 272,
+      "name": "Geodnet Token",
+      "symbol": "GEOD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "qtum-qtum",
+      "rank": 273,
+      "name": "Qtum",
+      "symbol": "QTUM",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gusd-gemini-dollar",
+      "rank": 274,
+      "name": "Gemini Dollar",
+      "symbol": "GUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "qrl-quantum-resistant-ledger",
+      "rank": 275,
+      "name": "Quantum Resistant Ledger",
+      "symbol": "QRL",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 270,
+    "top_rank_covered": 275,
+    "next_batch_start_rank": 276,
+    "next_batch_end_rank": 300,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified."
+  ]
+}
