@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 2985 (written at end of activation 2984)
+# Agent task message (EBCR-001) — activation 2986 (written at end of activation 2985)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 2984: NO-OP; frontier v7 at rank 200; no meaningful cooldown for v8; next batch start 201)
+- `research_state/agent_handoff.md` (activation 2985: NO-OP; frontier v7 at rank 200; no meaningful cooldown for v8; next batch start 201)
 - `research_state/agent_task_message.md` (this message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
@@ -10,14 +10,14 @@
 - `.agents/skills/point-in-time-universe/SKILL.md` (discovery → PIT eligibility; never project current rank backward)
 
 ## What changed since the previous activation
-- **Activation 2984 (2026-11-15T06:22:55Z): NO-OP.** State-change gate clean (config sha256 `753d9357…`, canonical manifest sha256 `55caedf8…`, 324 cells). No commits under frozen-input paths since checkpoint `d34780d2` (recent commits are `chore(kilo): checkpoint agent session` bookkeeping). Frontier advance v8 is NOT newly actionable: last CoinPaprika `/v1/coins` retrieval was v7 at 2026-11-15T06:09:00Z and this activation was ~14 minutes later — far short of the ~3.5-hour cooldown, so re-probing would be tight polling (prohibited).
+- **Activation 2985 (2026-11-15T06:25:13Z): NO-OP.** State-change gate clean (config sha256 `753d9357…`, canonical manifest sha256 `55caedf8…`, 324 cells). No commits under frozen-input paths since checkpoint `d34780d2` (recent commits are `chore(kilo): checkpoint agent session` bookkeeping). Frontier advance v8 is NOT newly actionable: last CoinPaprika `/v1/coins` retrieval was v7 at 2026-11-15T06:09:00Z and this activation was ~16 minutes later — far short of the ~3.5-hour cooldown, so re-probing would be tight polling (prohibited).
 - **Frontier cursor (unchanged from v7):** discovered-after 196, top rank covered 200, `rank_frontier_exhausted = false`, next batch start rank 201, next batch end rank 225. Artifact `research_state/universe_frontier_advance_v7.json` (untracked), sha256 `e20adf7f2a8cb1994d186b03f7b267487279c264b00a4bea64d1d8d565771390`. Dedup by stable asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1–v7 delta = 196 known ids).
 - **Frozen inputs unchanged:** config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`; canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324 cells). `.venv` absent (no test gate for source-coverage delta); last known **18 passed** (activation 2948).
 
-## Objective (activation 2985)
+## Objective (activation 2986)
 Advance the highest-value genuinely unblocked work, or document a blocker. Do NOT manufacture work and do NOT tight-poll any external source. Acceptable outcomes: (a) a real verifiable deliverable (e.g. frontier advance v8 to ranks 201–225 after a meaningful cooldown, an evidence audit, a blocker-resolution attempt), (b) a documented blocker, or (c) a NO-OP if the state-change gate is clean AND no new admissible source/date event exists AND no standing unblocked task is newly actionable.
 
-## Required actions (activation 2985)
+## Required actions (activation 2986)
 1. **State-change gate first (cheap):** verify config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` and canonical `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; check `git status --short` and no new commits under frozen-input paths `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/integrated_extended_v1.json research_state/evaluation_report_extended_v1.json`. If nothing changed and no task below is newly actionable, classify as NO-OP per the v1.1 addendum.
 2. **Frontier advance v8 (only if newly actionable AND a meaningful cooldown has elapsed):** standing unblocked task = ranks 201–225. Newly actionable ONLY after a meaningful cooldown since last retrieval (2026-11-15T06:09:00Z) or a documented source/network change — re-probing CoinPaprika shortly after last retrieval is tight polling and prohibited. If you proceed: fresh `/v1/coins` retrieval, de-duplicate by stable asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1–v7 delta = 196 known ids). Write `research_state/universe_frontier_advance_v8.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V8`) with retrieval UTC, raw-response sha256, rank window, dedup set-difference, duplicates with explicit reason, symbol collisions, cursor (`discovered_id_count`, `top_rank_covered=225`, `next_batch_start_rank=226`, `next_batch_end_rank=250`, `rank_frontier_exhausted`), notes. Prior: `universe_frontier_advance_v7.json` sha256 `e20adf7f2a8cb1994d186b03f7b267487279c264b00a4bea64d1d8d565771390`. Do not edit frozen `research_state/universe_frontier.json` or `research_state/candidate_perp_mapping_v1.json`. Respect CoinPaprika rate limits; do not tight-poll.
 3. **Do NOT re-run completed work:** frontier advance v1–v7; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit. Re-run only if an input changes.
@@ -36,7 +36,7 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and schemas
 ```
 
-## Verified baseline (activation 2985, 2026-11-15)
+## Verified baseline (activation 2986, 2026-11-15)
 - State-change gate: config sha256 `753d9357…` verified; canonical manifest sha256 `55caedf8…` verified (324 cells); `git status --short` clean (aside from activation-tracked doc updates in this activation); `git diff --check` clean.
 - Frontier v7: `research_state/universe_frontier_advance_v7.json` (untracked), sha256 `e20adf7f2a8cb1994d186b03f7b267487279c264b00a4bea64d1d8d565771390`; 24 net-new ranks 176–200; 1 duplicate (COMP rank 177, ranking drift from rank 175 in v6); discovered-after 196; top rank covered 200; next batch start 201. v6 `2f116b29…`; v5 `f5205cd5…`; v4 `d32f5c87…`; v3 `99b0daab…`; v2 `52070b3f…`; mapping v2 `d34780d2` sha256 `d2b442dd…`.
 - Tests: not run (`.venv` absent, no code/test change); last known 18 passed (activation 2948).
