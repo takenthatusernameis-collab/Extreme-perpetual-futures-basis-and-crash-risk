@@ -1,0 +1,323 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V8",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-15T13:53:37Z",
+  "task_activation": 2989,
+  "purpose": "De-duplicated candidate-frontier advance to the top 225 by stable asset id. Extends descending current market-cap discovery across rank window 201-225; records cursor, retrieval timestamp, response checksum, dedup set-difference, duplicates and symbol collisions. Discovery only: current rank is never historical point-in-time membership.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v7.json",
+    "sha256": "e20adf7f2a8cb1994d186b03f7b267487279c264b00a4bea64d1d8d565771390",
+    "discovered_after_v7": 196,
+    "top_rank_covered_v7": 200,
+    "next_batch_start_rank_v7": 201
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-15T13:53:37Z",
+    "response_sha256": "dc1c84fd570b654813df3b031f0b169d47b785d62740799e2a0741387236ca73",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 62635,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source (items carry a `rank` field). Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval performed at activation 2989 (~7.5 hours after v7 retrieval at 2026-11-15T06:09:00Z, past the ~3.5-hour cooldown)."
+  },
+  "frontier_state": {
+    "frontier_artifact": "research_state/universe_frontier.json",
+    "discovered_before_this_artifact": 196,
+    "new_candidates_this_artifact": 24,
+    "discovered_after_this_artifact": 220,
+    "top_rank_covered": 225,
+    "rank_frontier_exhausted": false,
+    "next_batch_start_rank": 226,
+    "batch_size_for_checkpointing": 25
+  },
+  "discovery_method": {
+    "ordering": "descending current market-cap rank",
+    "rank_window_scanned": "201-225",
+    "dedup": "set difference of stable asset id against union(universe_frontier.candidates_discovered + candidates_rank_unverified, v1/v2/v3/v4/v5/v6/v7.candidates_discovered_delta = 196 known ids)",
+    "pit_status": "all entries are rank_unverified_discovery_only; current rank must never be projected backward as historical membership",
+    "duplicate_policy": "preserve duplicates with an explicit already_discovered reason; never silently omit",
+    "symbol_collision_policy": "preserve symbol collisions with an explicit symbol_collision reason and the colliding prior entry; distinct stable ids are distinct assets and are never merged or silently dropped"
+  },
+  "candidates_discovered_delta": [
+    {
+      "id": "eth-reserve-protocol-eth-plus",
+      "rank": 201,
+      "name": "Reserve Protocol ETH Plus",
+      "symbol": "ETH+",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "theta-theta-token",
+      "rank": 202,
+      "name": "THETA",
+      "symbol": "THETA",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "met-meteora",
+      "rank": 204,
+      "name": "Meteora",
+      "symbol": "MET",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vsol-the-vault-staked-sol",
+      "rank": 205,
+      "name": "The Vault Staked SOL",
+      "symbol": "VSOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "syrup-syrup-token",
+      "rank": 206,
+      "name": "Syrup Token",
+      "symbol": "SYRUP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "axs-axie-infinity",
+      "rank": 207,
+      "name": "Axie Infinity",
+      "symbol": "AXS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sent-sentient",
+      "rank": 208,
+      "name": "Sentient",
+      "symbol": "SENT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cash-cash",
+      "rank": 209,
+      "name": "Cash",
+      "symbol": "CASH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aero-aerodrome-finance",
+      "rank": 210,
+      "name": "Aerodrome Finance",
+      "symbol": "AERO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mana-decentraland",
+      "rank": 211,
+      "name": "Decentraland",
+      "symbol": "MANA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "crvusd-curvefi-usd-stablecoin",
+      "rank": 212,
+      "name": "crvUSD",
+      "symbol": "CRVUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sys-syscoin",
+      "rank": 213,
+      "name": "Syscoin",
+      "symbol": "SYS",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "stg-stargatetoken",
+      "rank": 214,
+      "name": "Stargate Finance",
+      "symbol": "STG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xcn-chain",
+      "rank": 215,
+      "name": "Onyxcoin",
+      "symbol": "XCN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "onyc-onyc",
+      "rank": 216,
+      "name": "ONyc",
+      "symbol": "ONYC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdf-astherus-usdf",
+      "rank": 217,
+      "name": "Astherus USDF",
+      "symbol": "USDF",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only",
+      "symbol_collision_with": [
+        "usdf-falcon-finance"
+      ],
+      "symbol_collision_reason": "distinct stable id, distinct asset; preserved, not merged"
+    },
+    {
+      "id": "neo-neo",
+      "rank": 218,
+      "name": "NEO",
+      "symbol": "NEO",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "asbnb-astherus-staked-bnb",
+      "rank": 219,
+      "name": "Astherus Staked BNB",
+      "symbol": "ASBNB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vsn-vision",
+      "rank": 220,
+      "name": "Vision",
+      "symbol": "VSN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zec-zcash-token",
+      "rank": 221,
+      "name": "Zcash Token",
+      "symbol": "ZEC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only",
+      "symbol_collision_with": [
+        "zec-zcash",
+        "zec-zcash"
+      ],
+      "symbol_collision_reason": "distinct stable id, distinct asset; preserved, not merged"
+    },
+    {
+      "id": "awe-awe-network",
+      "rank": 222,
+      "name": "AWE Network",
+      "symbol": "AWE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "s-sonic",
+      "rank": 223,
+      "name": "Sonic",
+      "symbol": "S",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xec-ecash",
+      "rank": 224,
+      "name": "eCash",
+      "symbol": "XEC",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "chz-chiliz",
+      "rank": 225,
+      "name": "Chiliz",
+      "symbol": "CHZ",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "trac-origintrail",
+      "rank": 203,
+      "symbol": "TRAC",
+      "reason": "already_discovered",
+      "prior_seen_in": "union",
+      "note": "ranking drift: previously discovered in frontier/v1-v7 union"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "id": "usdf-astherus-usdf",
+      "rank": 217,
+      "name": "Astherus USDF",
+      "symbol": "USDF",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only",
+      "symbol_collision_with": [
+        "usdf-falcon-finance"
+      ],
+      "symbol_collision_reason": "distinct stable id, distinct asset; preserved, not merged"
+    },
+    {
+      "id": "zec-zcash-token",
+      "rank": 221,
+      "name": "Zcash Token",
+      "symbol": "ZEC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only",
+      "symbol_collision_with": [
+        "zec-zcash",
+        "zec-zcash"
+      ],
+      "symbol_collision_reason": "distinct stable id, distinct asset; preserved, not merged"
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 220,
+    "top_rank_covered": 225,
+    "next_batch_start_rank": 226,
+    "next_batch_end_rank": 250,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "Delta artifact only; does not modify frozen research_state/universe_frontier.json or prior v1-v7 artifacts.",
+    "All candidates are discovery-only and rank-unverified for PIT purposes. Current rank must never be projected backward as historical membership.",
+    "196 prior known id(s) + 24 net-new = 220 discovered after v8, top rank covered 225.",
+    "Duplicates against prior union preserved in duplicates_skipped: 1.",
+    "rank_frontier_exhausted remains false; discovery is open-ended. Next scan should start at rank 226 and de-duplicate by stable asset id against the union of frontier + v1-v8.",
+    "Frontier remains discovery-only: no current rank has been promoted to point-in-time membership. Mapping candidates to perpetual contracts remains a separate registration decision."
+  ]
+}
