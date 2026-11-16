@@ -1,0 +1,270 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V12",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-16T10:42:24Z",
+  "task_activation": 3026,
+  "purpose": "Advance rank frontier discovery batch (ranks 301-325) after documented cooldown since v11 (~4.61h elapsed, past the ~3.5-hour cooldown; earliest actionable ≈2026-11-16T06:35:33Z); discovery-only, not PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v11.json",
+    "sha256": "60309efd",
+    "discovered_after_v11": 270,
+    "top_rank_covered_v11": 300,
+    "next_batch_start_rank_v11": 301
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-16T10:42:24Z",
+    "response_sha256": "902986dab7f09e7f9a63b98f9fa6ea1bd948f7e0acbc7643338bc3e52c70926a",
+    "total_items_in_response": 62654,
+    "ranked_items_in_response": 62654,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source (items carry a `rank` field). Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval performed at activation 3026 (~4.61 hours after v11 retrieval at 2026-11-16T03:05:33Z, past the ~3.5-hour cooldown)."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      301,
+      325
+    ],
+    "known_ids_before_dedup": 270,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 22,
+    "duplicates_skipped_count": 3
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1-v11 delta = 270 known ids per v11 cursor; note recorded delta union is 247 unique ids for v1-v10, with an inheritance gap). Current ranks used for discovery ordering only; status recorded as rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "mina-mina-protocol",
+      "rank": 303,
+      "name": "Mina Protocol",
+      "symbol": "MINA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "yfi-yearnfinance",
+      "rank": 304,
+      "name": "yearn.finance",
+      "symbol": "YFI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rep-augur",
+      "rank": 306,
+      "name": "Augur",
+      "symbol": "REP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mega-megaeth",
+      "rank": 307,
+      "name": "MegaETH",
+      "symbol": "MEGA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "win-winklink",
+      "rank": 308,
+      "name": "WINkLink",
+      "symbol": "WIN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "2z-doublezero",
+      "rank": 309,
+      "name": "2Zero",
+      "symbol": "2Z",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lpt-livepeer",
+      "rank": 310,
+      "name": "Livepeer",
+      "symbol": "LPT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tfuel-theta-fuel",
+      "rank": 311,
+      "name": "Theta Fuel",
+      "symbol": "TFUEL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "chip-usdai",
+      "rank": 312,
+      "name": "Chi Protocol",
+      "symbol": "CHIP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "psol-phantom-staked-sol",
+      "rank": 313,
+      "name": "Phantom Staked SOL",
+      "symbol": "PSOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hsol-helius-staked-sol",
+      "rank": 314,
+      "name": "Helius Staked SOL",
+      "symbol": "HSOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "elg-escoin-token",
+      "rank": 315,
+      "name": "Escoin Token",
+      "symbol": "ELG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "velo-velo",
+      "rank": 316,
+      "name": "VELO",
+      "symbol": "VELO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fxusd-fx-protocol-fxusd",
+      "rank": 317,
+      "name": "Fx Protocol",
+      "symbol": "FXUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "purr4-hypurr",
+      "rank": 318,
+      "name": "Hypurr",
+      "symbol": "PURR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cashcat-cash-cat",
+      "rank": 319,
+      "name": "Cash Cat",
+      "symbol": "CASHCAT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gala-gala",
+      "rank": 320,
+      "name": "GALA",
+      "symbol": "GALA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ultima-ultimaecosystem",
+      "rank": 321,
+      "name": "Ultima",
+      "symbol": "ULTIMA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "omi-ecomi",
+      "rank": 322,
+      "name": "ECOMI",
+      "symbol": "OMI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wemix-wemix-token",
+      "rank": 323,
+      "name": "WEMIX",
+      "symbol": "WEMIX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ab-ab",
+      "rank": 324,
+      "name": "AB",
+      "symbol": "AB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xaum-matrixdock-gold",
+      "rank": 325,
+      "name": "Matrixdock Gold",
+      "symbol": "XAUM",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "savax-benqi-liquid-staked-avax",
+      "rank": 301,
+      "symbol": "SAVAX",
+      "reason": "already in known union v1-v11 (discovered v11 at rank 298); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "ordi-ordinals",
+      "rank": 302,
+      "symbol": "ORDI",
+      "reason": "already in known union v1-v11 (discovered v11 at rank 299); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "tag-tagger",
+      "rank": 305,
+      "symbol": "TAG",
+      "reason": "already in known union v1-v11 (discovered v11 at rank 300); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 292,
+    "top_rank_covered": 325,
+    "next_batch_start_rank": 326,
+    "next_batch_end_rank": 350,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the recorded v1-v11 delta union. v11's cursor claims discovered_id_count=270 after v11; the recorded v1-v11 retained delta files union to a larger set due to an inheritance gap from prior versions (consistent with v11's note); prior artifacts not edited. The 3 duplicates (SAVAX, ORDI, TAG) were discovered in v11 at ranks 298-300 and reappear at ranks 301-305 in this fresh retrieval due to current-rank drift — correctly skipped as duplicates, not PIT evidence.",
+    "v12 net_new=22 (ranks 303-325 minus duplicates), duplicates_skipped=3, discovered_id_count=292, top_rank_covered=325, rank_frontier_exhausted=false."
+  ]
+}
