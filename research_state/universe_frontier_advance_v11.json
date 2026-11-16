@@ -1,0 +1,273 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V11",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-16T03:05:33Z",
+  "task_activation": 3021,
+  "purpose": "Advance rank frontier discovery batch (ranks 276-300) after documented cooldown since v10; discovery-only, not PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v10.json",
+    "sha256": "75e21b4a76aee02a0184811c2c333d23582d148e47a420a4235083a540e7d475",
+    "discovered_after_v10": 270,
+    "top_rank_covered_v10": 275,
+    "next_batch_start_rank_v10": 276
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-16T03:05:33Z",
+    "response_sha256": "36995e20825be2545e9206f1398b32566a2ced8b33a04b0dce8e9a3c647b2bc0",
+    "total_items_in_response": 62635,
+    "ranked_items_in_response": 62635,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source (items carry a `rank` field). Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval performed at activation 3021 (~3.58 hours after v10 retrieval at 2026-11-15T23:30:52Z, past the ~3.5-hour cooldown)."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      276,
+      300
+    ],
+    "known_ids_before_dedup": 247,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1-v10 delta ids). Current ranks used for discovery ordering only; status recorded as rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "buck-bucket-protocol-buck-stablecoin",
+      "rank": 278,
+      "name": "Bucket Protocol BUCK Stablecoin",
+      "symbol": "BUCK",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cross-cross",
+      "rank": 279,
+      "name": "ONEchain",
+      "symbol": "ONE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nmr-numeraire",
+      "rank": 280,
+      "name": "Numeraire",
+      "symbol": "NMR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wfi-wefi",
+      "rank": 281,
+      "name": "WeFi",
+      "symbol": "WFI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdm-megausd",
+      "rank": 282,
+      "name": "MegaUSD",
+      "symbol": "USDM",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gas-gas",
+      "rank": 283,
+      "name": "Gas",
+      "symbol": "GAS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fidd-fidelity-digital-dollar",
+      "rank": 284,
+      "name": "Fidelity Digital Dollar",
+      "symbol": "FIDD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nila-mindwavedao",
+      "rank": 285,
+      "name": "MindWaveDAO",
+      "symbol": "NILA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cheems-cheems-cheemspet",
+      "rank": 286,
+      "name": "Cheems",
+      "symbol": "CHEEMS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mines-of-dalarnia-dar",
+      "rank": 287,
+      "name": "Mines of Dalarnia",
+      "symbol": "DAR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eurcv-eur-coinvertible",
+      "rank": 288,
+      "name": "EUR CoinVertible",
+      "symbol": "EURCV",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "peaq-peaq-network",
+      "rank": 289,
+      "name": "Peaq",
+      "symbol": "PEAQ",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pros-pharos",
+      "rank": 290,
+      "name": "Pharos",
+      "symbol": "PROS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "super-superfarm",
+      "rank": 291,
+      "name": "SuperVerse",
+      "symbol": "SUPER",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mcat-marscat",
+      "rank": 292,
+      "name": "MarsCat",
+      "symbol": "MCAT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "safe-safe",
+      "rank": 293,
+      "name": "Safe ",
+      "symbol": "SAFE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zano-zano",
+      "rank": 294,
+      "name": "Zano",
+      "symbol": "ZANO",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ape-apecoin",
+      "rank": 295,
+      "name": "ApeCoin",
+      "symbol": "APE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hot-holo",
+      "rank": 296,
+      "name": "Holo",
+      "symbol": "HOT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dydx-dydx-chain",
+      "rank": 297,
+      "name": "DYDX Chain",
+      "symbol": "DYDX",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "savax-benqi-liquid-staked-avax",
+      "rank": 298,
+      "name": "BENQI Liquid Staked AVAX",
+      "symbol": "SAVAX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ordi-ordinals",
+      "rank": 299,
+      "name": "Ordinals",
+      "symbol": "ORDI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tag-tagger",
+      "rank": 300,
+      "name": "Tagger",
+      "symbol": "TAG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "gusd-gemini-dollar",
+      "rank": 276,
+      "symbol": "GUSD",
+      "reason": "already in known union v1-v10"
+    },
+    {
+      "id": "qtum-qtum",
+      "rank": 277,
+      "symbol": "QTUM",
+      "reason": "already in known union v1-v10"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 270,
+    "top_rank_covered": 300,
+    "next_batch_start_rank": 301,
+    "next_batch_end_rank": 325,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the recorded v1-v10 delta union (247 unique ids present in retained delta files). v10's cursor claims discovered_id_count=270 after v10 (23 implied ids are not present in any retained v1-v10 delta file — an inheritance gap from prior versions; prior artifacts not edited). GUSD(rank 276) and QTUM(rank 277) in this window were already in the recorded union (v10 ranks 274-275) and were correctly skipped as duplicates.",
+    "v11 net_new=23 (ranks 278-300), duplicates_skipped=2, discovered_id_count=270, top_rank_covered=300, rank_frontier_exhausted=false."
+  ]
+}
