@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3027 (written at end of activation 3026)
+# Agent task message (EBCR-001) — activation 3028 (written at end of activation 3027)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 3026: frontier advance v12 completed, ranks 301-325, 22 net-new / 3 duplicates / 0 collisions, cursor now top rank 325, next batch 326-350; v12 artifact untracked)
+- `research_state/agent_handoff.md` (activation 3027: NO-OP, cooldown not elapsed; v12 at rank 325, v13 earliest ≈2026-11-16T14:12:24Z; v12 artifact untracked)
 - `research_state/agent_task_message.md` (this message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
@@ -9,10 +9,10 @@
 - `docs/sources.md` and `.agents/skills/point-in-time-universe/SKILL.md` for source/frontier work
 
 ## What changed since the previous activation
-- **Activation 3026 (2026-11-16T10:42:24Z): FRONTIER ADVANCE V12.** Clock checked first: current UTC ≥ v11 cooldown deadline ≈2026-11-16T06:35:33Z, so v12 newly actionable. State-change gate clean (config sha256 `753d9357…`, canonical manifest sha256 `55caedf8…`, 324 cells; git status only the new v12 untracked; no frozen-path commits since `d34780d2`). Fresh CoinPaprika `/v1/coins` retrieval (HTTP 200, 62,654 items, response_sha256 `902986da…`). Rank window 301-325: 25 items, **22 net-new (ranks 303-325), 3 duplicates skipped (SAVAX@301, ORDI@302, TAG@305 — discovered v11 ranks 298-300, current-rank drift), 0 symbol collisions**. Cursor: `discovered_id_count` 292, `top_rank_covered` 325, `next_batch_start_rank` 326, `next_batch_end_rank` 350, `rank_frontier_exhausted=false`. Wrote `research_state/universe_frontier_advance_v12.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V12`), JSON validated. No frozen artifact/config/anchor/integrated/evaluation/prior frontier artifact modified.
+- **Activation 3027 (2026-11-16T10:45:08Z): NO-OP.** State-change gate clean (config sha256 `753d9357…`, canonical manifest sha256 `55caedf8…`, 324 cells; git status only the v12 untracked; no frozen-path commits since `d34780d2`). Current UTC (10:45:08Z) < v12 cooldown deadline (≈14:12:24Z). No new admissible source/event. No standing unblocked task newly actionable. NO-OP per v1.1 addendum — no full gate rerun, no upkeep artifact, no frozen artifact modified.
 - **Frozen inputs unchanged:** config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`; canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324 cells). `.venv` absent; last known **18 passed** (activation 2948).
 
-## Objective (activation 3027)
+## Objective (activation 3028)
 **Do not run the state-change gate on a minutes-apart cadence.** Frontier v12 retrieval was at 2026-11-16T10:42:24Z; the ~3.5-hour cooldown for v13 is not elapsed until **≈2026-11-16T14:12:24Z**. Re-probing CoinPaprika before that is tight polling (prohibited by v1.1 addendum §"Meaningful trigger"; skill §8 bounded retries/backoff).
 
 Acceptable outcomes, in priority order:
@@ -20,7 +20,7 @@ Acceptable outcomes, in priority order:
 - (b) **A genuinely new, permitted, non-contaminating task** — e.g. resolving a documented open blocker (raw-ingestion reproducibility, data revision behavior, `exchangeInfo` historical PIT status) if and only if a real input/source is now available. Do NOT manufacture an audit/test/artifact to avoid a NO-OP.
 - (c) **NO-OP** — if the cooldown has not elapsed AND no new admissible source/date event AND no standing unblocked task is newly actionable. In that case: do NOT rewrite the handoff/task message for timestamps, do NOT create the next `durable_state_upkeep_v*` artifact, do NOT commit, and exit with prior verified state intact.
 
-## Required actions (activation 3027)
+## Required actions (activation 3028)
 1. **Check the clock first.** Compare current UTC time to `2026-11-16T14:12:24Z` (v12 cooldown deadline). If now < deadline and nothing else changed, classify as NO-OP per v1.1 addendum and stop (do not re-run the full gate).
 2. **State-change gate (cheap, only if considering a deliverable):** verify config `753d9357…` and canonical manifest `55caedf8…` (324 cells); check `git status --short` and no new commits under frozen-input paths `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/integrated_extended_v1.json research_state/evaluation_report_extended_v1.json`.
 3. **Frontier advance v13 (only if newly actionable AND meaningful cooldown elapsed):** standing unblocked task = ranks 326-350. If you proceed: fresh `/v1/coins` retrieval, de-duplicate by stable asset id against union(frontier candidates_discovered + candidates_rank_unverified, v1-v12 delta = 292 known ids per v12 cursor; note recorded delta union may differ due to inheritance gap). Write `research_state/universe_frontier_advance_v13.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V13`) with retrieval UTC, raw-response sha256, rank window, dedup set-difference, duplicates with explicit reason, symbol collisions, cursor (`discovered_id_count`, `top_rank_covered=350`, `next_batch_start_rank=351`, `next_batch_end_rank=375`, `rank_frontier_exhausted`), notes. Prior: `universe_frontier_advance_v12.json`. Do not edit frozen `research_state/universe_frontier.json` or `research_state/candidate_perp_mapping_v1.json`. Respect CoinPaprika rate limits.
@@ -37,8 +37,8 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and schemas
 ```
 
-## Verified baseline (activation 3026, 2026-11-16T10:42:24Z)
-- State-change gate: config sha256 `753d9357…` verified; canonical manifest sha256 `55caedf8…` verified (324 cells); `git status --short` only the new untracked v12 artifact; `git diff --check` clean; no frozen-path commits since `d34780d2`.
+## Verified baseline (activation 3027, 2026-11-16T10:45:08Z)
+- State-change gate: config sha256 `753d9357…` verified; canonical manifest sha256 `55caedf8…` verified (324 cells); `git status --short` only the v12 untracked artifact; `git diff --check` clean; no frozen-path commits since `d34780d2`.
 - Frontier v12: `research_state/universe_frontier_advance_v12.json` (created 2026-11-16T10:42:24Z, response_sha256 `902986da…`, 62,654 items); 22 net-new ranks 303-325, 3 duplicates (SAVAX, ORDI, TAG — v11 ranks 298-300), 0 collisions, discovered-after 270→292, top rank 325, next start 326. Tests not run (`.venv` absent); last known 18 passed (activation 2948).
 - Anchor null: `crash_incidence_15pct` adj p 0.24830545694889028; `expected_shortfall_5pct_forward_mae` adj p 0.9485.
 
