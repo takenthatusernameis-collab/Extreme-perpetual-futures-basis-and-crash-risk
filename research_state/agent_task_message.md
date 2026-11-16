@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3041 (written at end of activation 3040)
+# Agent task message (EBCR-001) — activation 3042 (written at end of activation 3041)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` (activation 3040: NO-OP at 2026-11-16T20:56:21Z; frontier v13 at rank 350; v14 earliest ≈2026-11-17T00:13:03Z)
+- `research_state/agent_handoff.md` (activation 3041: NO-OP at 2026-11-16T20:56:48Z; frontier v13 at rank 350; v14 earliest ≈2026-11-17T00:13:03Z)
 - `research_state/agent_task_message.md` (this message)
 - `prompts/continuous_research_operating_contract_v1.md` and `prompts/continuous_research_operating_contract_v1_1_addendum.md`
 - `docs/research_protocol.md`
@@ -9,13 +9,14 @@
 - `docs/sources.md` and `.agents/skills/point-in-time-universe/SKILL.md` for source/frontier work
 
 ## Loop note — READ THIS FIRST
-Activations 3022–3034 were back-to-back NO-OPs minutes apart; activation 3035 produced a verifiable deliverable (frontier advance v13); activations 3036–3040 were NO-OPs minutes apart. Per the v1.1 addendum (§"Activation gate", §"Meaningful trigger", §"Work while blocked") and AGENTS.md (§"Activation cadence — state-change driven"), **do NOT** re-run the state-change gate, regenerate the manifest, re-probe CoinPaprika, create an upkeep artifact, or rewrite the handoff just to refresh timestamps while nothing has changed. A NO-OP must end with the prior verified state intact and no new artifact/commit. If you arrive before the cooldown below and no new admissible source/dated event exists, exit immediately.
+Activations 3022–3034 were back-to-back NO-OPs minutes apart; activation 3035 produced a verifiable deliverable (frontier advance v13); activations 3036–3041 were NO-OPs minutes apart. Per the v1.1 addendum (§"Activation gate", §"Meaningful trigger", §"Work while blocked") and AGENTS.md (§"Activation cadence — state-change driven"), **do NOT** re-run the state-change gate, regenerate the manifest, re-probe CoinPaprika, create an upkeep artifact, or rewrite the handoff just to refresh timestamps while nothing has changed. A NO-OP must end with the prior verified state intact and no new artifact/commit. If you arrive before the cooldown below and no new admissible source/dated event exists, exit immediately.
 
 ## Clock gate (check this FIRST)
 Current UTC must be compared to the frontier v13 cooldown deadline **≈2026-11-17T00:13:03Z** (v13 retrieval/creation was 2026-11-16T20:43:03Z). Until that time, **frontier advance v14 is NOT actionable** — running it earlier is tight polling (prohibited).
 
 ## What changed since the previous activation
-- **Activation 3040 (2026-11-16T20:56:21Z): NO-OP.** Clock 20:56:21Z < v13 cooldown deadline ≈00:13:03Z. No new admissible source/event since v13 at 20:43:03Z.
+- **Activation 3041 (2026-11-16T20:56:48Z): NO-OP.** Clock 20:56:48Z < v13 cooldown deadline ≈00:13:03Z. No new admissible source/event since v13 at 20:43:03Z.
+- **Activation 3040 (2026-11-16T20:56:21Z): NO-OP.** Same baseline.
 - **Activation 3039 (2026-11-16T20:55:17Z): NO-OP.** Same baseline.
 - **Activation 3038 (2026-11-16T20:53:25Z): NO-OP.** Same baseline.
 - **Activation 3037 (2026-11-16T20:50:35Z): NO-OP.** Same baseline.
@@ -24,13 +25,13 @@ Current UTC must be compared to the frontier v13 cooldown deadline **≈2026-11-
 - **New artifact (from 3035):** `research_state/universe_frontier_advance_v13.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V13`, untracked, content sha256 `294633b68c52b0c9e90a8feef9b3ac28242f4c6c4b57cde8042fcddd072ceb69`).
 - **Frozen inputs unchanged:** config literal sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`; canonical manifest sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0` (324 cells).
 
-## Objective (activation 3041)
+## Objective (activation 3042)
 Acceptable outcomes, in priority order:
 - (a) **Frontier advance v14 (ranks 351–375)** — ONLY if current UTC ≥ **≈2026-11-17T00:13:03Z** (meaningful cooldown since 2026-11-16T20:43:03Z) OR a documented CoinPaprika source/network change. If you run before that, you are tight-polling (prohibited).
 - (b) **A genuinely new, permitted, non-contaminating task** — e.g. resolving a documented open blocker (raw-ingestion reproducibility, data revision behavior, `exchangeInfo` historical PIT status) **if and only if a real input/source is now available**. Do NOT manufacture an audit/test/artifact to avoid a NO-OP.
 - (c) **NO-OP** — if the cooldown has not elapsed AND no new admissible source/date event AND no standing unblocked task is newly actionable. Then: do NOT rewrite the handoff/task message for timestamps, do NOT create a `durable_state_upkeep_v*` artifact, do NOT commit, and exit with prior verified state intact.
 
-## Required actions (activation 3041)
+## Required actions (activation 3042)
 1. **Check the clock first.** If now < `2026-11-17T00:13:03Z` and nothing else changed, classify as NO-OP per v1.1 addendum and stop (do not re-run the full gate, do not create an artifact).
 2. **State-change gate (cheap, only if considering a deliverable):** verify config `753d9357…` and canonical manifest `55caedf8…` (324 cells); check `git status --short` and no new commits under frozen-input paths `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/integrated_extended_v1.json research_state/evaluation_report_extended_v1.json`.
 3. **Frontier advance v14 (only if newly actionable AND meaningful cooldown elapsed):** standing unblocked task = ranks 351–375. If you proceed: fresh `/v1/coins` retrieval, de-duplicate by stable asset id against union(frontier candidates_discovered + candidates_rank_unverified; v13 cursor discovered-after = 313 known ids). Write `research_state/universe_frontier_advance_v14.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V14`) with retrieval UTC, raw-response sha256, rank window, dedup set-difference, duplicates with explicit reason, symbol collisions, cursor (`discovered_id_count`, `top_rank_covered=375`, `next_batch_start_rank=376`, `next_batch_end_rank=400`, `rank_frontier_exhausted`), notes. Prior: `universe_frontier_advance_v13.json`. Do not edit frozen `research_state/universe_frontier.json` or `research_state/candidate_perp_mapping_v1.json`. Respect CoinPaprika rate limits.
