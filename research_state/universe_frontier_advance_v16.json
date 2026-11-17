@@ -1,0 +1,279 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V16",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-17T20:05:08Z",
+  "task_activation": 3063,
+  "purpose": "Advance rank frontier discovery batch (ranks 401-425) after documented cooldown since v15 (v15 retrieval 2026-11-17T11:51:38Z; earliest actionable ~2026-11-17T15:21:38Z; current 2026-11-17T20:05:08Z, ~8.2h elapsed, cooldown satisfied). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v15.json",
+    "sha256": "40cafbbc3c1af6b3d98ce12c8e6ab9552664fcd8f90feb2060b87f8889953b0b",
+    "discovered_after_v15": 381,
+    "top_rank_covered_v15": 400,
+    "next_batch_start_rank_v15": 401
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-17T20:05:08Z",
+    "response_sha256": "f89cacd849198494f58a0c7929cdc0dec23eca021b415f427ee2b24c61e3610e",
+    "total_items_in_response": 62672,
+    "ranked_items_in_response": 62672,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3063 (~8.2h after v15 retrieval at 2026-11-17T11:51:38Z, past the ~3.5h cooldown)."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      401,
+      425
+    ],
+    "known_ids_before_dedup": 381,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 19,
+    "duplicates_skipped_count": 6
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v15 observed-id union = 381 known ids (universe_frontier.json 25 ids + frontier advance v1-v15 delta ids + duplicate-skipped ids + candidate_perp_mapping_v2 ids; union verified = 381, matching v15 cursor discovered_id_count). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "orbs-orbs",
+      "rank": 403,
+      "name": "Orbs",
+      "symbol": "ORBS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "toshi-toshi",
+      "rank": 404,
+      "name": "Toshi",
+      "symbol": "TOSHI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "soso-sosovalue",
+      "rank": 407,
+      "name": "SoSoValue",
+      "symbol": "SOSO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ont-ontology",
+      "rank": 408,
+      "name": "Ontology",
+      "symbol": "ONT",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ltc-litecoin-token",
+      "rank": 409,
+      "name": "Litecoin Token",
+      "symbol": "LTC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "snek-snek-crd",
+      "rank": 410,
+      "name": "SNEK",
+      "symbol": "SNEK",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ip-story",
+      "rank": 411,
+      "name": "Data Network",
+      "symbol": "DATA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xsgd-xsgd",
+      "rank": 412,
+      "name": "XSGD",
+      "symbol": "XSGD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bond-barnbridge",
+      "rank": 413,
+      "name": "BarnBridge",
+      "symbol": "BOND",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mngo-mango-markets",
+      "rank": 414,
+      "name": "Mango Markets",
+      "symbol": "MNGO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ankr-ankr-network",
+      "rank": 416,
+      "name": "Ankr",
+      "symbol": "ANKR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sc-siacoin",
+      "rank": 417,
+      "name": "Siacoin",
+      "symbol": "SC",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sweth-swell-ethereum",
+      "rank": 418,
+      "name": "Swell Ethereum",
+      "symbol": "SWETH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pci-payprotocol-paycoin",
+      "rank": 419,
+      "name": "PayProtocol Paycoin",
+      "symbol": "PCI",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "deep-deepbook-protocol",
+      "rank": 420,
+      "name": "DeepBook Protocol",
+      "symbol": "DEEP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rose-oasis-network",
+      "rank": 422,
+      "name": "Oasis Network",
+      "symbol": "ROSE",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kava-kava",
+      "rank": 423,
+      "name": "Kava",
+      "symbol": "KAVA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "not-notcoin",
+      "rank": 424,
+      "name": "Notcoin",
+      "symbol": "NOT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nex-nexus",
+      "rank": 425,
+      "name": "Nexus",
+      "symbol": "NEX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "trb-tellor",
+      "rank": 401,
+      "symbol": "TRB",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "bome-book-of-meme",
+      "rank": 402,
+      "symbol": "BOME",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "brett-brett-base",
+      "rank": 405,
+      "symbol": "BRETT",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "brett2-brett",
+      "rank": 406,
+      "symbol": "BRETT",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "req-request-network",
+      "rank": 415,
+      "symbol": "REQ",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "ccd-concordium",
+      "rank": 421,
+      "symbol": "CCD",
+      "reason": "already in known union v1-v15 (discovered_id_count=381); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "LTC",
+      "new_candidate_id": "ltc-litecoin-token",
+      "new_candidate_rank": 409,
+      "existing_candidate_ids": [
+        "ltc-litecoin"
+      ]
+    },
+    {
+      "symbol": "DATA",
+      "new_candidate_id": "ip-story",
+      "new_candidate_rank": 411,
+      "existing_candidate_ids": [
+        "data-streamr-datacoin"
+      ]
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 400,
+    "top_rank_covered": 425,
+    "next_batch_start_rank": 426,
+    "next_batch_end_rank": 450,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the reconstructed v1-v15 observed-id union (381 known ids). net_new raises cursor to 400, top_rank_covered=425, rank_frontier_exhausted=false.",
+    "Rank drift observed in window: several previously-discovered ids now appear at shifted ranks (e.g., trb-tellor 394->401, bome-book-of-meme 396->402, brett-brett-base 399->405, brett2-brett 398->406, req-request-network 400->415, ccd-concordium 397->421); recorded as duplicates, not re-added.",
+    "Symbol collision(s): LTC new=ltc-litecoin-token@409 existing=['ltc-litecoin']; DATA new=ip-story@411 existing=['data-streamr-datacoin']"
+  ]
+}
