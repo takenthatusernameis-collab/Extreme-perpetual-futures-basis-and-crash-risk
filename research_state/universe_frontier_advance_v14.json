@@ -1,0 +1,275 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V14",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-17T03:11:51Z",
+  "task_activation": 3044,
+  "purpose": "Advance rank frontier discovery batch (ranks 351-375) after documented cooldown since v13 (~3.6h elapsed, past the ~3.5-hour cooldown; earliest actionable \u22482026-11-17T00:13:03Z); discovery-only, not PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v13.json",
+    "sha256": "294633b68c52b0c9e90a8feef9b3ac28242f4c6c4b57cde8042fcddd072ceb69",
+    "discovered_after_v13": 313,
+    "top_rank_covered_v13": 350,
+    "next_batch_start_rank_v13": 351
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-17T03:11:51Z",
+    "response_sha256": "c04a40a5aa2ba975526fa7d4a6f5528418c16663ec497fdc882f34a54d70d9a0",
+    "total_items_in_response": 62665,
+    "ranked_items_in_response": 62665,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/tickers pagination (start/offset) is non-functional in this environment; /v1/coins used as ranked discovery source (items carry a `rank` field). Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval performed at activation 3044 (~3.6 hours after v13 retrieval at 2026-11-16T20:43:03Z, past the ~3.5-hour cooldown)."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      351,
+      375
+    ],
+    "known_ids_before_dedup": 336,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v13 observed-id union = 336 known ids (313 net-new delta ids per the v13 cursor plus 23 ids observed only as duplicates in prior rank windows whose first discovery is not recorded in any frontier artifact). Current ranks used for discovery ordering only; status recorded as rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "hnt-helium",
+      "rank": 352,
+      "name": "Helium",
+      "symbol": "HNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cfg-centrifuge",
+      "rank": 353,
+      "name": "Centrifuge",
+      "symbol": "CFG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "io-ionet",
+      "rank": 354,
+      "name": "io.net",
+      "symbol": "IO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vtho-vethor-token",
+      "rank": 355,
+      "name": "VeThor Token",
+      "symbol": "VTHO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kub-bitkub-coin",
+      "rank": 356,
+      "name": "Bitkub Coin",
+      "symbol": "KUB",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ausd-agora-dollar",
+      "rank": 357,
+      "name": "AUSD",
+      "symbol": "AUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lusd-liquity-usd",
+      "rank": 358,
+      "name": "Liquity USD",
+      "symbol": "LUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mmt-memusic",
+      "rank": 359,
+      "name": "MeMusic",
+      "symbol": "MMT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "skyai-skyai",
+      "rank": 360,
+      "name": "SKYAI",
+      "symbol": "SKYAI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "astr-astar",
+      "rank": 361,
+      "name": "Astar",
+      "symbol": "ASTR",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aria-ariaai",
+      "rank": 362,
+      "name": "Aria.AI",
+      "symbol": "ARIA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "folks-folks-finance",
+      "rank": 363,
+      "name": "Folks Finance",
+      "symbol": "FOLKS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "1mbabydoge-baby-doge-coin",
+      "rank": 364,
+      "name": "Baby Doge Coin",
+      "symbol": "1MBABYDOGE",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xvs-venus",
+      "rank": 365,
+      "name": "Venus",
+      "symbol": "XVS",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bard-lombard",
+      "rank": 366,
+      "name": "Lombard",
+      "symbol": "BARD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "arx-arcium",
+      "rank": 367,
+      "name": "Arcium",
+      "symbol": "ARX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aztec-aztec",
+      "rank": 368,
+      "name": "AZTEC",
+      "symbol": "AZTEC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "q-quack-ai",
+      "rank": 369,
+      "name": "Quack AI",
+      "symbol": "Q",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "merl-merlin-chain",
+      "rank": 370,
+      "name": "Merlin Chain",
+      "symbol": "MERL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "enj-enjin-coin",
+      "rank": 371,
+      "name": "Enjin Coin",
+      "symbol": "ENJ",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xno-nano",
+      "rank": 372,
+      "name": "Nano",
+      "symbol": "XNO",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "icnt-impossible-cloud-network",
+      "rank": 373,
+      "name": "Impossible Cloud Network",
+      "symbol": "ICNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cow-cow-protocol-token",
+      "rank": 374,
+      "name": "CoW Protocol Token",
+      "symbol": "COW",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "elf-aelf",
+      "rank": 375,
+      "name": "aelf",
+      "symbol": "ELF",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "anvl-anvil",
+      "rank": 351,
+      "symbol": "ANVL",
+      "reason": "already in known union v1-v13 (discovered_id_count=336); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 360,
+    "top_rank_covered": 375,
+    "next_batch_start_rank": 376,
+    "next_batch_end_rank": 400,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the reconstructed v1-v13 observed-id union (336 known ids: 313 net-new delta ids per the v13 cursor plus 23 duplicate-only ids seen in prior windows). net_new=24 raises cursor to 360, top_rank_covered=375, rank_frontier_exhausted=false."
+  ]
+}
