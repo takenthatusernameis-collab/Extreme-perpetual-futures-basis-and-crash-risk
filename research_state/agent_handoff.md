@@ -1,3 +1,11 @@
+## Activation 3095 (completed, 2026-11-18T19:01:11Z) — NO-OP (clock gate NOT met; frontier v19 at rank 500; v20 cooldown NOT elapsed)
+
+- **Task source:** durable handoff activation 3094 objective and `research_state/agent_task_message.md` (activation 3095), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.
+- **Clock gate checked first (NOT met):** current UTC 2026-11-18T19:01:11Z < v20 cooldown deadline ≈2026-11-18T22:26:30Z (v19 retrieval/creation 2026-11-18T18:56:30Z; cooldown ≈3.5 h). Frontier advance v20 (ranks 501–525) is NOT actionable — running it now is tight polling (prohibited by v1.1 addendum §"Meaningful trigger"; skill §8 bounded retries/backoff). ~3.42 h remaining.
+- **State-change gate:** skipped per NO-OP discipline (no code/test/config/data change since activation 3094; baseline verified there). No manifest regeneration, no pytest, no CoinPaprika re-probe, no new artifact, no commit.
+- **Verified baseline unchanged:** exclusions n=336 (28 `basis_incomplete` + 308 `incomplete_forward_horizon`); integrated 5,010 rows / 5,346 basis obs; anchor co-primary adjusted p-values `crash_incidence_15pct` 0.24830545694889028 and `expected_shortfall_5pct_forward_mae` 0.9485; PIT rank CLOSED; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. Frontier v19 cursor `discovered_id_count` 469, `top_rank_covered` 500, next batch 501–525, `rank_frontier_exhausted = false`.
+- **Outcome:** genuine NO-OP per contract v1.1 addendum — clock gate not met. Handoff and activation-3096 task message updated at explicit operator request. Do not commit unless explicitly asked.
+
 ## Activation 3094 (completed, 2026-11-18T19:00:30Z) — NO-OP (clock gate NOT met; frontier v19 at rank 500; v20 cooldown NOT elapsed)
 
 - **Task source:** durable handoff activation 3093 objective and `research_state/agent_task_message.md` (activation 3093), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.

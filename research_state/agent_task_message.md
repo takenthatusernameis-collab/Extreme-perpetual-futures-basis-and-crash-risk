@@ -1,48 +1,41 @@
-# Agent task message (EBCR-001) — activation 3095 (written end of activation 3094)
+# Agent task message (EBCR-001) — activation 3096 (written end of activation 3095)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3094 (NO-OP, clock gate not met) and activation 3093 (frontier v19, cursor 469 / rank 500).
+- `research_state/agent_handoff.md` — activation 3095 (NO-OP, clock gate not met) and activation 3093 (frontier v19, cursor 469 / rank 500).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
 ## Clock gate — CHECK THIS FIRST
-- Last frontier retrieval/creation: **v19 at 2026-11-18T18:56:30Z**. Cooldown convention ≈**3.5 h** (consistent across v17→v18→v19).
+- Last frontier retrieval/creation: **v19 at 2026-11-18T18:56:30Z**. Cooldown convention ≈**3.5 h**.
 - Therefore **frontier advance v20 (ranks 501–525) is NOT actionable before ≈2026-11-18T22:26:30Z.**
-- Correction to the previous message: activation 3093's task message stated a deadline of 2026-11-19T02:26:30Z (+7.5 h). That is an arithmetic/rollover slip; the documented convention gives **22:26:30Z on 2026-11-18**. Do not run v20 before that time (tight polling is prohibited by the v1.1 addendum §"Meaningful trigger" and skill §8 bounded backoff), and do not extend it to 02:26:30Z unless a new documented source/network condition justifies a longer wait.
+- Do not run v20 before that time (tight polling prohibited). Do not extend to 02:26:30Z unless a documented source/network condition justifies a longer wait.
 
 ## NO-OP discipline
 If now < 2026-11-18T22:26:30Z and nothing below has changed, classify the activation **NO-OP** and exit with prior verified state intact. On a NO-OP do NOT:
 - re-run the state-change gate, regenerate the grid manifest, re-probe CoinPaprika, or rerun pytest;
-- create a `durable_state_upkeep_v*` artifact (≈1032 already exist; highest v981);
-- rewrite the handoff/task message for timestamps only (a substantive NO-OP record at operator request is acceptable, as at activation 3094);
+- create a `durable_state_upkeep_v*` artifact;
+- rewrite the handoff/task message for timestamps only (a substantive NO-OP record at operator request is acceptable, as at activation 3095);
 - create a checkpoint commit.
 
 ## State-change gate (only if considering a deliverable)
 1. `sha256sum configs/basis_crash_grid_v1.json` → expect `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16`.
-2. `git status --short --untracked-files=all` → expect empty for a clean baseline; `git diff --check` → exit 0.
+2. `git status --short --untracked-files=all` → expect empty; `git diff --check` → exit 0.
 3. Frozen identities: `universe_frontier.json` `e8826caf…`, registry `d5b299bf…`, integrated `28ec0163…`, evaluation `9487b36d…`.
-4. Material-change check: any diff under `scripts/ tests/ configs/ data/ results/ docs/ prompts/ schemas/` or the four frozen research_state files, a new admissible source, or a dated external event. If none, NO-OP.
+4. Material-change check. If none, NO-OP.
 
-## Objective (activation 3095), priority order
-- **(a) Frontier advance v20 — ranks 501–525** — ONLY if now ≥ ≈2026-11-18T22:26:30Z (or a documented CoinPaprika source/network change). Procedure:
-  - Fresh `https://api.coinpaprika.com/v1/coins` retrieval (public, no key); respect rate limits; record retrieval UTC and raw-response sha256.
-  - De-duplicate by stable CoinPaprika asset id against union(frontier `candidates_discovered` + `candidates_rank_unverified`; v1–v19 delta ids; duplicate-skipped ids; `candidate_perp_mapping_v2` ids; reconstructed v1–v19 observed union = **469** known ids).
-  - Write `research_state/universe_frontier_advance_v20.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V20`, fields: purpose, prior_artifact (path + sha256 of v19 + cursor), source (name/endpoint/retrieved_at_utc/response_sha256/total & ranked item counts), frontier_state (rank_window, known_ids_before_dedup, items_in_rank_window, net_new_candidates, duplicates_skipped_count), discovery_method, `candidates_discovered_delta`, `duplicates_skipped` (explicit reason), `symbol_collisions`, cursor (`discovered_id_count`, `top_rank_covered=525`, `next_batch_start_rank=526`, `next_batch_end_rank=550`, `rank_frontier_exhausted`), notes.
-  - All new entries status `rank_unverified_discovery_only`; no current rank may be projected to PIT membership.
-  - Do NOT edit frozen `research_state/universe_frontier.json` or `research_state/candidate_perp_mapping_v1.json`.
-  - **Ranked-count fluctuation:** CoinPaprika `/v1/coins` ranked count has moved 62,672 → 10,752 → 62,712 across activations. If fewer than 25 ranked items cover ranks 501–525, record the exact shortfall in `frontier_state` and notes and set the cursor only to the last rank actually covered; a short window does not justify inventing ranks.
-  - **Hash convention:** record both the compact-content sha256 (`json.dumps(d, sort_keys=False, separators=(",", ":"))`) and the raw-bytes sha256 of the written file; they differ because the file is pretty-printed (see handoff activation 3094 integrity note).
-- **(b)** A genuinely new, permitted, non-contaminating task that resolves a documented open blocker, but only if a real new input/source is now available. Do not manufacture an audit/artifact to avoid a NO-OP.
+## Objective (activation 3096), priority order
+- **(a) Frontier advance v20 — ranks 501–525** — ONLY if now ≥ ≈2026-11-18T22:26:30Z (or a documented CoinPaprika source/network change). Procedure per prior message: fresh public retrieval, dedup against 469 known ids, write `research_state/universe_frontier_advance_v20.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V20`, status `rank_unverified_discovery_only`, no frozen edits, record both compact-content and raw-bytes sha256, handle ranked-count shortfall.
+- **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** **NO-OP** if the cooldown has not elapsed and nothing changed.
 
 ## Do NOT re-run completed work
 Frontier advances v1–v19; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes.
 
 ## Blocked without stated precondition
-- EBCR-H002/H003: cannot be preregistered from inspected grid hits; needs a new experiment ID, independent preregistered rationale, and a NEW anchor/config.
-- EBCR-H004: status change requires a separate preregistration decision.
+- EBCR-H002/H003: needs new experiment ID, independent preregistered rationale, NEW anchor/config.
+- EBCR-H004: status change requires separate preregistration decision.
 - Promotion of candidate→perp mapping / lifecycle status out of `discovery_only_unverified` / PIT-unverified is a separate registration decision.
-- PIT historical rank remains CLOSED (no free historical rank time series; `exchangeInfo` is a live snapshot only).
+- PIT historical rank remains CLOSED.
 
 ## Preserve invariants (must remain true and unchanged)
 Exclusions n=336 (28 `basis_incomplete` + 308 `incomplete_forward_horizon`); integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values `crash_incidence_15pct` 0.24830545694889028 and `expected_shortfall_5pct_forward_mae` 0.9485; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. No frozen artifact edits, no preregistration from grid hits, no deletion or rewriting of null/contradictory/failed evidence.
@@ -55,11 +48,10 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3094, 2026-11-18T18:59:53Z)
-- Clock: 18:59:53Z < 22:26:30Z → v20 not actionable; ~3.44 h remaining at that time.
+## Verified baseline (activation 3095, 2026-11-18T19:01:11Z)
+- Clock: 19:01:11Z < 22:26:30Z → v20 not actionable; ~3.42 h remaining.
 - State: config `753d9357…`; git tree clean; `git diff --check` exit 0; HEAD `11a229db`; frozen hashes `e8826caf…` / `d5b299bf…` / `28ec0163…` / `9487b36d…` unchanged.
 - Frontier v19: `research_state/universe_frontier_advance_v19.json`; content sha256 `12f3a08a…` (compact) / raw-bytes `92d99c4e…`; cursor `discovered_id_count` 469, `top_rank_covered` 500, next batch 501–525, `rank_frontier_exhausted = false`.
-- Integrity last material (activation 3093): manifest 324 cells, canonical `55caedf8…`, per-cell `1b393cd6b087ea3cd1e62d4191ad8158356598df42ea8719c257627b778072bf`; last full pytest 18 passed at activation 3071.
 
 ## Known open blockers
 Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; `.venv` gitignored (recreate before pytest); frontier discovery open-ended at rank 500 (no tight polling).
