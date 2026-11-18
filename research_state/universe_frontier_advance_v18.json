@@ -1,0 +1,278 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V18",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-18T10:24:36Z",
+  "task_activation": 3085,
+  "purpose": "Advance rank frontier discovery batch (ranks 451-475) after documented cooldown since v17 (v17 retrieval 2026-11-18T02:20:50Z; cooldown deadline ~2026-11-18T05:50:50Z; current 2026-11-18T10:24:36Z, cooldown satisfied). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v17.json",
+    "sha256": "01dd3e27d0dddc6388b60b7f019de4a2f1f0ab08f9b6e41d7b3dd0497187b1d6",
+    "discovered_after_v16": 400,
+    "top_rank_covered_v17": 450,
+    "next_batch_start_rank_v17": 451
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-18T10:24:36Z",
+    "response_sha256": "625972e5f59068a9ea09371f4c9b16df4fdea7279cc5d84dc9fe7655535d87d1",
+    "total_items_in_response": 62703,
+    "ranked_items_in_response": 10752,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3085, past the ~3.5h cooldown since v17 retrieval at 2026-11-18T02:20:50Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      451,
+      475
+    ],
+    "known_ids_before_dedup": 424,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 22,
+    "duplicates_skipped_count": 3
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v17 observed-id union = 424 known ids (universe_frontier.json ids + frontier advance v1-v17 delta ids + duplicate-skipped ids + candidate_perp_mapping_v2 ids; union verified = 424). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "prove-succinct",
+      "rank": 454,
+      "name": "Succinct",
+      "symbol": "PROVE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lcx-lcx",
+      "rank": 455,
+      "name": "LCX",
+      "symbol": "LCX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "avantis",
+      "rank": 456,
+      "name": "Veranta",
+      "symbol": "AVNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zero-gravity-0g",
+      "rank": 457,
+      "name": "0G",
+      "symbol": "0G",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mubarak-mubarak",
+      "rank": 458,
+      "name": "Mubarak",
+      "symbol": "MUBARAK",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xvg-verge",
+      "rank": 459,
+      "name": "Verge",
+      "symbol": "XVG",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lsk-lisk",
+      "rank": 460,
+      "name": "Lisk",
+      "symbol": "LSK",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dydx-dydx",
+      "rank": 461,
+      "name": "DYDX (ETH)",
+      "symbol": "DYDX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "unp1-unipoly-coin",
+      "rank": 462,
+      "name": "Unipoly Coin",
+      "symbol": "UNP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "asusdf-aster-asusdf",
+      "rank": 463,
+      "name": "Aster asUSDF",
+      "symbol": "ASUSDF",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dep-deapcoin",
+      "rank": 464,
+      "name": "DEAPcoin",
+      "symbol": "DEP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ark-ark",
+      "rank": 465,
+      "name": "Ark",
+      "symbol": "ARK",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "neet1-not-in-employment-education-or-training",
+      "rank": 466,
+      "name": "Not in Employment, Education, or Training",
+      "symbol": "NEET",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "arcsol-ai-rig-complex",
+      "rank": 467,
+      "name": "AI Rig Complex",
+      "symbol": "ARC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "moodeng-moo-deng-moodengsolcom",
+      "rank": 468,
+      "name": "Moo Deng (moodengsol.com)",
+      "symbol": "MOODENG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mew-cat-in-a-dogs-world",
+      "rank": 469,
+      "name": "cat in a dogs world",
+      "symbol": "MEW",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "popcat-popcat",
+      "rank": 470,
+      "name": "Popcat",
+      "symbol": "POPCAT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eusd-electronic-usd",
+      "rank": 471,
+      "name": "Electronic USD",
+      "symbol": "EUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbtce-wrapped-btc-avalanche",
+      "rank": 472,
+      "name": "Wrapped BTC (Avalanche)",
+      "symbol": "WBTC.E",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bnt-bancor",
+      "rank": 473,
+      "name": "Bancor",
+      "symbol": "BNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "uqc-uquid-coin",
+      "rank": 474,
+      "name": "Uquid Coin",
+      "symbol": "UQC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ftt-ftx-token",
+      "rank": 475,
+      "name": "FTX Token",
+      "symbol": "FTT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "mask-mask-network",
+      "rank": 451,
+      "symbol": "MASK",
+      "reason": "already in known union v1-v17 (discovered_id_count=424); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "bold-liquity-bold",
+      "rank": 452,
+      "symbol": "BOLD",
+      "reason": "already in known union v1-v17 (discovered_id_count=424); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "linea-linea",
+      "rank": 453,
+      "symbol": "LINEA",
+      "reason": "already in known union v1-v17 (discovered_id_count=424); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "DYDX",
+      "new_candidate_id": "dydx-dydx",
+      "new_candidate_rank": 461,
+      "existing_candidate_ids": [
+        "dydx-dydx-chain"
+      ]
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 446,
+    "top_rank_covered": 475,
+    "next_batch_start_rank": 476,
+    "next_batch_end_rank": 500,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, candidate_perp_mapping_v2.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the reconstructed v1-v17 observed-id union (424 known ids). net_new raises cursor to 446, top_rank_covered=475, rank_frontier_exhausted=false."
+  ]
+}
