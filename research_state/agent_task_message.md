@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3098 (written end of activation 3097)
+# Agent task message (EBCR-001) — activation 3099 (written end of activation 3098)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3097 (NO-OP, clock gate not met) and activation 3093 (frontier v19, cursor 469 / rank 500).
+- `research_state/agent_handoff.md` — activation 3098 (NO-OP, clock gate not met) and activation 3093 (frontier v19, cursor 469 / rank 500).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -14,7 +14,7 @@
 If now < 2026-11-18T22:26:30Z and nothing below has changed, classify the activation **NO-OP** and exit with prior verified state intact. On a NO-OP do NOT:
 - re-run the state-change gate, regenerate the grid manifest, re-probe CoinPaprika, or rerun pytest;
 - create a `durable_state_upkeep_v*` artifact;
-- rewrite the handoff/task message for timestamps only (a substantive NO-OP record at operator request is acceptable, as at activation 3097);
+- rewrite the handoff/task message for timestamps only (a substantive NO-OP record at operator request is acceptable, as at activation 3098);
 - create a checkpoint commit.
 
 ## State-change gate (only if considering a deliverable)
@@ -23,7 +23,7 @@ If now < 2026-11-18T22:26:30Z and nothing below has changed, classify the activa
 3. Frozen identities: `universe_frontier.json` `e8826caf…`, registry `d5b299bf…`, integrated `28ec0163…`, evaluation `9487b36d…`.
 4. Material-change check. If none, NO-OP.
 
-## Objective (activation 3098), priority order
+## Objective (activation 3099), priority order
 - **(a) Frontier advance v20 — ranks 501–525** — ONLY if now ≥ ≈2026-11-18T22:26:30Z (or a documented CoinPaprika source/network change). Procedure per prior message: fresh public retrieval, dedup against 469 known ids, write `research_state/universe_frontier_advance_v20.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V20`, status `rank_unverified_discovery_only`, no frozen edits, record both compact-content and raw-bytes sha256, handle ranked-count shortfall.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** **NO-OP** if the cooldown has not elapsed and nothing changed.
@@ -48,8 +48,8 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3097, 2026-11-18T19:02:07Z)
-- Clock: 19:02:07Z < 22:26:30Z → v20 not actionable; ~3.41 h remaining.
+## Verified baseline (activation 3098, 2026-11-18T19:04:33Z)
+- Clock: 19:04:33Z < 22:26:30Z → v20 not actionable; ~3.37 h remaining.
 - State: config `753d9357…`; git tree clean; `git diff --check` exit 0; frozen hashes `e8826caf…` / `d5b299bf…` / `28ec0163…` / `9487b36d…` unchanged.
 - Frontier v19: `research_state/universe_frontier_advance_v19.json`; content sha256 `12f3a08a…` (compact) / raw-bytes `92d99c4e…`; cursor `discovered_id_count` 469, `top_rank_covered` 500, next batch 501–525, `rank_frontier_exhausted = false`.
 
