@@ -1,0 +1,282 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V19",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-18T18:56:30.267810Z",
+  "task_activation": 3093,
+  "purpose": "Advance rank frontier discovery batch (ranks 476-500) after documented cooldown since v18 (v18 retrieval 2026-11-18T10:24:36Z; cooldown deadline ~2026-11-18T13:54:36Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v18.json",
+    "sha256": "9b0c68d833ce830ad69308a5b492817c1410b00edc899c01a809338da1b3ddd7",
+    "discovered_after_v17": 446,
+    "top_rank_covered_v18": 475,
+    "next_batch_start_rank_v18": 476
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-18T18:56:30.267810Z",
+    "response_sha256": "f2739bb105b324aec183a3a7887aedd70b84eb8d8825a0efad528b65a78cbeff",
+    "total_items_in_response": 62712,
+    "ranked_items_in_response": 62712,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3093, past the ~3.5h cooldown since v18 retrieval at 2026-11-18T10:24:36Z. Observed ranked-count reduction (v17: 62,672 ranked; v18: 10,752 ranked) may shrink usable rank windows."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      476,
+      500
+    ],
+    "known_ids_before_dedup": 446,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v18 observed-id union = 446 known ids (universe_frontier.json ids + frontier advance v1-v18 delta ids + duplicate-skipped ids + candidate_perp_mapping_v2 ids; union verified = 446). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "pha-phala-network",
+      "rank": 477,
+      "name": "Phala Network",
+      "symbol": "PHA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bio-bio-protocol",
+      "rank": 478,
+      "name": "BIO Protocol",
+      "symbol": "BIO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "evaa-evaa-protocol",
+      "rank": 479,
+      "name": "EVAA Protocol",
+      "symbol": "EVAA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "opg-opengradient",
+      "rank": 480,
+      "name": "OpenGradient",
+      "symbol": "OPG",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pro-propy",
+      "rank": 482,
+      "name": "Propy",
+      "symbol": "PRO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "people-constitutiondao",
+      "rank": 483,
+      "name": "Constitution DAO",
+      "symbol": "PEOPLE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gwei-ethgas-1",
+      "rank": 484,
+      "name": "ETHGas",
+      "symbol": "GWEI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rpl-rocket-pool",
+      "rank": 485,
+      "name": "Rocket Pool",
+      "symbol": "RPL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "syn-synapse",
+      "rank": 486,
+      "name": "Synapse",
+      "symbol": "SYN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dodo-dodo",
+      "rank": 487,
+      "name": "DODO",
+      "symbol": "DODO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mcoin-mcoin",
+      "rank": 488,
+      "name": "mCoin",
+      "symbol": "MCOIN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fun-funfair",
+      "rank": 489,
+      "name": "FUNToken",
+      "symbol": "FUN",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alch-alchemist-ai",
+      "rank": 490,
+      "name": "Alchemist AI",
+      "symbol": "ALCH",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spk-spark",
+      "rank": 491,
+      "name": "Spark",
+      "symbol": "SPK",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rlc-iexec-rlc",
+      "rank": 492,
+      "name": "iExec RLC",
+      "symbol": "RLC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rave-ravedao",
+      "rank": 493,
+      "name": "RaveDAO",
+      "symbol": "RAVE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xusd-straitsx-usd",
+      "rank": 494,
+      "name": "StraitsX USD",
+      "symbol": "XUSD",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "move-movement",
+      "rank": 495,
+      "name": "Movement",
+      "symbol": "MOVE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sent-sentiient",
+      "rank": 496,
+      "name": "Sentiient",
+      "symbol": "SENT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "steem-steem",
+      "rank": 497,
+      "name": "Steem",
+      "symbol": "STEEM",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "plume-plume",
+      "rank": 498,
+      "name": "Plume",
+      "symbol": "PLUME",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lbt-law-blocks",
+      "rank": 499,
+      "name": "Law Blocks",
+      "symbol": "LBT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "loka-league-of-kingdoms",
+      "rank": 500,
+      "name": "League of Kingdoms",
+      "symbol": "LOKA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "ftt-ftx-token",
+      "rank": 476,
+      "symbol": "FTT",
+      "reason": "already in known union (discovered_id_count=446); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "neet1-not-in-employment-education-or-training",
+      "rank": 481,
+      "symbol": "NEET",
+      "reason": "already in known union (discovered_id_count=446); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "SENT",
+      "new_candidate_id": "sent-sentiient",
+      "new_candidate_rank": 496,
+      "existing_candidate_ids": [
+        "sent-sentient"
+      ]
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 469,
+    "top_rank_covered": 500,
+    "next_batch_start_rank": 501,
+    "next_batch_end_rank": 525,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v1.json, candidate_perp_mapping_v2.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the reconstructed v1-v18 observed-id union (446 known ids). net_new raises cursor to 469, top_rank_covered=500, rank_frontier_exhausted=false.",
+    "CoinPaprika ranked-count reduction (62,672 -> 10,752) recorded as a source change; may affect future frontier windows."
+  ]
+}
