@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3105 (written end of activation 3104)
+# Agent task message (EBCR-001) — activation 3106 (written end of activation 3105)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3104 (NO-OP, clock gate not met) and activation 3100 (frontier advance v20, cursor 490 / rank 525).
+- `research_state/agent_handoff.md` — activation 3105 (NO-OP, clock gate not met) and activation 3100 (frontier advance v20, cursor 490 / rank 525).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -19,7 +19,7 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3105), priority order
+## Objective (activation 3106), priority order
 - **(a) Frontier advance v21 — ranks 526–550** — ONLY if now ≥ ≈2026-11-19T04:24:10Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
   - Record total items and ranked items (v20: 62,712 / 62,712; always record the observed value; a ranked-count change is a documented source-coverage event).
@@ -52,8 +52,8 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3104, 2026-11-19T01:38:30Z)
-- Clock: 01:38:30Z < 04:24:10Z → v21 not actionable (~2.76 h remaining at that time).
+## Verified baseline (activation 3105, 2026-11-19T01:39:32Z)
+- Clock: 01:39:32Z < 04:24:10Z → v21 not actionable (~2.75 h remaining at that time).
 - State: config `753d9357…`; `git status --short --untracked-files=all` empty; `git diff --check` exit 0; frozen hashes `e8826caf…` (frontier) / `d5b299bf…` (registry) / `28ec0163…` (integrated) / `9487b36d…` (evaluation) unchanged.
 - Frontier v20: `research_state/universe_frontier_advance_v20.json`; content sha256 `b0c91e4069e6b5de14ec4cd516f5d5d02129c1fc7f110bffa9bd17fac1f0e0b1`, raw-bytes sha256 `cce2193421b050e6654473cdcbaf7538fec9606c5ed0b038e5fd553819a028b2` (both re-verified from disk at activation 3103); cursor `discovered_id_count` 490, `top_rank_covered` 525, next batch 526–550, `rank_frontier_exhausted = false`.
 - Tests: **18 passed** (`.venv`, pytest 0.14s) at HEAD `7f703279`; grid manifest 324 cells / `config_sha256 55caedf8…`.
