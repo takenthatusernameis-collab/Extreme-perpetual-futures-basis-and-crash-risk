@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3113 (written end of activation 3112)
+# Agent task message (EBCR-001) — activation 3114 (written end of activation 3113)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3112 (NO-OP, clock gate) and activation 3110 (frontier advance v22, cursor 533 / rank 575).
+- `research_state/agent_handoff.md` — activation 3113 (NO-OP, clock gate) and activation 3110 (frontier advance v22, cursor 533 / rank 575).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -19,7 +19,7 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3113), priority order
+## Objective (activation 3114), priority order
 - **(a) Frontier advance v23 — ranks 576–600** — ONLY if now ≥ ≈2026-11-19T20:53:45Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
   - Record total items and ranked items (v22: 62,728 total / 62,728 ranked; always record the observed value; a ranked-count change is a documented source-coverage event).
@@ -52,7 +52,7 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3112, 2026-11-19T17:39:55Z)
+## Verified baseline (activation 3113, 2026-11-19T17:41:05Z)
 - Clock: 17:39:55Z < 20:53:45Z → v23 NOT actionable (NO-OP).
 - State: config `753d9357…`; `git status --short --untracked-files=all` → empty; `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…`); v22 artifact content `12ba8668…` / raw-bytes `12ba8668…` verified.
 - Frontier v22: `research_state/universe_frontier_advance_v22.json`; cursor `discovered_id_count` 533, `top_rank_covered` 575, next batch 576–600, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `143c950a8c1ed7e87b5c370021344736bbc5643f72903c22db8ca28bf0c5a852`, 62,728 total / 62,728 ranked.
