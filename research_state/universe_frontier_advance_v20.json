@@ -1,0 +1,278 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V20",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-19T00:56:28.712471Z",
+  "task_activation": 3100,
+  "purpose": "Advance rank frontier discovery batch (ranks 501-525) after documented cooldown since v19 (v19 retrieval 2026-11-18T18:56:30Z; cooldown deadline ~2026-11-18T22:26:30Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v19.json",
+    "sha256_raw_bytes": "92d99c4eef399851b9e2b954789af30cc25d355971425afbec6307103fc53abe",
+    "sha256_compact_content": "12f3a08a62c1d00ee7ac32555cf59a5440118f61008b52d6036aab30ef0c4a4e",
+    "discovered_after_v18": 469,
+    "top_rank_covered_v19": 500,
+    "next_batch_start_rank_v19": 501
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-19T00:54:10Z",
+    "response_sha256": "29e70368b2228919c45af623b4fae8dd9c1e879d29822e6082e170d90b3e43e8",
+    "total_items_in_response": 62712,
+    "ranked_items_in_response": 62712,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field but the response is not pre-sorted by rank; items were sorted by `rank` before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3100, past the ~3.5h cooldown since v19 retrieval at 2026-11-18T18:56:30Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      501,
+      525
+    ],
+    "known_ids_before_dedup": 469,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 21,
+    "duplicates_skipped_count": 4
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v19 observed-id union = 469 known ids (universe_frontier.json ids + frontier advance v1-v19 delta ids + duplicate-skipped ids + candidate_perp_mapping_v2 ids; union verified = 469). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "iotx-iotex",
+      "rank": 505,
+      "name": "IoTeX",
+      "symbol": "IOTX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "luna-terra-v2",
+      "rank": 506,
+      "name": "Terra",
+      "symbol": "LUNA",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wmatic-wrapped-matic-wormhole",
+      "rank": 507,
+      "name": "Wrapped Polygon Ecosystem Token",
+      "symbol": "WPOL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aurora-aurora",
+      "rank": 508,
+      "name": "Aurora",
+      "symbol": "AURORA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tpt-token-pocket",
+      "rank": 509,
+      "name": "Token Pocket",
+      "symbol": "TPT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "etn-electroneum",
+      "rank": 510,
+      "name": "Electroneum",
+      "symbol": "ETN",
+      "type": "coin",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "giggle-giggle-fund-1",
+      "rank": 511,
+      "name": "Giggle Fund",
+      "symbol": "GIGGLE",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jct2-janction",
+      "rank": 512,
+      "name": "Janction",
+      "symbol": "JCT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "srx-storx",
+      "rank": 513,
+      "name": "StorX",
+      "symbol": "SRX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bora-bora",
+      "rank": 514,
+      "name": "BORA",
+      "symbol": "BORA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fxs-frax-share",
+      "rank": 515,
+      "name": "Frax (prev. FXS)",
+      "symbol": "FRAX",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nxpc-nexpace",
+      "rank": 516,
+      "name": "NEXPACE",
+      "symbol": "NXPC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "uma-uma",
+      "rank": 517,
+      "name": "UMA",
+      "symbol": "UMA",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "troll-troll2",
+      "rank": 518,
+      "name": "Troll",
+      "symbol": "TROLL",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdp-paxos-standard-token",
+      "rank": 519,
+      "name": "Pax Dollar",
+      "symbol": "USDP",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ust-terrausd",
+      "rank": 520,
+      "name": "Terra Classic USD",
+      "symbol": "USTC",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "powr-power-ledger",
+      "rank": 521,
+      "name": "Power Ledger",
+      "symbol": "POWR",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "snt-status",
+      "rank": 522,
+      "name": "Status",
+      "symbol": "SNT",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fren-pet-fren-pet",
+      "rank": 523,
+      "name": "Fren Pet",
+      "symbol": "FREN PET",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zerebro-zerebro",
+      "rank": 524,
+      "name": "Zerebro",
+      "symbol": "ZEREBRO",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "somi-somnia",
+      "rank": 525,
+      "name": "Somnia",
+      "symbol": "SOMI",
+      "type": "token",
+      "is_active": true,
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "move-movement",
+      "rank": 501,
+      "symbol": "MOVE",
+      "reason": "already in known union (discovered_id_count=469); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "plume-plume",
+      "rank": 502,
+      "symbol": "PLUME",
+      "reason": "already in known union (discovered_id_count=469); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "lbt-law-blocks",
+      "rank": 503,
+      "symbol": "LBT",
+      "reason": "already in known union (discovered_id_count=469); current-rank drift only, not PIT membership"
+    },
+    {
+      "id": "loka-league-of-kingdoms",
+      "rank": 504,
+      "symbol": "LOKA",
+      "reason": "already in known union (discovered_id_count=469); current-rank drift only, not PIT membership"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "FRAX",
+      "new_candidate_id": "fxs-frax-share",
+      "new_candidate_rank": 515,
+      "existing_candidate_ids": [
+        "frax-frax"
+      ]
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 490,
+    "top_rank_covered": 525,
+    "next_batch_start_rank": 526,
+    "next_batch_end_rank": 550,
+    "rank_frontier_exhausted": false
+  },
+  "notes": [
+    "All entries are discovery-only with status rank_unverified_discovery_only; no current rank is projected to PIT membership.",
+    "No changes to frozen artifacts (universe_frontier.json, candidate_perp_mapping_v2.json, integrated_extended_v1.json, evaluation_report_extended_v1.json, configs, scripts, tests).",
+    "Candidate->perp mapping / contract-lifecycle promotion remains a separate registration decision out of discovery_only_unverified.",
+    "Dedup performed against the reconstructed v1-v19 observed-id union (469 known ids). net_new raises cursor to 490, top_rank_covered=525, rank_frontier_exhausted=false.",
+    "CoinPaprika ranked count 62,712 (v19: 62,712; v18: 10,752).",
+    "Hash convention: this artifact stores no self-referential hash fields (matching v18/v19). Both hashes are recorded externally in agent_handoff.md: content sha256 = json.dumps(d, sort_keys=False, separators=(\",\", \":\")); raw-bytes sha256 = sha256 of the written file bytes."
+  ]
+}
