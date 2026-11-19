@@ -1,14 +1,14 @@
-# Agent task message (EBCR-001) — activation 3101 (written end of activation 3100)
+# Agent task message (EBCR-001) — activation 3102 (written end of activation 3101)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3100 (frontier advance v20, cursor 490 / rank 525) and activation 3093 (frontier v19).
+- `research_state/agent_handoff.md` — activation 3101 (NO-OP, v21 gated) and activation 3100 (frontier advance v20, cursor 490 / rank 525).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
-## Clock gate — CHECK THIS FIRST, THEN STOP IF NOT MET
+## Clock gate — CHECK FIRST, THEN STOP IF NOT MET
 - Last frontier retrieval/creation: **v20 at 2026-11-19T00:54:10Z**. Cooldown convention ≈**3.5 h**.
 - **Frontier advance v21 (ranks 526–550) is NOT actionable before ≈2026-11-19T04:24:10Z.**
-- If `date -u` is **before** 2026-11-19T04:24:10Z and no state change is detected: run the single cheap check below, then **exit as NO-OP without rewriting this file or the handoff**. Do not create a new NO-OP handoff record, do not re-schedule, do not commit — activations 3094–3099 already produced six NO-OP entries inside a 6-minute window and that churn is the defect to avoid. Anti-churn rule: **one `date -u` check and a silent exit, or nothing at all.**
+- If `date -u` is **before** 2026-11-19T04:24:10Z and no state change is detected: run the cheap check below, then **exit as NO-OP without rewriting this file or the handoff, without creating a handoff record, and without committing**. A wakeup already scheduled at ≈2026-11-19T04:24:30Z carries the v21 trigger; do not add another.
 - Do not extend the deadline unless a documented source/network condition justifies a longer wait.
 
 ## Cheap check (only thing to run if not yet due)
@@ -18,10 +18,16 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3101), priority order
-- **(a) Frontier advance v21 — ranks 526–550** — ONLY if now ≥ ≈2026-11-19T04:24:10Z. Procedure: fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`; record total items and ranked items (v20: 62,712 / 62,712; always record the observed value); dedup the rank 526–550 window against the 490 known ids; write `research_state/universe_frontier_advance_v21.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V21`, status `rank_unverified_discovery_only`; cursor → `discovered_id_count`, `top_rank_covered` 550, next batch 551–575, `rank_frontier_exhausted` false unless the window is short; no frozen edits; record **both** hashes externally in the handoff (content sha256 = `json.dumps(d, sort_keys=False, separators=(",", ":"))`; raw-bytes sha256 = sha256 of the written file bytes) — do **not** store self-referential hash fields inside the artifact (matching v18/v19; mixing conventions caused a false tamper scare at activation 3094).
+## Objective (activation 3102), priority order
+- **(a) Frontier advance v21 — ranks 526–550** — ONLY if now ≥ ≈2026-11-19T04:24:10Z. Procedure:
+  - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
+  - Record total items and ranked items (v20: 62,712 / 62,712; always record the observed value; a ranked-count change is a documented source-coverage event).
+  - Dedup the rank 526–550 window against the 490 known ids (reconstruct the v1–v20 observed-id union; skip current-rank duplicates and log symbol collisions separately).
+  - Write `research_state/universe_frontier_advance_v21.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V21`, status `rank_unverified_discovery_only`.
+  - Cursor → `discovered_id_count`, `top_rank_covered` 550, next batch 551–575, `rank_frontier_exhausted` false unless the window is short.
+  - No frozen edits. Record **both** hashes externally in the handoff (content sha256 = `json.dumps(d, sort_keys=False, separators=(",", ":"))`; raw-bytes sha256 = sha256 of the written file bytes). Do **not** store self-referential hash fields inside the artifact (matching v18/v19/v20).
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
-- **(c)** NO-OP as described above.
+- **(c)** NO-OP per the clock gate above.
 
 ## Do NOT re-run completed work
 Frontier advances v1–v21; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes.
@@ -43,13 +49,13 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3100, 2026-11-19T00:56:56Z)
-- Clock: 00:56:56Z < 04:24:10Z → v21 not actionable; ~3.45 h remaining.
-- State: config `753d9357…`; git tree clean except new `research_state/universe_frontier_advance_v20.json`; `git diff --check` exit 0; frozen hashes `e8826caf…` (frontier) / `d5b299bf…` (registry) / `28ec0163…` (integrated) / `9487b36d…` (evaluation) unchanged.
-- Frontier v20: `research_state/universe_frontier_advance_v20.json`; content sha256 `b0c91e40…`, raw-bytes sha256 `cce21934…`; cursor `discovered_id_count` 490, `top_rank_covered` 525, next batch 526–550, `rank_frontier_exhausted = false`.
+## Verified baseline (activation 3101, 2026-11-19T01:07:34Z)
+- Clock: 01:07:34Z < 04:24:10Z → v21 not actionable; ~3.28 h remaining.
+- State: config `753d9357…`; `git status --short --untracked-files=all` empty; `git diff --check` exit 0; frozen hashes `e8826caf…` (frontier) / `d5b299bf…` (registry) / `28ec0163…` (integrated) / `9487b36d…` (evaluation) unchanged.
+- Frontier v20: `research_state/universe_frontier_advance_v20.json`; content sha256 `b0c91e4069e6b5de14ec4cd516f5d5d02129c1fc7f110bffa9bd17fac1f0e0b1`, raw-bytes sha256 `cce2193421b050e6654473cdcbaf7538fec9606c5ed0b038e5fd553819a028b2`; cursor `discovered_id_count` 490, `top_rank_covered` 525, next batch 526–550, `rank_frontier_exhausted = false`.
 
 ## Known open blockers
-Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; `.venv` gitignored (recreate before pytest); frontier discovery open-ended at rank 525 (no tight polling; single scheduled trigger only).
+Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; `.venv` gitignored (recreate before pytest); frontier discovery open-ended at rank 525 (no tight polling; single scheduled trigger at ≈04:24:30Z).
 
 ## Reporting
 Report only verified findings. Do not commit unless explicitly asked.
