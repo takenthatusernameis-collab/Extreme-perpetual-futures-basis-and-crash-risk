@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3109 (written end of activation 3108)
+# Agent task message (EBCR-001) — activation 3110 (written end of activation 3109)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3108 (NO-OP, clock gate) and activation 3106 (frontier advance v21, cursor 514 / rank 550).
+- `research_state/agent_handoff.md` — activation 3109 (NO-OP, clock gate) and activation 3106 (frontier advance v21, cursor 514 / rank 550).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -10,8 +10,7 @@
 - **Frontier advance v22 (ranks 551–575) is NOT actionable before ≈2026-11-19T11:50:45Z.**
 - If `date -u` is **before** 2026-11-19T11:50:45Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
 - A wakeup is already scheduled for **2026-11-19T11:51:30Z** carrying the v22 trigger (id `wku_1f2e92a6e001YIqAJBaXzVKk8L`). Do not add another and do not tight-poll.
-- Note: the wakeup named in the previous task message (`wku_1f16f3490001NpLXwxPcdPkQJP`, 2026-11-19T04:24:30Z) already fired and did not carry over. Verify with `cancel_wakeup list` rather than trusting a stale id.
-- Do not extend the deadline unless a documented source/network condition justifies a longer wait.
+- Verify with `cancel_wakeup list` rather than trusting a stale id.
 
 ## Cheap check (only thing to run if not yet due)
 ```bash
@@ -20,7 +19,7 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3109), priority order
+## Objective (activation 3110), priority order
 - **(a) Frontier advance v22 — ranks 551–575** — ONLY if now ≥ ≈2026-11-19T11:50:45Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
   - Record total items and ranked items (v21: 62,713 total / 11,015 ranked; always record the observed value; a ranked-count change is a documented source-coverage event).
@@ -53,12 +52,12 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3108, 2026-11-19T08:25:16Z)
-- Clock: 08:25:16Z < 11:50:45Z → v22 NOT actionable (NO-OP).
+## Verified baseline (activation 3109, 2026-11-19T08:26:39Z)
+- Clock: 08:26:39Z < 11:50:45Z → v22 NOT actionable (NO-OP).
 - State: config `753d9357…`; `git status --short --untracked-files=all` → empty; `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…`); v21 artifact content `c9daa696…` / raw-bytes `81aec400…` re-verified from disk.
 - Frontier v21: `research_state/universe_frontier_advance_v21.json`; cursor `discovered_id_count` 514, `top_rank_covered` 550, next batch 551–575, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `54a96050bde72bd3fd834df114da120c3e5c8df306b41fca7a1de9780a06f183`, 62,713 total / 11,015 ranked.
 - Wakeup: single pending `wku_1f2e92a6e001YIqAJBaXzVKk8L` at 2026-11-19T11:51:30Z (v22 trigger).
-- Tests: **18 passed** at activation 3106 (HEAD `0ce725ec`); grid manifest 324 cells / `config_sha256 55caedf8…`. Not re-run at 3108 (no code/test/config change).
+- Tests: **18 passed** at activation 3106 (HEAD `0ce725ec`); grid manifest 324 cells / `config_sha256 55caedf8…`. Not re-run at 3109 (no code/test/config change).
 
 ## Known open blockers
 Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 550 (no tight polling; cooldown until ≈11:50:45Z).
