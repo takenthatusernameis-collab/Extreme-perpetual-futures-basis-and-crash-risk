@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3119 (written end of activation 3118)
+# Agent task message (EBCR-001) — activation 3120 (written end of activation 3119)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3118 (NO-OP, clock gate not met for v24) and activation 3117 (NO-OP) and activation 3116 (frontier advance v23, cursor 557 / rank 600).
+- `research_state/agent_handoff.md` — activation 3119 (NO-OP, clock gate not met for v24) and activation 3118 (NO-OP) and activation 3117 (NO-OP) and activation 3116 (frontier advance v23, cursor 557 / rank 600).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -9,7 +9,7 @@
 - Last frontier retrieval/creation: **v23 at 2026-11-19T23:40:50Z** (artifact `created_at_utc`). Cooldown convention ≈**3.5 h**.
 - **Frontier advance v24 (ranks 601–625) is NOT actionable before ≈2026-11-20T03:10:50Z.**
 - If `date -u` is **before** 2026-11-20T03:10:50Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
-- A wakeup will fire at **≈2026-11-20T03:10:40Z** carrying the v24 trigger (id `wku_1f63519b4001HBBqTybgpVRgmK`). Do not add another and do not tight-poll.
+- A wakeup fires at **≈2026-11-20T03:10:40Z** carrying the v24 trigger (id `wku_1f6361ed900192c9X0qXkazioN`). Do not add another and do not tight-poll.
 - Verify with `cancel_wakeup list` rather than trusting a stale id.
 
 ## Cheap check (only thing to run if not yet due)
@@ -19,7 +19,7 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3119), priority order
+## Objective (activation 3120), priority order
 - **(a) Frontier advance v24 — ranks 601–625** — ONLY if now ≥ ≈2026-11-20T03:10:50Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
   - Record total items and ranked items (v23: 62,730 total / 10,958 ranked (rank ≥ 1); always record the observed value; a ranked-count change is a documented source-coverage event).
@@ -52,12 +52,12 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3118, 2026-11-19T23:47:07Z)
-- Clock: 23:47:07Z < 03:10:50Z → v24 NOT actionable (NO-OP).
+## Verified baseline (activation 3119, 2026-11-19T23:48:06Z)
+- Clock: 23:48:06Z < 03:10:50Z → v24 NOT actionable (NO-OP).
 - State: config `753d9357…`; `git status --short --untracked-files=all` → empty; `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…` / v23 `62a5878e…`).
 - Frontier v23: `research_state/universe_frontier_advance_v23.json`; cursor `discovered_id_count` 557, `top_rank_covered` 600, next batch 601–625, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `ea2997abccbd8fc8741637dea810275ba96caff587512ece7e64731d5f3e72f2`, 62,730 total / 10,958 ranked (rank ≥ 1).
 - Tests: **18 passed** at activation 3116 (HEAD); grid manifest 324 cells / `config_sha256 55caedf8…`.
-- Wakeup: scheduled for ≈2026-11-20T03:10:40Z carrying the v24 trigger (id `wku_1f63519b4001HBBqTybgpVRgmK`).
+- Wakeup: scheduled for ≈2026-11-20T03:10:40Z carrying the v24 trigger (id `wku_1f6361ed900192c9X0qXkazioN`).
 
 ## Known open blockers
 Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 600 (no tight polling; cooldown until ≈2026-11-20T03:10:50Z).
