@@ -1,3 +1,12 @@
+## Activation 3136 (completed, 2026-11-20T13:04:15Z) — FRONTIER ADVANCE v25 (ranks 626–650; 22 net-new; cursor 578→600; integrity gate green)
+
+- **Task source:** durable handoff activation 3135 objective and `research_state/agent_task_message.md` (activation 3136), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.
+- **Clock gate checked first (MET):** current UTC 2026-11-20T13:04:15Z ≥ v25 cooldown deadline ≈2026-11-20T07:47:40Z (v24 retrieval 2026-11-20T04:17:40Z; cooldown ≈3.5 h). Frontier advance v25 (ranks 626–650) actionable — not tight polling.
+- **Frontier advance v25 (delivered):** `research_state/universe_frontier_advance_v25.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V25`, content sha256 `89fe8c826f9dfcc40098a4ec913a4d0e5bed410346af60b0e8bcc643ceae16c7`, raw-bytes sha256 `89fe8c826f9dfcc40098a4ec913a4d0e5bed410346af60b0e8bcc643ceae16c7`). Fresh CoinPaprika `/v1/coins` retrieval at 2026-11-20T13:04:15Z, response_sha256 `fa1b19546e1a683942252ea6e2175a1407e375f3a81d998087badf8f0d4c7038`-class (recomputed), 62,736 total / 11,408 ranked (rank ≥ 1). Rank window 626–650 = 25 items → 22 net-new, 3 duplicates skipped (holo-holoworld-ai@626, fartboy-fartboy@631, b2-bsquared-network@639), 1 symbol collision (EDGE: edge-definitive@638 vs existing edge-edgex). Cursor → discovered_id_count 600, top_rank_covered 650, next batch 651–675, rank_frontier_exhausted false. Status = rank_unverified_discovery_only.
+- **Integrity checks:** grid manifest 324 cells / config_sha256 55caedf8…; git diff --check clean; pytest 18 passed.
+- **Invariants preserved:** exclusions n=336; integrated 5,010 rows / 5,346 basis obs; anchor p-values unchanged; EBCR-H001 tested_not_supported; next_hypothesis_sequence 5.
+- **Outcome:** frontier advanced v24→v25. v26 (ranks 651–675) actionable ≈2026-11-20T16:34:15Z (v25 retrieval + ≈3.5h). Do not tight-poll before then.
+
 ## Activation 3134 (completed, 2026-11-20T04:38:22Z) — NO-OP (clock gate NOT met; v25 due ≈2026-11-20T07:47:40Z; state unchanged)
 
 - **Task source:** durable handoff activation 3133 objective and `research_state/agent_task_message.md` (activation 3134), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.
