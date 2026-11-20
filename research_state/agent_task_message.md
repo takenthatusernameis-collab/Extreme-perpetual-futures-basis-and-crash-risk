@@ -1,15 +1,15 @@
-# Agent task message (EBCR-001) — activation 3122 (written end of activation 3121)
+# Agent task message (EBCR-001) — activation 3124 (written end of activation 3123)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3121 (NO-OP, clock gate not met for v24) and activation 3120 (NO-OP) and activation 3116 (frontier advance v23, cursor 557 / rank 600).
+- `research_state/agent_handoff.md` — activation 3123 (frontier advance v24, ranks 601–625, cursor 557→578, top_rank_covered 625) and activation 3122 (NO-OP).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
 ## Clock gate — CHECK FIRST, THEN STOP IF NOT MET
-- Last frontier retrieval/creation: **v23 at 2026-11-19T23:40:50Z** (artifact `created_at_utc`). Cooldown convention ≈**3.5 h**.
-- **Frontier advance v24 (ranks 601–625) is NOT actionable before ≈2026-11-20T03:10:50Z.**
-- If `date -u` is **before** 2026-11-20T03:10:50Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
-- A wakeup fires at **≈2026-11-20T03:10:40Z** carrying the v24 trigger (id `wku_1f63a32040014PF1OqyWuIPFFB`). Do not add another and do not tight-poll.
+- Last frontier retrieval/creation: **v24 at 2026-11-20T04:17:40Z** (artifact `created_at_utc` / `source.retrieved_at_utc`). Cooldown convention ≈**3.5 h**.
+- **Frontier advance v25 (ranks 626–650) is NOT actionable before ≈2026-11-20T07:47:40Z.**
+- If `date -u` is **before** 2026-11-20T07:47:40Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
+- A wakeup fires at **≈2026-11-20T07:48:23Z** carrying the v25 trigger (id `wku_1f72d4b73001VuBjxU57LCmuRI`). Do not add another and do not tight-poll.
 - Verify with `cancel_wakeup list` rather than trusting a stale id.
 
 ## Cheap check (only thing to run if not yet due)
@@ -19,20 +19,20 @@ sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e2
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
 ```
 
-## Objective (activation 3122), priority order
-- **(a) Frontier advance v24 — ranks 601–625** — ONLY if now ≥ ≈2026-11-20T03:10:50Z. Procedure:
+## Objective (activation 3124), priority order
+- **(a) Frontier advance v25 — ranks 626–650** — ONLY if now ≥ ≈2026-11-20T07:47:40Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
-  - Record total items and ranked items (v23: 62,730 total / 10,958 ranked (rank ≥ 1); always record the observed value; a ranked-count change is a documented source-coverage event).
-  - Dedup the rank 601–625 window against the 557 known ids (reconstruct the v1–v23 observed-id union; skip current-rank duplicates and log symbol collisions separately).
-  - Write `research_state/universe_frontier_advance_v24.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V24`, status `rank_unverified_discovery_only`. Match the v23 artifact key layout: `artifact_id`, `schema_version`, `program_id`, `created_at_utc`, `task_activation`, `purpose`, `prior_artifact`, `source`, `frontier_state`, `discovery_method`, `candidates_discovered_delta`, `duplicates_skipped`, `symbol_collisions`, `cursor`, `notes`.
-  - Cursor → `discovered_id_count`, `top_rank_covered` 625, next batch 626–650, `rank_frontier_exhausted` false unless the window is short.
-  - No frozen edits. Record **both** hashes externally in the handoff (content sha256 = `json.dumps(d, sort_keys=False, separators=(",", ":"))`; raw-bytes sha256 = sha256 of the written file bytes). Do **not** store self-referential hash fields inside the artifact (matching v18–v23).
+  - Record total items and ranked items (v24: 62,730 total / 11,087 ranked (rank ≥ 1); always record the observed value; a ranked-count change is a documented source-coverage event).
+  - Dedup the rank 626–650 window against the 578 known ids (reconstruct the v1–v24 observed-id union; skip current-rank duplicates and log symbol collisions separately).
+  - Write `research_state/universe_frontier_advance_v25.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V25`, status `rank_unverified_discovery_only`. Match the v24 artifact key layout: `artifact_id`, `schema_version`, `program_id`, `created_at_utc`, `task_activation`, `purpose`, `prior_artifact`, `source`, `frontier_state`, `discovery_method`, `candidates_discovered_delta`, `duplicates_skipped`, `symbol_collisions`, `cursor`.
+  - Cursor → `discovered_id_count`, `top_rank_covered` 650, next batch 651–675, `rank_frontier_exhausted` false unless the window is short.
+  - No frozen edits. Record **both** hashes externally in the handoff (content sha256 = `json.dumps(d, sort_keys=False, separators=(",", ":"))`; raw-bytes sha256 = sha256 of the written file bytes). Do **not** store self-referential hash fields inside the artifact (matching v18–v24).
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
 
 ## Do NOT re-run completed work
-Frontier advances v1–v23; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes.
-The repository test gate is verified as of activation 3116 (18 passed at HEAD); re-run it only when code/test/config changes, not on every activation.
+Frontier advances v1–v24; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes.
+The repository test gate is verified as of activation 3123 (18 passed at HEAD); re-run it only when code/test/config changes, not on every activation.
 
 ## Blocked without stated precondition
 - EBCR-H002/H003: needs new experiment ID, independent preregistered rationale, NEW anchor/config.
@@ -52,15 +52,15 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3121, 2026-11-19T23:52:10Z)
-- Clock: 23:52:10Z < 03:10:50Z → v24 NOT actionable (NO-OP).
-- State: config `753d9357…`; `git status --short --untracked-files=all` → empty; `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…` / v23 `62a5878e…`).
-- Frontier v23: `research_state/universe_frontier_advance_v23.json`; cursor `discovered_id_count` 557, `top_rank_covered` 600, next batch 601–625, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `ea2997abccbd8fc8741637dea810275ba96caff587512ece7e64731d5f3e72f2`, 62,730 total / 10,958 ranked (rank ≥ 1).
-- Tests: **18 passed** at activation 3116 (HEAD); grid manifest 324 cells / `config_sha256 55caedf8…`.
-- Wakeup: scheduled for ≈2026-11-20T03:10:40Z carrying the v24 trigger (id `wku_1f63a32040014PF1OqyWuIPFFB`).
+## Verified baseline (activation 3123, 2026-11-20T04:17:40Z)
+- Clock: 04:16:47Z ≥ 03:10:50Z → v24 gate was MET (frontier advance v24 completed).
+- State: config `753d9357…`; `git status --short --untracked-files=all` → only new `universe_frontier_advance_v24.json` (`.venv` gitignored); `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…` / v24 `33af01f2…`).
+- Frontier v24: `research_state/universe_frontier_advance_v24.json`; cursor `discovered_id_count` 578, `top_rank_covered` 625, next batch 626–650, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `fa1b19546e1a683942252ea6e2175a1407e375f3a81d998087badf8f0d4c7038`, 62,730 total / 11,087 ranked (rank ≥ 1).
+- Tests: **18 passed** at activation 3123 (HEAD); grid manifest 324 cells / `config_sha256 55caedf8…`.
+- Wakeup: scheduled for ≈2026-11-20T07:48:23Z carrying the v25 trigger (id `wku_1f72d4b73001VuBjxU57LCmuRI`).
 
 ## Known open blockers
-Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 600 (no tight polling; cooldown until ≈2026-11-20T03:10:50Z).
+Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 625 (no tight polling; cooldown until ≈2026-11-20T07:47:40Z).
 
 ## Reporting
 Report only verified findings. Do not commit unless explicitly asked.
