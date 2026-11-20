@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3125 (written end of activation 3124)
+# Agent task message (EBCR-001) — activation 3126 (written end of activation 3125)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3124 (NO-OP; clock gate not met) and activation 3123 (frontier advance v24, ranks 601–625, cursor 557→578, top_rank_covered 625).
+- `research_state/agent_handoff.md` — activation 3125 (NO-OP; clock gate not met) and activation 3124 (NO-OP; clock gate not met); last research state-change was activation 3123 (frontier advance v24, ranks 601–625, cursor 557→578, top_rank_covered 625).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -9,7 +9,7 @@
 - Last frontier retrieval/creation: **v24 at 2026-11-20T04:17:40Z** (artifact `created_at_utc` / `source.retrieved_at_utc`). Cooldown convention ≈**3.5 h**.
 - **Frontier advance v25 (ranks 626–650) is NOT actionable before ≈2026-11-20T07:47:40Z.**
 - If `date -u` is **before** 2026-11-20T07:47:40Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
-- A wakeup fires at **≈2026-11-20T07:48:23Z** carrying the v25 trigger (id `wku_1f73149a0001Yz6dzNLNUrfNIP`). Do not add another and do not tight-poll.
+- A wakeup fires at **≈2026-11-20T07:48:23Z** carrying the v25 trigger (id `wku_1f7322d0e001Sq4W2w9EWlw5U2`). Do not add another and do not tight-poll.
 - Verify with `cancel_wakeup list` rather than trusting a stale id.
 
 ## Cheap check (only thing to run if not yet due)
@@ -17,9 +17,10 @@
 date -u +%Y-%m-%dT%H:%M:%SZ
 sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16
 git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
+git diff --check                             # expect exit 0
 ```
 
-## Objective (activation 3125), priority order
+## Objective (activation 3126), priority order
 - **(a) Frontier advance v25 — ranks 626–650** — ONLY if now ≥ ≈2026-11-20T07:47:40Z. Procedure:
   - Fresh public CoinPaprika `/v1/coins` retrieval; record retrieval UTC timestamp and `response_sha256`.
   - Record total items and ranked items (v24: 62,730 total / 11,087 ranked (rank ≥ 1); always record the observed value; a ranked-count change is a documented source-coverage event).
@@ -52,12 +53,12 @@ git diff --check
 # validate any changed JSON/JSONL/YAML and its schema
 ```
 
-## Verified baseline (activation 3124, 2026-11-20T04:22:36Z)
-- Clock: 04:22:36Z < 07:47:40Z → v25 gate NOT met (NO-OP).
+## Verified baseline (activation 3125, 2026-11-20T04:23:26Z)
+- Clock: 04:23:26Z < 07:47:40Z → v25 gate NOT met (NO-OP).
 - State: config `753d9357…`; `git status --short --untracked-files=all` → empty; `git diff --check` exit 0; frozen hashes unchanged (frontier `e8826caf…` / registry `d5b299bf…` / v24 `33af01f2…`).
 - Frontier v24: `research_state/universe_frontier_advance_v24.json`; cursor `discovered_id_count` 578, `top_rank_covered` 625, next batch 626–650, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, `response_sha256` `fa1b19546e1a683942252ea6e2175a1407e375f3a81d998087badf8f0d4c7038`, 62,730 total / 11,087 ranked (rank ≥ 1).
 - Tests: **18 passed** at activation 3123 (HEAD); grid manifest 324 cells / `config_sha256 55caedf8…`.
-- Wakeup: scheduled for ≈2026-11-20T07:48:23Z carrying the v25 trigger (id `wku_1f73149a0001Yz6dzNLNUrfNIP`).
+- Wakeup: scheduled for ≈2026-11-20T07:48:23Z carrying the v25 trigger (id `wku_1f7322d0e001Sq4W2w9EWlw5U2`).
 
 ## Known open blockers
 Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 625 (no tight polling; cooldown until ≈2026-11-20T07:47:40Z).
