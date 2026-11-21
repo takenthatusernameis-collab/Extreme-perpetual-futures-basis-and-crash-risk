@@ -1,3 +1,11 @@
+## Activation 3170 (completed, 2026-11-21T16:57:05Z) — FRONTIER ADVANCE v28 (ranks 701–725; 24 net-new; cursor 638→662; integrity gate green)
+
+- **Task source:** durable handoff activation 3169 objective and `research_state/agent_task_message.md` (activation 3170), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.
+- **Clock gate checked first (MET):** current UTC 2026-11-21T16:57:05Z ≥ v28 cooldown deadline ≈2026-11-21T13:11:13Z (v27 retrieval 2026-11-21T09:41:13Z; cooldown ≈3.5 h). Frontier advance v28 (ranks 701–725) actionable — not tight polling.
+- **Frontier advance v28 (delivered):** `research_state/universe_frontier_advance_v28.json` (artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V28`, content sha256 `3070b369eb23789e89af6e8e2bddbc63248f8767577672946d6c54544b4c8d7f`). Fresh CoinPaprika `/v1/coins` retrieval at 2026-11-21T16:57:05Z, response_sha256 `02aa513c4b0489f29e1ad999cde6fc9136febbe4418e81ecac2c8d723e7f7aea`, 62,744 total / 13,032 ranked (rank ≥ 1). Rank window 701–725 = 25 items → 24 net-new, 1 duplicate skipped, 0 symbol collisions. Cursor → discovered_id_count 662, top_rank_covered 725, next batch 726–750, rank_frontier_exhausted false. Status = rank_unverified_discovery_only.
+- **Invariants preserved:** exclusions n=336; integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values unchanged; PIT rank CLOSED; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5.
+- **Outcome:** frontier advanced v27→v28. v29 (ranks 726–750) actionable ≈2026-11-21T20:27:05Z (v28 retrieval + ≈3.5h). Do not tight-poll before then.
+
 ## Activation 3169 (completed, 2026-11-21T10:00:09Z) — NO-OP (clock gate NOT met; v28 due ≈2026-11-21T13:11:13Z; state unchanged)
 
 - **Task source:** durable handoff activation 3168 objective and `research_state/agent_task_message.md` (activation 3169), executed at explicit operator request to complete the prior task, update the handoff and write the next task message.
