@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3186 (written end of activation 3185)
+# Agent task message (EBCR-001) — activation 3187 (written end of activation 3186)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3185 (NO-OP; v30 due ≈2026-11-22T01:32:29Z).
+- `research_state/agent_handoff.md` — activation 3186 (NO-OP; v30 due ≈2026-11-22T01:32:29Z).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -44,7 +44,7 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3185, 2026-11-21T22:04:22Z)
+## Verified baseline (activation 3186, 2026-11-21T22:05:05Z)
 - Clock: v29 delivered; v30 gate ≈2026-11-22T01:32:29Z.
 - State: config `753d9357…`; git status clean; git diff --check exit 0; frozen hash (frontier v29 `bf50ec99…`); v30 absent (expected).
 - Frontier v29: `research_state/universe_frontier_advance_v29.json`; cursor `discovered_id_count` 686, `top_rank_covered` 750, next batch 751–775, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 12,527 ranked (rank ≥ 1).
