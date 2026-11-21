@@ -1,0 +1,198 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V29",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-21T22:02:29.000Z",
+  "task_activation": 3183,
+  "purpose": "Advance rank frontier discovery batch (ranks 726-750) after documented cooldown since v28 (v28 retrieval 2026-11-21T16:57:05Z; cooldown deadline ~2026-11-21T20:27:05Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v28.json",
+    "sha256_raw_bytes": "3070b369eb23789e89af6e8e2bddbc63248f8767577672946d6c54544b4c8d7f",
+    "sha256_compact_content": "3070b369eb23789e89af6e8e2bddbc63248f8767577672946d6c54544b4c8d7f",
+    "discovered_id_count_v28": 662,
+    "top_rank_covered_v28": 725,
+    "next_batch_start_rank_v28": 726
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-21T22:02:29.000Z",
+    "response_sha256": "1ce83d7be74b4385867812eb9958014a08e89190266731e36bb5c99323124dc2",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 12527,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field but the response is not pre-sorted by rank; items were sorted by `rank` before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3183, past the ~3.5h cooldown since v28 retrieval at 2026-11-21T16:57:05Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      726,
+      750
+    ],
+    "known_ids_before_dedup": 662,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v28 observed-id union = 662 known ids. Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "mnde-marinade",
+      "rank": 726,
+      "name": "Marinade",
+      "symbol": "MNDE"
+    },
+    {
+      "id": "aixbt-aixbt-by-virtuals",
+      "rank": 727,
+      "name": "aixbt by Virtuals",
+      "symbol": "AIXBT"
+    },
+    {
+      "id": "cati-catizen",
+      "rank": 728,
+      "name": "Catizen",
+      "symbol": "CATI"
+    },
+    {
+      "id": "movr-moonriver",
+      "rank": 730,
+      "name": "Moonriver",
+      "symbol": "MOVR"
+    },
+    {
+      "id": "money-defimoney",
+      "rank": 731,
+      "name": "Defi.money",
+      "symbol": "MONEY"
+    },
+    {
+      "id": "debit-teller",
+      "rank": 732,
+      "name": "Teller",
+      "symbol": "DEBIT"
+    },
+    {
+      "id": "power-power-protocol",
+      "rank": 733,
+      "name": "Power Protocol",
+      "symbol": "POWER"
+    },
+    {
+      "id": "usat",
+      "rank": 734,
+      "name": "USAT",
+      "symbol": "USAT"
+    },
+    {
+      "id": "bico-biconomy",
+      "rank": 735,
+      "name": "Biconomy",
+      "symbol": "BICO"
+    },
+    {
+      "id": "kysol-kyros-restaked-sol",
+      "rank": 736,
+      "name": "Kyros Restaked SOL",
+      "symbol": "KYSOL"
+    },
+    {
+      "id": "mbl-moviebloc",
+      "rank": 737,
+      "name": "MovieBloc",
+      "symbol": "MBL"
+    },
+    {
+      "id": "pmt-public-meme-token",
+      "rank": 738,
+      "name": "Public Meme Token",
+      "symbol": "PMT"
+    },
+    {
+      "id": "lqr-laqira-protocol",
+      "rank": 739,
+      "name": "Laqira Protocol",
+      "symbol": "LQR"
+    },
+    {
+      "id": "lever-leverfi",
+      "rank": 740,
+      "name": "LeverFi",
+      "symbol": "LEVER"
+    },
+    {
+      "id": "kled-kledai",
+      "rank": 741,
+      "name": "KLEDAI",
+      "symbol": "KLED"
+    },
+    {
+      "id": "ygg-yield-guild-games",
+      "rank": 742,
+      "name": "Yield Guild Games",
+      "symbol": "YGG"
+    },
+    {
+      "id": "bone-bone-shibaswap",
+      "rank": 743,
+      "name": "Bone ShibaSwap",
+      "symbol": "BONE"
+    },
+    {
+      "id": "enso-enso",
+      "rank": 744,
+      "name": "Enso",
+      "symbol": "ENSO"
+    },
+    {
+      "id": "keep-keep-network",
+      "rank": 745,
+      "name": "Keep Network",
+      "symbol": "KEEP"
+    },
+    {
+      "id": "bill-billions-network",
+      "rank": 746,
+      "name": "Billions Network",
+      "symbol": "BILL"
+    },
+    {
+      "id": "zent-zentry",
+      "rank": 747,
+      "name": "Zentry",
+      "symbol": "ZENT"
+    },
+    {
+      "id": "vine-vine-coin",
+      "rank": 748,
+      "name": "Vine Coin",
+      "symbol": "VINE"
+    },
+    {
+      "id": "xbt-xbit-coin",
+      "rank": 749,
+      "name": "XBIT Coin",
+      "symbol": "XBT"
+    },
+    {
+      "id": "hmstr-hamster-kombat",
+      "rank": 750,
+      "name": "Hamster Kombat",
+      "symbol": "HMSTR"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "aic1-ai-companions",
+      "rank": 729,
+      "symbol": "AIC"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 686,
+    "top_rank_covered": 750,
+    "next_batch_start_rank": 751,
+    "next_batch_end_rank": 775,
+    "rank_frontier_exhausted": false
+  }
+}

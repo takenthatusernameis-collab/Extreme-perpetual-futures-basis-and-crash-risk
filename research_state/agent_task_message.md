@@ -1,14 +1,14 @@
-# Agent task message (EBCR-001) — activation 3183 (written end of activation 3182)
+# Agent task message (EBCR-001) — activation 3184 (written end of activation 3183)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3182 (NO-OP; v29 due ≈2026-11-21T20:27:05Z).
+- `research_state/agent_handoff.md` — activation 3183 (frontier advance v29 delivered; v30 due ≈2026-11-22T01:32:29Z).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
 ## Clock gate — CHECK FIRST, THEN STOP IF NOT MET
-- Last frontier retrieval/creation: **v28 at 2026-11-21T16:57:05Z**. Cooldown convention ≈**3.5 h**.
-- **Frontier advance v29 (ranks 726–750) is NOT actionable before ≈2026-11-21T20:27:05Z.**
-- If `date -u` is **before** 2026-11-21T20:27:05Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
+- Last frontier retrieval/creation: **v29 at 2026-11-21T22:02:29Z**. Cooldown convention ≈**3.5 h**.
+- **Frontier advance v30 (ranks 751–775) is NOT actionable before ≈2026-11-22T01:32:29Z.**
+- If `date -u` is **before** 2026-11-22T01:32:29Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff rewrite beyond a single short record if the operator explicitly asks, no commit.
 - Do not tight-poll.
 
 ## Cheap check (only thing to run if not yet due)
@@ -19,13 +19,13 @@ git status --short --untracked-files=all     # expect empty (or only expected ne
 git diff --check                             # expect exit 0
 ```
 
-## Objective (activation 3183), priority order
-- **(a) Frontier advance v29 — ranks 726–750** — ONLY if now ≥ ≈2026-11-21T20:27:05Z. Follow the v28 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the 662 known ids, write `research_state/universe_frontier_advance_v29.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V29`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 750, next batch 751–775. Record both hashes externally in the handoff; do not store self-referential hash fields.
+## Objective (activation 3184), priority order
+- **(a) Frontier advance v30 — ranks 751–775** — ONLY if now ≥ ≈2026-11-22T01:32:29Z. Follow the v28/v29 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the 686 known ids (reconstructed v1-v29 observed-id union), write `research_state/universe_frontier_advance_v30.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V30`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 775, next batch 776–800. Record both hashes externally in the handoff; do not store self-referential hash fields.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
 
 ## Do NOT re-run completed work
-Frontier advances v1–v28; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at HEAD; re-run only when code/test/config changes.
+Frontier advances v1–v29; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at HEAD; re-run only when code/test/config changes.
 
 ## Blocked without stated precondition
 - EBCR-H002/H003: needs new experiment ID, independent preregistered rationale, NEW anchor/config.
@@ -44,14 +44,14 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3182, 2026-11-21T17:14:09Z)
-- Clock: v28 delivered; v29 gate ≈2026-11-21T20:27:05Z (~3.22 h remaining at activation 3182).
-- State: config `753d9357…`; git status clean; git diff --check exit 0; frozen hash (frontier v28 `3070b369…`); v29 absent (expected).
-- Frontier v28: `research_state/universe_frontier_advance_v28.json`; cursor `discovered_id_count` 662, `top_rank_covered` 725, next batch 726–750, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 13,032 ranked (rank ≥ 1).
-- Tests: **18 passed** at HEAD (activation 3156); grid manifest 324 cells / `config_sha256 55caedf8…`.
+## Verified baseline (activation 3183, 2026-11-21T22:02:29Z)
+- Clock: v29 delivered; v30 gate ≈2026-11-22T01:32:29Z.
+- State: config `753d9357…`; git status clean except new v29 artifact; git diff --check exit 0; frozen hash (frontier v29 `bf50ec99…`); v30 absent (expected).
+- Frontier v29: `research_state/universe_frontier_advance_v29.json`; cursor `discovered_id_count` 686, `top_rank_covered` 750, next batch 751–775, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 12,527 ranked (rank ≥ 1).
+- Tests: **18 passed** at HEAD (activation 3156); grid manifest 324 cells / `config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
 
 ## Known open blockers
-Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 725 (no tight polling; cooldown until ≈2026-11-21T20:27:05Z).
+Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 750 (no tight polling; cooldown until ≈2026-11-22T01:32:29Z).
 
 ## Reporting
 Report only verified findings. Do not commit unless explicitly asked.
