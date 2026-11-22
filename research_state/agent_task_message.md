@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3208 (written end of activation 3207)
+# Agent task message (EBCR-001) — activation 3209 (written end of activation 3208)
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3207 (frontier advance v31 delivered; frontier advance v30→v31; v32 due ≈2026-11-22T13:11:47Z).
+- `research_state/agent_handoff.md` — activation 3208 (NO-OP; clock gate not met; frontier advance v30→v31 already delivered at activation 3207; v32 due ≈2026-11-22T13:11:47Z).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -15,17 +15,17 @@
 ```bash
 date -u +%Y-%m-%dT%H:%M:%SZ
 sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16
-git status --short --untracked-files=all     # expect empty (or only expected new artifacts)
+git status --short --untracked-files=all     # expect empty (v31 is tracked/committed at HEAD 7bc39d7f)
 git diff --check                             # expect exit 0
 ```
 
-## Objective (activation 3208), priority order
+## Objective (activation 3209), priority order
 - **(a) Frontier advance v32 — ranks 801–825** — ONLY if now ≥ ≈2026-11-22T13:11:47Z. Follow the v28/v29/v30/v31 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the 734 known ids (reconstructed v1-v31 observed-id union), write `research_state/universe_frontier_advance_v32.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V32`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 825, next batch 826–850. Record both hashes externally in the handoff; do not store self-referential hash fields.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
 
 ## Do NOT re-run completed work
-Frontier advances v1–v31; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at HEAD; re-run only when code/test/config changes.
+Frontier advances v1–v31; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at HEAD (activation 3207); re-run only when code/test/config changes.
 
 ## Blocked without stated precondition
 - EBCR-H002/H003: needs new experiment ID, independent preregistered rationale, NEW anchor/config.
@@ -44,9 +44,9 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3207, 2026-11-22T09:41:47Z)
-- Clock: v31 delivered; v32 gate ≈2026-11-22T13:11:47Z.
-- State: config `753d9357…`; git status clean (only new frontier artifact untracked); git diff --check exit 0; frozen hash (frontier v31 `608a2cfebc05575fed9c5cbe897b20ef3e45fc1d6fbb833107fda27677550f09`); v32 absent (expected).
+## Verified baseline (activation 3208, 2026-11-22T09:43:17Z)
+- Clock: v31 delivered (activation 3207); v32 gate ≈2026-11-22T13:11:47Z.
+- State: config `753d9357…`; git status clean (frontier v31 tracked/committed at HEAD `7bc39d7f`); git diff --check exit 0; frozen hash (frontier v31 `608a2cfebc05575fed9c5cbe897b20ef3e45fc1d6fbb833107fda27677550f09`); v32 absent (expected).
 - Frontier v31: `research_state/universe_frontier_advance_v31.json`; cursor `discovered_id_count` 734, `top_rank_covered` 800, next batch 801–825, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 62,744 ranked (rank ≥ 1).
 - Tests: **18 passed** at HEAD (activation 3207); grid manifest 324 cells / `config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
 
