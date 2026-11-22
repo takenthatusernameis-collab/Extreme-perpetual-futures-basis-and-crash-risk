@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V30",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-22T02:04:19.000Z",
+  "task_activation": 3197,
+  "purpose": "Advance rank frontier discovery batch (ranks 751-775) after documented cooldown since v29 (v29 retrieval 2026-11-21T22:02:29Z; cooldown deadline ~2026-11-22T01:32:29Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "research_state/universe_frontier_advance_v29.json",
+    "sha256_raw_bytes": "1ce83d7be74b4385867812eb9958014a08e89190266731e36bb5c99323124dc2",
+    "sha256_compact_content": "1ce83d7be74b4385867812eb9958014a08e89190266731e36bb5c99323124dc2",
+    "discovered_id_count_v29": 686,
+    "top_rank_covered_v29": 750,
+    "next_batch_start_rank_v29": 751
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-22T02:04:19.000Z",
+    "response_sha256": "e5eccbb34d6c5527cac5c08ca03379787e5e71f25cd846726b6a33f76e5ba873",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 12268,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field but the response is not pre-sorted by rank; items were sorted by `rank` before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3197, past the ~3.5h cooldown since v29 retrieval at 2026-11-21T22:02:29Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      751,
+      775
+    ],
+    "known_ids_before_dedup": 686,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v29 observed-id union = 686 known ids (25-id universe_frontier.json master frontier plus all v1-v29 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "chex-chex-token",
+      "rank": 751,
+      "name": "CHEX Token",
+      "symbol": "CHEX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "core-core-dao",
+      "rank": 752,
+      "name": "Core DAO",
+      "symbol": "CORE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pokt-pocket-network",
+      "rank": 753,
+      "name": "Pocket Network",
+      "symbol": "POKT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bitcoin-harrypotterobamasonic10inu-eth",
+      "rank": 754,
+      "name": "HarryPotterObamaSonic10Inu (ETH)",
+      "symbol": "BITCOIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "c-chainbase",
+      "rank": 755,
+      "name": "Chainbase",
+      "symbol": "C",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tst-test",
+      "rank": 756,
+      "name": "Test",
+      "symbol": "TST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "inc-incentive",
+      "rank": 758,
+      "name": "Incentive",
+      "symbol": "INC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spell-spell-token",
+      "rank": 760,
+      "name": "Spell Token",
+      "symbol": "SPELL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "griffain-test-griffaincom",
+      "rank": 761,
+      "name": "Griffain",
+      "symbol": "GRIFFAIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "trust-intuition",
+      "rank": 762,
+      "name": "Intuition",
+      "symbol": "TRUST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cyber-cyberconnect",
+      "rank": 763,
+      "name": "CyberConnect",
+      "symbol": "CYBER",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zkp-panther-protocol",
+      "rank": 764,
+      "name": "Panther Protocol",
+      "symbol": "ZKP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cyc-cycle-network",
+      "rank": 765,
+      "name": "Cycle Network",
+      "symbol": "CYC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hunt-hunt",
+      "rank": 766,
+      "name": "HUNT",
+      "symbol": "HUNT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "layer-solayer",
+      "rank": 767,
+      "name": "Solayer",
+      "symbol": "LAYER",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "agi-delysium",
+      "rank": 768,
+      "name": "Delysium",
+      "symbol": "AGI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "swftc-swftcoin",
+      "rank": 769,
+      "name": "SwftCoin",
+      "symbol": "SWFTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mia3-mia",
+      "rank": 770,
+      "name": "MIA",
+      "symbol": "MIA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wet-humidifi",
+      "rank": 771,
+      "name": "HumidiFi",
+      "symbol": "WET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "based-based",
+      "rank": 772,
+      "name": "Based",
+      "symbol": "BASED",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "c98-coin98",
+      "rank": 773,
+      "name": "Coin98",
+      "symbol": "C98",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "elon-dogelon-mars",
+      "rank": 774,
+      "name": "Dogelon Mars",
+      "symbol": "ELON",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mbg-mbg-by-multibank-group",
+      "rank": 775,
+      "name": "MBG By Multibank Group",
+      "symbol": "$MBG",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "hmstr-hamster-kombat",
+      "rank": 757,
+      "symbol": "HMSTR",
+      "reason": "already_discovered_in_v1_v29_union"
+    },
+    {
+      "id": "vine-vine-coin",
+      "rank": 759,
+      "symbol": "VINE",
+      "reason": "already_discovered_in_v1_v29_union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 709,
+    "top_rank_covered": 775,
+    "next_batch_start_rank": 776,
+    "next_batch_end_rank": 800,
+    "rank_frontier_exhausted": false
+  }
+}
