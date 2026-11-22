@@ -1,0 +1,223 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V31",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-22T09:41:47.000Z",
+  "task_activation": 3207,
+  "purpose": "Advance rank frontier discovery batch (ranks 776-800) after documented cooldown since v30 (v30 retrieval 2026-11-22T02:04:19Z; cooldown deadline ~2026-11-22T05:34:19Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v30.json",
+    "sha256_raw_bytes": "245e2c19eb4d60b0e54f77242e4029ca5e97b60b77463c3ab80bb160e91ba6b2",
+    "sha256_compact_content": "245e2c19eb4d60b0e54f77242e4029ca5e97b60b77463c3ab80bb160e91ba6b2",
+    "discovered_id_count_v30": 709,
+    "top_rank_covered_v30": 775,
+    "next_batch_start_rank_v30": 776
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-22T09:41:47.000Z",
+    "response_sha256": "3d30b68b8d6906dff1d53e5ff3760fbb41806626896156c83218db158159b20f",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 62744,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer `rank` field but the response is not pre-sorted by rank; items were sorted by `rank` before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3207, past the ~3.5h cooldown since v30 retrieval at 2026-11-22T02:04:19Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      776,
+      800
+    ],
+    "known_ids_before_dedup": 709,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 25,
+    "duplicates_skipped_count": 0,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v30 observed-id union = 709 known ids (25-id universe_frontier.json master frontier plus all v1-v30 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "pixel-pixels",
+      "rank": 776,
+      "name": "Pixels",
+      "symbol": "PIXEL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "caw-a-hunters-dream",
+      "rank": 777,
+      "name": "A Hunters Dream",
+      "symbol": "CAW",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "conx-connex",
+      "rank": 778,
+      "name": "Connex",
+      "symbol": "CONX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bera-berachain",
+      "rank": 779,
+      "name": "Berachain",
+      "symbol": "BERA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "la-lagrange",
+      "rank": 780,
+      "name": "Lagrange",
+      "symbol": "LA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aqua-aquarius",
+      "rank": 781,
+      "name": "Aquarius ",
+      "symbol": "AQUA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wise-wise",
+      "rank": 782,
+      "name": "WISE",
+      "symbol": "WISE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "roll-rollx",
+      "rank": 783,
+      "name": "RollX",
+      "symbol": "ROLL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "stsol-lido-staked-sol",
+      "rank": 784,
+      "name": "Lido Staked SOL",
+      "symbol": "STSOL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "act3-act-i-the-ai-prophecy",
+      "rank": 785,
+      "name": "Act I : The AI Prophecy",
+      "symbol": "ACT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "light-bitlight",
+      "rank": 786,
+      "name": "Bitlight",
+      "symbol": "LIGHT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mgo-mango-network",
+      "rank": 787,
+      "name": "Mango Network",
+      "symbol": "MGO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "orai-oraichain-token",
+      "rank": 788,
+      "name": "Oraichain Token",
+      "symbol": "ORAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mihao-ni-hao-cat",
+      "rank": 789,
+      "name": "ni hao cat",
+      "symbol": "MIHAO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "apx-apollox-token",
+      "rank": 790,
+      "name": "APX",
+      "symbol": "APX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bert-bertram-the-pomeranian",
+      "rank": 791,
+      "name": "Bertram The Pomeranian",
+      "symbol": "BERT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dym-dymension-iou",
+      "rank": 792,
+      "name": "Dymension ",
+      "symbol": "DYM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdq-quantoz-usdq",
+      "rank": 793,
+      "name": "Quantoz USDQ",
+      "symbol": "USDQ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "andy-andy-eth",
+      "rank": 794,
+      "name": "ANDY ETH",
+      "symbol": "ANDY ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cheelee-cheelee",
+      "rank": 795,
+      "name": "Cheelee",
+      "symbol": "CHEEL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "velvet-velvet",
+      "rank": 796,
+      "name": "Velvet",
+      "symbol": "VELVET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hp-hippo-protocol-1",
+      "rank": 797,
+      "name": "Hippo Protocol",
+      "symbol": "HP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "4-4",
+      "rank": 798,
+      "name": "4",
+      "symbol": "4",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "m87-messier",
+      "rank": 799,
+      "name": "MESSIER",
+      "symbol": "M87",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "stbl-stbl",
+      "rank": 800,
+      "name": "STBL",
+      "symbol": "STBL",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 734,
+    "top_rank_covered": 800,
+    "next_batch_start_rank": 801,
+    "next_batch_end_rank": 825,
+    "rank_frontier_exhausted": false
+  }
+}
