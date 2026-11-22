@@ -44,7 +44,7 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3200, 2026-11-22T02:08:53Z)
+## Verified baseline (activation 3200, 2026-11-22T02:12:03Z)
 - Clock: v30 delivered; v31 gate ≈2026-11-22T05:34:19Z.
 - State: config `753d9357…`; git status clean; git diff --check exit 0; frozen hash (frontier v30 `245e2c19eb4d60b0e54f77242e4029ca5e97b60b77463c3ab80bb160e91ba6b2`); v31 absent (expected).
 - Frontier v30: `research_state/universe_frontier_advance_v30.json`; cursor `discovered_id_count` 709, `top_rank_covered` 775, next batch 776–800, `rank_frontier_exhausted = false`; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 12,268 ranked (rank ≥ 1).
