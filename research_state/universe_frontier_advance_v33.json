@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V33",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-22T22:38:24.000Z",
+  "task_activation": 3233,
+  "purpose": "Advance rank frontier discovery batch (ranks 826-850) after documented cooldown since v32 (v32 retrieval 2026-11-22T17:24:04Z; cooldown deadline ~2026-11-22T20:54:04Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v32.json",
+    "sha256_raw_bytes": "95c5c665d1ed0c16d29cbadf1b898f89c7d7084ece78b14953589b300d61528c",
+    "sha256_compact_content": "95c5c665d1ed0c16d29cbadf1b898f89c7d7084ece78b14953589b300d61528c",
+    "discovered_id_count_v32": 758,
+    "top_rank_covered_v32": 825,
+    "next_batch_start_rank_v32": 826
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-22T22:38:24.000Z",
+    "response_sha256": "8da0c793c8c8d5128ea7f934fed2bdf727d7a921af6c7d2c02da9c4af736e7db",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 62744,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3233, past the ~3.5h cooldown since v32 retrieval at 2026-11-22T17:24:04Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      826,
+      850
+    ],
+    "known_ids_before_dedup": 758,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v32 observed-id union = 758 known ids (25-id universe_frontier.json master frontier plus all v1-v32 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "slc-silencio",
+      "rank": 826,
+      "name": "Silencio",
+      "symbol": "SLC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "uai-unifai-network",
+      "rank": 827,
+      "name": "UnifAI Network",
+      "symbol": "UAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kernel-kerneldao",
+      "rank": 829,
+      "name": "KernelDAO",
+      "symbol": "KERNEL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "skr-saakuru-labs",
+      "rank": 830,
+      "name": "Saakuru",
+      "symbol": "SKR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gf-guildfi",
+      "rank": 831,
+      "name": "GuildFi",
+      "symbol": "GF",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "save-save",
+      "rank": 832,
+      "name": "Save",
+      "symbol": "SAVE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "quick-quickswap",
+      "rank": 833,
+      "name": "Quickswap [OLD]",
+      "symbol": "QUICK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gods-gods-unchained",
+      "rank": 834,
+      "name": "Gods Unchained",
+      "symbol": "GODS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "corgiai-corgiai",
+      "rank": 835,
+      "name": "CorgiAI ",
+      "symbol": "CORGIAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ewt-energy-web-token",
+      "rank": 836,
+      "name": "Energy Web Token",
+      "symbol": "EWT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "og-og-fan-token",
+      "rank": 837,
+      "name": "OG Fan Token",
+      "symbol": "OG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aio-olaxbt",
+      "rank": 838,
+      "name": "OlaXBT",
+      "symbol": "AIO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pepecoin-pepecoin",
+      "rank": 839,
+      "name": "pepeCoin",
+      "symbol": "PEPECOIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "order-orderly-network",
+      "rank": 840,
+      "name": "Orderly Network",
+      "symbol": "ORDER",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "serv-openserv",
+      "rank": 841,
+      "name": "OpenServ",
+      "symbol": "SERV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "oxt-orchid-protocol",
+      "rank": 842,
+      "name": "Orchid Protocol",
+      "symbol": "OXT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "chillguy-just-a-chill-guy",
+      "rank": 843,
+      "name": "Just a chill guy",
+      "symbol": "CHILLGUY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "space-spacecoin2",
+      "rank": 844,
+      "name": "Spacecoin",
+      "symbol": "SPACE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bank-lorenzo-protocol",
+      "rank": 845,
+      "name": "Lorenzo Protocol",
+      "symbol": "BANK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "joe-trader-joe",
+      "rank": 846,
+      "name": "LFJ",
+      "symbol": "JOE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ponke-ponke",
+      "rank": 847,
+      "name": "PONKE",
+      "symbol": "PONKE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "front-frontier-token",
+      "rank": 848,
+      "name": "Frontier Token",
+      "symbol": "FRONT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aergo-aergo",
+      "rank": 849,
+      "name": "Aergo",
+      "symbol": "AERGO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "shell-myshell",
+      "rank": 850,
+      "name": "MyShell",
+      "symbol": "SHELL",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "dovu-dovu",
+      "rank": 828,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 782,
+    "top_rank_covered": 850,
+    "next_batch_start_rank": 851,
+    "next_batch_end_rank": 875,
+    "rank_frontier_exhausted": false
+  }
+}
