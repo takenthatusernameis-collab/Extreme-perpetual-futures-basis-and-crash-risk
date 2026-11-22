@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V32",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-22T17:24:04.000Z",
+  "task_activation": 3217,
+  "purpose": "Advance rank frontier discovery batch (ranks 801-825) after documented cooldown since v31 (v31 retrieval 2026-11-22T09:41:47Z; cooldown deadline ~2026-11-22T13:11:47Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v31.json",
+    "sha256_raw_bytes": "608a2cfebc05575fed9c5cbe897b20ef3e45fc1d6fbb833107fda27677550f09",
+    "sha256_compact_content": "608a2cfebc05575fed9c5cbe897b20ef3e45fc1d6fbb833107fda27677550f09",
+    "discovered_id_count_v31": 734,
+    "top_rank_covered_v31": 800,
+    "next_batch_start_rank_v31": 801
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-22T17:24:04.000Z",
+    "response_sha256": "8d6d7dafcb42fe93b26d7d6c42f0d45f395db2c6819d8d1d8f6db7c258c5ee1f",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 62744,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3217, past the ~3.5h cooldown since v31 retrieval at 2026-11-22T09:41:47Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      801,
+      825
+    ],
+    "known_ids_before_dedup": 734,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v31 observed-id union = 734 known ids (25-id universe_frontier.json master frontier plus all v1-v31 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "qqqon-invesco-qqq-tokenized-etf-ondo",
+      "rank": 802,
+      "name": "Invesco QQQ Tokenized ETF (Ondo)",
+      "symbol": "QQQON",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sts-staked-sonic",
+      "rank": 803,
+      "name": "Beets Staked Sonic",
+      "symbol": "STS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wallet-ambire-wallet",
+      "rank": 804,
+      "name": "Ambire Wallet",
+      "symbol": "WALLET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ela-elastos",
+      "rank": 805,
+      "name": "Elastos",
+      "symbol": "ELA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lyx-lukso",
+      "rank": 806,
+      "name": "LUKSO",
+      "symbol": "LYX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hoodx-robinhood-tokenized-stock-xstock",
+      "rank": 807,
+      "name": "Robinhood tokenized stock (xStock)",
+      "symbol": "HOODX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lrc-loopring",
+      "rank": 808,
+      "name": "Loopring",
+      "symbol": "LRC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ali-artificial-liquid-intelligence-token",
+      "rank": 809,
+      "name": "Alethea Artificial Liquid Intelligence Token",
+      "symbol": "ALI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "robo-fabric-protocol",
+      "rank": 810,
+      "name": "Fabric Protocol",
+      "symbol": "ROBO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bal-balancer",
+      "rank": 811,
+      "name": "Balancer",
+      "symbol": "BAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "clv-clover-finance",
+      "rank": 812,
+      "name": "CLV Token",
+      "symbol": "CLV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jobcoin-jobcoin",
+      "rank": 813,
+      "name": "JOBCOIN",
+      "symbol": "JOBCOIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hyper-hyperlane",
+      "rank": 814,
+      "name": "Hyperlane",
+      "symbol": "HYPER",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "prime-echelon-prime",
+      "rank": 815,
+      "name": "Echelon Prime",
+      "symbol": "PRIME",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spcm-spacem-world",
+      "rank": 816,
+      "name": "SPACEM WORLD",
+      "symbol": "SPCM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bay-marina-protocol",
+      "rank": 817,
+      "name": "Marina Protocol",
+      "symbol": "BAY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "iag-iagon",
+      "rank": 818,
+      "name": "Iagon",
+      "symbol": "IAG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "slx-solstice",
+      "rank": 819,
+      "name": "Solstice",
+      "symbol": "SLX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dovu-dovu",
+      "rank": 820,
+      "name": "DOVU",
+      "symbol": "DOVU",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "newt-newton-protocol",
+      "rank": 821,
+      "name": "Newton Protocol",
+      "symbol": "NEWT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gns-gains-network",
+      "rank": 822,
+      "name": "Gains Network",
+      "symbol": "GNS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bigtime-big-time",
+      "rank": 823,
+      "name": "Big Time",
+      "symbol": "BIGTIME",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eden-openeden",
+      "rank": 824,
+      "name": "OpenEden",
+      "symbol": "EDEN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "honey-hivemapper",
+      "rank": 825,
+      "name": "Hivemapper",
+      "symbol": "HONEY",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "hp-hippo-protocol-1",
+      "rank": 801,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 758,
+    "top_rank_covered": 825,
+    "next_batch_start_rank": 826,
+    "next_batch_end_rank": 850,
+    "rank_frontier_exhausted": false
+  }
+}
