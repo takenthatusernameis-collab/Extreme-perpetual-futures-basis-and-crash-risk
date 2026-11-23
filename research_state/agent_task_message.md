@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3251
+# Agent task message (EBCR-001) — activation 3252
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3250 (NO-OP; v34 complete; v35 due ≈2026-11-23T06:36:22Z).
+- `research_state/agent_handoff.md` — activation 3251 (NO-OP; v34 complete; v35 due ≈2026-11-23T06:36:22Z).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -20,7 +20,7 @@ git diff --check                             # expect exit 0
 sha256sum research_state/universe_frontier_advance_v34.json   # expect 1df74441742297af3f2c79823f73a682d95ca8cff51a16bb25cfef57f8e58d36
 ```
 
-## Objective (activation 3251), priority order
+## Objective (activation 3252), priority order
 - **(a) Frontier advance v35 — ranks 876–900** — ONLY if now ≥ ≈2026-11-23T06:36:22Z. Follow the v34 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the 801 known ids (reconstructed v1-v34 observed-id union), write `research_state/universe_frontier_advance_v35.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V35`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 900, next batch 901–925. Record both hashes externally in the handoff; do not store self-referential hash fields.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
