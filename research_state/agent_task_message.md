@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3267
+# Agent task message (EBCR-001) — activation 3268
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3266 (NO-OP; v36 due ≈2026-11-23T15:49:10Z).
+- `research_state/agent_handoff.md` — activation 3267 (NO-OP; v36 due ≈2026-11-23T15:49:10Z).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
