@@ -24,3 +24,13 @@
 - **No deliverable:** no `universe_frontier_advance_v34.json`, no source probe, no grid-manifest regeneration, no pytest (no code/test/config change; test gate verified 18 passed at activation 3233), no frozen edit, no commit.
 - **Verified baseline unchanged (hash-attested):** exclusions n=336 (28 `basis_incomplete` + 308 `incomplete_forward_horizon`); integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values `crash_incidence_15pct` 0.24830545694889028 and `expected_shortfall_5pct_forward_mae` 0.9485; PIT rank CLOSED; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. Frontier v33: cursor `discovered_id_count` 782, `top_rank_covered` 850, next batch 851–875, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,744 total / 62,744 ranked (rank ≥ 1).
 - **Outcome:** genuine NO-OP per contract v1.1 addendum (clock gate not met, research state unchanged). Handoff record and activation-3247 task message written at explicit operator request. Do not commit unless explicitly asked.
+
+## Activation 3247 (completed, 2026-11-23T03:06:22Z) — Frontier advance v34 (ranks 851–875)
+
+- **Task source:** durable handoff activation 3246 objective and `research_state/agent_task_message.md` (activation 3247).
+- **Clock gate:** met — current UTC 2026-11-23T03:06:22Z ≥ v34 deadline ≈2026-11-23T02:08:06Z (v33 retrieval 2026-11-22T22:38:06Z; cooldown ≈3.5 h).
+- **Cheap checks:** config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; git status clean; git diff --check exit 0; v33 sha256 `751b3385f49fd7220eee64d60805395d45cfb647eebe06353cadd054c0484eaa` matches.
+- **Deliverable:** `research_state/universe_frontier_advance_v34.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V34`, status `rank_unverified_discovery_only`. Source `https://api.coinpaprika.com/v1/coins`, retrieved 2026-11-23T03:06:22Z, response_sha256 `d6706658900d4de19c8b56383ac0eac0a3c4e4ef4befd8af32bd2a97235f260d`, 62,744 total / 62,744 ranked (rank ≥ 1). Window 851–875: 25 items, 19 net new, 6 duplicates skipped. Cursor: `discovered_id_count` 801, `top_rank_covered` 875, next batch 876–900, `rank_frontier_exhausted` false.
+- **Artifact sha256 (raw bytes):** `1df74441742297af3f2c79823f73a682d95ca8cff51a16bb25cfef57f8e58d36`.
+- **Verified baseline unchanged (hash-attested):** exclusions n=336; integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values 0.24830545694889028 / 0.9485; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. PIT rank CLOSED.
+- **Outcome:** v34 advance complete. No commit.

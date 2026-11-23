@@ -1,0 +1,212 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V34",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-23T03:06:22.000Z",
+  "task_activation": 3247,
+  "purpose": "Advance rank frontier discovery batch (ranks 851-875) after documented cooldown since v33 (v33 retrieval 2026-11-22T22:38:06Z; cooldown deadline ~2026-11-23T02:08:06Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v33.json",
+    "sha256_raw_bytes": "751b3385f49fd7220eee64d60805395d45cfb647eebe06353cadd054c0484eaa",
+    "sha256_compact_content": "751b3385f49fd7220eee64d60805395d45cfb647eebe06353cadd054c0484eaa",
+    "discovered_id_count_v33": 782,
+    "top_rank_covered_v33": 850,
+    "next_batch_start_rank_v33": 851
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-23T03:06:22.000Z",
+    "response_sha256": "d6706658900d4de19c8b56383ac0eac0a3c4e4ef4befd8af32bd2a97235f260d",
+    "total_items_in_response": 62744,
+    "ranked_items_in_response": 62744,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3247, past the ~3.5h cooldown since v33 retrieval at 2026-11-22T22:38:06Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      851,
+      875
+    ],
+    "known_ids_before_dedup": 782,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 19,
+    "duplicates_skipped_count": 6,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v33 observed-id union = 782 known ids (25-id universe_frontier.json master frontier plus all v1-v33 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "rei-unit-00-rei",
+      "rank": 852,
+      "name": "Unit 00 - Rei",
+      "symbol": "REI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "olas-autonolas",
+      "rank": 853,
+      "name": "Autonolas",
+      "symbol": "OLAS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cys-cysic",
+      "rank": 859,
+      "name": "Cysic",
+      "symbol": "CYS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bxn-bxn",
+      "rank": 860,
+      "name": "BXN",
+      "symbol": "BXN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dolo-dolomite",
+      "rank": 861,
+      "name": "Dolomite",
+      "symbol": "DOLO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fuel-fuel-network",
+      "rank": 862,
+      "name": "Fuel Network",
+      "symbol": "FUEL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "asm-assemble-protocol",
+      "rank": 863,
+      "name": "Assemble Protocol",
+      "symbol": "ASM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bluai-bluwhale",
+      "rank": 864,
+      "name": "Bluwhale",
+      "symbol": "BLUAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "btcv-bitcoin-vault",
+      "rank": 865,
+      "name": "Bitcoin Vault",
+      "symbol": "BTCV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lofi-lofi1",
+      "rank": 866,
+      "name": "LOFI",
+      "symbol": "LOFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "quid-squid",
+      "rank": 867,
+      "name": "Squid",
+      "symbol": "QUID",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zeta-zetachain",
+      "rank": 868,
+      "name": "ZetaChain",
+      "symbol": "ZETA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "inx-infinex",
+      "rank": 869,
+      "name": "Infinex",
+      "symbol": "INX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fort-forta",
+      "rank": 870,
+      "name": "Forta",
+      "symbol": "FORT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sdex-smardex",
+      "rank": 871,
+      "name": "SmarDex",
+      "symbol": "SDEX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ousd-origin-dollar",
+      "rank": 872,
+      "name": "Origin Dollar",
+      "symbol": "OUSD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fight-fight2",
+      "rank": 873,
+      "name": "FIGHT",
+      "symbol": "FIGHT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "iota-miotac",
+      "rank": 874,
+      "name": "MIOTAC",
+      "symbol": "IOTA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ht-huobi-token",
+      "rank": 875,
+      "name": "Huobi Token",
+      "symbol": "HT",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "og-og-fan-token",
+      "rank": 851,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "space-spacecoin2",
+      "rank": 854,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "shell-myshell",
+      "rank": 855,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "bank-lorenzo-protocol",
+      "rank": 856,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "aergo-aergo",
+      "rank": 857,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "joe-trader-joe",
+      "rank": 858,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 801,
+    "top_rank_covered": 875,
+    "next_batch_start_rank": 876,
+    "next_batch_end_rank": 900,
+    "rank_frontier_exhausted": false
+  }
+}
