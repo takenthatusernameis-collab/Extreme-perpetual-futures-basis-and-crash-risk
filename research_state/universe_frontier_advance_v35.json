@@ -1,0 +1,233 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V35",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-23T12:19:10.000Z",
+  "task_activation": 3259,
+  "purpose": "Advance rank frontier discovery batch (ranks 876-900) after documented cooldown since v34 (v34 retrieval 2026-11-23T03:06:22Z; cooldown deadline ~2026-11-23T06:36:22Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v34.json",
+    "sha256_raw_bytes": "1df74441742297af3f2c79823f73a682d95ca8cff51a16bb25cfef57f8e58d36",
+    "sha256_compact_content": "1df74441742297af3f2c79823f73a682d95ca8cff51a16bb25cfef57f8e58d36",
+    "discovered_id_count_v34": 801,
+    "top_rank_covered_v34": 875,
+    "next_batch_start_rank_v34": 876
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-23T12:19:10.000Z",
+    "response_sha256": "ee0cae40eeae61a76d761383538479143ec0a9e2c26c49691416cdb196ffadf1",
+    "total_items_in_response": 62761,
+    "ranked_items_in_response": 11270,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3259, past the ~3.5h cooldown since v34 retrieval at 2026-11-23T03:06:22Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      876,
+      900
+    ],
+    "known_ids_before_dedup": 801,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2,
+    "symbol_collisions_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v34 observed-id union = 801 known ids (25-id universe_frontier.json master frontier plus all v1-v34 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "adx-adex",
+      "rank": 876,
+      "name": "AdEx",
+      "symbol": "ADX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wolf-landwolf",
+      "rank": 878,
+      "name": "Landwolf",
+      "symbol": "WOLF",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "we-webuy",
+      "rank": 879,
+      "name": "WeBuy",
+      "symbol": "WE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zkp-zkpass",
+      "rank": 880,
+      "name": "zkPass",
+      "symbol": "ZKP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sonic-sonic-svm",
+      "rank": 881,
+      "name": "Sonic SVM",
+      "symbol": "SONIC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "idle-idlemine",
+      "rank": 882,
+      "name": "IdleMine",
+      "symbol": "IDLE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usual-usual",
+      "rank": 883,
+      "name": "Usual",
+      "symbol": "USUAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "avail-avail",
+      "rank": 884,
+      "name": "Avail",
+      "symbol": "AVAIL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bel-bella-protocol",
+      "rank": 885,
+      "name": "Bella Protocol",
+      "symbol": "BEL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "solv-solv-protocol",
+      "rank": 887,
+      "name": "Solv Protocol",
+      "symbol": "SOLV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "swarms-swarms",
+      "rank": 888,
+      "name": "swarms",
+      "symbol": "SWARMS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "naka-nakamoto-games",
+      "rank": 889,
+      "name": "Nakamoto Games",
+      "symbol": "NAKA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "star-starpower",
+      "rank": 890,
+      "name": "Starpower",
+      "symbol": "STAR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xsushi-xsushi",
+      "rank": 891,
+      "name": "xSUSHI",
+      "symbol": "XSUSHI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "trac-trac-ordinals",
+      "rank": 892,
+      "name": "TRAC (Ordinals)",
+      "symbol": "TRAC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mira-mira-network",
+      "rank": 893,
+      "name": "Mira Network",
+      "symbol": "MIRA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "carv-carv",
+      "rank": 894,
+      "name": "CARV",
+      "symbol": "CARV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rog-rogin-ai",
+      "rank": 895,
+      "name": "ROGin AI",
+      "symbol": "ROG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bzz-bzz",
+      "rank": 896,
+      "name": "Swarm",
+      "symbol": "BZZ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "supra-supra",
+      "rank": 897,
+      "name": "Supra",
+      "symbol": "SUPRA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "drift-drift-protocol",
+      "rank": 898,
+      "name": "Drift Protocol",
+      "symbol": "DRIFT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "apm-apm-coin",
+      "rank": 899,
+      "name": "apM Coin",
+      "symbol": "APM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xpin-xpin-network",
+      "rank": 900,
+      "name": "XPIN Network",
+      "symbol": "XPIN",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "quid-squid",
+      "rank": 877,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "ht-huobi-token",
+      "rank": 886,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "ZKP",
+      "existing_id": "zkp-panther-protocol",
+      "new_id": "zkp-zkpass",
+      "new_rank": 880
+    },
+    {
+      "symbol": "TRAC",
+      "existing_id": "trac-origintrail",
+      "new_id": "trac-trac-ordinals",
+      "new_rank": 892
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 824,
+    "top_rank_covered": 900,
+    "next_batch_start_rank": 901,
+    "next_batch_end_rank": 925,
+    "rank_frontier_exhausted": false
+  }
+}
