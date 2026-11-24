@@ -1,0 +1,219 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V36",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-24T00:06:01.000Z",
+  "task_activation": 3271,
+  "purpose": "Advance rank frontier discovery batch (ranks 901-925) after documented cooldown since v35 (v35 retrieval 2026-11-23T12:19:10Z; cooldown deadline ~2026-11-23T15:49:10Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v35.json",
+    "sha256_raw_bytes": "7c74352ac231c6aa006728aac82dd4e3124d473d5074294f6b9f28b56fd254d6",
+    "sha256_compact_content": "7c74352ac231c6aa006728aac82dd4e3124d473d5074294f6b9f28b56fd254d6",
+    "discovered_id_count_v35": 824,
+    "top_rank_covered_v35": 900,
+    "next_batch_start_rank_v35": 901
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-24T00:06:01.000Z",
+    "response_sha256": "b5422978e06a6b8ff20a80ba487989a8339d7cc393525180ac78394676b3aae3",
+    "total_items_in_response": 62771,
+    "ranked_items_in_response": 12030,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3271, past the ~3.5h cooldown since v35 retrieval at 2026-11-23T12:19:10Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      901,
+      925
+    ],
+    "known_ids_before_dedup": 824,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 16,
+    "duplicates_skipped_count": 9,
+    "symbol_collisions_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v35 observed-id union = 824 known ids (25-id universe_frontier.json master frontier plus all v1-v35 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "grove-grove-finance",
+      "rank": 907,
+      "name": "Grove Finance",
+      "symbol": "GROVE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wolf-wolf-sol",
+      "rank": 909,
+      "name": "Wolf (SOL)",
+      "symbol": "WOLF",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "el-elysia",
+      "rank": 911,
+      "name": "ELYSIA",
+      "symbol": "EL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "omg-omg-network",
+      "rank": 912,
+      "name": "OMG Network",
+      "symbol": "OMG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "u-united-stables",
+      "rank": 913,
+      "name": "United Stables",
+      "symbol": "U",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "honey-honey1",
+      "rank": 915,
+      "name": "Honey",
+      "symbol": "HONEY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ghx-gamercoin",
+      "rank": 916,
+      "name": "GamerCoin",
+      "symbol": "GHX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jager-jager-hunter",
+      "rank": 917,
+      "name": "Jager Hunter",
+      "symbol": "JAGER",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "storj-storj",
+      "rank": 918,
+      "name": "Storj",
+      "symbol": "STORJ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wrx-wazirx",
+      "rank": 919,
+      "name": "WazirX",
+      "symbol": "WRX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wct-walletconnect-token",
+      "rank": 920,
+      "name": "WalletConnect Token",
+      "symbol": "WCT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sfi-saffronfinance",
+      "rank": 921,
+      "name": "saffron.finance",
+      "symbol": "SFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "coq-coq-inu",
+      "rank": 922,
+      "name": "Coq Inu",
+      "symbol": "COQ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pcock-pulsechain-peacock",
+      "rank": 923,
+      "name": "PulseChain Peacock",
+      "symbol": "PCOCK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bounty-chainbounty",
+      "rank": 924,
+      "name": "ChainBounty",
+      "symbol": "BOUNTY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spcxon-spacex-tokenized-stock-ondo",
+      "rank": 925,
+      "name": "SpaceX Tokenized Stock (Ondo)",
+      "symbol": "SPCXON",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "usual-usual",
+      "rank": 901,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "xsushi-xsushi",
+      "rank": 902,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "trac-trac-ordinals",
+      "rank": 903,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "avail-avail",
+      "rank": 904,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "zkp-zkpass",
+      "rank": 905,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "bzz-bzz",
+      "rank": 906,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "drift-drift-protocol",
+      "rank": 908,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "supra-supra",
+      "rank": 910,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "xpin-xpin-network",
+      "rank": 914,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "WOLF",
+      "existing_id": "wolf-landwolf",
+      "new_id": "wolf-wolf-sol",
+      "new_rank": 909
+    },
+    {
+      "symbol": "HONEY",
+      "existing_id": "honey-hivemapper",
+      "new_id": "honey-honey1",
+      "new_rank": 915
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 840,
+    "top_rank_covered": 925,
+    "next_batch_start_rank": 926,
+    "next_batch_end_rank": 950,
+    "rank_frontier_exhausted": false
+  }
+}
