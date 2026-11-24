@@ -45,7 +45,7 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3305, 2026-11-24T20:49:37Z)
+## Verified baseline (activation 3306, 2026-11-24T20:50:56Z)
 - Clock: v38 delivered (activation 3294); v39 gate ≈2026-11-24T23:54:43Z.
 - State: config `753d9357…`; git status clean; git diff --check exit 0; frontier v38 sha256 `9ceccb39…4810`; v39 absent (expected).
 - Frontier v38: cursor `discovered_id_count` 887, `top_rank_covered` 975, next batch 976–1000, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,784 total / 62,784 ranked (rank ≥ 1).
