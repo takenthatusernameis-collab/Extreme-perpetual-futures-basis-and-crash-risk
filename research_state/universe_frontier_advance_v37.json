@@ -1,0 +1,233 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V37",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-24T09:45:30.470Z",
+  "task_activation": 3282,
+  "purpose": "Advance rank frontier discovery batch (ranks 926-950) after documented cooldown since v36 (v36 retrieval 2026-11-24T00:06:01Z; cooldown deadline ~2026-11-24T03:36:01Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v36.json",
+    "sha256_raw_bytes": "d02689627da5bf1d464cad566551a2cdb434ec0a6858dc854ac48a81dd5ea6b0",
+    "sha256_compact_content": "d02689627da5bf1d464cad566551a2cdb434ec0a6858dc854ac48a81dd5ea6b0",
+    "discovered_id_count_v36": 840,
+    "top_rank_covered_v36": 925,
+    "next_batch_start_rank_v36": 926
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-24T09:45:30.470Z",
+    "response_sha256": "cb4e5c0a64b3924de7456db6a9f365ea8a20699fad14e36ef5be02549637f6c0",
+    "total_items_in_response": 62771,
+    "ranked_items_in_response": 12011,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3282, past the ~3.5h cooldown since v36 retrieval at 2026-11-24T00:06:01Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      926,
+      950
+    ],
+    "known_ids_before_dedup": 840,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2,
+    "symbol_collisions_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v36 observed-id union = 840 known ids (25-id universe_frontier.json master frontier plus all v1-v36 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "seda-seda",
+      "rank": 926,
+      "name": "SEDA",
+      "symbol": "SEDA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mnsry-mansory",
+      "rank": 928,
+      "name": "Mansory",
+      "symbol": "MNSRY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gal-galatasaray-fan-token",
+      "rank": 929,
+      "name": "Galatasaray Fan Token",
+      "symbol": "GAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hei-heima",
+      "rank": 930,
+      "name": "Heima",
+      "symbol": "HEI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rei-zerogoki",
+      "rank": 931,
+      "name": "Zerogoki",
+      "symbol": "REI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mseth-metronome-synth-eth",
+      "rank": 932,
+      "name": "Metronome Synth ETH",
+      "symbol": "MSETH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dnt-district0x",
+      "rank": 933,
+      "name": "district0x",
+      "symbol": "DNT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "imo5-imo",
+      "rank": 934,
+      "name": "IMO",
+      "symbol": "IMO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "me-magic-eden",
+      "rank": 935,
+      "name": "Magic Eden",
+      "symbol": "ME",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "token-tokenfi",
+      "rank": 936,
+      "name": "TokenFi",
+      "symbol": "TOKEN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ceur-celo-euro",
+      "rank": 937,
+      "name": "Celo Euro",
+      "symbol": "CEUR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dog-the-doge-nft",
+      "rank": 938,
+      "name": "The Doge NFT",
+      "symbol": "DOG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bmt-bubblemaps",
+      "rank": 939,
+      "name": "Bubblemaps",
+      "symbol": "BMT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dock-dock",
+      "rank": 940,
+      "name": "Dock",
+      "symbol": "DOCK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "corn-corn2",
+      "rank": 941,
+      "name": "Corn",
+      "symbol": "CORN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "yb-yield-basis",
+      "rank": 942,
+      "name": "Yield Basis",
+      "symbol": "YB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "auki-auki",
+      "rank": 943,
+      "name": "AUKI",
+      "symbol": "AUKI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hard-kava-lend",
+      "rank": 944,
+      "name": "Kava Lend",
+      "symbol": "HARD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aht-ahatoken",
+      "rank": 945,
+      "name": "AhaToken",
+      "symbol": "AHT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tlos-telos",
+      "rank": 946,
+      "name": "Telos",
+      "symbol": "TLOS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rsc-researchcoin",
+      "rank": 948,
+      "name": "ResearchCoin",
+      "symbol": "RSC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pit-pitbull",
+      "rank": 949,
+      "name": "Pitbull",
+      "symbol": "PIT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pepecat2-pepecat",
+      "rank": 950,
+      "name": "PEPECAT",
+      "symbol": "PEPECAT",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "sfi-saffronfinance",
+      "rank": 927,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "mihao-ni-hao-cat",
+      "rank": 947,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "REI",
+      "existing_id": "rei-unit-00-rei",
+      "new_id": "rei-zerogoki",
+      "new_rank": 931
+    },
+    {
+      "symbol": "DOG",
+      "existing_id": "-doggotothemoon",
+      "new_id": "dog-the-doge-nft",
+      "new_rank": 938
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 863,
+    "top_rank_covered": 950,
+    "next_batch_start_rank": 951,
+    "next_batch_end_rank": 975,
+    "rank_frontier_exhausted": false
+  }
+}

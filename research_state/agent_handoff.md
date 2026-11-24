@@ -325,3 +325,14 @@
 - **Outcome:** genuine NO-OP per contract v1.1 addendum (clock gate not met, research state unchanged). Handoff record and activation-3282 task message written at explicit operator request. Do not commit unless explicitly asked.
 
 (End of file - total 322 lines)
+
+## Activation 3282 (completed, 2026-11-24T09:45:30Z) — Frontier advance v37 (ranks 926–950)
+
+- **Task source:** durable handoff activation 3281 objective and `research_state/agent_task_message.md` (activation 3282).
+- **Clock gate:** met — current UTC 2026-11-24T09:45:30Z ≥ v37 deadline ≈2026-11-24T03:36:01Z (v36 retrieval 2026-11-24T00:06:01Z; cooldown ≈3.5 h).
+- **Cheap checks:** config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; git status clean; git diff --check exit 0; v36 sha256 `d02689627da5bf1d464cad566551a2cdb434ec0a6858dc854ac48a81dd5ea6b0` matches.
+- **Deliverable:** `research_state/universe_frontier_advance_v37.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V37`, status `rank_unverified_discovery_only`. Source `https://api.coinpaprika.com/v1/coins`, retrieved 2026-11-24T09:45:30Z, response_sha256 `cb4e5c0a64b3924de7456db6a9f365ea8a20699fad14e36ef5be02549637f6c0`, 62,771 total / 12,011 ranked (rank ≥ 1). Window 926–950: 25 items, 23 net new, 2 duplicates skipped, 2 symbol collisions. Cursor: `discovered_id_count` 863, `top_rank_covered` 950, next batch 951–975, `rank_frontier_exhausted` false.
+- **Artifact sha256 (raw bytes):** `ead1c34a376547bafb0911e278e63e9b056d462dbc7d07a67a7684480af0d137`.
+- **Required checks:** grid manifest regenerated (324 cells, `config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`); `.venv` pytest **18 passed**; `git diff --check` exit 0.
+- **Verified baseline unchanged (hash-attested):** exclusions n=336 (28 `basis_incomplete` + 308 `incomplete_forward_horizon`); integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values `crash_incidence_15pct` 0.24830545694889028 and `expected_shortfall_5pct_forward_mae` 0.9485; PIT rank CLOSED; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5. Frontier v37: cursor `discovered_id_count` 863, `top_rank_covered` 950, next batch 951–975, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,771 total / 12,011 ranked (rank ≥ 1).
+- **Outcome:** v37 advance complete. No commit.
