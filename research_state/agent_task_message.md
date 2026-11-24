@@ -1,7 +1,7 @@
-# Agent task message (EBCR-001) — activation 3302
+# Agent task message (EBCR-001) — activation 3303
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3301 (NO-OP; clock gate not met).
+- `research_state/agent_handoff.md` — activation 3302 (NO-OP; clock gate not met).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
@@ -20,7 +20,7 @@ git diff --check                             # expect exit 0
 sha256sum research_state/universe_frontier_advance_v38.json   # expect 9ceccb39d56e83417027362590a805cad32902756c36ba1ec5ddf90163294810
 ```
 
-## Objective (activation 3302), priority order
+## Objective (activation 3303), priority order
 - **(a) Frontier advance v39 — ranks 976–1000** — ONLY if now ≥ ≈2026-11-24T23:54:43Z. Follow the v38 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the known-id union (reconstructed v1-v38 observed-id union = 887 known ids), write `research_state/universe_frontier_advance_v39.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V39`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 1000, next batch 1001–1025. Record both hashes externally in the handoff; do not store self-referential hash fields.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
@@ -45,7 +45,7 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3301, 2026-11-24T20:42:19Z)
+## Verified baseline (activation 3302, 2026-11-24T20:43:04Z)
 - Clock: v38 delivered (activation 3294); v39 gate ≈2026-11-24T23:54:43Z.
 - State: config `753d9357…`; git status clean; git diff --check exit 0; frontier v38 sha256 `9ceccb39…4810`; v39 absent (expected).
 - Frontier v38: cursor `discovered_id_count` 887, `top_rank_covered` 975, next batch 976–1000, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,784 total / 62,784 ranked (rank ≥ 1).
