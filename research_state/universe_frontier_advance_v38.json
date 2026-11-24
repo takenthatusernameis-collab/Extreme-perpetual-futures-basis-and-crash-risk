@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V38",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-24T20:24:43.459Z",
+  "task_activation": 3294,
+  "purpose": "Advance rank frontier discovery batch (ranks 951-975) after documented cooldown since v37 (v37 retrieval 2026-11-24T09:45:30Z; cooldown deadline ~2026-11-24T13:15:30Z; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v37.json",
+    "sha256_raw_bytes": "ead1c34a376547bafb0911e278e63e9b056d462dbc7d07a67a7684480af0d137",
+    "sha256_compact_content": "ead1c34a376547bafb0911e278e63e9b056d462dbc7d07a67a7684480af0d137",
+    "discovered_id_count_v37": 863,
+    "top_rank_covered_v37": 950,
+    "next_batch_start_rank_v37": 951
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-24T20:24:43.459Z",
+    "response_sha256": "cf96d9e2e970ca45f22f2da4e28f28e524b7fac4598593a65b858df50c12225f",
+    "total_items_in_response": 62784,
+    "ranked_items_in_response": 62784,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3294, past the ~3.5h cooldown since v37 retrieval at 2026-11-24T09:45:30Z."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      951,
+      975
+    ],
+    "known_ids_before_dedup": 863,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v37 observed-id union = 863 known ids (25-id universe_frontier.json master frontier plus all v1-v37 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "btcmt-minto",
+      "rank": 951,
+      "name": "Minto",
+      "symbol": "BTCMT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sqgrow-squidgrow",
+      "rank": 952,
+      "name": "SquidGrow",
+      "symbol": "SQGROW",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "blue-bluefin",
+      "rank": 953,
+      "name": "Bluefin",
+      "symbol": "BLUE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdl-usdl-stablecoin",
+      "rank": 954,
+      "name": "USDL Stablecoin",
+      "symbol": "USDL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lyn-everlyn-ai",
+      "rank": 955,
+      "name": "Everlyn AI",
+      "symbol": "LYN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "scs-solcasino-token",
+      "rank": 956,
+      "name": "Solcasino Token",
+      "symbol": "SCS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "myx-myx",
+      "rank": 957,
+      "name": "MYX Finance",
+      "symbol": "MYX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "qfs-qfs-golden",
+      "rank": 959,
+      "name": "QFS GOLDEN",
+      "symbol": "QFS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alcx-alchemix",
+      "rank": 960,
+      "name": "Alchemix",
+      "symbol": "ALCX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mev-meverse",
+      "rank": 961,
+      "name": "MEVerse",
+      "symbol": "MEV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tos-tokenos-ai",
+      "rank": 962,
+      "name": "TokenOS AI",
+      "symbol": "TOS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sd-stader",
+      "rank": 963,
+      "name": "Stader",
+      "symbol": "SD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alpine-alpine-fan-token",
+      "rank": 964,
+      "name": "ALPINE Fan Token",
+      "symbol": "ALPINE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bbt10-babyboomtoken",
+      "rank": 965,
+      "name": "BabyBoomToken",
+      "symbol": "BBT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "krl-kryll",
+      "rank": 966,
+      "name": "Kryll",
+      "symbol": "KRL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fhe-mind-network",
+      "rank": 967,
+      "name": "Mind Network",
+      "symbol": "FHE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sps-splintershards",
+      "rank": 968,
+      "name": "Splintershards",
+      "symbol": "SPS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aura-auraonsol",
+      "rank": 969,
+      "name": "Aura",
+      "symbol": "AURA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "f-synfutures",
+      "rank": 970,
+      "name": "SynFutures",
+      "symbol": "F",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ca3-ca-htb",
+      "rank": 971,
+      "name": "CA-HTB",
+      "symbol": "CA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kekius-kekius-maximus",
+      "rank": 972,
+      "name": "Kekius Maximus",
+      "symbol": "KEKIUS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sparklet-upland",
+      "rank": 973,
+      "name": "Upland",
+      "symbol": "SPARKLET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mbc-monbasecoin",
+      "rank": 974,
+      "name": "MonbaseCoin",
+      "symbol": "MBC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dimo-dimo",
+      "rank": 975,
+      "name": "DIMO",
+      "symbol": "DIMO",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "broccoli-broccoli-firstbroccoli",
+      "rank": 958,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 887,
+    "top_rank_covered": 975,
+    "next_batch_start_rank": 976,
+    "next_batch_end_rank": 1000,
+    "rank_frontier_exhausted": false
+  }
+}
