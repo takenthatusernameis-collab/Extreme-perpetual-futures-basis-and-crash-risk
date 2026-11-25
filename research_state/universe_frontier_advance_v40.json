@@ -1,0 +1,216 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V40",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-25T13:28:38.727Z",
+  "task_activation": 3320,
+  "purpose": "Advance rank frontier discovery batch (ranks 1001-1025) after documented cooldown since v39 (v39 retrieval 2026-11-25T03:36:27Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v39.json",
+    "sha256_raw_bytes": "aa7b80a48eccfccef93e615e94e41ebcb7b716fef5ca25731851d71f264aab29",
+    "sha256_compact_content": "aa7b80a48eccfccef93e615e94e41ebcb7b716fef5ca25731851d71f264aab29",
+    "discovered_id_count_v39": 911,
+    "top_rank_covered_v39": 1000,
+    "next_batch_start_rank_v39": 1001
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-25T13:28:38.727Z",
+    "response_sha256": "8b244d11fcdd568e13c7fcf7d927d0faad23b0955bf5991329f869a85e3bdb70",
+    "total_items_in_response": 62788,
+    "ranked_items_in_response": 11507,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3320, past the ~3.5h cooldown since v39 retrieval at 2026-11-25T03:36:27Z. Source observation: ranked_items_in_response (rank>=1) = 11507 at this retrieval vs 11426 at v39 and 62784 at v38; total_items_in_response = 62788 (unchanged vs v38 total 62784 within minor fluctuation). Rank window 1001-1025 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1001,
+      1025
+    ],
+    "known_ids_before_dedup": 911,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 21,
+    "duplicates_skipped_count": 4,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v39 observed-id union = 911 known ids (25-id universe_frontier.json master frontier plus all v1-v39 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "cow-cowcoin",
+      "rank": 1001,
+      "name": "Cowcoin",
+      "symbol": "COW",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "laptop-hunter-bidens-laptop",
+      "rank": 1002,
+      "name": "Hunter Biden's Laptop",
+      "symbol": "LAPTOP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "brise-bitrise-token",
+      "rank": 1004,
+      "name": "Bitrise Token",
+      "symbol": "BRISE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ceek-ceek-vr",
+      "rank": 1006,
+      "name": "CEEK VR",
+      "symbol": "CEEK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mbx-marblex",
+      "rank": 1007,
+      "name": "Marblex",
+      "symbol": "MBX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aeon-aeon-3",
+      "rank": 1008,
+      "name": "AEON",
+      "symbol": "AEON",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "paal-paal-ai",
+      "rank": 1009,
+      "name": "PAAL AI",
+      "symbol": "PAAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tdrop-thetadrop",
+      "rank": 1010,
+      "name": "ThetaDrop",
+      "symbol": "TDROP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ppoly-paimon-polymarket-spv-token",
+      "rank": 1011,
+      "name": "Paimon Polymarket SPV Token",
+      "symbol": "PPOLY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "omikami-amaterasu-omikami",
+      "rank": 1012,
+      "name": "AMATERASU OMIKAMI",
+      "symbol": "OMIKAMI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tet-tectum",
+      "rank": 1014,
+      "name": "Tectum",
+      "symbol": "TET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "yee1-yee-token",
+      "rank": 1015,
+      "name": "Yee Token",
+      "symbol": "YEE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mobile-helium-mobile",
+      "rank": 1016,
+      "name": "Helium Mobile",
+      "symbol": "MOBILE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "haedal-haedal-protocol",
+      "rank": 1017,
+      "name": "Haedal Protocol",
+      "symbol": "HAEDAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "farm-harvest-finance",
+      "rank": 1019,
+      "name": "Harvest Finance",
+      "symbol": "FARM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "chess-chesscoin",
+      "rank": 1020,
+      "name": "ChessCoin 0.32%",
+      "symbol": "CHESS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kishu-kishu-inu",
+      "rank": 1021,
+      "name": "Kishu Inu",
+      "symbol": "KISHU",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "phnix-phnix",
+      "rank": 1022,
+      "name": "PHNIX",
+      "symbol": "PHNIX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hopr-hopr",
+      "rank": 1023,
+      "name": "HOPR",
+      "symbol": "HOPR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "isikc-isiklar-coin",
+      "rank": 1024,
+      "name": "Isiklar Coin",
+      "symbol": "ISIKC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gme-gme-ethereum",
+      "rank": 1025,
+      "name": "GME (Ethereum)",
+      "symbol": "GME",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "mey-mey-network",
+      "rank": 1003,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "resolv-resolv",
+      "rank": 1005,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "metfi-metfi-bsc",
+      "rank": 1013,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "dao-dao-maker-token",
+      "rank": 1018,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 932,
+    "top_rank_covered": 1025,
+    "next_batch_start_rank": 1026,
+    "next_batch_end_rank": 1050,
+    "rank_frontier_exhausted": false
+  }
+}
