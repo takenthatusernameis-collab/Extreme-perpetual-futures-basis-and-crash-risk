@@ -1,0 +1,200 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V41",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-25T22:41:22.798158Z",
+  "task_activation": 3332,
+  "purpose": "Advance rank frontier discovery batch (ranks 1026-1050) after documented cooldown since v40 (v40 retrieval 2026-11-25T13:28:38Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v40.json",
+    "sha256_raw_bytes": "3aaa55cbc003ba2496f5d6972252f20c0c7f21bc05527291ba87a82102378604",
+    "sha256_compact_content": "ef7d74dad8626360a2e83bb23d44dbca6c239c6c8fe4169685fb989bd1a83104",
+    "discovered_id_count_v40": 932,
+    "top_rank_covered_v40": 1025,
+    "next_batch_start_rank_v40": 1026
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-25T22:41:22.798158Z",
+    "response_sha256": "acf9878b8b62d72b1b41515161c401060f488670792dc9a993b5b75ba8acd758",
+    "total_items_in_response": 62790,
+    "ranked_items_in_response": 11752,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3332, past the ~3.5h cooldown since v40 retrieval at 2026-11-25T13:28:38Z. Source observation: ranked_items_in_response (rank>=1) = 11752 at this retrieval vs 11507 at v40 and 11426 at v39; total_items_in_response = 62790 (v40: 62788). Rank window 1026-1050 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1026,
+      1050
+    ],
+    "known_ids_before_dedup": 932,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 13,
+    "duplicates_skipped_count": 12,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v40 observed-id union = 932 known ids (25-id universe_frontier.json master frontier plus all v1-v40 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "caw1-crow-with-knife",
+      "rank": 1036,
+      "name": "crow with knife",
+      "symbol": "CAW",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wfca-world-friendship-cash-coin",
+      "rank": 1038,
+      "name": "World Friendship Cash Coin",
+      "symbol": "WFCA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ong-ong",
+      "rank": 1039,
+      "name": "Ontology Gas",
+      "symbol": "ONG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dreams-daydreams",
+      "rank": 1040,
+      "name": "Daydreams",
+      "symbol": "DREAMS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mvc-mileverse",
+      "rank": 1041,
+      "name": "MileVerse",
+      "symbol": "MVC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lumia-lumia",
+      "rank": 1042,
+      "name": "Lumia",
+      "symbol": "LUMIA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "microduck-microduck",
+      "rank": 1044,
+      "name": "microduck",
+      "symbol": "MICRODUCK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "spa-sperax",
+      "rank": 1045,
+      "name": "Sperax",
+      "symbol": "SPA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lingo1-lingo",
+      "rank": 1046,
+      "name": "Lingo",
+      "symbol": "LINGO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "amc-a-meme-coin",
+      "rank": 1047,
+      "name": "A Meme Coin",
+      "symbol": "AMC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "scr-scroll",
+      "rank": 1048,
+      "name": "Scroll",
+      "symbol": "SCR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ihc-inflation-hedging-coin",
+      "rank": 1049,
+      "name": "Inflation Hedging Coin",
+      "symbol": "IHC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hemi-hemi",
+      "rank": 1050,
+      "name": "Hemi",
+      "symbol": "HEMI",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "tet-tectum",
+      "rank": 1026,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "tdrop-thetadrop",
+      "rank": 1027,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "mobile-helium-mobile",
+      "rank": 1028,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "ppoly-paimon-polymarket-spv-token",
+      "rank": 1029,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "laptop-hunter-bidens-laptop",
+      "rank": 1030,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "omikami-amaterasu-omikami",
+      "rank": 1031,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "kishu-kishu-inu",
+      "rank": 1032,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "hopr-hopr",
+      "rank": 1033,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "dao-dao-maker-token",
+      "rank": 1034,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "phnix-phnix",
+      "rank": 1035,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "chess-chesscoin",
+      "rank": 1037,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "isikc-isiklar-coin",
+      "rank": 1043,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 945,
+    "top_rank_covered": 1050,
+    "next_batch_start_rank": 1051,
+    "next_batch_end_rank": 1075,
+    "rank_frontier_exhausted": false
+  }
+}
