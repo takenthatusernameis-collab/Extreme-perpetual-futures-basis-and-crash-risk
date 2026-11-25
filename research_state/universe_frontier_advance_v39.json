@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V39",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-25T03:36:33.871Z",
+  "task_activation": 3308,
+  "purpose": "Advance rank frontier discovery batch (ranks 976-1000) after documented cooldown since v38 (v38 retrieval 2026-11-24T20:24:43Z; cooldown deadline ~2026-11-24T23:54:43Z; current retrieval 2026-11-25T03:36:27Z past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v38.json",
+    "sha256_raw_bytes": "9ceccb39d56e83417027362590a805cad32902756c36ba1ec5ddf90163294810",
+    "sha256_compact_content": "9ceccb39d56e83417027362590a805cad32902756c36ba1ec5ddf90163294810",
+    "discovered_id_count_v38": 887,
+    "top_rank_covered_v38": 975,
+    "next_batch_start_rank_v38": 976
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-25T03:36:27.350Z",
+    "response_sha256": "38b539037753923f18e9a346a3eedbbc372eb552f1d3a5c864f4eabe2d5f49e1",
+    "total_items_in_response": 62784,
+    "ranked_items_in_response": 11426,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3308, past the ~3.5h cooldown since v38 retrieval at 2026-11-24T20:24:43Z. Source observation: ranked_items_in_response (rank>=1) = 11426 at this retrieval vs 62784 recorded at v38; total_items unchanged at 62784. Rank window 976-1000 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      976,
+      1000
+    ],
+    "known_ids_before_dedup": 887,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v38 observed-id union = 887 known ids (25-id universe_frontier.json master frontier plus all v1-v38 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "agrs-agoras-currency-of-tau",
+      "rank": 976,
+      "name": "Agoras: Currency of Tau",
+      "symbol": "AGRS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "trunk-elephant-money-stable",
+      "rank": 978,
+      "name": "Elephant Money Stable",
+      "symbol": "TRUNK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "troy-troy",
+      "rank": 979,
+      "name": "Troy",
+      "symbol": "TROY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nest-nest-protocol",
+      "rank": 980,
+      "name": "Nest Protocol",
+      "symbol": "NEST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ppt-populous",
+      "rank": 981,
+      "name": "Populous",
+      "symbol": "PPT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "redo-resistance-dog",
+      "rank": 982,
+      "name": "Resistance Dog ",
+      "symbol": "REDO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "psg-paris-saint-germain-fan-token",
+      "rank": 983,
+      "name": "Paris Saint-Germain Fan Token",
+      "symbol": "PSG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "yec-ycash",
+      "rank": 984,
+      "name": "Ycash",
+      "symbol": "YEC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ladys-milady-meme-coin",
+      "rank": 985,
+      "name": "Milady Meme Coin",
+      "symbol": "LADYS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "keycat-keyboard-cat-base",
+      "rank": 986,
+      "name": "Keyboard Cat (Base)",
+      "symbol": "KEYCAT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bmc-bountymarketcap",
+      "rank": 987,
+      "name": "BountyMarketCap",
+      "symbol": "BMC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "map-map-protocol",
+      "rank": 988,
+      "name": "MAP Protocol",
+      "symbol": "MAPO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "raca-radio-caca",
+      "rank": 989,
+      "name": "Radio Caca",
+      "symbol": "RACA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "doginme-doginme",
+      "rank": 990,
+      "name": "doginme",
+      "symbol": "DOGINME",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bifi-beefyfinance",
+      "rank": 991,
+      "name": "Beefy",
+      "symbol": "BIFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "resolv-resolv",
+      "rank": 992,
+      "name": "Resolv",
+      "symbol": "RESOLV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bnc4-cea-industries-tokenized-4stock",
+      "rank": 993,
+      "name": "Cea Industries Tokenized 4Stock",
+      "symbol": "BNC4",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eurq-quantoz-eurq",
+      "rank": 994,
+      "name": "Quantoz EURQ",
+      "symbol": "EURQ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wxmr-wrapped-xmr-by-btse",
+      "rank": 995,
+      "name": "Wrapped XMR by BTSE",
+      "symbol": "WXMR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ixs-ix-swap",
+      "rank": 996,
+      "name": "IX Swap",
+      "symbol": "IXS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dao-dao-maker-token",
+      "rank": 997,
+      "name": "DAO Maker Token",
+      "symbol": "DAO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mey-mey-network",
+      "rank": 998,
+      "name": "Mey Network",
+      "symbol": "MEY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "metfi-metfi-bsc",
+      "rank": 999,
+      "name": "MetFi",
+      "symbol": "METFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "purpe-purple-pepe",
+      "rank": 1000,
+      "name": "Purple Pepe",
+      "symbol": "PURPE",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "mbc-monbasecoin",
+      "rank": 977,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 911,
+    "top_rank_covered": 1000,
+    "next_batch_start_rank": 1001,
+    "next_batch_end_rank": 1025,
+    "rank_frontier_exhausted": false
+  }
+}

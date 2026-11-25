@@ -1,14 +1,14 @@
-# Agent task message (EBCR-001) — activation 3306
+# Agent task message (EBCR-001) — activation 3308
 
 ## Read first (required)
-- `research_state/agent_handoff.md` — activation 3305 (NO-OP; clock gate not met).
+- `research_state/agent_handoff.md` — activation 3307 (NO-OP; clock gate not met).
 - `prompts/continuous_research_operating_contract_v1.md`, `prompts/continuous_research_operating_contract_v1_1_addendum.md`, `docs/research_protocol.md`.
 - `configs/basis_crash_grid_v1.json` (frozen) and `docs/sources.md`; load `.agents/skills/point-in-time-universe/SKILL.md` (and `resumable-research-operations`) before frontier work.
 
 ## Clock gate — CHECK FIRST, THEN STOP IF NOT MET
-- Last frontier retrieval/creation: **v38 at 2026-11-24T20:24:43Z**. Cooldown convention ≈**3.5 h**.
-- **Frontier advance v39 (ranks 976–1000) is NOT actionable before ≈2026-11-24T23:54:43Z.**
-- If `date -u` is **before** 2026-11-24T23:54:43Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff/task-message rewrite beyond what the operator explicitly asks, no commit.
+- Last frontier retrieval/creation: **v39 at 2026-11-25T03:36:27Z**. Cooldown convention ≈**3.5 h**.
+- **Frontier advance v40 (ranks 1001–1025) is NOT actionable before ≈2026-11-25T07:06:27Z.**
+- If `date -u` is **before** 2026-11-25T07:06:27Z and no state change is detected: run the cheap check below, then **exit as NO-OP** — no frontier artifact, no CoinPaprika probe, no handoff/task-message rewrite beyond what the operator explicitly asks, no commit.
 - Do not tight-poll.
 
 ## Cheap check (only something to run if not yet due)
@@ -17,16 +17,16 @@ date -u +%Y-%m-%dT%H:%M:%SZ
 sha256sum configs/basis_crash_grid_v1.json   # expect 753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16
 git status --short --untracked-files=all     # expect clean research state; a checkpoint of only handoff/task-message files is state-neutral
 git diff --check                             # expect exit 0
-sha256sum research_state/universe_frontier_advance_v38.json   # expect 9ceccb39d56e83417027362590a805cad32902756c36ba1ec5ddf90163294810
+sha256sum research_state/universe_frontier_advance_v39.json   # expect aa7b80a48eccfccef93e615e94e41ebcb7b716fef5ca25731851d71f264aab29
 ```
 
-## Objective (activation 3306), priority order
-- **(a) Frontier advance v39 — ranks 976–1000** — ONLY if now ≥ ≈2026-11-24T23:54:43Z. Follow the v38 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the known-id union (reconstructed v1-v38 observed-id union = 887 known ids), write `research_state/universe_frontier_advance_v39.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V39`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 1000, next batch 1001–1025. Record both hashes externally in the handoff; do not store self-referential hash fields.
+## Objective (activation 3308), priority order
+- **(a) Frontier advance v40 — ranks 1001–1025** — ONLY if now ≥ ≈2026-11-25T07:06:27Z. Follow the v39 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the known-id union (reconstructed v1-v39 observed-id union = 911 known ids), write `research_state/universe_frontier_advance_v40.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V40`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 1025, next batch 1026–1050. Record both hashes externally in the handoff; do not store self-referential hash fields. Note: at v39 the source reported `ranked_items_in_response` (rank≥1) = 11,426 vs 62,784 at v38 (total unchanged 62,784); re-check and record the ranked count each retrieval.
 - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
 - **(c)** NO-OP per the clock gate above.
 
 ## Do NOT re-run completed work
-Frontier advances v1–v38; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at HEAD (activation 3282); re-run only when code/test/config changes.
+Frontier advances v1–v39; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Test gate verified 18 passed at activation 3308; re-run only when code/test/config changes.
 
 ## Blocked without stated precondition
 - EBCR-H002/H003: needs new experiment ID, independent preregistered rationale, NEW anchor/config.
@@ -45,14 +45,14 @@ python3 -m venv .venv && .venv/bin/python -m pip install -q pytest              
 git diff --check
 ```
 
-## Verified baseline (activation 3306, 2026-11-24T20:50:56Z)
-- Clock: v38 delivered (activation 3294); v39 gate ≈2026-11-24T23:54:43Z.
-- State: config `753d9357…`; git status clean; git diff --check exit 0; frontier v38 sha256 `9ceccb39…4810`; v39 absent (expected).
-- Frontier v38: cursor `discovered_id_count` 887, `top_rank_covered` 975, next batch 976–1000, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,784 total / 62,784 ranked (rank ≥ 1).
-- Tests: **18 passed** at activation 3282; grid manifest 324 cells / `config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
+## Verified baseline (activation 3308, 2026-11-25T03:36:27Z)
+- Clock: v39 delivered (activation 3308); v40 gate ≈2026-11-25T07:06:27Z.
+- State: config `753d9357…`; git status shows only new `universe_frontier_advance_v39.json` (untracked); git diff --check exit 0; frontier v39 sha256 `aa7b80a4…aab29`; v40 absent (expected).
+- Frontier v39: cursor `discovered_id_count` 911, `top_rank_covered` 1000, next batch 1001–1025, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`, 62,784 total / 11,426 ranked (rank ≥ 1) at this retrieval; window 976–1000 = 25 items, 24 net-new, 1 duplicate (`mbc-monbasecoin` rank 977).
+- Tests: **18 passed** at activation 3308; grid manifest 324 cells / `config_sha256 55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`.
 
 ## Known open blockers
-Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 975 (no tight polling; cooldown until ≈2026-11-24T23:54:43Z).
+Raw ingestion snapshots absent (`data/raw/` gitignored) → re-ingestion not reproducible (derived data only); data revision behavior unresolved; no free historical PIT exchange status series; EBCR-H002/H003/H004 gated as above; frontier discovery open-ended at rank 1000 (no tight polling; cooldown until ≈2026-11-25T07:06:27Z); source `ranked_items_in_response` count varies between retrievals (62,784 at v38 → 11,426 at v39) and must be recorded per retrieval.
 
 ## Reporting
 Report only verified findings. Do not commit unless explicitly asked.
