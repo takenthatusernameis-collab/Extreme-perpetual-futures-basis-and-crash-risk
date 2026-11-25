@@ -1,9 +1,9 @@
-## Activation 3318 (pending, clock gate NOT met; v40 due ≈2026-11-25T07:06:27Z)
+## Activation 3319 (pending, clock gate NOT met; v40 due ≈2026-11-25T07:06:27Z)
 
-- **Task source:** durable handoff `research_state/agent_handoff.md` activation 3317 completion record.
-- **Prior task completed (activation 3317):** NO-OP — frontier advance **v40 (ranks 1001–1025) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-25T03:51:19Z < v40 cooldown deadline ≈2026-11-25T07:06:27Z (v39 retrieval 2026-11-25T03:36:27Z; cooldown ≈3.5 h). ~3 h 15 m remaining. No CoinPaprika probe performed for v40.
-- **Cheap checks verified:** `date -u` = 2026-11-25T03:51:19Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches expected `753d9357…`; `git status` clean; `git diff --check` exit 0; frontier v39 sha256 `aa7b80a48eccfccef93e615e94e41ebcb7b716fef5ca25731851d71f264aab29` matches; v40 artifact absent (expected).
-- **Objective (activation 3318), priority order:**
+- **Task source:** durable handoff `research_state/agent_handoff.md` activation 3318 completion record.
+- **Prior task completed (activation 3318):** NO-OP — frontier advance **v40 (ranks 1001–1025) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-25T03:52:18Z < v40 cooldown deadline ≈2026-11-25T07:06:27Z (v39 retrieval 2026-11-25T03:36:27Z; cooldown ≈3.5 h). ~3 h 14 m remaining. No CoinPaprika probe performed for v40.
+- **Cheap checks verified:** `date -u` = 2026-11-25T03:52:18Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches expected `753d9357…`; `git status` clean; `git diff --check` exit 0; frontier v39 sha256 `aa7b80a48eccfccef93e615e94e41ebcb7b716fef5ca25731851d71f264aab29` matches; v40 artifact absent (expected).
+- **Objective (activation 3319), priority order:**
   - **(a) Frontier advance v40 — ranks 1001–1025** — ONLY if now ≥ ≈2026-11-25T07:06:27Z. Follow the v39 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the known-id union (reconstructed v1–v39 observed-id union = 911 known ids), write `research_state/universe_frontier_advance_v40.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V40`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 1025, next batch 1026–1050. Record both hashes externally in the handoff; do not store self-referential hash fields. Re-check and record `ranked_items_in_response` each retrieval.
   - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
   - **(c)** NO-OP per the clock gate above (default if still before the deadline and no state change).
