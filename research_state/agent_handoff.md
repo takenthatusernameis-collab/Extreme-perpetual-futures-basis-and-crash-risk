@@ -180,3 +180,9 @@ Report only verified findings. Do not commit unless explicitly asked.
 - Cheap checks verified: config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean (no output); `git diff --check` exit 0; frontier v40 sha256 `3aaa55cbc003ba2496f5d6972252f20c0c7f21bc05527291ba87a82102378604` matches; v41 artifact absent (expected).
 - State unchanged since activation 3327. No frozen edit, no commit. Do not commit unless explicitly asked.
 - Activation 3329 pending: same clock gate; re-check at/after ≈2026-11-25T16:58:38Z for frontier advance v41 (ranks 1026–1050), next batch 1051–1075 after v41.
+
+## Activation 3329 completion record (2026-11-25T13:41:18Z)
+- Prior task: NO-OP — frontier advance **v41 (ranks 1026–1050) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-25T13:41:18Z < v41 cooldown deadline ≈2026-11-25T16:58:38Z (v40 retrieval 2026-11-25T13:28:38Z; cooldown ≈3.5 h). ~3 h 17 m remaining. No CoinPaprika probe performed for v41.
+- Cheap checks verified: config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean (no output); `git diff --check` exit 0; frontier v40 sha256 `3aaa55cbc003ba2496f5d6972252f20c0c7f21bc05527291ba87a82102378604` matches; v41 artifact absent (expected).
+- State unchanged. No frozen edit, no commit. Do not commit unless explicitly asked.
+- Activation 3330 pending: same clock gate; re-check at/after ≈2026-11-25T16:58:38Z for frontier advance v41 (ranks 1026–1050), next batch 1051–1075 after v41.
