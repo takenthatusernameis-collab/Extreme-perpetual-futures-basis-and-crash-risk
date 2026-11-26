@@ -1,0 +1,215 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V44",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-26T22:57:51.386Z",
+  "task_activation": 3380,
+  "purpose": "Advance rank frontier discovery batch (ranks 1101-1125) after documented cooldown since v43 (v43 retrieval 2026-11-26T14:08:04Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v43.json",
+    "sha256_raw_bytes": "ff64dbe80721cb6599bebb649092fb4c43fcc694b1cb085dc40d348b7d4a9890",
+    "sha256_compact_content": "aa5165fd7ea8513775d9b0f9d973db5c06d1f68dbf3c6fe1edda56b78915b88f",
+    "discovered_id_count_v43": 989,
+    "top_rank_covered_v43": 1100,
+    "next_batch_start_rank_v43": 1101
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-26T22:57:51.386Z",
+    "response_sha256": "078e5691d6b0565b122af05283a4f23e64855996308afdc3abe8489ad55aad36",
+    "total_items_in_response": 62812,
+    "ranked_items_in_response": 11035,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3380, past the ~3.5h cooldown since v43 retrieval at 2026-11-26T14:08:04Z. Source observation: ranked_items_in_response (rank>=1) = 11035 at this retrieval vs 11306 at v43, 11752 at v41 and 11507 at v40; total_items_in_response = 62812 (v43: 62809). Rank window 1101-1125 had 24 items (25 ranks); the window was not fully populated (expected 25, found 24), recorded as source-behavior observation."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1101,
+      1125
+    ],
+    "known_ids_before_dedup": 989,
+    "items_in_rank_window": 24,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v43 observed-id union = 989 known ids (25-id universe_frontier.json master frontier plus all v1-v43 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "gfch-goldfinch",
+      "rank": 1102,
+      "name": "Goldfinch",
+      "symbol": "GFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alu-altura",
+      "rank": 1103,
+      "name": "Altura",
+      "symbol": "ALU",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lazio-lazio-fan-token",
+      "rank": 1104,
+      "name": "Lazio Fan Token",
+      "symbol": "LAZIO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rez-renzo",
+      "rank": 1106,
+      "name": "Renzo",
+      "symbol": "REZ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "captainbnb-captainbnb",
+      "rank": 1107,
+      "name": "CaptainBNB",
+      "symbol": "CAPTAINBNB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alt-archloot",
+      "rank": 1108,
+      "name": "ArchLoot",
+      "symbol": "ALT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "x-talex",
+      "rank": 1108,
+      "name": "TaleX",
+      "symbol": "X",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xfc-football-coin",
+      "rank": 1110,
+      "name": "Football Coin",
+      "symbol": "XFC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "myst-mysterium",
+      "rank": 1111,
+      "name": "Mysterium",
+      "symbol": "MYST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "forest-forest-protocol",
+      "rank": 1113,
+      "name": "Forest Protocol",
+      "symbol": "FOREST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vtc-vertcoin",
+      "rank": 1114,
+      "name": "Vertcoin",
+      "symbol": "VTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "puss2-pussfi",
+      "rank": 1115,
+      "name": "PussFi",
+      "symbol": "PUSS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lmts-limitless",
+      "rank": 1116,
+      "name": "Limitless",
+      "symbol": "LMTS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wxt-wirex-token",
+      "rank": 1116,
+      "name": "Wirex Token",
+      "symbol": "WXT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "isc-international-stable-currency",
+      "rank": 1117,
+      "name": "International Stable Currency",
+      "symbol": "ISC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ghst-aavegotchi",
+      "rank": 1118,
+      "name": "Aavegotchi",
+      "symbol": "GHST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pin-pinlink",
+      "rank": 1120,
+      "name": "PinLink",
+      "symbol": "PIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dfg-defigram",
+      "rank": 1120,
+      "name": "Defigram",
+      "symbol": "DFG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rio-realio-network",
+      "rank": 1122,
+      "name": "Realio Network",
+      "symbol": "RIO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wod-world-of-dypians",
+      "rank": 1123,
+      "name": "World of Dypians",
+      "symbol": "WOD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "porto-fc-porto",
+      "rank": 1123,
+      "name": "FC Porto",
+      "symbol": "PORTO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xst-stealth",
+      "rank": 1124,
+      "name": "Stealth",
+      "symbol": "XST",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dextf-dextf",
+      "rank": 1125,
+      "name": "Domani Protocol",
+      "symbol": "DEXTF",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "dext-dextools",
+      "rank": 1109,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 1012,
+    "top_rank_covered": 1125,
+    "next_batch_start_rank": 1126,
+    "next_batch_end_rank": 1150,
+    "rank_frontier_exhausted": false
+  }
+}
