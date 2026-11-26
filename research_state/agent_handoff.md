@@ -406,6 +406,13 @@ Report only verified findings. Do not commit unless explicitly asked.
 - Prior task: NO-OP — frontier advance **v43 (ranks 1076–1100) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-26T04:39:48Z < v43 cooldown deadline ≈2026-11-26T07:56:36Z (v42 retrieval 2026-11-26T04:26:36Z; cooldown ≈3.5 h). ~3 h 17 m remaining. No CoinPaprika probe performed for v43.
 - Cheap checks verified: `date -u` = 2026-11-26T04:39:48Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean (no output); `git diff --check` exit 0; frontier v42 sha256 `333710adc1d04a9f47bdb1faf4405745a40e3cccb29a738c5165dfc46bda5451` matches; v43 artifact absent (expected).
 - State unchanged. No frozen edit, no commit. Do not commit unless explicitly asked.
-- Activation 3367 pending: same clock gate; re-check at/after ≈2026-11-26T07:56:36Z (v42 retrieval 2026-11-26T04:26:36Z; cooldown ≈3.5 h) for frontier advance v43 (ranks 1076–1100), next batch 1101–1125 after v43.
+## Activation 3367 completion record (2026-11-26T14:08:04Z)
+- Prior task: NO-OP at activations 3357–3366; clock gate checked first (NOT met then). Gate met at activation 3367: current UTC 2026-11-26T14:08:04Z ≥ v43 cooldown deadline ≈2026-11-26T07:56:36Z (v42 retrieval 2026-11-26T04:26:36Z; cooldown ≈3.5 h).
+- Frontier advance v43 (ranks 1076–1100) executed. CoinPaprika `/v1/coins` fresh retrieval at 2026-11-26T14:08:04.841745Z, HTTP 200. response_sha256 `90b8d9af43ba851d59e2f5ad3ac77040300462ca33de896a794c6a566d8a3def`; total_items_in_response 62809; ranked_items_in_response 11306 (source-behavior change from 11,588 at v42, recorded). Known-id union reconstructed v1–v42 = 969 ids. Window 1076–1100 fully populated 25/25; net_new_candidates 20; duplicates_skipped_count 5 (`bun-bundle-cat` rank 1077, `xpla-xpla` rank 1080, `hana-hana-network` rank 1082, `atm-atletico-madrid-fan-token` rank 1086, `afr-afreum` rank 1087 — already in v41/v42 window); symbol_collisions 0.
+- Artifact written: `research_state/universe_frontier_advance_v43.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V43`, status `rank_unverified_discovery_only`. V43 artifact sha256 `ff64dbe80721cb6599bebb649092fb4c43fcc694b1cb085dc40d348b7d4a9890`; compact content sha256 `4292b6f322c817c43d9a8ab5d1aac45ddb5065d20221b1cc3e267324a97deab4` (recorded externally here; not stored self-referentially in the artifact).
+- Cursor advanced: `discovered_id_count` 989, `top_rank_covered` 1100, next batch 1101–1125, `rank_frontier_exhausted` false.
+- State unchanged otherwise (no frozen edit). No commit unless explicitly asked.
+
+## Activation 3368 pending: same clock gate; re-check at/after ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h) for frontier advance v44 (ranks 1101–1125), next batch 1126–1150 after v44.
 
 (End of file)

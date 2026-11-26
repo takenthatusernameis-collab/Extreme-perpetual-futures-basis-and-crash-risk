@@ -1,0 +1,214 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V43",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-26T14:08:04.841745Z",
+  "task_activation": 3367,
+  "purpose": "Advance rank frontier discovery batch (ranks 1076-1100) after documented cooldown since v42 (v42 retrieval 2026-11-26T04:26:36Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v42.json",
+    "sha256_raw_bytes": "333710adc1d04a9f47bdb1faf4405745a40e3cccb29a738c5165dfc46bda5451",
+    "sha256_compact_content": "aa5165fd7ea8513775d9b0f9d973db5c06d1f68dbf3c6fe1edda56b78915b88f",
+    "discovered_id_count_v42": 969,
+    "top_rank_covered_v42": 1075,
+    "next_batch_start_rank_v42": 1076
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-26T14:08:04.841745Z",
+    "response_sha256": "90b8d9af43ba851d59e2f5ad3ac77040300462ca33de896a794c6a566d8a3def",
+    "total_items_in_response": 62809,
+    "ranked_items_in_response": 11306,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3367, past the ~3.5h cooldown since v42 retrieval at 2026-11-26T04:26:36Z. Source observation: ranked_items_in_response (rank>=1) = 11306 at this retrieval vs 11588 at v42, 11752 at v41 and 11507 at v40; total_items_in_response = 62809 (v42: 62790). Rank window 1076-1100 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1076,
+      1100
+    ],
+    "known_ids_before_dedup": 969,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 20,
+    "duplicates_skipped_count": 5,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v42 observed-id union = 969 known ids (25-id universe_frontier.json master frontier plus all v1-v42 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "apu-apu39s-club",
+      "rank": 1076,
+      "name": "Apu Apustaja",
+      "symbol": "APU",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "apm-apeium-token",
+      "rank": 1078,
+      "name": "Apeium Token",
+      "symbol": "APM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "roam-roam",
+      "rank": 1079,
+      "name": "Roam",
+      "symbol": "ROAM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wen4-wen",
+      "rank": 1081,
+      "name": "Wen",
+      "symbol": "WEN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dent-dent",
+      "rank": 1083,
+      "name": "Dent",
+      "symbol": "DENT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bld-agoric",
+      "rank": 1084,
+      "name": "Agoric",
+      "symbol": "BLD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rch-rch-token",
+      "rank": 1085,
+      "name": "RCH Token",
+      "symbol": "RCH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "snakt-sna-king-trump",
+      "rank": 1088,
+      "name": "Sna-King Trump",
+      "symbol": "SNAKT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "octa-octaspace",
+      "rank": 1089,
+      "name": "OctaSpace",
+      "symbol": "OCTA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bee-daobase",
+      "rank": 1090,
+      "name": "DAOBase",
+      "symbol": "BEE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hdn-hydranet",
+      "rank": 1091,
+      "name": "Hydranet",
+      "symbol": "HDN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ctx-cryptex",
+      "rank": 1092,
+      "name": "Cryptex",
+      "symbol": "CTX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "esim-depinsim",
+      "rank": 1093,
+      "name": "Depinsim",
+      "symbol": "ESIM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dmtr-dimitra",
+      "rank": 1094,
+      "name": "Dimitra",
+      "symbol": "DMTR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dext-dextools",
+      "rank": 1095,
+      "name": "DexTools",
+      "symbol": "DEXT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "shdw-genesysgo-shadow",
+      "rank": 1096,
+      "name": "Shadow Token",
+      "symbol": "SHDW",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xem-nem",
+      "rank": 1097,
+      "name": "NEM",
+      "symbol": "XEM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "natix-natix-network",
+      "rank": 1098,
+      "name": "NATIX Network",
+      "symbol": "NATIX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zcl-zclassic",
+      "rank": 1099,
+      "name": "ZClassic",
+      "symbol": "ZCL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xava-avalaunch",
+      "rank": 1100,
+      "name": "Avalaunch",
+      "symbol": "XAVA",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "bun-bundle-cat",
+      "rank": 1077,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "xpla-xpla",
+      "rank": 1080,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "hana-hana-network",
+      "rank": 1082,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "atm-atletico-madrid-fan-token",
+      "rank": 1086,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "afr-afreum",
+      "rank": 1087,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 989,
+    "top_rank_covered": 1100,
+    "next_batch_start_rank": 1101,
+    "next_batch_end_rank": 1125,
+    "rank_frontier_exhausted": false
+  }
+}
