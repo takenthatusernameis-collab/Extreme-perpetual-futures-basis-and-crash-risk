@@ -1,0 +1,222 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V42",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-26T04:26:36.021844Z",
+  "task_activation": 3356,
+  "purpose": "Advance rank frontier discovery batch (ranks 1051-1075) after documented cooldown since v41 (v41 retrieval 2026-11-25T22:41:22Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v41.json",
+    "sha256_raw_bytes": "852d2880f7aa004484fa735749cc87743248b07f6b343843e781946954c160f9",
+    "sha256_compact_content": "282652cdf2f1edace11fd8f21d1775b312a7b263cf8c557bb26f882df8af1163",
+    "discovered_id_count_v41": 945,
+    "top_rank_covered_v41": 1050,
+    "next_batch_start_rank_v41": 1051
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-26T04:26:36.021844Z",
+    "response_sha256": "a54f500ed713ef395e4d7d212a7c671c76a41b42e3fee3409154b8d5b1ec1159",
+    "total_items_in_response": 62790,
+    "ranked_items_in_response": 11588,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3356, past the ~3.5h cooldown since v41 retrieval at 2026-11-25T22:41:22Z. Source observation: ranked_items_in_response (rank>=1) = 11588 at this retrieval vs 11752 at v41 and 11507 at v40; total_items_in_response = 62790 (v41: 62790). Rank window 1051-1075 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1051,
+      1075
+    ],
+    "known_ids_before_dedup": 945,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 24,
+    "duplicates_skipped_count": 1,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v41 observed-id union = 945 known ids (25-id universe_frontier.json master frontier plus all v1-v41 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "l3-layer3",
+      "rank": 1051,
+      "name": "Layer3",
+      "symbol": "L3",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "afr-afreum",
+      "rank": 1052,
+      "name": "Afreum",
+      "symbol": "AFR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cess-cess-network",
+      "rank": 1053,
+      "name": "CESS Network",
+      "symbol": "CESS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tko-tokocrypto",
+      "rank": 1054,
+      "name": "Tokocrypto",
+      "symbol": "TKO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xion-xion",
+      "rank": 1055,
+      "name": "Verona (prev. XION)",
+      "symbol": "VERONA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "renbtc-renbtc",
+      "rank": 1056,
+      "name": "renBTC",
+      "symbol": "renBTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fwog-fwog",
+      "rank": 1057,
+      "name": "Fwog",
+      "symbol": "FWOG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dji6930-dowge",
+      "rank": 1058,
+      "name": "DOWGE",
+      "symbol": "DJI6930",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "blz-bluzelle",
+      "rank": 1059,
+      "name": "Bluzelle",
+      "symbol": "BLZ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ztc-zenchain",
+      "rank": 1060,
+      "name": "ZenChain",
+      "symbol": "ZTC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "usdc-usdc-wormhole-sui",
+      "rank": 1061,
+      "name": "USDC (Wormhole) SUI",
+      "symbol": "USDC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mln-enzyme",
+      "rank": 1062,
+      "name": "Enzyme",
+      "symbol": "MLN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wspp-wolfsafepoorpeople",
+      "rank": 1063,
+      "name": "WolfSafePoorPeople",
+      "symbol": "WSPP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "anthropic-anthropic-prestocks",
+      "rank": 1065,
+      "name": "Anthropic PreStocks",
+      "symbol": "ANTHROPIC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "portal-portal",
+      "rank": 1066,
+      "name": "Portal",
+      "symbol": "PORTAL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pork-pepefork",
+      "rank": 1067,
+      "name": "PepeFork",
+      "symbol": "PORK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wan-wanchain",
+      "rank": 1068,
+      "name": "Wanchain",
+      "symbol": "WAN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pndc-pond-coin",
+      "rank": 1069,
+      "name": "Pond Coin",
+      "symbol": "PNDC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wild-wilder-world",
+      "rank": 1070,
+      "name": "Wilder World",
+      "symbol": "WILD",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bun-bundle-cat",
+      "rank": 1071,
+      "name": "Bundle Cat",
+      "symbol": "BUN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "palm-palm-ai",
+      "rank": 1072,
+      "name": "PaLM AI",
+      "symbol": "PALM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xpla-xpla",
+      "rank": 1073,
+      "name": "XPLA",
+      "symbol": "XPLA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hana-hana-network",
+      "rank": 1074,
+      "name": "Hana Network",
+      "symbol": "HANA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "atm-atletico-madrid-fan-token",
+      "rank": 1075,
+      "name": "Atletico Madrid Fan Token",
+      "symbol": "ATM",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "wfca-world-friendship-cash-coin",
+      "rank": 1064,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 969,
+    "top_rank_covered": 1075,
+    "next_batch_start_rank": 1076,
+    "next_batch_end_rank": 1100,
+    "rank_frontier_exhausted": false
+  }
+}
