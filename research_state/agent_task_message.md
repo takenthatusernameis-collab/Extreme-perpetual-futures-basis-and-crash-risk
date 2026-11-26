@@ -1,9 +1,9 @@
-## Activation 3373 pending
+## Activation 3374 pending
 
-- **Task source:** durable handoff `research_state/agent_handoff.md` activation 3372 completion record.
-- **Prior task completed (activation 3372):** NO-OP — frontier advance **v44 (ranks 1101–1125) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-26T14:20:37Z < v44 cooldown deadline ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h). ~3 h 17 m remaining. No CoinPaprika probe performed for v44.
-- **Cheap checks verified:** `date -u` = 2026-11-26T14:20:37Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean; `git diff --check` exit 0; frontier v43 sha256 `ff64dbe80721cb6599bebb649092fb4c43fcc694b1cb085dc40d348b7d4a9890` matches; v44 artifact absent (expected).
-- **Objective (activation 3373), priority order:**
+- **Task source:** durable handoff `research_state/agent_handoff.md` activation 3373 completion record.
+- **Prior task completed (activation 3373):** NO-OP — frontier advance **v44 (ranks 1101–1125) not actionable**; clock gate checked first (NOT met). Current UTC 2026-11-26T14:22:36Z < v44 cooldown deadline ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h). ~3 h 15 m remaining. No CoinPaprika probe performed for v44.
+- **Cheap checks verified:** `date -u` = 2026-11-26T14:22:36Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean; `git diff --check` exit 0; frontier v43 sha256 `ff64dbe80721cb6599bebb649092fb4c43fcc694b1cb085dc40d348b7d4a9890` matches; v44 artifact absent (expected).
+- **Objective (activation 3374), priority order:**
   - **(a) Frontier advance v44 — ranks 1101–1125** — ONLY if now ≥ ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h). Follow the v43 procedure: fresh CoinPaprika `/v1/coins`, record retrieval UTC + response_sha256, dedup against the known-id union (reconstructed v1–v43 observed-id union = 989 known ids), write `research_state/universe_frontier_advance_v44.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V44`, status `rank_unverified_discovery_only`. Cursor → `discovered_id_count`, `top_rank_covered` 1125, next batch 1126–1150. Record both hashes externally in the handoff; do not store self-referential hash fields. Re-check and record `ranked_items_in_response` each retrieval (was 11,306 at v43).
   - **(b)** A genuinely new, permitted, non-contaminating task resolving a documented open blocker, only if a real new input/source is now available.
   - **(c)** NO-OP per the clock gate above (default if still before the deadline and no state change).
@@ -12,6 +12,5 @@
 - **Do NOT re-run completed work:** frontier advances v1–v43; candidate→perp mapping v2; contract-lifecycle audit; V4 controlled re-estimation; V3→V4 inference audit; exclusion accounting audit — unless an input changes. Tests verified 18 passed at activation 3309; re-run only when code/test/config changes.
 - **Verified baseline unchanged (hash-attested):** exclusions n=336 (28 `basis_incomplete` + 308 `incomplete_forward_horizon`); integrated 5,010 rows / 5,346 basis observations; anchor co-primary adjusted p-values `crash_incidence_15pct` 0.24830545694889028 and `expected_shortfall_5pct_forward_mae` 0.9485; EBCR-H001 `tested_not_supported`; EBCR-H002/H003/H004 `registered_secondary_not_tested`; `next_hypothesis_sequence` 5; PIT rank CLOSED. Frontier v43 cursor: `discovered_id_count` 989, `top_rank_covered` 1100, next batch 1101–1125, `rank_frontier_exhausted` false; source `https://api.coinpaprika.com/v1/coins`.
 - **Required checks (only when a deliverable is produced):** `python3 scripts/generate_grid_manifest.py --output /tmp/basis-grid-manifest.json` (expect 324 cells, config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`); `.venv/bin/python -m pytest -q tests` (expect 18 passed); `git diff --check` exit 0.
-- **Activation 3374 pending:** re-check at/after ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h) for frontier advance v44 (ranks 1101–1125), next batch 1126–1150 after v44.
-
-(End of file - total 15 lines)
+- **Activation 3375 pending:** re-check at/after ≈2026-11-26T17:38:04Z (v43 retrieval 2026-11-26T14:08:04Z; cooldown ≈3.5 h) for frontier advance v44 (ranks 1101–1125), next batch 1126–1150 after v44.
+EOF
