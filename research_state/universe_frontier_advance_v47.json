@@ -1,0 +1,220 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V47",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-27T22:50:48.773194Z",
+  "task_activation": 3415,
+  "purpose": "Advance rank frontier discovery batch (ranks 1176-1200) after documented cooldown since v46 (v46 retrieval 2026-11-27T14:26:11Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v46.json",
+    "sha256_raw_bytes": "cc1b140952dd3e3ed7d7427b55da2bee75da72edb97fced95782f7a8b5394fc8",
+    "sha256_compact_content": "75919669193732883b52cdf797719eaafdb2cf391595c40f2ad77e171a0cb49d",
+    "discovered_id_count_v46": 1056,
+    "top_rank_covered_v46": 1175,
+    "next_batch_start_rank_v46": 1176
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-27T22:50:48.773194Z",
+    "response_sha256": "686beb9ffb0d2d3bf0777cdca2e6958e1d468e8fb1a53c9c65c83873eafb214d",
+    "total_items_in_response": 62834,
+    "ranked_items_in_response": 10952,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3415, past the ~3.5h cooldown since v46 retrieval at 2026-11-27T14:26:11Z. Source observation: ranked_items_in_response (rank>=1) = 10952 at this retrieval vs 10988 at v46, 10846 at v45, 11035 at v44, 11306 at v43 and 11588 at v42; total_items_in_response = 62834 (v46: 62834). Rank window 1176-1200 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1176,
+      1200
+    ],
+    "known_ids_before_dedup": 1056,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v46 observed-id union = 1056 known ids (25-id universe_frontier.json master frontier plus all v1-v46 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "cook-meth-protocol",
+      "rank": 1177,
+      "name": "mETH Protocol",
+      "symbol": "COOK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jesus-jesus-coin",
+      "rank": 1179,
+      "name": "Jesus Coin",
+      "symbol": "JESUS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cols-cointel",
+      "rank": 1180,
+      "name": "Cointel",
+      "symbol": "COLS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "grok-grok-eth",
+      "rank": 1181,
+      "name": "Grok (ETH)",
+      "symbol": "GROK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kai-kardiachain",
+      "rank": 1182,
+      "name": "KardiaChain",
+      "symbol": "KAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "major1-major",
+      "rank": 1183,
+      "name": "Major",
+      "symbol": "MAJOR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "math-math",
+      "rank": 1184,
+      "name": "MATH",
+      "symbol": "MATH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cpc-cpcoin",
+      "rank": 1185,
+      "name": "CPCoin",
+      "symbol": "CPC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "grs-groestlcoin",
+      "rank": 1186,
+      "name": "Groestlcoin",
+      "symbol": "GRS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fuse-fuse-network",
+      "rank": 1187,
+      "name": "Fuse Network",
+      "symbol": "FUSE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "kori-kori-the-pom",
+      "rank": 1188,
+      "name": "Kori The Pom",
+      "symbol": "KORI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xbg-xborg",
+      "rank": 1189,
+      "name": "XBorg",
+      "symbol": "XBG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cosa-cosanta",
+      "rank": 1190,
+      "name": "Cosanta",
+      "symbol": "COSA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ski-ski-mask-dog",
+      "rank": 1191,
+      "name": "Ski Mask Dog",
+      "symbol": "SKI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "avt-aventus",
+      "rank": 1192,
+      "name": "Aventus",
+      "symbol": "AVT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bob12-build-on-bnb",
+      "rank": 1193,
+      "name": "Build On BNB",
+      "symbol": "BOB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "creta-creta-world",
+      "rank": 1194,
+      "name": "Creta World",
+      "symbol": "CRETA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "juv-juventus-fan-token",
+      "rank": 1195,
+      "name": "Juventus Fan Token",
+      "symbol": "JUV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aot2-agent-zero-token",
+      "rank": 1196,
+      "name": "Agent Zero Token",
+      "symbol": "AOT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "quq-quq",
+      "rank": 1197,
+      "name": "Quq",
+      "symbol": "QUQ",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pwease-pwease",
+      "rank": 1198,
+      "name": "Pwease",
+      "symbol": "PWEASE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "efb-ethfan-burn",
+      "rank": 1199,
+      "name": "ETHFan Burn",
+      "symbol": "EFB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bar-fc-barcelona-fan-token",
+      "rank": 1200,
+      "name": "FC Barcelona Fan Token",
+      "symbol": "BAR",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "soph-sophon",
+      "rank": 1176,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "sdt-stake-dao",
+      "rank": 1178,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 1079,
+    "top_rank_covered": 1200,
+    "next_batch_start_rank": 1201,
+    "next_batch_end_rank": 1225,
+    "rank_frontier_exhausted": false
+  }
+}

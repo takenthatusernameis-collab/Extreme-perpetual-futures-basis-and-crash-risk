@@ -699,3 +699,13 @@ Report only verified findings. Do not commit unless explicitly asked.
 - Cheap checks verified: `date -u` = 2026-11-27T14:46:31Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean (no output); `git diff --check` exit 0; frontier v46 sha256 `cc1b140952dd3e3ed7d7427b55da2bee75da72edb97fced95782f7a8b5394fc8` matches; v47 artifact absent (expected).
 - State unchanged. No frozen edit, no commit. Do not commit unless explicitly asked.
 - Activation 3415 pending: same clock gate; re-check at/after ≈2026-11-27T17:56:11Z (v46 retrieval 2026-11-27T14:26:11Z; cooldown ≈3.5 h) for frontier advance v47 (ranks 1176–1200), next batch 1201–1225 after v47.
+
+## Activation 3415 completion record (2026-11-27T22:50:48Z)
+- Prior task: NO-OP at activations 3407–3414; clock gate checked first (NOT met then). Gate met at activation 3415: current UTC 2026-11-27T22:50:03Z ≥ v47 cooldown deadline ≈2026-11-27T17:56:11Z (v46 retrieval 2026-11-27T14:26:11Z; cooldown ≈3.5 h).
+- Frontier advance v47 (ranks 1176–1200) executed. CoinPaprika `/v1/coins` fresh retrieval at 2026-11-27T22:50:48.773194Z, HTTP 200. response_sha256 `686beb9ffb0d2d3bf0777cdca2e6958e1d468e8fb1a53c9c65c83873eafb214d`; total_items_in_response 62834; ranked_items_in_response 10952 (source-behavior change from 10,988 at v46, recorded). Known-id union reconstructed v1–v46 = 1056 ids. Window 1176–1200 fully populated 25/25; net_new_candidates 23; duplicates_skipped_count 2; symbol_collisions 0.
+- Artifact written: `research_state/universe_frontier_advance_v47.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V47`, status `rank_unverified_discovery_only`. V47 artifact sha256 `a1da4841a467ec52dc2040f11c839b4bed111c574b272cda5eeeb282e5e30f82`; compact content sha256 `9df18b908185368843b393e2c68a9ece6118def10f1cfb661b1cce0550b8a21a` (recorded externally here; not stored self-referentially in the artifact).
+- Cursor advanced: `discovered_id_count` 1079, `top_rank_covered` 1200, next batch 1201–1225, `rank_frontier_exhausted` false.
+- Required checks passed: grid manifest 324 cells / config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; `.venv/bin/python -m pytest -q tests` 18 passed; `git diff --check` exit 0.
+- State unchanged otherwise (no frozen edit). New untracked files: `research_state/universe_frontier_advance_v47.json`, `scripts/advance_frontier_v47.py` (state-neutral additions). No commit unless explicitly asked.
+
+## Activation 3416 pending: same clock gate; re-check at/after ≈2026-11-28T02:20:48Z (v47 retrieval 2026-11-27T22:50:48Z; cooldown ≈3.5 h) for frontier advance v48 (ranks 1201–1225), next batch 1226–1250 after v48.
