@@ -1,0 +1,220 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V45",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-27T04:45:27.457948Z",
+  "task_activation": 3395,
+  "purpose": "Advance rank frontier discovery batch (ranks 1126-1150) after documented cooldown since v44 (v44 retrieval 2026-11-26T22:56:55Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v44.json",
+    "sha256_raw_bytes": "0a4201ba4cb75bd14ce8cc9f53d722c1533d44d45024f5c05e32cc8c590b11f6",
+    "sha256_compact_content": "a505ed1a1405ceefed47c39890b725496efa22bc1ee2517617c3be9f754a6728",
+    "discovered_id_count_v44": 1012,
+    "top_rank_covered_v44": 1125,
+    "next_batch_start_rank_v44": 1126
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-27T04:45:27.457948Z",
+    "response_sha256": "0b15f7806ee8db204c948154c608349f9bd6739e27b2000d0d6406c7ee9c51d3",
+    "total_items_in_response": 62812,
+    "ranked_items_in_response": 10846,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3395, past the ~3.5h cooldown since v44 retrieval at 2026-11-26T22:56:55Z. Source observation: ranked_items_in_response (rank>=1) = 10846 at this retrieval vs 11035 at v44, 11306 at v43 and 11588 at v42; total_items_in_response = 62812 (v44: 62812). Rank window 1126-1150 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1126,
+      1150
+    ],
+    "known_ids_before_dedup": 1012,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 23,
+    "duplicates_skipped_count": 2,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v44 observed-id union = 1012 known ids (25-id universe_frontier.json master frontier plus all v1-v44 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "gme-gme",
+      "rank": 1126,
+      "name": "GME",
+      "symbol": "GME",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ren-republic-protocol",
+      "rank": 1128,
+      "name": "Ren",
+      "symbol": "REN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "obsr-observer",
+      "rank": 1129,
+      "name": "Observer",
+      "symbol": "OBSR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "crts-cratos",
+      "rank": 1130,
+      "name": "Cratos",
+      "symbol": "CRTS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rari-rarible",
+      "rank": 1131,
+      "name": "Rarible",
+      "symbol": "RARI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "city-manchester-city-fan-token",
+      "rank": 1132,
+      "name": "Manchester City Fan Token",
+      "symbol": "CITY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "deus-xmaquina",
+      "rank": 1133,
+      "name": "XMAQUINA",
+      "symbol": "DEUS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "crypto-cryptocurrency-coin",
+      "rank": 1134,
+      "name": "Cryptocurrency Coin",
+      "symbol": "CRYPTO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "forth-ampleforth-governance-token",
+      "rank": 1135,
+      "name": "Ampleforth Governance Token",
+      "symbol": "FORTH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nim-nimiq",
+      "rank": 1136,
+      "name": "Nimiq",
+      "symbol": "NIM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "nexa-nexa",
+      "rank": 1137,
+      "name": "Nexa",
+      "symbol": "NEXA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "manyu-manyu2",
+      "rank": 1138,
+      "name": "Manyu",
+      "symbol": "MANYU",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "prompt-wayfinder",
+      "rank": 1139,
+      "name": "Wayfinder",
+      "symbol": "PROMPT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lfi-lienfi",
+      "rank": 1140,
+      "name": "LienFi",
+      "symbol": "LFI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sharp-sharp",
+      "rank": 1142,
+      "name": "Sharp",
+      "symbol": "SHARP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "aaplx-apple-tokenized-stock-xstock",
+      "rank": 1143,
+      "name": "Apple tokenized stock (xStock)",
+      "symbol": "AAPLX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "eda-eda",
+      "rank": 1144,
+      "name": "EDA",
+      "symbol": "EDA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bb-bouncebit",
+      "rank": 1145,
+      "name": "BounceBit",
+      "symbol": "BB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bsn-boson-protocol",
+      "rank": 1146,
+      "name": "Boson Protocol",
+      "symbol": "BSN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rageguy-rage-guy",
+      "rank": 1147,
+      "name": "Rage Guy",
+      "symbol": "RAGEGUY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "avl-avalon",
+      "rank": 1148,
+      "name": "Avalon",
+      "symbol": "AVL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mdt-measurable-data-token",
+      "rank": 1149,
+      "name": "Measurable Data Token",
+      "symbol": "MDT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ats-alltoscan",
+      "rank": 1150,
+      "name": "Alltoscan",
+      "symbol": "ATS",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "dextf-dextf",
+      "rank": 1127,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "lmts-limitless",
+      "rank": 1141,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 1035,
+    "top_rank_covered": 1150,
+    "next_batch_start_rank": 1151,
+    "next_batch_end_rank": 1175,
+    "rank_frontier_exhausted": false
+  }
+}

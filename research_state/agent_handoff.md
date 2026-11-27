@@ -572,3 +572,13 @@ Report only verified findings. Do not commit unless explicitly asked.
 - Cheap checks verified: `date -u` = 2026-11-26T23:23:21Z; config sha256 `753d9357e1d535ef4229a901e25ef059a751e4c4d56188247f5f2e0ef1debd16` matches; `git status` clean (no output); `git diff --check` exit 0; frontier v44 sha256 `0a4201ba4cb75bd14ce8cc9f53d722c1533d44d45024f5c05e32cc8c590b11f6` matches; v45 artifact absent (expected).
 - State unchanged. No frozen edit, no commit. Do not commit unless explicitly asked.
 - Activation 3395 pending: same clock gate; re-check at/after ≈2026-11-27T02:26:55Z (v44 retrieval 2026-11-26T22:56:55Z; cooldown ≈3.5 h) for frontier advance v45 (ranks 1126–1150), next batch 1151–1175 after v45.
+
+## Activation 3395 completion record (2026-11-27T04:45:27Z)
+- Prior task: NO-OP at activation 3394; clock gate checked first (NOT met then). Gate met at activation 3395: current UTC 2026-11-27T04:45:04Z ≥ v45 cooldown deadline ≈2026-11-27T02:26:55Z (v44 retrieval 2026-11-26T22:56:55Z; cooldown ≈3.5 h).
+- Frontier advance v45 (ranks 1126–1150) executed. CoinPaprika `/v1/coins` fresh retrieval at 2026-11-27T04:45:27.457948Z, HTTP 200. response_sha256 `0b15f7806ee8db204c948154c608349f9bd6739e27b2000d0d6406c7ee9c51d3`; total_items_in_response 62812; ranked_items_in_response 10846 (source-behavior change from 11,035 at v44, recorded). Known-id union reconstructed v1–v44 = 1012 ids. Window 1126–1150 fully populated 25/25; net_new_candidates 23; duplicates_skipped_count 2 (`dextf-dextf` rank 1127, `lmts-limitless` rank 1141 — already in known-id union); symbol_collisions 0.
+- Artifact written: `research_state/universe_frontier_advance_v45.json`, artifact_id `EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V45`, status `rank_unverified_discovery_only`. V45 artifact sha256 `1d16f2dff15868895692ebd7efdf30c19d9604cb7322c76475513c1befbb1678`; compact content sha256 `b58da9ad8f66c6da8c4d15b21081ea6c517b537bbf55268dd665d57d868854f7` (recorded externally here; not stored self-referentially in the artifact). Script: `scripts/advance_frontier_v45.py`.
+- Cursor advanced: `discovered_id_count` 1035, `top_rank_covered` 1150, next batch 1151–1175, `rank_frontier_exhausted` false.
+- Required checks passed: grid manifest 324 cells / config_sha256 `55caedf84ac723289f70f49bbed4712c8195425feb4a95e737f3e8929479a0e0`; `.venv/bin/python -m pytest -q tests` 18 passed; `git diff --check` exit 0.
+- State unchanged otherwise (no frozen edit). No commit unless explicitly asked.
+
+## Activation 3396 pending: same clock gate; re-check at/after ≈2026-11-27T08:15:27Z (v45 retrieval 2026-11-27T04:45:27Z; cooldown ≈3.5 h) for frontier advance v46 (ranks 1151–1175), next batch 1176–1200 after v46.
