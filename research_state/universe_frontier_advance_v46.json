@@ -1,0 +1,227 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V46",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-27T14:26:11.999Z",
+  "task_activation": 3406,
+  "purpose": "Advance rank frontier discovery batch (ranks 1151-1175) after documented cooldown since v45 (v45 retrieval 2026-11-27T04:45:27Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v45.json",
+    "sha256_raw_bytes": "1d16f2dff15868895692ebd7efdf30c19d9604cb7322c76475513c1befbb1678",
+    "sha256_compact_content": "a505ed1a1405ceefed47c39890b725496efa22bc1ee2517617c3be9f754a6728",
+    "discovered_id_count_v45": 1035,
+    "top_rank_covered_v45": 1150,
+    "next_batch_start_rank_v45": 1151
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-27T14:26:11.999Z",
+    "response_sha256": "bbbde370e8b0c92639fe26cb7472b6f2739b0987eae56d3c46729187d1a615e9",
+    "total_items_in_response": 62834,
+    "ranked_items_in_response": 10988,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3406, past the ~3.5h cooldown since v45 retrieval at 2026-11-27T04:45:27Z. Source observation: ranked_items_in_response (rank>=1) = 10988 at this retrieval vs 10846 at v45, 11035 at v44, 11306 at v43 and 11588 at v42; total_items_in_response = 62834 (v45: 62812). Rank window 1151-1175 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1151,
+      1175
+    ],
+    "known_ids_before_dedup": 1035,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 21,
+    "duplicates_skipped_count": 4,
+    "symbol_collisions_count": 2
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v45 observed-id union = 1035 known ids (25-id universe_frontier.json master frontier plus all v1-v45 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "aleph-alephim",
+      "rank": 1154,
+      "name": "aleph.im",
+      "symbol": "ALEPH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "soph-sophon",
+      "rank": 1156,
+      "name": "Sophon",
+      "symbol": "SOPH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pivx-pivx",
+      "rank": 1157,
+      "name": "PIVX",
+      "symbol": "PIVX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mvp-crypstocksai",
+      "rank": 1158,
+      "name": "CrypstocksAI",
+      "symbol": "MVP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fun-sportfun",
+      "rank": 1159,
+      "name": "Sport.Fun",
+      "symbol": "FUN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "lat-platon-network",
+      "rank": 1160,
+      "name": "PlatON Network",
+      "symbol": "LAT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mbox-mobox",
+      "rank": 1161,
+      "name": "Mobox",
+      "symbol": "MBOX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "looks-looksrare-token",
+      "rank": 1162,
+      "name": "LooksRare Token",
+      "symbol": "LOOKS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "hero-metahero",
+      "rank": 1163,
+      "name": "Metahero",
+      "symbol": "HERO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "atlas-star-atlas-wormhole",
+      "rank": 1164,
+      "name": "Star Atlas",
+      "symbol": "ATLAS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sogni-sogni-ai",
+      "rank": 1165,
+      "name": "Sogni AI",
+      "symbol": "SOGNI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "towns-towns",
+      "rank": 1166,
+      "name": "Towns",
+      "symbol": "TOWNS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "qqqx-nasdaq-tokenized-etf-xstock",
+      "rank": 1167,
+      "name": "Nasdaq tokenized ETF (xStock)",
+      "symbol": "QQQX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fwa-fake-world-assets",
+      "rank": 1168,
+      "name": "Fake World Assets",
+      "symbol": "FWA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "tbb-the-bitcoin-bull",
+      "rank": 1169,
+      "name": "The Bitcoin Bull",
+      "symbol": "TBB",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sos-opendao",
+      "rank": 1170,
+      "name": "OpenDAO",
+      "symbol": "SOS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "bkn-brickken",
+      "rank": 1171,
+      "name": "Brickken",
+      "symbol": "BKN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ats-atlas-dex",
+      "rank": 1172,
+      "name": "Atlas DEX",
+      "symbol": "ATS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "sdt-stake-dao",
+      "rank": 1173,
+      "name": "Stake DAO",
+      "symbol": "SDT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "santos-santos-fc-fan-token",
+      "rank": 1174,
+      "name": "Santos FC Fan Token",
+      "symbol": "SANTOS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zrc-zircuit",
+      "rank": 1175,
+      "name": "Zircuit",
+      "symbol": "ZRC",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [
+    {
+      "id": "manyu-manyu2",
+      "rank": 1151,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "rageguy-rage-guy",
+      "rank": 1152,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "ats-alltoscan",
+      "rank": 1153,
+      "reason": "already in known-id union"
+    },
+    {
+      "id": "mdt-measurable-data-token",
+      "rank": 1155,
+      "reason": "already in known-id union"
+    }
+  ],
+  "symbol_collisions": [
+    {
+      "symbol": "FUN",
+      "new_id": "fun-sportfun",
+      "existing_id": "fun-funfair"
+    },
+    {
+      "symbol": "ATS",
+      "new_id": "ats-atlas-dex",
+      "existing_id": "ats-alltoscan"
+    }
+  ],
+  "cursor": {
+    "discovered_id_count": 1056,
+    "top_rank_covered": 1175,
+    "next_batch_start_rank": 1176,
+    "next_batch_end_rank": 1200,
+    "rank_frontier_exhausted": false
+  }
+}
