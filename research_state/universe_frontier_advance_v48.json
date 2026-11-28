@@ -1,0 +1,223 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V48",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-28T04:20:16.748313Z",
+  "task_activation": 3426,
+  "purpose": "Advance rank frontier discovery batch (ranks 1201-1225) after documented cooldown since v47 (v47 retrieval 2026-11-27T22:50:48Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v47.json",
+    "sha256_raw_bytes": "a1da4841a467ec52dc2040f11c839b4bed111c574b272cda5eeeb282e5e30f82",
+    "sha256_compact_content": "9df18b908185368843b393e2c68a9ece6118def10f1cfb661b1cce0550b8a21a",
+    "discovered_id_count_v47": 1079,
+    "top_rank_covered_v47": 1200,
+    "next_batch_start_rank_v47": 1201
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-28T04:20:16.748313Z",
+    "response_sha256": "2e4aac284dea8714aad8e5466b8f6ede6d3591e23909d6c8f15d1cd801421416",
+    "total_items_in_response": 62834,
+    "ranked_items_in_response": 10888,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3426, past the ~3.5h cooldown since v47 retrieval at 2026-11-27T22:50:48Z. Source observation: ranked_items_in_response (rank>=1) = 10888 at this retrieval vs 10952 at v47, 10988 at v46, 10846 at v45, 11035 at v44, 11306 at v43 and 11588 at v42; total_items_in_response = 62834 (v47: 62834). Rank window 1201-1225 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1201,
+      1225
+    ],
+    "known_ids_before_dedup": 1079,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 25,
+    "duplicates_skipped_count": 0,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v47 observed-id union = 1079 known ids (25-id universe_frontier.json master frontier plus all v1-v47 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "play-play-bsc",
+      "rank": 1201,
+      "name": "XCAD Network PLAY",
+      "symbol": "PLAY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ace-fusionist",
+      "rank": 1202,
+      "name": "Fusionist",
+      "symbol": "ACE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "impt-impt",
+      "rank": 1203,
+      "name": "IMPT",
+      "symbol": "IMPT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "googlx-alphabet-tokenized-stock-xstock",
+      "rank": 1204,
+      "name": "Alphabet tokenized stock (xStock)",
+      "symbol": "GOOGLX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "wbera-wrapped-bera",
+      "rank": 1205,
+      "name": "Wrapped Bera",
+      "symbol": "WBERA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mav-maverick-token",
+      "rank": 1206,
+      "name": "Maverick Token",
+      "symbol": "MAV",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "zeus-zeus-network1",
+      "rank": 1207,
+      "name": "Zeus Network",
+      "symbol": "ZEUS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "volt-volt-inu",
+      "rank": 1208,
+      "name": "Volt Inu",
+      "symbol": "VOLT",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "asp-aspecta",
+      "rank": 1209,
+      "name": "Aspecta",
+      "symbol": "ASP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "skhy-sk-hynix-backpack-securities",
+      "rank": 1210,
+      "name": "SK Hynix (Backpack Securities)",
+      "symbol": "SKHY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "esports-yooldo",
+      "rank": 1211,
+      "name": "Yooldo",
+      "symbol": "ESPORTS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "grnd-superwalk",
+      "rank": 1212,
+      "name": "SuperWalk",
+      "symbol": "GRND",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "box-debox",
+      "rank": 1213,
+      "name": "DeBox",
+      "symbol": "BOX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "brn-brn-metaverse",
+      "rank": 1214,
+      "name": "BRN Metaverse",
+      "symbol": "BRN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "jotchua-jotchua",
+      "rank": 1215,
+      "name": "Jotchua",
+      "symbol": "JOTCHUA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "htr-hathor-network",
+      "rank": 1216,
+      "name": "Hathor Network",
+      "symbol": "HTR",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rls-rayls",
+      "rank": 1217,
+      "name": "Rayls",
+      "symbol": "RLS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "azero-aleph-zero",
+      "rank": 1218,
+      "name": "Aleph Zero",
+      "symbol": "AZERO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "stnk-stonks",
+      "rank": 1219,
+      "name": "Stonks",
+      "symbol": "STNK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "quick-quickswap-v2",
+      "rank": 1220,
+      "name": "Quickswap",
+      "symbol": "QUICK",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gram3-gram",
+      "rank": 1221,
+      "name": "GRM",
+      "symbol": "GRM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "dingo-dingocoin",
+      "rank": 1222,
+      "name": "Dingocoin",
+      "symbol": "DINGO",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "high-highstreet-token",
+      "rank": 1223,
+      "name": "Highstreet Token",
+      "symbol": "HIGH",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gang-gang",
+      "rank": 1224,
+      "name": "Gang",
+      "symbol": "GANG",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fusd-freedom-dollar",
+      "rank": 1225,
+      "name": "Freedom Dollar",
+      "symbol": "fUSD",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 1104,
+    "top_rank_covered": 1225,
+    "next_batch_start_rank": 1226,
+    "next_batch_end_rank": 1250,
+    "rank_frontier_exhausted": false
+  }
+}
