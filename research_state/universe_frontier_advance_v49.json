@@ -1,0 +1,223 @@
+{
+  "artifact_id": "EBCR-001-UNIVERSE-FRONTIER-ADVANCE-V49",
+  "schema_version": "1.0",
+  "program_id": "EBCR-001",
+  "created_at_utc": "2026-11-28T13:17:09.927072Z",
+  "task_activation": 3436,
+  "purpose": "Advance rank frontier discovery batch (ranks 1226-1250) after documented cooldown since v48 (v48 retrieval 2026-11-28T04:20:16Z; cooldown ~3.5h; current retrieval past deadline). Discovery-only; NOT PIT membership/rank.",
+  "prior_artifact": {
+    "path": "universe_frontier_advance_v48.json",
+    "sha256_raw_bytes": "7b54abe441832197af94a1b27f1809251fc0288f7cda05d7c4513415566b6865",
+    "sha256_compact_content": "052897bee4d52903db153a83bef5dc3ae75710abba6b2c13f0a2e603d154ddae",
+    "discovered_id_count_v48": 1104,
+    "top_rank_covered_v48": 1225,
+    "next_batch_start_rank_v48": 1226
+  },
+  "source": {
+    "name": "CoinPaprika public API",
+    "endpoint": "https://api.coinpaprika.com/v1/coins",
+    "retrieved_at_utc": "2026-11-28T13:17:09.927072Z",
+    "response_sha256": "7737d7e1fb71111e94f136329f7c8149b6b5946f3ff1006b5abcb907b8d94d9a",
+    "total_items_in_response": 62834,
+    "ranked_items_in_response": 10608,
+    "note": "Current market-cap ranking for candidate discovery only; NOT historical PIT membership/rank. /v1/coins items carry an integer rank field but the response is not pre-sorted by rank; items were sorted by rank before window selection. Raw response not stored in-repo; only its checksum is recorded. Fresh retrieval at activation 3436, past the ~3.5h cooldown since v48 retrieval at 2026-11-28T04:20:16Z. Source observation: ranked_items_in_response (rank>=1) = 10608 at this retrieval vs 10888 at v48, 10952 at v47, 10988 at v46, 10846 at v45, 11035 at v44 and 11306 at v43; total_items_in_response = 62834 (v48: 62834). Rank window 1226-1250 was fully populated (25/25) so the batch is complete; the ranked-count change is recorded as a source-behavior observation, not a gap."
+  },
+  "frontier_state": {
+    "rank_window_scanned": [
+      1226,
+      1250
+    ],
+    "known_ids_before_dedup": 1104,
+    "items_in_rank_window": 25,
+    "net_new_candidates": 25,
+    "duplicates_skipped_count": 0,
+    "symbol_collisions_count": 0
+  },
+  "discovery_method": "Set-difference deduplication by stable CoinPaprika asset id against the reconstructed v1-v48 observed-id union = 1104 known ids (25-id universe_frontier.json master frontier plus all v1-v48 delta entries). Current ranks used for discovery ordering only; status rank_unverified_discovery_only.",
+  "candidates_discovered_delta": [
+    {
+      "id": "rwa-allo",
+      "rank": 1226,
+      "name": "ALLO",
+      "symbol": "RWA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "pkoin-pocketcoin",
+      "rank": 1227,
+      "name": "Pocketcoin",
+      "symbol": "PKOIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "cbdoge-coinbase-wrapped-doge",
+      "rank": 1228,
+      "name": "Coinbase Wrapped DOGE",
+      "symbol": "CBDOGE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "xep-electra-protocol",
+      "rank": 1229,
+      "name": "Electra Protocol",
+      "symbol": "XEP",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "ol-openloot",
+      "rank": 1230,
+      "name": "OPENLOOT",
+      "symbol": "OL",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gua-superfortune",
+      "rank": 1231,
+      "name": "Superfortune",
+      "symbol": "GUA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "rai-rai-reflex-index",
+      "rank": 1232,
+      "name": "Rai Reflex Index",
+      "symbol": "RAI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "num-numbers-protocol",
+      "rank": 1233,
+      "name": "Numbers Protocol",
+      "symbol": "NUM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "brla-brla-digital-brla",
+      "rank": 1234,
+      "name": "BRLA Digital BRLA",
+      "symbol": "BRLA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "whuf-ethos",
+      "rank": 1235,
+      "name": "Ethos",
+      "symbol": "WHUF",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "my-mytonwallet-coin",
+      "rank": 1236,
+      "name": "MyTonWallet Coin",
+      "symbol": "MY",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "konet-konet",
+      "rank": 1237,
+      "name": "KONET",
+      "symbol": "KONET",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "px-not-pixel",
+      "rank": 1238,
+      "name": "Not Pixel",
+      "symbol": "PX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "alex-alex-lab",
+      "rank": 1239,
+      "name": "ALEX Lab",
+      "symbol": "ALEX",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "mha-magic-hash",
+      "rank": 1240,
+      "name": "Magic Hash",
+      "symbol": "MHA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "michi-michicoin",
+      "rank": 1241,
+      "name": "MichiCoin",
+      "symbol": "$MICHI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "fiona-fiona-the-hippo",
+      "rank": 1242,
+      "name": "Fiona the Hippo",
+      "symbol": "FIONA",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "vooi-vooi",
+      "rank": 1243,
+      "name": "VOOI ",
+      "symbol": "VOOI",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "heart-humans",
+      "rank": 1244,
+      "name": "Humans.ai",
+      "symbol": "HEART",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "epic-epic-chain",
+      "rank": 1245,
+      "name": "Epic Chain",
+      "symbol": "EPIC",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "acm-ac-milan-fan-token",
+      "rank": 1246,
+      "name": "AC Milan Fan Token",
+      "symbol": "ACM",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "allindoge-allindoge",
+      "rank": 1247,
+      "name": "ALLINDOGE",
+      "symbol": "ALLINDOGE",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "elizaos-elizaos",
+      "rank": 1248,
+      "name": "elizaOS",
+      "symbol": "ELIZAOS",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "gmcoin-gmcoin",
+      "rank": 1249,
+      "name": "GMCoin",
+      "symbol": "GMCOIN",
+      "status": "rank_unverified_discovery_only"
+    },
+    {
+      "id": "b3tr-vebetterdao",
+      "rank": 1250,
+      "name": "VeBetterDAO",
+      "symbol": "B3TR",
+      "status": "rank_unverified_discovery_only"
+    }
+  ],
+  "duplicates_skipped": [],
+  "symbol_collisions": [],
+  "cursor": {
+    "discovered_id_count": 1129,
+    "top_rank_covered": 1250,
+    "next_batch_start_rank": 1251,
+    "next_batch_end_rank": 1275,
+    "rank_frontier_exhausted": false
+  }
+}
